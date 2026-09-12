@@ -1,0 +1,18 @@
+A short answer, temperature=0, six runs
+  distinct answers: 1 of 6
+  lengths:          [43]
+  first 70 chars:   'Midwest revenue declined by 53% in Q3 2024.'
+
+A long one, temperature=0, six runs
+  distinct answers: 6 of 6
+  lengths:          [737, 752, 756, 767, 796, 816]
+  first 70 chars:   'Midwest revenue fell 53% in Q3 2024 primarily because our largest acco'
+
+temperature=0 means 'always pick the most likely next token'. When one token is
+far ahead of the others, that is stable. Over hundreds of tokens, some position
+eventually has two near-equal candidates, and floating-point arithmetic on
+different hardware breaks the tie differently. The longer the output, the more
+chances for that to happen.
+
+So: temperature=0 is a strong nudge, not a contract. Design as though the model
+may answer differently tomorrow, because one day it will.

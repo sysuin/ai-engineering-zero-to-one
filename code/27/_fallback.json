@@ -1,0 +1,32 @@
+{
+ "no fallback": {
+  "seconds": 0.20239762500023062,
+  "answered": false,
+  "attempts": [
+   [
+    "primary",
+    "ConnectionError"
+   ]
+  ]
+ },
+ "with fallback": {
+  "seconds": 1.118006292001155,
+  "answered": true,
+  "attempts": [
+   [
+    "primary",
+    "ConnectionError"
+   ],
+   [
+    "openai",
+    "ok"
+   ]
+  ],
+  "answered_by": "openai"
+ },
+ "breaker over ten": {
+  "seconds": 12.274890541999412,
+  "primary_calls": 3,
+  "trips": 2
+ }
+}

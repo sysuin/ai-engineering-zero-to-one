@@ -1,0 +1,24 @@
+12 extracted, 0 failed, of 12
+
+quarter         extracted       from SQL  agrees
+2023 Q1        7,360,834      7,360,834  yes
+2023 Q2        7,614,049      7,614,049  yes
+2023 Q3        7,774,027      7,774,027  yes
+2023 Q4        7,699,847      7,699,847  yes
+2024 Q1        8,062,599      8,062,599  yes
+2024 Q2        8,074,848      8,074,848  yes
+2024 Q3        8,461,842      8,461,842  yes
+2024 Q4        8,266,068      8,266,068  yes
+2025 Q1        9,079,542      9,079,542  yes
+2025 Q2        8,633,631      8,633,631  yes
+2025 Q3        8,896,127      8,896,127  yes
+2025 Q4        8,790,970      8,790,970  yes
+
+12 of 12 agree with the warehouse to the dollar.
+
+Quarters reporting a named account loss: [(2024, 3, 'Halloway Group')]
+
+Three things this listing does that a demo would not:
+  · one document failing does not lose the other eleven
+  · the work happens concurrently, because it is all waiting on the network
+  · the result is checked against a source of truth rather than eyeballed

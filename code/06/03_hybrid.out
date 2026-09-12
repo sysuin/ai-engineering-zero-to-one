@@ -1,0 +1,26 @@
+Four attempts at the same problem, 200 tickets
+
+  1. rules, first draft     81.5%   twenty minutes' work
+  2. the model              78.0%   from the previous listing
+  3. rules, second draft    95.5%   twenty minutes more
+  4. rules + model on the rest  98.5%
+
+Hybrid over 200 tickets
+  rules answered            191 (96%)
+  model answered            9 (4%)
+  accuracy                  98.5%
+  seconds                   1.8
+
+  rules alone               95.5%
+  model calls avoided       96% of them
+
+What the model was asked to do — only the cases rules could not read:
+  Returns   (truth Quality  ) El producto MRD-SAN-047 llegó dañado. Necesitamos 
+  Billing   (truth Billing  ) Die Rechnung INV-91472 wurde doppelt berechnet.
+  Billing   (truth Billing  ) Die Rechnung INV-94718 wurde doppelt berechnet.
+  Returns   (truth Quality  ) El producto MRD-CLE-007 llegó dañado. Necesitamos 
+  Quality   (truth Quality  ) El producto MRD-CLE-009 llegó dañado. Necesitamos 
+
+The rules are not better than the model, and the model is not better than the
+rules. Each is better at a different part of the same problem, and the cheap
+one can tell when it is out of its depth. That is a design, not a compromise.

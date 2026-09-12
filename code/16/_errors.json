@@ -1,0 +1,12 @@
+{
+  "terse": {
+    "recovered": 0,
+    "n": 3,
+    "mean_attempts": 2.0
+  },
+  "instructive": {
+    "recovered": 2,
+    "n": 3,
+    "mean_attempts": 2.6666666666666665
+  }
+}

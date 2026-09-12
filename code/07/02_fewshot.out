@@ -1,0 +1,33 @@
+ examples  accuracy  prompt tokens  first answer
+        0     0.0%            488  '45D'
+        1    56.2%            948  'NET45-RECIPIENT'
+        2    56.2%          1,408  'NET45-RECPT'
+        4    93.8%          2,357  'NET45-RCP'
+        8    81.2%          4,213  'NET45-RCP'
+
+32 contracts held out, 8 available as examples.
+The examples, in the order they are added:
+  1. NET60-INV
+  2. NET45-INV
+  3. NET45-RCP
+  4. NET60-INV
+  5. NET60-INV
+  6. NET60-RCP
+  7. NET30-INV
+  8. NET30-INV
+
+Read the curve against that list.
+
+With none, the model cannot know the convention exists, so it invents something
+reasonable that is not yours.
+
+With one and two, it has the structure but has only ever seen an invoice-based
+term, so it guesses at the receipt abbreviation: REC, then RECIPIENT.
+
+The jump at four is not about quantity. Example three is the first receipt-based
+one. What changed is coverage of the answer space, not the count.
+
+Eight scores 4 test item(s) worse than four, out of 32. That is
+noise, not a finding. The honest reading is that it stopped helping while the
+prompt got 1.8x more expensive — paid on every call, for as long as the
+system runs. Chapter 22 is about telling noise from a finding properly.

@@ -1,0 +1,44 @@
+40 requests, run concurrently the way traffic arrives.
+
+  min     3110ms  #########                     
+  p50     3748ms  ###########                   
+  mean    4616ms  ##############                  <- most dashboards
+  p90     7579ms  ######################        
+  p95     8887ms  ##########################    
+  p99    10250ms  ##############################
+  max    10250ms  ##############################
+
+  requests slower than the mean: 12 of 40 (30%)
+  p99 is 2.7x the median
+
+The mean sits where nobody lives. This distribution has a long right tail —
+agents that took an extra step, questions that needed two tools instead of
+one — and a tail pulls a mean upward without describing anything.
+
+Report the mean and you are quoting a figure that 70% of requests beat,
+so most people think you are being pessimistic; meanwhile the 30% having a
+genuinely bad time are invisible inside it.
+
+Percentiles say something you can act on. p50 is the typical request. p95 is
+the one a user notices and mentions. p99 is the one that produces a ticket.
+
+Two rules that follow, and the second one gets broken constantly:
+
+  never average a percentile      the mean of two p95s is not a p95, and a
+                                  dashboard that rolls hourly p95s into a
+                                  daily one is showing you a number with no
+                                  meaning at all
+  bucket before you aggregate     a p95 across every request is dominated by
+                                  whichever kind is slowest and most common
+
+  Which matters here:
+
+    unanswerable   10 requests   p50   6289ms   p95  10250ms
+    composite       6 requests   p50   5224ms   p95   7579ms
+    document       14 requests   p50   3731ms   p95   4392ms
+    warehouse      10 requests   p50   3227ms   p95   3633ms
+
+The slowest population's p95 is 2.8x the fastest one's, and a single
+overall p95 of 8887ms sits between them describing neither. If the slow kind is
+the one your best customers use, that number is not merely uninformative — it
+is reassuring, which is worse.

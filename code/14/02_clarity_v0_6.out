@@ -1,0 +1,24 @@
+Q: What was total revenue in 2024 Q3?
+   inferred filter: {'year': 2024, 'quarter': 3}
+     0.552  qbr-2024-Q3.md             Summary
+     0.537  qbr-2024-Q3.md             2024 Q3
+     0.452  qbr-2024-Q3.md             Revenue by category
+     0.474  qbr-2024-Q3.md             Revenue by region
+
+Q: What is the price adjustment cap in agreement MSC-2022-100?
+   inferred filter: {'contract_ref': 'MSC-2022-100'}
+     0.592  contract-MSC-2022-100.md   2. Prices and price adjustment
+     0.465  contract-MSC-2022-100.md   SUPPLY AGREEMENT
+     0.272  contract-MSC-2022-100.md   6. Liability
+     0.233  contract-MSC-2022-100.md   8. Governing law
+
+Q: How long do we have to settle an invoice?
+   inferred filter: none
+     0.587  contract-MSC-2023-129.md   3. Payment
+     0.398  tickets.jsonl              Billing
+     0.569  contract-MSC-2022-100.md   3. Payment
+     0.585  contract-MSC-2023-113.md   3. Payment
+
+The first question is the one Chapter 13 got wrong, where the right chunk ranked
+ninth behind eight other quarters. Nothing about the corpus or the embedding
+changed. The question now carries a filter it did not have to be given.

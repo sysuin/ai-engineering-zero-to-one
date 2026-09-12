@@ -1,0 +1,12 @@
+max_completion_tokens = 40
+  finish_reason     length
+  completion_tokens 40
+  ends with         ...'customer. It starts with raw materials, such as wood'
+
+max_completion_tokens = 400
+  finish_reason     stop
+  completion_tokens 178
+  ends with         ...'ffect the final product and the customer experience.'
+
+finish_reason == 'length' means you were cut off, not that the model finished.
+Check it. A truncated JSON object will not parse, and Chapter 8 depends on it.

@@ -1,0 +1,12 @@
+The researcher alone, 12 runs each, asked the same question two ways.
+
+  the sub-question as written         9 of 12
+  with the analyst's figure attached 12 of 12
+
+Adding one sentence the analyst already had moved it from 9 to 12.
+The researcher was not worse at reading. It was working without the half
+of the question its colleague was holding.
+
+Either way, note what this experiment is: the fix for an agent boundary is to
+pass more of the context across it. Do that thoroughly enough and you have
+rebuilt the single agent, with extra network hops.

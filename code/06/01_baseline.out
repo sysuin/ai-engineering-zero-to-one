@@ -1,0 +1,16 @@
+The corpus holds 600 tickets. That is a sample, not a year.
+Triage takes 1.75 minutes at $34.0/hour, so one
+ticket costs $0.992 to handle by hand.
+
+Building it: 12 days at $520 = $6,240, plus running costs.
+
+  tickets/year   manual cost   saved at 80%      payback   verdict
+           200           198            159   39.3 years   do not build
+         2,000         1,983          1,587    3.9 years   marginal
+        20,000        19,833         15,867    0.4 years   build it
+       200,000       198,333        158,667    0.0 years   build it
+     1,000,000       991,667        793,333    0.0 years   build it
+
+Same task. Same accuracy. Same everything except how often it happens.
+Volume decides this, and volume is a question you can answer in an afternoon
+without writing a line of code.

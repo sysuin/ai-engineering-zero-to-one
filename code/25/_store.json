@@ -1,0 +1,40 @@
+{
+ "what did we spend today, per tenant": [
+  [
+   "meridian",
+   "4",
+   "0.00135"
+  ]
+ ],
+ "how often do we refuse": [
+  [
+   "1",
+   "4"
+  ]
+ ],
+ "which questions get asked twice": [
+  [
+   "What was revenue in 2024 Q3?",
+   "2"
+  ]
+ ],
+ "what did the run the user complained about do": [
+  [
+   "Why did margin fall in 2025 Q1?",
+   "query_warehouse",
+   "2.9"
+  ],
+  [
+   "Why did margin fall in 2025 Q1?",
+   "search_documents",
+   "1.4"
+  ]
+ ],
+ "did the suite pass on the commit we shipped": [
+  [
+   "deterministic",
+   "0.92",
+   "True"
+  ]
+ ]
+}

@@ -1,0 +1,45 @@
+70 questions, judged twice: on the answer, and on the route.
+
+First specification: the tool must match where the gold answer came from.
+
+                                  right route  wrong route
+  right answer                              9           59
+  wrong answer                              1            1
+
+  outcome evaluation alone passes  68 of 70
+  adding that trajectory rule      9 of 70
+
+Before blaming the system for those 59, read three of them:
+
+  What was revenue in 2023 Q1?
+    spec wanted search_documents, it used query_warehouse
+  How many orders were there in 2023 Q1?
+    spec wanted search_documents, it used query_warehouse
+  What was gross margin in 2023 Q1?
+    spec wanted search_documents, it used query_warehouse
+
+The specification is wrong. Those cases are labelled `document` because their
+gold answer was verified against a document span — that is a statement about
+provenance, not about which tool ought to answer. Meridian's revenue is in the
+warehouse *and* in the review, and going to the warehouse for a figure is the
+better route, not a deviation.
+
+This is the failure mode of trajectory evaluation in one paragraph. A
+trajectory spec is a claim about how the system should work, written by
+somebody who may be wrong, and when it disagrees with the system the burden of
+proof is genuinely on both.
+
+Second specification, and the one worth keeping: every answer must come from
+some tool. Either source is fine; no source is not.
+
+  answers with at least one source call   70 of 70
+  answers produced from memory alone      0 of 70
+
+That rule is narrow enough to be right and cheap enough to run on every case.
+It also generalises, which the first one did not: it is a property of the run
+rather than a prediction about it.
+
+Where trajectory evaluation genuinely earns its keep is agents that write,
+spend, or send. 'Got the right answer' is not a sufficient account of a run
+that also despatched two emails on the way, and no outcome check will ever
+mention them.

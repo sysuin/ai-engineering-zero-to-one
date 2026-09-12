@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "code/02/07_broken_typo.py", line 11, in <module>
+    total = total + line["qty"] * line["unit_prise"]
+                                  ~~~~^^^^^^^^^^^^^^
+KeyError: 'unit_prise'

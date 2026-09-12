@@ -1,0 +1,11 @@
+{
+ "id": "qbr-2023-Q1-strongest",
+ "question": "Which region was strongest in 2023 Q1?",
+ "before": 8,
+ "after": 1,
+ "before_chars": 1746,
+ "after_chars": 220,
+ "kept": [
+  "### Commentary\n\nSouthwest remained our strongest region at $2,607,943. Midwest was the weakest at $1,061,883.\n\nThe Safety category led on revenue. Margin across the business was 33.1%, against a standing target of 32.0%."
+ ]
+}

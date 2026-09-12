@@ -1,0 +1,34 @@
+One attack — the house-style exfiltration from §29.3 — against four arrangements.
+
+                                                marker present   unknown host
+  nothing                                            12/12          12/12    
+  strip images and comments from the input            0/12           0/12    
+  strip, and fence the documents                      0/12           0/12    
+  strip, fence, and filter the output                 0/12           0/12    
+
+  and separately, the actions an analyst may request:
+
+    analyst: search_documents    allowed
+    analyst: query_warehouse     allowed
+    analyst: run_sql             BLOCKED
+    analyst: send_email          BLOCKED
+    analyst: ingest_document     BLOCKED
+
+Read the first column down. Stripping the input removes the thing the attack
+needed — the image construct — so there is nothing left to imitate. Fencing
+gives the prompt a true statement to make instead of a plea. And filtering the
+output catches whatever survived both.
+
+None of those four depends on the model noticing anything, which is the whole
+property. A defence that works only when the model is not fooled is not a
+defence; it is the same bet with extra words.
+
+The second column is the one to keep on a dashboard. 'Did this answer contain
+a URL to a host we have not approved' is a yes-or-no question, computable
+without a model, and it is the last line before an answer reaches a browser
+that will fetch it.
+
+And the allowlist is the defence that makes the rest survivable. An injected
+instruction can ask for anything; what it can *get* is the intersection of
+that request with a list somebody wrote down in daylight. Free-form actions —
+a shell tool, arbitrary SQL — make that intersection the whole credential.

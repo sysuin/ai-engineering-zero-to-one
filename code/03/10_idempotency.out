@@ -1,0 +1,11 @@
+Without an idempotency key
+  send:   (None, 'no response — did it happen?')
+  retry:  (201, {'order_id': 2, 'sku': 'MRD-CLE-001', 'qty': 480})
+  orders on the server: 2
+  -> two orders. The customer receives 960 cloths.
+
+With one
+  send:   (None, 'no response — did it happen?')
+  retry:  (200, {'order_id': 1, 'sku': 'MRD-CLE-001', 'qty': 480, 'replayed': True})
+  orders on the server: 1
+  -> one order, and the retry was told what the first one did.

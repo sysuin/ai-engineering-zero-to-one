@@ -1,0 +1,8 @@
+     1,262 tokens  ->  accepted (1,275 counted by the API)
+    63,632 tokens  ->  accepted (63,645 counted by the API)
+   509,084 tokens  ->  refused: 'Input tokens exceed the configured limit of 272000 tokens. Your messages resulted in 509097 tok
+
+The window holds everything: your system message, the whole conversation so
+far, every document you retrieved, and the answer being written. It is a
+budget you spend, not a limit you occasionally bump into — and Chapter 10 is
+about spending it well.

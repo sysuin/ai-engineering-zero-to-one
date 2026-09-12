@@ -1,0 +1,217 @@
+[
+ {
+  "direction": "->",
+  "frame": {
+   "jsonrpc": "2.0",
+   "id": 1,
+   "method": "initialize",
+   "params": {
+    "protocolVersion": "2025-11-25",
+    "capabilities": {},
+    "clientInfo": {
+     "name": "clarity-client",
+     "version": "0.11.0"
+    }
+   }
+  }
+ },
+ {
+  "direction": "<-",
+  "frame": {
+   "jsonrpc": "2.0",
+   "id": 1,
+   "result": {
+    "capabilities": {
+     "experimental": {},
+     "prompts": {
+      "listChanged": false
+     },
+     "resources": {
+      "listChanged": false,
+      "subscribe": false
+     },
+     "tools": {
+      "listChanged": false
+     }
+    },
+    "instructions": "Meridian's documents and sales warehouse. Every figure comes from a tool; nothing is remembered between calls.",
+    "protocolVersion": "2025-11-25",
+    "serverInfo": {
+     "name": "clarity",
+     "version": "0.11.0"
+    }
+   }
+  }
+ },
+ {
+  "direction": "->",
+  "frame": {
+   "jsonrpc": "2.0",
+   "method": "notifications/initialized"
+  }
+ },
+ {
+  "direction": "->",
+  "frame": {
+   "jsonrpc": "2.0",
+   "id": 2,
+   "method": "tools/list",
+   "params": {}
+  }
+ },
+ {
+  "direction": "<-",
+  "frame": {
+   "jsonrpc": "2.0",
+   "id": 2,
+   "result": {
+    "tools": [
+     {
+      "description": "Search Meridian's quarterly reviews, contracts and support tickets for a passage. Use for what happened, why, or what someone said. Do NOT use for figures that must be exact \u2014 those come from query_warehouse. Returns an empty list if nothing matches, which is an answer.",
+      "inputSchema": {
+       "properties": {
+        "query": {
+         "title": "Query",
+         "type": "string"
+        },
+        "limit": {
+         "default": 5,
+         "title": "Limit",
+         "type": "integer"
+        }
+       },
+       "required": [
+        "query"
+       ],
+       "type": "object",
+       "title": "search_documentsArguments"
+      },
+      "name": "search_documents",
+      "outputSchema": {
+       "properties": {
+        "result": {
+         "items": {
+          "additionalProperties": true,
+          "type": "object"
+         },
+         "title": "Result",
+         "type": "array"
+        }
+       },
+       "required": [
+        "result"
+       ],
+       "type": "object",
+       "title": "search_documentsOutput"
+      }
+     },
+     {
+      "description": "Compute an exact figure from the sales database \u2014 revenue, margin, orders, units \u2014 optionally by region, category, supplier or quarter. Returns the number, the query that produced it and the definition used. Do NOT use for anything outside sales, such as headcount or contract terms.",
+      "inputSchema": {
+       "properties": {
+        "question": {
+         "title": "Question",
+         "type": "string"
+        }
+       },
+       "required": [
+        "question"
+       ],
+       "type": "object",
+       "title": "query_warehouseArguments"
+      },
+      "name": "query_warehouse"
+     },
+     {
+      "description": "Evaluate an arithmetic expression over numbers you already have. Cannot look anything up. Use it rather than doing the sum yourself.",
+      "inputSchema": {
+       "properties": {
+        "expression": {
+         "title": "Expression",
+         "type": "string"
+        }
+       },
+       "required": [
+        "expression"
+       ],
+       "type": "object",
+       "title": "arithmeticArguments"
+      },
+      "name": "arithmetic",
+      "outputSchema": {
+       "properties": {
+        "result": {
+         "title": "Result",
+         "type": "number"
+        }
+       },
+       "required": [
+        "result"
+       ],
+       "type": "object",
+       "title": "arithmeticOutput"
+      }
+     },
+     {
+      "description": "Today's date, or a date offset from it. You have no clock; ask.",
+      "inputSchema": {
+       "properties": {
+        "offset_days": {
+         "default": 0,
+         "title": "Offset Days",
+         "type": "integer"
+        }
+       },
+       "type": "object",
+       "title": "todayArguments"
+      },
+      "name": "today",
+      "outputSchema": {
+       "properties": {
+        "result": {
+         "title": "Result",
+         "type": "string"
+        }
+       },
+       "required": [
+        "result"
+       ],
+       "type": "object",
+       "title": "todayOutput"
+      }
+     }
+    ]
+   }
+  }
+ },
+ {
+  "direction": "->",
+  "frame": {
+   "jsonrpc": "2.0",
+   "id": 3,
+   "method": "tools/call",
+   "params": {
+    "name": "query_warehouse",
+    "arguments": {
+     "question": "revenue in 2024 Q3"
+    }
+   }
+  }
+ },
+ {
+  "direction": "<-",
+  "frame": {
+   "jsonrpc": "2.0",
+   "id": 3,
+   "result": {
+    "content": [
+     {
+      "text": "{\n  \"rows\": [\n    [\n      8461841.81\n    ]\n  ],\n  \"sql\": \"SELECT ROUND(SUM(revenue), 2) AS value FROM v_sales WHERE year = ? AND quarter = ?\",\n  \"metric\": \"revenue\",\n  \"definition\": \"Gross of discount, net of nothing. Excludes tax and freight.\"\n}",
+      "type": "text"
+     }
+    ],
+    "isError": false
+   }
+  }
+ }
+]

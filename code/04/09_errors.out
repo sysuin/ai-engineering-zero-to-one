@@ -1,0 +1,28 @@
+1. A key that is not a key
+  AuthenticationError      authentication
+                           Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-not-a*****-key. You can 
+
+2. A model that does not exist
+  NotFoundError            wrong model name
+                           Error code: 404 - {'error': {'message': 'The model `gpt-4o-tubro` does not exist or you do not h
+
+3. A parameter this model does not accept
+  BadRequestError          temperature on a reasoning model
+                           Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.7 w
+
+4. More text than the model can hold
+  BadRequestError          context length
+                           Error code: 400 - {'error': {'message': 'Input tokens exceed the configured limit of 272000 toke
+
+5. A message list the API cannot read
+  BadRequestError          malformed messages
+                           Error code: 400 - {'error': {'message': "Invalid value: 'narrator'. Supported values are: 'syste
+
+6. A timeout you set too low
+  APITimeoutError          timeout
+                           Request timed out.
+
+7. Too many requests, too fast
+  RateLimitError           the one you cannot reliably trigger on purpose
+                          and the one you will see most. Chapter 3 is the answer:
+                          back off, add jitter, and honour Retry-After.

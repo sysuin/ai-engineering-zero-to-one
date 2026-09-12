@@ -1,0 +1,27 @@
+[
+  {
+    "kind": "answerable",
+    "question": "How many days notice is required before a price rise?",
+    "status": "answered"
+  },
+  {
+    "kind": "answerable",
+    "question": "What is the price adjustment cap?",
+    "status": "answered"
+  },
+  {
+    "kind": "not stated",
+    "question": "What is the annual contract value?",
+    "status": "not_in_document"
+  },
+  {
+    "kind": "not stated",
+    "question": "Who is the named account manager?",
+    "status": "not_in_document"
+  },
+  {
+    "kind": "ambiguous",
+    "question": "What is the notice period?",
+    "status": "question_is_ambiguous"
+  }
+]

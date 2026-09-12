@@ -1,0 +1,47 @@
+POSITION — 76 pairs, each judged twice with the sides swapped
+
+  correct answer in slot A, judge picked it   61 of 76
+  correct answer in slot B, judge picked it   15 of 76
+  judge picked slot A, either way             117 of 152
+  gave the same verdict both ways             24 of 76
+
+VERBOSITY — the same correct fact, padded with 60 true but irrelevant words,
+against the bare fact. Both are right, so a tie is the only correct answer.
+
+  the padded answer won   21 of 76
+  the bare answer won     47 of 76
+  tie                     8 of 76
+
+MITIGATION — take a verdict only when both orders agree
+
+  picked the correct answer   15 of 76
+  picked the wrong answer     9 of 76
+  refused to decide           52 of 76
+
+WITH A REFERENCE — the same pairs, the same two orders, plus the expected answer
+
+  correct answer in slot A, judge picked it   76 of 76
+  judge picked slot A, either way             76 of 152
+  gave the same verdict both ways             76 of 76
+
+Read the two accuracies against each other. Taking the first verdict as given
+is right 80% of the time. Requiring both orders to agree is right
+62% of the time on the 24 it will commit to, and admits it cannot tell on
+the other 52.
+
+The second is a better instrument and a worse product. It costs twice as much,
+it returns nothing on some fraction of cases, and that fraction is the honest
+output — those are the pairs where the judge was going to be a coin toss and
+you would never have known.
+
+The last block is the important one. The same judge, the same pairs, the
+same two orders — but told what the answer should be — picked slot A
+76 times out of 152 and agreed with itself 76 times out of 76.
+
+So most of what looks like position bias here is not really a preference for
+the left-hand side. It is what a judge does when it has no way to tell the
+answers apart: something has to be returned, and slot A is what comes out.
+
+Both readings are worth keeping. Bias is real and measurable — present the
+same content two ways and count the flips — and the first thing to try is not
+a debiasing trick but giving the judge the information it was missing.

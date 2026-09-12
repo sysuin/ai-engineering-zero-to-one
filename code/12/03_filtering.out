@@ -1,0 +1,23 @@
+Question: What was revenue and which region was weakest?
+Filter:   {'kind': 'quarterly-review', 'year': 2024, 'quarter': 3}
+Corpus:   1,454 chunks, 7 of them match the filter
+
+Post-filter — search all 1,454, keep the top 5 that match
+  returned 0 of 5 wanted
+    nothing: none of the top 5 overall happened to be from 2024 Q3
+
+Pre-filter — restrict to the 7 matching, then search
+  returned 5 of 5 wanted
+    qbr-2024-Q3.md         Revenue by region   0.569
+    qbr-2024-Q3.md         Commentary   0.518
+    qbr-2024-Q3.md         Summary   0.423
+    qbr-2024-Q3.md         Revenue by category   0.392
+    qbr-2024-Q3.md         Meridian Supply Co. — Quarterly Business   0.297
+
+Post-filtering asks for the best five overall and hopes some of them qualify.
+When the filter is selective — here, 7 chunks out of 1,454 — most of the time
+none of them do, and you return nothing while the right answer sits in the index.
+
+Pre-filtering asks for the best five among those that qualify. It always returns
+five if five exist. This is why 'does your vector database do filtered search
+properly?' is a real question and not a feature-list detail.

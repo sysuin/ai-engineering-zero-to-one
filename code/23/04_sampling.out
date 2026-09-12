@@ -1,0 +1,31 @@
+Measured on 40 requests. The question is what a sampled dashboard sees.
+
+    kept                     p50                     p95                     p99
+                    truth 3748ms            truth 8887ms           truth 10250ms
+   100%             3748-3748ms             8887-8887ms           10250-10250ms
+    50%             3440-4392ms             6200-9503ms            8467-10250ms
+    25%             3325-4392ms            5415-10250ms            5415-10250ms
+    10%             3356-7579ms            3748-10250ms            3633-10250ms
+     5%             3110-5415ms             3325-9503ms             3325-9503ms
+
+At one trace in ten, the median is still readable — 3356 to 7579ms against a
+true 3748 — and p99 has become a wide guess (3633 to 10250ms).
+
+That asymmetry is the whole of sampling policy. A median is a statement about
+the middle of the distribution and survives thinning; a p99 is a statement
+about the rarest one in a hundred, and thinning is exactly the operation that
+removes it.
+
+So do not sample uniformly. Sample the way the questions differ:
+
+  keep everything that failed        errors are rare and are the ones you
+                                     will be asked about
+  keep everything that was slow      a tail you have thrown away cannot be
+                                     investigated, only counted
+  keep everything a user marked      feedback without its trace is an opinion
+  sample the boring middle hard      1 in 100 is plenty to hold a p50 steady
+
+This is tail-based sampling, and the name is the mechanism: the decision is
+made when the trace finishes and its duration and status are known, not when
+it starts. Head-based sampling — decide at the first span — is cheaper and
+throws away precisely the traces you wanted.

@@ -1,0 +1,26 @@
+connected to clarity v0.11.0
+protocol     2025-11-25
+offers       prompts, resources, tools
+
+tools/list -> 4 tools
+  search_documents(query, limit?)
+      Search Meridian's quarterly reviews, contracts and support tickets.
+  query_warehouse(question)
+      Compute an exact figure from the sales database — revenue, margin,.
+  arithmetic(expression)
+      Evaluate an arithmetic expression over numbers you already have.
+  today(offset_days?)
+      Today's date, or a date offset from it.
+
+tools/call query_warehouse  -> [[8461841.81]]
+                               SELECT ROUND(SUM(revenue), 2) AS value FROM v_sales WHERE year
+tools/call search_documents -> 2 passages
+                               qbr-2024-Q2.md / Commentary
+                               qbr-2023-Q1.md / Revenue by region
+
+server stderr (data/meridian/server.log):
+  clarity mcp server starting on stdio
+
+Nothing in this file knows what Clarity is. It asked a process what it
+could do, was told, and called one of the answers. The client was written
+before the server existed, and that indirection is the entire point.

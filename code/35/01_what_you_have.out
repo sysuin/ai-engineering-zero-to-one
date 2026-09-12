@@ -1,0 +1,32 @@
+130 models reachable from this account on 2026-09-12.
+
+  chat           114
+  other            8
+  audio            5
+  embeddings       3
+
+The three this book names, and what they resolve to for you:
+
+  MODEL_FAST   gpt-5.4-mini            reachable           no rate set — see below
+               accepts: logprobs, max_completion_tokens, seed, temperature, top_p
+  MODEL_SMART  gpt-5.5                 reachable           no rate set — see below
+               accepts: max_completion_tokens, reasoning_effort, seed
+  MODEL_EMBED  text-embedding-3-small  reachable           no rate set — see below
+               accepts: dimensions
+
+Rates are not in this book, and that is deliberate. To fill them in:
+
+  1. Open your provider's pricing page and read the dollars per million
+     tokens for each model above — input and output are different numbers.
+  2. Put them in .env as RATE_<MODEL>_INPUT and RATE_<MODEL>_OUTPUT, with
+     the model name upper-cased and every - and . turned into _.
+  3. Re-run. Every listing in the book that reports tokens will now also
+     report dollars, using your rates rather than someone's recollection.
+
+  For gpt-5.4-mini, those two lines are:
+
+      RATE_GPT_5_4_MINI_INPUT=0.15
+      RATE_GPT_5_4_MINI_OUTPUT=0.60
+
+  (0.15 and 0.60 are placeholders standing in for a real pricing page.
+   The point is the shape of the line, not the number on it.)

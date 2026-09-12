@@ -1,0 +1,24 @@
+{
+ "approve-demo": {
+  "paused_at": "approve",
+  "asked": [
+   "query_warehouse"
+  ],
+  "decision": "yes, go ahead",
+  "approvals": [
+   "query_warehouse: approved (yes, go ahead)"
+  ],
+  "answer": "Revenue in 2024 Q3 was **$8,461,841.81**.\n\nWhat the documents say:\n- The Q3 quarterly review says revenue was **$8,461,842 across 5,579 orders**, **up 4.8% vs. the prior quarter**.\n- It also reports **gross margin of 33.1%** and **102,433 units shipped**.\n- The review attributes the main movement to **Halloway Group not renewing at the end of the previous quarter**, noting it was the **Midwest region\u2019s largest account by revenue** and that the loss was due to a **competitor\u2019s national framework agreement**, not service failure.\n\nIf you want, I can also break down the Q3 revenue by category from the document."
+ },
+ "deny-demo": {
+  "paused_at": "approve",
+  "asked": [
+   "query_warehouse"
+  ],
+  "decision": "no, the warehouse is mid-load and the numbers are wrong",
+  "approvals": [
+   "query_warehouse: denied (no, the warehouse is mid-load and the numbers are wrong)"
+  ],
+  "answer": "Revenue in 2024 Q3 was **$8,461,842**.\n\nWhat the documents say:\n- The Q3 quarterly review states: **\u201cRevenue for 2024 Q3 was $8,461,842 across 5,579 orders, up 4.8% on the prior quarter.\u201d**\n- It also notes **gross margin was 33.1%** and **102,433 units** were shipped.\n- The review attributes the movement partly to an **account loss**: **Halloway Group did not renew**, and the commercial team says the loss was due to a competitor\u2019s national framework agreement, not service failure.\n\nI could not verify the figure in the warehouse because it was unavailable/mid-load."
+ }
+}

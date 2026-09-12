@@ -1,0 +1,33 @@
+--- recording ---
+    5.8s   1,649 tokens billed   5 exchanges written to the cassette
+  Revenue in 2024 Q3 was **$8,461,841.81**. The Midwest decline was 
+  (whatever the run did, replay reproduces it — including a refusal)
+
+--- replaying, three times ---
+   0.07s   0 tokens billed   5 cassette hits, 0 misses
+   0.07s   0 tokens billed   5 cassette hits, 0 misses
+   0.07s   0 tokens billed   5 cassette hits, 0 misses
+
+  byte-identical to the recorded answer: yes, all three
+
+--- the same harness, one word of the question changed ---
+  KeyError: 'nothing recorded for this create request. The cassette has 5 entr
+
+That is the whole of it, and it changes what debugging costs.
+
+A failing run recorded once can be replayed on a colleague's laptop, in a
+test, in CI, and at three in the morning, forever, without a key and without
+a bill. It is also the only way to make a change to your *code* and know that
+a difference in behaviour came from the change rather than from the model
+having a different afternoon — §24.1 measured how often that happens.
+
+Two limits, and both matter.
+
+A cassette cannot test a prompt change. Change the prompt and the request no
+longer matches, which is exactly what the last block shows: a miss, loudly,
+rather than a plausible answer to a question you did not ask. That is the
+right behaviour and it is worth checking your recording library does it.
+
+And a cassette is a recording of a system's *inputs*, so it goes stale the
+moment the corpus changes. Keep them next to the regression cases they
+support, and regenerate them when the case stops being about what it was.

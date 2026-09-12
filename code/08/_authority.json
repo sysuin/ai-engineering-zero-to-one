@@ -1,0 +1,13 @@
+{
+  "agree_policy": 0.65,
+  "stable": 1.0,
+  "computed_ok": 1.0,
+  "model_bands": {
+    "medium": 40
+  },
+  "policy_bands": {
+    "medium": 26,
+    "high": 10,
+    "low": 4
+  }
+}

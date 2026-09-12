@@ -1,0 +1,31 @@
+As JSON text — this is what crosses the network:
+{
+  "sku": "MRD-CLE-001",
+  "qty": 480,
+  "unit_price": 12.5,
+  "in_stock": true,
+  "discontinued_on": null,
+  "tags": [
+    "cleaning",
+    "bulk"
+  ],
+  "supplier": {
+    "name": "Voss Industrial",
+    "tier": "Strategic"
+  }
+}
+
+And back again:
+  sku              str
+  qty              int
+  unit_price       float
+  in_stock         bool
+  discontinued_on  NoneType
+  tags             list
+  supplier         dict
+
+Identical after the round trip? True
+
+Dictionary with integer keys: {1: 'one', 2: 'two'}
+After a JSON round trip:       {'1': 'one', '2': 'two'}
+JSON object keys are always strings. Nothing else survives.

@@ -1,0 +1,102 @@
+{
+ "one agent": {
+  "figure": 24,
+  "cause": 21,
+  "of": 24,
+  "tokens": 2147,
+  "seconds": 5.8,
+  "calls": 3.5,
+  "per_task": [
+   {
+    "q": "What was revenue in 2024 Q3, and what does the compa",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "What was gross margin in 2025 Q1, and what explanati",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "How many support tickets relate to the 2024 Q4 quali",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "What was revenue in 2024 Q2, and what new category a",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "By how much did revenue change from 2024 Q3 to 2024 ",
+    "figure": 3,
+    "cause": 0
+   },
+   {
+    "q": "What was gross margin in 2024 Q2 versus 2025 Q1, and",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "How many orders were there in 2025 Q1, and what does",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "What was revenue in 2025 Q2, and what does the compa",
+    "figure": 3,
+    "cause": 3
+   }
+  ]
+ },
+ "supervisor + 2": {
+  "figure": 23,
+  "cause": 22,
+  "of": 24,
+  "tokens": 3726,
+  "seconds": 10.6,
+  "calls": 7.8,
+  "per_task": [
+   {
+    "q": "What was revenue in 2024 Q3, and what does the compa",
+    "figure": 3,
+    "cause": 1
+   },
+   {
+    "q": "What was gross margin in 2025 Q1, and what explanati",
+    "figure": 2,
+    "cause": 3
+   },
+   {
+    "q": "How many support tickets relate to the 2024 Q4 quali",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "What was revenue in 2024 Q2, and what new category a",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "By how much did revenue change from 2024 Q3 to 2024 ",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "What was gross margin in 2024 Q2 versus 2025 Q1, and",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "How many orders were there in 2025 Q1, and what does",
+    "figure": 3,
+    "cause": 3
+   },
+   {
+    "q": "What was revenue in 2025 Q2, and what does the compa",
+    "figure": 3,
+    "cause": 3
+   }
+  ]
+ }
+}

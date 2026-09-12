@@ -1,0 +1,20 @@
+{
+ "rows": {
+  "first answer": [
+   24,
+   21,
+   50194
+  ],
+  "after a critic": [
+   24,
+   21,
+   94337
+  ]
+ },
+ "total": 24,
+ "changed": 12,
+ "kept": 12,
+ "before": 0.9375,
+ "after": 0.9375,
+ "cost": 1.8794477427580987
+}

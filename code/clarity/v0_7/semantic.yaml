@@ -1,0 +1,65 @@
+# Meridian's semantic layer: every metric defined once, here, in SQL nobody generates.
+#
+# The point is not tidiness. "Revenue" means four different things to four teams, and a
+# model asked to compute it will pick one of them. Writing it down once means the number
+# is the same in the chat, the dashboard and the board pack — and that an auditor can
+# read the definition.
+
+metrics:
+  revenue:
+    sql: "ROUND(SUM(revenue), 2)"
+    label: "revenue"
+    note: "Gross of discount, net of nothing. Excludes tax and freight."
+  gross_profit:
+    sql: "ROUND(SUM(gross_profit), 2)"
+    label: "gross profit"
+    note: "Revenue minus cost of goods. Excludes overhead."
+  margin_pct:
+    sql: "ROUND(100.0 * SUM(gross_profit) / NULLIF(SUM(revenue), 0), 1)"
+    label: "gross margin %"
+    note: "Gross profit as a percentage of revenue."
+  orders:
+    sql: "COUNT(DISTINCT order_id)"
+    label: "orders"
+    note: "Distinct orders, not order lines."
+  units:
+    sql: "SUM(qty)"
+    label: "units"
+    note: "Units shipped."
+  skus:
+    sql: "COUNT(DISTINCT sku)"
+    label: "distinct SKUs"
+    note: "Distinct products sold."
+  cost:
+    sql: "ROUND(SUM(cost), 2)"
+    label: "cost of goods sold"
+    note: "Unit cost times quantity."
+  avg_discount:
+    sql: "ROUND(AVG(discount_pct), 3)"
+    label: "average discount %"
+    note: "Mean of the per-line discount, unweighted."
+  avg_order_value:
+    sql: "ROUND(SUM(revenue) / NULLIF(COUNT(DISTINCT order_id), 0), 2)"
+    label: "average order value"
+    note: "Revenue divided by distinct orders."
+
+# Only these columns may be grouped by or filtered on. Anything else is refused.
+dimensions: [region, category, supplier, segment, channel, customer, sku, year, quarter]
+
+# The type each dimension holds. A schema can constrain the shape of a filter and not
+# its type: the first version of this file omitted these, and the model duly filtered
+# quarter = 'Q3' against an integer column. The query ran, returned NULL, and said
+# nothing about why.
+types:
+  year: int
+  quarter: int
+  region: str
+  category: str
+  supplier: str
+  segment: str
+  channel: str
+  customer: str
+  sku: str
+
+# The only table the query builder knows about. It is a view, and §15.10 explains why.
+source: v_sales

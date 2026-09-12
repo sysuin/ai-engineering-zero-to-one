@@ -1,0 +1,9 @@
+Retrying a server that fails twice, then works:
+  attempt 1: 503
+  attempt 2: 503
+  attempt 3: 200
+  -> {'ok': True, 'succeeded_on_attempt': 3}
+
+Retrying a request that is simply wrong:
+  attempt 1: 400
+  -> not retryable: 400

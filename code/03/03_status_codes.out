@@ -1,0 +1,11 @@
+200  200 the happy path       total_revenue = 8,461,841.81
+400  400 you asked wrongly    Both 'year' and 'quarter' are required.
+401  401 who are you          Send an Authorization header: 'Bearer <your key>'.
+404  404 no such thing        No data for 2031 Q1.
+429  429 slow down            Too many requests. Slow down.
+500  500 our fault            Something broke on our side. Not your fault.
+
+The first digit is the whole story:
+  2xx  it worked
+  4xx  you did something wrong  -> fix the request, do not retry
+  5xx  they did something wrong -> retry, carefully

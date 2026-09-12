@@ -1,0 +1,22 @@
+Plain Python
+  Southwest     2,573,113.96
+  Northeast     1,976,586.89
+  Southeast     1,693,530.33
+  West          1,375,246.68
+  Midwest       1,172,492.08
+
+pandas
+  Southwest     2,573,113.96
+  Northeast     1,976,586.89
+  Southeast     1,693,530.33
+  West          1,375,246.68
+  Midwest       1,172,492.08
+
+SQL
+  Southwest     2,573,113.96
+  Northeast     1,976,586.89
+  Southeast     1,693,530.33
+  West          1,375,246.68
+  Midwest       1,172,492.08
+
+All three agree: True

@@ -1,0 +1,43 @@
+# Everything the book runs on, grouped by the part that first needs it.
+#
+# Lower bounds, not pins. A pin in a book is a promise that expires; a lower bound says
+# what the code assumes and lets you take the fix that shipped last week. Pin in your
+# own project — in a lockfile, not here.
+
+# --- Parts I & II: the language, the API, the prompt
+requests>=2.31
+python-dotenv>=1.0
+openai>=2.0
+pydantic>=2.7
+tiktoken>=0.7
+pyyaml>=6.0
+pandas>=2.0
+
+# --- Part III: embeddings, vectors, retrieval, the warehouse
+numpy>=1.26
+chromadb>=0.5         # §12.6 only — one listing, to show what a store gives you
+hnswlib>=0.8          # §12.3 only — the approximate index, when exact stops fitting
+pdfplumber>=0.11      # §13.2, extracting text from documents that are not text
+
+# --- Part IV: tools, agents, frameworks, MCP
+langgraph>=0.2        # Ch 18, the framework chapter — not a dependency of Clarity
+langchain-core>=0.3
+langchain-openai>=0.2
+mcp>=1.0              # Ch 19
+
+# --- Parts V & VI: serving, evaluating, observing, shipping
+fastapi>=0.111
+uvicorn[standard]>=0.30
+httpx>=0.27
+sqlalchemy>=2.0
+opentelemetry-api>=1.25
+opentelemetry-sdk>=1.25
+
+# --- The toolchain the repository itself uses
+pytest>=8.0
+ruff>=0.5
+pypdf>=4.0            # the build's page-count check
+
+# --- Optional, and only for docker compose: Postgres and Redis instead of files
+# psycopg[binary]>=3.1
+# redis>=5.0

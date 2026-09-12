@@ -1,0 +1,96 @@
+{
+ "deep": [
+  {
+   "name": "clarity.request",
+   "span_id": "f73f2671eca5d64c",
+   "parent": null,
+   "start": 1789225400456684000,
+   "ms": 5490.472,
+   "tokens_in": 0,
+   "tokens_out": 0,
+   "cost": 0.0
+  },
+  {
+   "name": "model.call",
+   "span_id": "fbd6e472abbe31a7",
+   "parent": "f73f2671eca5d64c",
+   "start": 1789225400456773000,
+   "ms": 1169.752,
+   "tokens_in": 414,
+   "tokens_out": 78,
+   "cost": 0.000109
+  },
+  {
+   "name": "tool.query_warehouse",
+   "span_id": "5563b92ae695aa2f",
+   "parent": "f73f2671eca5d64c",
+   "start": 1789225401626969000,
+   "ms": 1563.476,
+   "tokens_in": 0,
+   "tokens_out": 0,
+   "cost": 0.0
+  },
+  {
+   "name": "model.parse",
+   "span_id": "8060d5ac040091b0",
+   "parent": "5563b92ae695aa2f",
+   "start": 1789225401627058000,
+   "ms": 1061.229,
+   "tokens_in": 742,
+   "tokens_out": 65,
+   "cost": 0.00015
+  },
+  {
+   "name": "tool.search_documents",
+   "span_id": "58ab14deeebb4411",
+   "parent": "f73f2671eca5d64c",
+   "start": 1789225403190766000,
+   "ms": 1627.958,
+   "tokens_in": 0,
+   "tokens_out": 0,
+   "cost": 0.0
+  },
+  {
+   "name": "model.embed",
+   "span_id": "6c65ad94f1782568",
+   "parent": "58ab14deeebb4411",
+   "start": 1789225403190838000,
+   "ms": 620.088,
+   "tokens_in": 16,
+   "tokens_out": 0,
+   "cost": 0.0
+  },
+  {
+   "name": "model.parse",
+   "span_id": "42df02d53f1d4935",
+   "parent": "58ab14deeebb4411",
+   "start": 1789225403811212000,
+   "ms": 1001.43,
+   "tokens_in": 177,
+   "tokens_out": 22,
+   "cost": 4e-05
+  },
+  {
+   "name": "model.call",
+   "span_id": "a42b7a706d204b51",
+   "parent": "f73f2671eca5d64c",
+   "start": 1789225404818988000,
+   "ms": 1128.069,
+   "tokens_in": 1072,
+   "tokens_out": 97,
+   "cost": 0.000219
+  }
+ ],
+ "shallow_ids": [
+  "f73f2671eca5d64c",
+  "fbd6e472abbe31a7",
+  "5563b92ae695aa2f",
+  "58ab14deeebb4411",
+  "a42b7a706d204b51"
+ ],
+ "total_ms": 5490.472,
+ "cost": 0.000518,
+ "shallow_share": 0.41851064899338347,
+ "deep_share": 0.9071292959876674,
+ "placeholder": true
+}

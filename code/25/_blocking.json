@@ -1,0 +1,10 @@
+{
+ "concurrent": 10,
+ "work": 0.4,
+ "serial": 4.0,
+ "results": {
+  "async def + time.sleep()": 4.050891582999611,
+  "asyncio.to_thread()": 0.41383254200081865,
+  "asyncio.sleep()": 0.41065054099999543
+ }
+}

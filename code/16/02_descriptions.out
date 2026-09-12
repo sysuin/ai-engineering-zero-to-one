@@ -1,0 +1,16 @@
+terse              11/12  92%
+     What was total revenue in 2024 Q3?               chose search, wanted query
+written properly   12/12  100%
+
+A modest difference, and an honest one: one question in twelve.
+
+The failure is the interesting part. With a terse description, 'What was total
+revenue in 2024 Q3?' went to the document search — and that is not unreasonable,
+because a quarterly review does discuss revenue. What the written description
+adds is the sentence that settles it: 'do NOT use for numbers that must be
+exact — those come from query'.
+
+Two things follow. Name tools well: the first version of this listing used names
+like query_warehouse, and both conditions scored 100% because the names were
+doing the work. And when two tools overlap, write the 'do NOT use for' clause,
+because that is the half that disambiguates and the half everyone omits.

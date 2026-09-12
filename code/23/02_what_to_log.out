@@ -1,0 +1,44 @@
+=== the attribute as the caller passes it ===
+
+  970 characters
+  From: dana.okafor@halloway-group.example — our API key sk-live-9f2b71c4ae8d55 stopped working af…
+
+=== the attribute as it reaches the span ===
+
+  414 characters
+  From: [redacted:email] — our API key [redacted:secret] stopped working after the migration. Esca…
+  …s 33.1%. We shipped 102,433 unit… [+547 chars]
+
+  removed:
+    the email address   gone
+    the API key         gone
+    the document body   truncated at 400 characters (556 characters dropped)
+
+=== one retrieval, measured ===
+
+  passages returned to the model   2,121 characters
+  characters stored on spans       103
+  ratio                            21x smaller
+
+The span records that six passages came back and how many characters they
+were. It does not record the passages. That is the whole rule, and it is not
+about privacy alone — a trace carrying its own retrieved context is a copy of
+your corpus, shipped to a third party, kept for ninety days, readable by
+everyone with a dashboard login.
+
+Three things that belong on every model span, and nothing else:
+
+  identity     model, tenant, request id, prompt version
+  shape        token counts, result counts, latency, cost
+  decisions    which tools were chosen, whether it answered or refused
+
+Three that never do:
+
+  the prompt and the completion, in full
+  retrieved documents, rows, or any user content
+  anything that arrived in a header
+
+If you need the text to debug — and sometimes you do — put it somewhere with
+its own retention and its own access list, and put the *pointer* on the span.
+§24.2 builds that, because reproducing a bad run needs the input and the trace
+is the wrong place to keep it.

@@ -1,0 +1,4 @@
+Timed out after 1.5s, as instructed. The program is still in control.
+With a longer timeout: 200 {'ok': True, 'slept': '0.5'}
+
+Rule: every request in this book passes `timeout=`. There is no exception.

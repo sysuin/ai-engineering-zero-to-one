@@ -1,0 +1,49 @@
+Q: What was revenue in 2024 Q3, and what caused the Midwest decline?
+
+=== what a shallow trace shows ===
+
+  span                                         time tok in/out     cost
+  clarity.request        ##################  5490ms                  
+    model.call           ###                 1170ms  414/78  $0.00011
+    tool.query_warehouse    #####            1563ms                  
+    tool.search_documents        #####       1628ms                  
+    model.call                         ###   1128ms 1072/97  $0.00022
+
+  5 spans; 2298ms of 5490ms sits inside a span named model.* (42%)
+
+=== the same trace, nothing re-run, nothing dropped ===
+
+  clarity.request        ##################  5490ms                  
+    model.call           ###                 1170ms  414/78  $0.00011
+    tool.query_warehouse    #####            1563ms                  
+      model.parse           ###              1061ms  742/65  $0.00015
+    tool.search_documents        #####       1628ms                  
+      model.embed                ##           620ms   16/0           
+      model.parse                  ###       1001ms  177/22  $0.00004
+    model.call                         ###   1128ms 1072/97  $0.00022
+
+  8 spans, 5490ms end to end, $0.00052
+  4981ms of it is a model call (91%)
+
+  (dollar figures use placeholder rates — this book does not print a price
+   list, because one printed with confidence is worse than none. Set RATE_*
+   in .env from the provider's page and the numbers become yours.)
+
+Read the shape first. The tool spans are siblings of the model calls, not
+children, because the agent alternates: ask, run, ask again. A waterfall makes
+that obvious in a way no log file does, and it is the first thing you want when
+a run takes six seconds and nobody can say which part.
+
+Then read the two shares. On the shallow view 42% of the run is model
+latency and the rest is 'the tools being slow'. On the deep view it is 91%,
+because 3 of those spans are model calls that were happening inside the tools
+all along — the QuerySpec planner from §15.7, and an embedding call for the
+query.
+
+Nothing was re-run between those two blocks. It is one trace, filtered.
+
+That is the sharpest thing tracing teaches, and it is not a technique. A trace
+is only as deep as your instrumentation, and an uninstrumented call does not
+show up as missing — it shows up as its caller being slow. Your first trace
+tells you where your instrumentation stops. The second one starts telling you
+about the system.

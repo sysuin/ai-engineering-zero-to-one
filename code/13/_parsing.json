@@ -1,0 +1,23 @@
+{
+  "an ordinary report": {
+    "file": "qbr-2024-Q3.pdf",
+    "pages": 1,
+    "pypdf_chars": 1476,
+    "pdfplumber_chars": 1476,
+    "tables": 0
+  },
+  "a two-column page": {
+    "file": "01-newsletter-two-column.pdf",
+    "pages": 1,
+    "pypdf_chars": 675,
+    "pdfplumber_chars": 664,
+    "tables": 0
+  },
+  "a scan": {
+    "file": "06-goods-received-note-SCANNED.pdf",
+    "pages": 1,
+    "pypdf_chars": 0,
+    "pdfplumber_chars": 0,
+    "tables": 0
+  }
+}

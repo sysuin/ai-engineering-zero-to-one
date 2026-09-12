@@ -1,0 +1,30 @@
+'Meridian Supply Co.'
+   5 tokens: ['Mer', 'idian', ' Supply', ' Co', '.']
+   ids:        [18280, 57209, 43268, 4642, 13]
+
+'unbelievable'
+   3 tokens: ['un', 'bel', 'ievable']
+   ids:        [373, 9880, 45794]
+
+'MRD-CLE-001'
+   6 tokens: ['MR', 'D', '-C', 'LE', '-', '001']
+   ids:        [27029, 35, 10050, 1400, 12, 7659]
+
+'$8,461,842'
+   6 tokens: ['$', '8', ',', '461', ',', '842']
+   ids:        [3, 23, 11, 37664, 11, 49944]
+
+'Halloway'
+   3 tokens: ['H', 'allow', 'ay']
+   ids:        [39, 10180, 356]
+
+'strawberry'
+   3 tokens: ['st', 'raw', 'berry']
+   ids:        [302, 1618, 19772]
+
+'  leading spaces matter'
+   4 tokens: [' ', ' leading', ' spaces', ' matter']
+   ids:        [220, 8117, 18608, 7165]
+
+Notice: a token is not a word and not a letter. Common words are one token.
+Rare names, product codes and numbers get chopped into pieces.

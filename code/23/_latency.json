@@ -1,0 +1,214 @@
+{
+ "latency": [
+  3109.75,
+  3126.286,
+  3127.055,
+  3167.277,
+  3204.998,
+  3209.973,
+  3211.131,
+  3227.24,
+  3304.234,
+  3324.668,
+  3356.211,
+  3390.907,
+  3403.214,
+  3412.463,
+  3427.854,
+  3439.702,
+  3493.618,
+  3620.507,
+  3632.656,
+  3731.207,
+  3747.527,
+  3805.184,
+  3818.271,
+  3969.285,
+  4185.553,
+  4295.737,
+  4391.618,
+  4567.253,
+  5113.842,
+  5224.256,
+  5415.182,
+  5619.857,
+  6199.591,
+  6288.952,
+  6393.29,
+  7579.222,
+  8466.877,
+  8887.411,
+  9503.331,
+  10249.75
+ ],
+ "n": 40,
+ "mean": 4616.0735,
+ "p50": 3747.527,
+ "p90": 7579.222,
+ "p95": 8887.411,
+ "p99": 10249.75,
+ "max": 10249.75,
+ "min": 3109.75,
+ "kinds": [
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "document",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "warehouse",
+   "steps": 1
+  },
+  {
+   "kind": "composite",
+   "steps": 2
+  },
+  {
+   "kind": "composite",
+   "steps": 2
+  },
+  {
+   "kind": "composite",
+   "steps": 2
+  },
+  {
+   "kind": "composite",
+   "steps": 1
+  },
+  {
+   "kind": "composite",
+   "steps": 2
+  },
+  {
+   "kind": "composite",
+   "steps": 2
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 2
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 3
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 1
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 1
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 4
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 3
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 1
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 2
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 4
+  },
+  {
+   "kind": "unanswerable",
+   "steps": 2
+  }
+ ]
+}

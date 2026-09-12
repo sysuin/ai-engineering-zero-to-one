@@ -1,0 +1,58 @@
+A score of 85%, at five different sample sizes.
+
+      n  passed  95% interval      width   can it see a 3-point gain?
+     20      17  64.0% - 94.8%      30.8pt   no
+     50      42  71.5% - 91.7%      20.2pt   no
+    120     102  77.5% - 90.3%      12.8pt   no
+    500     425  81.6% - 87.9%       6.3pt   no
+   2000    1700  83.4% - 86.5%       3.1pt   yes
+
+The interval shrinks with the square root of n, which is the single most
+expensive fact in evaluation: to halve the width you need four times the cases.
+
+At n=120, the two methods agree to within a point, as they should:
+
+  Wilson      77.5% - 90.3%
+  bootstrap   78.3% - 90.8%
+
+Use Wilson for a simple pass rate. Use the bootstrap when the score is anything
+more complicated than counting successes, because it does not care what shape the
+statistic is.
+
+
+Is 84% better than 81%? It depends entirely on n.
+
+   n each  A               B               overlap?  proper test   verdict
+       50  71%-92%         67%-89%         yes       p=0.603       nothing yet
+      120  77%-90%         73%-87%         yes       p=0.497       nothing yet
+      400  80%-87%         77%-85%         yes       p=0.264       nothing yet
+     1500  82%-86%         79%-83%         yes       p=0.031       A is better
+     3000  83%-85%         80%-82%         no        p=0.002       A is better
+     6000  83%-85%         80%-82%         no        p=0.000       A is better
+
+Two things to take from that table.
+
+The first is how large n has to be. A three-point difference needs thousands of
+cases before a proper test will call it, and almost nobody has thousands of cases.
+That is not a reason to despair; it is a reason to stop arguing about three points.
+
+The second is that 'do the intervals overlap' is much more conservative than the
+test. It says 'nothing yet' well past the point where the test says otherwise — so
+it is a safe instinct at a whiteboard and the wrong instrument for a decision.
+
+
+And there is a much cheaper way: run both systems on the SAME cases.
+
+  both correct          92
+  both wrong            12
+  only A correct        11   <- the signal
+  only B correct         5   <- the signal
+
+  A scores 86%, B scores 81% — a 5-point gap over 120 cases.
+  But the comparison rests on only 16 cases, because the 104 where they
+  agree carry no information about which is better.
+
+  McNemar's exact test on those 16: p = 0.105 (not significant at 0.05)
+
+Pairing removes the case-to-case variation that dominates an unpaired
+comparison, and it is free: you were going to run both systems anyway.

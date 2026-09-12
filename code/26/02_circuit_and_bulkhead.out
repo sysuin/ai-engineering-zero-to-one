@@ -1,0 +1,47 @@
+60 calls; the provider is down for the middle third.
+
+                              seconds    ok  failed  shed  upstream calls
+  no protection                  8.2s    40      20     0              60
+  retry only                    40.6s    40      20     0             120
+  retry + circuit breaker        6.0s    20       3    37              32
+
+Read the last column first. A retry loop turned 60 calls into 120,
+and every one of those extra calls landed on a provider that was already
+failing. That is the retry stampede: the moment a dependency wobbles, its
+load goes up rather than down.
+
+The breaker cut it to 32 and the window from 41s to 6s, by giving up
+quickly instead of slowly — 37 calls were shed without being tried at all.
+
+Now read the cost, because there is one. Successes fell from 40 to 20: the
+breaker sheds every call while it is open, and some of those would have
+succeeded — the provider came back before the cooldown expired and the
+breaker did not know yet.
+
+That is the trade, and it is not optional. A breaker converts slow failures
+into fast ones and pays for it with false negatives during recovery. Tune the
+cooldown too long and you are down after the provider is up; too short and
+you are back to the stampede.
+
+--- and the failure mode a breaker does not catch ---
+
+  twenty calls over six workers: twelve to a slow dependency, eight to a
+  fast endpoint that has nothing to do with it
+
+                               window  slow ok  shed   fast p95
+  every worker available         0.8s       12     0       827ms
+  bulkhead of 2                  0.4s        2    10        24ms
+
+Nothing errored in either run, so no breaker would have tripped. The
+dependency is not broken — it has become slow, which is more common and more
+dangerous, because a slow dependency quietly consumes every worker in the
+process and takes down the endpoints that do not use it at all.
+
+Read the last column. The fast endpoint's p95 went from 827ms to 24ms —
+35x — and it has nothing to do with the slow dependency. Without the bulkhead it
+spent its life queued behind twelve calls it never made.
+
+The bulkhead paid for that by shedding 10 calls to the slow dependency. That is a
+real cost and the entire point: you have decided, in advance, which work is
+allowed to consume the process. Decide it in advance or the slowest dependency
+decides it for you.

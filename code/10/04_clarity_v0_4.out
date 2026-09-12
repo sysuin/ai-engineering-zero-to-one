@@ -1,0 +1,19 @@
+document      29,630 tokens
+chunks        401, median 74 tokens
+orphaned      0  (chunks that no longer say what they are about)
+
+Q: What revision is specification item 205 at?
+   sent 54 chunk(s), 4,049 prompt tokens (13.7% of the document)
+   A: Revision 2.
+
+Q: Is specification item 118 approved for food-contact use?
+   sent 54 chunk(s), 4,051 prompt tokens (13.7% of the document)
+   A: Yes. Specification item 118 is approved for food-contact use.
+
+Q: What is the emergency depot override code?
+   sent 54 chunk(s), 4,048 prompt tokens (13.7% of the document)
+   A: NOT IN THE EXCERPTS
+
+The third question has no answer in this document, and Clarity says so rather
+than producing something. That escape hatch is Chapter 9, and it becomes the
+abstention gate in Chapter 13.

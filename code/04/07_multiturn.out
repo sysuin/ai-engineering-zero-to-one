@@ -1,0 +1,19 @@
+Turn 1
+  sent 2 messages, 36 prompt tokens
+  you:   Meridian's Midwest region lost its largest account in 2024 Q3.
+  model: Understood.
+
+Turn 2
+  sent 4 messages, 56 prompt tokens
+  you:   What was the region called again?
+  model: Midwest.
+
+Conversation now held in `messages`:
+  system    You are terse. One short sentence per answer.
+  user      Meridian's Midwest region lost its largest account in 2024 Q3.
+  assistant Understood.
+  user      What was the region called again?
+  assistant Midwest.
+
+The second turn cost more than the first because it resent the first.
+This is why a long conversation gets steadily more expensive.

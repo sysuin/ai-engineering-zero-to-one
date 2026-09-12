@@ -1,0 +1,30 @@
+{
+  "n_questions": 10,
+  "document_tokens": 29630,
+  "results": {
+    "stuff the whole thing": {
+      "correct": 10,
+      "prompt_tokens": 296570,
+      "cached_tokens": 147200,
+      "completion_tokens": 40,
+      "seconds": 10.5,
+      "calls": 10
+    },
+    "map-reduce, then ask": {
+      "correct": 10,
+      "prompt_tokens": 62085,
+      "cached_tokens": 11264,
+      "completion_tokens": 3256,
+      "seconds": 10.5,
+      "calls": 18
+    },
+    "select, then ask": {
+      "correct": 10,
+      "prompt_tokens": 1010,
+      "cached_tokens": 0,
+      "completion_tokens": 40,
+      "seconds": 8.3,
+      "calls": 10
+    }
+  }
+}

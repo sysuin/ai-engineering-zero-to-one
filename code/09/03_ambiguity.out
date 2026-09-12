@@ -1,0 +1,30 @@
+[answerable] How many days notice is required before a price rise?
+   plain      A price rise requires **not less than 30 days’ written notice** under clause 2.2.
+   with hatch status=answered
+              answer='“on not less than 30 days written notice.”'
+
+[answerable] What is the price adjustment cap?
+   plain      The price adjustment cap is **3% in aggregate**.  The Supplier may adjust prices **once in any t
+   with hatch status=answered
+              answer='“The Supplier may adjust prices once in any twelve month period, by no'
+
+[not stated] What is the annual contract value?
+   plain      The **annual contract value cannot be determined from the text provided** because **Schedule 2**
+   with hatch status=not_in_document
+
+[not stated] Who is the named account manager?
+   plain      The contract does not name an account manager.
+   with hatch status=not_in_document
+
+[ambiguous] What is the notice period?
+   plain      The agreement gives **180 days’ written notice** for termination for convenience under clause 7.
+   with hatch status=question_is_ambiguous
+              needs='The contract contains more than one notice period: 30 days written not'
+
+The structured version classified 5 of 5 correctly.
+
+The contract does not name an account manager and never mentions annual value.
+Asked plainly, the model must produce something, because producing something is
+what it does. Given a status field with somewhere else to go, it goes there.
+
+'I don't know' has to be a representable value before a model can choose it.

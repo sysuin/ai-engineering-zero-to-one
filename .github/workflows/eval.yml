@@ -1,0 +1,61 @@
+name: evaluations
+
+# Two triggers, two budgets. This split is the whole of §22.11: a full run on every
+# push costs more than it is worth, and no run at all is how a system decays quietly.
+on:
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"          # Monday morning, before anyone is awake to argue
+  workflow_dispatch:
+
+jobs:
+  fast:
+    # Every pull request: the layers that cost nothing, plus a small sample of the rest.
+    runs-on: ubuntu-latest
+    # Empty on a fork's pull request and on a repository with no secret configured. The
+    # steps that spend money check for it and step aside, rather than failing a build that
+    # has nothing wrong with it.
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: golden set integrity
+        run: pytest tests/test_evals.py::test_golden_set_is_intact -q
+      - name: generate the Meridian dataset
+        # Not committed — it regenerates from a fixed seed in about forty seconds, with no
+        # network. Without it there is nothing for the evaluation to read.
+        if: env.OPENAI_API_KEY != ''
+        run: python3 code/meridian/generate.py
+      - name: sampled evaluation
+        if: env.OPENAI_API_KEY != ''
+        env:
+          EVAL_SAMPLE: "24"
+        run: pytest tests/test_evals.py -q
+
+  full:
+    # Weekly: all 120 cases, and the mutation test that proves the suite can fail.
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: generate the Meridian dataset
+        if: env.OPENAI_API_KEY != ''
+        run: python3 code/meridian/generate.py
+      - name: full evaluation
+        if: env.OPENAI_API_KEY != ''
+        env:
+          EVAL_SAMPLE: "0"
+        run: pytest tests/test_evals.py -q
+      - name: mutation test the suite
+        if: env.OPENAI_API_KEY != ''
+        run: python3 code/22/05_mutation.py

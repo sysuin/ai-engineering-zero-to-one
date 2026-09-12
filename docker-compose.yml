@@ -1,0 +1,37 @@
+# Clarity and the two things it needs. Enough to run the whole book locally, and
+# close enough to production that the differences are worth knowing about.
+services:
+  api:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      # From the host environment, never from a file in the image. §26.9.
+      OPENAI_API_KEY: ${OPENAI_API_KEY:?set OPENAI_API_KEY before starting}
+      DATABASE_URL: postgresql+psycopg://clarity:clarity@db:5432/clarity
+      REDIS_URL: redis://cache:6379/0
+    depends_on:
+      db: {condition: service_healthy}
+      cache: {condition: service_started}
+
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: clarity
+      POSTGRES_PASSWORD: clarity
+      POSTGRES_DB: clarity
+    healthcheck:
+      # The API waits for this rather than retrying a connection in a loop, which
+      # turns a startup race into a dependency the platform understands.
+      test: ["CMD-SHELL", "pg_isready -U clarity"]
+      interval: 5s
+      retries: 10
+    volumes: ["clarity-db:/var/lib/postgresql/data"]
+
+  cache:
+    image: redis:7-alpine
+    # No volume on purpose. Redis holds the cache, the rate-limit counters and the
+    # queue — §25.6 — and nothing here is worth keeping across a restart. Anything
+    # that is belongs in Postgres.
+
+volumes:
+  clarity-db:

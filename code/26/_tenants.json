@@ -1,0 +1,10 @@
+{
+ "scoped query": {
+  "returned": 2,
+  "leaked": 0
+ },
+ "missing WHERE": {
+  "returned": 3,
+  "leaked": 1
+ }
+}

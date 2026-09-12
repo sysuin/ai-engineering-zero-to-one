@@ -1,0 +1,23 @@
+Signal 1 — the similarity of the best chunk
+
+  answerable    min 0.339   mean 0.524   max 0.606
+  unanswerable  min 0.298   mean 0.474   max 0.605
+  overlap:      10 unanswerable questions score at least as high as the worst answerable one
+  the best possible threshold is 0.390, and it gets 62% right
+
+Signal 2 — asking the model whether the excerpts answer it
+
+  correct       20/24  83%
+  answered when it should not have  0
+  refused when it could have        4
+      What was total revenue in 2024 Q3?
+      What explanation does the company give for the Midwest fall?
+      How many days notice is required before a price rise under MSC-2022-100?
+      Which law governs the supplier agreements?
+
+The scores overlap, so no threshold separates the two groups — and this is not
+a tuning problem. Chapter 11 explained why: similarity ranks candidates against
+each other, and something always ranks first.
+
+Reading the retrieved text and asking whether it actually answers the question
+is a different kind of signal, and it costs one extra call.

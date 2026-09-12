@@ -1,0 +1,32 @@
+10 concurrent requests, each doing 0.4s of waiting.
+
+  perfectly concurrent would be 0.4s; fully serial would be 4.0s.
+
+  async def + time.sleep()      4.05s  #########################################
+  asyncio.to_thread()           0.41s  ####
+  asyncio.sleep()               0.41s  ####
+
+  the blocking version is 10x slower than the other two,
+  and within 1% of doing the work one request at a time
+
+The `async def` did nothing. An event loop is cooperative: a coroutine keeps
+the thread until it awaits something, and `time.sleep` never awaits. Ten
+requests arrive, the first one seizes the loop for four hundred milliseconds,
+and the other nine sit in a queue that no dashboard calls a queue.
+
+What makes this the number one async bug is not the mechanism, it is the
+symptom. Throughput collapses and every single request still looks fast in the
+logs: each one took 0.4s of work, and the nine that waited do not record what
+they were waiting for. The latency is real and lives nowhere you are looking —
+which is exactly the sort of thing §23.2 says to read a trace for.
+
+Three ways to be wrong about this, in order of how often they happen:
+
+  a sync client in an async endpoint    the case above; wrap it in to_thread
+  a CPU-bound step anywhere at all      tokenising, parsing a large document,
+                                        an embedding computed locally
+  a lock or a file read you forgot      logging to a file with a sync handler
+                                        does this under load
+
+And the way to find it: if p95 degrades as concurrency rises while the work
+per request stays flat, you are looking at a blocked loop, not a slow model.

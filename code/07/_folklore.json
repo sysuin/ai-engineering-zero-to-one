@@ -1,0 +1,30 @@
+{
+  "plain": {
+    "well specified": 1.0,
+    "underspecified": 0.125
+  },
+  "polite": {
+    "well specified": 1.0,
+    "underspecified": 0.125
+  },
+  "urgent": {
+    "well specified": 1.0,
+    "underspecified": 0.125
+  },
+  "expert framing": {
+    "well specified": 1.0,
+    "underspecified": 0.125
+  },
+  "offered a tip": {
+    "well specified": 1.0,
+    "underspecified": 0.125
+  },
+  "threatened": {
+    "well specified": 1.0,
+    "underspecified": 0.125
+  },
+  "deep breath": {
+    "well specified": 1.0,
+    "underspecified": 0.125
+  }
+}

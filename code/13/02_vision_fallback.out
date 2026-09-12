@@ -1,0 +1,31 @@
+06-goods-received-note-SCANNED.pdf: 1 page(s), 71 KB of image
+
+# Goods received note
+
+**GRN number:** GRN-2025-04471 Received: 14 November 2025, 09:42 **Depot:** Columbus (Mid-west) **Carrier:** Penhale Rubber own fleet
+
+| Line | SKU       | Expected | Received | Condition |
+|------|-----------|----------|----------|-----------|
+| 1    | MRD-CLE-001 | 480      | 480      | Good      |
+| 2    | MRD-CLE-004 | 240      | 228      | 12 short  |
+| 3    | MRD-SAF-011 | 100      | 100      | Good      |
+
+Discrepancy on line 2 reported to Procurement the same day. Signed: Depot Supervisor, Columbus.
+
+1
+
+[2617 prompt tokens, of which the image is most]
+
+Facts recovered: 6/6   ['GRN-2025-04471', 'Columbus', 'MRD-CLE-004', '480', '228', '12 short']
+
+Region spelled: Mid-west   (the document says Midwest)
+Every fact came through, and the region acquired a hyphen. A human reader would
+not notice; an exact metadata match on 'Midwest' would fail. Transcription is
+good enough to search and not good enough to key on.
+
+Reading an image costs far more than reading text — the tokens above are almost
+all image. Do it once, at indexing time, and store the transcription. Doing it
+per query would be paying to re-read the same page forever.
+
+And treat the result as data, not as truth: it is a model's reading of a picture
+of a document. Chapter 29 treats anything that arrives this way as hostile.

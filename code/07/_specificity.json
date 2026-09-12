@@ -1,0 +1,26 @@
+{
+  "vague": {
+    "accuracy": 0.125,
+    "usable": 0.0,
+    "tokens": 48.875,
+    "example": "**180 days\u2019 written notice** for termination for convenience under cla"
+  },
+  "specific": {
+    "accuracy": 1.0,
+    "usable": 0.0,
+    "tokens": 21.0,
+    "example": "The Supplier must give **at least 30 days\u2019 written notice** before a p"
+  },
+  "specific + format": {
+    "accuracy": 1.0,
+    "usable": 1.0,
+    "tokens": 4.0,
+    "example": "30"
+  },
+  "specific + format + where": {
+    "accuracy": 1.0,
+    "usable": 1.0,
+    "tokens": 4.0,
+    "example": "30"
+  }
+}

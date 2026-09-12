@@ -1,0 +1,24 @@
+{
+ "healthy": {
+  "label": "healthy",
+  "errors": 0,
+  "p95_ms": 8440.695,
+  "tokens": 2195.681818181818,
+  "correct": 19,
+  "of": 22,
+  "judge": 9,
+  "judge_of": 10,
+  "refusals": 3
+ },
+ "broken": {
+  "label": "retrieval quietly ranking backwards",
+  "errors": 0,
+  "p95_ms": 4430.008,
+  "tokens": 1610.8181818181818,
+  "correct": 8,
+  "of": 22,
+  "judge": 1,
+  "judge_of": 10,
+  "refusals": 14
+ }
+}

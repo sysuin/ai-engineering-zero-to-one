@@ -1,0 +1,66 @@
+{
+  "rows": [
+    {
+      "question": "How long do we have to settle an invoice?",
+      "want": "3",
+      "bm25": "3",
+      "semantic": "3"
+    },
+    {
+      "question": "What is the ceiling on a price increase?",
+      "want": "2",
+      "bm25": "2",
+      "semantic": "2"
+    },
+    {
+      "question": "Can we walk away from this agreement early?",
+      "want": "7",
+      "bm25": "5",
+      "semantic": "7"
+    },
+    {
+      "question": "What if the goods turn up broken?",
+      "want": "5",
+      "bm25": "5",
+      "semantic": "5"
+    },
+    {
+      "question": "How much can we claim if they cause us a loss?",
+      "want": "6",
+      "bm25": "6",
+      "semantic": "6"
+    },
+    {
+      "question": "Do they have to hit a delivery target?",
+      "want": "4",
+      "bm25": "4",
+      "semantic": "4"
+    },
+    {
+      "question": "Which country's courts decide a dispute?",
+      "want": "8",
+      "bm25": "1",
+      "semantic": "8"
+    },
+    {
+      "question": "What are they actually selling us?",
+      "want": "1",
+      "bm25": "8",
+      "semantic": "4"
+    },
+    {
+      "question": "How much warning before they charge us more?",
+      "want": "2",
+      "bm25": "2",
+      "semantic": "2"
+    },
+    {
+      "question": "Is there a penalty for repeated late shipments?",
+      "want": "4",
+      "bm25": "6",
+      "semantic": "4"
+    }
+  ],
+  "bm25": 0.6,
+  "semantic": 0.9
+}

@@ -1,0 +1,6 @@
+About to multiply 480 by 12.5
+Traceback (most recent call last):
+  File "code/02/08_broken_types.py", line 9, in <module>
+    print(qty * unit_price)
+          ~~~~^~~~~~~~~~~~
+TypeError: can't multiply sequence by non-int of type 'float'

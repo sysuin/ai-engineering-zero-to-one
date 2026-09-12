@@ -1,0 +1,23 @@
+variant               well specified    underspecified
+------------------------------------------------------
+plain                        100.0%            12.5%
+polite                       100.0%            12.5%
+urgent                       100.0%            12.5%
+expert framing               100.0%            12.5%
+offered a tip                100.0%            12.5%
+threatened                   100.0%            12.5%
+deep breath                  100.0%            12.5%
+
+well specified: spread between best and worst = 0.0%
+
+underspecified: spread between best and worst = 0.0%
+
+40 contracts, both columns. Nothing moves.
+
+The second column matters more than the first. A prompt already at 100% has no
+room to improve, so a flat result there proves little. The underspecified prompt
+has 87 points of headroom, and politeness, urgency, expertise, tips, threats and
+breathing exercises recover none of them.
+
+What does recover them is saying which clause you mean. That is the previous
+listing, and it is the whole of prompt engineering in one sentence.

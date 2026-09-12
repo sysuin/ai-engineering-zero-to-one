@@ -1,0 +1,10 @@
+{
+  "negation": 0.8776148081707205,
+  "identifiers": 0.9724911368391778,
+  "relevance": {
+    "the right answer": 0.49775232941396885,
+    "a related clause": 0.21107304613233374,
+    "a different document": 0.10758410404355705,
+    "complete nonsense": 0.03013581813834534
+  }
+}

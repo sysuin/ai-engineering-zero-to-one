@@ -1,0 +1,195 @@
+{
+ "files": 31,
+ "total": 3215,
+ "platform": 811,
+ "evals": 355,
+ "answering": 2049,
+ "rows": [
+  {
+   "file": "clarity/config.py",
+   "chapter": 4,
+   "lines": 75,
+   "summary": "Every setting in one place \u2014 and the only place in this book that names a model."
+  },
+  {
+   "file": "clarity/v0_1/summarize.py",
+   "chapter": 4,
+   "lines": 52,
+   "summary": "summarise one Meridian document from the command line."
+  },
+  {
+   "file": "clarity/prompts/__init__.py",
+   "chapter": 7,
+   "lines": 46,
+   "summary": "Prompts live in files, not in code."
+  },
+  {
+   "file": "clarity/v0_3/extract.py",
+   "chapter": 7,
+   "lines": 83,
+   "summary": "turn a Meridian quarterly review into a validated record."
+  },
+  {
+   "file": "clarity/v0_4/longdoc.py",
+   "chapter": 8,
+   "lines": 112,
+   "summary": "reading a document that is too large to send economically."
+  },
+  {
+   "file": "clarity/v0_5/rag.py",
+   "chapter": 13,
+   "lines": 103,
+   "summary": "the whole retrieval pipeline, end to end."
+  },
+  {
+   "file": "clarity/v0_6/retrieve.py",
+   "chapter": 14,
+   "lines": 150,
+   "summary": "retrieval that earns its keep."
+  },
+  {
+   "file": "clarity/v0_7/warehouse.py",
+   "chapter": 15,
+   "lines": 136,
+   "summary": "answering numeric questions without the model writing SQL."
+  },
+  {
+   "file": "clarity/v0_8/tools.py",
+   "chapter": 16,
+   "lines": 187,
+   "summary": "the tools, and the loop that runs them."
+  },
+  {
+   "file": "clarity/v0_9/agent.py",
+   "chapter": 17,
+   "lines": 149,
+   "summary": "the loop, with the four things that make it safe to run."
+  },
+  {
+   "file": "clarity/v0_10/graph.py",
+   "chapter": 18,
+   "lines": 146,
+   "summary": "the same agent, as a graph."
+  },
+  {
+   "file": "clarity/v0_11/mcp_client.py",
+   "chapter": 19,
+   "lines": 73,
+   "summary": "consuming an MCP server from ordinary synchronous code."
+  },
+  {
+   "file": "clarity/v0_11/mcp_server.py",
+   "chapter": 19,
+   "lines": 77,
+   "summary": "the same tools, behind a protocol."
+  },
+  {
+   "file": "clarity/v0_12/team.py",
+   "chapter": 20,
+   "lines": 92,
+   "summary": "a supervisor, a researcher and an analyst."
+  },
+  {
+   "file": "clarity/evals/judge.py",
+   "chapter": 21,
+   "lines": 87,
+   "summary": "Clarity's judges: a model grading a model."
+  },
+  {
+   "file": "clarity/evals/redteam/__init__.py",
+   "chapter": 21,
+   "lines": 77,
+   "summary": "the red-team suite."
+  },
+  {
+   "file": "clarity/evals/runner.py",
+   "chapter": 21,
+   "lines": 78,
+   "summary": "Clarity's eval harness: run the golden set, score it, and say where it hurts."
+  },
+  {
+   "file": "clarity/evals/suite.py",
+   "chapter": 21,
+   "lines": 113,
+   "summary": "the six-layer suite."
+  },
+  {
+   "file": "clarity/platform/cache.py",
+   "chapter": 23,
+   "lines": 78,
+   "summary": "three layers of cache, and one of them is dangerous."
+  },
+  {
+   "file": "clarity/platform/gateway.py",
+   "chapter": 23,
+   "lines": 160,
+   "summary": "one interface, many providers."
+  },
+  {
+   "file": "clarity/platform/guard.py",
+   "chapter": 23,
+   "lines": 60,
+   "summary": "the defences that do not depend on the model noticing."
+  },
+  {
+   "file": "clarity/platform/instrumented.py",
+   "chapter": 23,
+   "lines": 104,
+   "summary": "the same system, wrapped in spans."
+  },
+  {
+   "file": "clarity/platform/replay.py",
+   "chapter": 23,
+   "lines": 171,
+   "summary": "record a run once, replay it for nothing."
+  },
+  {
+   "file": "clarity/platform/resilience.py",
+   "chapter": 23,
+   "lines": 91,
+   "summary": "the four patterns that keep one bad dependency from becoming an outage."
+  },
+  {
+   "file": "clarity/platform/tracing.py",
+   "chapter": 23,
+   "lines": 147,
+   "summary": "tracing, in the vendor-neutral format."
+  },
+  {
+   "file": "clarity/v0_17/service.py",
+   "chapter": 25,
+   "lines": 105,
+   "summary": "the engine, behind HTTP."
+  },
+  {
+   "file": "clarity/v0_17/store.py",
+   "chapter": 25,
+   "lines": 84,
+   "summary": "the data layer, and what belongs in it."
+  },
+  {
+   "file": "clarity/v1_0/clarity.py",
+   "chapter": 32,
+   "lines": 147,
+   "summary": "every chapter, in one object."
+  },
+  {
+   "file": "clarity/v1_0/cli.py",
+   "chapter": 32,
+   "lines": 65,
+   "summary": "the command line."
+  },
+  {
+   "file": "clarity/v1_0/demo.py",
+   "chapter": 32,
+   "lines": 64,
+   "summary": "The eight-minute demonstration."
+  },
+  {
+   "file": "clarity/v1_0/service.py",
+   "chapter": 32,
+   "lines": 103,
+   "summary": "the front door."
+  }
+ ]
+}

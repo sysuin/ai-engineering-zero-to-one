@@ -1,0 +1,37 @@
+100 examples: 80 training, 20 holdout.
+
+  leaked between train and holdout         0   ok
+  duplicated inside training               0   ok
+  wrong message shape                      0   ok
+  most common family, share             0.59   LOOK
+
+  the same checks after a careless split that reuses three holdout cases:
+
+  leaked between train and holdout         3   LOOK
+  duplicated inside training               0   ok
+  wrong message shape                      0   ok
+  most common family, share             0.59   LOOK
+
+  written to data/meridian/finetune/train.jsonl and data/meridian/finetune/holdout.jsonl
+
+Four checks, and the first one is the one that ruins projects.
+
+A case in both sets makes your evaluation report memorisation as skill, and
+the report will look excellent. It is the same failure as testing on your
+training data in any other field, and it is easier to commit here because the
+'data' is prose and the duplicate is a rephrasing rather than a copy — which
+is why the check hashes a normalised question rather than the whole example.
+
+On the size question: the honest answer is that hundreds of examples change
+behaviour and thousands are needed to change it reliably, and that the number
+matters far less than whether the examples agree with each other. Fifty
+consistent examples of a house style beat five hundred that were written by
+five people with different opinions — and an inconsistent training set is the
+one failure mode that more data makes worse.
+
+What this listing does not do is run the fine-tune. That is a training job
+with a bill and a wait, and its result would be a model id that means nothing
+to a reader. §30.4 is the part that matters anyway: whatever comes back gets
+measured against the base model on Chapter 21's golden set, on cases the
+training never saw, and the comparison is the deliverable rather than the
+model.

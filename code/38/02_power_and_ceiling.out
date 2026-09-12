@@ -1,0 +1,52 @@
+Cases per arm needed to detect a real improvement, at 80% power.
+
+   baseline       +1pt     +2pt     +3pt     +5pt    +10pt
+       60%     37,513    9,336    4,129    1,471      356
+       75%     29,036    7,157    3,135    1,094      250
+       85%     19,461    4,724    2,036      686      141
+       92%     10,890    2,554    1,059      326       45
+
+Read the +3pt column, because that is the size of improvement people argue
+about most. It costs thousands of cases. Two consequences follow, and both are
+more useful than the despair:
+
+  1. Pair your comparisons. Running both systems on the same cases removes the
+     case-to-case variation and cuts the requirement dramatically — often by more
+     than half, and more when the systems agree often.
+  2. Stop shipping 3-point changes one at a time. Batch five of them, measure the
+     batch, and keep the batch or revert it. A 15-point difference is visible at
+     48 cases, which is a set you can actually build.
+
+
+The noise ceiling: the highest score anybody could get on your set.
+
+Your labels are not perfect. §6.5 shows how an arguable ground truth caps every
+score you report, and a case whose gold answer is wrong is a case a perfect
+system fails.
+
+   label error    ceiling   what an 85% result actually means
+           0%       100%    85% of what is achievable
+           3%        97%    88% of what is achievable
+           5%        95%    89% of what is achievable
+          10%        90%    94% of what is achievable
+          15%        85%   100% of what is achievable
+
+At 10% label error a score of 85% is 94% of everything available, and the six
+points you are chasing are mostly wrong labels. Measuring the ceiling is how you
+find out that your model is finished and your data is not.
+
+
+And the other ceiling: the same system, scored twice.
+
+  200 runs of an unchanged system at a true rate of 85%, n=120 each:
+
+    lowest observed    75.0%
+    highest observed   92.5%
+    middle 95%         79.2% - 90.8%   (12 points wide)
+
+  Nothing changed between those runs. A team watching this dashboard would
+  have celebrated an 8-point gain and investigated a 10-point regression,
+  and both would have been the same system on a different Tuesday.
+
+  This is the argument for §22.9's drift threshold against a recorded baseline,
+  rather than an absolute floor set just under today's score.

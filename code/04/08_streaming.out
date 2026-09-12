@@ -1,0 +1,7 @@
+Blocking:   nothing for 1.56s, then 452 characters at once
+Streaming:  first characters after 0.76s, all 483 after 1.29s
+
+Time before the reader sees anything: 1.56s vs 0.76s — 2.0x better
+
+Total time is roughly the same. What changes is the waiting, and waiting is
+the part users experience. Chapter 28 treats this as a latency technique.

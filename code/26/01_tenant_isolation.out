@@ -1,0 +1,22 @@
+Two tenants in one database: meridian has 2 runs, halvard has 1.
+
+  scoped query      returned 2 rows to meridian   PASS
+  missing WHERE     returned 3 rows to meridian   FAIL — 1 row(s) leaked
+
+The isolation test is not 'does the query return data'. It is:
+
+  ask as tenant A, assert that every row returned belongs to A
+
+Write it once per table and run it on every build. It is three lines, it is
+the only test that catches a missing WHERE clause, and a missing WHERE clause
+is the single most common way one customer sees another's data.
+
+Two stronger versions, in increasing order of how much sleep they buy:
+
+  a session variable    set the tenant on the connection and let the data
+                        layer apply it, so forgetting is not possible
+  row-level security    Postgres enforces the predicate itself, so even a
+                        hand-written query in a migration cannot cross
+
+Both are more work than a WHERE clause and both remove a class of bug rather
+than an instance of it, which is the trade worth making for exactly this one.

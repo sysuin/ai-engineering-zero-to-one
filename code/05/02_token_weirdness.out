@@ -1,0 +1,23 @@
+Each question asked 5 times at temperature 0
+
+  Count a letter         5/5 correct, 1 distinct answer(s)
+      ok  '3'
+  Count it in a phrase   0/5 correct, 1 distinct answer(s)
+          '5'
+  Compare decimals       5/5 correct, 1 distinct answer(s)
+      ok  '9.9'
+  Reverse a name         0/5 correct, 1 distinct answer(s)
+          'naide riM'
+
+The famous failures — strawberry, 9.11 — now usually pass. They have been
+drilled into training data precisely because they became famous. Step one word
+off the well-trodden example and the same weakness is still there, and it is
+not even stable between attempts.
+
+Here is why. The model never sees letters:
+   strawberry     -> ['st', 'raw', 'berry']
+   Meridian       -> ['Mer', 'idian']
+   refrigerator   -> ['re', 'friger', 'ator']
+
+It is being asked to spell by something for which spelling does not exist.
+The fix is not a better prompt. The fix is a tool that can count — Chapter 16.

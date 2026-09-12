@@ -1,0 +1,9 @@
+strategy                  correct   in tokens    cached    out   seconds
+stuff the whole thing       10/10     296,570   147,200     40      10.5
+map-reduce, then ask        10/10      62,085    11,264  3,256      10.5
+select, then ask            10/10       1,010         0     40       8.3
+
+The document is 29,630 tokens. It fits in the window with room to spare.
+
+All three get the answers. What separates them is what they cost, and the
+separation is two orders of magnitude — for identical results.

@@ -1,0 +1,26 @@
+Prompt versions on disk: [1, 2]
+
+--- v1  (175 chars of prompt, 427 tokens out)
+Meridian Supply Co.’s 2024 Q3 business review reports:
+
+- Revenue: $8,461,842
+- Orders: 5,579
+- Gross margin: 33.1%
+- Units shipped: 102,433
+- Revenue change vs prior quarter: up 4.8%
+
+Key note:
+- Halloway Group did not renew at the end of the previous quarter.
+- It was the Midwest region’s largest account by revenue.
+- The document says this loss is the single largest driver of the reported movement.
+- The commercial team attributes the loss to a competitor’s national framework agreement, not service failure.
+
+Reg
+
+--- v2  (958 chars of prompt, 170 tokens out)
+2024 Q3 revenue was $8,461,842 across 5,579 orders, up 4.8% on the prior quarter, with gross margin at 33.1% and 102,433 units shipped. The most significant movement was the Midwest, which was the weakest region at $1,061,883 and was hit by the loss of Halloway Group, the document says this was the single largest driver of the movement and that the commercial team attributes it to a competitor’s national framework agreement rather than service failure. A reader should also know that Southwest remained the strongest
+
+v1 is three lines and produces something usable. v2 names the audience, states
+the format, and replaces a prohibition with a positive instruction — and the
+difference shows up as structure you can rely on rather than accuracy you cannot
+measure yet. Chapter 21 is where 'better' stops being a matter of opinion.

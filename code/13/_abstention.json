@@ -1,0 +1,154 @@
+{
+  "k": 5,
+  "scores": [
+    {
+      "question": "What was total revenue in 2024 Q3?",
+      "answerable": true,
+      "top_score": 0.6054463386535645,
+      "grounded": false
+    },
+    {
+      "question": "Which region was weakest in 2024 Q3?",
+      "answerable": true,
+      "top_score": 0.4816119074821472,
+      "grounded": true
+    },
+    {
+      "question": "Which account did not renew, and when?",
+      "answerable": true,
+      "top_score": 0.33895713090896606,
+      "grounded": true
+    },
+    {
+      "question": "What explanation does the company give for the Midwest fall?",
+      "answerable": true,
+      "top_score": 0.5280861854553223,
+      "grounded": false
+    },
+    {
+      "question": "When did the Sanitation category launch?",
+      "answerable": true,
+      "top_score": 0.5105036497116089,
+      "grounded": true
+    },
+    {
+      "question": "Why did gross margin fall in 2025 Q1?",
+      "answerable": true,
+      "top_score": 0.6055779457092285,
+      "grounded": true
+    },
+    {
+      "question": "What caused the spike in support contacts in 2024 Q4?",
+      "answerable": true,
+      "top_score": 0.4192694127559662,
+      "grounded": true
+    },
+    {
+      "question": "How many days notice is required before a price rise under MSC-2022-100?",
+      "answerable": true,
+      "top_score": 0.5079096555709839,
+      "grounded": false
+    },
+    {
+      "question": "Which law governs the supplier agreements?",
+      "answerable": true,
+      "top_score": 0.5160213708877563,
+      "grounded": false
+    },
+    {
+      "question": "What happens if a supplier misses the delivery target three months running?",
+      "answerable": true,
+      "top_score": 0.5880444049835205,
+      "grounded": true
+    },
+    {
+      "question": "How long does the buyer have to reject non-conforming goods?",
+      "answerable": true,
+      "top_score": 0.6047243475914001,
+      "grounded": true
+    },
+    {
+      "question": "What is the racked storage capacity at Dallas?",
+      "answerable": true,
+      "top_score": 0.5771245360374451,
+      "grounded": true
+    },
+    {
+      "question": "What is Meridian's employee headcount?",
+      "answerable": false,
+      "top_score": 0.515393853187561,
+      "grounded": false
+    },
+    {
+      "question": "Who is the Chief Financial Officer?",
+      "answerable": false,
+      "top_score": 0.32560643553733826,
+      "grounded": false
+    },
+    {
+      "question": "What was revenue in 2026 Q1?",
+      "answerable": false,
+      "top_score": 0.6051364541053772,
+      "grounded": false
+    },
+    {
+      "question": "What is the customer churn rate?",
+      "answerable": false,
+      "top_score": 0.2982679009437561,
+      "grounded": false
+    },
+    {
+      "question": "Which insurer underwrites the product liability cover?",
+      "answerable": false,
+      "top_score": 0.48748263716697693,
+      "grounded": false
+    },
+    {
+      "question": "What is the average order value in the West region?",
+      "answerable": false,
+      "top_score": 0.5833568572998047,
+      "grounded": false
+    },
+    {
+      "question": "How many vehicles are in the delivery fleet?",
+      "answerable": false,
+      "top_score": 0.3865710496902466,
+      "grounded": false
+    },
+    {
+      "question": "What is the target for on-time delivery in 2026?",
+      "answerable": false,
+      "top_score": 0.5331377983093262,
+      "grounded": false
+    },
+    {
+      "question": "Which warehouse management system does Meridian use?",
+      "answerable": false,
+      "top_score": 0.49307480454444885,
+      "grounded": false
+    },
+    {
+      "question": "What is the annual contract value of the Voss Industrial agreement?",
+      "answerable": false,
+      "top_score": 0.5496931076049805,
+      "grounded": false
+    },
+    {
+      "question": "How many people work at the Columbus depot?",
+      "answerable": false,
+      "top_score": 0.5205585956573486,
+      "grounded": false
+    },
+    {
+      "question": "What is Meridian's carbon reduction target?",
+      "answerable": false,
+      "top_score": 0.38842713832855225,
+      "grounded": false
+    }
+  ],
+  "threshold_best": {
+    "value": 0.39000000000000024,
+    "accuracy": 0.625
+  },
+  "grounded_accuracy": 0.8333333333333334
+}

@@ -1,0 +1,27 @@
+{
+  "fixed characters": {
+    "chunks": 172,
+    "median_tokens": 174,
+    "orphaned": 167
+  },
+  "fixed tokens": {
+    "chunks": 149,
+    "median_tokens": 200,
+    "orphaned": 146
+  },
+  "by paragraph": {
+    "chunks": 200,
+    "median_tokens": 147,
+    "orphaned": 199
+  },
+  "by structure": {
+    "chunks": 401,
+    "median_tokens": 74,
+    "orphaned": 0
+  },
+  "fixed + overlap": {
+    "chunks": 186,
+    "median_tokens": 200,
+    "orphaned": 179
+  }
+}

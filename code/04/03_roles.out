@@ -1,0 +1,19 @@
+No system message
+  First, confirm whether the drop is **real, comparable, and explainable** before chasing causes.
+
+### 1) Verify the number
+- Same quarter vs same quarter last year, or sequential quarter?
+- Was revenue ...
+
+With a system message
+  First, check whether the drop was driven by **price, volume, mix, or timing**: compare units sold, average selling price, customer count, and order timing versus the prior quarter and same quarter las ...
+
+With an assistant turn in the history — the model continues the conversation
+  Then look at:
+
+1. **Concentration risk**  
+   - What % of revenue that customer represented  
+   - Whether other customers are large enough to replace them
+
+2. **Pipeline quality**  
+   - Are there en ...

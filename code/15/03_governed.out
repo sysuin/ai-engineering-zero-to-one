@@ -1,0 +1,24 @@
+20 questions
+
+  answered            15/20
+  refused honestly     5/20
+  correct of answered 14/15  93%
+  correct of all      14/20  70%
+
+Refused:
+  How many customers are in the Midwest region?                no plan
+  Which supplier has the most products?                        no plan
+  How many order lines had a discount of 15 percent?           no plan
+  Which region grew revenue most between 2023 and 2025?        no plan
+  How many suppliers are based outside the United States?      no plan
+
+Answered but wrong:
+  What was Voss Industrial's revenue in 2025?                  metric=revenue
+
+Every query that ran was built from a spec, so:
+  statements produced: {'SELECT'}
+  tables reachable:    {v_sales}
+  There is no code path from a question to DELETE, DROP or a second table.
+
+The refusals are the feature. A question the layer cannot express comes back as
+a refusal rather than as a number that looks like every other number.

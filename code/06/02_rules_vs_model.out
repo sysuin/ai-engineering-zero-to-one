@@ -1,0 +1,21 @@
+200 tickets, ground truth from the dataset
+
+             correct  accuracy  no answer   seconds
+rules            163    81.5%          9     0.002
+model            156    78.0%          0      11.7
+
+Where the rules fail
+  said Delivery  truth Account   can we add a second delivery address
+  said Delivery  truth Account   can we add a second delivery address
+  said None      truth Quality   El producto MRD-SAN-047 llegó dañado. Necesitamos un
+  said None      truth Billing   Die Rechnung INV-91472 wurde doppelt berechnet.
+  said None      truth Billing   Die Rechnung INV-94718 wurde doppelt berechnet.
+  said Delivery  truth Billing   PO number missing on invoice INV-51371
+
+Where the model fails
+  said Delivery  truth Returns   collection booked 2 weeks ago, nobody came
+  said Delivery  truth Account   can we add a second delivery address
+  said Delivery  truth Account   can we add a second delivery address
+  said Delivery  truth Returns   collection booked 2 weeks ago, nobody came
+  said Returns   truth Quality   El producto MRD-SAN-047 llegó dañado. Necesitamos un
+  said Delivery  truth Returns   collection booked 2 weeks ago, nobody came

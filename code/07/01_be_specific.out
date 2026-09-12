@@ -1,0 +1,14 @@
+                                  accuracy   usable  out tokens
+vague                               12.5%       0%        48.9
+specific                           100.0%       0%        21.0
+specific + format                  100.0%     100%         4.0
+specific + format + where          100.0%     100%         4.0
+
+vague                            '**180 days’ written notice** for termination for convenience under cla'
+specific                         'The Supplier must give **at least 30 days’ written notice** before a p'
+specific + format                '30'
+specific + format + where        '30'
+
+40 contracts. Same task, same model, same documents — only the
+words differ. The vague prompt answers a different question: it finds the
+termination notice, which is also 'days notice', and is not what was asked.

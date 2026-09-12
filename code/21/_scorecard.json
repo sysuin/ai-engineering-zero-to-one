@@ -1,0 +1,1202 @@
+[
+ {
+  "id": "qbr-2023-Q1-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2023 Q1?",
+  "correct": true,
+  "tokens": 997,
+  "group": "generated",
+  "answer": "Revenue in 2023 Q1 was **$7,360,833.67**."
+ },
+ {
+  "id": "qbr-2023-Q1-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2023 Q1?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **4,965 orders** in **2023 Q1**."
+ },
+ {
+  "id": "qbr-2023-Q1-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2023 Q1?",
+  "correct": true,
+  "tokens": 1012,
+  "group": "generated",
+  "answer": "Gross margin in 2023 Q1 was **31.0%**."
+ },
+ {
+  "id": "qbr-2023-Q1-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2023 Q1?",
+  "correct": true,
+  "tokens": 1034,
+  "group": "generated",
+  "answer": "Midwest was strongest in 2023 Q1, with the highest revenue at 1,925,311.10."
+ },
+ {
+  "id": "qbr-2023-Q1-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2023 Q1?",
+  "correct": true,
+  "tokens": 1032,
+  "group": "generated",
+  "answer": "West was the weakest region in 2023 Q1, with the lowest sales revenue: 948,788.08."
+ },
+ {
+  "id": "qbr-2023-Q2-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2023 Q2?",
+  "correct": true,
+  "tokens": 996,
+  "group": "generated",
+  "answer": "Revenue in 2023 Q2 was **7,614,048.76**."
+ },
+ {
+  "id": "qbr-2023-Q2-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2023 Q2?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **5,114 orders** in **2023 Q2**."
+ },
+ {
+  "id": "qbr-2023-Q2-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2023 Q2?",
+  "correct": true,
+  "tokens": 1012,
+  "group": "generated",
+  "answer": "Gross margin in 2023 Q2 was **30.6%**."
+ },
+ {
+  "id": "qbr-2023-Q2-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2023 Q2?",
+  "correct": true,
+  "tokens": 1034,
+  "group": "generated",
+  "answer": "Midwest was strongest in 2023 Q2 by revenue, at **$2,162,478.93**."
+ },
+ {
+  "id": "qbr-2023-Q2-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2023 Q2?",
+  "correct": true,
+  "tokens": 1026,
+  "group": "generated",
+  "answer": "West was the weakest region in 2023 Q2, with the lowest sales revenue."
+ },
+ {
+  "id": "qbr-2023-Q3-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2023 Q3?",
+  "correct": true,
+  "tokens": 1003,
+  "group": "generated",
+  "answer": "Revenue in 2023 Q3 was **$7,774,027.48**."
+ },
+ {
+  "id": "qbr-2023-Q3-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2023 Q3?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **5,169 orders** in **2023 Q3**."
+ },
+ {
+  "id": "qbr-2023-Q3-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2023 Q3?",
+  "correct": true,
+  "tokens": 1012,
+  "group": "generated",
+  "answer": "Gross margin in 2023 Q3 was **31.9%**."
+ },
+ {
+  "id": "qbr-2023-Q3-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2023 Q3?",
+  "correct": true,
+  "tokens": 1036,
+  "group": "generated",
+  "answer": "Midwest was the strongest region in 2023 Q3 by revenue, at **$2,137,158.88**."
+ },
+ {
+  "id": "qbr-2023-Q3-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2023 Q3?",
+  "correct": true,
+  "tokens": 1026,
+  "group": "generated",
+  "answer": "West was the weakest region in 2023 Q3, with the lowest sales revenue."
+ },
+ {
+  "id": "qbr-2023-Q4-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2023 Q4?",
+  "correct": true,
+  "tokens": 1003,
+  "group": "generated",
+  "answer": "Revenue in 2023 Q4 was **$7,699,846.68**."
+ },
+ {
+  "id": "qbr-2023-Q4-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2023 Q4?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **5,354 orders** in **2023 Q4**."
+ },
+ {
+  "id": "qbr-2023-Q4-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2023 Q4?",
+  "correct": true,
+  "tokens": 1012,
+  "group": "generated",
+  "answer": "Gross margin in 2023 Q4 was **30.2%**."
+ },
+ {
+  "id": "qbr-2023-Q4-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2023 Q4?",
+  "correct": true,
+  "tokens": 1034,
+  "group": "generated",
+  "answer": "Midwest was strongest in 2023 Q4 by revenue, at **$2,081,807.58**."
+ },
+ {
+  "id": "qbr-2023-Q4-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2023 Q4?",
+  "correct": true,
+  "tokens": 1032,
+  "group": "generated",
+  "answer": "West was the weakest region in 2023 Q4, with revenue of 1,092,977.08."
+ },
+ {
+  "id": "qbr-2024-Q1-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2024 Q1?",
+  "correct": true,
+  "tokens": 1003,
+  "group": "generated",
+  "answer": "Revenue in 2024 Q1 was **$8,062,598.92**."
+ },
+ {
+  "id": "qbr-2024-Q1-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2024 Q1?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **5,331 orders** in **2024 Q1**."
+ },
+ {
+  "id": "qbr-2024-Q1-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2024 Q1?",
+  "correct": true,
+  "tokens": 1006,
+  "group": "generated",
+  "answer": "Gross margin in 2024 Q1 was **31.2%**."
+ },
+ {
+  "id": "qbr-2024-Q1-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2024 Q1?",
+  "correct": true,
+  "tokens": 1036,
+  "group": "generated",
+  "answer": "Southwest was strongest in 2024 Q1, with the highest revenue at **$2,005,227.19**."
+ },
+ {
+  "id": "qbr-2024-Q1-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2024 Q1?",
+  "correct": true,
+  "tokens": 1026,
+  "group": "generated",
+  "answer": "West was the weakest region in 2024 Q1, with the lowest sales revenue."
+ },
+ {
+  "id": "qbr-2024-Q2-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2024 Q2?",
+  "correct": true,
+  "tokens": 997,
+  "group": "generated",
+  "answer": "Revenue in 2024 Q2 was **$8,074,847.91**."
+ },
+ {
+  "id": "qbr-2024-Q2-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2024 Q2?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **5,553 orders** in **2024 Q2**."
+ },
+ {
+  "id": "qbr-2024-Q2-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2024 Q2?",
+  "correct": true,
+  "tokens": 1012,
+  "group": "generated",
+  "answer": "Gross margin in 2024 Q2 was **32.0%**."
+ },
+ {
+  "id": "qbr-2024-Q2-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2024 Q2?",
+  "correct": true,
+  "tokens": 1039,
+  "group": "generated",
+  "answer": "Midwest was the strongest region in 2024 Q2, with the highest sales revenue: **$2,257,870.33**."
+ },
+ {
+  "id": "qbr-2024-Q2-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2024 Q2?",
+  "correct": true,
+  "tokens": 1035,
+  "group": "generated",
+  "answer": "West was the weakest region in 2024 Q2, with the lowest sales revenue: 1,072,878.76."
+ },
+ {
+  "id": "qbr-2024-Q3-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2024 Q3?",
+  "correct": true,
+  "tokens": 997,
+  "group": "generated",
+  "answer": "Revenue in 2024 Q3 was **$8,461,841.81**."
+ },
+ {
+  "id": "qbr-2024-Q3-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2024 Q3?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **5,579 orders** in **2024 Q3**."
+ },
+ {
+  "id": "qbr-2024-Q3-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2024 Q3?",
+  "correct": true,
+  "tokens": 1006,
+  "group": "generated",
+  "answer": "Gross margin in 2024 Q3 was **33.1%**."
+ },
+ {
+  "id": "qbr-2024-Q3-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2024 Q3?",
+  "correct": true,
+  "tokens": 1036,
+  "group": "generated",
+  "answer": "Southwest was the strongest region in 2024 Q3 by revenue, at **$2,607,943.26**."
+ },
+ {
+  "id": "qbr-2024-Q3-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2024 Q3?",
+  "correct": true,
+  "tokens": 1038,
+  "group": "generated",
+  "answer": "Midwest was the weakest region in 2024 Q3, with the lowest sales revenue at **1,061,882.91**."
+ },
+ {
+  "id": "qbr-2024-Q4-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2024 Q4?",
+  "correct": true,
+  "tokens": 1003,
+  "group": "generated",
+  "answer": "Revenue in 2024 Q4 was **$8,266,068.36**."
+ },
+ {
+  "id": "qbr-2024-Q4-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2024 Q4?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **5,770 orders** in **2024 Q4**."
+ },
+ {
+  "id": "qbr-2024-Q4-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2024 Q4?",
+  "correct": true,
+  "tokens": 1012,
+  "group": "generated",
+  "answer": "Gross margin in 2024 Q4 was **31.7%**."
+ },
+ {
+  "id": "qbr-2024-Q4-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2024 Q4?",
+  "correct": true,
+  "tokens": 1027,
+  "group": "generated",
+  "answer": "Southwest was the strongest region in 2024 Q4 by sales revenue."
+ },
+ {
+  "id": "qbr-2024-Q4-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2024 Q4?",
+  "correct": true,
+  "tokens": 1024,
+  "group": "generated",
+  "answer": "Midwest was the weakest region in 2024 Q4 by sales revenue."
+ },
+ {
+  "id": "qbr-2025-Q1-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2025 Q1?",
+  "correct": true,
+  "tokens": 997,
+  "group": "generated",
+  "answer": "Revenue in 2025 Q1 was **$9,079,541.73**."
+ },
+ {
+  "id": "qbr-2025-Q1-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2025 Q1?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **5,847 orders** in **2025 Q1**."
+ },
+ {
+  "id": "qbr-2025-Q1-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2025 Q1?",
+  "correct": true,
+  "tokens": 1012,
+  "group": "generated",
+  "answer": "Gross margin in 2025 Q1 was **31.4%**."
+ },
+ {
+  "id": "qbr-2025-Q1-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2025 Q1?",
+  "correct": true,
+  "tokens": 1039,
+  "group": "generated",
+  "answer": "Southwest was the strongest region in 2025 Q1 by sales revenue, at **$2,699,016.38**."
+ },
+ {
+  "id": "qbr-2025-Q1-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2025 Q1?",
+  "correct": true,
+  "tokens": 1040,
+  "group": "generated",
+  "answer": "The weakest region in 2025 Q1 was **Midwest**, with **$1,165,398.19** in sales revenue."
+ },
+ {
+  "id": "qbr-2025-Q2-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2025 Q2?",
+  "correct": true,
+  "tokens": 997,
+  "group": "generated",
+  "answer": "Revenue in 2025 Q2 was **$8,633,630.78**."
+ },
+ {
+  "id": "qbr-2025-Q2-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2025 Q2?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **5,867 orders** in **2025 Q2**."
+ },
+ {
+  "id": "qbr-2025-Q2-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2025 Q2?",
+  "correct": true,
+  "tokens": 1012,
+  "group": "generated",
+  "answer": "Gross margin in 2025 Q2 was **31.0%**."
+ },
+ {
+  "id": "qbr-2025-Q2-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2025 Q2?",
+  "correct": true,
+  "tokens": 1027,
+  "group": "generated",
+  "answer": "Southwest was the strongest region in 2025 Q2 by sales revenue."
+ },
+ {
+  "id": "qbr-2025-Q2-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2025 Q2?",
+  "correct": true,
+  "tokens": 1041,
+  "group": "generated",
+  "answer": "The weakest region in 2025 Q2 was the **Midwest**, with **$1,091,846.83** in sales revenue."
+ },
+ {
+  "id": "qbr-2025-Q3-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2025 Q3?",
+  "correct": true,
+  "tokens": 997,
+  "group": "generated",
+  "answer": "Revenue in 2025 Q3 was **$8,896,126.93**."
+ },
+ {
+  "id": "qbr-2025-Q3-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2025 Q3?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **6,009 orders** in **2025 Q3**."
+ },
+ {
+  "id": "qbr-2025-Q3-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2025 Q3?",
+  "correct": true,
+  "tokens": 1006,
+  "group": "generated",
+  "answer": "Gross margin in 2025 Q3 was **32.2%**."
+ },
+ {
+  "id": "qbr-2025-Q3-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2025 Q3?",
+  "correct": true,
+  "tokens": 1039,
+  "group": "generated",
+  "answer": "Southwest was the strongest region in 2025 Q3, with the highest sales revenue: **$2,844,023.88**."
+ },
+ {
+  "id": "qbr-2025-Q3-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2025 Q3?",
+  "correct": true,
+  "tokens": 1039,
+  "group": "generated",
+  "answer": "Midwest was the weakest region in 2025 Q3 by sales revenue, at **$1,131,394.44**."
+ },
+ {
+  "id": "qbr-2025-Q4-revenue",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was revenue in 2025 Q4?",
+  "correct": true,
+  "tokens": 1003,
+  "group": "generated",
+  "answer": "Revenue in 2025 Q4 was **$8,790,969.94**."
+ },
+ {
+  "id": "qbr-2025-Q4-orders",
+  "kind": "document",
+  "tier": "head",
+  "question": "How many orders were there in 2025 Q4?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "There were **6,118 orders** in **2025 Q4**."
+ },
+ {
+  "id": "qbr-2025-Q4-margin",
+  "kind": "document",
+  "tier": "head",
+  "question": "What was gross margin in 2025 Q4?",
+  "correct": true,
+  "tokens": 1012,
+  "group": "generated",
+  "answer": "Gross margin in 2025 Q4 was **30.8%**."
+ },
+ {
+  "id": "qbr-2025-Q4-strongest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was strongest in 2025 Q4?",
+  "correct": true,
+  "tokens": 1034,
+  "group": "generated",
+  "answer": "Southwest was the strongest region in 2025 Q4, with revenue of 2,573,113.96."
+ },
+ {
+  "id": "qbr-2025-Q4-weakest",
+  "kind": "document",
+  "tier": "head",
+  "question": "Which region was weakest in 2025 Q4?",
+  "correct": true,
+  "tokens": 1038,
+  "group": "generated",
+  "answer": "The weakest region in 2025 Q4 was the **Midwest**, with **$1,172,492.08** in revenue."
+ },
+ {
+  "id": "warehouse-01",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "What was total revenue in 2024?",
+  "correct": true,
+  "tokens": 988,
+  "group": "generated",
+  "answer": "Total revenue in 2024 was **$32,865,357.00**."
+ },
+ {
+  "id": "warehouse-02",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "How many orders were placed in 2025?",
+  "correct": true,
+  "tokens": 982,
+  "group": "generated",
+  "answer": "In 2025, there were **23,841 orders** placed."
+ },
+ {
+  "id": "warehouse-03",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "What was gross margin in 2025, as a percentage?",
+  "correct": true,
+  "tokens": 1016,
+  "group": "generated",
+  "answer": "Gross margin in 2025 was **31.4%**."
+ },
+ {
+  "id": "warehouse-04",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "How many distinct SKUs were sold in 2023?",
+  "correct": true,
+  "tokens": 982,
+  "group": "generated",
+  "answer": "38 distinct SKUs were sold in 2023."
+ },
+ {
+  "id": "warehouse-05",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "Which category made the most gross profit in 2025 Q4?",
+  "correct": true,
+  "tokens": 1035,
+  "group": "generated",
+  "answer": "Safety made the most gross profit in 2025 Q4, with **$806,718.39**."
+ },
+ {
+  "id": "warehouse-06",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "What was Voss Industrial's revenue in 2025?",
+  "correct": false,
+  "tokens": 1034,
+  "group": "generated",
+  "answer": "I couldn\u2019t find a revenue value for Voss Industrial in 2025 in the warehouse result \u2014 it returned null.\n\nIf you want, I can try a narrower query, like by quarter or with an alternate customer name spelling."
+ },
+ {
+  "id": "warehouse-07",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "How many units of Safety products shipped in 2025 Q1?",
+  "correct": true,
+  "tokens": 999,
+  "group": "generated",
+  "answer": "Safety products shipped 18,357 units in 2025 Q1."
+ },
+ {
+  "id": "warehouse-08",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "How much revenue came from the Enterprise segment in 2024 Q2?",
+  "correct": true,
+  "tokens": 1021,
+  "group": "generated",
+  "answer": "Enterprise segment revenue in 2024 Q2 was **$2,976,464.66**."
+ },
+ {
+  "id": "warehouse-09",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "Which channel produced the most orders overall?",
+  "correct": true,
+  "tokens": 1014,
+  "group": "generated",
+  "answer": "Web produced the most orders overall, with 29,215 distinct orders."
+ },
+ {
+  "id": "warehouse-10",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "What was the average discount percentage in 2024?",
+  "correct": true,
+  "tokens": 995,
+  "group": "generated",
+  "answer": "The average discount percentage in 2024 was **1.986%**."
+ },
+ {
+  "id": "warehouse-11",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "What was Midwest revenue in 2025 Q1?",
+  "correct": true,
+  "tokens": 1013,
+  "group": "generated",
+  "answer": "Midwest revenue in 2025 Q1 was **$1,165,398.19**."
+ },
+ {
+  "id": "warehouse-12",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "Which region had the lowest revenue in 2024 Q3?",
+  "correct": true,
+  "tokens": 1036,
+  "group": "generated",
+  "answer": "Midwest had the lowest revenue in 2024 Q3, at 1,061,882.91."
+ },
+ {
+  "id": "warehouse-13",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "How many units were shipped in 2023 Q2?",
+  "correct": true,
+  "tokens": 988,
+  "group": "generated",
+  "answer": "In 2023 Q2, **96,073 units** were shipped."
+ },
+ {
+  "id": "warehouse-14",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "What was the total cost of goods sold in 2024?",
+  "correct": true,
+  "tokens": 1003,
+  "group": "generated",
+  "answer": "The total cost of goods sold in 2024 was **$22,345,948.03**."
+ },
+ {
+  "id": "warehouse-15",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "Which supplier produced the most revenue in 2024?",
+  "correct": true,
+  "tokens": 1026,
+  "group": "generated",
+  "answer": "Quillon Metals produced the most revenue in 2024, with **$4,159,421.42**."
+ },
+ {
+  "id": "warehouse-16",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "How many orders did the Midwest region place in 2024 Q4?",
+  "correct": true,
+  "tokens": 1010,
+  "group": "generated",
+  "answer": "The Midwest region placed **690 orders** in **2024 Q4**."
+ },
+ {
+  "id": "warehouse-17",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "What was Packaging revenue in 2025?",
+  "correct": true,
+  "tokens": 1014,
+  "group": "generated",
+  "answer": "Packaging revenue in 2025 was **5,459,645.67**."
+ },
+ {
+  "id": "warehouse-18",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "What was gross profit in 2024 Q1?",
+  "correct": true,
+  "tokens": 1005,
+  "group": "generated",
+  "answer": "Gross profit in 2024 Q1 was **$2,515,698.48**."
+ },
+ {
+  "id": "warehouse-19",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "How many distinct customers ordered in 2025 Q2?",
+  "correct": false,
+  "tokens": 1052,
+  "group": "generated",
+  "answer": "I can\u2019t determine that from the available sales data.\n\nThe warehouse does not support a distinct-customers metric, and I don\u2019t have a document that states it."
+ },
+ {
+  "id": "warehouse-20",
+  "kind": "warehouse",
+  "tier": "head",
+  "question": "What was Cleaning category margin in 2024, as a percentage?",
+  "correct": true,
+  "tokens": 1024,
+  "group": "generated",
+  "answer": "Cleaning category margin in 2024 was **32.6%**."
+ },
+ {
+  "id": "tail-rotated-dallas",
+  "kind": "document",
+  "tier": "tail",
+  "question": "What is the racked storage capacity at the Dallas depot?",
+  "correct": true,
+  "tokens": 1327,
+  "group": "written by hand",
+  "answer": "The Dallas depot\u2019s racked storage capacity is **54,100 sq ft**."
+ },
+ {
+  "id": "tail-rotated-total",
+  "kind": "document",
+  "tier": "tail",
+  "question": "What is the total capacity of the Columbus depot?",
+  "correct": true,
+  "tokens": 2540,
+  "group": "written by hand",
+  "answer": "The Columbus depot\u2019s total capacity is **32,400 sq ft**."
+ },
+ {
+  "id": "tail-rotated-util",
+  "kind": "document",
+  "tier": "tail",
+  "question": "What was utilisation at the Columbus depot at year end?",
+  "correct": false,
+  "tokens": 10880,
+  "group": "written by hand",
+  "answer": "I couldn\u2019t find a document that states the Columbus depot\u2019s year-end utilisation directly.\n\nWhat I did find is a depot capacity table showing Columbus space by area:\n- Racked storage: 22,900 sq ft\n- Bulk floor: 6,400 sq ft\n- Mezzanine: 3,100 sq ft\n\nBut there\u2019s no year-end occupancy or utilisation pe"
+ },
+ {
+  "id": "tail-price-cap",
+  "kind": "document",
+  "tier": "tail",
+  "question": "Under MSC-2022-100, how much can the supplier raise prices in a twelve month period?",
+  "correct": true,
+  "tokens": 3316,
+  "group": "written by hand",
+  "answer": "Under MSC-2022-100, the supplier may raise prices by **no more than 12% in aggregate in any twelve-month period**, with **30 days\u2019 written notice**."
+ },
+ {
+  "id": "tail-price-notice",
+  "kind": "document",
+  "tier": "tail",
+  "question": "How much written notice is required before a price rise under MSC-2022-100?",
+  "correct": true,
+  "tokens": 3517,
+  "group": "written by hand",
+  "answer": "Under MSC-2022-100, the Supplier must give **not less than 30 days\u2019 written notice** before a price rise."
+ },
+ {
+  "id": "tail-reject-window",
+  "kind": "document",
+  "tier": "tail",
+  "question": "How long does the buyer have to reject non-conforming goods under MSC-2022-100?",
+  "correct": true,
+  "tokens": 1387,
+  "group": "written by hand",
+  "answer": "Under MSC-2022-100, the buyer may reject non-conforming goods within **21 days of delivery**."
+ },
+ {
+  "id": "tail-liability-cap",
+  "kind": "document",
+  "tier": "tail",
+  "question": "What is the supplier's liability cap under MSC-2022-100?",
+  "correct": true,
+  "tokens": 2836,
+  "group": "written by hand",
+  "answer": "Under MSC-2022-100, the supplier\u2019s aggregate liability cap is **150% of the charges paid in the twelve months preceding the claim**."
+ },
+ {
+  "id": "tail-service-level",
+  "kind": "document",
+  "tier": "tail",
+  "question": "What on-time delivery rate does MSC-2022-100 require?",
+  "correct": true,
+  "tokens": 1390,
+  "group": "written by hand",
+  "answer": "MSC-2022-100 requires **not less than 96% of order lines complete and on time**, measured monthly."
+ },
+ {
+  "id": "tail-three-months",
+  "kind": "document",
+  "tier": "tail",
+  "question": "What happens if a supplier misses the delivery target three months running under MSC-2022-100?",
+  "correct": true,
+  "tokens": 13887,
+  "group": "written by hand",
+  "answer": "What I\u2019ve established so far:\n\n- I found the agreement reference **MSC-2022-100**.\n- I confirmed it is a supply agreement between **Meridian Supply Co.** and **Voss Industrial**.\n- I have **not** yet found the specific clause text for MSC-2022-100 itself.\n- In other Meridian supply agreements, the d"
+ },
+ {
+  "id": "tail-payment-terms",
+  "kind": "document",
+  "tier": "tail",
+  "question": "What are the payment terms under MSC-2022-100?",
+  "correct": true,
+  "tokens": 3293,
+  "group": "written by hand",
+  "answer": "Under MSC-2022-100, payment is due **within 60 days of the date of a valid invoice**. The Buyer may also **withhold payment of any amount disputed in good faith**."
+ },
+ {
+  "id": "tail-termination",
+  "kind": "document",
+  "tier": "tail",
+  "question": "How much notice is needed to terminate MSC-2022-100 for convenience?",
+  "correct": false,
+  "tokens": 5858,
+  "group": "written by hand",
+  "answer": "MSC-2022-100 itself is identified in the documents, but I couldn\u2019t find the termination clause text for that specific agreement. So I can\u2019t confirm the notice period from the available documents.\n\nIf you want, I can keep searching for the full contract text or related amendment."
+ },
+ {
+  "id": "tail-halloway",
+  "kind": "document",
+  "tier": "tail",
+  "question": "Which account did Meridian lose, and which region did it hurt?",
+  "correct": true,
+  "tokens": 1546,
+  "group": "written by hand",
+  "answer": "Meridian lost **Halloway Group**, and it hurt the **Midwest** region."
+ },
+ {
+  "id": "tail-halloway-why",
+  "kind": "document",
+  "tier": "tail",
+  "question": "Why does the company say Halloway Group left?",
+  "correct": true,
+  "tokens": 1413,
+  "group": "written by hand",
+  "answer": "The company says Halloway Group left because it **did not renew at the end of the previous quarter**. The commercial team says the loss was due to **a competitor\u2019s national framework agreement**, **not service failure**."
+ },
+ {
+  "id": "tail-margin-target",
+  "kind": "document",
+  "tier": "tail",
+  "question": "What is Meridian's standing gross margin target?",
+  "correct": true,
+  "tokens": 1309,
+  "group": "written by hand",
+  "answer": "Meridian\u2019s standing gross margin target is **32.0%**."
+ },
+ {
+  "id": "tail-composite-q3",
+  "kind": "composite",
+  "tier": "tail",
+  "question": "What was revenue in 2024 Q3, and what does the review give as the reason the Midwest fell?",
+  "correct": true,
+  "tokens": 1670,
+  "group": "written by hand",
+  "answer": "Revenue in 2024 Q3 was **$8,461,841.81**.\n\nThe review says the **Midwest fell because Halloway Group did not renew**, and that Halloway was the Midwest region\u2019s largest account by revenue. It adds that the commercial team attributed the loss to **a competitor\u2019s national framework agreement**, not se"
+ },
+ {
+  "id": "tail-composite-margin",
+  "kind": "composite",
+  "tier": "tail",
+  "question": "What was gross margin in 2025 Q1, and which supplier's pricing is named as a cause?",
+  "correct": true,
+  "tokens": 1457,
+  "group": "written by hand",
+  "answer": "Gross margin in 2025 Q1 was **31.4%**.\n\nThe supplier named as the cause was **Voss Industrial**; the review says its **12% unit-cost increase** was the principal reason gross margin was lower."
+ },
+ {
+  "id": "tail-composite-sanitation",
+  "kind": "composite",
+  "tier": "tail",
+  "question": "What was revenue in 2024 Q2, and what new category appears in the data from that quarter?",
+  "correct": true,
+  "tokens": 1393,
+  "group": "written by hand",
+  "answer": "Revenue in 2024 Q2 was **$8,074,847.91**.\n\nThe new category that appears in the data from that quarter is **Sanitation**."
+ },
+ {
+  "id": "tail-composite-tickets",
+  "kind": "composite",
+  "tier": "tail",
+  "question": "What drove the rise in support contacts in 2024 Q4, and which supplier was involved?",
+  "correct": true,
+  "tokens": 1321,
+  "group": "written by hand",
+  "answer": "The rise in support contacts in 2024 Q4 was driven by a batch defect in cloths, which increased ticket volume. The supplier involved was **Pemberton Mills**."
+ },
+ {
+  "id": "tail-rounding",
+  "kind": "composite",
+  "tier": "tail",
+  "question": "The 2024 Q3 review says revenue was $8,461,842 and the warehouse says $8,461,841.81. Which is right?",
+  "correct": true,
+  "tokens": 1636,
+  "group": "written by hand",
+  "answer": "The warehouse is the more precise source for the exact figure: **$8,461,841.81**.\n\nThe Q3 review rounded that to **$8,461,842**, so the two are consistent."
+ },
+ {
+  "id": "tail-target-miss",
+  "kind": "composite",
+  "tier": "tail",
+  "question": "In which quarters did gross margin fall below the standing target?",
+  "correct": true,
+  "tokens": 4178,
+  "group": "written by hand",
+  "answer": "Gross margin fell below the standing target in these quarters:\n\n- 2023 Q4 \u2014 30.2%\n- 2024 Q4 \u2014 31.7%\n- 2025 Q1 \u2014 31.4%\n- 2025 Q2 \u2014 31.0%\n- 2025 Q4 \u2014 30.8%\n\nThe standing target was 32.0% in the documents I found."
+ },
+ {
+  "id": "abstain-01",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What is Meridian's employee headcount?",
+  "correct": true,
+  "tokens": 5725,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find Meridian\u2019s employee headcount in the documents or warehouse available to me.\n\nIf you want, I can keep searching for a specific period or source type, but I don\u2019t have a verified headcount figure right now."
+ },
+ {
+  "id": "abstain-02",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "Who is the Chief Financial Officer?",
+  "correct": true,
+  "tokens": 2700,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find a document that names the Chief Financial Officer. If you want, I can keep searching the Meridian documents for a leadership roster or executive bio."
+ },
+ {
+  "id": "abstain-03",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What was revenue in 2026 Q1?",
+  "correct": false,
+  "tokens": 1034,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t retrieve a numeric revenue value for 2026 Q1 from the warehouse result I got back. The query returned `null`, so I can\u2019t state the figure confidently.\n\nIf you want, I can try a different quarter or help check whether 2026 Q1 data is loaded."
+ },
+ {
+  "id": "abstain-04",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What is the customer churn rate?",
+  "correct": false,
+  "tokens": 1856,
+  "group": "must refuse",
+  "answer": "I can\u2019t compute customer churn rate from the available sales data, and I didn\u2019t find a churn definition in the documents.\n\nThe warehouse only supports sales metrics like revenue, gross profit, margin, orders, units, cost, and discounts. If you have a retention/churn definition or a document that sta"
+ },
+ {
+  "id": "abstain-05",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "Which insurer underwrites the product liability cover?",
+  "correct": true,
+  "tokens": 3275,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find the insurer name for the product liability cover in the documents I searched.\n\nWhat I did find is that the supplier onboarding form lists product liability insurance at $5,000,000, but it does not name the insurer. If you want, I can search for a certificate of insurance or policy sc"
+ },
+ {
+  "id": "abstain-06",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "How many vehicles are in the delivery fleet?",
+  "correct": true,
+  "tokens": 5401,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find the number of vehicles in the delivery fleet in the documents available.\n\nThe only relevant mention I found was a goods received note that says the carrier was \u201cPenhale Rubber own fleet,\u201d but it does not state how many vehicles are in that fleet.\n\nIf you want, I can keep searching fo"
+ },
+ {
+  "id": "abstain-07",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What is the target for on-time delivery in 2026?",
+  "correct": false,
+  "tokens": 1444,
+  "group": "must refuse",
+  "answer": "The target for on-time delivery is **96% of order lines complete and on time, measured monthly**."
+ },
+ {
+  "id": "abstain-08",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "Which warehouse management system does Meridian use?",
+  "correct": true,
+  "tokens": 2628,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find any document that states which warehouse management system Meridian uses.\n\nIf you want, I can keep searching the quarterly reviews, contracts, or support tickets for mentions of a specific WMS name."
+ },
+ {
+  "id": "abstain-09",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What is the annual contract value of the Voss Industrial agreement?",
+  "correct": true,
+  "tokens": 4342,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find the annual contract value for the Voss Industrial agreement in the documents available.\n\nWhat I did find:\n- Agreement reference MSC-2022-100 with Voss Industrial\n- Commencement: 11 January 2022\n- Initial term: 12 months\n- The contract text says pricing is in Schedule 2, but that sche"
+ },
+ {
+  "id": "abstain-10",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "How many people work at the Columbus depot?",
+  "correct": true,
+  "tokens": 3748,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find a document or warehouse figure that states how many people work at the Columbus depot.\n\nWhat I did find mentions Columbus depot storage capacity and an operations notice, but not headcount."
+ },
+ {
+  "id": "abstain-11",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What is Meridian's carbon reduction target?",
+  "correct": true,
+  "tokens": 2877,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find Meridian\u2019s carbon reduction target in the documents I searched. If you want, I can keep looking through specific quarterly reviews or contracts for a climate or sustainability section."
+ },
+ {
+  "id": "abstain-12",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What was the net promoter score in 2025?",
+  "correct": true,
+  "tokens": 5828,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find any net promoter score for 2025 in the documents or warehouse.\n\nIf you want, I can keep searching for a specific quarter or related customer-satisfaction metric."
+ },
+ {
+  "id": "abstain-13",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "Which auditor signed off the 2024 accounts?",
+  "correct": true,
+  "tokens": 2911,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find any document stating which auditor signed off the 2024 accounts.\n\nThe documents I searched only surfaced internal quarterly business reviews, and those explicitly say they were not audited. If you want, I can keep looking for an annual report, audit opinion, or accounts filing."
+ },
+ {
+  "id": "abstain-14",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What is the notice period in the Halloway Group contract?",
+  "correct": true,
+  "tokens": 1539,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find a contract for **Halloway Group** specifically.\n\nThe closest matching contract I found was for **Halvard Group**:\n- **MSC-2023-129**: termination for convenience on **90 days\u2019 written notice**\n- **MSC-2024-114**: termination for convenience on **180 days\u2019 written notice**\n\nIf you mea"
+ },
+ {
+  "id": "abstain-15",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "How much did Meridian spend on marketing in 2024?",
+  "correct": false,
+  "tokens": 1103,
+  "group": "must refuse",
+  "answer": "I can\u2019t determine Meridian\u2019s 2024 marketing spend from the available data.\n\nThe warehouse only contains sales metrics like revenue, gross profit, margin, orders, units, cost, and discounts. It does not include marketing spend. If you have a document or contract that mentions it, I can search that."
+ },
+ {
+  "id": "abstain-16",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What is the average time to resolve a support ticket?",
+  "correct": true,
+  "tokens": 1475,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find an average support-ticket resolution time in the documents or warehouse.\n\nWhat I did find:\n- A quarterly review noting a spike in support contacts due to a batch defect.\n- No passage giving an average resolution time or SLA for ticket closure.\n\nIf you want, I can look for a specific "
+ },
+ {
+  "id": "abstain-17",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "Which bank provides Meridian's working capital facility?",
+  "correct": true,
+  "tokens": 4386,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find a document passage that names the bank providing Meridian\u2019s working capital facility. If you want, I can keep searching the quarterly reviews or contracts for a more specific reference."
+ },
+ {
+  "id": "abstain-18",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What is the depreciation policy for warehouse equipment?",
+  "correct": true,
+  "tokens": 2874,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find any document that states a depreciation policy for warehouse equipment.\n\nIf you want, I can keep searching for related terms like:\n- fixed assets policy\n- capital expenditure policy\n- equipment useful life\n- warehouse assets / machinery depreciation"
+ },
+ {
+  "id": "abstain-19",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "How many suppliers were onboarded in 2025?",
+  "correct": true,
+  "tokens": 2785,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find a documented count of suppliers onboarded in 2025 in the available documents or warehouse data.\n\nIf you want, I can try a narrower search, for example:\n- supplier onboarding by quarter\n- new suppliers added in 2025\n- procurement/vendor onboarding mentions"
+ },
+ {
+  "id": "abstain-20",
+  "kind": "unanswerable",
+  "tier": "tail",
+  "question": "What is the lease expiry date for the Newark depot?",
+  "correct": true,
+  "tokens": 3516,
+  "group": "must refuse",
+  "answer": "I couldn\u2019t find the Newark depot lease expiry date in the documents available.\n\nIf you want, I can keep searching for a lease, property, or facilities document that mentions Newark specifically."
+ }
+]

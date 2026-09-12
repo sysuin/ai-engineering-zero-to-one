@@ -1,0 +1,26 @@
+{
+ "gpt-5.4-mini": {
+  "model": "gpt-5.4-mini",
+  "correct": 22,
+  "of": 30,
+  "refusals": 7,
+  "refusals_of": 12,
+  "p50": 0.982840978999775,
+  "p95": 1.4821655420000752,
+  "tokens_in": 10723,
+  "tokens_out": 557,
+  "cost": null
+ },
+ "gpt-5.5": {
+  "model": "gpt-5.5",
+  "correct": 18,
+  "of": 30,
+  "refusals": 6,
+  "refusals_of": 12,
+  "p50": 1.5383758335001403,
+  "p95": 3.2880472910001117,
+  "tokens_in": 10723,
+  "tokens_out": 2007,
+  "cost": null
+ }
+}

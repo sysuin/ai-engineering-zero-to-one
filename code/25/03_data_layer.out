@@ -1,0 +1,42 @@
+Five questions somebody will ask, and the query that answers each.
+
+  what did we spend today, per tenant
+      meridian  4  0.00135
+
+  how often do we refuse
+      1  4
+
+  which questions get asked twice
+      What was revenue in 2024 Q3?  2
+
+  what did the run the user complained about do
+      Why did margin fall in 2025 Q1?  query_warehouse  2.9
+      Why did margin fall in 2025 Q1?  search_documents  1.4
+
+  did the suite pass on the commit we shipped
+      deterministic  0.92  True
+
+  tables: documents, evaluations, feedback, runs, steps
+  file:   data/meridian/clarity.db (80 KB)
+
+None of those five questions can be answered from a log file, and all five
+get asked. That is the whole argument for a database here — not scale, which
+Clarity does not have, but *joins*: a complaint has to reach the run, the run
+has to reach its steps, and the deployment has to reach the eval that passed
+before it went out.
+
+Three decisions in that schema are worth arguing about now rather than later.
+
+Every table carries a tenant. Chapter 26 enforces it; the schema only has to
+make it possible, and retrofitting a tenant column onto a live system is a
+migration nobody enjoys twice.
+
+Steps store arguments and result *sizes*, not results. §23.5's reasoning about
+what belongs in a trace applies to a database you own as much as to a vendor
+you do not — with one difference: here you can afford a separate table with
+its own retention if you decide you need the text.
+
+And the run carries the trace id. Without it the database and the tracing
+backend are two accounts of the same afternoon that cannot be joined, which is
+the single most common gap between a system that has observability and a
+system that has dashboards.

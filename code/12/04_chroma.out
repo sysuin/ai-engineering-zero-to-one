@@ -1,0 +1,23 @@
+stored 1,454 chunks in data/meridian/chroma
+
+Filtered query — kind=quarterly-review AND year=2024 AND quarter=3
+  0.000  qbr-2024-Q3.md       Meridian Supply Co. — Quarterly Busi
+  0.533  qbr-2024-Q3.md       Summary
+  0.551  qbr-2024-Q3.md       Outlook
+
+Same query, no filter
+  -0.000  qbr-2024-Q4.md       Meridian Supply Co. — Quarterly Busi
+  -0.000  qbr-2025-Q2.md       Meridian Supply Co. — Quarterly Busi
+  -0.000  qbr-2025-Q4.md       Meridian Supply Co. — Quarterly Busi
+  Three different quarters, all at distance zero. Every quarterly review opens
+  with the same title block, so those chunks are byte-identical and therefore
+  have identical vectors. Without the filter there is no way to prefer one.
+  This is why Chapter 10 insisted that a chunk carry what it is about, and it
+  is the near-duplicate problem Chapter 14 has to solve properly.
+
+After upsert, the text starts: 'REVISED: # Meridian Supply Co. — Quarter'
+…and the vector is the OLD one, because we upserted text without re-embedding.
+Nothing errored. The document now says one thing and is findable as another.
+
+Every vector store has this failure. Store the hash of the text alongside the
+vector, and refuse to serve a chunk whose text no longer matches it.

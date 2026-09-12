@@ -1,0 +1,45 @@
+1. Negation — the word 'not' barely moves the vector
+
+   0.878  The supplier may raise prices.
+          vs The supplier may not raise prices.
+   0.727  Goods conform to the specification.
+          vs Goods do not conform to the specification.
+   1.000  The buyer may terminate for convenience.
+          (identical) The buyer may terminate for convenience.
+   A sentence and its exact opposite sit almost on top of each other.
+
+2. Identifiers — every product code looks like every other product code
+
+              001      004      011      023
+   CLE-001    1.000    0.972    0.826    0.793
+   CLE-004    0.972    1.000    0.815    0.794
+   SAF-011    0.826    0.815    1.000    0.817
+   PAC-023    0.793    0.794    0.817    1.000
+   Asking for MRD-CLE-001 will happily return MRD-CLE-004.
+
+3. Numbers — magnitude is not encoded
+
+   1.000  a payment term of 30 days
+   0.855  a payment term of 45 days
+   0.861  a payment term of 300 days
+   0.856  a payment term of 30 years
+   '30 days' is closer to '30 years' than to '45 days'.
+
+4. And the one that matters most: similarity is not confidence
+
+   0.498  the right answer       The Supplier may adjust prices by no more th
+   0.211  a related clause       The Supplier may terminate this Agreement on
+   0.108  a different document   The Columbus depot will close for inventory 
+   0.030  complete nonsense      Bananas are typically harvested while still 
+
+The ordering is right, and that is all it is: an ordering.
+
+Look at the top score. The correct, directly responsive answer scores 0.5 — not
+0.9, not anything you would recognise as 'confident'. There is no threshold you
+could set here that means 'good enough'. Set it at 0.4 and this passes; ask a
+question with no answer in the corpus and the best of a hundred irrelevant
+chunks will also clear 0.4, because something always ranks first.
+
+A similarity score ranks candidates against each other. It says nothing about
+whether the winner is any good. Chapter 13 needs a different signal for that,
+and this is why.

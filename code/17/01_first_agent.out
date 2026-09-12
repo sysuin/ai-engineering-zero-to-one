@@ -1,0 +1,18 @@
+Q: Margin fell in 2025 Q1. Find out by how much, and what the company says caused it.
+
+  1. FAILED query_warehouse     1.70s  {'question': "What was the company's margin in 202
+          -> Refused: The question asks for a comparison between two time
+  2. ok     query_warehouse     1.67s  {'question': "What was the company's margin_pct in
+          -> {"rows": [[31.4]], "sql": "SELECT ROUND(100.0 * SUM(gross_pr
+  3. ok     search_documents    1.69s  {'query': '2025 Q1 margin fell caused by why compa
+          -> [{"source": "qbr-2025-Q1.md", "heading": "Summary", "text": 
+
+stopped because: answered
+3 steps, 2,409 tokens, 8.9s
+
+A: Margin in 2025 Q1 was 31.4%.
+
+The company says the decline was caused by Voss Industrial applying a 12% increase to unit costs across its catalogue from the start of the quarter, and that Meridian absorbed the increase rather than passing it through.
+
+Read the trace rather than the answer. The answer is one paragraph; the trace is
+the reasoning, and it is the only place a wrong answer can be diagnosed.

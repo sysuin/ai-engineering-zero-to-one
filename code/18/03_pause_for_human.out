@@ -1,0 +1,31 @@
+=== a person approves ===
+  paused at  : approve
+  asking     : query_warehouse({'question': 'What was revenue in 2024 Q3?'})
+  person says: 'yes, go ahead'
+  recorded   : query_warehouse: approved (yes, go ahead)
+  answer     : Revenue in 2024 Q3 was **$8,461,841.81**.
+
+What the documents say:
+- The Q3 quarterly review says revenue was **$8,461,842 across 5,579 orders**, **up 4.8% vs. the prior quarter**.
+- It also reports **gross margin of 33.
+
+=== a person refuses ===
+  paused at  : approve
+  asking     : query_warehouse({'question': 'What was revenue in 2024 Q3?'})
+  person says: 'no, the warehouse is mid-load and the numbers are wrong'
+  recorded   : query_warehouse: denied (no, the warehouse is mid-load and the numbers are wrong)
+  answer     : Revenue in 2024 Q3 was **$8,461,842**.
+
+What the documents say:
+- The Q3 quarterly review states: **“Revenue for 2024 Q3 was $8,461,842 across 5,579 orders, up 4.8% on the prior quarter.”**
+- It also notes **gross margin
+
+Same graph, same question, two outcomes decided by someone who was not there
+when the run started. The mechanism works: the run stopped, a fresh graph object
+picked it up, and the denial came back as a tool result rather than an exception,
+so the model answered instead of crashing.
+
+Now read the two answers again. The person refused the warehouse because the
+numbers were wrong, and the refused run reports the same revenue anyway - it
+came out of the quarterly review, which was never gated. The gate stopped a
+tool. It did not stop a fact. Chapter 26 is about the difference.

@@ -1,0 +1,12 @@
+Status code: 200
+Content type: application/json
+
+Type of `data`: dict
+Keys: ['year', 'quarter', 'regions', 'total_revenue']
+Total revenue: 8461841.81
+
+  Southwest     2,607,943.26   1,715 orders
+  Northeast     1,879,673.05   1,280 orders
+  Southeast     1,601,494.62   1,023 orders
+  West          1,310,847.97     881 orders
+  Midwest       1,061,882.91     680 orders

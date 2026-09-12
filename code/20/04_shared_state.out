@@ -1,0 +1,25 @@
+24 workers, 20 findings each — 480 expected
+
+  shared list, no lock :   86 recorded, 394 lost
+  same code, with lock :  480 recorded, 0 lost
+
+The API latency is taken out of that deliberately, so the bug happens every
+time instead of once a fortnight. With a real model call between the read and
+the write the window is a thousand times wider, and the failure is the same
+failure — you just meet it in production instead of here.
+
+Six agents, all asked to make sure revenue for 2024 Q3 is on the board.
+Each checks whether it is there before computing it.
+
+  no lock                              6 of 6 actually computed it
+  a lock around every write            6 of 6 actually computed it
+  a lock, and a claim before the work  1 of 6 actually computed it
+
+A lock fixes corruption. It does not fix duplication, because all six agents
+read the board honestly, and all six were honestly told nothing was there —
+the work had started but not finished, and 'started' was not written down.
+
+The fix is not a bigger lock. It is claiming the task before doing it, so the
+board records intent as well as results. That is the difference between a
+shared variable and a work queue, and it is the point at which most teams
+discover they have built a distributed system.

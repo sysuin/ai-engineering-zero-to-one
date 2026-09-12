@@ -1,0 +1,22 @@
+11 terms, each now a list of 1536 numbers
+First five numbers of 'cleaning cloths':
+   [0.0112, 0.0301, 0.0195, 0.0026, -0.0303]
+
+Closest neighbour of each term
+  cleaning cloths        -> microfibre wipes       0.642
+  microfibre wipes       -> cleaning cloths        0.642
+  janitorial supplies    -> cleaning cloths        0.588
+  safety goggles         -> protective gloves      0.603
+  protective gloves      -> safety goggles         0.603
+  hard hat               -> safety goggles         0.466
+  invoice                -> purchase order         0.472
+  payment terms          -> invoice                0.470
+  purchase order         -> invoice                0.472
+  Southwest region       -> Midwest region         0.705
+  Midwest region         -> Southwest region       0.705
+
+A pair the numbers do NOT separate
+  'Southwest region' vs 'Midwest region': 0.705
+  Two different places, nearly the same vector. Embeddings capture the kind
+  of thing something is, not which particular one. Chapter 11 is about when
+  that helps and Chapter 14 about when it quietly ruins your retrieval.

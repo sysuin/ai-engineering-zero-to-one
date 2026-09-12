@@ -1,0 +1,14 @@
+  WRONG   What was Voss Industrial's revenue in 2025?            got [(None,)]  want [(4323725.42,)]
+  WRONG   Which supplier has the most products?                  got [('Pemberton Mills', 6  want [('Quillon Metals',)]
+  WRONG   How many suppliers are based outside the United Stat   got [(20,)]  want [(10,)]
+
+20 questions
+  ran without error   20/20  100%
+  returned the right answer 17/20  85%
+
+Every query that ran, ran silently. A wrong number and a right number come back
+through the same code path, in the same shape, with no indication which is which.
+
+This is the accuracy people demo, and it is measured here against a reference
+query rather than by reading the SQL and nodding — which is the only reason we
+know it is not 100%.

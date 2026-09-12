@@ -1,0 +1,27 @@
+The schema, as the API sees it:
+{
+  "$ref": "#/$defs/PaymentBasis",
+  "description": "Whether the payment clock starts at the invoice date or at receipt."
+}
+
+Extracted 40 of 40 contracts.
+Every one is a ContractTerms, not a string.
+
+{
+  "supplier": "Voss Industrial",
+  "payment_days": 60,
+  "payment_basis": "invoice",
+  "price_cap_pct": 3,
+  "price_notice_days": 30,
+  "liability_cap_usd": null
+}
+
+Field-level accuracy against the generated ground truth
+  payment_days         40/40  100%
+  price_cap_pct        40/40  100%
+  price_notice_days    40/40  100%
+  payment_basis        40/40  100%
+
+  liability_cap_usd is null in 24 of 40 — the contracts
+  that state only a percentage. A field that is allowed to be absent is how a
+  model says 'not in the document' without inventing something.

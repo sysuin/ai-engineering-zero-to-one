@@ -1,0 +1,6 @@
+MRD-CLE-001  5,400.00
+Traceback (most recent call last):
+  File "code/02/09_broken_missing_key.py", line 10, in <module>
+    net = line["qty"] * line["unit_price"] * (1 - line["discount_pct"] / 100)
+                                                  ~~~~^^^^^^^^^^^^^^^^
+KeyError: 'discount_pct'

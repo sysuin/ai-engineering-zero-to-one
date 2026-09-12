@@ -1,0 +1,33 @@
+Failing case: Which region was strongest in 2023 Q1?
+  8 passages, 1,746 characters, wrong in at least 2 of 3 runs
+
+  dropped a passage and it still fails  -> 7 left
+  dropped a passage and it still fails  -> 6 left
+  dropped a passage and it still fails  -> 5 left
+  dropped a passage and it still fails  -> 4 left
+  dropping a passage fixes it           -> that one matters
+  dropped a passage and it still fails  -> 3 left
+  dropped a passage and it still fails  -> 2 left
+  dropped a passage and it still fails  -> 1 left
+
+  8 passages -> 1   1,746 -> 220 characters (87% smaller)
+
+  what is left:
+
+    ### Commentary Southwest remained our strongest region at $2,607,9
+
+That is delta debugging, and the version above is the crude one — drop each
+part, keep the drop if the bug survives. It is O(n) calls and good enough for
+a context window; the published algorithm bisects and is worth reading when n
+is large.
+
+Two things make it work on a system like this one.
+
+A test that is a *rate*, not a boolean. `fails()` samples three times and asks
+for two, because a single run proves nothing — §24.1. Shrink against a flaky
+predicate and the algorithm happily removes the thing that was causing the bug.
+
+And shrinking the input, not the system. It is tempting to start disabling
+features; that finds which component is involved, which you already knew. The
+minimal input tells you what the component cannot handle, which is the thing
+you have to fix.

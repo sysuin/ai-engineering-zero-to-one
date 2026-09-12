@@ -1,0 +1,53 @@
+Three requirements, sized before anything is built.
+
+  a support copilot over ten years of tickets
+    4,000 requests/day  x  3 calls  =  36.0M in, 3.00M out
+    cost      $7.20/day   $216/month   $0.0018/request
+    index     2,700,000 chunks   16.6 GB of vectors   $22 to build once
+    shape     5.4s per request, 0.8 concurrent at peak
+
+  a nightly contract-risk enricher
+    50,000 requests/day  x  2 calls  =  600.0M in, 40.00M out
+    cost      $114.00/day   $3,420/month   $0.0023/request
+    index     1,250,000 chunks   7.7 GB of vectors   $10 to build once
+    shape     4.0s per request, 2.3 concurrent at peak
+
+  a regulated advisory assistant
+    300 requests/day  x  6 calls  =  7.2M in, 0.54M out
+    cost      $1.40/day   $42/month   $0.0047/request
+    index     160,000 chunks   1.0 GB of vectors   $1 to build once
+    shape     13.2s per request, 0.1 concurrent at peak
+
+Read what each number decides, because that is the point of doing this before
+drawing anything.
+
+Start with the shape column, because it is the one that surprises people. The
+busiest of these three needs 2.3 requests in flight at peak. Not thirty. Not a
+cluster. One container with a warm index would serve all three of these
+systems at once and spend most of its day idle.
+
+That is the normal case for internal software, and sizing is how you find out
+before you have designed for a load you will never see. The architecture that
+wins here is the boring one, and the argument for it is arithmetic.
+
+Then read cost. The nightly enricher is $3,420 a month and the regulated
+assistant is $42. Those two systems have nothing in common: one is a
+throughput problem where a batch API and a queue are the whole design, and the
+other is a governance problem where cost will never be the argument. Knowing
+which you have, before the meeting, is most of what this exercise buys.
+
+And read the index separately. The support copilot's 2.7M chunks are 17GB of
+vectors — a fixed cost, a storage decision, and usually where the surprise is.
+It is also the number that decides whether §12.2's approximate index is
+necessary or premature.
+
+Three habits that make an envelope useful rather than decorative:
+
+  size the index separately     it is fixed cost and storage, not throughput
+  use Little's law for shape    concurrency is arrival rate times duration,
+                                and it selects the deployment target
+  put the per-request cost      a monthly total is an argument; a per-request
+  beside the monthly one        figure is a design constraint
+
+(The rates above are placeholders. Substitute your provider's and every number
+becomes yours — the arithmetic does not change.)

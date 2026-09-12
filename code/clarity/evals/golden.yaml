@@ -1,0 +1,1179 @@
+version: 1
+cases:
+- id: qbr-2023-Q1-revenue
+  kind: document
+  question: What was revenue in 2023 Q1?
+  answer: 7,360,834
+  accept:
+  - '7360834'
+  - 7,360,833.67
+  - '7360833.67'
+  source: qbr-2023-Q1.md
+  span: Revenue for 2023 Q1 was $7,360,834 across 4,965 orders, no prior quarter for comparison.
+  tier: head
+- id: qbr-2023-Q1-orders
+  kind: document
+  question: How many orders were there in 2023 Q1?
+  answer: 4,965
+  accept:
+  - '4965'
+  - 4,965
+  source: qbr-2023-Q1.md
+  span: Revenue for 2023 Q1 was $7,360,834 across 4,965 orders, no prior quarter for comparison.
+  tier: head
+- id: qbr-2023-Q1-margin
+  kind: document
+  question: What was gross margin in 2023 Q1?
+  answer: 31.0%
+  accept:
+  - '31.0'
+  - '31.0'
+  source: qbr-2023-Q1.md
+  span: Gross margin was 31.0%.
+  tier: head
+- id: qbr-2023-Q1-strongest
+  kind: document
+  question: Which region was strongest in 2023 Q1?
+  answer: Midwest
+  source: qbr-2023-Q1.md
+  span: Midwest remained our strongest region at $1,925,311.
+  tier: head
+  accept: []
+- id: qbr-2023-Q1-weakest
+  kind: document
+  question: Which region was weakest in 2023 Q1?
+  answer: West
+  source: qbr-2023-Q1.md
+  span: West was the weakest at $948,788.
+  tier: head
+  accept: []
+- id: qbr-2023-Q2-revenue
+  kind: document
+  question: What was revenue in 2023 Q2?
+  answer: 7,614,049
+  accept:
+  - '7614049'
+  - 7,614,048.76
+  - '7614048.76'
+  source: qbr-2023-Q2.md
+  span: Revenue for 2023 Q2 was $7,614,049 across 5,114 orders, up 3.4% on the prior quarter.
+  tier: head
+- id: qbr-2023-Q2-orders
+  kind: document
+  question: How many orders were there in 2023 Q2?
+  answer: 5,114
+  accept:
+  - '5114'
+  - 5,114
+  source: qbr-2023-Q2.md
+  span: Revenue for 2023 Q2 was $7,614,049 across 5,114 orders, up 3.4% on the prior quarter.
+  tier: head
+- id: qbr-2023-Q2-margin
+  kind: document
+  question: What was gross margin in 2023 Q2?
+  answer: 30.6%
+  accept:
+  - '30.6'
+  - '30.6'
+  source: qbr-2023-Q2.md
+  span: Gross margin was 30.6%.
+  tier: head
+- id: qbr-2023-Q2-strongest
+  kind: document
+  question: Which region was strongest in 2023 Q2?
+  answer: Midwest
+  source: qbr-2023-Q2.md
+  span: Midwest remained our strongest region at $2,162,479.
+  tier: head
+  accept: []
+- id: qbr-2023-Q2-weakest
+  kind: document
+  question: Which region was weakest in 2023 Q2?
+  answer: West
+  source: qbr-2023-Q2.md
+  span: West was the weakest at $1,032,749.
+  tier: head
+  accept: []
+- id: qbr-2023-Q3-revenue
+  kind: document
+  question: What was revenue in 2023 Q3?
+  answer: 7,774,027
+  accept:
+  - '7774027'
+  - 7,774,027.48
+  - '7774027.48'
+  source: qbr-2023-Q3.md
+  span: Revenue for 2023 Q3 was $7,774,027 across 5,169 orders, up 2.1% on the prior quarter.
+  tier: head
+- id: qbr-2023-Q3-orders
+  kind: document
+  question: How many orders were there in 2023 Q3?
+  answer: 5,169
+  accept:
+  - '5169'
+  - 5,169
+  source: qbr-2023-Q3.md
+  span: Revenue for 2023 Q3 was $7,774,027 across 5,169 orders, up 2.1% on the prior quarter.
+  tier: head
+- id: qbr-2023-Q3-margin
+  kind: document
+  question: What was gross margin in 2023 Q3?
+  answer: 31.9%
+  accept:
+  - '31.9'
+  - '31.9'
+  source: qbr-2023-Q3.md
+  span: Gross margin was 31.9%.
+  tier: head
+- id: qbr-2023-Q3-strongest
+  kind: document
+  question: Which region was strongest in 2023 Q3?
+  answer: Midwest
+  source: qbr-2023-Q3.md
+  span: Midwest remained our strongest region at $2,137,159.
+  tier: head
+  accept: []
+- id: qbr-2023-Q3-weakest
+  kind: document
+  question: Which region was weakest in 2023 Q3?
+  answer: West
+  source: qbr-2023-Q3.md
+  span: West was the weakest at $1,030,045.
+  tier: head
+  accept: []
+- id: qbr-2023-Q4-revenue
+  kind: document
+  question: What was revenue in 2023 Q4?
+  answer: 7,699,847
+  accept:
+  - '7699847'
+  - 7,699,846.68
+  - '7699846.68'
+  source: qbr-2023-Q4.md
+  span: Revenue for 2023 Q4 was $7,699,847 across 5,354 orders, down 1.0% on the prior quarter.
+  tier: head
+- id: qbr-2023-Q4-orders
+  kind: document
+  question: How many orders were there in 2023 Q4?
+  answer: 5,354
+  accept:
+  - '5354'
+  - 5,354
+  source: qbr-2023-Q4.md
+  span: Revenue for 2023 Q4 was $7,699,847 across 5,354 orders, down 1.0% on the prior quarter.
+  tier: head
+- id: qbr-2023-Q4-margin
+  kind: document
+  question: What was gross margin in 2023 Q4?
+  answer: 30.2%
+  accept:
+  - '30.2'
+  - '30.2'
+  source: qbr-2023-Q4.md
+  span: Gross margin was 30.2%.
+  tier: head
+- id: qbr-2023-Q4-strongest
+  kind: document
+  question: Which region was strongest in 2023 Q4?
+  answer: Midwest
+  source: qbr-2023-Q4.md
+  span: Midwest remained our strongest region at $2,081,808.
+  tier: head
+  accept: []
+- id: qbr-2023-Q4-weakest
+  kind: document
+  question: Which region was weakest in 2023 Q4?
+  answer: West
+  source: qbr-2023-Q4.md
+  span: West was the weakest at $1,092,977.
+  tier: head
+  accept: []
+- id: qbr-2024-Q1-revenue
+  kind: document
+  question: What was revenue in 2024 Q1?
+  answer: 8,062,599
+  accept:
+  - '8062599'
+  - 8,062,598.92
+  - '8062598.92'
+  source: qbr-2024-Q1.md
+  span: Revenue for 2024 Q1 was $8,062,599 across 5,331 orders, up 4.7% on the prior quarter.
+  tier: head
+- id: qbr-2024-Q1-orders
+  kind: document
+  question: How many orders were there in 2024 Q1?
+  answer: 5,331
+  accept:
+  - '5331'
+  - 5,331
+  source: qbr-2024-Q1.md
+  span: Revenue for 2024 Q1 was $8,062,599 across 5,331 orders, up 4.7% on the prior quarter.
+  tier: head
+- id: qbr-2024-Q1-margin
+  kind: document
+  question: What was gross margin in 2024 Q1?
+  answer: 31.2%
+  accept:
+  - '31.2'
+  - '31.2'
+  source: qbr-2024-Q1.md
+  span: Gross margin was 31.2%.
+  tier: head
+- id: qbr-2024-Q1-strongest
+  kind: document
+  question: Which region was strongest in 2024 Q1?
+  answer: Southwest
+  source: qbr-2024-Q1.md
+  span: Southwest remained our strongest region at $2,005,227.
+  tier: head
+  accept: []
+- id: qbr-2024-Q1-weakest
+  kind: document
+  question: Which region was weakest in 2024 Q1?
+  answer: West
+  source: qbr-2024-Q1.md
+  span: West was the weakest at $1,102,755.
+  tier: head
+  accept: []
+- id: qbr-2024-Q2-revenue
+  kind: document
+  question: What was revenue in 2024 Q2?
+  answer: 8,074,848
+  accept:
+  - '8074848'
+  - 8,074,847.91
+  - '8074847.91'
+  source: qbr-2024-Q2.md
+  span: Revenue for 2024 Q2 was $8,074,848 across 5,553 orders, up 0.2% on the prior quarter.
+  tier: head
+- id: qbr-2024-Q2-orders
+  kind: document
+  question: How many orders were there in 2024 Q2?
+  answer: 5,553
+  accept:
+  - '5553'
+  - 5,553
+  source: qbr-2024-Q2.md
+  span: Revenue for 2024 Q2 was $8,074,848 across 5,553 orders, up 0.2% on the prior quarter.
+  tier: head
+- id: qbr-2024-Q2-margin
+  kind: document
+  question: What was gross margin in 2024 Q2?
+  answer: 32.0%
+  accept:
+  - '32.0'
+  - '32.0'
+  source: qbr-2024-Q2.md
+  span: Gross margin was 32.0%.
+  tier: head
+- id: qbr-2024-Q2-strongest
+  kind: document
+  question: Which region was strongest in 2024 Q2?
+  answer: Midwest
+  source: qbr-2024-Q2.md
+  span: Midwest remained our strongest region at $2,257,870.
+  tier: head
+  accept: []
+- id: qbr-2024-Q2-weakest
+  kind: document
+  question: Which region was weakest in 2024 Q2?
+  answer: West
+  source: qbr-2024-Q2.md
+  span: West was the weakest at $1,072,879.
+  tier: head
+  accept: []
+- id: qbr-2024-Q3-revenue
+  kind: document
+  question: What was revenue in 2024 Q3?
+  answer: 8,461,842
+  accept:
+  - '8461842'
+  - 8,461,841.81
+  - '8461841.81'
+  source: qbr-2024-Q3.md
+  span: Revenue for 2024 Q3 was $8,461,842 across 5,579 orders, up 4.8% on the prior quarter.
+  tier: head
+- id: qbr-2024-Q3-orders
+  kind: document
+  question: How many orders were there in 2024 Q3?
+  answer: 5,579
+  accept:
+  - '5579'
+  - 5,579
+  source: qbr-2024-Q3.md
+  span: Revenue for 2024 Q3 was $8,461,842 across 5,579 orders, up 4.8% on the prior quarter.
+  tier: head
+- id: qbr-2024-Q3-margin
+  kind: document
+  question: What was gross margin in 2024 Q3?
+  answer: 33.1%
+  accept:
+  - '33.1'
+  - '33.1'
+  source: qbr-2024-Q3.md
+  span: Gross margin was 33.1%.
+  tier: head
+- id: qbr-2024-Q3-strongest
+  kind: document
+  question: Which region was strongest in 2024 Q3?
+  answer: Southwest
+  source: qbr-2024-Q3.md
+  span: Southwest remained our strongest region at $2,607,943.
+  tier: head
+  accept: []
+- id: qbr-2024-Q3-weakest
+  kind: document
+  question: Which region was weakest in 2024 Q3?
+  answer: Midwest
+  source: qbr-2024-Q3.md
+  span: Midwest was the weakest at $1,061,883.
+  tier: head
+  accept: []
+- id: qbr-2024-Q4-revenue
+  kind: document
+  question: What was revenue in 2024 Q4?
+  answer: 8,266,068
+  accept:
+  - '8266068'
+  - 8,266,068.36
+  - '8266068.36'
+  source: qbr-2024-Q4.md
+  span: Revenue for 2024 Q4 was $8,266,068 across 5,770 orders, down 2.3% on the prior quarter.
+  tier: head
+- id: qbr-2024-Q4-orders
+  kind: document
+  question: How many orders were there in 2024 Q4?
+  answer: 5,770
+  accept:
+  - '5770'
+  - 5,770
+  source: qbr-2024-Q4.md
+  span: Revenue for 2024 Q4 was $8,266,068 across 5,770 orders, down 2.3% on the prior quarter.
+  tier: head
+- id: qbr-2024-Q4-margin
+  kind: document
+  question: What was gross margin in 2024 Q4?
+  answer: 31.7%
+  accept:
+  - '31.7'
+  - '31.7'
+  source: qbr-2024-Q4.md
+  span: Gross margin was 31.7%.
+  tier: head
+- id: qbr-2024-Q4-strongest
+  kind: document
+  question: Which region was strongest in 2024 Q4?
+  answer: Southwest
+  source: qbr-2024-Q4.md
+  span: Southwest remained our strongest region at $2,565,933.
+  tier: head
+  accept: []
+- id: qbr-2024-Q4-weakest
+  kind: document
+  question: Which region was weakest in 2024 Q4?
+  answer: Midwest
+  source: qbr-2024-Q4.md
+  span: Midwest was the weakest at $994,594.
+  tier: head
+  accept: []
+- id: qbr-2025-Q1-revenue
+  kind: document
+  question: What was revenue in 2025 Q1?
+  answer: 9,079,542
+  accept:
+  - '9079542'
+  - 9,079,541.73
+  - '9079541.73'
+  source: qbr-2025-Q1.md
+  span: Revenue for 2025 Q1 was $9,079,542 across 5,847 orders, up 9.8% on the prior quarter.
+  tier: head
+- id: qbr-2025-Q1-orders
+  kind: document
+  question: How many orders were there in 2025 Q1?
+  answer: 5,847
+  accept:
+  - '5847'
+  - 5,847
+  source: qbr-2025-Q1.md
+  span: Revenue for 2025 Q1 was $9,079,542 across 5,847 orders, up 9.8% on the prior quarter.
+  tier: head
+- id: qbr-2025-Q1-margin
+  kind: document
+  question: What was gross margin in 2025 Q1?
+  answer: 31.4%
+  accept:
+  - '31.4'
+  - '31.4'
+  source: qbr-2025-Q1.md
+  span: Gross margin was 31.4%.
+  tier: head
+- id: qbr-2025-Q1-strongest
+  kind: document
+  question: Which region was strongest in 2025 Q1?
+  answer: Southwest
+  source: qbr-2025-Q1.md
+  span: Southwest remained our strongest region at $2,699,016.
+  tier: head
+  accept: []
+- id: qbr-2025-Q1-weakest
+  kind: document
+  question: Which region was weakest in 2025 Q1?
+  answer: Midwest
+  source: qbr-2025-Q1.md
+  span: Midwest was the weakest at $1,165,398.
+  tier: head
+  accept: []
+- id: qbr-2025-Q2-revenue
+  kind: document
+  question: What was revenue in 2025 Q2?
+  answer: 8,633,631
+  accept:
+  - '8633631'
+  - 8,633,630.78
+  - '8633630.78'
+  source: qbr-2025-Q2.md
+  span: Revenue for 2025 Q2 was $8,633,631 across 5,867 orders, down 4.9% on the prior quarter.
+  tier: head
+- id: qbr-2025-Q2-orders
+  kind: document
+  question: How many orders were there in 2025 Q2?
+  answer: 5,867
+  accept:
+  - '5867'
+  - 5,867
+  source: qbr-2025-Q2.md
+  span: Revenue for 2025 Q2 was $8,633,631 across 5,867 orders, down 4.9% on the prior quarter.
+  tier: head
+- id: qbr-2025-Q2-margin
+  kind: document
+  question: What was gross margin in 2025 Q2?
+  answer: 31.0%
+  accept:
+  - '31.0'
+  - '31.0'
+  source: qbr-2025-Q2.md
+  span: Gross margin was 31.0%.
+  tier: head
+- id: qbr-2025-Q2-strongest
+  kind: document
+  question: Which region was strongest in 2025 Q2?
+  answer: Southwest
+  source: qbr-2025-Q2.md
+  span: Southwest remained our strongest region at $2,642,117.
+  tier: head
+  accept: []
+- id: qbr-2025-Q2-weakest
+  kind: document
+  question: Which region was weakest in 2025 Q2?
+  answer: Midwest
+  source: qbr-2025-Q2.md
+  span: Midwest was the weakest at $1,091,847.
+  tier: head
+  accept: []
+- id: qbr-2025-Q3-revenue
+  kind: document
+  question: What was revenue in 2025 Q3?
+  answer: 8,896,127
+  accept:
+  - '8896127'
+  - 8,896,126.93
+  - '8896126.93'
+  source: qbr-2025-Q3.md
+  span: Revenue for 2025 Q3 was $8,896,127 across 6,009 orders, up 3.0% on the prior quarter.
+  tier: head
+- id: qbr-2025-Q3-orders
+  kind: document
+  question: How many orders were there in 2025 Q3?
+  answer: 6,009
+  accept:
+  - '6009'
+  - 6,009
+  source: qbr-2025-Q3.md
+  span: Revenue for 2025 Q3 was $8,896,127 across 6,009 orders, up 3.0% on the prior quarter.
+  tier: head
+- id: qbr-2025-Q3-margin
+  kind: document
+  question: What was gross margin in 2025 Q3?
+  answer: 32.2%
+  accept:
+  - '32.2'
+  - '32.2'
+  source: qbr-2025-Q3.md
+  span: Gross margin was 32.2%.
+  tier: head
+- id: qbr-2025-Q3-strongest
+  kind: document
+  question: Which region was strongest in 2025 Q3?
+  answer: Southwest
+  source: qbr-2025-Q3.md
+  span: Southwest remained our strongest region at $2,844,024.
+  tier: head
+  accept: []
+- id: qbr-2025-Q3-weakest
+  kind: document
+  question: Which region was weakest in 2025 Q3?
+  answer: Midwest
+  source: qbr-2025-Q3.md
+  span: Midwest was the weakest at $1,131,394.
+  tier: head
+  accept: []
+- id: qbr-2025-Q4-revenue
+  kind: document
+  question: What was revenue in 2025 Q4?
+  answer: 8,790,970
+  accept:
+  - '8790970'
+  - 8,790,969.94
+  - '8790969.94'
+  source: qbr-2025-Q4.md
+  span: Revenue for 2025 Q4 was $8,790,970 across 6,118 orders, down 1.2% on the prior quarter.
+  tier: head
+- id: qbr-2025-Q4-orders
+  kind: document
+  question: How many orders were there in 2025 Q4?
+  answer: 6,118
+  accept:
+  - '6118'
+  - 6,118
+  source: qbr-2025-Q4.md
+  span: Revenue for 2025 Q4 was $8,790,970 across 6,118 orders, down 1.2% on the prior quarter.
+  tier: head
+- id: qbr-2025-Q4-margin
+  kind: document
+  question: What was gross margin in 2025 Q4?
+  answer: 30.8%
+  accept:
+  - '30.8'
+  - '30.8'
+  source: qbr-2025-Q4.md
+  span: Gross margin was 30.8%.
+  tier: head
+- id: qbr-2025-Q4-strongest
+  kind: document
+  question: Which region was strongest in 2025 Q4?
+  answer: Southwest
+  source: qbr-2025-Q4.md
+  span: Southwest remained our strongest region at $2,573,114.
+  tier: head
+  accept: []
+- id: qbr-2025-Q4-weakest
+  kind: document
+  question: Which region was weakest in 2025 Q4?
+  answer: Midwest
+  source: qbr-2025-Q4.md
+  span: Midwest was the weakest at $1,172,492.
+  tier: head
+  accept: []
+- id: warehouse-01
+  kind: warehouse
+  question: What was total revenue in 2024?
+  answer: 32,865,357.00
+  accept:
+  - '32865357.0'
+  - 32,865,357
+  - '32865357'
+  - '32.87'
+  source: v_sales
+  span: SELECT ROUND(SUM(revenue),2) FROM v_sales WHERE year=2024
+  tier: head
+- id: warehouse-02
+  kind: warehouse
+  question: How many orders were placed in 2025?
+  answer: 23,841
+  accept:
+  - '23841'
+  - '23841'
+  source: v_sales
+  span: SELECT COUNT(DISTINCT order_id) FROM v_sales WHERE year=2025
+  tier: head
+- id: warehouse-03
+  kind: warehouse
+  question: What was gross margin in 2025, as a percentage?
+  answer: '31.40'
+  accept:
+  - '31.4'
+  - '31'
+  - '31'
+  - '0.00'
+  source: v_sales
+  span: SELECT ROUND(100.0*SUM(gross_profit)/SUM(revenue),1) FROM v_sales WHERE year=2025
+  tier: head
+- id: warehouse-04
+  kind: warehouse
+  question: How many distinct SKUs were sold in 2023?
+  answer: '38'
+  accept:
+  - '38'
+  - '38'
+  source: v_sales
+  span: SELECT COUNT(DISTINCT sku) FROM v_sales WHERE year=2023
+  tier: head
+- id: warehouse-05
+  kind: warehouse
+  question: Which category made the most gross profit in 2025 Q4?
+  answer: Safety
+  accept:
+  - Safety
+  source: v_sales
+  span: SELECT category FROM v_sales WHERE year=2025 AND quarter=4 GROUP BY category ORDER
+    BY SUM(gross_profit) DESC LIMIT 1
+  tier: head
+- id: warehouse-06
+  kind: warehouse
+  question: What was Voss Industrial's revenue in 2025?
+  answer: 4,323,725.42
+  accept:
+  - '4323725.42'
+  - 4,323,725
+  - '4323725'
+  - '4.32'
+  source: v_sales
+  span: SELECT ROUND(SUM(revenue),2) FROM v_sales WHERE supplier='Voss Industrial' AND year=2025
+  tier: head
+- id: warehouse-07
+  kind: warehouse
+  question: How many units of Safety products shipped in 2025 Q1?
+  answer: 18,357
+  accept:
+  - '18357'
+  - '18357'
+  source: v_sales
+  span: SELECT SUM(qty) FROM v_sales WHERE category='Safety' AND year=2025 AND quarter=1
+  tier: head
+- id: warehouse-08
+  kind: warehouse
+  question: How much revenue came from the Enterprise segment in 2024 Q2?
+  answer: 2,976,464.66
+  accept:
+  - '2976464.66'
+  - 2,976,465
+  - '2976465'
+  - '2.98'
+  source: v_sales
+  span: SELECT ROUND(SUM(revenue),2) FROM v_sales WHERE segment='Enterprise' AND year=2024
+    AND quarter=2
+  tier: head
+- id: warehouse-09
+  kind: warehouse
+  question: Which channel produced the most orders overall?
+  answer: Web
+  accept:
+  - Web
+  source: v_sales
+  span: SELECT channel FROM v_sales GROUP BY channel ORDER BY COUNT(DISTINCT order_id) DESC
+    LIMIT 1
+  tier: head
+- id: warehouse-10
+  kind: warehouse
+  question: What was the average discount percentage in 2024?
+  answer: '1.99'
+  accept:
+  - '1.986'
+  - '2'
+  - '2'
+  - '0.00'
+  source: v_sales
+  span: SELECT ROUND(AVG(discount_pct),3) FROM v_sales WHERE year=2024
+  tier: head
+- id: warehouse-11
+  kind: warehouse
+  question: What was Midwest revenue in 2025 Q1?
+  answer: 1,165,398.19
+  accept:
+  - '1165398.19'
+  - 1,165,398
+  - '1165398'
+  - '1.17'
+  source: v_sales
+  span: SELECT ROUND(SUM(revenue),2) FROM v_sales WHERE region='Midwest' AND year=2025 AND
+    quarter=1
+  tier: head
+- id: warehouse-12
+  kind: warehouse
+  question: Which region had the lowest revenue in 2024 Q3?
+  answer: Midwest
+  accept:
+  - Midwest
+  source: v_sales
+  span: SELECT region FROM v_sales WHERE year=2024 AND quarter=3 GROUP BY region ORDER BY
+    SUM(revenue) ASC LIMIT 1
+  tier: head
+- id: warehouse-13
+  kind: warehouse
+  question: How many units were shipped in 2023 Q2?
+  answer: 96,073
+  accept:
+  - '96073'
+  - '96073'
+  source: v_sales
+  span: SELECT SUM(qty) FROM v_sales WHERE year=2023 AND quarter=2
+  tier: head
+- id: warehouse-14
+  kind: warehouse
+  question: What was the total cost of goods sold in 2024?
+  answer: 22,345,948.03
+  accept:
+  - '22345948.03'
+  - 22,345,948
+  - '22345948'
+  - '22.35'
+  source: v_sales
+  span: SELECT ROUND(SUM(cost),2) FROM v_sales WHERE year=2024
+  tier: head
+- id: warehouse-15
+  kind: warehouse
+  question: Which supplier produced the most revenue in 2024?
+  answer: Quillon Metals
+  accept:
+  - Quillon Metals
+  source: v_sales
+  span: SELECT supplier FROM v_sales WHERE year=2024 GROUP BY supplier ORDER BY SUM(revenue)
+    DESC LIMIT 1
+  tier: head
+- id: warehouse-16
+  kind: warehouse
+  question: How many orders did the Midwest region place in 2024 Q4?
+  answer: '690'
+  accept:
+  - '690'
+  - '690'
+  source: v_sales
+  span: SELECT COUNT(DISTINCT order_id) FROM v_sales WHERE region='Midwest' AND year=2024
+    AND quarter=4
+  tier: head
+- id: warehouse-17
+  kind: warehouse
+  question: What was Packaging revenue in 2025?
+  answer: 5,459,645.67
+  accept:
+  - '5459645.67'
+  - 5,459,646
+  - '5459646'
+  - '5.46'
+  source: v_sales
+  span: SELECT ROUND(SUM(revenue),2) FROM v_sales WHERE category='Packaging' AND year=2025
+  tier: head
+- id: warehouse-18
+  kind: warehouse
+  question: What was gross profit in 2024 Q1?
+  answer: 2,515,698.48
+  accept:
+  - '2515698.48'
+  - 2,515,698
+  - '2515698'
+  - '2.52'
+  source: v_sales
+  span: SELECT ROUND(SUM(gross_profit),2) FROM v_sales WHERE year=2024 AND quarter=1
+  tier: head
+- id: warehouse-19
+  kind: warehouse
+  question: How many distinct customers ordered in 2025 Q2?
+  answer: '57'
+  accept:
+  - '57'
+  - '57'
+  source: v_sales
+  span: SELECT COUNT(DISTINCT customer_id) FROM v_sales WHERE year=2025 AND quarter=2
+  tier: head
+- id: warehouse-20
+  kind: warehouse
+  question: What was Cleaning category margin in 2024, as a percentage?
+  answer: '32.60'
+  accept:
+  - '32.6'
+  - '33'
+  - '33'
+  - '0.00'
+  source: v_sales
+  span: SELECT ROUND(100.0*SUM(gross_profit)/SUM(revenue),1) FROM v_sales WHERE category='Cleaning'
+    AND year=2024
+  tier: head
+- id: tail-rotated-dallas
+  kind: document
+  question: What is the racked storage capacity at the Dallas depot?
+  answer: 54,100
+  accept:
+  - '54100'
+  - 54,100 sq ft
+  source: 02-rotated-table.md
+  span: '| Racked storage      |     48,200 |  31,400 |  22,900 |  18,600 |     54,100 |'
+  tier: tail
+- id: tail-rotated-total
+  kind: document
+  question: What is the total capacity of the Columbus depot?
+  answer: 32,400
+  accept:
+  - '32400'
+  source: 02-rotated-table.md
+  span: '| **Total**           | **68,600** | **40,600** | **32,400** | **23,400** | **79,300**
+    |'
+  tier: tail
+- id: tail-rotated-util
+  kind: document
+  question: What was utilisation at the Columbus depot at year end?
+  answer: 51%
+  accept:
+  - '51'
+  source: 02-rotated-table.md
+  span: Utilisation at year end was 82%, 74%, 51%, 69% and 88% respectively.
+  tier: tail
+- id: tail-price-cap
+  kind: document
+  question: Under MSC-2022-100, how much can the supplier raise prices in a twelve month period?
+  answer: 3%
+  accept:
+  - 3 per cent
+  - 3 percent
+  source: contract-MSC-2022-100.md
+  span: 2.2 The Supplier may adjust prices once in any twelve month period, by no more than
+    3% in aggregate, on not less than 30 days written notice.
+  tier: tail
+- id: tail-price-notice
+  kind: document
+  question: How much written notice is required before a price rise under MSC-2022-100?
+  answer: 30 days
+  accept:
+  - '30'
+  source: contract-MSC-2022-100.md
+  span: 2.2 The Supplier may adjust prices once in any twelve month period, by no more than
+    3% in aggregate, on not less than 30 days written notice.
+  tier: tail
+- id: tail-reject-window
+  kind: document
+  question: How long does the buyer have to reject non-conforming goods under MSC-2022-100?
+  answer: 21 days
+  accept:
+  - '21'
+  source: contract-MSC-2022-100.md
+  span: 5.2 The Buyer may reject non-conforming goods within 21 days of delivery.
+  tier: tail
+- id: tail-liability-cap
+  kind: document
+  question: What is the supplier's liability cap under MSC-2022-100?
+  answer: 150%
+  accept:
+  - '150'
+  source: contract-MSC-2022-100.md
+  span: 6.1 The Supplier's aggregate liability shall not exceed 150% of the charges paid in
+    the twelve months preceding the claim.
+  tier: tail
+- id: tail-service-level
+  kind: document
+  question: What on-time delivery rate does MSC-2022-100 require?
+  answer: 96%
+  accept:
+  - '96'
+  source: contract-MSC-2022-100.md
+  span: 4.1 The Supplier shall deliver not less than 96% of order lines complete and on time,
+    measured monthly.
+  tier: tail
+- id: tail-three-months
+  kind: document
+  question: What happens if a supplier misses the delivery target three months running under
+    MSC-2022-100?
+  answer: clause 7
+  accept:
+  - remedies in clause 7
+  - termination
+  source: contract-MSC-2022-100.md
+  span: '4.2 Failure to meet the target in clause 4.1 in three consecutive months entitles
+    the Buyer
+
+    to the remedies in clause 7.'
+  tier: tail
+- id: tail-payment-terms
+  kind: document
+  question: What are the payment terms under MSC-2022-100?
+  answer: 60 days
+  accept:
+  - '60'
+  source: contract-MSC-2022-100.md
+  span: 3.1 Payment shall be made within 60 days of the date of a valid invoice.
+  tier: tail
+- id: tail-termination
+  kind: document
+  question: How much notice is needed to terminate MSC-2022-100 for convenience?
+  answer: 180 days
+  accept:
+  - '180'
+  source: contract-MSC-2022-100.md
+  span: 7.1 Either party may terminate this Agreement for convenience on 180 days written
+    notice.
+  tier: tail
+- id: tail-halloway
+  kind: document
+  question: Which account did Meridian lose, and which region did it hurt?
+  answer: Halloway
+  accept:
+  - Halloway Group
+  source: qbr-2024-Q3.md
+  span: '**Account loss.** Halloway Group did not renew at the end of the previous quarter.'
+  tier: tail
+- id: tail-halloway-why
+  kind: document
+  question: Why does the company say Halloway Group left?
+  answer: competitor
+  accept:
+  - framework agreement
+  - competitor's national
+  source: qbr-2024-Q3.md
+  span: The commercial team attributes the loss to a competitor's national framework agreement
+    rather than to service failure; the account review is filed separately.
+  tier: tail
+- id: tail-margin-target
+  kind: document
+  question: What is Meridian's standing gross margin target?
+  answer: 32.0%
+  accept:
+  - '32'
+  - '32.0'
+  source: qbr-2024-Q3.md
+  span: The Safety category led on revenue. Margin across the business was 33.1%, against
+    a standing target of 32.0%.
+  tier: tail
+- id: tail-composite-q3
+  kind: composite
+  question: What was revenue in 2024 Q3, and what does the review give as the reason the Midwest
+    fell?
+  answer: Halloway
+  accept:
+  - 8,461,842
+  - '8461841.81'
+  source: qbr-2024-Q3.md
+  span: '**Account loss.** Halloway Group did not renew at the end of the previous quarter.'
+  tier: tail
+- id: tail-composite-margin
+  kind: composite
+  question: What was gross margin in 2025 Q1, and which supplier's pricing is named as a cause?
+  answer: Voss
+  accept:
+  - Voss Industrial
+  - '31.4'
+  source: qbr-2025-Q1.md
+  span: '**Input costs.** Voss Industrial applied a 12% increase to unit costs across its
+    catalogue with effect from the start of this quarter.'
+  tier: tail
+- id: tail-composite-sanitation
+  kind: composite
+  question: What was revenue in 2024 Q2, and what new category appears in the data from that
+    quarter?
+  answer: Sanitation
+  accept:
+  - 8,074,848
+  - '8074847.91'
+  source: qbr-2024-Q2.md
+  span: Revenue for 2024 Q2 was $8,074,848 across 5,553 orders, up 0.2% on the prior quarter.
+  tier: tail
+- id: tail-composite-tickets
+  kind: composite
+  question: What drove the rise in support contacts in 2024 Q4, and which supplier was involved?
+  answer: Pemberton
+  accept:
+  - Pemberton Mills
+  source: qbr-2024-Q4.md
+  span: '**Quality.** A batch defect in cloths supplied by Pemberton Mills produced a material
+    increase in support contacts this quarter.'
+  tier: tail
+- id: tail-rounding
+  kind: composite
+  question: The 2024 Q3 review says revenue was $8,461,842 and the warehouse says $8,461,841.81.
+    Which is right?
+  answer: both
+  accept:
+  - rounding
+  - rounded
+  - same
+  judgement: true
+  source: qbr-2024-Q3.md
+  span: Revenue for 2024 Q3 was $8,461,842 across 5,579 orders, up 4.8% on the prior quarter.
+  tier: tail
+- id: tail-target-miss
+  kind: composite
+  question: In which quarters did gross margin fall below the standing target?
+  answer: '32.0'
+  accept:
+  - target of 32.0%
+  source: qbr-2025-Q1.md
+  span: The Sanitation category led on revenue. Margin across the business was 31.4%, against
+    a standing target of 32.0%.
+  tier: tail
+- id: abstain-01
+  kind: unanswerable
+  tier: tail
+  question: What is Meridian's employee headcount?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-02
+  kind: unanswerable
+  tier: tail
+  question: Who is the Chief Financial Officer?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-03
+  kind: unanswerable
+  tier: tail
+  question: What was revenue in 2026 Q1?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-04
+  kind: unanswerable
+  tier: tail
+  question: What is the customer churn rate?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-05
+  kind: unanswerable
+  tier: tail
+  question: Which insurer underwrites the product liability cover?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-06
+  kind: unanswerable
+  tier: tail
+  question: How many vehicles are in the delivery fleet?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-07
+  kind: unanswerable
+  tier: tail
+  question: What is the target for on-time delivery in 2026?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-08
+  kind: unanswerable
+  tier: tail
+  question: Which warehouse management system does Meridian use?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-09
+  kind: unanswerable
+  tier: tail
+  question: What is the annual contract value of the Voss Industrial agreement?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-10
+  kind: unanswerable
+  tier: tail
+  question: How many people work at the Columbus depot?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-11
+  kind: unanswerable
+  tier: tail
+  question: What is Meridian's carbon reduction target?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-12
+  kind: unanswerable
+  tier: tail
+  question: What was the net promoter score in 2025?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-13
+  kind: unanswerable
+  tier: tail
+  question: Which auditor signed off the 2024 accounts?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-14
+  kind: unanswerable
+  tier: tail
+  question: What is the notice period in the Halloway Group contract?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-15
+  kind: unanswerable
+  tier: tail
+  question: How much did Meridian spend on marketing in 2024?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-16
+  kind: unanswerable
+  tier: tail
+  question: What is the average time to resolve a support ticket?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-17
+  kind: unanswerable
+  tier: tail
+  question: Which bank provides Meridian's working capital facility?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-18
+  kind: unanswerable
+  tier: tail
+  question: What is the depreciation policy for warehouse equipment?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-19
+  kind: unanswerable
+  tier: tail
+  question: How many suppliers were onboarded in 2025?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true
+- id: abstain-20
+  kind: unanswerable
+  tier: tail
+  question: What is the lease expiry date for the Newark depot?
+  answer: null
+  accept: []
+  source: null
+  span: null
+  must_abstain: true

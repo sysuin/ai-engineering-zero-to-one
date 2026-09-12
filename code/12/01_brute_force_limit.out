@@ -1,0 +1,25 @@
+Meridian's whole corpus is 1,454 chunks of 1536 numbers (8.9 MB).
+
+      chunks   index size     search    per query
+       1,000         6 MB      0.2 ms        0.2 ms
+      10,000        61 MB      2.7 ms        2.7 ms
+     100,000       614 MB     31.4 ms       31.4 ms
+     500,000      3072 MB    503.5 ms      503.5 ms
+
+Two things grow together, and the second one bites first.
+
+In theory the time is linear: every query touches every vector, so ten times
+the corpus is ten times the work.
+
+In practice it is worse than linear. The last two rows are 5x
+more data and 16.1x more time, because 3 gigabytes
+stops fitting in the caches the processor is fast at reaching.
+
+Where that happens is a property of your hardware, not of your corpus. Run this
+listing on your own machine and you may get different numbers — including, on a
+smaller one, a MemoryError rather than a slow answer. Brute force degrades
+gracefully right up until it stops working.
+
+Brute force is exact. That is worth something, and it is why the crossover is
+further out than people assume: at ten thousand chunks it is instant, and a
+great many production systems are smaller than that.

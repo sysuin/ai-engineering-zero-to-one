@@ -1,0 +1,44 @@
+120 runs. Three questions, asked of the same data.
+
+1. What is wrong: 7 failures, by population.
+
+   document          4 of 74      5% of that population
+   warehouse         2 of 20     10% of that population
+   unanswerable      1 of 20      5% of that population
+
+   Sort by rate, not by count. document produces the most failures because it is
+   the largest population; warehouse fails at 10%, which is the highest rate and
+   therefore the population to work on. It is 20 cases, so a fix aimed
+   at it is a fix you can measure — and a fix aimed at 'accuracy' is not.
+
+2. What is slow: the ten slowest, against a median of 3.8s.
+
+   tail-rotated-util       15.4s   9,640 tokens  document
+   abstain-19              11.8s   5,784 tokens  unanswerable
+   tail-three-months       11.7s   9,404 tokens  document
+   abstain-09               9.3s   5,193 tokens  unanswerable
+   abstain-12               9.2s   4,544 tokens  unanswerable
+
+   The slowest is 4.1x the median. Tail latency is not an average
+   problem: it is a small number of runs doing much more work, and §28.6's
+   step budget is the lever that bounds them.
+
+3. What to add to the eval set.
+
+   8 cases earned a place: every failure, every wrong refusal,
+   and the three slowest. They are already written — that is the point of
+   triaging a run rather than inventing cases at a whiteboard.
+
+     7 failures            they are regressions the moment they are fixed
+     4 wrong refusals      the most expensive failure mode to leave in
+     3 slowest runs        a latency budget needs cases that test it
+     6 counted twice       a wrong refusal is usually also a failure
+
+   And one thing the card does not show: the most expensive answer used 11.2x
+   the tokens of the median one (9,640 against 862). A mean cost per
+   answer hides that entirely, which is why §28.1 budgets per request rather
+   than per month.
+
+That is the loop. Ship, measure, triage the failures into the set, fix the
+worst-rate population, re-measure against the card. Every step of it is
+evidence, and none of it needs anybody to have an opinion about what users want.

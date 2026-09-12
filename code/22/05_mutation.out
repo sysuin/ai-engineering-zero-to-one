@@ -1,0 +1,50 @@
+54 cases, run against one healthy system and 4 broken ones.
+A layer fails if it drops more than 8% below the healthy run.
+
+                                  det   grnd  judge   abst   retr   whse   build
+  baseline (the healthy run)      83%   100%    70%    85%    86%    92%   —
+  retrieval ranking reversed      78%   100%    70%    75%    79%    92%   RED
+  retrieval starved to one p      81%   100%    90%    80%    71%    92%   RED
+  warehouse answers the prev      76%   100%    80%    85%    86%    67%   RED
+  refusal instruction remove      81%   100%    90%    65%    86%    92%   RED
+
+  bugs the suite caught     4 of 4
+  bugs it slept through     0
+
+  retrieval ranking reversed
+    caught by abstention — abstention fell 10%
+  retrieval starved to one passage
+    caught by retrieval — retrieval fell 14%
+  warehouse answers the previous quarter
+    caught by warehouse — warehouse fell 25%
+  refusal instruction removed from the prompt
+    caught by abstention — abstention fell 20%
+
+  Note the refusal row. Taking the sentence about refusing out of the
+  prompt moved abstention by 20%.
+
+  So the sentence is load-bearing after all, and the tools alone do not
+  carry the refusals. Run this again and the size of that number moves
+  a good deal, which is its own lesson: a one-line prompt change can be
+  worth fifteen points or nothing, and the only way to know which is a
+  population scored on its own.
+
+This is mutation testing, and it is the only evidence that a green suite means
+anything. A suite that has never been red is not passing — it is untested, and
+the difference is invisible until the day it matters.
+
+Three versions of this suite were written before the table above, and each
+revision was dictated by a bug that walked past the one before it.
+
+  three layers          caught one of four. The missing ones were a floor on
+                        refusals, which an overall average had absorbed, and
+                        one on retrieval, which a warehouse fallback hid.
+  absolute floors       failed its own control on the next run, because every
+                        layer is a sample and a floor an inch under today's
+                        score goes red on Tuesdays. Hence the baseline.
+  five layers           let the warehouse bug through: it moved the overall
+                        figure six points and sat inside the band, so the
+                        warehouse cases got a layer of their own.
+
+Nobody designs the right suite first. You find out what it is missing by
+breaking things on purpose and watching what fails to notice.

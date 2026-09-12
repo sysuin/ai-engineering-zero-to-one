@@ -1,0 +1,43 @@
+22 requests, before and after a one-line change to retrieval.
+14 of them can only be answered from the documents; the rest have the
+warehouse as an alternative route.
+
+                                         healthy   degraded   alerts?
+  HTTP errors                                  0          0   silent
+  p95 latency                             8441ms     4430ms   silent
+  tokens per request                        2196       1611   silent
+  answers judged correct                    9/10       1/10   FIRES
+  answers actually correct                 19/22       8/22   FIRES
+
+Nothing failed. No request errored, no timeout was hit, no exception reached a
+log, and the service returned 200 to everything. An uptime check would have
+been green for the entire window, and an on-call engineer would have been
+right to ignore it.
+
+The system was, meanwhile, getting 11 more answers wrong out of 22.
+
+And look at the two rows above it. p95 fell from 8441ms to 4430ms and
+the average request got 27% cheaper, because a system that
+cannot find anything stops looking sooner. An efficiency dashboard would
+have shown this outage as a good week.
+
+This is the shape of nearly every real degradation in this kind of system: an
+index that rebuilt wrong, a prompt edit that shipped on Friday, a provider
+silently routing to a different model revision. None of them are outages, all
+of them are worse than outages, because an outage announces itself.
+
+So the monitor has to be a quality signal, which means an eval running against
+production traffic. Three ways to get one, cheapest first:
+
+  refusal rate        free, already in your logs, and the earliest warning
+                      you will get — a system that has stopped finding things
+                      starts saying so before anyone complains
+  judge on a sample   a few hundred graded answers a day is affordable and
+                      catches what refusal rate misses: confident wrongness
+  the golden set      run Chapter 21's cases against production hourly. It is
+                      the only signal with certain labels, and the only one
+                      that can page somebody at 3am without apology
+
+Alert on the last one. Chart the first two. And set the threshold from §21.6's
+interval, not from a round number — a five-point drop on forty cases is noise,
+and paging somebody for noise is how a quality alert gets muted.

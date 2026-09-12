@@ -1,0 +1,23 @@
+Cutting the 400-item appendix five ways
+
+strategy              chunks   median   split a section
+fixed characters         172      174           167 (97%)
+fixed tokens             149      200           146 (98%)
+by paragraph             200      147           199 (100%)
+by structure             401       74             0 (0%)
+fixed + overlap          186      200           179 (96%)
+
+An orphaned chunk begins mid-item, so it no longer says which item it is about.
+Retrieval can still find it. It just cannot tell you what it refers to.
+
+The document with a banner on every page
+  13 chunks, 13 contain the same confidentiality banner
+  the banner is 11 tokens, repeated 24 times in the source
+  every chunk embedded from this document carries it, so they all look alike
+
+The table, cut at 120 tokens
+  chunk 0: '# Depot capacity review (landscape page)'
+  chunk 1: ',600 |     54,100 |'
+  chunk 2: '74%, 51%, 69% and 88% respectively.'
+  the second chunk is rows without a header. The numbers survive; the meaning
+  does not.

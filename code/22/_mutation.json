@@ -1,0 +1,249 @@
+{
+ "baseline": {
+  "deterministic": 0.8333333333333334,
+  "grounded": 1.0,
+  "judge": 0.7,
+  "abstention": 0.85,
+  "retrieval": 0.8571428571428571,
+  "warehouse": 0.9166666666666666
+ },
+ "retrieval ranking reversed": {
+  "deterministic": {
+   "score": 0.7777777777777778,
+   "ok": true,
+   "drop": 0.05555555555555558,
+   "failures": [
+    "tail-rotated-util",
+    "tail-price-cap",
+    "tail-reject-window",
+    "tail-service-level",
+    "tail-three-months",
+    "tail-halloway-why"
+   ]
+  },
+  "grounded": {
+   "score": 1.0,
+   "ok": true,
+   "drop": 0.0,
+   "failures": []
+  },
+  "judge": {
+   "score": 0.7,
+   "ok": true,
+   "drop": 0.0,
+   "failures": [
+    "tail-rotated-util",
+    "tail-price-cap",
+    "tail-service-level"
+   ]
+  },
+  "abstention": {
+   "score": 0.75,
+   "ok": false,
+   "drop": 0.09999999999999998,
+   "failures": [
+    "abstain-03",
+    "abstain-04",
+    "abstain-07",
+    "abstain-14",
+    "abstain-17"
+   ]
+  },
+  "retrieval": {
+   "score": 0.7857142857142857,
+   "ok": true,
+   "drop": 0.0714285714285714,
+   "failures": [
+    "tail-rotated-total",
+    "tail-rotated-util",
+    "tail-margin-target"
+   ]
+  },
+  "warehouse": {
+   "score": 0.9166666666666666,
+   "ok": true,
+   "drop": 0.0,
+   "failures": [
+    "warehouse-06"
+   ]
+  }
+ },
+ "retrieval starved to one passage": {
+  "deterministic": {
+   "score": 0.8148148148148148,
+   "ok": true,
+   "drop": 0.0185185185185186,
+   "failures": [
+    "tail-rotated-util",
+    "tail-reject-window",
+    "tail-liability-cap",
+    "tail-halloway",
+    "tail-margin-target",
+    "warehouse-06"
+   ]
+  },
+  "grounded": {
+   "score": 1.0,
+   "ok": true,
+   "drop": 0.0,
+   "failures": []
+  },
+  "judge": {
+   "score": 0.9,
+   "ok": true,
+   "drop": -0.20000000000000007,
+   "failures": [
+    "tail-rotated-util"
+   ]
+  },
+  "abstention": {
+   "score": 0.8,
+   "ok": true,
+   "drop": 0.04999999999999993,
+   "failures": [
+    "abstain-03",
+    "abstain-07",
+    "abstain-11",
+    "abstain-14"
+   ]
+  },
+  "retrieval": {
+   "score": 0.7142857142857143,
+   "ok": false,
+   "drop": 0.1428571428571428,
+   "failures": [
+    "tail-rotated-total",
+    "tail-rotated-util",
+    "tail-halloway",
+    "tail-margin-target"
+   ]
+  },
+  "warehouse": {
+   "score": 0.9166666666666666,
+   "ok": true,
+   "drop": 0.0,
+   "failures": [
+    "warehouse-06"
+   ]
+  }
+ },
+ "warehouse answers the previous quarter": {
+  "deterministic": {
+   "score": 0.7592592592592593,
+   "ok": true,
+   "drop": 0.07407407407407407,
+   "failures": [
+    "tail-rotated-util",
+    "tail-price-notice",
+    "tail-three-months",
+    "qbr-2023-Q2-revenue",
+    "qbr-2023-Q2-orders",
+    "qbr-2023-Q2-margin"
+   ]
+  },
+  "grounded": {
+   "score": 1.0,
+   "ok": true,
+   "drop": 0.0,
+   "failures": []
+  },
+  "judge": {
+   "score": 0.8,
+   "ok": true,
+   "drop": -0.10000000000000009,
+   "failures": [
+    "tail-rotated-util",
+    "tail-price-notice"
+   ]
+  },
+  "abstention": {
+   "score": 0.85,
+   "ok": true,
+   "drop": 0.0,
+   "failures": [
+    "abstain-03",
+    "abstain-07",
+    "abstain-11"
+   ]
+  },
+  "retrieval": {
+   "score": 0.8571428571428571,
+   "ok": true,
+   "drop": 0.0,
+   "failures": [
+    "tail-rotated-total",
+    "tail-rotated-util"
+   ]
+  },
+  "warehouse": {
+   "score": 0.6666666666666666,
+   "ok": false,
+   "drop": 0.25,
+   "failures": [
+    "warehouse-05",
+    "warehouse-06",
+    "warehouse-08",
+    "warehouse-12"
+   ]
+  }
+ },
+ "refusal instruction removed from the prompt": {
+  "deterministic": {
+   "score": 0.8148148148148148,
+   "ok": true,
+   "drop": 0.0185185185185186,
+   "failures": [
+    "tail-rotated-util",
+    "tail-three-months",
+    "warehouse-06",
+    "abstain-01",
+    "abstain-03",
+    "abstain-04"
+   ]
+  },
+  "grounded": {
+   "score": 1.0,
+   "ok": true,
+   "drop": 0.0,
+   "failures": []
+  },
+  "judge": {
+   "score": 0.9,
+   "ok": true,
+   "drop": -0.20000000000000007,
+   "failures": [
+    "tail-rotated-util"
+   ]
+  },
+  "abstention": {
+   "score": 0.65,
+   "ok": false,
+   "drop": 0.19999999999999996,
+   "failures": [
+    "abstain-01",
+    "abstain-03",
+    "abstain-04",
+    "abstain-07",
+    "abstain-14",
+    "abstain-17"
+   ]
+  },
+  "retrieval": {
+   "score": 0.8571428571428571,
+   "ok": true,
+   "drop": 0.0,
+   "failures": [
+    "tail-rotated-total",
+    "tail-rotated-util"
+   ]
+  },
+  "warehouse": {
+   "score": 0.9166666666666666,
+   "ok": true,
+   "drop": 0.0,
+   "failures": [
+    "warehouse-06"
+   ]
+  }
+ }
+}

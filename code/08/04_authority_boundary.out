@@ -1,0 +1,34 @@
+40 contracts, two runs of each approach
+
+                                        matches policy   same twice
+model sets the band                               65%         100%
+model observes, code decides                     100%         100%
+
+Where the model's band differs from Meridian's policy:
+  cap 12%  notice  30d   model said medium  policy says high
+  cap 12%  notice  30d   model said medium  policy says high
+  cap 12%  notice  30d   model said medium  policy says high
+  cap  5%  notice  60d   model said medium  policy says low
+  cap  5%  notice  90d   model said medium  policy says low
+  cap 12%  notice  60d   model said medium  policy says high
+
+  model's bands   {'medium': 40}
+  policy's bands  {'medium': 26, 'high': 10, 'low': 4}
+
+Read those two lines again. The model used 1 of the three bands.
+
+It is perfectly stable — the same answer twice, every time — and it has quietly
+collapsed the distinction the band exists to make. It never flags a high-risk
+contract, including the ones allowing a 12% price rise on 30 days notice.
+
+Note how well it would score on the wrong question. Consistency: 100%. Schema
+conformance: 100%. Refusals: none. Every metric a naive check would look at
+says this is working.
+
+The model is not being unreliable. It is answering a different question: it has
+a reasonable general notion of commercial risk, and Meridian has a specific one,
+written down, that an auditor can read.
+
+Removing the field is what enforces the difference. Not an instruction in the
+prompt, not a code review convention — the schema simply has nowhere to put an
+opinion, so the opinion has to come from six lines of Python you can test.

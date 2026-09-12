@@ -1,0 +1,26 @@
+Clarity, 120 golden cases it has never seen
+
+  overall  93%
+
+by kind
+  composite        6/6     100%  ########################
+  document        72/74     97%  #######################
+  unanswerable    16/20     80%  ###################
+  warehouse       18/20     90%  ######################
+
+by tier
+  head            78/80     98%  #######################
+  tail            34/40     85%  ####################
+
+by where the case came from
+  generated       78/80     98%  #######################
+  must refuse     16/20     80%  ###################
+  written by hand  18/20     90%  ######################
+
+Overall is 93%, and overall is the least useful line on the page.
+
+98% on cases a script generated, 90% on cases somebody sat and wrote.
+The demos in the first twenty chapters were all the first kind.
+
+The line that should bother you is unanswerable: 16 of 20.
+That is the number a plan can be built on, and it is invisible in the average.

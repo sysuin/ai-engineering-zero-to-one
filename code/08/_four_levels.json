@@ -1,0 +1,26 @@
+{
+  "1. just ask": {
+    "parses": 0.0,
+    "keys": 0.0,
+    "types": 0.0,
+    "example": "Here are the extracted terms:  ## Payment terms - **Invoice payment period:** Payment must"
+  },
+  "2. ask for JSON": {
+    "parses": 1.0,
+    "keys": 1.0,
+    "types": 0.0,
+    "example": "{\"payment_basis\":\"within 60 days of the date of a valid invoice\",\"payment_days\":60,\"price_"
+  },
+  "3. JSON mode": {
+    "parses": 1.0,
+    "keys": 0.0,
+    "types": 0.0,
+    "example": "{   \"payment_terms\": {     \"invoice_payment_due\": \"Within 60 days of the date of a valid i"
+  },
+  "4. strict schema": {
+    "parses": 1.0,
+    "keys": 1.0,
+    "types": 1.0,
+    "example": "{\"payment_days\":60,\"payment_basis\":\"invoice\",\"price_cap_pct\":3,\"price_notice_days\":30}"
+  }
+}

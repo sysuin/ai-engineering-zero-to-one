@@ -1,0 +1,39 @@
+Task A — a briefing with a known shape, for four quarters
+
+  2024 Q3   pipeline ok     427tok   8.1s 3 calls    agent ok   1,724tok   7.5s 3 steps
+  2024 Q4   pipeline ok     369tok   7.8s 3 calls    agent ok   1,615tok   5.9s 2 steps
+  2025 Q1   pipeline ok     282tok   8.0s 3 calls    agent ok   1,762tok   7.3s 3 steps
+  2025 Q2   pipeline ok     331tok   7.8s 3 calls    agent ok   3,495tok  10.0s 4 steps
+
+              correct    tokens   seconds   calls
+  pipeline      100%       352       7.9     3.0
+  agent         100%     2,149       7.7     3.0
+
+
+Task B — questions with no known shape
+
+  Something changed in the Midwest during 2024. Work out what, and
+     8 steps · 4,864 tokens · 17.1s · step budget (8) exhausted
+     route: search_documents -> query_warehouse -> query_warehouse -> query_warehouse -> query_warehouse -> query_warehouse -> arithmetic -> arithmetic
+     What changed in the Midwest during 2024 was a sharp drop in Q3 revenue, and the available evidence points to a major account loss.
+
+What I established
+
+  Are customers complaining about a product problem? If so, which 
+     8 steps · 3,972 tokens · 20.8s · step budget (8) exhausted
+     route: search_documents -> search_documents -> search_documents -> search_documents -> search_documents -> search_documents -> search_documents -> search_documents
+     Yes — customers are complaining about a product problem.
+
+What I’ve established:
+- There is a documented quality issue: a batch defect in cloths suppl
+
+  Which supplier represents the biggest commercial risk, and why?
+     5 steps · 5,155 tokens · 12.6s · answered
+     route: search_documents -> search_documents -> search_documents -> search_documents -> search_documents
+     Based on the documents I found, **Pemberton Mills** appears to represent the biggest commercial risk.
+
+Why:
+- A quarterly review says a **batch defect
+
+A pipeline for these would have to be written per question, which is another way
+of saying it would have to be written by someone who already knew the answer.

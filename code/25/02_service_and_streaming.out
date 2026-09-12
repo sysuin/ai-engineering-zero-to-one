@@ -1,0 +1,37 @@
+--- validation happens before anything expensive ---
+
+  a two-character question    422  String should have at least 3 characters
+  max_steps out of range      422  Input should be less than or equal to 12
+
+--- POST /ask ---
+
+    6.2s to the first byte and the last, because they are the same byte
+  tools: query_warehouse, search_documents
+  Revenue in 2024 Q3 was **$8,461,841.81**. The **Midwest decline** 
+
+--- POST /ask/stream ---
+
+   0.03s  accepted 
+   2.23s  step     query_warehouse
+   4.54s  step     search_documents
+   6.50s  answer   Revenue in 2024 Q3 was **$8,461,841.81**. Th
+   6.50s  done     
+
+  first byte at 0.03s, last at 6.5s
+  the plain endpoint took 6.2s and showed nothing until the end
+
+Streaming did not make the work faster — both answers took about the same
+time. What changed is that a person sees the system working at 0.03s instead
+of staring at a spinner for 6 seconds, and §28.6 is about how much that
+difference is worth.
+
+Two details in that stream matter more than the mechanism.
+
+The steps are events, not text fragments. A token stream is what a chat
+interface wants; a *step* stream is what an agent should emit, because 'searching
+the 2024 Q3 review' is information and a half-written sentence is not.
+
+And the work runs on a thread while the endpoint stays async. The engine is
+synchronous and takes seconds — §25.7 is what happens when you forget that —
+so it goes to an executor and posts its progress back to the loop through a
+queue.

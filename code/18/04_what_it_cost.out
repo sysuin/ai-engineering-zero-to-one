@@ -1,0 +1,49 @@
+--- code you maintain ---
+  v0.9  hand-rolled loop :  149 lines
+  v0.10 graph            :  146 lines  (-3)
+
+--- code you now depend on ---
+  langgraph                      1.2.11
+  langgraph-checkpoint           4.2.0
+  langgraph-checkpoint-sqlite    3.1.1
+  langgraph-prebuilt             1.1.0
+  langgraph-sdk                  0.4.4
+  langchain-core                 1.6.2
+  ... 16 packages in total, none of which you wrote
+  langgraph on disk: 5.2 MB
+
+--- what it costs at import time ---
+  import openai           2.42s (cold process)
+  import langgraph.graph  3.04s (cold process)
+
+--- what it costs per run ---
+  v0.9  :   6.2s median  (range 5.6-6.5s)   2 calls, 1,640 tokens per run
+          of which 2.7s was spent waiting for the model
+  v0.10 :   6.0s median  (range 5.7-6.3s)   2 calls, 1,642 tokens per run
+          of which 2.6s was spent waiting for the model
+
+  spread within one version : 1.0s
+  gap between the versions  : 0.1s
+  ranges overlap            : yes
+  -> the difference is inside the noise
+
+Read the token counts first. They differ by 0.1% - the model wording its
+own replies slightly differently between runs, not the framework adding anything.
+Who owns the loop does not change what the model is asked, so it cannot change
+what the model charges.
+
+Then read the last block. Both versions do the same tool work - one warehouse
+query, one retrieval - and both spend most of the remainder waiting for the same
+network.
+
+Here the two medians land 0.1s apart while a single version varies by
+1.0s across its own 7 runs. The framework's bookkeeping is below the
+resolution of the experiment: there is nothing to measure, which is the
+answer to the question people usually ask about frameworks and speed.
+
+The price is the second list: sixteen packages with their own release
+schedules, their own breaking changes and their own bugs, sitting between your
+stack trace and your code. That is the thing to weigh against durable state and
+a human in the loop - not milliseconds.
+
+Chapter 17's ninety lines remain the right answer when you need neither.

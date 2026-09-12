@@ -1,0 +1,27 @@
+--- THE REQUEST ---
+GET /revenue?year=2024&quarter=3 HTTP/1.1
+User-Agent: meridian-book/1.0
+Accept-Encoding: gzip, deflate
+Accept: application/json
+Connection: keep-alive
+
+--- THE RESPONSE ---
+HTTP/1.1 200 OK
+Server: BaseHTTP/0.6 Python/3.12.1
+Date: Sat, 12 Sep 2026 13:21:09 GMT
+Content-Type: application/json
+Content-Length: 535
+X-Meridian-Api: demo
+
+{
+  "year": 2024,
+  "quarter": 3,
+  "regions": [
+    {
+      "region": "Southwest",
+      "revenue": 2607943.26,
+      "orders": 1715
+    },
+    {
+      "region": "Northeast",
+     ...

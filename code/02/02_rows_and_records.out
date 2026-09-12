@@ -1,0 +1,7 @@
+The SKU is MRD-CLE-001
+The quantity is 480
+The SKU is MRD-CLE-001
+The quantity is 480
+
+The table has 3 rows
+The first row is {'sku': 'MRD-CLE-001', 'category': 'Cleaning', 'qty': 480, 'unit_price': 12.5}

@@ -1,0 +1,35 @@
+{
+  "year": 2024,
+  "quarter": 3,
+  "revenue_usd": 8461842.0,
+  "orders": 5579,
+  "gross_margin_pct": 33.1,
+  "units_shipped": 102433,
+  "by_region": [
+    {
+      "region": "Southwest",
+      "revenue_usd": 2607943.0
+    },
+    {
+      "region": "Northeast",
+      "revenue_usd": 1879673.0
+    },
+    {
+      "region": "Southeast",
+      "revenue_usd": 1601495.0
+    },
+    {
+      "region": "West",
+      "revenue_usd": 1310848.0
+    },
+    {
+      "region": "Midwest",
+      "revenue_usd": 1061883.0
+    }
+  ],
+  "account_loss": "Halloway Group",
+  "stated_cause": "a competitor's national framework agreement rather than to service failure"
+}
+
+weakest region, computed in Python: Midwest
+revenue there:                      $1,061,883

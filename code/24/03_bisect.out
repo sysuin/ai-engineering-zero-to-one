@@ -1,0 +1,48 @@
+14 questions the documents alone must answer, bisected stage by stage.
+
+                                     in corpus  retrieved  gold ctx  real ctx
+  What is the racked storage capac         yes        yes     WRONG        ok
+  What is the total capacity of th         yes        yes     WRONG        ok
+  What was utilisation at the Colu         yes        yes     WRONG        ok
+  Under MSC-2022-100, how much can         yes        yes        ok     WRONG
+  How much written notice is requi         yes        yes        ok     WRONG
+  How long does the buyer have to          yes        yes        ok        ok
+  What is the supplier's liability         yes        yes        ok        ok
+  What on-time delivery rate does          yes         NO        ok     WRONG
+  What happens if a supplier misse         yes        yes        ok        ok
+  What are the payment terms under         yes         NO        ok     WRONG
+  How much notice is needed to ter         yes        yes        ok        ok
+  Which account did Meridian lose,         yes         NO        ok     WRONG
+  Why does the company say Hallowa         yes        yes        ok        ok
+  What is Meridian's standing gros         yes         NO        ok     WRONG
+
+  where the failures actually are:
+
+    nothing — it passed       5 of 14
+    retrieval                 4 of 14
+    the span alone            3 of 14
+    the surrounding context   2 of 14
+
+Four questions, asked in that order, and the first 'no' is the diagnosis.
+
+  is it in the corpus?      if not, no amount of prompt work helps and the
+                            fix is an ingestion ticket
+  did retrieval fetch it?   if not, generation is innocent — it answered
+                            correctly about what it was shown
+  given the cited span,     if not, the span is evidence rather than context.
+  can it answer?            One row of a table is exactly where the fact is
+                            and not enough to read it without the headers
+  given the real context,   if this is the only 'no', something in the other
+  can it answer?            passages is distracting it — the most interesting
+                            failure of the four, and the one people never
+                            look for
+
+Three of those four checks need no model at all, and the fourth is one call.
+The expensive habit is arguing about whether the model is bad at contracts
+before establishing whether the contract was in the context.
+
+Note the rows where the cited span fails and the full context succeeds. Those
+are not generation bugs and they are not retrieval bugs — they are a golden
+set recording the narrowest evidence for an answer rather than enough of the
+document to act on it. Chapter 21's spans were built to verify cases, and
+this is where that choice shows through.

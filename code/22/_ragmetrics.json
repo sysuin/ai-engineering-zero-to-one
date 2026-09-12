@@ -1,0 +1,640 @@
+[
+ {
+  "id": "qbr-2023-Q1-revenue",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q1-orders",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q1-margin",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q1-strongest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 3,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2023-Q1-weakest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2023-Q2-revenue",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q2-orders",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q2-margin",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q2-strongest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 0,
+  "example": [],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2023-Q2-weakest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 1,
+  "example": [
+   "There is no excerpt for 2023 Q2, so the weakest region for that quarter is not stated."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2023-Q3-revenue",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q3-orders",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q3-margin",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q3-strongest",
+  "recall_rank": 5,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q3-weakest",
+  "recall_rank": 5,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q4-revenue",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q4-orders",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q4-margin",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q4-strongest",
+  "recall_rank": 1,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2023-Q4-weakest",
+  "recall_rank": 1,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q1-revenue",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q1-orders",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q1-margin",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q1-strongest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q1-weakest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q2-revenue",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q2-orders",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q2-margin",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q2-strongest",
+  "recall_rank": 5,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q2-weakest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q3-revenue",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 3,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q3-orders",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q3-margin",
+  "recall_rank": 5,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q3-strongest",
+  "recall_rank": 5,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q3-weakest",
+  "recall_rank": 4,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q4-revenue",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q4-orders",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 3,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2024-Q4-margin",
+  "recall_rank": 4,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q4-strongest",
+  "recall_rank": 3,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2024-Q4-weakest",
+  "recall_rank": 3,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q1-revenue",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2025-Q1-orders",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 3,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2025-Q1-margin",
+  "recall_rank": 2,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q1-strongest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.16666666666666666,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2025-Q1-weakest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2025-Q2-revenue",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q2-orders",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q2-margin",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q2-strongest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.16666666666666666,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2025-Q2-weakest",
+  "recall_rank": null,
+  "recalled": false,
+  "precision": 0.0,
+  "unsupported": 2,
+  "example": [
+   "The documents I have do not answer that."
+  ],
+  "refused": true,
+  "correct": false
+ },
+ {
+  "id": "qbr-2025-Q3-revenue",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q3-orders",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q3-margin",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q3-strongest",
+  "recall_rank": 5,
+  "recalled": true,
+  "precision": 0.3333333333333333,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q3-weakest",
+  "recall_rank": 3,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q4-revenue",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q4-orders",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q4-margin",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q4-strongest",
+  "recall_rank": 1,
+  "recalled": true,
+  "precision": 0.3333333333333333,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ },
+ {
+  "id": "qbr-2025-Q4-weakest",
+  "recall_rank": 0,
+  "recalled": true,
+  "precision": 0.16666666666666666,
+  "unsupported": 0,
+  "example": [],
+  "refused": false,
+  "correct": true
+ }
+]

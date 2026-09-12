@@ -1,0 +1,35 @@
+Eight questions, asked of Clarity, answered by reading the repository.
+
+  37 Python files, 3,216 lines
+
+    What happens when the model is down?
+      one breaker per provider, in 1 file
+    What happens when a tool is wrong?
+      a budgeted loop; 9 files carry a step limit
+    What does it do when it does not know?
+      refusal is a scored behaviour across 16 files
+    Where does state live?
+      3 files open a database; the rest are pure
+    How is it evaluated, and how often?
+      120 cases, six layers, on every push
+  * Who can see whose data?
+      3 files carry a tenant column; 0 enforce it
+    What is the cost of one request, and who watches it?
+      priced per run and stored on the row
+  * How does a changed document reach the index?
+      0 incremental paths — it is rebuilt, not updated
+
+6 of 8 answered cleanly. The 2 marked * are real, and both are
+structural rather than accidental — they are things the design does not do,
+not things it does badly.
+
+And one the eight questions do not ask, which a reviewer should:
+
+  * the eval set is 120 cases from one corpus, 74 of them (62%) document.
+    At n=120, a score near 85% carries a 95% interval of 78%-90%: 13 points
+    wide, which cannot see a 3-point improvement. §21.6 measured this.
+    The fix is more cases, and nothing substitutes for that work.
+
+None of the three is an oversight. Each was a decision to keep the
+system small enough to read, and each would be the first thing a team
+fixed. Writing them down is the difference between a design and a diagram.

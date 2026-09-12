@@ -1,0 +1,39 @@
+Pairs of questions, and how similar their embeddings are.
+
+                                                        similarity
+  What was revenue in 2024 Q4?                               0.946
+  What was gross profit in 2024 Q3?                          0.735
+  Which region was weakest in 2024 Q3?                       0.920
+  What is the price cap under MSC-2024-118?                  0.945
+  How many units were shipped in 2025 Q1?                    0.753
+  What was Midwest revenue in 2025 Q3?                       0.967
+
+  what was the revenue for 2024 q3                           0.898
+  In 2024 Q3, which region performed worst?                  0.843
+  Under MSC-2022-100, how long do we have to pay?            0.781
+
+  must NOT share an answer: 0.735 to 0.967
+  should share an answer:   0.781 to 0.898
+
+  the two ranges overlap: no threshold separates them
+  the best possible cut is 0.967, and it still gets 3 of 9 pairs wrong
+    (0 dangerous pairs served from cache, 3 safe pairs missed)
+
+That is the failure mode, and it is not a tuning problem.
+
+'Revenue in 2024 Q3' and 'revenue in 2024 Q4' are one character apart and mean
+entirely different things. An embedding is a measure of *aboutness*, and two
+questions about the same thing with different answers are exactly what it is
+built to score as similar.
+
+So a semantic cache does not have a safe threshold. It has a threshold you
+have chosen a wrongness rate for, and the honest version of shipping one is:
+
+  measure the rate on your own question pairs, not on a benchmark
+  never cache anything containing a figure, a date or an identifier
+  key on the *retrieved documents* rather than the question, so two questions
+    only share an answer when they share their evidence
+  and expire it fast, because a wrong cached answer is wrong every time
+
+An exact cache has none of these problems, hits less often, and is where to
+start. §28.4 measures what it is worth on real traffic.

@@ -1,0 +1,9 @@
+without jitter  worst 100ms window: t=1.0s takes 60 requests at once
+                  first client retries at 1.00s, 3.00s, 7.00s, 15.00s, 31.00s
+with jitter     worst 100ms window: t=0.2s takes 11 requests at once
+                  first client retries at 0.45s, 1.57s, 5.27s, 8.99s, 17.12s
+
+Without jitter every client waits exactly the same 1s, 2s, 4s ... so all sixty
+come back at the same five instants, and the server that has just recovered is
+knocked over again. Jitter spreads the identical amount of load across the
+identical window, and the spike disappears.

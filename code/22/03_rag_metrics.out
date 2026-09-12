@@ -1,0 +1,40 @@
+60 document questions, 6 passages retrieved for each.
+
+  context recall     the golden span was retrieved    40 of 60  (67%)
+                     and it was ranked first          25 of 60  (42%)
+  context precision  passages from the cited document 12%
+  faithfulness       no unsupported claim             40 of 40  (100%)
+                     (20 refusals excluded — a refusal makes no claims)
+
+Three of those four numbers were computed without a model. Context recall is a
+string comparison against the span the case already carries; context precision
+is counting filenames. Both are exact, free and reproducible, and both are
+metrics people routinely reach for a judge to estimate.
+
+Only faithfulness needed one, because 'is this claim supported by that
+passage' is a reading comprehension question with no string operation behind
+it.
+
+Now the part that matters — what recall actually predicts.
+
+  span retrieved     40 cases, 40 answered correctly (100%)
+  span not retrieved 20 cases, 0 answered correctly (0%)
+                     and 20 of those 20 were refusals
+
+Context recall is not a proxy for correctness here. It is the ceiling on
+it. Every case where the passage was not retrieved was a case the system
+could not answer, and it said so rather than guessing — which is the
+grounding check from §13.9 doing precisely its job.
+
+That is worth knowing before spending a week on prompts. Twenty of these
+sixty failures are retrieval failures, and no wording of any instruction
+recovers a passage that was never fetched.
+
+Context precision of 12% needs its own care. It counts passages from the
+document the case cites, and a passage from another quarter's review is not
+useless — for 'which region was strongest', comparing quarters is reasonable
+behaviour that this metric calls noise.
+
+None of this makes the metrics useless. It makes them instruments with known
+error, which is the only kind there is. The mistake is quoting faithfulness to
+two decimal places without ever reading ten of the flags.

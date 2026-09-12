@@ -1,0 +1,41 @@
+a question the warehouse cannot answer
+  query_warehouse({"question": "how many staff work in Ohio"})
+  is_error=True  Error executing tool query_warehouse: Refused: Requires a co
+
+a tool that does not exist
+  delete_everything({})
+  is_error=True  Unknown tool: delete_everything
+
+a required argument left out
+  query_warehouse({})
+  is_error=True  Error executing tool query_warehouse: 1 validation error for
+
+an argument of the wrong type
+  search_documents({"query": "revenue", "limit": "lots"})
+  is_error=True  Error executing tool search_documents: 1 validation error fo
+
+Every one of those came back as a tool error, including two that are not the
+model's fault at all: a tool that does not exist, and arguments that do not
+type-check. This SDK's default is to hand almost everything to the model.
+
+A protocol error looks different, and you have to go off the tool path to
+provoke one:
+
+  {"jsonrpc": "2.0", "id": 9, "error": {"code": -32601, "message": "Method not
+  no 'result', no content, code -32601
+
+The distinction is not cosmetic. It decides who is expected to act.
+
+A tool error is a result. It travels in `content`, a model reads it, and the
+run continues. Clarity's warehouse refusal is a paragraph telling the model
+what the data does hold — Chapter 16 measured terse errors recovering 0 times
+out of 3 and instructive ones 2 out of 3.
+
+A protocol error is a bug. No content, no model, nothing downstream that can
+recover. It should page somebody.
+
+Which means the line is not where you would put it. 'Unknown tool' is a
+client bug being reported to a model as advice, and a validation failure is a
+schema disagreement being handed to the one participant who cannot fix it.
+If you want your outages to reach you rather than politely confuse a model,
+draw that boundary yourself — the protocol will not draw it for you.

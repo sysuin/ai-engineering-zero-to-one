@@ -1,0 +1,17 @@
+{
+ "total": 100,
+ "train": 80,
+ "holdout": 20,
+ "report": {
+  "leaked between train and holdout": 0,
+  "duplicated inside training": 0,
+  "wrong message shape": 0,
+  "most common family, share": 0.59
+ },
+ "broken": {
+  "leaked between train and holdout": 3,
+  "duplicated inside training": 0,
+  "wrong message shape": 0,
+  "most common family, share": 0.59
+ }
+}

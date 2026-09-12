@@ -1,0 +1,11 @@
+A server that fails four times:
+  attempt 1: 503, waiting 0.08s  (ceiling 0.25s)
+  attempt 2: 503, waiting 0.08s  (ceiling 0.50s)
+  attempt 3: 503, waiting 0.65s  (ceiling 1.00s)
+  attempt 4: 503, waiting 0.14s  (ceiling 2.00s)
+  -> {'ok': True, 'succeeded_on_attempt': 5}
+
+A server that tells you to slow down:
+  attempt 1: 429, waiting 2.00s  (Retry-After: 2s)
+  attempt 2: 429, waiting 2.00s  (Retry-After: 2s)
+  -> gave up after 3 attempts

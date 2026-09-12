@@ -1,0 +1,53 @@
+=== 1. is the junk really on the wire? ===
+
+debug line -> sys.stderr
+  server's first stdout line: {"jsonrpc":"2.0","id":1,"result":{"capabilities":{"experimental":{},"promp
+  parses as a JSON-RPC frame
+
+debug line -> sys.stdout
+  server's first stdout line: [debug] index loaded, serving
+  json.JSONDecodeError: Expecting value: line 1 column 2 (char 1)
+
+=== 2. what does a real client do with it? ===
+
+debug line -> sys.stderr  connected, 5 tools listed
+                          0 parse errors logged
+debug line -> sys.stdout  connected, 5 tools listed
+                          1 parse errors logged
+
+Read that twice. The client with a corrupted first line still connected.
+It logged a parse failure, discarded the line, and carried on — so the
+folklore version of this bug, 'one print breaks your server', is out of date
+for this client. The junk is real; the client is tolerant of it.
+
+Which makes the bug worse, not better. It is now silent.
+
+=== 3. what happens to a print inside a tool ===
+
+A tool that writes to stdout *while answering*, with no newline, so the
+fragment should land immediately in front of the response frame:
+
+  tools/call chatty -> tool returned 42
+  parse errors logged: 0
+  the server's stderr afterwards: '[debug] computing'
+
+It worked, and the debug fragment came out on stderr — a stream the tool
+never named. That is not luck. While it is serving, this SDK points file
+descriptor 1 at stderr and descriptor 0 at the null device, so a stray write
+from a handler, a library, or a child process physically cannot reach the
+wire. It is restored when the server stops.
+
+So both halves of the folklore are wrong for this SDK, in opposite
+directions, and the true rule is narrower and more useful:
+
+  * during serving   the SDK protects the wire for you
+  * before serving   nothing does, and section 1 is what you get
+
+Everything printed before run() is on the protocol: a module-level print, an
+imported library's banner, a progress bar, a deprecation warning. That is the
+window, and it is exactly where people put their debugging.
+
+Do not rely on the protection either. It is this SDK, this version, this
+transport; a client speaking to you over HTTP has no fd 1 to rescue. Give the
+server a log() that writes to stderr, never allow a bare print() into the
+file, and you are correct on every version of every transport.

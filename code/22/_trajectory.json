@@ -1,0 +1,982 @@
+[
+ {
+  "id": "qbr-2023-Q1-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2023 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 997
+ },
+ {
+  "id": "qbr-2023-Q1-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2023 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2023-Q1-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2023 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1000
+ },
+ {
+  "id": "qbr-2023-Q1-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2023 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1019
+ },
+ {
+  "id": "qbr-2023-Q1-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1025
+ },
+ {
+  "id": "qbr-2023-Q2-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2023 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 991
+ },
+ {
+  "id": "qbr-2023-Q2-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2023 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2023-Q2-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2023 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1000
+ },
+ {
+  "id": "qbr-2023-Q2-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2023 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1028
+ },
+ {
+  "id": "qbr-2023-Q2-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1031
+ },
+ {
+  "id": "qbr-2023-Q3-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2023 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 991
+ },
+ {
+  "id": "qbr-2023-Q3-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2023 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2023-Q3-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2023 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1006
+ },
+ {
+  "id": "qbr-2023-Q3-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2023 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1028
+ },
+ {
+  "id": "qbr-2023-Q3-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1020
+ },
+ {
+  "id": "qbr-2023-Q4-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2023 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 991
+ },
+ {
+  "id": "qbr-2023-Q4-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2023 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2023-Q4-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2023 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1006
+ },
+ {
+  "id": "qbr-2023-Q4-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2023 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1033
+ },
+ {
+  "id": "qbr-2023-Q4-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1020
+ },
+ {
+  "id": "qbr-2024-Q1-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2024 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 991
+ },
+ {
+  "id": "qbr-2024-Q1-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2024 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2024-Q1-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2024 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1000
+ },
+ {
+  "id": "qbr-2024-Q1-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2024 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1028
+ },
+ {
+  "id": "qbr-2024-Q1-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2024 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1016
+ },
+ {
+  "id": "qbr-2024-Q2-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2024 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 991
+ },
+ {
+  "id": "qbr-2024-Q2-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2024 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2024-Q2-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2024 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1000
+ },
+ {
+  "id": "qbr-2024-Q2-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2024 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1031
+ },
+ {
+  "id": "qbr-2024-Q2-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2024 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1022
+ },
+ {
+  "id": "qbr-2024-Q3-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2024 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 991
+ },
+ {
+  "id": "qbr-2024-Q3-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2024 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2024-Q3-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2024 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1006
+ },
+ {
+  "id": "qbr-2024-Q3-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2024 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1033
+ },
+ {
+  "id": "qbr-2024-Q3-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2024 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1035
+ },
+ {
+  "id": "qbr-2024-Q4-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2024 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 991
+ },
+ {
+  "id": "qbr-2024-Q4-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2024 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2024-Q4-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2024 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1006
+ },
+ {
+  "id": "qbr-2024-Q4-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2024 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1033
+ },
+ {
+  "id": "qbr-2024-Q4-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2024 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1020
+ },
+ {
+  "id": "qbr-2025-Q1-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2025 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 991
+ },
+ {
+  "id": "qbr-2025-Q1-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2025 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2025-Q1-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2025 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1006
+ },
+ {
+  "id": "qbr-2025-Q1-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2025 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1028
+ },
+ {
+  "id": "qbr-2025-Q1-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2025 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1019
+ },
+ {
+  "id": "qbr-2025-Q2-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2025 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 997
+ },
+ {
+  "id": "qbr-2025-Q2-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2025 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2025-Q2-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2025 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1000
+ },
+ {
+  "id": "qbr-2025-Q2-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2025 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1021
+ },
+ {
+  "id": "qbr-2025-Q2-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2025 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1035
+ },
+ {
+  "id": "qbr-2025-Q3-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2025 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 997
+ },
+ {
+  "id": "qbr-2025-Q3-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2025 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2025-Q3-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2025 Q3?",
+  "outcome": false,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 998
+ },
+ {
+  "id": "qbr-2025-Q3-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2025 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1033
+ },
+ {
+  "id": "qbr-2025-Q3-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2025 Q3?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1032
+ },
+ {
+  "id": "qbr-2025-Q4-revenue",
+  "kind": "document",
+  "question": "What was revenue in 2025 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 991
+ },
+ {
+  "id": "qbr-2025-Q4-orders",
+  "kind": "document",
+  "question": "How many orders were there in 2025 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ },
+ {
+  "id": "qbr-2025-Q4-margin",
+  "kind": "document",
+  "question": "What was gross margin in 2025 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1000
+ },
+ {
+  "id": "qbr-2025-Q4-strongest",
+  "kind": "document",
+  "question": "Which region was strongest in 2025 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1028
+ },
+ {
+  "id": "qbr-2025-Q4-weakest",
+  "kind": "document",
+  "question": "Which region was weakest in 2025 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "search_documents",
+  "took_expected": false,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1026
+ },
+ {
+  "id": "warehouse-01",
+  "kind": "warehouse",
+  "question": "What was total revenue in 2024?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 982
+ },
+ {
+  "id": "warehouse-02",
+  "kind": "warehouse",
+  "question": "How many orders were placed in 2025?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 976
+ },
+ {
+  "id": "warehouse-03",
+  "kind": "warehouse",
+  "question": "What was gross margin in 2025, as a percentage?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1008
+ },
+ {
+  "id": "warehouse-04",
+  "kind": "warehouse",
+  "question": "How many distinct SKUs were sold in 2023?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 976
+ },
+ {
+  "id": "warehouse-05",
+  "kind": "warehouse",
+  "question": "Which category made the most gross profit in 2025 Q4?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1028
+ },
+ {
+  "id": "warehouse-06",
+  "kind": "warehouse",
+  "question": "What was Voss Industrial's revenue in 2025?",
+  "outcome": false,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1046
+ },
+ {
+  "id": "warehouse-07",
+  "kind": "warehouse",
+  "question": "How many units of Safety products shipped in 2025 Q1?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 993
+ },
+ {
+  "id": "warehouse-08",
+  "kind": "warehouse",
+  "question": "How much revenue came from the Enterprise segment in 2024 Q2?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1015
+ },
+ {
+  "id": "warehouse-09",
+  "kind": "warehouse",
+  "question": "Which channel produced the most orders overall?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 1002
+ },
+ {
+  "id": "warehouse-10",
+  "kind": "warehouse",
+  "question": "What was the average discount percentage in 2024?",
+  "outcome": true,
+  "tools": [
+   "query_warehouse"
+  ],
+  "expected_tool": "query_warehouse",
+  "took_expected": true,
+  "sourced": true,
+  "steps": 1,
+  "tokens": 989
+ }
+]

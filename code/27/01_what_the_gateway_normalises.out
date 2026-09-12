@@ -1,0 +1,37 @@
+One request, two providers, one Reply type.
+
+  openai        stop=tool_calls tool=query_warehouse   147/28   tokens
+  block-shaped  stop=tool_calls tool=query_warehouse    41/17   tokens
+
+What the adapter had to translate to get there:
+
+                  one shape                     the other
+  the system prompta message with role=system    a top-level argument
+  tool schemas    nested under "function"       flat, with input_schema
+  tool results    a message with role=tool      a content block on a user 
+  the reply body  message.content, a string     a list of typed blocks
+  token usage     prompt_tokens / completion_t  input_tokens / output_toke
+  the stop reason "stop" / "length" / "tool_ca  "end_turn" / "max_tokens" 
+
+  (the stand-in received the system prompt as: You are an analyst for M…)
+
+Six translations, and not one of them is exotic. That is the argument for the
+gateway: none of these differences is hard, and all of them are load-bearing,
+so the cost of not having one place to put them is that all six leak into
+application code and stay there.
+
+The stop reason is the one worth dwelling on. Both providers can tell you an
+answer was cut off, and they use different words for it, and almost every
+codebase that has not thought about this ignores the field entirely — which
+means a truncated answer is indistinguishable from a finished one all the way
+up to the user.
+
+Note what the interface does *not* expose: streaming granularity, provider
+error classes, model-specific parameters. Every one of those is a place a
+provider leaks through an abstraction that claimed to hide it, and the
+discipline is to add them only when a second provider forces you to.
+
+And be honest about what has been tested here. The block-shaped adapter ran
+against a stand-in that speaks that wire format, not against a hosted model.
+That tests the translation — which is the part that breaks — and it does not
+test the model. §27.3 is the part that needs a real account.

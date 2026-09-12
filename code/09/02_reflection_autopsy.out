@@ -1,0 +1,28 @@
+Of 40 contracts, the review step:
+  left the answer alone      23
+  changed it from wrong to right   9
+  changed it from RIGHT TO WRONG   8
+
+A case where the critic broke a correct answer:
+  contract     cap 3%, notice 30d, payment 60d
+  truth        not compliant
+  draft        No — the price adjustment cap is 3% (compliant), but the notice period is only 30 days and payment is due in 60 days, so
+  critique     The colleague’s answer is **right**.  Here’s the check against each Meridian requirement:  1. **Price adjustment cap is 8% or less**      - Contract clause **2.2** says the Supplier may adjust prices “**by no more than 3
+  final        YES
+
+Read that trace carefully, because the failure is not where you would guess.
+
+The draft was correct. The critique AGREED with it — 'the colleague's answer is
+right'. And the final step then answered YES, because it was handed two pieces
+of prose and asked to reconcile them, and 'the answer is right' looks a great
+deal like 'yes'.
+
+No individual step failed. The composition did. Meaning was carried between
+steps as English, and English about a verdict is not a verdict.
+
+Same three steps, state carried as prose:      32/40  80.0%
+Same three steps, state carried as a boolean:  40/40  100.0%
+
+Nothing about the reasoning changed. What changed is that the last step reads a
+field instead of interpreting a sentence. Chapter 8's schema, used as the join
+between two calls rather than as the output of one.

@@ -1,0 +1,15 @@
+error style     recovered   mean attempts
+terse                0/3             2.0
+instructive          2/3             2.7
+
+What each error says:
+  terse        Error: invalid metric.
+  instructive  Error: unknown metric 'sales'. Valid metrics are: revenue, gross_profit, margin_pct, orders, uni
+  terse        Error: invalid region.
+  instructive  Error: unknown region 'midwest'. Did you mean 'Midwest'? Region names are capitalised.
+
+A tool error is not a log line. It is the next thing the model reads, and it is
+the only chance to say what a valid call looks like.
+
+Name the valid values. Suggest the correction. Say what to retry with. It costs
+a few tokens once and saves a round trip every time it fires.

@@ -1,0 +1,62 @@
+{
+ "files": 37,
+ "loc": 3216,
+ "cases": 120,
+ "kinds": {
+  "document": 74,
+  "warehouse": 20,
+  "composite": 6,
+  "unanswerable": 20
+ },
+ "biggest_kind": "document",
+ "biggest_share": 0.6166666666666667,
+ "interval": [
+  0.7753231505975375,
+  0.9029626596633118
+ ],
+ "tenant_declaring": 3,
+ "tenant_enforcing": 0,
+ "incremental": 0,
+ "questions": [
+  {
+   "q": "What happens when the model is down?",
+   "a": "one breaker per provider, in 1 file",
+   "ok": true
+  },
+  {
+   "q": "What happens when a tool is wrong?",
+   "a": "a budgeted loop; 9 files carry a step limit",
+   "ok": true
+  },
+  {
+   "q": "What does it do when it does not know?",
+   "a": "refusal is a scored behaviour across 16 files",
+   "ok": true
+  },
+  {
+   "q": "Where does state live?",
+   "a": "3 files open a database; the rest are pure",
+   "ok": true
+  },
+  {
+   "q": "How is it evaluated, and how often?",
+   "a": "120 cases, six layers, on every push",
+   "ok": true
+  },
+  {
+   "q": "Who can see whose data?",
+   "a": "3 files carry a tenant column; 0 enforce it",
+   "ok": false
+  },
+  {
+   "q": "What is the cost of one request, and who watches it?",
+   "a": "priced per run and stored on the row",
+   "ok": true
+  },
+  {
+   "q": "How does a changed document reach the index?",
+   "a": "0 incremental paths \u2014 it is rebuilt, not updated",
+   "ok": false
+  }
+ ]
+}

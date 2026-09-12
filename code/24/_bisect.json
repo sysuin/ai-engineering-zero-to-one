@@ -1,0 +1,128 @@
+[
+ {
+  "id": "tail-rotated-dallas",
+  "question": "What is the racked storage capacity at the Dallas depot?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": false,
+  "real_ok": true,
+  "stage": "the span alone"
+ },
+ {
+  "id": "tail-rotated-total",
+  "question": "What is the total capacity of the Columbus depot?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": false,
+  "real_ok": true,
+  "stage": "the span alone"
+ },
+ {
+  "id": "tail-rotated-util",
+  "question": "What was utilisation at the Columbus depot at year end?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": false,
+  "real_ok": true,
+  "stage": "the span alone"
+ },
+ {
+  "id": "tail-price-cap",
+  "question": "Under MSC-2022-100, how much can the supplier raise prices in a twelve month period?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": true,
+  "real_ok": false,
+  "stage": "the surrounding context"
+ },
+ {
+  "id": "tail-price-notice",
+  "question": "How much written notice is required before a price rise under MSC-2022-100?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": true,
+  "real_ok": false,
+  "stage": "the surrounding context"
+ },
+ {
+  "id": "tail-reject-window",
+  "question": "How long does the buyer have to reject non-conforming goods under MSC-2022-100?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": true,
+  "real_ok": true,
+  "stage": "nothing \u2014 it passed"
+ },
+ {
+  "id": "tail-liability-cap",
+  "question": "What is the supplier's liability cap under MSC-2022-100?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": true,
+  "real_ok": true,
+  "stage": "nothing \u2014 it passed"
+ },
+ {
+  "id": "tail-service-level",
+  "question": "What on-time delivery rate does MSC-2022-100 require?",
+  "in_corpus": true,
+  "retrieved": false,
+  "gold_ok": true,
+  "real_ok": false,
+  "stage": "retrieval"
+ },
+ {
+  "id": "tail-three-months",
+  "question": "What happens if a supplier misses the delivery target three months running under MSC-2022-100?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": true,
+  "real_ok": true,
+  "stage": "nothing \u2014 it passed"
+ },
+ {
+  "id": "tail-payment-terms",
+  "question": "What are the payment terms under MSC-2022-100?",
+  "in_corpus": true,
+  "retrieved": false,
+  "gold_ok": true,
+  "real_ok": false,
+  "stage": "retrieval"
+ },
+ {
+  "id": "tail-termination",
+  "question": "How much notice is needed to terminate MSC-2022-100 for convenience?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": true,
+  "real_ok": true,
+  "stage": "nothing \u2014 it passed"
+ },
+ {
+  "id": "tail-halloway",
+  "question": "Which account did Meridian lose, and which region did it hurt?",
+  "in_corpus": true,
+  "retrieved": false,
+  "gold_ok": true,
+  "real_ok": false,
+  "stage": "retrieval"
+ },
+ {
+  "id": "tail-halloway-why",
+  "question": "Why does the company say Halloway Group left?",
+  "in_corpus": true,
+  "retrieved": true,
+  "gold_ok": true,
+  "real_ok": true,
+  "stage": "nothing \u2014 it passed"
+ },
+ {
+  "id": "tail-margin-target",
+  "question": "What is Meridian's standing gross margin target?",
+  "in_corpus": true,
+  "retrieved": false,
+  "gold_ok": true,
+  "real_ok": false,
+  "stage": "retrieval"
+ }
+]

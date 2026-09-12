@@ -1,0 +1,20 @@
+96 clauses from 12 contracts
+
+question                                          BM25  semantic          
+How long do we have to settle an invoice?         cl 3      cl 3          
+What is the ceiling on a price increase?          cl 2      cl 2          
+Can we walk away from this agreement early?       cl 5      cl 7        kw
+What if the goods turn up broken?                 cl 5      cl 5          
+How much can we claim if they cause us a lo       cl 6      cl 6          
+Do they have to hit a delivery target?            cl 4      cl 4          
+Which country's courts decide a dispute?          cl 1      cl 8        kw
+What are they actually selling us?                cl 8      cl 4    kw sem
+How much warning before they charge us more       cl 2      cl 2          
+Is there a penalty for repeated late shipme       cl 6      cl 4        kw
+
+BM25 (word overlap)          6/10  60%
+embeddings (meaning)         9/10  90%
+
+The questions were written the way a person asks them, not the way a contract is
+drafted. 'How long do we have to settle an invoice?' shares almost no words with
+'The Buyer shall settle all undisputed invoices within 45 days of receipt.'

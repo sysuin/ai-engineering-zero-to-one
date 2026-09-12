@@ -1,0 +1,26 @@
+The same question, 20 times, on gpt-5.4-mini.
+
+  default               20 distinct answers of 20   most common appeared 1x
+  temperature=0         19 distinct answers of 20   most common appeared 2x
+  temperature=0 + seed  20 distinct answers of 20   most common appeared 1x
+
+The steadiest setting still produced 19 different answers.
+
+temperature=0 means 'always take the most likely token', and that is not the
+same as 'always produce the same text'. Floating-point addition is not
+associative, so a batch of a different size, a different GPU, or a different
+kernel gives a slightly different sum; when two tokens are nearly tied, a
+difference in the twelfth decimal place decides which one wins, and every
+token after it is downstream of that choice.
+
+The seed changed nothing measurable here: 19 distinct answers without it,
+20 with. A seed fixes the sampling, not the arithmetic, and it cannot fix a
+provider that routed you to different hardware between two calls.
+
+So the working assumption for the rest of this chapter is:
+
+  the same input can produce a different output, on purpose-built
+  infrastructure, with every knob set to its most deterministic value
+
+Which means 'I cannot reproduce it' is not a diagnosis. It is the normal
+condition, and §24.2 is about what you do instead.

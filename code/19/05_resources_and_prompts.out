@@ -1,0 +1,35 @@
+--- resources: things, not actions ---
+  meridian://documents
+      Every Meridian document available to Clarity.
+  meridian://documents/{name}   (a template)
+      One Meridian document, as written.
+
+  the index lists 58 documents — the same ones the
+  retriever indexes, and no others
+  reading qbr-2024-Q3 -> 1,703 bytes, beginning '# Meridian Supply Co. — Quarterly '
+
+--- prompts: expertise the server ships ---
+  investigate(metric, period)
+      Investigate a movement in a metric, the way Meridian's analysts do.
+
+  get_prompt investigate(margin, 2025 Q1):
+    Establish margin for 2025 Q1 from the warehouse, then find the passage in the documents that explains the movement
+    Give the figure first, then the ca…
+
+Three primitives, and the difference between them is who decides and what
+happens when they are wrong.
+
+  a tool      the model chooses it, and it acts. Getting it wrong changes
+              something, so it needs budgets, approval and an audit trail.
+  a resource  the client chooses it, and reading it changes nothing. A host
+              can show a person a list and let them pick. It is a file.
+  a prompt    a person chooses it. It is a way for whoever knows the domain
+              to ship that knowledge to every client that connects.
+
+Clarity's `investigate` prompt is the phrasing §17.4 arrived at after a bad
+afternoon — figure first, then cause, then what could not be verified. It was
+in a file only this repository had. Now it arrives with the connection, and
+every client asks the way the analysts here ask.
+
+The mistake is exposing a document-reader as a tool. Then the model decides
+when to read, you pay for its guesses, and a person never sees the list.

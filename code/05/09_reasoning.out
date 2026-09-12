@@ -1,0 +1,23 @@
+gpt-5.4-mini
+    2.0s     207 completion tokens, of which 0 were thinking the reader never sees
+  First, compute profit per cloth:
+
+- **Full price profit** = \$12.50 - \$8.20 = **\$4.30**
+- **10% discounted price** = \$12.50 × 0.90 = **\$11.25**
+- **Discounted profit per cloth** = \$11.25 - \$8.20
+
+gpt-5.5
+    3.9s     291 completion tokens, of which 144 were thinking the reader never sees
+  - **Midwest gross profit:** **$125,965**  
+  - Discounted price: $12.50 × 90% = $11.25  
+  - Profit per cloth: $11.25 − $8.20 = $3.05  
+  - $3.05 × 41,300 = $125,965  
+
+- **Southwest gross profit:** *
+
+Computed in Python:  Midwest $125,965   Southwest $124,270   difference $1,695
+
+A reasoning model spends tokens thinking before it answers. It is slower and
+dearer, and on arithmetic it is still a language model. The right answer to
+this question is not a better model — it is to compute the number in code and
+let the model describe it. That rule shapes the whole of Clarity.

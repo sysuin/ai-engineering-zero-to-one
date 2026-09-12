@@ -1,0 +1,17 @@
+one after another :  32.5s   9,184 tokens
+all at once       :   6.2s   9,193 tokens
+
+5.2x faster on the wall clock, 1.00x the tokens
+
+This is the multi-agent win, and it is worth being precise about what kind of
+win it is. Nothing got cheaper. The same six briefings cost the same tokens
+and made the same model calls; they simply waited at the same time instead of
+in a queue.
+
+6 workers gave 5.2x rather than 6x. The missing part is the
+work your own machine does — retrieval, the warehouse, JSON — which does
+not overlap with itself as neatly as waiting on a network does.
+
+The condition for this pattern is strict and easy to violate: the six tasks
+must not need each other. The moment quarter two's briefing depends on what
+quarter one found, you are back in a queue with extra machinery.

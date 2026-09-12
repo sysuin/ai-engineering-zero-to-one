@@ -1,0 +1,73 @@
+Meridian Supply Co., seed 20260101.
+synthetic: True   contains personal data: False
+
+Counts
+
+  suppliers                    20
+  products                     48
+  customers                    58
+  orders                   66,676
+  order lines             199,817
+  quarterly reviews            12
+  contracts                    40
+  tickets                     600
+  awkward documents             6
+  poisoned documents            4
+
+The warehouse: 7 tables and views
+
+  customers              58 rows   customer_id, name, region_id, segment, since
+  order_lines       199,817 rows   order_id, line_no, sku, qty, unit_price…
+  orders             66,676 rows   order_id, customer_id, order_date, channel
+  products               48 rows   sku, name, category, supplier_id, unit_cost…
+  regions                 5 rows   region_id, name, depot
+  suppliers              20 rows   supplier_id, name, country, tier
+  v_sales           199,817 rows   order_id, order_date, year, quarter, channel…
+
+The documents. The `-pdf` folders are renders of the same documents, which is
+why §13.2 can compare a parser against the text it was generated from.
+
+  awkward                  8 files      0.3 MB
+  contracts               40 files      0.1 MB
+  contracts-pdf           40 files      0.9 MB
+  poisoned                 4 files      0.0 MB
+  quarterly-reviews       12 files      0.0 MB
+  quarterly-reviews-pdf   12 files      0.3 MB
+  tickets                  1 file       0.1 MB
+
+The invariant that makes this dataset worth using:
+
+  every figure in a quarterly review is computed from the warehouse,
+  so a question can need both and neither alone will answer it.
+
+  quarter     manifest revenue  warehouse revenue  agree?
+  2023 Q1         7,360,833.67       7,360,833.67  yes
+  2023 Q2         7,614,048.76       7,614,048.76  yes
+  2023 Q3         7,774,027.48       7,774,027.48  yes
+  2023 Q4         7,699,846.68       7,699,846.68  yes
+
+  4 of 4 agree to within a dollar. `verify.py` checks all 12 and
+  fails the build if any of them drift — which is what makes it safe for a
+  chapter to quote a figure and for an eval case to be scored against one.
+
+Three things in here that are hostile on purpose:
+
+  6 awkward documents
+      01-newsletter-two-column.md
+      02-rotated-table.md
+      03-long-appendix.md
+      04-header-footer-noise.md
+      05-form-no-prose.md
+      06-scanned-source.md
+
+  4 poisoned documents, each carrying a real injection payload
+      poisoned-01-instruction-override.md
+      poisoned-02-exfiltration.md
+      poisoned-03-tool-abuse.md
+      poisoned-04-house-style.md
+
+  9 of 40 contracts have identical bodies once numbers are masked.
+  Eight of those are by design and differ only in the price-adjustment cap;
+  the extra one is a coincidence of the generator, which is a fair model of
+  a real corpus. This is the cluster §14.8's MMR earns its place on, and the
+  reason Chapter 13's exercises ask you to go looking for your own.

@@ -1,0 +1,107 @@
+{
+  "n": 20,
+  "executed": 20,
+  "correct": 17,
+  "rows": [
+    {
+      "q": "What was total revenue in 2024 Q3?",
+      "ok": true,
+      "sql": "SELECT SUM(revenue) AS total_revenue\nFROM v_sales\nWHERE year = 2024\n  AND quarter = 3;"
+    },
+    {
+      "q": "How many orders were placed in 2025?",
+      "ok": true,
+      "sql": "SELECT COUNT(DISTINCT order_id) AS orders_placed_in_2025\nFROM v_sales\nWHERE year = 2025;"
+    },
+    {
+      "q": "Which region had the lowest revenue in 2024 Q3?",
+      "ok": true,
+      "sql": "SELECT region\nFROM v_sales\nWHERE year = 2024\n  AND quarter = 3\nGROUP BY region\nORDER BY SUM(revenue) ASC\nLIMIT 1;"
+    },
+    {
+      "q": "What is our gross margin percentage for 2025?",
+      "ok": true,
+      "sql": "SELECT\n  ROUND(\n    100.0 * SUM(gross_profit) / NULLIF(SUM(revenue), 0),\n    2\n  ) AS gross_margin_percentage\nFROM v_sales\nWHERE year = 2025;"
+    },
+    {
+      "q": "How many distinct SKUs did we sell in 2023?",
+      "ok": true,
+      "sql": "SELECT COUNT(DISTINCT sku) AS distinct_skus_sold\nFROM v_sales\nWHERE year = 2023;"
+    },
+    {
+      "q": "Which category made the most gross profit in 2025 Q4?",
+      "ok": true,
+      "sql": "SELECT category\nFROM v_sales\nWHERE year = 2025\n  AND quarter = 4\nGROUP BY category\nORDER BY SUM(gross_profit) DESC\nLIMIT 1;"
+    },
+    {
+      "q": "What was Voss Industrial's revenue in 2025?",
+      "ok": false,
+      "sql": "SELECT SUM(revenue) AS revenue\nFROM v_sales\nWHERE customer = 'Voss Industrial'\n  AND year = 2025;"
+    },
+    {
+      "q": "How many customers are in the Midwest region?",
+      "ok": true,
+      "sql": "SELECT COUNT(*) AS customer_count\nFROM customers c\nJOIN regions r ON c.region_id = r.region_id\nWHERE r.name = 'Midwest';"
+    },
+    {
+      "q": "What was the average discount percentage in 2024?",
+      "ok": true,
+      "sql": "SELECT AVG(discount_pct) AS average_discount_percentage\nFROM v_sales\nWHERE year = 2024;"
+    },
+    {
+      "q": "Which channel produced the most orders overall?",
+      "ok": true,
+      "sql": "SELECT channel\nFROM orders\nGROUP BY channel\nORDER BY COUNT(*) DESC, channel\nLIMIT 1;"
+    },
+    {
+      "q": "How much revenue came from the Enterprise segment in 2024 Q2?",
+      "ok": true,
+      "sql": "SELECT SUM(revenue) AS revenue\nFROM v_sales\nWHERE segment = 'Enterprise'\n  AND year = 2024\n  AND quarter = 2;"
+    },
+    {
+      "q": "How many units of Safety products shipped in 2025 Q1?",
+      "ok": true,
+      "sql": "SELECT SUM(qty) AS units_shipped\nFROM v_sales\nWHERE category = 'Safety'\n  AND year = 2025\n  AND quarter = 1;"
+    },
+    {
+      "q": "What is the total cost of goods sold across all time?",
+      "ok": true,
+      "sql": "SELECT SUM(cost) AS total_cost_of_goods_sold\nFROM v_sales;"
+    },
+    {
+      "q": "Which supplier has the most products?",
+      "ok": false,
+      "sql": "SELECT s.name AS supplier, COUNT(*) AS product_count\nFROM products p\nJOIN suppliers s ON s.supplier_id = p.supplier_id\nGROUP BY s.supplier_id, s.name\nORDER BY product_count DESC, s.name\nLIMIT 1;"
+    },
+    {
+      "q": "What was Southwest region revenue in 2023 Q4?",
+      "ok": true,
+      "sql": "SELECT SUM(revenue) AS southwest_region_revenue\nFROM v_sales\nWHERE region = 'Southwest'\n  AND year = 2023\n  AND quarter = 4;"
+    },
+    {
+      "q": "How many order lines had a discount of 15 percent?",
+      "ok": true,
+      "sql": "SELECT COUNT(*) AS order_lines_with_15_percent_discount\nFROM v_sales\nWHERE discount_pct = 15;"
+    },
+    {
+      "q": "What was gross profit in 2024 Q4?",
+      "ok": true,
+      "sql": "SELECT SUM(gross_profit) AS gross_profit\nFROM v_sales\nWHERE year = 2024\n  AND quarter = 4;"
+    },
+    {
+      "q": "Which region grew revenue most between 2023 and 2025?",
+      "ok": true,
+      "sql": "SELECT region\nFROM (\n  SELECT\n    region,\n    SUM(CASE WHEN year = 2025 THEN revenue ELSE 0 END) - SUM(CASE WHEN year = 2023 THEN revenue ELSE 0 END) AS revenue_growth\n  FROM v_sales\n  WHERE year IN (2023, 2025)\n  GROUP BY region\n  ORDER BY revenue_growth DESC\n  LIMIT 1\n);"
+    },
+    {
+      "q": "How many suppliers are based outside the United States?",
+      "ok": false,
+      "sql": "SELECT COUNT(*) AS suppliers_outside_us\nFROM suppliers\nWHERE country <> 'United States';"
+    },
+    {
+      "q": "What was the average order value in 2025 Q2?",
+      "ok": true,
+      "sql": "SELECT AVG(order_total) AS average_order_value\nFROM (\n  SELECT order_id, SUM(revenue) AS order_total\n  FROM v_sales\n  WHERE year = 2025\n    AND quarter = 2\n  GROUP BY order_id\n);"
+    }
+  ]
+}

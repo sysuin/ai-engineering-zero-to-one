@@ -1,0 +1,34 @@
+30 cases, the same retrieved context for both, two models.
+
+                     correct   refused      p50      p95  out tokens
+  gpt-5.4-mini      22/30      7/12        1.0s     1.5s         557
+  gpt-5.5           18/30      6/12        1.5s     3.3s       2,007
+
+  (no rates set, so this table reports tokens and stays silent about
+   dollars — Appendix C says where to find current prices)
+
+This is the table the gateway exists to make possible, and it is worth being
+precise about what it does and does not say.
+
+It says these two models score 22/30 and 18/30 on this suite, at these
+latencies, for these token counts. That is a fact about Meridian's questions
+and Meridian's documents, measured on a Tuesday.
+
+It does not say which model is better. Nothing does. There is no such number,
+and the published leaderboards answer a question nobody in your building is
+asking — Chapter 21 spent forty pages on why your own cases are the only ones
+that transfer.
+
+Two things to check before trusting any row of this table:
+
+  the context was held fixed   both models saw identical passages, fetched
+                               once. Re-running retrieval per model measures
+                               retrieval variance and calls it a model
+                               difference
+  the interval is wide         §21.6's arithmetic applies here unchanged; on
+                               thirty cases a two-point gap is nothing
+
+And a provider comparison is not only a quality comparison. Chapter 27's last
+section is about the fact that compliance, data residency and contractual
+terms routinely decide this before capability gets a vote — and they are much
+harder to change later than a model name in a config file.

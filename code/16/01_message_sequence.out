@@ -1,0 +1,23 @@
+1. You send  — the question, plus a description of what is available
+     {"role": "user", "content": "Revenue was 8,461,842 and cost of goods was 5,661,205. What
+     tools: [gross_margin_pct]
+
+2. It replies — not with an answer, with a request
+     finish_reason  tool_calls
+     content        None
+     tool_calls[0]  id=call_yCS8iLrDifDjkCRwHb8dVUpk
+                    name=gross_margin_pct
+                    arguments={"revenue":8461842,"cost":5661205}
+
+3. You run it — the model has executed nothing
+     gross_margin_pct(**{'revenue': 8461842, 'cost': 5661205}) -> 33.1
+
+4. You send it back — as a 'tool' message, keyed to the call id
+     {'role': 'tool', 'tool_call_id': 'call_yCS8iLrDifDjkCRwHb8dVUpk', 'content': '33.1'}
+
+5. It answers
+     Gross margin is **33.1%**.
+
+Two round trips, 4 messages, and the only thing that ran was
+your own function. 'Function calling' is a poor name: the model never calls
+anything. It emits a structured request and waits to be told what happened.

@@ -1,0 +1,26 @@
+starting the server and shaking hands: 1.7s, once
+
+               median           range    tokens  tool calls
+direct           6.0s        5.9-6.4s     1,654           2
+over MCP         5.9s        5.3-6.6s     1,607           2
+
+difference in median: -0.18s over 2 tool calls, so roughly -0.09s each
+spread within a single version: 1.38s
+-> the per-run difference is inside the noise
+
+The token counts are the number that matters and they barely move: the model
+is sent the same schemas and gets back the same results, because the adapter
+hands the server's own descriptions straight to it. A protocol between your
+agent and your tools is invisible to the thing you are paying by the token.
+
+What you do pay is the handshake at the top of this output — a process start,
+an index load and an initialize round trip — and you pay it per connection,
+not per call. Open the session once and hold it, which is the only reason the
+adapter in v0_11/mcp_client.py has a thread in it at all.
+
+So the question is never overhead. It is whether you need the indirection:
+
+  you do not    the tools live in your repository, ship with your code and
+                are used by exactly one application
+  you do        somebody else's application needs them, or somebody else's
+                tools need you, and neither of you wants to be a library

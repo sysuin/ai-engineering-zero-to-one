@@ -1,0 +1,12 @@
+
+configuration          r@5    plainnear-duidentifparaphr ticketobscure
+dense only             77%      83%    67%    67%    67%   100%   100%
+BM25 only              73%      83%   100%    83%     0%   100%   100%
+fused, k=60            77%      83%    67%    67%    67%   100%   100%
+fused, k=1             87%     100%    83%    83%    67%   100%   100%
++ metadata filter      93%     100%   100%   100%    67%   100%   100%
++ rerank top 25        97%     100%   100%   100%    83%   100%   100%
++ MMR diversity        93%     100%   100%    83%    83%   100%   100%
+
+30 questions, recall@5. 77% to 93%.
+inferring metadata from each question …

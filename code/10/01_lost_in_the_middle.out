@@ -1,0 +1,11 @@
+ context  tokens     0%  10%  20%  30%  40%  50%  60%  70%  80%  90% 100%  found
+   40 sec   2,991   yes  yes  yes  yes  yes  yes  yes  yes  yes  yes  yes  11/11
+  160 sec  11,878   yes  yes  yes  yes  yes  yes  yes  yes  yes  yes  yes  11/11
+  400 sec  29,652   yes  yes  yes  yes  yes  yes  yes  yes  yes  yes  yes  11/11
+
+The fact is stated once, in plain language, in a document the model was given in
+full. Nothing was summarised, truncated or retrieved.
+
+Whether it is found depends on where it sits — and the longer the context, the
+more that matters. 'It fits in the window' is a statement about the window, not
+about whether the model will use it.

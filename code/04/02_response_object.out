@@ -1,0 +1,34 @@
+id              chatcmpl-ENHxgyweKktZ8l83CJ70ecAccn1gh
+model           gpt-5.4-mini-2026-03-17
+created         1789219296
+choices         1
+
+finish_reason   stop
+role            assistant
+content         'A janitorial supplies distributor might sell categories like:\n\n1. **Cl' ...
+
+prompt_tokens     17
+completion_tokens 34
+total_tokens      51
+
+The whole thing, as the dictionary it really is:
+{
+  "id": "chatcmpl-ENHxgyweKktZ8l83CJ70ecAccn1gh",
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "message": {
+        "content": "A janitorial supplies distributor might sell categories like:\n\n1. **Cleaning chemicals**  \n2. **Paper products**  \n3. **Floor care equipment**",
+        "refusal": null,
+        "role": "assistant",
+        "annotations": [],
+        "audio": null,
+        "function_call": null,
+        "tool_calls": null
+      }
+    }
+  ],
+  "cr
+  ...

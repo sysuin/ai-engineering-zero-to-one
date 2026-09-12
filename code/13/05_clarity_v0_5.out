@@ -1,0 +1,27 @@
+1,454 chunks indexed
+
+Q: Which account did not renew, and what does the company say caused it?
+   answered   sources: qbr-2024-Q3.md, tickets.jsonl
+   Halloway Group did not renew at the end of the previous quarter, and the commercial team says the loss was due to a competitor’s national framework agreement rather than service failure. Halloway was the Midwest region’s largest account by revenue and was the single largest driver of the movement re
+
+Q: What was total revenue in 2024 Q3?
+   ABSTAINED   sources: qbr-2023-Q1.md, qbr-2023-Q2.md, qbr-2023-Q3.md, qbr-2023-Q4.md
+   The documents I have do not answer that. Missing: The excerpts do not include 2024 Q3 revenue. They only show 2023 Q1-Q4, 2024 Q1, and 2025 Q3.
+
+Q: What was total revenue in 2024 Q3?
+   filter: {'kind': 'quarterly-review', 'year': 2024, 'quarter': 3}
+   answered   sources: qbr-2024-Q3.md
+   Total revenue in 2024 Q3 was $8,461,842. [qbr-2024-Q3.md Summary]
+
+Q: How many people work at the Columbus depot?
+   ABSTAINED   sources: 01-newsletter-two-column.md, 02-rotated-table.md, 04-header-footer-noise.md, 06-scanned-source.md
+   The documents I have do not answer that. Missing: The excerpts do not state the number of people employed at the Columbus depot; they only mention its storage capacity, utilisation, a closure notice, and a goods received note.
+
+The second and third questions are identical. The only difference is a metadata
+filter, and it is the difference between a wrong answer and a right one.
+
+Without it, retrieval returns the Summary section of eight other quarters —
+they are all worded the same way — and Clarity correctly reports that it cannot
+answer. The abstention gate turned a silent wrong answer into a visible gap.
+
+Chapter 14 is about not needing the filter to be supplied by hand.

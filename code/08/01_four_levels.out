@@ -1,0 +1,13 @@
+                         parses   right keys   right types
+1. just ask                 0%           0%            0%
+2. ask for JSON           100%         100%            0%
+3. JSON mode              100%           0%            0%
+4. strict schema          100%         100%          100%
+
+What each one actually returned, first contract:
+  1. just ask            'Here are the extracted terms:  ## Payment terms - **Invoice payment period:** Payment must'
+  2. ask for JSON        '{"payment_basis":"within 60 days of the date of a valid invoice","payment_days":60,"price_'
+  3. JSON mode           '{   "payment_terms": {     "invoice_payment_due": "Within 60 days of the date of a valid i'
+  4. strict schema       '{"payment_days":60,"payment_basis":"invoice","price_cap_pct":3,"price_notice_days":30}'
+
+40 contracts. Only the last row is safe to hand to a program.

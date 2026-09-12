@@ -1,0 +1,17 @@
+With a budget too small to finish the object:
+  attempt 1: finish_reason=length, 35 chars
+             rejected: response was truncated before it finished
+  attempt 2: finish_reason=stop, 37 chars
+  -> payment_days=60 price_cap_pct=3  after 2 attempt(s)
+
+With a sensible budget:
+  attempt 1: finish_reason=stop, 37 chars
+  -> payment_days=60 price_cap_pct=3  after 1 attempt(s)
+
+Three layers, and each catches what the one below cannot:
+  the strict schema   guarantees the shape
+  Pydantic bounds     guarantee the values are in range
+  a field validator   guarantees they are sensible for your business
+
+None of them helps with truncation, which arrives as valid-looking nothing.
+finish_reason is the only signal, exactly as Chapter 4 warned.

@@ -1,0 +1,19 @@
+Shape (rows, columns): (199817, 16)
+
+Columns: ['order_id', 'line_no', 'order_date', 'year', 'quarter', 'region', 'segment', 'channel', 'customer_id', 'sku', 'category', 'supplier', 'qty', 'unit_price', 'unit_cost', 'discount_pct']
+
+First three rows:
+   order_date   region    category  qty  unit_price
+0  2023-01-28  Midwest    Cleaning    6      136.89
+1  2023-01-28  Midwest  Facilities    1       93.13
+2  2023-01-28  Midwest   Packaging   14       98.19
+
+Midwest rows: 38,595 of 199,817
+
+Revenue by category
+category
+Safety        26,461,063
+Facilities    23,456,819
+Cleaning      19,147,554
+Packaging     16,902,217
+Sanitation    12,746,730

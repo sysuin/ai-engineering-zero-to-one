@@ -1,0 +1,14 @@
+Call 1: Which region was weakest?
+  prompt tokens 3,134   of which cached 0 (0%)   1.17s
+  answer: Midwest was the weakest.
+Call 2: Which category had the lowest margin?
+  prompt tokens 3,136   of which cached 2,816 (90%)   0.88s
+  answer: Packaging had the lowest margin.
+Call 3: What was gross margin overall?
+  prompt tokens 3,135   of which cached 2,816 (90%)   0.89s
+  answer: 33.1%
+
+The document did not change between calls, so the work of reading it did not
+have to be repeated. Providers charge less for the reused part, and it returns
+faster. The requirement is that the identical text sits at the FRONT of the
+prompt — put the question first and you lose the reuse entirely.

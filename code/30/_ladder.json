@@ -1,0 +1,35 @@
+{
+ "no instructions beyond the schema": {
+  "correct": 11,
+  "of": 12,
+  "wrong": [
+   {
+    "q": "How wide are we running on the Safety line?",
+    "want": "margin_pct",
+    "got": "revenue"
+   }
+  ]
+ },
+ "+ the metric catalogue in the prompt": {
+  "correct": 11,
+  "of": 12,
+  "wrong": [
+   {
+    "q": "How wide are we running on the Safety line?",
+    "want": "margin_pct",
+    "got": "units"
+   }
+  ]
+ },
+ "+ five examples": {
+  "correct": 11,
+  "of": 12,
+  "wrong": [
+   {
+    "q": "How wide are we running on the Safety line?",
+    "want": "margin_pct",
+    "got": "revenue"
+   }
+  ]
+ }
+}

@@ -1,0 +1,45 @@
+{
+ "rates": {
+  "in": 0.15,
+  "out": 0.6,
+  "embed": 0.02
+ },
+ "designs": {
+  "a support copilot over ten years of tickets": {
+   "tokens_in": 36000000,
+   "tokens_out": 3000000,
+   "daily_cost": 7.2,
+   "monthly_cost": 216.0,
+   "per_request": 0.0018,
+   "chunks": 2700000,
+   "vector_gb": 16.5888,
+   "embed_cost": 21.6,
+   "concurrency": 0.7500000000000001,
+   "latency": 5.4
+  },
+  "a nightly contract-risk enricher": {
+   "tokens_in": 600000000,
+   "tokens_out": 40000000,
+   "daily_cost": 114.0,
+   "monthly_cost": 3420.0,
+   "per_request": 0.00228,
+   "chunks": 1250000,
+   "vector_gb": 7.68,
+   "embed_cost": 10.0,
+   "concurrency": 2.314814814814815,
+   "latency": 4.0
+  },
+  "a regulated advisory assistant": {
+   "tokens_in": 7200000,
+   "tokens_out": 540000,
+   "daily_cost": 1.404,
+   "monthly_cost": 42.12,
+   "per_request": 0.00468,
+   "chunks": 160000,
+   "vector_gb": 0.98304,
+   "embed_cost": 1.28,
+   "concurrency": 0.1375,
+   "latency": 13.200000000000001
+  }
+ }
+}

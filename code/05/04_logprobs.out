@@ -1,0 +1,18 @@
+A question with one clear answer
+  it wrote 'Midwest', choosing 'Mid' first
+  the five candidates it weighed:
+    'Mid'             1.000  ############################################
+
+A question with no single answer
+  it wrote 'Delay', choosing 'Delay' first
+  the five candidates it weighed:
+    'Delay'           0.526  #######################
+    'Capacity'        0.151  #######
+    'Del'             0.055  ##
+    'Planning'        0.043  ##
+    'Dis'             0.043  ##
+
+Every token is a choice among candidates, each with a number attached.
+When one candidate is at 1.000 the model is not thinking, it is reciting.
+When the top two are close, it was genuinely unsure — and you can measure that
+rather than guess at it. Chapter 22 uses this to flag answers for review.

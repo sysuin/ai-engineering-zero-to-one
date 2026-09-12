@@ -1,0 +1,45 @@
+One subtask — question to query specification — on 12 questions.
+
+                                            correct metric
+  no instructions beyond the schema               11/12   
+  + the metric catalogue in the prompt            11/12   
+  + five examples                                 11/12   
+
+  no instructions beyond the schema
+    How wide are we running on the Safety line?
+    wanted margin_pct, got revenue
+
+Every rung scored the same: 11 of 12. The schema alone was enough,
+and the catalogue and the examples bought nothing measurable.
+
+That is the result, and it is the most common result. The question these
+twelve cases were chosen to answer — would a fine-tune help here — is
+answered before the ladder begins: there is nowhere to climb from.
+
+Note which failure is left. 'How wide are we running on the Safety line'
+is ambiguous to a person too; margin is the trade's reading of 'wide' and
+revenue is a defensible one. A training set would teach one reading, which
+is a real use for fine-tuning and a small one — and a sentence in the
+prompt teaches it faster.
+
+That is the ladder, and the rungs are ordered by cost in hours rather than by
+sophistication:
+
+  1  a better prompt          minutes, reversible, no new artefact
+  2  examples in the prompt   an hour, and you can change them at lunchtime
+  3  retrieval                Part III — the right answer when the problem is
+                              that the model does not know a fact
+  4  a structured output      Chapter 8 — the right answer when the problem
+                              is that the shape is wrong
+  5  fine-tuning              days, a dataset to maintain, a model to version,
+                              and a new thing that can drift
+
+Most requests for fine-tuning are requests for rung three or four. 'The model
+does not know our products' is retrieval. 'The model will not answer in our
+format' is a schema. Neither is fixed by training, and both are frequently
+attempted with it.
+
+What is left after those four rungs is what fine-tuning is genuinely for, and
+it is narrower than the market suggests: a *behaviour* you cannot describe
+but can demonstrate — a house tone, a peculiar output convention, a judgement
+that takes a paragraph to specify and one example to show.

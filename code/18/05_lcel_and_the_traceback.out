@@ -1,0 +1,28 @@
+--- LCEL ---
+Meridian Supply Co. delivered $8.46M in Q3 revenue across 5,579 orders with 33.1% gross margin and 102,433 units shipped, up 4.8% QoQ despite the loss of Hallow
+
+Three objects and two pipes. That is genuinely less typing than the SDK, and the
+pieces are swappable: change the model line and nothing else moves.
+
+--- the same mistake, twice ---
+A template variable is misspelled: {docment} instead of {document}.
+
+LCEL       : KeyError
+             "Input to ChatPromptTemplate is missing variables {'docment'}.  Expected: ['docment'] Rece
+             7 frames, 6 of them inside site-packages
+plain SDK  : KeyError
+             'docment'
+             1 frame, 0 of them inside site-packages
+
+Be fair about which message is better: LangChain's names the variable it wanted
+and the one it got, and the SDK's is the bare word 'docment'. On wording, the
+framework wins.
+
+The cost is the shape of the traceback. The SDK raises 1 frame deep, in
+the line you typed. LCEL raises 7 frames deep, 6 of them in code you did not
+write, and the failure is reported in the framework's vocabulary - a prompt
+variable - rather than in yours.
+
+That is the trade, and it is not an argument against frameworks. It is the
+argument for hand-building first: you can read a stack trace through someone
+else's abstraction only once you know what it is doing on your behalf.
