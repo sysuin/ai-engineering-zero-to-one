@@ -19,13 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
---------------------------------------------------------------------------------
-
-SCOPE
-
-This licence covers everything in this repository: the code, the tests and the
-Meridian dataset generator.
-
-It does not cover the book these accompany, "AI Engineering from Zero to One", whose text,
-figures and covers are Copyright (c) 2026 Sunny Singh, all rights reserved.
