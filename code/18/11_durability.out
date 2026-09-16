@@ -1,0 +1,9 @@
+  durability ms per step  saved at the crash  if steps take 20 ms
+  exit              0.13                   0                    0
+  async             0.42                   0                   99
+  sync              0.42                 100                  100
+
+a 200-step graph killed at step 100; 'saved' is the last step a new process could resume from
+  exit   state written once, when the run ends
+  async  state written while the next step starts (the default)
+  sync   state written before the next step starts

@@ -1,0 +1,19 @@
+merge   1: 'i' + 'n' -> 'in'   (199 times)
+merge   2: 's' + 't' -> 'st'   (161 times)
+merge   3: 'a' + 'r' -> 'ar'   (155 times)
+merge   4: '1' + ',' -> '1,'   (155 times)
+merge   5: '▁' + '$' -> '▁$'   (151 times)
+merge   6: 'e' + 'r' -> 'er'   (147 times)
+merge   7: '▁' + '3' -> '▁3'   (144 times)
+merge   8: 'e' + 'n' -> 'en'   (136 times)
+merge  50: '▁20' + '2' -> '▁202'   (48 times)
+merge 150: '▁Sa' + 'f' -> '▁Saf'   (18 times)
+merge 300: '▁st' + 'and' -> '▁stand'   (12 times)
+
+     revenue -> ['▁revenue']
+     Midwest -> ['▁Midwest']
+    Meridian -> ['▁Meridian']
+   quarterly -> ['▁quarter', 'ly']
+    Halloway -> ['▁', 'H', 'al', 'lo', 'w', 'a', 'y']
+   8,461,842 -> ['▁', '8', ',4', '6', '1,', '8', '4', '2']
+     zymurgy -> ['▁', 'z', 'y', 'm', 'u', 'r', 'g', 'y']

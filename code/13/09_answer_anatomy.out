@@ -1,0 +1,8 @@
+  stage                     seconds  share   tokens
+  embed the question          1.166    27%   —
+  search 1,454 vectors        0.002     0%   —
+  grounding check             1.546    35%   367 in, 21 out
+  write the answer            1.677    38%   424 in, 75 out
+  total                       4.391
+
+the slowest stage was: write the answer

@@ -1,7 +1,7 @@
 {
- "sequential": 32.47290545800024,
- "parallel": 6.232722166001622,
- "sequential_tokens": 9184,
- "parallel_tokens": 9193,
+ "sequential": 27.280100833999313,
+ "parallel": 5.650850834001176,
+ "sequential_tokens": 9219,
+ "parallel_tokens": 9203,
  "n": 6
 }

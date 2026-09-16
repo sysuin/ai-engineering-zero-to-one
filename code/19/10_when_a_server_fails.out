@@ -1,0 +1,11 @@
+a tool that takes 8 seconds
+  no timeout                                 8.1s  returned 'finally'
+  read_timeout_seconds=2                     2.0s  raised MCPError: Request 'tools/call' timed out
+  the next call, on the same session         0.0s  returned 'pong'
+
+the server process dies during a call
+  the call that killed it                    0.0s  raised MCPError: Connection closed
+  the next call                              0.0s  raised MCPError: Connection closed
+
+a client that reconnects once when a call fails
+  ping through a fresh session               0.5s  returned 'pong'

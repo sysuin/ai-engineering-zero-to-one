@@ -1,0 +1,54 @@
+What Pydantic writes:
+{
+ "$defs": {
+  "PaymentBasis": {
+   "enum": [
+    "invoice",
+    "receipt"
+   ],
+   "title": "PaymentBasis",
+   "type": "string"
+  }
+ },
+ "properties": {
+  "payment_days": {
+   "description": "Days allowed to pay a valid invoice.",
+   "title": "Payment Days",
+   "type": "integer"
+  },
+  "payment_basis": {
+   "$ref": "#/$defs/PaymentBasis"
+  },
+  "liability_cap_usd": {
+   "anyOf": [
+    {
+     "type": "integer"
+    },
+    {
+     "type": "null"
+    }
+   ],
+   "description": "Flat cap in dollars, or null.",
+   "title": "Liability Cap Usd"
+  }
+ },
+ "required": [
+  "payment_days",
+  "payment_basis",
+  "liability_cap_usd"
+ ],
+ "title": "Terms",
+ "type": "object"
+}
+
+What strict mode sends (differences from the above):
+  required:              ['payment_days', 'payment_basis', 'liability_cap_usd']
+  additionalProperties:  False
+  liability_cap_usd:     {"anyOf": [{"type": "integer"}, {"type": "null"}], "description": "Flat cap in dollars, or null.", "title": "Liability Cap Usd"}
+
+Does the provider accept these keywords in a strict schema?
+  minimum / maximum  accepted
+  pattern            accepted
+  maxItems           accepted
+
+Whatever the answer, Pydantic enforces its own constraints on the way back in.

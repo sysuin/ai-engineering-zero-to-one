@@ -1,0 +1,6 @@
+five requests of 4s each in flight; SIGTERM sent 1s after they started
+
+   grace  the five in flight                    a new request, 0.2s after SIGTERM
+      1s  5 a 500                               refused (ConnectError)
+      2s  5 a 500                               refused (ConnectError)
+      5s  5 answered                            refused (ConnectError)

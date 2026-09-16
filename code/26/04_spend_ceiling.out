@@ -1,0 +1,4 @@
+ceiling $0.50; 30 requests arrive together; each costs up to $0.06
+
+  check the total after the call   served 30   spent $1.22   over the ceiling by $0.72
+  reserve the worst case before    served  8   spent $0.33   within the ceiling

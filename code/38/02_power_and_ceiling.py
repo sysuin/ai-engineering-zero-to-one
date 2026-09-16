@@ -40,12 +40,13 @@ print("  1. Pair your comparisons. Running both systems on the same cases remove
 print("     case-to-case variation and cuts the requirement dramatically — often by more")
 print("     than half, and more when the systems agree often.")
 print("  2. Stop shipping 3-point changes one at a time. Batch five of them, measure the")
-print("     batch, and keep the batch or revert it. A 15-point difference is visible at")
-print(f"     {cases_needed(0.85, 0.15):,} cases, which is a set you can actually build.")
+print("     batch, and keep the batch or revert it. A 15-point gain from 85% is visible")
+print(f"     at {cases_needed(0.85, 0.15):,} cases, a set you can actually build; from a lower")
+print("     baseline the same gain needs more.")
 
 # ------------------------------------------------------------------ the noise ceiling
 print("\n\nThe noise ceiling: the highest score anybody could get on your set.\n")
-print("Your labels are not perfect. §6.5 shows how an arguable ground truth caps every")
+print("Your labels are not perfect. §6.8 shows how an arguable ground truth caps every")
 print("score you report, and a case whose gold answer is wrong is a case a perfect")
 print("system fails.\n")
 print(f"  {'label error':>12}  {'ceiling':>9}   what an 85% result actually means")
@@ -56,9 +57,10 @@ for error in (0.00, 0.03, 0.05, 0.10, 0.15):
     closed = min(0.85 / ceiling, 1.0)
     print(f"  {error:>11.0%}  {ceiling:>9.0%}   {closed:>4.0%} of what is achievable")
 
-print("\nAt 10% label error a score of 85% is 94% of everything available, and the six")
-print("points you are chasing are mostly wrong labels. Measuring the ceiling is how you")
-print("find out that your model is finished and your data is not.")
+print("\nAt 10% label error a score of 85% is 94% of everything available: only five of the")
+print("fifteen points below 100% are within reach, and the other ten are wrong labels.")
+print("Measuring the ceiling is how you find out that your model is nearly finished")
+print("and your data is not.")
 
 # ------------------------------------------------------------------ run-to-run noise
 print("\n\nAnd the other ceiling: the same system, scored twice.\n")
@@ -82,5 +84,5 @@ print("\n  Nothing changed between those runs. A team watching this dashboard wo
 print(f"  have celebrated {article} {gain}-point gain and investigated a "
       f"{drop}-point regression,")
 print("  and both would have been the same system on a different Tuesday.")
-print("\n  This is the argument for §22.9's drift threshold against a recorded baseline,")
+print("\n  This is the argument for §22.14's drift threshold against a recorded baseline,")
 print("  rather than an absolute floor set just under today's score.")

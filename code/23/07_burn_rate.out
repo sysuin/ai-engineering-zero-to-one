@@ -1,0 +1,16 @@
+SLO 95% correct over 30 days; 20 answers judged per hour
+
+  page   when the last  2h burn the budget at 6.0x or faster (error rate 30.0%+)
+         the six-hour incident  detected after 2h
+         the slow decline       detected never
+         hours alerting while healthy: 0
+  page   when the last  6h burn the budget at 6.0x or faster (error rate 30.0%+)
+         the six-hour incident  detected after 6h
+         the slow decline       detected never
+         hours alerting while healthy: 0
+  ticket when the last 72h burn the budget at 1.5x or faster (error rate 7.5%+)
+         the six-hour incident  detected never
+         the slow decline       detected after 59h
+         hours alerting while healthy: 0
+
+over the month: 5.2% of sampled answers wrong, 104% of the error budget spent

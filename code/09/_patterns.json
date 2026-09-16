@@ -5,44 +5,50 @@
     "direct": {
       "accuracy": 0.9,
       "calls": 40,
-      "tokens": 22034,
-      "seconds": 4.0,
-      "predicted_compliant": 6
+      "tokens": 22040,
+      "seconds": 3.7,
+      "predicted_compliant": 6,
+      "unreadable": 0
     },
     "chain of thought": {
-      "accuracy": 0.85,
+      "accuracy": 1.0,
       "calls": 40,
-      "tokens": 28755,
-      "seconds": 6.7,
-      "predicted_compliant": 16
+      "tokens": 28832,
+      "seconds": 6.5,
+      "predicted_compliant": 10,
+      "unreadable": 0
     },
     "structured CoT": {
       "accuracy": 1.0,
       "calls": 40,
-      "tokens": 29698,
-      "seconds": 6.0,
-      "predicted_compliant": 10
+      "tokens": 29671,
+      "seconds": 5.3,
+      "predicted_compliant": 10,
+      "unreadable": 0
     },
     "self-consistency": {
-      "accuracy": 0.85,
+      "accuracy": 0.9,
       "calls": 200,
-      "tokens": 110012,
-      "seconds": 19.0,
-      "predicted_compliant": 6
+      "tokens": 109982,
+      "seconds": 17.0,
+      "predicted_compliant": 6,
+      "unreadable": 0
     },
     "reflection": {
-      "accuracy": 0.725,
+      "accuracy": 0.65,
       "calls": 120,
-      "tokens": 73176,
-      "seconds": 16.7,
-      "predicted_compliant": 17
+      "tokens": 72994,
+      "seconds": 15.6,
+      "predicted_compliant": 20,
+      "unreadable": 0
     },
     "decomposition": {
       "accuracy": 1.0,
       "calls": 40,
       "tokens": 24576,
-      "seconds": 4.6,
-      "predicted_compliant": 10
+      "seconds": 4.0,
+      "predicted_compliant": 10,
+      "unreadable": 0
     }
   }
 }

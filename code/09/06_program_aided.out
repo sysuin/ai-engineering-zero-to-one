@@ -1,0 +1,5 @@
+  answer directly                        exact to the cent  0/30   within 1% 12/30
+  write an expression, code evaluates    exact to the cent 30/30   within 1% 30/30
+
+example: An order is for 594 units at $56.35 each. The supplier applies a 8% price rise, then Mer...
+         the right answer is $34,342.17

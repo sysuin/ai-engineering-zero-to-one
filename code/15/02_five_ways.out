@@ -22,7 +22,7 @@ WHERE customer = 'Voss Industrial'
    SELECT s.name AS supplier, COUNT(p.sku) AS product_count
 FROM suppliers s
 JOIN products p ON p.supplier_id = s
-   Several suppliers tie. The question does not say how to break the tie, so
+   Two suppliers tie. The question does not say how to break the tie, so
    whichever ORDER BY the model wrote becomes the answer. Not a model error —
    an unanswerable question that got answered.
 
@@ -39,7 +39,8 @@ FROM v_sales
 FROM v_sales
 
    DATE_TRUNC argument order, quarter arithmetic and date casting differ between
-   engines. A query that is correct on one silently returns nothing on another.
+   engines. Most such mistakes fail loudly on the other engine; some, such as
+   integer division and case-sensitive comparison, return a different answer.
 
 5. It will happily write something destructive
 

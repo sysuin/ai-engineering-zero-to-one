@@ -1,0 +1,43 @@
+
+  it works
+     no  the eval suite is green against a recorded baseline
+           floors only: suite.py can compare to a baseline; none is recorded
+    yes  the red-team suite runs and its failures are known
+           80% of attacks blocked on the last card
+      ?  someone who did not build it has used it
+
+  it fails safely
+     no  every dependency has a timeout
+           the model client's read timeout is the SDK default, 600s
+     no  there is a breaker per provider, not one shared
+           built in platform/, not composed by v1.0
+    yes  a refusal is a designed answer, not an exception
+           one detector, shared with the suite
+    yes  the load-shedding path returns 503, not a hang
+           the bulkhead's Open becomes a 503
+
+  you can see it
+    yes  every answer carries a trace id you can search
+           on every response
+     no  cost per request is recorded on the row
+           priced on spans; v1.0 writes no row
+     no  an alert fires on quality, not only on errors
+           no alerting in the code
+
+  it is contained
+    yes  no secret is in any file git can see
+           0 tracked files match a key pattern; .env is ignored
+     no  untrusted text is fenced before it reaches a prompt
+           guard.fence exists; v1.0 does not call it
+     no  the tenant boundary has a test that fails without it
+           Chapter 26's test runs on its own listing, not on Clarity
+     no  there is a spend ceiling and it has been tested
+           the book's runner has one; Clarity does not
+
+  someone can run it
+      ?  one command starts it from a clean checkout
+      ?  the README's first five commands work verbatim
+    yes  the known weaknesses are written down
+           CONTRIBUTING.md, from Chapter 31
+
+6 yes, 8 no, 3 for a person to check.

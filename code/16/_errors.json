@@ -1,12 +1,18 @@
 {
   "terse": {
-    "recovered": 0,
-    "n": 3,
-    "mean_attempts": 2.0
+    "right": 3,
+    "accepted but wrong": 0,
+    "gave up": 18,
+    "ran out of attempts": 3,
+    "n": 24,
+    "mean_calls": 2.4166666666666665
   },
   "instructive": {
-    "recovered": 2,
-    "n": 3,
-    "mean_attempts": 2.6666666666666665
+    "right": 21,
+    "accepted but wrong": 0,
+    "gave up": 3,
+    "ran out of attempts": 0,
+    "n": 24,
+    "mean_calls": 2.75
   }
 }

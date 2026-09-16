@@ -1,0 +1,7 @@
+two specialists, 8 runs per question and starting holder; stop after 6 handovers
+
+  rule    questions   taken at once  bounced 2+  never taken  mean handovers
+  polite  clear                 91%          0%           0%            0.09
+  polite  either                88%          0%           0%            0.12
+  owner   clear                100%          0%           0%            0.00
+  owner   either               100%          0%           0%            0.00

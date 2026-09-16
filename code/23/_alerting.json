@@ -2,22 +2,22 @@
  "healthy": {
   "label": "healthy",
   "errors": 0,
-  "p95_ms": 8440.695,
-  "tokens": 2195.681818181818,
-  "correct": 19,
+  "p95_ms": 5609.785,
+  "tokens": 2748.8636363636365,
+  "correct": 17,
   "of": 22,
-  "judge": 9,
+  "judge": 6,
   "judge_of": 10,
-  "refusals": 3
+  "refusals": 5
  },
  "broken": {
   "label": "retrieval quietly ranking backwards",
   "errors": 0,
-  "p95_ms": 4430.008,
-  "tokens": 1610.8181818181818,
+  "p95_ms": 4330.57,
+  "tokens": 1591.5454545454545,
   "correct": 8,
   "of": 22,
-  "judge": 1,
+  "judge": 0,
   "judge_of": 10,
   "refusals": 14
  }

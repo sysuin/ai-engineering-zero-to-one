@@ -1,0 +1,32 @@
+47 turns: 8 facts agreed in the first 7, the quarter changed at turn 15 and the
+money unit at turn 27, other accounts' quarters and currencies discussed throughout;
+summary and state updated every 10 turns; 8 runs each
+
+  strategy                     tokens  right   old  lost   changed facts right
+  keep everything                 994  56/56     0     0   quarter 8/8 unit 8/8
+  last 10 turns                   268   0/56     0    56   quarter 0/8 unit 0/8
+  rolling summary + last 10       403  56/56     0     0   quarter 8/8 unit 8/8
+  1 sentence summary + last 10    394  56/56     0     0   quarter 8/8 unit 8/8
+  rolling state + last 10         320  49/56     0     7   quarter 5/8 unit 5/8
+  state per pack + last 10        506  53/56     3     0   quarter 5/8 unit 8/8
+
+  rolling summary + last 10: 0 of 8 runs got at least one fact wrong
+  1 sentence summary + last 10: 0 of 8 runs got at least one fact wrong
+  rolling state + last 10: 3 of 8 runs got at least one fact wrong
+  state per pack + last 10: 3 of 8 runs got at least one fact wrong
+
+what 'rolling state + last 10' carried in a run that went wrong:
+  Established: {"account":"Carrow Health","region":"Midwest","comparison_quart
+  er":"2025 Q4","money_unit":"millions of dollars","audience":"regional direct
+  or","deadline":"Friday","chart_style":"bar charts","excluded_category":"Pack
+  aging"}
+
+what 'state per pack + last 10' carried in a run that went wrong:
+  Established: {"packs":[{"account":"Halloway Group","region":"Midwest","compa
+  rison_quarter":"2024 Q2","money_unit":"millions of dollars","audience":"regi
+  onal director","deadline":"Friday","chart_style":"bar charts","excluded_cate
+  gory":"Packaging"},{"account":"Voss Industrial","region":null,"comparison_qu
+  arter":"2024 Q1","money_unit":"euros","audience":null,"deadline":"next month
+  ","chart_style":null,"excluded_category":null},{"account":"Bexley Foods","re
+  gion":null,"comparison_quarter":"2025 Q4","money_unit":"euros","audience":nu
+  ll,"deadline":"next month","chart_style":null,"excluded_category":nu

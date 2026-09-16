@@ -1,0 +1,14 @@
+  parameter                    MODEL_FAST  MODEL_SMART
+  temperature=0.2                accepted     rejected
+  top_p=0.5                      accepted     rejected
+  n=2                            accepted     accepted
+  seed=7                         accepted     accepted
+  presence_penalty=0.5           accepted     rejected
+  frequency_penalty=0.5          accepted     rejected
+  logprobs + top_logprobs        accepted     rejected
+  logit_bias                     rejected     rejected
+  stop=['.']                     rejected     rejected
+  max_tokens=20                  rejected     rejected
+  reasoning_effort=low           accepted     accepted
+
+5 of 11 parameters are accepted by one model and not the other.

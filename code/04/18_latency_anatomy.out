@@ -1,0 +1,10 @@
+  asked for  tokens  first token   total  per token
+      25 w      37        0.70s   0.96s      7.2ms
+      25 w      38        0.75s   1.05s      8.4ms
+     100 w     136        0.74s   1.67s      6.9ms
+     100 w     124        0.84s   1.79s      7.8ms
+     300 w     357        0.63s   3.32s      7.6ms
+     300 w     399        0.66s   3.47s      7.1ms
+
+median time to first token 0.72s; median time per output token 7.4ms
+the longest answers took 3.4x as long as the shortest, while the first token arrived in about the same time

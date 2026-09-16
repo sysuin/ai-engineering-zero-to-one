@@ -1,0 +1,8 @@
+  construct           easy render  careful render
+  script tag              present               -
+  event handler           present               -
+  javascript: link        present               -
+  remote image            present               -
+
+  links kept by the careful render: ['https://docs.meridian.example/qbr-2024-Q3']
+  escaped, and therefore shown as text rather than run: True

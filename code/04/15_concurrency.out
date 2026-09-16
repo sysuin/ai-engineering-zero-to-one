@@ -1,0 +1,9 @@
+12 calls; slowest single call 1.39s, sum of all calls 10.13s
+
+  sequential              10.13s
+  6 threads                2.07s   4.9x faster
+  asyncio, 6 at a time       1.57s   6.4x faster
+
+The ceiling is about 6x with 6 calls in flight. Each run makes its own calls
+with their own latencies, so a measurement can land a little either side of it.
+Rate limits set a lower ceiling still.

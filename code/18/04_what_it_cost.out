@@ -1,6 +1,6 @@
 --- code you maintain ---
-  v0.9  hand-rolled loop :  149 lines
-  v0.10 graph            :  146 lines  (-3)
+  v0.9  hand-rolled loop :  152 lines
+  v0.10 graph            :  169 lines  (+17)
 
 --- code you now depend on ---
   langgraph                      1.2.11
@@ -13,14 +13,14 @@
   langgraph on disk: 5.2 MB
 
 --- what it costs at import time ---
-  import openai           2.42s (cold process)
-  import langgraph.graph  3.04s (cold process)
+  import openai           0.96s (cold process)
+  import langgraph.graph  1.49s (cold process)
 
 --- what it costs per run ---
-  v0.9  :   6.2s median  (range 5.6-6.5s)   2 calls, 1,640 tokens per run
-          of which 2.7s was spent waiting for the model
-  v0.10 :   6.0s median  (range 5.7-6.3s)   2 calls, 1,642 tokens per run
-          of which 2.6s was spent waiting for the model
+  v0.9  :   5.1s median  (range 4.7-5.8s)   2 calls, 1,647 tokens per run
+          of which 2.4s was spent waiting for the model
+  v0.10 :   5.1s median  (range 4.7-5.5s)   2 calls, 1,645 tokens per run
+          of which 2.4s was spent waiting for the model
 
   spread within one version : 1.0s
   gap between the versions  : 0.1s

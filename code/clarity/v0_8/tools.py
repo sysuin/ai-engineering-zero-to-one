@@ -5,11 +5,12 @@ Four rules hold this together, and each cost somebody a bad afternoon to learn:
 
   every tool has a timeout          the silent hang is always a missing one
   every error names the fix         the error is the next thing the model reads
-  empty is not an error             `[]` is an answer; treating it as failure loops
+  empty is not an error             `[]` is an answer; raised, it reads as an outage
   nothing is ever eval'd            the model's output is untrusted input, always
 """
 from __future__ import annotations
 
+import contextvars
 import json
 import sys
 import time
@@ -32,8 +33,8 @@ class ToolError(Exception):
     An error the model is expected to read and act on.
 
     The message is a prompt: name what was wrong, name the valid values, and say what
-    to retry with. Chapter 16 measured terse errors recovering 0 times out of 3 and
-    instructive ones 2 out of 3.
+    to retry with. Chapter 16 measured terse errors leading to a right call 3 times in 24,
+    and instructive ones 21.
     """
 
 
@@ -60,8 +61,8 @@ def _obj(**properties) -> dict:
 def build_tools(retriever: Retriever, warehouse: Warehouse) -> list[Tool]:
     def search_documents(query: str, limit: int = 5) -> list[dict]:
         passages = retriever.search(query, k=min(limit, 10))
-        # An empty list is a valid answer, not a failure. Raising here would send the
-        # model looking for a different phrasing forever.
+        # An empty list is a valid answer, not a failure. Raising here makes the model
+        # tell the user the search is broken (code/16/16_empty_as_error.py).
         return [{"source": p.source, "heading": p.heading, "text": p.text[:600]}
                 for p in passages]
 
@@ -87,11 +88,23 @@ def build_tools(retriever: Retriever, warehouse: Warehouse) -> list[Tool]:
         arrives in it — so this parses a restricted grammar and refuses everything else.
         """
         import ast
+        import math
         import operator
+
+        def power(base, exponent):
+            # In floats, never integers. 7 ** 10 ** 8 in integers is one
+            # C call that holds the GIL for minutes, and no timeout in
+            # the process can fire until it ends; in floats it overflows
+            # at once. Chapter 16's fuzz test found it.
+            value = float(base) ** float(exponent)
+            if isinstance(value, complex):              # (-8) ** 0.5
+                raise ToolError(f"{expression!r} takes a root of a "
+                                "negative number. Check the figures.")
+            return value
 
         allowed = {ast.Add: operator.add, ast.Sub: operator.sub,
                    ast.Mult: operator.mul, ast.Div: operator.truediv,
-                   ast.Pow: operator.pow, ast.USub: operator.neg}
+                   ast.Pow: power, ast.USub: operator.neg}
 
         def walk(node):
             if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)):
@@ -107,10 +120,23 @@ def build_tools(retriever: Retriever, warehouse: Warehouse) -> list[Tool]:
 
         try:
             tree = ast.parse(expression, mode="eval").body
+            value = float(walk(tree))
         except SyntaxError as error:
-            raise ToolError(f"{expression!r} is not an expression: {error.msg}. "
-                            "Retry with something like '(8461842 - 5661205) / 8461842'.")
-        return round(float(walk(tree)), 6)
+            raise ToolError(f"{expression!r} is not an expression: "
+                            f"{error.msg}. Retry with something like "
+                            "'(8461842 - 5661205) / 8461842'.")
+        except ZeroDivisionError:                       # 1 / 0
+            raise ToolError(f"{expression!r} divides by zero. Check "
+                            "the figures before retrying.")
+        except RecursionError:                          # 1+1+...+1
+            raise ToolError("That expression is too long to evaluate. "
+                            "Compute it in parts.")
+        except OverflowError:                           # 2.0 ** 2000
+            value = math.inf
+        if not math.isfinite(value):                    # 1e200 * 1e200
+            raise ToolError(f"{expression!r} is too large to "
+                            "represent. Check the figures.")
+        return round(value, 6)
 
     def today(offset_days: int = 0) -> str:
         """The model has no clock. Chapter 5, made concrete."""
@@ -167,17 +193,32 @@ class ToolRunner:
         self.client = client or OpenAI()
         self.max_rounds = max_rounds
 
-    def _execute(self, name: str, arguments: dict) -> tuple[str, float, bool]:
+    @staticmethod
+    def _parse(raw: str) -> dict | None:
+        """A call's arguments arrive as a string the model wrote. It may not be JSON."""
+        try:
+            value = json.loads(raw)
+        except json.JSONDecodeError:
+            return None
+        return value if isinstance(value, dict) else None
+
+    def _execute(self, name: str, arguments: dict | None) -> tuple[str, float, bool]:
         tool = self.tools.get(name)
         if tool is None:
             return (f"No tool called {name!r}. Available: "
                     f"{', '.join(self.tools)}.", 0.0, True)
+        if arguments is None:
+            return (f"The arguments for {name} were not a JSON object. Retry with "
+                    "arguments that match the schema.", 0.0, True)
         started = time.time()
+        pool = ThreadPoolExecutor(max_workers=1)
         try:
             # Every tool call runs under a timeout. Without one, a tool that never
             # returns hangs the whole conversation with no error anywhere.
-            with ThreadPoolExecutor(max_workers=1) as pool:
-                value = pool.submit(tool.run, **arguments).result(timeout=tool.timeout)
+            # A thread does not inherit context variables, so the tracing span in
+            # progress would not be the tool's parent; copy the context across.
+            context = contextvars.copy_context()
+            value = pool.submit(context.run, tool.run, **arguments).result(timeout=tool.timeout)
             return json.dumps(value, default=str)[:4000], time.time() - started, False
         except FutureTimeout:
             return (f"{name} took longer than {tool.timeout}s and was abandoned. "
@@ -190,6 +231,11 @@ class ToolRunner:
         except Exception as error:                                   # noqa: BLE001
             return (f"{name} failed: {type(error).__name__}: {error}",
                     time.time() - started, True)
+        finally:
+            # Not a `with` block: leaving one waits for the thread to finish, which is
+            # the very hang the timeout is there to prevent (code/16/08_timeouts.py).
+            # The thread is abandoned, not stopped — Python cannot kill a thread.
+            pool.shutdown(wait=False)
 
     def run(self, question: str, system: str = "") -> tuple[str, list[Turn]]:
         messages: list[dict] = []
@@ -211,13 +257,14 @@ class ToolRunner:
             messages.append(reply)
             # Calls in one reply are independent, so they run together.
             with ThreadPoolExecutor(max_workers=4) as pool:
-                jobs = [(call, pool.submit(self._execute, call.function.name,
-                                           json.loads(call.function.arguments)))
-                        for call in reply.tool_calls]
-                for call, job in jobs:
+                jobs = [(call, arguments, pool.submit(contextvars.copy_context().run,
+                                                      self._execute, call.function.name,
+                                                      arguments))
+                        for call in reply.tool_calls
+                        for arguments in [self._parse(call.function.arguments)]]
+                for call, arguments, job in jobs:
                     result, seconds, failed = job.result()
-                    trace.append(Turn(call.function.name,
-                                      json.loads(call.function.arguments),
+                    trace.append(Turn(call.function.name, arguments or {},
                                       result[:200], seconds, failed))
                     messages.append({"role": "tool", "tool_call_id": call.id,
                                      "content": result})

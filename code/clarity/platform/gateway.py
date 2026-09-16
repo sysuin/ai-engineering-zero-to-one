@@ -7,7 +7,7 @@ your codebase until `choices[0].message.tool_calls` appears in forty files.
 
 The gateway is the one place that knows what a provider looks like. Above it,
 everything speaks `Reply`. Below it, each adapter translates — and the translation is
-larger than people expect, which is the point of §27.4.
+larger than people expect, which is the point of §27.1.
 
 What this interface deliberately does *not* expose: streaming granularity, provider
 error classes, model-specific parameters. Every one of those is a place a provider
@@ -47,6 +47,9 @@ class Reply:
     stop_reason: str = "stop"        # stop | length | tool_calls | refusal
     provider: str = ""
     model: str = ""
+    # Output tokens a reasoning model spent before its visible answer. They count against
+    # the output ceiling, so a reply can stop at "length" with no text at all — §27.4.
+    tokens_reasoning: int = 0
 
 
 class Provider(Protocol):
@@ -88,7 +91,9 @@ class OpenAIProvider:
             # OpenAI says "stop" / "length" / "tool_calls"; the names happen to match
             # ours, which will not be true of the next provider.
             stop_reason=choice.finish_reason or "stop",
-            provider=self.name, model=self.model)
+            provider=self.name, model=self.model,
+            tokens_reasoning=getattr(getattr(response.usage, "completion_tokens_details",
+                                             None), "reasoning_tokens", None) or 0)
 
 
 class BlockShapedProvider:

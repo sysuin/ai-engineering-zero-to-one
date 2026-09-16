@@ -8,6 +8,7 @@ from statistics import median
 
 sys.path.insert(0, "code")
 sys.path.insert(0, "code/20")
+from _meter import meter                                 # noqa: E402
 from _taskset import TASKS, score                        # noqa: E402
 from clarity.v0_6.retrieve import Retriever              # noqa: E402
 from clarity.v0_7.warehouse import Warehouse             # noqa: E402
@@ -25,28 +26,33 @@ tools = build_tools(Retriever(chunks, vectors), Warehouse())
 team = Team(tools)
 
 
+# Tokens and calls are counted at the client, so the model calls inside the tools — the
+# planner, the facet extractor, the embeddings — count for both designs.
 def run_solo(question: str):
     started = time.perf_counter()
-    run = Agent(tools, budget=Budget(steps=8)).run(question, system=SOLO)
-    return (run.answer, run.tokens, time.perf_counter() - started,
-            len(run.steps) + 1)
+    with meter() as m:
+        run = Agent(tools, budget=Budget(steps=8)).run(question, system=SOLO)
+    return run.answer, m.tokens, time.perf_counter() - started, m.calls
 
 
 def run_team(question: str):
-    run = team.run(question)
-    return run.answer, run.tokens, run.seconds, run.calls
+    with meter() as m:
+        run = team.run(question)
+    return run.answer, m.tokens, run.seconds, m.calls
 
 
 results = {}
 for label, runner in (("one agent", run_solo), ("supervisor + 2", run_team)):
     figures = causes = 0
     tokens, seconds, calls = [], [], []
-    per_task = []
+    per_task, missed = [], []
     for task in TASKS:
         got_figure = got_cause = 0
         for _ in range(REPEATS):
             answer, used, took, made = runner(task["q"])
             f, c = score(task, answer)
+            if not (f and c):
+                missed.append({"q": task["q"], "figure": f, "cause": c, "answer": answer})
             got_figure += f
             got_cause += c
             tokens.append(used)
@@ -57,7 +63,7 @@ for label, runner in (("one agent", run_solo), ("supervisor + 2", run_team)):
         per_task.append({"q": task["q"][:52], "figure": got_figure,
                          "cause": got_cause})
     total = len(TASKS) * REPEATS
-    results[label] = {"figure": figures, "cause": causes, "of": total,
+    results[label] = {"figure": figures, "cause": causes, "of": total, "missed": missed,
                       "tokens": round(sum(tokens) / len(tokens)),
                       "seconds": round(median(seconds), 1),
                       "calls": round(sum(calls) / len(calls), 1),
@@ -87,3 +93,11 @@ for a, b in zip(solo["per_task"], multi["per_task"]):
               f"cause {a['cause']}/{REPEATS}")
         print(f"     team       figure {b['figure']}/{REPEATS}  "
               f"cause {b['cause']}/{REPEATS}")
+
+lost = [m for m in multi["missed"] if not m["figure"]]
+if lost:
+    print("\nWhere the team lost a figure, in the first line of its own answer:")
+    for m in lost:
+        first = next((line for line in m["answer"].splitlines() if line.strip()), "")
+        print(f"  {m['q'][:44]}…")
+        print(f"     {first.strip()[:74]}")

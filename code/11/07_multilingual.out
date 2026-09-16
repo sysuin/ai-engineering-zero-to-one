@@ -1,0 +1,5 @@
+  language   recall@1   similarity to the English question
+  English         90%
+  Spanish         80%                                0.671
+  German          90%                                0.615
+  French          80%                                0.685

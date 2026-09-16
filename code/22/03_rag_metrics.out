@@ -3,7 +3,7 @@
   context recall     the golden span was retrieved    40 of 60  (67%)
                      and it was ranked first          25 of 60  (42%)
   context precision  passages from the cited document 12%
-  faithfulness       no unsupported claim             40 of 40  (100%)
+  faithfulness       no unsupported claim             38 of 40  (95%)
                      (20 refusals excluded — a refusal makes no claims)
 
 Three of those four numbers were computed without a model. Context recall is a
@@ -24,7 +24,7 @@ Now the part that matters — what recall actually predicts.
 Context recall is not a proxy for correctness here. It is the ceiling on
 it. Every case where the passage was not retrieved was a case the system
 could not answer, and it said so rather than guessing — which is the
-grounding check from §13.9 doing precisely its job.
+grounding check from §13.11 doing precisely its job.
 
 That is worth knowing before spending a week on prompts. Twenty of these
 sixty failures are retrieval failures, and no wording of any instruction
@@ -34,6 +34,14 @@ Context precision of 12% needs its own care. It counts passages from the
 document the case cites, and a passage from another quarter's review is not
 useless — for 'which region was strongest', comparing quarters is reasonable
 behaviour that this metric calls noise.
+
+2 of the 40 graded answers carried a claim the checker could not
+locate. Here is one:
+  Southwest was the strongest region in 2024 Q4 at $2,565,933.
+
+Read the flags before believing the score. A faithfulness checker marks
+anything absent from the passages it was shown, which includes claims that
+are true, in the document, and in a chunk that was not retrieved.
 
 None of this makes the metrics useless. It makes them instruments with known
 error, which is the only kind there is. The mistake is quoting faithfulness to

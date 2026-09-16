@@ -1,0 +1,64 @@
+What the model reads back, with each tool's timeout set to one second:
+
+  (8461842 - 5661205) / 8461842
+    first version  0.330972
+    now            0.330972
+
+  1.01 ** 365
+    first version  37.783434
+    now            37.783434
+
+  1 / 0
+    first version  arithmetic failed: ZeroDivisionError: division by zero
+    now            '1 / 0' divides by zero. Check the figures before
+                   retrying.
+
+  (-8) ** 0.5
+    first version  arithmetic rejected those arguments: float() argument must
+                   be a string or a real number, not 'complex'. Check the
+                   schema and retry.
+    now            '(-8) ** 0.5' takes a root of a negative number. Check the
+                   figures.
+
+  2.0 ** 2000
+    first version  arithmetic failed: OverflowError: (34, 'Result too large')
+    now            '2.0 ** 2000' is too large to represent. Check the
+                   figures.
+
+  1e200 * 1e200
+    first version  Infinity
+    now            '1e200 * 1e200' is too large to represent. Check the
+                   figures.
+
+  1 + 1 + 1 + 1 + 1 + … (8,001 characters)
+    first version  arithmetic failed: RecursionError: maximum recursion depth
+                   exceeded
+    now            That expression is too long to evaluate. Compute it in
+                   parts.
+
+7 ** 10 ** 7 through the runner, while another thread ticks every 50ms:
+
+    first version  returned after 8.14s; the ticks stopped for 8.14s
+                   arithmetic failed: OverflowError: int too large to convert
+                   to float
+
+    now            returned after 0.00s; the ticks stopped for 0.06s
+                   '7 ** 10 ** 7' is too large to represent. Check the
+                   figures.
+
+How long the first version holds the interpreter to raise 7 to a power:
+  7 ** 10 ** 5      0.01s
+  7 ** 10 ** 6      0.21s
+  7 ** 10 ** 7      8.26s
+  each tenfold exponent took about 39 times longer; at that rate
+  7 ** 10 ** 8 would hold it for roughly 5 minutes, and no timeout
+  in the same process could fire until it let go
+
+20,000 random expressions against the tool as it is now:
+  computed 11,863, refused 8,137, raised anything else 0
+  slowest single call 26ms
+
+The first version, given the same expressions and killed after 10s,
+was still computing number 5:
+  (((0.5 / 0.5) / (772035 + (482855697506096670 ** 77422509910340826)))
+  ** 0)

@@ -1,35 +1,24 @@
 Q: What was revenue in 2024 Q3, and what does the quarterly review say caused
-   ok      query_warehouse     1.86s  {'question': 'Revenue in 2024 Q3'}
-   ok      search_documents    1.74s  {'query': 'Midwest decline quarterly review caused d
-   A: Revenue in 2024 Q3 was **$8,461,841.81**. Source: Meridian sales warehouse query for “Revenue in 2024 Q3.”
+   ok      query_warehouse     1.09s  {'question': 'Revenue in 2024 Q3'}
+   ok      search_documents    2.40s  {'query': 'Midwest decline caused quarterly review 2
+   A: Revenue in 2024 Q3 was **$8,461,841.81**. Source: `v_sales` via the quarterly revenue query.
 
-The quarterly review says the **Midwest decline was caused by Halloway Group not renewing at the end of the previous quarter**; it says Halloway was the
+The quarterly review says the **Midwest decline was caused by Halloway Group not renewing at the end of the previous quarter**. It says Halloway was the Midwest regio
 
 Q: What was gross profit in 2024 Q3 as a percentage of revenue? Compute it.
-   ok      query_warehouse     1.43s  {'question': 'Gross profit in 2024 Q3 as a percentag
+   ok      query_warehouse     0.95s  {'question': 'Gross profit in 2024 Q3 as a percentag
    A: Gross profit in 2024 Q3 was **33.1% of revenue**.
 
 Q: How many people work at the Columbus depot?
-   ok      search_documents    1.48s  {'query': 'Columbus depot headcount employees people
-   ok      search_documents    1.56s  {'query': 'Columbus depot staff employees operators 
+   ok      search_documents    1.69s  {'query': 'Columbus depot headcount employees people
+   ok      search_documents    1.65s  {'query': 'Columbus depot staff employees operators 
    A: I couldn’t find a document that states the Columbus depot headcount.
 
 What I did find:
 - A depot capacity review listing Columbus storage space, not staff count. Source: `02-rotated-table.md`
 - An operations notice and a goods received note mentioning the Colu
 
-Three things in those traces are worth reading.
-
-The first question needed both tools, and it used each for what it is for: the
-exact figure from the warehouse, the explanation from the documents. That split
-is the whole of Parts III and IV in one answer.
-
-The second was asked to 'compute' a percentage, and it did not compute anything.
-It recognised that margin_pct is already a defined metric and asked the
-warehouse for it — so the number came from Chapter 15's semantic layer rather
-than from arithmetic over two figures the model had to keep straight. The best
-tool call is often the one that makes a second call unnecessary.
-
-The third has no answer anywhere in the corpus. It searched twice, found the
-depot mentioned in three documents, and refused — naming what it did find so a
-person can judge whether to look elsewhere.
+What the traces show:
+  question 1 used query_warehouse, search_documents
+  question 2, asked to compute, called no arithmetic tool and 1 warehouse query
+  question 3, with no answer in the corpus, searched 2 times

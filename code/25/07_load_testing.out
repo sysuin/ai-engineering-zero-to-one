@@ -1,0 +1,15 @@
+A service with 8 workers and 0.25s of work per request: capacity 32 requests a second.
+
+                            served/s  p50, first half  p50, second half
+  closed loop,  8 users         30.0            0.26s             0.26s
+  closed loop, 64 users         30.0            2.05s             2.05s
+  open loop, 30 req/s           29.1            0.26s             0.26s
+  open loop, 36 req/s           30.0            0.57s             1.19s
+
+Sixty-four closed-loop users push the service past capacity, and the test reports a
+steady state: 2.05s early, 2.05s late. It cannot report anything else,
+because each user waits for an answer before asking again, so the queue never grows
+longer than the number of users. Open-loop arrivals just above capacity do what real
+users do: the median wait went from 0.57s in the first half to 1.19s in the
+second, and it keeps growing for as long as the arrivals continue. A load test that
+cannot show that has been coordinated with the thing it was meant to stress.

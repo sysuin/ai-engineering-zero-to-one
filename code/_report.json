@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-13T03:18:01",
+  "generated": "2026-09-16T13:56:25",
   "listings": {
     "02/01_first_script.py": {
       "bytes": 52,
@@ -50,12 +50,12 @@
       "seconds": 0.94
     },
     "02/07_broken_typo.py": {
-      "bytes": 221,
+      "bytes": 255,
       "expect_fail": true,
-      "hash": "b3268814a77c7a6f",
+      "hash": "af2fe418c6a33238",
       "ok": true,
       "returncode": 1,
-      "seconds": 0.97
+      "seconds": 1.24
     },
     "02/08_broken_types.py": {
       "bytes": 239,
@@ -100,10 +100,90 @@
     "02/13_sql_to_python.py": {
       "bytes": 484,
       "expect_fail": false,
-      "hash": "491456c2c470c476",
+      "hash": "eabe279e0e3f5dd8",
       "ok": true,
       "returncode": 0,
-      "seconds": 2.96
+      "seconds": 3.65
+    },
+    "02/14_idioms.py": {
+      "bytes": 580,
+      "expect_fail": false,
+      "hash": "014e95f1708751d0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.67
+    },
+    "02/15_text.py": {
+      "bytes": 692,
+      "expect_fail": false,
+      "hash": "dc29fb104b7bfbe3",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.62
+    },
+    "02/16_aliasing.py": {
+      "bytes": 319,
+      "expect_fail": false,
+      "hash": "e2f7200fbd4c28b0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.4
+    },
+    "02/17_dates.py": {
+      "bytes": 451,
+      "expect_fail": false,
+      "hash": "480ec72f0255c79b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.49
+    },
+    "02/18_streaming.py": {
+      "bytes": 362,
+      "expect_fail": false,
+      "hash": "17762298cbfc67e5",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.89
+    },
+    "02/19_dataclasses.py": {
+      "bytes": 509,
+      "expect_fail": false,
+      "hash": "88591df72d3d8e99",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.43
+    },
+    "02/20_exceptions.py": {
+      "bytes": 431,
+      "expect_fail": false,
+      "hash": "82a92889bcccc20b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.89
+    },
+    "02/21_logging.py": {
+      "bytes": 454,
+      "expect_fail": false,
+      "hash": "49ad9bec70eeac0e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.48
+    },
+    "02/22_vectorised.py": {
+      "bytes": 301,
+      "expect_fail": false,
+      "hash": "b7347a0a54600efe",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.74
+    },
+    "02/23_first_test.py": {
+      "bytes": 648,
+      "expect_fail": false,
+      "hash": "eb205bf2e1bcfa1c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.53
     },
     "03/01_first_request.py": {
       "bytes": 371,
@@ -111,7 +191,7 @@
       "hash": "47bd0a42370ee97b",
       "ok": true,
       "returncode": 0,
-      "seconds": 2.24
+      "seconds": 1.69
     },
     "03/02_raw_exchange.py": {
       "bytes": 538,
@@ -119,7 +199,7 @@
       "hash": "6e3075dbd02168d0",
       "ok": true,
       "returncode": 0,
-      "seconds": 2.82
+      "seconds": 1.18
     },
     "03/03_status_codes.py": {
       "bytes": 567,
@@ -127,7 +207,7 @@
       "hash": "a102bfcbecc1d326",
       "ok": true,
       "returncode": 0,
-      "seconds": 1.05
+      "seconds": 1.21
     },
     "03/04_json_types.py": {
       "bytes": 673,
@@ -135,7 +215,7 @@
       "hash": "6bc13136f1a7cb16",
       "ok": true,
       "returncode": 0,
-      "seconds": 2.01
+      "seconds": 1.44
     },
     "03/05_secrets.py": {
       "bytes": 305,
@@ -143,7 +223,7 @@
       "hash": "8e63a00bad603ba7",
       "ok": true,
       "returncode": 0,
-      "seconds": 1.83
+      "seconds": 1.3
     },
     "03/06_timeout.py": {
       "bytes": 202,
@@ -151,7 +231,7 @@
       "hash": "1f631c1c5afe0aa9",
       "ok": true,
       "returncode": 0,
-      "seconds": 3.73
+      "seconds": 3.3
     },
     "03/07_retry_naive.py": {
       "bytes": 227,
@@ -159,7 +239,7 @@
       "hash": "c4e4c3adfad827dc",
       "ok": true,
       "returncode": 0,
-      "seconds": 3.41
+      "seconds": 2.03
     },
     "03/08_backoff.py": {
       "bytes": 444,
@@ -167,7 +247,7 @@
       "hash": "1abde8dc6ef04c20",
       "ok": true,
       "returncode": 0,
-      "seconds": 6.29
+      "seconds": 5.87
     },
     "03/09_jitter.py": {
       "bytes": 571,
@@ -175,7 +255,7 @@
       "hash": "19904a98ec57d093",
       "ok": true,
       "returncode": 0,
-      "seconds": 1.0
+      "seconds": 0.84
     },
     "03/10_idempotency.py": {
       "bytes": 453,
@@ -183,7 +263,79 @@
       "hash": "d0f60b936d33404f",
       "ok": true,
       "returncode": 0,
-      "seconds": 1.91
+      "seconds": 0.88
+    },
+    "03/11_sessions.py": {
+      "bytes": 363,
+      "expect_fail": false,
+      "hash": "5e580e54537d04c4",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.43
+    },
+    "03/12_pagination.py": {
+      "bytes": 365,
+      "expect_fail": false,
+      "hash": "9d1292e58d2597b5",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.89
+    },
+    "03/13_validate_response.py": {
+      "bytes": 429,
+      "expect_fail": false,
+      "hash": "8efca2b09c137828",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.05
+    },
+    "03/14_rate_limit_algorithms.py": {
+      "bytes": 231,
+      "expect_fail": false,
+      "hash": "31652c7d2e1fabfb",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.89
+    },
+    "03/15_client_limiter.py": {
+      "bytes": 190,
+      "expect_fail": false,
+      "hash": "59dc3ace44d624ee",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 12.44
+    },
+    "03/16_read_timeout.py": {
+      "bytes": 171,
+      "expect_fail": false,
+      "hash": "5c5ed9bb5dab72f0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.61
+    },
+    "03/17_sse.py": {
+      "bytes": 192,
+      "expect_fail": false,
+      "hash": "ab6170d894078a4d",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.9
+    },
+    "03/18_webhook_signature.py": {
+      "bytes": 216,
+      "expect_fail": false,
+      "hash": "1d3d07538b3cb695",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.97
+    },
+    "03/19_json_traps.py": {
+      "bytes": 797,
+      "expect_fail": false,
+      "hash": "9d5eb1f24dede121",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.74
     },
     "04/01_first_call.py": {
       "bytes": 129,
@@ -273,6 +425,78 @@
       "returncode": 0,
       "seconds": 2.72
     },
+    "04/12_raw_http.py": {
+      "bytes": 962,
+      "expect_fail": false,
+      "hash": "45bba76c168cf606",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.41
+    },
+    "04/13_parameters.py": {
+      "bytes": 725,
+      "expect_fail": false,
+      "hash": "6cffcee997e3b082",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 15.82
+    },
+    "04/14_usage_details.py": {
+      "bytes": 508,
+      "expect_fail": false,
+      "hash": "78582fbc4dd49802",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.27
+    },
+    "04/15_concurrency.py": {
+      "bytes": 388,
+      "expect_fail": false,
+      "hash": "210b34153001c979",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 14.6
+    },
+    "04/16_client_settings.py": {
+      "bytes": 428,
+      "expect_fail": false,
+      "hash": "5a433fb46059fa15",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.16
+    },
+    "04/17_stream_usage.py": {
+      "bytes": 526,
+      "expect_fail": false,
+      "hash": "beca1ee8de9a4f25",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.88
+    },
+    "04/18_latency_anatomy.py": {
+      "bytes": 536,
+      "expect_fail": false,
+      "hash": "60fe07ddd8f062fe",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 13.18
+    },
+    "04/19_ask_wrapper.py": {
+      "bytes": 316,
+      "expect_fail": false,
+      "hash": "491a8fd973688c4f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.85
+    },
+    "04/20_forgot_to_append.py": {
+      "bytes": 311,
+      "expect_fail": false,
+      "hash": "0271134b011008c3",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 9.79
+    },
     "05/01_tokenize.py": {
       "bytes": 853,
       "expect_fail": false,
@@ -282,12 +506,12 @@
       "seconds": 1.74
     },
     "05/02_token_weirdness.py": {
-      "bytes": 940,
+      "bytes": 975,
       "expect_fail": false,
-      "hash": "260fad11cbfd4986",
+      "hash": "381215b4ce2c48db",
       "ok": true,
       "returncode": 0,
-      "seconds": 21.55
+      "seconds": 21.2
     },
     "05/03_embeddings.py": {
       "bytes": 1095,
@@ -306,12 +530,12 @@
       "seconds": 9.22
     },
     "05/05_attention.py": {
-      "bytes": 531,
+      "bytes": 438,
       "expect_fail": false,
-      "hash": "9de3fe06f56f8d34",
+      "hash": "c073712c3483f57e",
       "ok": true,
       "returncode": 0,
-      "seconds": 7.49
+      "seconds": 3.06
     },
     "05/06_hallucination.py": {
       "bytes": 1682,
@@ -345,6 +569,70 @@
       "returncode": 0,
       "seconds": 8.18
     },
+    "05/10_ngram_perplexity.py": {
+      "bytes": 633,
+      "expect_fail": false,
+      "hash": "00eb7522658441c5",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.36
+    },
+    "05/11_bpe.py": {
+      "bytes": 780,
+      "expect_fail": false,
+      "hash": "b0133951bd0aae7c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.36
+    },
+    "05/12_languages.py": {
+      "bytes": 288,
+      "expect_fail": false,
+      "hash": "c362440b65e32ff3",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.77
+    },
+    "05/13_attention_numpy.py": {
+      "bytes": 698,
+      "expect_fail": false,
+      "hash": "e1bb7f8dac76b807",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.88
+    },
+    "05/14_model_arithmetic.py": {
+      "bytes": 453,
+      "expect_fail": false,
+      "hash": "a45ac6f0d7b1e30a",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.3
+    },
+    "05/15_kv_cache.py": {
+      "bytes": 567,
+      "expect_fail": false,
+      "hash": "c8529725f27a2a85",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.74
+    },
+    "05/16_sampling.py": {
+      "bytes": 612,
+      "expect_fail": false,
+      "hash": "af9c599e7cc42792",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.8
+    },
+    "05/17_calibration.py": {
+      "bytes": 481,
+      "expect_fail": false,
+      "hash": "442381b0b244b57a",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 54.27
+    },
     "06/01_baseline.py": {
       "bytes": 800,
       "expect_fail": false,
@@ -369,6 +657,62 @@
       "returncode": 0,
       "seconds": 4.09
     },
+    "06/04_sensitivity.py": {
+      "bytes": 886,
+      "expect_fail": false,
+      "hash": "00c784e62206e820",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.12
+    },
+    "06/05_threshold.py": {
+      "bytes": 815,
+      "expect_fail": false,
+      "hash": "1b8ba92bf51a7ee8",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 23.47
+    },
+    "06/06_sample_size.py": {
+      "bytes": 561,
+      "expect_fail": false,
+      "hash": "b44f8327ec8a31e7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.32
+    },
+    "06/07_confidence_signals.py": {
+      "bytes": 704,
+      "expect_fail": false,
+      "hash": "0a76935c4cda7d65",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 39.51
+    },
+    "06/08_uncertain_case.py": {
+      "bytes": 584,
+      "expect_fail": false,
+      "hash": "e176b9fcab4bd1e5",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.75
+    },
+    "06/09_noisy_labels.py": {
+      "bytes": 924,
+      "expect_fail": false,
+      "hash": "902cdcf62e59740f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.34
+    },
+    "06/10_before_after.py": {
+      "bytes": 804,
+      "expect_fail": false,
+      "hash": "8835dab952768964",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.66
+    },
     "07/01_be_specific.py": {
       "bytes": 819,
       "expect_fail": false,
@@ -378,12 +722,12 @@
       "seconds": 16.63
     },
     "07/02_fewshot.py": {
-      "bytes": 1229,
+      "bytes": 1270,
       "expect_fail": false,
-      "hash": "a75f3e12e28c5226",
+      "hash": "3be28d5d05fa71d1",
       "ok": true,
       "returncode": 0,
-      "seconds": 17.11
+      "seconds": 15.29
     },
     "07/03_delimiters.py": {
       "bytes": 950,
@@ -408,6 +752,70 @@
       "ok": true,
       "returncode": 0,
       "seconds": 7.28
+    },
+    "07/06_position.py": {
+      "bytes": 567,
+      "expect_fail": false,
+      "hash": "26ee99c9d0a1f7c5",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 12.3
+    },
+    "07/07_example_order.py": {
+      "bytes": 487,
+      "expect_fail": false,
+      "hash": "dfa9b4f614e0c95f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 11.09
+    },
+    "07/09_length.py": {
+      "bytes": 548,
+      "expect_fail": false,
+      "hash": "fc63641c9a7525df",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 10.98
+    },
+    "07/10_phrasing.py": {
+      "bytes": 374,
+      "expect_fail": false,
+      "hash": "209c1c53f25811b2",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 18.02
+    },
+    "07/11_templates.py": {
+      "bytes": 335,
+      "expect_fail": false,
+      "hash": "11437304c7808c19",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.64
+    },
+    "07/12_prompt_checks.py": {
+      "bytes": 718,
+      "expect_fail": false,
+      "hash": "a21c09ac3d6884ec",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 13.95
+    },
+    "07/13_paraphrases.py": {
+      "bytes": 488,
+      "expect_fail": false,
+      "hash": "28a131b60f95ef8b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 66.78
+    },
+    "07/14_definitions.py": {
+      "bytes": 726,
+      "expect_fail": false,
+      "hash": "d333efae59186bf1",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 63.88
     },
     "08/01_four_levels.py": {
       "bytes": 872,
@@ -457,21 +865,93 @@
       "returncode": 0,
       "seconds": 6.22
     },
+    "08/07_schema_anatomy.py": {
+      "bytes": 1240,
+      "expect_fail": false,
+      "hash": "45e18536eb5c64a3",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.41
+    },
+    "08/08_field_order.py": {
+      "bytes": 149,
+      "expect_fail": false,
+      "hash": "e2e410d8ec6728e7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.67
+    },
+    "08/09_unions.py": {
+      "bytes": 341,
+      "expect_fail": false,
+      "hash": "f840318403cd7ca0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 13.02
+    },
+    "08/10_evidence.py": {
+      "bytes": 436,
+      "expect_fail": false,
+      "hash": "ceeaa9e412f1f085",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.7
+    },
+    "08/11_extraction_metrics.py": {
+      "bytes": 405,
+      "expect_fail": false,
+      "hash": "4993137ff84514c2",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.98
+    },
+    "08/12_absent_or_unreadable.py": {
+      "bytes": 1175,
+      "expect_fail": false,
+      "hash": "798307f2b13bd593",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 27.76
+    },
+    "08/13_schema_compile.py": {
+      "bytes": 360,
+      "expect_fail": false,
+      "hash": "a6a6c8a54afdf357",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 35.19
+    },
+    "08/14_streaming_structure.py": {
+      "bytes": 740,
+      "expect_fail": false,
+      "hash": "1dac611599d51923",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.03
+    },
+    "08/15_json_mode_shapes.py": {
+      "bytes": 585,
+      "expect_fail": false,
+      "hash": "3b0a8c5bcae02fa6",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 17.58
+    },
     "09/01_patterns.py": {
       "bytes": 727,
       "expect_fail": false,
-      "hash": "0a5e97e34ef52a21",
+      "hash": "5be4150b706ceec0",
       "ok": true,
       "returncode": 0,
-      "seconds": 59.42
+      "seconds": 53.64
     },
     "09/02_reflection_autopsy.py": {
-      "bytes": 1464,
+      "bytes": 1498,
       "expect_fail": false,
-      "hash": "32dae4498bfff615",
+      "hash": "5610b81d7058c6d6",
       "ok": true,
       "returncode": 0,
-      "seconds": 38.11
+      "seconds": 27.38
     },
     "09/03_ambiguity.py": {
       "bytes": 1540,
@@ -481,13 +961,77 @@
       "returncode": 0,
       "seconds": 9.25
     },
-    "10/01_lost_in_the_middle.py": {
-      "bytes": 657,
+    "09/04_voting.py": {
+      "bytes": 885,
       "expect_fail": false,
-      "hash": "5bbc1fbec7299ab7",
+      "hash": "670600af15192bb1",
       "ok": true,
       "returncode": 0,
-      "seconds": 9.81
+      "seconds": 1.19
+    },
+    "09/05_agreement.py": {
+      "bytes": 414,
+      "expect_fail": false,
+      "hash": "072471ed2be002d2",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 18.67
+    },
+    "09/06_program_aided.py": {
+      "bytes": 308,
+      "expect_fail": false,
+      "hash": "5be6613fe4563153",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 6.77
+    },
+    "09/07_suggestion.py": {
+      "bytes": 453,
+      "expect_fail": false,
+      "hash": "aaf61cdba1b3c456",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 32.6
+    },
+    "09/08_effort_and_working.py": {
+      "bytes": 517,
+      "expect_fail": false,
+      "hash": "7e67a3c05d9e76a7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 32.88
+    },
+    "09/09_languages.py": {
+      "bytes": 647,
+      "expect_fail": false,
+      "hash": "b7dd88003733bf0a",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 6.77
+    },
+    "09/10_routing.py": {
+      "bytes": 1322,
+      "expect_fail": false,
+      "hash": "906970860e9de054",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 77.85
+    },
+    "09/15_cot_on_tickets.py": {
+      "bytes": 294,
+      "expect_fail": false,
+      "hash": "544979eb600f638d",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 29.16
+    },
+    "10/01_lost_in_the_middle.py": {
+      "bytes": 619,
+      "expect_fail": false,
+      "hash": "c5d50c3037462c6b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 9.12
     },
     "10/02_three_strategies.py": {
       "bytes": 504,
@@ -513,13 +1057,85 @@
       "returncode": 0,
       "seconds": 5.6
     },
-    "11/01_keyword_fails.py": {
-      "bytes": 1173,
+    "10/05_harder_than_a_needle.py": {
+      "bytes": 421,
       "expect_fail": false,
-      "hash": "20ea81369b0b782e",
+      "hash": "d0f7b7868c964676",
       "ok": true,
       "returncode": 0,
-      "seconds": 5.53
+      "seconds": 34.18
+    },
+    "10/06_overlap_arithmetic.py": {
+      "bytes": 715,
+      "expect_fail": false,
+      "hash": "d1ca70eb422ef186",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.45
+    },
+    "10/07_memory.py": {
+      "bytes": 671,
+      "expect_fail": false,
+      "hash": "3595e709ac9df0c8",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.59
+    },
+    "10/08_budget.py": {
+      "bytes": 375,
+      "expect_fail": false,
+      "hash": "25a09f44c636869b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.92
+    },
+    "10/09_counting_tokens.py": {
+      "bytes": 866,
+      "expect_fail": false,
+      "hash": "bb09b455b99a5761",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 7.8
+    },
+    "10/10_many_needles.py": {
+      "bytes": 414,
+      "expect_fail": false,
+      "hash": "aefe1a403d5b03a0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 9.82
+    },
+    "10/11_refine_vs_mapreduce.py": {
+      "bytes": 290,
+      "expect_fail": false,
+      "hash": "61922ce4996b8b2e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 258.24
+    },
+    "10/12_memory_changes.py": {
+      "bytes": 2060,
+      "expect_fail": false,
+      "hash": "d38b426d7e3ec91b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 34.01
+    },
+    "10/13_compression.py": {
+      "bytes": 1046,
+      "expect_fail": false,
+      "hash": "7af8f119cbe15efe",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 48.49
+    },
+    "11/01_keyword_fails.py": {
+      "bytes": 1358,
+      "expect_fail": false,
+      "hash": "882b08d1f619f0ad",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 7.27
     },
     "11/02_where_embeddings_fail.py": {
       "bytes": 2028,
@@ -537,6 +1153,94 @@
       "returncode": 0,
       "seconds": 14.37
     },
+    "11/04_similarity_matrix.py": {
+      "bytes": 1181,
+      "expect_fail": false,
+      "hash": "366bf89ece511466",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.38
+    },
+    "11/05_geometry.py": {
+      "bytes": 522,
+      "expect_fail": false,
+      "hash": "b0bea1bfb72d448b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.18
+    },
+    "11/06_bm25_parameters.py": {
+      "bytes": 678,
+      "expect_fail": false,
+      "hash": "a50083c16c4b95fc",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.28
+    },
+    "11/07_multilingual.py": {
+      "bytes": 258,
+      "expect_fail": false,
+      "hash": "e575d93c2d81dd06",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.1
+    },
+    "11/08_quantised_vectors.py": {
+      "bytes": 915,
+      "expect_fail": false,
+      "hash": "e535048e1b32030e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.93
+    },
+    "11/09_hubs.py": {
+      "bytes": 1263,
+      "expect_fail": false,
+      "hash": "a76e0ca4d2a30413",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.01
+    },
+    "11/10_bm25_explain.py": {
+      "bytes": 1135,
+      "expect_fail": false,
+      "hash": "08d851c006b85565",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.35
+    },
+    "11/11_threshold.py": {
+      "bytes": 832,
+      "expect_fail": false,
+      "hash": "c0aefdb27e445c14",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.5
+    },
+    "11/12_centering.py": {
+      "bytes": 719,
+      "expect_fail": false,
+      "hash": "ec763ae5fd5a2305",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.61
+    },
+    "11/13_dilution.py": {
+      "bytes": 699,
+      "expect_fail": false,
+      "hash": "63c84d8a92240da8",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 13.08
+    },
+    "11/14_two_models.py": {
+      "bytes": 922,
+      "expect_fail": false,
+      "hash": "ee61966ece0ec31b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 27.04
+    },
     "12/01_brute_force_limit.py": {
       "bytes": 1161,
       "expect_fail": false,
@@ -546,12 +1250,12 @@
       "seconds": 17.77
     },
     "12/02_hnsw.py": {
-      "bytes": 1282,
+      "bytes": 1233,
       "expect_fail": false,
-      "hash": "495f90e4e579e3b3",
+      "hash": "b84011d8e91082da",
       "ok": true,
       "returncode": 0,
-      "seconds": 373.05
+      "seconds": 209.19
     },
     "12/03_filtering.py": {
       "bytes": 1138,
@@ -569,13 +1273,85 @@
       "returncode": 0,
       "seconds": 12.05
     },
-    "13/01_parsing.py": {
-      "bytes": 1286,
+    "12/05_data_matters.py": {
+      "bytes": 380,
       "expect_fail": false,
-      "hash": "f5389c27be4c44cf",
+      "hash": "a366ec3a2b2fc319",
       "ok": true,
       "returncode": 0,
-      "seconds": 4.76
+      "seconds": 93.66
+    },
+    "12/06_ivf.py": {
+      "bytes": 272,
+      "expect_fail": false,
+      "hash": "0f7161b52c827ea1",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.99
+    },
+    "12/07_pq.py": {
+      "bytes": 267,
+      "expect_fail": false,
+      "hash": "9ada576620d0eaf0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.1
+    },
+    "12/08_incremental.py": {
+      "bytes": 376,
+      "expect_fail": false,
+      "hash": "260a5c79d4a98da7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.82
+    },
+    "12/09_lsh.py": {
+      "bytes": 958,
+      "expect_fail": false,
+      "hash": "f5c50438cde17c28",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.8
+    },
+    "12/10_index_memory.py": {
+      "bytes": 669,
+      "expect_fail": false,
+      "hash": "baf5fc6570fc7a71",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 26.5
+    },
+    "12/11_missed_ranks.py": {
+      "bytes": 661,
+      "expect_fail": false,
+      "hash": "8839e2b2e9dc61ec",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 56.04
+    },
+    "12/12_filter_strategies.py": {
+      "bytes": 1532,
+      "expect_fail": false,
+      "hash": "8228a817e1c2c994",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 53.41
+    },
+    "12/13_tombstones.py": {
+      "bytes": 720,
+      "expect_fail": false,
+      "hash": "819ae74756b58811",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 103.18
+    },
+    "13/01_parsing.py": {
+      "bytes": 1066,
+      "expect_fail": false,
+      "hash": "5cb379b5144981c0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.2
     },
     "13/02_vision_fallback.py": {
       "bytes": 1393,
@@ -594,28 +1370,116 @@
       "seconds": 9.56
     },
     "13/04_failure_modes.py": {
-      "bytes": 2599,
+      "bytes": 2298,
       "expect_fail": false,
-      "hash": "fe4a2e089fdabded",
+      "hash": "c7763a2c0540d363",
       "ok": true,
       "returncode": 0,
-      "seconds": 10.51
+      "seconds": 7.18
     },
     "13/05_clarity_v0_5.py": {
-      "bytes": 1795,
+      "bytes": 1798,
       "expect_fail": false,
-      "hash": "89c776b98438dbae",
+      "hash": "62dc385c6d8c0480",
       "ok": true,
       "returncode": 0,
       "seconds": 13.25
     },
-    "14/01_ablation.py": {
-      "bytes": 646,
+    "13/06_parse_audit.py": {
+      "bytes": 256,
       "expect_fail": false,
-      "hash": "990bd8c5c872abc3",
+      "hash": "cf0c0b6fae081006",
       "ok": true,
       "returncode": 0,
-      "seconds": 17.14
+      "seconds": 1.5
+    },
+    "13/07_condense.py": {
+      "bytes": 700,
+      "expect_fail": false,
+      "hash": "64b4d3fc012a27f8",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 13.3
+    },
+    "13/08_checked_citations.py": {
+      "bytes": 594,
+      "expect_fail": false,
+      "hash": "d35a21000efd1e80",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.1
+    },
+    "13/09_answer_anatomy.py": {
+      "bytes": 343,
+      "expect_fail": false,
+      "hash": "2094f96f5d01ab5b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 6.32
+    },
+    "13/10_refusals.py": {
+      "bytes": 1199,
+      "expect_fail": false,
+      "hash": "90193048c117b1b4",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.97
+    },
+    "13/11_distractors.py": {
+      "bytes": 762,
+      "expect_fail": false,
+      "hash": "a2d263b7b55224ea",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.2
+    },
+    "13/12_decompose.py": {
+      "bytes": 1364,
+      "expect_fail": false,
+      "hash": "a535064124b2784f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 6.58
+    },
+    "13/13_how_many_chunks.py": {
+      "bytes": 694,
+      "expect_fail": false,
+      "hash": "016b06a22c93b9ef",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 46.53
+    },
+    "13/14_grounding_constraint.py": {
+      "bytes": 1588,
+      "expect_fail": false,
+      "hash": "72835bea7d70da4c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 53.43
+    },
+    "13/15_wrong_quarter.py": {
+      "bytes": 559,
+      "expect_fail": false,
+      "hash": "c2884829ad29ea6f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 10.77
+    },
+    "13/16_banner.py": {
+      "bytes": 362,
+      "expect_fail": false,
+      "hash": "7c7e971050f1aa66",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 11.5
+    },
+    "14/01_ablation.py": {
+      "bytes": 1695,
+      "expect_fail": false,
+      "hash": "9a94f040f2842e54",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 44.7
     },
     "14/02_clarity_v0_6.py": {
       "bytes": 1147,
@@ -623,7 +1487,103 @@
       "hash": "69349d984631f28d",
       "ok": true,
       "returncode": 0,
-      "seconds": 10.76
+      "seconds": 8.14
+    },
+    "14/03_metrics.py": {
+      "bytes": 553,
+      "expect_fail": false,
+      "hash": "1ddf7cacc8d1a305",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.01
+    },
+    "14/04_contextual_headers.py": {
+      "bytes": 563,
+      "expect_fail": false,
+      "hash": "a79c1dbd1ceffeb1",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 16.87
+    },
+    "14/05_near_duplicates.py": {
+      "bytes": 924,
+      "expect_fail": false,
+      "hash": "4cf3dd0cc386a951",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.6
+    },
+    "14/06_hyde.py": {
+      "bytes": 532,
+      "expect_fail": false,
+      "hash": "bba0ac7742e3adf0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 9.09
+    },
+    "14/07_fusion.py": {
+      "bytes": 1763,
+      "expect_fail": false,
+      "hash": "189de53b85266d33",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.68
+    },
+    "14/08_is_it_real.py": {
+      "bytes": 876,
+      "expect_fail": false,
+      "hash": "5810aa1f4537c03d",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.79
+    },
+    "14/09_mmr_weight.py": {
+      "bytes": 912,
+      "expect_fail": false,
+      "hash": "96076a3466237df1",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.47
+    },
+    "14/10_granularity.py": {
+      "bytes": 562,
+      "expect_fail": false,
+      "hash": "ac28c807ab9fc9a8",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 6.79
+    },
+    "14/11_feedback.py": {
+      "bytes": 1166,
+      "expect_fail": false,
+      "hash": "688dcac71deee9d8",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.96
+    },
+    "14/12_pooling.py": {
+      "bytes": 1074,
+      "expect_fail": false,
+      "hash": "3692535e44e13bd0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.82
+    },
+    "14/13_multi_query.py": {
+      "bytes": 2038,
+      "expect_fail": false,
+      "hash": "602672a125584f73",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 21.78
+    },
+    "14/14_vague_time.py": {
+      "bytes": 286,
+      "expect_fail": false,
+      "hash": "832b6a6006179138",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 12.15
     },
     "15/01_naive_text_to_sql.py": {
       "bytes": 741,
@@ -634,9 +1594,9 @@
       "seconds": 12.33
     },
     "15/02_five_ways.py": {
-      "bytes": 1743,
+      "bytes": 1817,
       "expect_fail": false,
-      "hash": "4696f74164ff16ff",
+      "hash": "ab6432678689f91a",
       "ok": true,
       "returncode": 0,
       "seconds": 13.51
@@ -649,6 +1609,86 @@
       "returncode": 0,
       "seconds": 12.0
     },
+    "15/04_value_linking.py": {
+      "bytes": 373,
+      "expect_fail": false,
+      "hash": "c1f4abe72dbc8b3e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.31
+    },
+    "15/05_repair.py": {
+      "bytes": 330,
+      "expect_fail": false,
+      "hash": "8f007095e26d0956",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.05
+    },
+    "15/06_guarded_connection.py": {
+      "bytes": 1032,
+      "expect_fail": false,
+      "hash": "51aa4502f193e670",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.39
+    },
+    "15/07_non_additive.py": {
+      "bytes": 719,
+      "expect_fail": false,
+      "hash": "9ba1dd2dfad2ed5c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.21
+    },
+    "15/08_scoring.py": {
+      "bytes": 764,
+      "expect_fail": false,
+      "hash": "3dc26b33a3b7c1d6",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.15
+    },
+    "15/09_agreement.py": {
+      "bytes": 521,
+      "expect_fail": false,
+      "hash": "233f7c2e85ac4d00",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 21.94
+    },
+    "15/10_additivity.py": {
+      "bytes": 1293,
+      "expect_fail": false,
+      "hash": "4829eab99ce4013c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 11.6
+    },
+    "15/11_schema_size.py": {
+      "bytes": 707,
+      "expect_fail": false,
+      "hash": "d0b7e9dfa84ee3f4",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 21.55
+    },
+    "15/12_no_escape_hatch.py": {
+      "bytes": 994,
+      "expect_fail": false,
+      "hash": "82be9d37a8463369",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 24.74
+    },
+    "15/13_average_of_averages.py": {
+      "bytes": 1003,
+      "expect_fail": false,
+      "hash": "c2e7b5ed2d1b2c47",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.52
+    },
     "16/01_message_sequence.py": {
       "bytes": 997,
       "expect_fail": false,
@@ -658,68 +1698,244 @@
       "seconds": 4.29
     },
     "16/02_descriptions.py": {
-      "bytes": 864,
+      "bytes": 403,
       "expect_fail": false,
-      "hash": "7a508db2127feb5d",
+      "hash": "1cde9712d13b7954",
       "ok": true,
       "returncode": 0,
-      "seconds": 4.36
+      "seconds": 11.49
     },
     "16/03_errors_are_prompts.py": {
-      "bytes": 714,
+      "bytes": 1151,
       "expect_fail": false,
-      "hash": "d45da16b567bae81",
+      "hash": "5c5c10df0a149065",
       "ok": true,
       "returncode": 0,
-      "seconds": 7.41
+      "seconds": 20.34
     },
     "16/04_clarity_v0_8.py": {
-      "bytes": 2064,
+      "bytes": 1446,
       "expect_fail": false,
-      "hash": "9c0a88a30edb559f",
+      "hash": "247cbb79651634c4",
       "ok": true,
       "returncode": 0,
-      "seconds": 16.65
+      "seconds": 16.62
+    },
+    "16/05_strict_mode.py": {
+      "bytes": 1153,
+      "expect_fail": false,
+      "hash": "98f37d23dcf21189",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 6.5
+    },
+    "16/06_tool_choice.py": {
+      "bytes": 889,
+      "expect_fail": false,
+      "hash": "824f432ab890385e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 9.71
+    },
+    "16/07_many_tools.py": {
+      "bytes": 788,
+      "expect_fail": false,
+      "hash": "c07e21cc9cf30dfb",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 26.44
+    },
+    "16/08_timeouts.py": {
+      "bytes": 265,
+      "expect_fail": false,
+      "hash": "4ef77e49f0d6bd84",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 7.32
+    },
+    "16/09_testing_tools.py": {
+      "bytes": 435,
+      "expect_fail": false,
+      "hash": "20f8813656adfada",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.25
+    },
+    "16/10_what_a_tool_returns.py": {
+      "bytes": 625,
+      "expect_fail": false,
+      "hash": "c385e59cb06b0fa0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.62
+    },
+    "16/11_missing_arguments.py": {
+      "bytes": 930,
+      "expect_fail": false,
+      "hash": "39b841961c9b2525",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.72
+    },
+    "16/12_round_cost.py": {
+      "bytes": 877,
+      "expect_fail": false,
+      "hash": "0015ff9774ffc45c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.86
+    },
+    "16/13_granularity.py": {
+      "bytes": 1766,
+      "expect_fail": false,
+      "hash": "57df2851bcc8953e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 16.58
+    },
+    "16/14_parallel_calls.py": {
+      "bytes": 415,
+      "expect_fail": false,
+      "hash": "69c9a3bdc4fcf0fb",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 62.49
+    },
+    "16/15_fuzz_arithmetic.py": {
+      "bytes": 2381,
+      "expect_fail": false,
+      "hash": "a6e3bee79f5dead9",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 28.45
+    },
+    "16/16_empty_as_error.py": {
+      "bytes": 1313,
+      "expect_fail": false,
+      "hash": "59187acf8e884fec",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 52.07
+    },
+    "16/17_enum_without_strict.py": {
+      "bytes": 285,
+      "expect_fail": false,
+      "hash": "f60a32ea63f116f9",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 9.63
+    },
+    "16/18_swapped_ids.py": {
+      "bytes": 385,
+      "expect_fail": false,
+      "hash": "d09b41fad02ac006",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.92
     },
     "17/01_first_agent.py": {
-      "bytes": 1044,
+      "bytes": 1173,
       "expect_fail": false,
-      "hash": "e28a867fdffd681b",
+      "hash": "f1d7a3413b5e37f7",
       "ok": true,
       "returncode": 0,
-      "seconds": 13.19
+      "seconds": 13.24
     },
     "17/02_agent_vs_pipeline.py": {
-      "bytes": 2037,
+      "bytes": 2631,
       "expect_fail": false,
-      "hash": "19c3aa42b19d3bf6",
+      "hash": "5169f14f13ef6d20",
       "ok": true,
       "returncode": 0,
-      "seconds": 78.01
+      "seconds": 73.18
     },
     "17/03_failure_modes.py": {
-      "bytes": 3435,
+      "bytes": 2256,
       "expect_fail": false,
-      "hash": "90b7e2c9f87092a0",
+      "hash": "5ea09785e8bbbad7",
       "ok": true,
       "returncode": 0,
-      "seconds": 53.41
+      "seconds": 125.89
+    },
+    "17/04_compounding.py": {
+      "bytes": 881,
+      "expect_fail": false,
+      "hash": "f2e68959cbdad271",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.35
+    },
+    "17/05_route_variance.py": {
+      "bytes": 651,
+      "expect_fail": false,
+      "hash": "5be897334451e01a",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 21.75
+    },
+    "17/06_progress_guard.py": {
+      "bytes": 457,
+      "expect_fail": false,
+      "hash": "a1a64f3d53521f8d",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 33.7
+    },
+    "17/07_context_growth.py": {
+      "bytes": 649,
+      "expect_fail": false,
+      "hash": "31805c299bbc3d30",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 17.82
+    },
+    "17/08_compaction.py": {
+      "bytes": 550,
+      "expect_fail": false,
+      "hash": "efd14d5a3ae3173b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 73.02
+    },
+    "17/09_budget_from_data.py": {
+      "bytes": 740,
+      "expect_fail": false,
+      "hash": "43bbd65c582529e1",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 39.84
+    },
+    "17/10_tool_critic.py": {
+      "bytes": 631,
+      "expect_fail": false,
+      "hash": "98d441f63ff06765",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 67.68
+    },
+    "17/11_episodic_memory.py": {
+      "bytes": 2239,
+      "expect_fail": false,
+      "hash": "ec82cb6dd1bf846d",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 73.48
     },
     "18/01_port.py": {
-      "bytes": 811,
+      "bytes": 806,
       "expect_fail": false,
-      "hash": "2aedcb490f88490b",
+      "hash": "bf60cbb44fabe41c",
       "ok": true,
       "returncode": 0,
-      "seconds": 11.62
+      "seconds": 9.29
     },
     "18/02_crash_and_resume.py": {
-      "bytes": 1224,
+      "bytes": 1426,
       "expect_fail": false,
-      "hash": "6a515e7982d498a6",
+      "hash": "40bf266b54bb7d03",
       "ok": true,
       "returncode": 0,
-      "seconds": 27.79
+      "seconds": 27.12
     },
     "18/03_pause_for_human.py": {
       "bytes": 1563,
@@ -727,15 +1943,15 @@
       "hash": "8895cc9ee771f97d",
       "ok": true,
       "returncode": 0,
-      "seconds": 17.84
+      "seconds": 11.87
     },
     "18/04_what_it_cost.py": {
-      "bytes": 2077,
+      "bytes": 2078,
       "expect_fail": false,
       "hash": "e3bfe52de8f3274b",
       "ok": true,
       "returncode": 0,
-      "seconds": 99.0
+      "seconds": 78.28
     },
     "18/05_lcel_and_the_traceback.py": {
       "bytes": 1362,
@@ -743,15 +1959,63 @@
       "hash": "43972e0b00482e0e",
       "ok": true,
       "returncode": 0,
-      "seconds": 4.57
+      "seconds": 3.33
     },
-    "19/01_server_and_client.py": {
-      "bytes": 1094,
+    "18/06_replayed_side_effects.py": {
+      "bytes": 289,
       "expect_fail": false,
-      "hash": "6f6e8550c4db738f",
+      "hash": "70965f8ace039ff1",
       "ok": true,
       "returncode": 0,
-      "seconds": 13.68
+      "seconds": 6.23
+    },
+    "18/07_time_travel.py": {
+      "bytes": 386,
+      "expect_fail": false,
+      "hash": "efc7762c49aca183",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.41
+    },
+    "18/08_checkpoint_growth.py": {
+      "bytes": 305,
+      "expect_fail": false,
+      "hash": "57b11753deb9bff7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.44
+    },
+    "18/09_resume_after_deploy.py": {
+      "bytes": 454,
+      "expect_fail": false,
+      "hash": "c674c6fa72a53da3",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.69
+    },
+    "18/10_two_resumes.py": {
+      "bytes": 224,
+      "expect_fail": false,
+      "hash": "8fdf66ca66af3f19",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.57
+    },
+    "18/11_durability.py": {
+      "bytes": 521,
+      "expect_fail": false,
+      "hash": "d552742a4a61b6fe",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 25.13
+    },
+    "19/01_server_and_client.py": {
+      "bytes": 1106,
+      "expect_fail": false,
+      "hash": "e2aedd049ab98752",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 15.5
     },
     "19/02_break_the_wire.py": {
       "bytes": 2352,
@@ -759,31 +2023,31 @@
       "hash": "ee206e851407f691",
       "ok": true,
       "returncode": 0,
-      "seconds": 17.75
+      "seconds": 15.43
     },
     "19/03_two_kinds_of_error.py": {
-      "bytes": 1839,
+      "bytes": 1842,
       "expect_fail": false,
-      "hash": "7e287ac0e7406eed",
+      "hash": "c3c51465645a48db",
       "ok": true,
       "returncode": 0,
-      "seconds": 11.89
+      "seconds": 9.5
     },
     "19/04_tool_poisoning.py": {
-      "bytes": 4242,
+      "bytes": 4253,
       "expect_fail": false,
-      "hash": "553a1bfecd41b252",
+      "hash": "a89e74343f5a1870",
       "ok": true,
       "returncode": 0,
-      "seconds": 522.8
+      "seconds": 451.09
     },
     "19/05_resources_and_prompts.py": {
       "bytes": 1700,
       "expect_fail": false,
-      "hash": "d0275c275c04dd82",
+      "hash": "7b0a9045c3f0d1cf",
       "ok": true,
       "returncode": 0,
-      "seconds": 3.78
+      "seconds": 4.68
     },
     "19/06_what_the_protocol_costs.py": {
       "bytes": 1337,
@@ -791,23 +2055,63 @@
       "hash": "f6a8a456f2f8fa77",
       "ok": true,
       "returncode": 0,
-      "seconds": 63.86
+      "seconds": 58.48
+    },
+    "19/07_pin_the_descriptions.py": {
+      "bytes": 458,
+      "expect_fail": false,
+      "hash": "2cdade0207bcb063",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.9
+    },
+    "19/08_what_a_server_claims.py": {
+      "bytes": 476,
+      "expect_fail": false,
+      "hash": "6ea1eed440dca9a7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.51
+    },
+    "19/09_tenant_over_http.py": {
+      "bytes": 564,
+      "expect_fail": false,
+      "hash": "58608a04dd05f7fb",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.98
+    },
+    "19/10_when_a_server_fails.py": {
+      "bytes": 591,
+      "expect_fail": false,
+      "hash": "5ef672e61b9c8496",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 12.58
+    },
+    "19/11_shadowing.py": {
+      "bytes": 448,
+      "expect_fail": false,
+      "hash": "7e5646fc449fc07f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.73
     },
     "20/01_supervisor.py": {
-      "bytes": 1348,
+      "bytes": 1327,
       "expect_fail": false,
-      "hash": "eac546a45fb3dfda",
+      "hash": "616ef330b4cfbef2",
       "ok": true,
       "returncode": 0,
-      "seconds": 12.16
+      "seconds": 20.64
     },
     "20/02_bench.py": {
-      "bytes": 651,
+      "bytes": 1054,
       "expect_fail": false,
-      "hash": "e2cf919dbf81c01a",
+      "hash": "51dfa23762e76eae",
       "ok": true,
       "returncode": 0,
-      "seconds": 445.53
+      "seconds": 433.26
     },
     "20/03_fan_out.py": {
       "bytes": 794,
@@ -815,7 +2119,7 @@
       "hash": "39bc80c11abb239b",
       "ok": true,
       "returncode": 0,
-      "seconds": 40.83
+      "seconds": 34.71
     },
     "20/04_shared_state.py": {
       "bytes": 1261,
@@ -823,87 +2127,207 @@
       "hash": "e73cafad576cf0c2",
       "ok": true,
       "returncode": 0,
-      "seconds": 1.78
+      "seconds": 1.4
     },
     "20/05_critic.py": {
-      "bytes": 879,
+      "bytes": 822,
       "expect_fail": false,
-      "hash": "bcf11f85e984ea8f",
+      "hash": "e90749e08ef9871f",
       "ok": true,
       "returncode": 0,
-      "seconds": 282.36
+      "seconds": 272.59
     },
     "20/06_runaway.py": {
-      "bytes": 1551,
+      "bytes": 1590,
       "expect_fail": false,
-      "hash": "2f7742a98413146c",
+      "hash": "fe7ee5796c25f6d8",
       "ok": true,
       "returncode": 0,
-      "seconds": 263.77
+      "seconds": 603.03
     },
     "20/07_the_interface.py": {
-      "bytes": 1487,
+      "bytes": 1424,
       "expect_fail": false,
-      "hash": "ac58da08fa51ea5e",
+      "hash": "8e6026b50c819d16",
       "ok": true,
       "returncode": 0,
-      "seconds": 168.46
+      "seconds": 153.89
     },
     "20/08_what_the_researcher_lacked.py": {
       "bytes": 552,
       "expect_fail": false,
-      "hash": "b1bf653c0746fa78",
+      "hash": "aeab9edb53da21d0",
       "ok": true,
       "returncode": 0,
-      "seconds": 124.69
+      "seconds": 107.01
+    },
+    "20/09_how_far_fan_out_goes.py": {
+      "bytes": 499,
+      "expect_fail": false,
+      "hash": "3ae123cb3f56d568",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.91
+    },
+    "20/10_leases.py": {
+      "bytes": 289,
+      "expect_fail": false,
+      "hash": "1d1fda72a1d09dd2",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.51
+    },
+    "20/11_retyping.py": {
+      "bytes": 811,
+      "expect_fail": false,
+      "hash": "61efe6f447fa1683",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 41.85
+    },
+    "20/12_structured_findings.py": {
+      "bytes": 557,
+      "expect_fail": false,
+      "hash": "49e8ff8767265d91",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 41.35
+    },
+    "20/13_deference.py": {
+      "bytes": 467,
+      "expect_fail": false,
+      "hash": "b0d7f45807dcc8e0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 22.32
+    },
+    "20/14_the_slowest_worker.py": {
+      "bytes": 774,
+      "expect_fail": false,
+      "hash": "dea5708eddc1e05c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 30.82
     },
     "21/01_the_first_score.py": {
-      "bytes": 950,
+      "bytes": 940,
       "expect_fail": false,
-      "hash": "056d2cf7f2820abc",
+      "hash": "2b45c314d3f6ef37",
       "ok": true,
       "returncode": 0,
-      "seconds": 72.25
+      "seconds": 74.49
     },
     "21/02_how_many_cases.py": {
-      "bytes": 1300,
+      "bytes": 1331,
       "expect_fail": false,
-      "hash": "19fda8646ebe99e7",
+      "hash": "ce6c8c1920c5e5b5",
       "ok": true,
       "returncode": 0,
-      "seconds": 1.76
+      "seconds": 1.95
     },
     "21/03_metrics.py": {
-      "bytes": 2146,
+      "bytes": 2135,
       "expect_fail": false,
       "hash": "9f6781e5ad2e474f",
       "ok": true,
       "returncode": 0,
-      "seconds": 4.57
+      "seconds": 5.09
     },
     "21/04_agreement.py": {
-      "bytes": 1332,
+      "bytes": 1317,
       "expect_fail": false,
       "hash": "f2e053c2cf495af3",
       "ok": true,
       "returncode": 0,
-      "seconds": 23.23
+      "seconds": 24.2
     },
     "21/05_vs_incumbent.py": {
-      "bytes": 1124,
+      "bytes": 1165,
       "expect_fail": false,
-      "hash": "8b8a97837492a6eb",
+      "hash": "ce861ef84bdbe363",
       "ok": true,
       "returncode": 0,
-      "seconds": 34.46
+      "seconds": 31.53
+    },
+    "21/06_audit_the_scorer.py": {
+      "bytes": 956,
+      "expect_fail": false,
+      "hash": "cb02a7e6b7a395a7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.32
+    },
+    "21/07_intervals_and_pairs.py": {
+      "bytes": 665,
+      "expect_fail": false,
+      "hash": "4e6a94edba5c601f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.9
+    },
+    "21/08_how_many_cases_really.py": {
+      "bytes": 734,
+      "expect_fail": false,
+      "hash": "f614239ec574778f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.92
+    },
+    "21/09_weighting.py": {
+      "bytes": 783,
+      "expect_fail": false,
+      "hash": "568090eff179ed64",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.6
+    },
+    "21/10_reruns.py": {
+      "bytes": 589,
+      "expect_fail": false,
+      "hash": "f40fbd8999d91cb4",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 333.13
+    },
+    "21/11_clustered_intervals.py": {
+      "bytes": 541,
+      "expect_fail": false,
+      "hash": "268c7b7fe040c19a",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.48
+    },
+    "21/12_peeking.py": {
+      "bytes": 836,
+      "expect_fail": false,
+      "hash": "b90247ca0b4da908",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.2
+    },
+    "21/13_wrong_gold.py": {
+      "bytes": 939,
+      "expect_fail": false,
+      "hash": "fc45cff6ac30f631",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.2
+    },
+    "21/14_model_written_cases.py": {
+      "bytes": 763,
+      "expect_fail": false,
+      "hash": "361b11198de12afe",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 44.39
     },
     "22/01_judge_basic.py": {
-      "bytes": 1298,
+      "bytes": 1297,
       "expect_fail": false,
-      "hash": "2784f7a6c7516135",
+      "hash": "838e4a0c28eada2d",
       "ok": true,
       "returncode": 0,
-      "seconds": 60.0
+      "seconds": 58.46
     },
     "22/02_bias.py": {
       "bytes": 2122,
@@ -911,15 +2335,15 @@
       "hash": "655a3fe6067f081b",
       "ok": true,
       "returncode": 0,
-      "seconds": 60.04
+      "seconds": 55.43
     },
     "22/03_rag_metrics.py": {
-      "bytes": 2011,
+      "bytes": 2375,
       "expect_fail": false,
-      "hash": "e39ccad4c7e221a2",
+      "hash": "c18db5265e2acc3e",
       "ok": true,
       "returncode": 0,
-      "seconds": 31.91
+      "seconds": 27.86
     },
     "22/04_trajectory.py": {
       "bytes": 2005,
@@ -927,63 +2351,207 @@
       "hash": "9b3aeb58dbcbb9dc",
       "ok": true,
       "returncode": 0,
-      "seconds": 32.97
+      "seconds": 30.1
     },
     "22/05_mutation.py": {
-      "bytes": 2586,
+      "bytes": 3213,
       "expect_fail": false,
-      "hash": "95293071afc81f56",
+      "hash": "f5bb5f76c1ea4d90",
       "ok": true,
       "returncode": 0,
-      "seconds": 1630.43
+      "seconds": 1531.2
+    },
+    "22/06_where_the_judge_earns_it.py": {
+      "bytes": 479,
+      "expect_fail": false,
+      "hash": "ad9c5026975ba12e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.81
+    },
+    "22/07_judge_consistency.py": {
+      "bytes": 252,
+      "expect_fail": false,
+      "hash": "58836021b0223f17",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 26.59
+    },
+    "22/08_correcting_for_the_judge.py": {
+      "bytes": 845,
+      "expect_fail": false,
+      "hash": "89d54a95a755e363",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.09
+    },
+    "22/09_metamorphic.py": {
+      "bytes": 729,
+      "expect_fail": false,
+      "hash": "1b6dacdf561847ea",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 10.24
+    },
+    "22/10_judge_injection.py": {
+      "bytes": 721,
+      "expect_fail": false,
+      "hash": "163dc29ac1c66bc7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 37.51
+    },
+    "22/11_rubric_judge.py": {
+      "bytes": 565,
+      "expect_fail": false,
+      "hash": "c9fadc6b2aa1346b",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 11.79
+    },
+    "22/12_stronger_judge.py": {
+      "bytes": 614,
+      "expect_fail": false,
+      "hash": "7f611527ec378d1a",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 189.32
+    },
+    "22/13_faithfulness_check.py": {
+      "bytes": 484,
+      "expect_fail": false,
+      "hash": "4cc3891328b115f4",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 22.78
+    },
+    "22/13_prompt_rules.py": {
+      "bytes": 511,
+      "expect_fail": false,
+      "hash": "3c6496dac243ce55",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 84.29
     },
     "23/01_trace_waterfall.py": {
-      "bytes": 2509,
+      "bytes": 2513,
       "expect_fail": false,
-      "hash": "fc8438573698ae99",
+      "hash": "82daa84fb1ec0058",
       "ok": true,
       "returncode": 0,
-      "seconds": 7.63
+      "seconds": 6.83
     },
     "23/02_what_to_log.py": {
       "bytes": 1700,
       "expect_fail": false,
-      "hash": "cb3b87adbfdfa25d",
+      "hash": "f89f1d3a93549fac",
       "ok": true,
       "returncode": 0,
-      "seconds": 4.16
+      "seconds": 2.95
     },
     "23/03_percentiles.py": {
-      "bytes": 2079,
+      "bytes": 2191,
       "expect_fail": false,
-      "hash": "558c90c307f25320",
+      "hash": "679449f8e031cf5a",
       "ok": true,
       "returncode": 0,
-      "seconds": 35.58
+      "seconds": 31.59
     },
     "23/04_sampling.py": {
-      "bytes": 1786,
+      "bytes": 1785,
       "expect_fail": false,
-      "hash": "241657e5690bd965",
+      "hash": "ab6db663f0d994e7",
       "ok": true,
       "returncode": 0,
-      "seconds": 1.49
+      "seconds": 1.23
     },
     "23/05_quality_alert.py": {
-      "bytes": 2395,
+      "bytes": 2394,
       "expect_fail": false,
       "hash": "8bcbe9924967abbc",
       "ok": true,
       "returncode": 0,
-      "seconds": 53.76
+      "seconds": 52.73
     },
-    "24/01_not_determinism.py": {
-      "bytes": 1293,
+    "23/06_how_many_requests.py": {
+      "bytes": 613,
       "expect_fail": false,
-      "hash": "1c46c77ff87610c5",
+      "hash": "99001d039ce93435",
       "ok": true,
       "returncode": 0,
-      "seconds": 98.72
+      "seconds": 2.44
+    },
+    "23/07_burn_rate.py": {
+      "bytes": 794,
+      "expect_fail": false,
+      "hash": "b33dbfb89762aa18",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.87
+    },
+    "23/08_input_drift.py": {
+      "bytes": 626,
+      "expect_fail": false,
+      "hash": "c173ec39b7b32285",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.08
+    },
+    "23/09_telemetry_budget.py": {
+      "bytes": 623,
+      "expect_fail": false,
+      "hash": "55e902730afe5b28",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.16
+    },
+    "23/10_detection_time.py": {
+      "bytes": 754,
+      "expect_fail": false,
+      "hash": "6930f6c4b0795252",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.06
+    },
+    "23/11_histograms.py": {
+      "bytes": 993,
+      "expect_fail": false,
+      "hash": "1c490a9950dd096c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.47
+    },
+    "23/12_cusum.py": {
+      "bytes": 727,
+      "expect_fail": false,
+      "hash": "5bfa4c767341c1a0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.72
+    },
+    "23/13_cardinality.py": {
+      "bytes": 716,
+      "expect_fail": false,
+      "hash": "cd1b6ddec64bb10e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.02
+    },
+    "23/14_rephrase_detector.py": {
+      "bytes": 1309,
+      "expect_fail": false,
+      "hash": "5ccdfd65b9460654",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.07
+    },
+    "24/01_not_determinism.py": {
+      "bytes": 1277,
+      "expect_fail": false,
+      "hash": "916d444ad8903c8e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 105.6
     },
     "24/02_record_replay.py": {
       "bytes": 1607,
@@ -991,7 +2559,7 @@
       "hash": "17eee5422b8704ef",
       "ok": true,
       "returncode": 0,
-      "seconds": 7.73
+      "seconds": 8.62
     },
     "24/03_bisect.py": {
       "bytes": 2827,
@@ -999,15 +2567,87 @@
       "hash": "3577b91dcb8f2e2a",
       "ok": true,
       "returncode": 0,
-      "seconds": 8.71
+      "seconds": 8.16
     },
     "24/04_shrink.py": {
       "bytes": 1454,
       "expect_fail": false,
-      "hash": "6f4f973859114b67",
+      "hash": "d1709727d4db8630",
       "ok": true,
       "returncode": 0,
-      "seconds": 39.11
+      "seconds": 34.92
+    },
+    "24/05_ddmin.py": {
+      "bytes": 434,
+      "expect_fail": false,
+      "hash": "653886ae8bd35414",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.22
+    },
+    "24/06_is_it_fixed.py": {
+      "bytes": 609,
+      "expect_fail": false,
+      "hash": "76f287af676469cb",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.95
+    },
+    "24/07_flaky_cases.py": {
+      "bytes": 729,
+      "expect_fail": false,
+      "hash": "245baa0489f1d825",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 56.32
+    },
+    "24/08_where_the_passage_was.py": {
+      "bytes": 1964,
+      "expect_fail": false,
+      "hash": "90e6f699597e6619",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 29.65
+    },
+    "24/09_bisect_a_rate.py": {
+      "bytes": 698,
+      "expect_fail": false,
+      "hash": "18d06955835cc5f2",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.85
+    },
+    "24/10_differential.py": {
+      "bytes": 1704,
+      "expect_fail": false,
+      "hash": "0deb815a14a07913",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 16.03
+    },
+    "24/11_logprob_jitter.py": {
+      "bytes": 860,
+      "expect_fail": false,
+      "hash": "fe9dd633564c2969",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 7.87
+    },
+    "24/12_sequential_bisect.py": {
+      "bytes": 514,
+      "expect_fail": false,
+      "hash": "e1fd1fcc1c9a637c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.3
+    },
+    "24/13_what_a_cassette_survives.py": {
+      "bytes": 634,
+      "expect_fail": false,
+      "hash": "fc3384e8e96f2f67",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.24
     },
     "25/01_blocking_bug.py": {
       "bytes": 1666,
@@ -1015,31 +2655,103 @@
       "hash": "de06f337ec53e1f4",
       "ok": true,
       "returncode": 0,
-      "seconds": 7.28
+      "seconds": 7.07
     },
     "25/02_service_and_streaming.py": {
       "bytes": 1481,
       "expect_fail": false,
-      "hash": "f8e72c3ec3cfdccf",
+      "hash": "1ac55fb7bdcb5c86",
       "ok": true,
       "returncode": 0,
-      "seconds": 14.81
+      "seconds": 12.56
     },
     "25/03_data_layer.py": {
-      "bytes": 1722,
+      "bytes": 1734,
       "expect_fail": false,
-      "hash": "c0c385288cc8332d",
+      "hash": "e49a8021245e8c50",
       "ok": true,
       "returncode": 0,
-      "seconds": 1.35
+      "seconds": 1.72
+    },
+    "25/04_client_goes_away.py": {
+      "bytes": 189,
+      "expect_fail": false,
+      "hash": "5ebd242317913fd2",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.81
+    },
+    "25/05_thread_ceiling.py": {
+      "bytes": 188,
+      "expect_fail": false,
+      "hash": "62307932ae421ec5",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.48
+    },
+    "25/06_idempotency.py": {
+      "bytes": 467,
+      "expect_fail": false,
+      "hash": "72c656ff891efbee",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.59
+    },
+    "25/07_load_testing.py": {
+      "bytes": 1010,
+      "expect_fail": false,
+      "hash": "b07ee45b7bdf94df",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 36.85
+    },
+    "25/08_expand_contract.py": {
+      "bytes": 822,
+      "expect_fail": false,
+      "hash": "16df88a160a5dd42",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.08
+    },
+    "25/09_polling.py": {
+      "bytes": 436,
+      "expect_fail": false,
+      "hash": "16479df40bffcd22",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.7
+    },
+    "25/10_graceful_shutdown.py": {
+      "bytes": 367,
+      "expect_fail": false,
+      "hash": "4ef4998683f66425",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 13.31
+    },
+    "25/11_resume_or_restart.py": {
+      "bytes": 997,
+      "expect_fail": false,
+      "hash": "bdfe4f362f530119",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.89
+    },
+    "25/12_characters_are_not_tokens.py": {
+      "bytes": 943,
+      "expect_fail": false,
+      "hash": "e5b2b64ee9af93e8",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.53
     },
     "26/01_tenant_isolation.py": {
-      "bytes": 1059,
+      "bytes": 1104,
       "expect_fail": false,
-      "hash": "932683136745d5d9",
+      "hash": "1df10354689e48be",
       "ok": true,
       "returncode": 0,
-      "seconds": 0.95
+      "seconds": 1.57
     },
     "26/02_circuit_and_bulkhead.py": {
       "bytes": 2371,
@@ -1047,167 +2759,623 @@
       "hash": "1bd2feec241204a8",
       "ok": true,
       "returncode": 0,
-      "seconds": 56.88
+      "seconds": 58.18
+    },
+    "26/03_verify_a_token.py": {
+      "bytes": 667,
+      "expect_fail": false,
+      "hash": "d26f23db8b46f3a7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.26
+    },
+    "26/04_spend_ceiling.py": {
+      "bytes": 235,
+      "expect_fail": false,
+      "hash": "171f6e246a18d01c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.02
+    },
+    "26/05_rate_limiters.py": {
+      "bytes": 738,
+      "expect_fail": false,
+      "hash": "25fc7986963a7ad8",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.33
+    },
+    "26/06_deadlines.py": {
+      "bytes": 998,
+      "expect_fail": false,
+      "hash": "8bca46fa187ad87f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.29
+    },
+    "26/07_retry_budget.py": {
+      "bytes": 1007,
+      "expect_fail": false,
+      "hash": "5551714210a6d721",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.14
+    },
+    "26/08_adaptive_limit.py": {
+      "bytes": 506,
+      "expect_fail": false,
+      "hash": "202257543be6cb7c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.7
+    },
+    "26/09_visibility_timeout.py": {
+      "bytes": 818,
+      "expect_fail": false,
+      "hash": "0dc57713a2a7ba20",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.36
+    },
+    "26/10_permission_aware_retrieval.py": {
+      "bytes": 884,
+      "expect_fail": false,
+      "hash": "79b63bec114b2084",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.69
+    },
+    "26/11_noisy_neighbour.py": {
+      "bytes": 548,
+      "expect_fail": false,
+      "hash": "24cecc5f153e8362",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.56
     },
     "27/01_what_the_gateway_normalises.py": {
-      "bytes": 1976,
+      "bytes": 2049,
       "expect_fail": false,
-      "hash": "1ec0f15034c6e338",
+      "hash": "8964f5292e8c9a5f",
       "ok": true,
       "returncode": 0,
-      "seconds": 2.37
+      "seconds": 3.87
     },
     "27/02_fallback.py": {
-      "bytes": 1333,
+      "bytes": 1328,
       "expect_fail": false,
-      "hash": "daffba76e410a9d7",
+      "hash": "c993295d9dc72923",
       "ok": true,
       "returncode": 0,
-      "seconds": 14.54
+      "seconds": 15.64
     },
     "27/03_provider_bench.py": {
-      "bytes": 1729,
+      "bytes": 2668,
       "expect_fail": false,
-      "hash": "5750c73c1859b4fa",
+      "hash": "acbf66fceddc2f2d",
       "ok": true,
       "returncode": 0,
-      "seconds": 20.81
+      "seconds": 113.61
+    },
+    "27/04_hedged_requests.py": {
+      "bytes": 268,
+      "expect_fail": false,
+      "hash": "c8954961c59b6f10",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.31
+    },
+    "27/05_parameters_per_model.py": {
+      "bytes": 268,
+      "expect_fail": false,
+      "hash": "6fd4cd63c654b168",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.13
+    },
+    "27/06_errors.py": {
+      "bytes": 1023,
+      "expect_fail": false,
+      "hash": "7f9a74f010fa9425",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.97
+    },
+    "27/07_routing.py": {
+      "bytes": 721,
+      "expect_fail": false,
+      "hash": "cb71f21bcdc2bf10",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.77
+    },
+    "27/08_rate_limit_headers.py": {
+      "bytes": 764,
+      "expect_fail": false,
+      "hash": "7651d4047d87c725",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 8.46
+    },
+    "27/09_tokenisers.py": {
+      "bytes": 1268,
+      "expect_fail": false,
+      "hash": "b76d5dcdb58efad5",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.41
+    },
+    "27/10_breaker_policies.py": {
+      "bytes": 844,
+      "expect_fail": false,
+      "hash": "a604a45f16296ac8",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.32
+    },
+    "27/11_served_model.py": {
+      "bytes": 345,
+      "expect_fail": false,
+      "hash": "1037b7baeece1227",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.18
+    },
+    "27/12_prompts_do_not_port.py": {
+      "bytes": 988,
+      "expect_fail": false,
+      "hash": "a7596bd5997a60ae",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 13.32
+    },
+    "27/13_failover_mid_stream.py": {
+      "bytes": 1177,
+      "expect_fail": false,
+      "hash": "ad29a7438ec3f353",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.51
     },
     "28/01_where_the_money_goes.py": {
-      "bytes": 2009,
+      "bytes": 2000,
       "expect_fail": false,
-      "hash": "e58557de8dfb64aa",
+      "hash": "1742539f9fe3f036",
       "ok": true,
       "returncode": 0,
-      "seconds": 8.3
+      "seconds": 6.95
     },
     "28/02_semantic_cache_danger.py": {
-      "bytes": 1953,
+      "bytes": 1968,
       "expect_fail": false,
-      "hash": "3ea7ba49a1e0fff6",
+      "hash": "f41c64741dcfbebb",
       "ok": true,
       "returncode": 0,
-      "seconds": 8.95
+      "seconds": 6.58
     },
     "28/03_case_study.py": {
       "bytes": 1771,
       "expect_fail": false,
-      "hash": "d732c402a8fff3c9",
+      "hash": "86327000f80428f9",
       "ok": true,
       "returncode": 0,
-      "seconds": 191.17
+      "seconds": 183.85
+    },
+    "28/04_prefix_order.py": {
+      "bytes": 503,
+      "expect_fail": false,
+      "hash": "13307b7d06e27c3c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 17.52
+    },
+    "28/05_ttft.py": {
+      "bytes": 916,
+      "expect_fail": false,
+      "hash": "ce1efeecbe487d1d",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 24.09
+    },
+    "28/06_cost_distribution.py": {
+      "bytes": 1124,
+      "expect_fail": false,
+      "hash": "472d954b0555fede",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.15
+    },
+    "28/07_reasoning_effort.py": {
+      "bytes": 698,
+      "expect_fail": false,
+      "hash": "6a4696ca6aa242b0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 89.53
+    },
+    "28/08_evidence_keyed_cache.py": {
+      "bytes": 1525,
+      "expect_fail": false,
+      "hash": "7fbfca9095137849",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 34.07
+    },
+    "28/09_cache_minimum.py": {
+      "bytes": 548,
+      "expect_fail": false,
+      "hash": "15a69e701aeab1f0",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 19.32
+    },
+    "28/10_cascade.py": {
+      "bytes": 501,
+      "expect_fail": false,
+      "hash": "edbd65ba4ba88986",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 87.84
+    },
+    "28/11_repeat_rate.py": {
+      "bytes": 593,
+      "expect_fail": false,
+      "hash": "54194de047b78a59",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.83
+    },
+    "28/12_ceiling.py": {
+      "bytes": 767,
+      "expect_fail": false,
+      "hash": "07dee572519a5cef",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.26
     },
     "29/01_indirect_injection.py": {
-      "bytes": 2517,
+      "bytes": 2603,
       "expect_fail": false,
-      "hash": "951ec4be21185ee8",
+      "hash": "7a8ae1cdff80e637",
       "ok": true,
       "returncode": 0,
-      "seconds": 20.69
+      "seconds": 21.63
     },
     "29/02_defences.py": {
       "bytes": 1760,
       "expect_fail": false,
-      "hash": "65669eb71026cf3d",
+      "hash": "2b3b7078af6f438e",
       "ok": true,
       "returncode": 0,
-      "seconds": 11.94
+      "seconds": 10.32
     },
     "29/03_redteam.py": {
       "bytes": 2438,
       "expect_fail": false,
-      "hash": "acbf83cd9176afe4",
+      "hash": "e582b97208e453e9",
       "ok": true,
       "returncode": 0,
-      "seconds": 37.37
+      "seconds": 30.93
+    },
+    "29/04_what_the_guard_missed.py": {
+      "bytes": 791,
+      "expect_fail": false,
+      "hash": "dd95d24ba57b314d",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.25
+    },
+    "29/05_redaction.py": {
+      "bytes": 559,
+      "expect_fail": false,
+      "hash": "7015799bb542e955",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.15
+    },
+    "29/06_output_handling.py": {
+      "bytes": 394,
+      "expect_fail": false,
+      "hash": "246e710eb56a7d59",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.79
+    },
+    "29/07_system_prompt_leak.py": {
+      "bytes": 1342,
+      "expect_fail": false,
+      "hash": "95adcc2aecca7fba",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 28.93
+    },
+    "29/08_spotlighting.py": {
+      "bytes": 498,
+      "expect_fail": false,
+      "hash": "800f0b3c488f5d75",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 10.98
+    },
+    "29/09_injection_detector.py": {
+      "bytes": 554,
+      "expect_fail": false,
+      "hash": "f5a01fd157657c65",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 16.38
+    },
+    "29/10_adaptive_attacks.py": {
+      "bytes": 675,
+      "expect_fail": false,
+      "hash": "5555bdc932528942",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 22.8
+    },
+    "29/11_checksums.py": {
+      "bytes": 770,
+      "expect_fail": false,
+      "hash": "abe3801c4936eed4",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.87
+    },
+    "29/12_what_a_vector_gives_away.py": {
+      "bytes": 462,
+      "expect_fail": false,
+      "hash": "14a2ea8968ea54ab",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 31.66
     },
     "30/01_the_ladder.py": {
-      "bytes": 2278,
+      "bytes": 2296,
       "expect_fail": false,
-      "hash": "a1de007212a9b84c",
+      "hash": "1e2d7d4caaa10c3d",
       "ok": true,
       "returncode": 0,
-      "seconds": 11.28
+      "seconds": 9.74
     },
     "30/02_build_dataset.py": {
-      "bytes": 1870,
+      "bytes": 1860,
       "expect_fail": false,
-      "hash": "00e6688ec9869277",
+      "hash": "93a85feefe09e45f",
       "ok": true,
       "returncode": 0,
-      "seconds": 1.17
+      "seconds": 1.31
     },
-    "31/01_envelope.py": {
-      "bytes": 2674,
+    "30/03_leakage_by_template.py": {
+      "bytes": 308,
       "expect_fail": false,
-      "hash": "8164627593dc65f1",
-      "ok": true,
-      "returncode": 0,
-      "seconds": 1.43
-    },
-    "31/02_review.py": {
-      "bytes": 1545,
-      "expect_fail": false,
-      "hash": "df1485ded3d865a4",
-      "ok": true,
-      "returncode": 0,
-      "seconds": 0.99
-    },
-    "32/01_the_tour.py": {
-      "bytes": 3215,
-      "expect_fail": false,
-      "hash": "3c042a88f6e9dffe",
-      "ok": true,
-      "returncode": 0,
-      "seconds": 0.91
-    },
-    "32/02_numbers_card.py": {
-      "bytes": 1610,
-      "expect_fail": false,
-      "hash": "73b6e226d7ce4787",
-      "ok": true,
-      "returncode": 0,
-      "seconds": 97.2
-    },
-    "32/03_next_week.py": {
-      "bytes": 2117,
-      "expect_fail": false,
-      "hash": "2ba10d6534aae369",
-      "ok": true,
-      "returncode": 0,
-      "seconds": 1.23
-    },
-    "35/01_what_you_have.py": {
-      "bytes": 1390,
-      "expect_fail": false,
-      "hash": "99e4535e9d5f1511",
-      "ok": true,
-      "returncode": 0,
-      "seconds": 2.09
-    },
-    "38/01_intervals.py": {
-      "bytes": 2560,
-      "expect_fail": false,
-      "hash": "369eaa78d83ebf79",
-      "ok": true,
-      "returncode": 0,
-      "seconds": 0.84
-    },
-    "38/02_power_and_ceiling.py": {
-      "bytes": 2370,
-      "expect_fail": false,
-      "hash": "0a7fb284b7879963",
+      "hash": "62af02e0b44bcbdb",
       "ok": true,
       "returncode": 0,
       "seconds": 0.87
     },
-    "39/01_the_dataset.py": {
-      "bytes": 2966,
+    "30/04_learning_curves.py": {
+      "bytes": 572,
       "expect_fail": false,
-      "hash": "5b447c20d8439b79",
+      "hash": "27a85ac61d4a2476",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.32
+    },
+    "30/05_lora_arithmetic.py": {
+      "bytes": 1254,
+      "expect_fail": false,
+      "hash": "3e8c671f36a54447",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.86
+    },
+    "30/06_quantisation.py": {
+      "bytes": 877,
+      "expect_fail": false,
+      "hash": "7c7fd69a57ed4a84",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.94
+    },
+    "30/07_train_the_retriever.py": {
+      "bytes": 812,
+      "expect_fail": false,
+      "hash": "168430cfb51d41c3",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 19.83
+    },
+    "30/08_preference_beta.py": {
+      "bytes": 721,
+      "expect_fail": false,
+      "hash": "469b2a42d648e10f",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.44
+    },
+    "30/09_inconsistent_labels.py": {
+      "bytes": 480,
+      "expect_fail": false,
+      "hash": "1974fc665e57e682",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.66
+    },
+    "30/10_forgetting.py": {
+      "bytes": 450,
+      "expect_fail": false,
+      "hash": "d820f1efd7027ecd",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.29
+    },
+    "30/11_grader_loophole.py": {
+      "bytes": 1080,
+      "expect_fail": false,
+      "hash": "0850bd10b557b1f7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.05
+    },
+    "31/01_envelope.py": {
+      "bytes": 3309,
+      "expect_fail": false,
+      "hash": "106c0cc689cd43d9",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.15
+    },
+    "31/02_review.py": {
+      "bytes": 2006,
+      "expect_fail": false,
+      "hash": "063c934c71217ed5",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.52
+    },
+    "31/03_in_flight.py": {
+      "bytes": 1652,
+      "expect_fail": false,
+      "hash": "8bdf60f86e433c8d",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.14
+    },
+    "31/04_rate_limits.py": {
+      "bytes": 1300,
+      "expect_fail": false,
+      "hash": "5fdfc412956840f6",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.74
+    },
+    "31/05_composition.py": {
+      "bytes": 2121,
+      "expect_fail": false,
+      "hash": "b10c9d9304537283",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.86
+    },
+    "32/01_the_tour.py": {
+      "bytes": 3394,
+      "expect_fail": false,
+      "hash": "583a0ad96a2c20ea",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.75
+    },
+    "32/02_numbers_card.py": {
+      "bytes": 1654,
+      "expect_fail": false,
+      "hash": "3dd2acc8ec778abd",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 80.11
+    },
+    "32/03_next_week.py": {
+      "bytes": 2117,
+      "expect_fail": false,
+      "hash": "52a3f6d1821a00a7",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.16
+    },
+    "32/04_checklist.py": {
+      "bytes": 1789,
+      "expect_fail": false,
+      "hash": "17fbaa9afe41f6ed",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 3.26
+    },
+    "32/05_measuring_change.py": {
+      "bytes": 845,
+      "expect_fail": false,
+      "hash": "f6c84d38b352c33c",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.84
+    },
+    "32/06_provider_down.py": {
+      "bytes": 592,
+      "expect_fail": false,
+      "hash": "d14b42da2f0c3ebb",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 14.07
+    },
+    "32/07_slow_provider_fixed.py": {
+      "bytes": 634,
+      "expect_fail": false,
+      "hash": "7b59d094ffcc1b0e",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 23.23
+    },
+    "32/08_shadow.py": {
+      "bytes": 881,
+      "expect_fail": false,
+      "hash": "65fdd93606f5f8ae",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 186.33
+    },
+    "35/01_what_you_have.py": {
+      "bytes": 1408,
+      "expect_fail": false,
+      "hash": "99e4535e9d5f1511",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.37
+    },
+    "38/01_intervals.py": {
+      "bytes": 2560,
+      "expect_fail": false,
+      "hash": "4c65f5d2a8ef56ed",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 4.92
+    },
+    "38/02_power_and_ceiling.py": {
+      "bytes": 2466,
+      "expect_fail": false,
+      "hash": "b542a70827d86400",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 0.87
+    },
+    "38/03_dependence_and_agreement.py": {
+      "bytes": 828,
+      "expect_fail": false,
+      "hash": "80146cdc288dd644",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 1.56
+    },
+    "38/04_selection_and_scores.py": {
+      "bytes": 1277,
+      "expect_fail": false,
+      "hash": "ea4ba4fe097d44f5",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 5.33
+    },
+    "39/01_the_dataset.py": {
+      "bytes": 2968,
+      "expect_fail": false,
+      "hash": "432afd0a07ce8ddb",
       "ok": true,
       "returncode": 0,
       "seconds": 1.62
+    },
+    "39/02_data_dictionary.py": {
+      "bytes": 2362,
+      "expect_fail": false,
+      "hash": "c15f03da7a02b20a",
+      "ok": true,
+      "returncode": 0,
+      "seconds": 2.94
     }
   }
 }

@@ -1,33 +1,33 @@
-POSITION — 76 pairs, each judged twice with the sides swapped
+POSITION — 79 pairs, each judged twice with the sides swapped
 
-  correct answer in slot A, judge picked it   61 of 76
-  correct answer in slot B, judge picked it   15 of 76
-  judge picked slot A, either way             117 of 152
-  gave the same verdict both ways             24 of 76
+  correct answer in slot A, judge picked it   64 of 79
+  correct answer in slot B, judge picked it   13 of 79
+  judge picked slot A, either way             127 of 158
+  gave the same verdict both ways             20 of 79
 
 VERBOSITY — the same correct fact, padded with 60 true but irrelevant words,
 against the bare fact. Both are right, so a tie is the only correct answer.
 
-  the padded answer won   21 of 76
-  the bare answer won     47 of 76
-  tie                     8 of 76
+  the padded answer won   19 of 79
+  the bare answer won     56 of 79
+  tie                     4 of 79
 
 MITIGATION — take a verdict only when both orders agree
 
-  picked the correct answer   15 of 76
-  picked the wrong answer     9 of 76
-  refused to decide           52 of 76
+  picked the correct answer   13 of 79
+  picked the wrong answer     7 of 79
+  refused to decide           59 of 79
 
 WITH A REFERENCE — the same pairs, the same two orders, plus the expected answer
 
-  correct answer in slot A, judge picked it   76 of 76
-  judge picked slot A, either way             76 of 152
-  gave the same verdict both ways             76 of 76
+  correct answer in slot A, judge picked it   79 of 79
+  judge picked slot A, either way             79 of 158
+  gave the same verdict both ways             79 of 79
 
 Read the two accuracies against each other. Taking the first verdict as given
-is right 80% of the time. Requiring both orders to agree is right
-62% of the time on the 24 it will commit to, and admits it cannot tell on
-the other 52.
+is right 81% of the time. Requiring both orders to agree is right
+65% of the time on the 20 it will commit to, and admits it cannot tell on
+the other 59.
 
 The second is a better instrument and a worse product. It costs twice as much,
 it returns nothing on some fraction of cases, and that fraction is the honest
@@ -36,7 +36,7 @@ you would never have known.
 
 The last block is the important one. The same judge, the same pairs, the
 same two orders — but told what the answer should be — picked slot A
-76 times out of 152 and agreed with itself 76 times out of 76.
+79 times out of 158 and agreed with itself 79 times out of 79.
 
 So most of what looks like position bias here is not really a preference for
 the left-hand side. It is what a judge does when it has no way to tell the

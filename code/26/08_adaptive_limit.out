@@ -1,0 +1,7 @@
+demand never stops; each call takes about 2s; the provider serves 18 at once, 6 between 40s and 80s
+
+  client limit             429s  answered/s before  during  after  limit, during
+  fixed at 18               797                8.7     3.2    8.7           18.0
+  fixed at 6                  0                2.9     3.1    2.9            6.0
+  adaptive, halve on 429     10                6.7     2.6    5.5            5.2
+  adaptive, x0.9 on 429      49                8.6     3.2    6.9            6.9

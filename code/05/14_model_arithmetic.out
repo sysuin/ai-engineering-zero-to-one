@@ -1,0 +1,13 @@
+  configuration              estimated  published
+  a 12-layer model, 2019       0.124 B    0.124 B
+  a 32-layer model, 2023       6.738 B    6.700 B
+
+7B parameters x 140B tokens -> 5.9e+21 FLOPs to train
+at 1e+14 FLOPs/s per accelerator: 2 accelerator-years
+generating one token with 7B parameters: about 1.4e+10 FLOPs
+
+memory for the weights of a 70B-parameter model
+  32-bit      280 GB
+  16-bit      140 GB
+   8-bit       70 GB
+   4-bit       35 GB

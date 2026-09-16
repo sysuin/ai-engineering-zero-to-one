@@ -1,0 +1,19 @@
+  grader   penalty  step  P(formats a guess)  grader score  truly right
+  leaky        0.0     0                 10%           64%          57%
+  leaky        0.0   100                 55%           78%          41%
+  leaky        0.0  2000                100%           88%          20%
+
+  leaky        0.1     0                 10%           64%          57%
+  leaky        0.1   100                 34%           74%          51%
+  leaky        0.1  2000                 52%           78%          43%
+
+  leaky        0.5     0                 10%           64%          57%
+  leaky        0.5   100                 16%           67%          56%
+  leaky        0.5  2000                 16%           67%          56%
+
+  fixed        0.0     0                 10%           57%          57%
+  fixed        0.0   100                  1%           68%          68%
+  fixed        0.0  2000                  0%           70%          70%
+
+  leaky grader, penalty 0.1: the limit puts 52% on formatting a guess
+  leaky grader, penalty 0.5: the limit puts 16% on formatting a guess

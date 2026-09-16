@@ -1,0 +1,10 @@
+1454 chunks, 896 windows; mean tokens: chunk 42, window 68
+
+                           recall@5  tokens@5   recall within a budget of
+                                                  150    300    600
+  small chunks                  77%       267    63%    77%    87%
+  windows of three              70%       544    40%    67%    73%
+  small, return window          77%       635    40%    73%    80%
+  small, add neighbours         77%       710    27%    70%    77%
+
+tokens counted with one tokeniser; a result counts if any chunk in it answers the question

@@ -1,0 +1,11 @@
+/revenue: status 200
+  naive total: 8,461,841.81
+  shape check: ok
+/revenue-v2: status 200
+  naive total: TypeError: unsupported operand type(s) for +: 'int' and 'str'
+  shape check: FAILED
+   - regions[0] has no 'region' (keys: ['region_name', 'revenue'])
+   - regions[0].revenue is str, expected number
+   - regions[1] has no 'region' (keys: ['region_name', 'revenue'])
+   - regions[1].revenue is str, expected number
+   - ...

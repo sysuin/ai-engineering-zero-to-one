@@ -1,0 +1,21 @@
+What a strict schema must look like:
+  every field required, closed
+     {"region":"Midwest","year":2024}
+  year left optional
+     REJECTED: 'required' is required to be supplied and to be an array including every key in properties. Missing 'year'.
+  additionalProperties omitted
+     REJECTED: 'additionalProperties' is required to be supplied and to be false.
+
+What the guarantee buys, for a region that is and two that are not in the list:
+  not strict, enum
+     asked about 'midwest'                region='Midwest'    in the list
+     asked about 'Europe'                 region='Northeast'  in the list
+     asked about 'the Pacific Northwest'  region='West'       in the list
+  strict, enum
+     asked about 'midwest'                region='Midwest'    in the list
+     asked about 'Europe'                 region='Northeast'  in the list
+     asked about 'the Pacific Northwest'  region='West'       in the list
+  strict, enum or null
+     asked about 'midwest'                region='Midwest'    in the list
+     asked about 'Europe'                 region=None         null
+     asked about 'the Pacific Northwest'  region=None         null

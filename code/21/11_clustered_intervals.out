@@ -1,0 +1,9 @@
+120 cases in 64 templates; 95% intervals from 5,000 resamples
+
+                                   score    by case  by template  effect  eff. n
+  the scorecard as measured          91%    85%-96%      83%-95%     1.4      83
+  25 failures in two templates       79%    72%-86%     56%-100%    10.9      11
+  25 failures scattered at random    79%    72%-86%      72%-85%     0.9     135
+
+effect: how many times larger the variance is when templates are resampled;
+eff. n: the independent cases the set is worth, the case count divided by it

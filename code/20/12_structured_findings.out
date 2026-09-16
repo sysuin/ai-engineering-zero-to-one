@@ -1,0 +1,13 @@
+300 final answers from the same briefs as 11_retyping,
+with the figure filled in by code
+
+  exact                                  299
+  the quarter-before field                 1
+  a different finding                      0
+  no slot, or a number written anyway      0
+
+  wanted F1 value; the model chose F1 value_quarter_before
+
+Every figure that reached an answer is exactly a warehouse value: retyping is
+gone by construction. Choosing which value is still the model's job, and its
+errors are still possible, now visible as a field that can be checked.

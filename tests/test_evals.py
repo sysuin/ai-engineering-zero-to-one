@@ -14,6 +14,7 @@ fails on Tuesday. `assert score >= 0.80` is a test that fails when something bro
 from __future__ import annotations
 
 import os
+import random
 import sys
 from pathlib import Path
 
@@ -31,8 +32,22 @@ from meridian_index import load_index                           # noqa: E402
 SYSTEM = ("You are an analyst for Meridian. Use tools for every fact. If the answer "
           "is not in the documents or the warehouse, say so plainly rather than "
           "guessing.")
-# Full run in CI on a schedule; a sample on every push. §22.11 is about this line.
+# Full run in CI on a schedule; a sample on every pull request. §22.16 is about this line.
 SAMPLE = int(os.environ.get("EVAL_SAMPLE", "24"))
+
+
+def sample(cases: list[dict], n: int) -> list[dict]:
+    """The same n cases every run, from every kind and tier in proportion.
+    The first n cases of the file are all one kind, and a layer that
+    scores another kind would have nothing to score."""
+    if not n:
+        return cases
+    rng, picked = random.Random(22), []
+    for group in sorted({(c["kind"], c["tier"]) for c in cases}):
+        pool = [c for c in cases if (c["kind"], c["tier"]) == group]
+        size = max(1, round(n * len(pool) / len(cases)))
+        picked += rng.sample(pool, size)
+    return picked
 
 
 @pytest.fixture(scope="session")
@@ -44,22 +59,27 @@ def layers():
 
     def answer(question: str):
         result = Agent(tools, budget=Budget(steps=6)).run(question, system=SYSTEM)
-        return result.answer, [s.tool for s in result.steps if s.tool]
+        # What every tool returned goes to the retrieval layer, which checks whether the
+        # passage a case needed was ever in the room. Without it that layer scores zero.
+        return (result.answer, [s.tool for s in result.steps if s.tool],
+                " ".join(s.result for s in result.steps if s.tool))
 
-    cases = load()[:SAMPLE] if SAMPLE else load()
-    return run(answer, cases=cases, judge_sample=min(10, SAMPLE))
+    cases = sample(load(), SAMPLE)
+    return run(answer, cases=cases, judge_sample=10 if SAMPLE else 30)
 
 
-@pytest.mark.parametrize("layer", ["deterministic", "grounded", "judge"])
+@pytest.mark.parametrize("layer", list(THRESHOLDS))
 def test_layer_above_floor(layers, layer):
     result = layers[layer]
+    # An empty layer scores 100%: a sample that never reaches it passes silently.
+    assert result.total, f"{layer} scored no cases"
     assert result.score >= THRESHOLDS[layer], (
-        f"{layer} scored {result.score:.0%}, floor is {THRESHOLDS[layer]:.0%}. "
-        f"Failing cases: {', '.join(result.failures[:8])}")
+        f"{layer} scored {result.score:.0%}, "
+        f"floor {THRESHOLDS[layer]:.0%}; failing: {result.failures[:8]}")
 
 
 def test_no_answer_without_a_source(layers):
-    """The one rule from §22.7 that is a property rather than a prediction."""
+    """The one rule from §22.11 that is a property rather than a prediction."""
     assert not layers["grounded"].failures, (
         f"answers with no source call: {layers['grounded'].failures[:8]}")
 

@@ -74,6 +74,9 @@ print()
 print(f"  requests slower than the mean: {above_mean} of {len(latency)} "
       f"({above_mean / len(latency):.0%})")
 print(f"  p99 is {stats['p99'] / stats['p50']:.1f}x the median")
+if len(latency) < 100:
+    print(f"  (with {len(latency)} requests the p99 is simply the slowest one; "
+          f"a p99 needs hundreds of requests to mean anything)")
 
 print()
 print("The mean sits where nobody lives. This distribution has a long right tail —")

@@ -1,15 +1,19 @@
-error style     recovered   mean attempts
-terse                0/3             2.0
-instructive          2/3             2.7
+8 questions x 3 runs, 4 attempts each
+
+  error style     right    wrong  gave up  ran out  mean calls
+  terse            3/24     0/24    18/24     3/24         2.4
+  instructive     21/24     0/24     3/24     0/24         2.8
+
+  wrong = a valid call with the wrong metric or region, which the tool accepted
+
+When the model gave up after terse errors, it said, for example:
+  "I couldn’t retrieve that because the metric name I used wasn’t valid for the warehouse tool. If you want, I can try again with a different m…"
+
+When the model gave up after instructive errors, it said, for example:
+  "I couldn’t retrieve “turnover” because the warehouse tool doesn’t recognize that metric. Available metrics are: - revenue - gross_profit - m…"
 
 What each error says:
   terse        Error: invalid metric.
-  instructive  Error: unknown metric 'sales'. Valid metrics are: revenue, gross_profit, margin_pct, orders, uni
+  instructive  Error: unknown metric 'sales'. Valid metrics are: revenue (sales value), gross_profit, margin_pct (gross margin as a percentage), orders, units (items sold). Retry with one of these exactly.
   terse        Error: invalid region.
-  instructive  Error: unknown region 'midwest'. Did you mean 'Midwest'? Region names are capitalised.
-
-A tool error is not a log line. It is the next thing the model reads, and it is
-the only chance to say what a valid call looks like.
-
-Name the valid values. Suggest the correction. Say what to retry with. It costs
-a few tokens once and saves a round trip every time it fires.
+  instructive  Error: unknown region 'midwest'. Did you mean 'Midwest'? Retry with a valid region exactly.

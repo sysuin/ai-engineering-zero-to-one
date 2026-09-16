@@ -1,0 +1,15 @@
+opened: 2024-08-14  quarter: 3
+days open: 19
+30 days later: 2024-09-13
+
+UTC:     2024-10-01 03:30:00+00:00  quarter 4
+Chicago: 2024-09-30 22:30:00-05:00  quarter 3
+-> the same order is Q4 in UTC and Q3 in the office that took it
+
+TypeError: can't compare offset-naive and offset-aware datetimes
+
+before:            2024-03-09 09:00:00-06:00
++ timedelta(days=1): 2024-03-10 09:00:00-05:00
+hours that actually passed: 23.0
+
+aware 'now' has tzinfo: True

@@ -1,0 +1,15 @@
+12 questions x 3 runs; the same question with no tools is 17 prompt tokens
+
+  condition         tools   correct  prompt tokens  median s
+  4 real tools          4   36/36              269      0.84
+  + 12 unrelated       16   36/36              545      0.80
+  + 60 unrelated       64   36/36            1,681      0.89
+  + 124 unrelated     128   36/36            3,261      1.10
+  + 4 overlapping       8   27/36              373      0.91
+
+each unrelated tool added about 24 prompt tokens to every call
+
++ 4 overlapping — 9 wrong choices:
+  If revenue is 8461842 and cost is 5661205, what is the mar   -> calculate  (3x)
+  What is 15% of 8461842?                                      -> calculate  (3x)
+  What is 41300 times 3.05?                                    -> calculate  (3x)

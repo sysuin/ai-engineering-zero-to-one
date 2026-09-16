@@ -1,0 +1,26 @@
+The nightly enricher: 100,000 calls, 8 hours to make them
+
+  counting 6,400 tokens a call (max output 400)
+    312 calls a minute, limited by tokens; 10.4 workers use all of it
+    5.3 hours to finish: fits in 8, +33% margin
+
+  counting 10,000 tokens a call (max output 4,000)
+    200 calls a minute, limited by tokens; 6.7 workers use all of it
+    8.3 hours to finish: does not fit in 8, -4% margin
+
+  Workers beyond that number do not finish sooner. They collect 429s, and their
+  retries spend the limit that the workers doing real work needed.
+
+Meeting summaries: 400,000 calls a day, arriving unevenly
+
+                              calls/min   tokens/min  x the limit
+  average minute                    278    3,500,000         1.8x
+  busiest hour                      833   10,500,000         5.2x
+  the limit admits                  159    2,000,000
+
+  During the busiest hour the queue grows by 40,476 calls. Even the
+  average minute needs 1.8x the limit, so the queue never drains:
+  smoothing arrivals cannot help when the average itself is over. The
+  design needs about 6x this limit at the busiest hour: a higher tier, capacity
+  reserved with the provider, or a batch path with its own quota for summaries
+  nobody reads within the hour — decided now, not discovered on launch day.

@@ -1,0 +1,14 @@
+head: 80 cases, 25 distinct templates
+   12 x What was revenue in <year> <quarter>?
+   12 x How many orders were there in <year> <quarter>?
+   12 x What was gross margin in <year> <quarter>?
+
+tail: 40 cases, 40 distinct templates
+    1 x What is the racked storage capacity at the Dallas depot?
+    1 x What is the total capacity of the Columbus depot?
+    1 x What was utilisation at the Columbus depot at year end?
+
+The largest template alone is 12 of 80 head cases. Cases that share
+a phrasing tend to pass or fail together — one prompt, one tool, one kind of number —
+so they carry less independent evidence than their count suggests, and an interval
+computed as if every case were independent, like the one in 02, is too narrow.

@@ -65,8 +65,8 @@ async def main() -> None:
         print(f"  {line}")
     print()
     print("Nothing in this file knows what Clarity is. It asked a process what it")
-    print("could do, was told, and called one of the answers. The client was written")
-    print("before the server existed, and that indirection is the entire point.")
+    print("could do, was told, and called one of the answers. The client could have been")
+    print("written before the server existed, and that indirection is the entire point.")
 
 
 asyncio.run(main())

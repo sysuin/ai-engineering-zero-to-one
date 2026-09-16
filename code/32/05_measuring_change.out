@@ -1,0 +1,22 @@
+1. A canary: requests needed to see a failure rate rise (80% power, 5% alpha)
+
+    from     to  requests   days at 5% of 4,000/day
+    1.0%   3.0%       236      1.2
+    1.0%   2.0%       793      4.0
+    5.0%   7.0%       822      4.1
+    1.0%   1.5%     2,830     14.2
+
+2. An A/B test on the thumbs-up rate, with 5% of answers rated
+
+  baseline  better  ratings per arm   days
+       60%     70%              356      4
+       60%     65%            1,471     15
+       60%     63%            4,129     41
+
+3. Two identical arms, checked every day for 20 days (100 ratings per arm per day)
+
+  looked once, at the end          4.9% declared a difference
+  looked daily, stopped at p<0.05 25.1% declared a difference
+
+  Neither arm was better. Checking daily and stopping at the first significant
+  day turned a 5% false-positive rate into 25%.

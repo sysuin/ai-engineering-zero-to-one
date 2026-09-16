@@ -1,20 +1,20 @@
 {
  "no protection": {
-  "seconds": 8.231439999999566,
+  "seconds": 8.484465666995675,
   "ok": 40,
   "failed": 20,
   "shed": 0,
   "upstream_calls": 60
  },
  "retry only": {
-  "seconds": 40.604539166000905,
+  "seconds": 41.36476808300358,
   "ok": 40,
   "failed": 20,
   "shed": 0,
   "upstream_calls": 120
  },
  "retry + circuit breaker": {
-  "seconds": 6.009614000000511,
+  "seconds": 6.173047374999442,
   "ok": 20,
   "failed": 3,
   "shed": 37,

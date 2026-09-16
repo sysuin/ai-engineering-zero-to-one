@@ -14,13 +14,14 @@ more useful than the despair:
      case-to-case variation and cuts the requirement dramatically — often by more
      than half, and more when the systems agree often.
   2. Stop shipping 3-point changes one at a time. Batch five of them, measure the
-     batch, and keep the batch or revert it. A 15-point difference is visible at
-     48 cases, which is a set you can actually build.
+     batch, and keep the batch or revert it. A 15-point gain from 85% is visible
+     at 48 cases, a set you can actually build; from a lower
+     baseline the same gain needs more.
 
 
 The noise ceiling: the highest score anybody could get on your set.
 
-Your labels are not perfect. §6.5 shows how an arguable ground truth caps every
+Your labels are not perfect. §6.8 shows how an arguable ground truth caps every
 score you report, and a case whose gold answer is wrong is a case a perfect
 system fails.
 
@@ -31,9 +32,10 @@ system fails.
           10%        90%    94% of what is achievable
           15%        85%   100% of what is achievable
 
-At 10% label error a score of 85% is 94% of everything available, and the six
-points you are chasing are mostly wrong labels. Measuring the ceiling is how you
-find out that your model is finished and your data is not.
+At 10% label error a score of 85% is 94% of everything available: only five of the
+fifteen points below 100% are within reach, and the other ten are wrong labels.
+Measuring the ceiling is how you find out that your model is nearly finished
+and your data is not.
 
 
 And the other ceiling: the same system, scored twice.
@@ -48,5 +50,5 @@ And the other ceiling: the same system, scored twice.
   have celebrated an 8-point gain and investigated a 10-point regression,
   and both would have been the same system on a different Tuesday.
 
-  This is the argument for §22.9's drift threshold against a recorded baseline,
+  This is the argument for §22.14's drift threshold against a recorded baseline,
   rather than an absolute floor set just under today's score.

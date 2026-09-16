@@ -1,0 +1,29 @@
+Can we walk away from this agreement early?
+  words: can, walk, away, from, this, agreement, early
+  returned cl 5 quality                     score 2.13
+           from 2.13 (in 12)
+  wanted   cl 7 termination                 score 1.59
+           this 0.79 (in 43), agreement 0.79 (in 43)
+
+Which country's courts decide a dispute?
+  words: which, country, courts, decide, dispute
+  returned cl 1 scope                       score 0.00
+           no shared words
+  wanted   cl 8 governing law               score 0.00
+           no shared words
+
+What are they actually selling us?
+  words: what, are, they, actually, selling
+  returned cl 8 governing law               score 2.13
+           are 2.13 (in 24)
+  wanted   cl 1 scope                       score 0.00
+           no shared words
+
+Is there a penalty for repeated late shipments?
+  words: there, penalty, for, repeated, late, shipments
+  returned cl 6 liability                   score 1.67
+           for 1.67 (in 28)
+  wanted   cl 4 delivery and service levels score 0.00
+           no shared words
+
+each word: its share of the score (in how many of 96 clauses it appears)

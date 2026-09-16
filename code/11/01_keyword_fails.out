@@ -16,5 +16,10 @@ BM25 (word overlap)          6/10  60%
 embeddings (meaning)         9/10  90%
 
 The questions were written the way a person asks them, not the way a contract is
-drafted. 'How long do we have to settle an invoice?' shares almost no words with
-'The Buyer shall settle all undisputed invoices within 45 days of receipt.'
+drafted. Where BM25 missed and meaning did not:
+  'Can we walk away from this agreement early?'
+     words shared with the right clause: agreement, this
+  "Which country's courts decide a dispute?"
+     words shared with the right clause: none
+  'Is there a penalty for repeated late shipments?'
+     words shared with the right clause: none

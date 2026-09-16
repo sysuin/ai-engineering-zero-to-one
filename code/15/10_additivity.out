@@ -1,0 +1,20 @@
+2025: does the sum of the parts equal the whole?
+
+  metric             quarter   channel    region  customer  category       sku
+  revenue               adds      adds      adds      adds      adds      adds
+  gross_profit          adds      adds      adds      adds      adds      adds
+  margin_pct               ·         ·         ·         ·         ·         ·
+  orders                adds      adds      adds      adds         ·         ·
+  units                 adds      adds      adds      adds      adds      adds
+  skus                     ·         ·         ·         ·      adds      adds
+  cost                  adds      adds      adds      adds      adds      adds
+  avg_discount             ·         ·         ·         ·         ·         ·
+  avg_order_value          ·         ·         ·         ·         ·         ·
+
+where a distinct count adds up, and why:
+  orders by quarter   adds       most quarter values in one order: 1
+  orders by channel   adds       most channel values in one order: 1
+  orders by region    adds       most region values in one order: 1
+  orders by customer  adds       most customer values in one order: 1
+  orders by category  does not   most category values in one order: 5
+  orders by sku       does not   most sku values in one order: 5

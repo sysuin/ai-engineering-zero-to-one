@@ -1,0 +1,7 @@
+  search with              all     plain near-dup identifi paraphra   ticket  obscure
+  the question             77%       83%      50%      50%     100%     100%     100%
+  a hypothetical answer    70%       83%      67%      33%      83%     100%      67%
+  the average of both      80%      100%      50%      50%     100%     100%     100%
+
+example: 'How long do we have to settle an invoice?'
+   became: 'Invoices are due within 30 calendar days from the date of issue unless a different payment term is stated on the purchas'

@@ -1,0 +1,19 @@
+an answer streams for 11s; 3% of streams fail part-way; 100,000 requests
+
+failures anywhere in the stream
+  policy                       first text  p99 done  broken  retracted invisible
+  pass the error on                  0.8s     10.8s    3.0%       0.0%      0.0%
+  restart, retracting                0.8s     21.8s    0.0%       2.8%      0.2%
+  hold back 1 second                 1.8s     21.8s    0.0%       2.5%      0.5%
+  hold back 3 seconds                3.8s     21.8s    0.0%       2.0%      1.0%
+  hold back the whole answer        10.8s     21.8s    0.0%       0.0%      3.0%
+
+failures mostly at the start
+  policy                       first text  p99 done  broken  retracted invisible
+  pass the error on                  0.8s     10.8s    3.0%       0.0%      0.0%
+  restart, retracting                0.8s     15.1s    0.0%       0.6%      2.4%
+  hold back 1 second                 1.8s     15.1s    0.0%       0.1%      2.9%
+  hold back 3 seconds                3.8s     15.1s    0.0%       0.0%      3.0%
+  hold back the whole answer        10.8s     15.1s    0.0%       0.0%      3.0%
+
+first text = median seconds until the person sees any of the answer

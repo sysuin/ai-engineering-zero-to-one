@@ -11,7 +11,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 997
+  "tokens": 991
  },
  {
   "id": "qbr-2023-Q1-orders",
@@ -53,7 +53,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1019
+  "tokens": 1016
  },
  {
   "id": "qbr-2023-Q1-weakest",
@@ -67,7 +67,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1025
+  "tokens": 1015
  },
  {
   "id": "qbr-2023-Q2-revenue",
@@ -123,7 +123,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1028
+  "tokens": 1026
  },
  {
   "id": "qbr-2023-Q2-weakest",
@@ -137,7 +137,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1031
+  "tokens": 1016
  },
  {
   "id": "qbr-2023-Q3-revenue",
@@ -193,7 +193,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1028
+  "tokens": 1026
  },
  {
   "id": "qbr-2023-Q3-weakest",
@@ -207,7 +207,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1020
+  "tokens": 1016
  },
  {
   "id": "qbr-2023-Q4-revenue",
@@ -249,7 +249,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1006
+  "tokens": 1000
  },
  {
   "id": "qbr-2023-Q4-strongest",
@@ -263,7 +263,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1033
+  "tokens": 1031
  },
  {
   "id": "qbr-2023-Q4-weakest",
@@ -277,7 +277,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1020
+  "tokens": 1016
  },
  {
   "id": "qbr-2024-Q1-revenue",
@@ -333,7 +333,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1028
+  "tokens": 1021
  },
  {
   "id": "qbr-2024-Q1-weakest",
@@ -347,7 +347,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1016
+  "tokens": 1019
  },
  {
   "id": "qbr-2024-Q2-revenue",
@@ -403,7 +403,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1031
+  "tokens": 1033
  },
  {
   "id": "qbr-2024-Q2-weakest",
@@ -431,7 +431,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 991
+  "tokens": 997
  },
  {
   "id": "qbr-2024-Q3-orders",
@@ -459,7 +459,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1006
+  "tokens": 1000
  },
  {
   "id": "qbr-2024-Q3-strongest",
@@ -501,7 +501,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 991
+  "tokens": 997
  },
  {
   "id": "qbr-2024-Q4-orders",
@@ -543,7 +543,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1033
+  "tokens": 1028
  },
  {
   "id": "qbr-2024-Q4-weakest",
@@ -613,7 +613,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1028
+  "tokens": 1026
  },
  {
   "id": "qbr-2025-Q1-weakest",
@@ -627,7 +627,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1019
+  "tokens": 1033
  },
  {
   "id": "qbr-2025-Q2-revenue",
@@ -669,7 +669,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1000
+  "tokens": 1006
  },
  {
   "id": "qbr-2025-Q2-strongest",
@@ -683,7 +683,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1021
+  "tokens": 1028
  },
  {
   "id": "qbr-2025-Q2-weakest",
@@ -731,7 +731,7 @@
   "id": "qbr-2025-Q3-margin",
   "kind": "document",
   "question": "What was gross margin in 2025 Q3?",
-  "outcome": false,
+  "outcome": true,
   "tools": [
    "query_warehouse"
   ],
@@ -739,7 +739,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 998
+  "tokens": 1000
  },
  {
   "id": "qbr-2025-Q3-strongest",
@@ -753,7 +753,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1033
+  "tokens": 1031
  },
  {
   "id": "qbr-2025-Q3-weakest",
@@ -767,7 +767,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1032
+  "tokens": 1035
  },
  {
   "id": "qbr-2025-Q4-revenue",
@@ -781,7 +781,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 991
+  "tokens": 997
  },
  {
   "id": "qbr-2025-Q4-orders",
@@ -823,7 +823,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1028
+  "tokens": 1030
  },
  {
   "id": "qbr-2025-Q4-weakest",
@@ -837,7 +837,7 @@
   "took_expected": false,
   "sourced": true,
   "steps": 1,
-  "tokens": 1026
+  "tokens": 1035
  },
  {
   "id": "warehouse-01",
@@ -851,7 +851,7 @@
   "took_expected": true,
   "sourced": true,
   "steps": 1,
-  "tokens": 982
+  "tokens": 981
  },
  {
   "id": "warehouse-02",
@@ -865,7 +865,7 @@
   "took_expected": true,
   "sourced": true,
   "steps": 1,
-  "tokens": 976
+  "tokens": 975
  },
  {
   "id": "warehouse-03",
@@ -907,7 +907,7 @@
   "took_expected": true,
   "sourced": true,
   "steps": 1,
-  "tokens": 1028
+  "tokens": 1029
  },
  {
   "id": "warehouse-06",
@@ -921,7 +921,7 @@
   "took_expected": true,
   "sourced": true,
   "steps": 1,
-  "tokens": 1046
+  "tokens": 1044
  },
  {
   "id": "warehouse-07",
@@ -963,7 +963,7 @@
   "took_expected": true,
   "sourced": true,
   "steps": 1,
-  "tokens": 1002
+  "tokens": 982
  },
  {
   "id": "warehouse-10",

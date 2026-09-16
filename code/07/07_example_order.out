@@ -1,0 +1,10 @@
+32 held-out contracts, 14 of them receipt-based
+
+  examples                          all  receipt-based only
+  2 INV, 2 RCP, receipt last        84%                 79%
+  2 INV, 2 RCP, receipt first       78%                100%
+  2 INV, 2 RCP, alternating         91%                 79%
+  4 INV, no receipt example         56%                  0%
+
+spread across the three orders of the same examples: 12 points
+leaving the receipt label out entirely: -34 points against the best order

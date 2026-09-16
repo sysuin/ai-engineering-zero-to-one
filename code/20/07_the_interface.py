@@ -79,15 +79,17 @@ unnamed_hits = sum(r["researcher_found"] for r in unnamed)
 print("Two things in this output, and only one of them is stable.\n")
 print(f"The unstable one is the quarter. Today {named} of {RUNS} sub-questions carried")
 print(f"it, and the split was {named_hits}/{named} against {unnamed_hits}/"
-      f"{len(unnamed)}. A previous run of this same listing")
-print("produced almost the reverse proportion. The supervisor's phrasing is itself a")
-print("sample from a model, so it is not a variable you get to hold still.")
+      f"{len(unnamed)}. The supervisor's phrasing")
+print("is itself a sample from a model, so it is not a variable you get to hold still.")
 print()
 print(f"The stable one is the shape of the loss: {lost_in_handoff} of the misses "
       f"happened between the")
-print("researcher and the final answer. Everything the researcher found came back")
-print("intact. The loss is inside a specialist that is running the same retrieval,")
-print("over the same corpus, with the same tool the single agent used.")
+if lost_in_handoff == 0:
+    print("researcher and the final answer. Everything the researcher found came back")
+    print("intact. The loss, where there is one, is inside a specialist running the same")
+    print("retrieval, over the same corpus, with the same tool the single agent used.")
+else:
+    print("researcher and the final answer, so the handoff is losing things too.")
 print()
 print("Which leaves one obvious suspect. The single agent searched the documents")
 print("while holding the figure it had just computed; the researcher searched holding")

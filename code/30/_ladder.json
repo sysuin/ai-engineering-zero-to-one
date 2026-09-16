@@ -17,7 +17,7 @@
    {
     "q": "How wide are we running on the Safety line?",
     "want": "margin_pct",
-    "got": "units"
+    "got": "revenue"
    }
   ]
  },

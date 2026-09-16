@@ -1,0 +1,17 @@
+measured: 6 workers, 4.8x faster
+Amdahl fit: 4.9% of the work does not run in parallel
+(one measurement, so the fit is an illustration, not a model of your system)
+
+  workers  speed-up
+        1      1.0x
+        6      4.8x
+       12      7.8x
+       24     11.3x
+      100     17.2x
+    1,000     20.2x
+
+  ceiling however many workers: 21x
+
+a limit of 200,000 tokens per minute allows about 12 of these tasks at once
+
+a limit of 2,000,000 tokens per minute allows about 122 of these tasks at once

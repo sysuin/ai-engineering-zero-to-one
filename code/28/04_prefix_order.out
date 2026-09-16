@@ -1,0 +1,13 @@
+stable instructions first
+   3234 prompt tokens,  2816 of them cached
+   3233 prompt tokens,     0 of them cached
+   3233 prompt tokens,  2816 of them cached
+   3232 prompt tokens,  2816 of them cached
+  65% of all prompt tokens were served from the cache
+
+timestamp first
+   3235 prompt tokens,     0 of them cached
+   3234 prompt tokens,     0 of them cached
+   3234 prompt tokens,     0 of them cached
+   3233 prompt tokens,     0 of them cached
+  0% of all prompt tokens were served from the cache

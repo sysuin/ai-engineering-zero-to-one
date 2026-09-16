@@ -1,0 +1,25 @@
+Twenty prompt variants that are all truly 80% accurate, each scored on 120 cases.
+Keep the best, then score it on 120 new cases. Mean of 2,000 repetitions:
+
+  cases                              best on dev  same prompt, new cases
+  independent                              86.6%                   80.0%
+  shared difficulty                        86.0%                   79.9%
+  independent, best of 1                   79.9%                   80.0%
+  independent, best of 5                   84.2%                   80.1%
+  independent, best of 50                  87.9%                   80.1%
+
+The paired comparison from the first listing: A alone right on 11, B alone on 5
+
+  McNemar's exact test, two-sided          p = 0.210
+  one-sided (is A better?)                 p = 0.105
+  flat prior: P(A wins more disagreements) = 0.928
+  sceptical prior worth 20 disagreements  = 0.846
+  sceptical prior worth 80 disagreements  = 0.730
+
+A judge's 1-5 scores for the same 60 answers from A and B
+
+  mean score                 A 4.00   B 3.93
+  mean difference (B - A)    -0.07, 95% bootstrap interval -0.37 to +0.22
+  paired test on the means   p = 0.657 (normal approximation)
+  answers B made better      18, worse 8, sign test p = 0.0755
+  answers B scored 1 or 2    8  (A: 0)

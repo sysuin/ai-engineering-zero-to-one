@@ -1,0 +1,25 @@
+160 consecutive pairs from golden-set questions: 40 each reworded,
+retyped and followed up (all written by a model), and 40 of the same
+question about another quarter
+
+  mean score                  reworded  retyped  follow-up  other quarter   AUC
+  shared words (Jaccard)          0.33     0.70       0.36           0.71  0.44
+  embedding similarity            0.88     0.92       0.83           0.95  0.48
+  similarity, same entities       0.88     0.86       0.20           0.00  0.96
+
+  flagged as failed           reworded  retyped  follow-up  other quarter
+  shared words (Jaccard)            0%      22%         0%             0%
+  embedding similarity             82%      90%        55%           100%
+  similarity, same entities        95%      85%        12%             0%
+
+AUC 0.50 is a coin toss: shared words 0.44, similarity 0.48, same entities 0.96
+
+  Why does the company say Halloway Group left?
+    reworded:  Can you explain why the company says Halloway Group left?
+    retyped:   Why did Halloway Group leave?
+    follow-up: Where did the company mention Halloway Group leaving?
+
+  What was gross margin in 2023 Q1?
+    reworded:  Can you tell me the gross margin for Q1 2023?
+    retyped:   Gross margin in 2023 Q1?
+    follow-up: How did gross margin in Q1 2023 compare with Q1 2022?

@@ -1,0 +1,8 @@
+mean cosine similarity between every pair of passages
+
+  passages                                 with furniture  stripped
+  noisy document, 24 pages                          0.985     0.960
+  contract sections, 8                              0.777     0.441
+
+  each contract section's similarity to the banner on its own:
+  0.734 with furniture, 0.245 stripped

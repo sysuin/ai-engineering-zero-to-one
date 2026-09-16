@@ -118,7 +118,7 @@ if missed_ok == 0:
     print("Context recall is not a proxy for correctness here. It is the ceiling on")
     print("it. Every case where the passage was not retrieved was a case the system")
     print("could not answer, and it said so rather than guessing — which is the")
-    print("grounding check from §13.9 doing precisely its job.")
+    print("grounding check from §13.11 doing precisely its job.")
     print()
     print("That is worth knowing before spending a week on prompts. Twenty of these")
     print("sixty failures are retrieval failures, and no wording of any instruction")

@@ -53,7 +53,7 @@ print("   English 'X's revenue' is ambiguous. NULL came back, silently.\n")
 print("3. The question is ambiguous and SQL has to resolve it anyway\n")
 sql = generate("Which supplier has the most products?")
 print(f"   {sql[:110]}")
-print("   Several suppliers tie. The question does not say how to break the tie, so")
+print("   Two suppliers tie. The question does not say how to break the tie, so")
 print("   whichever ORDER BY the model wrote becomes the answer. Not a model error —")
 print("   an unanswerable question that got answered.\n")
 
@@ -63,7 +63,8 @@ for dialect in ("SQLite", "BigQuery"):
                    SCHEMA + f"\nThis warehouse is {dialect}.")
     print(f"   {dialect:9} {sql[:88]}")
 print("   DATE_TRUNC argument order, quarter arithmetic and date casting differ between")
-print("   engines. A query that is correct on one silently returns nothing on another.\n")
+print("   engines. Most such mistakes fail loudly on the other engine; some, such as")
+print("   integer division and case-sensitive comparison, return a different answer.\n")
 
 print("5. It will happily write something destructive\n")
 for question in ("Delete all orders from 2023.",

@@ -1,0 +1,17 @@
+up to 400 paired cases, a look after every 20; 4,000 trials per row
+
+  rule                                    declares      cases
+                                          B better       used
+  no true difference
+  one test at the end, p < 0.05               2.2%        400
+  peek, stop at p < 0.05                      8.0%        382
+  peek, stop at p < 0.05/20 (Bonferroni)      0.6%        399
+  peek, stop at p < 0.0134 (Pocock)           2.2%        395
+  B truly 5 points better
+  one test at the end, p < 0.05              43.0%        400
+  peek, stop at p < 0.05                     56.6%        286
+  peek, stop at p < 0.05/20 (Bonferroni)     16.5%        378
+  peek, stop at p < 0.0134 (Pocock)          35.0%        342
+
+with no true difference, 'declares B better' is the false-positive rate;
+with one, it is the power

@@ -1,7 +1,7 @@
 # What to build next, decided from the card rather than from opinion.
 #
 # The run in the previous listing produced 120 rows. This one triages them, which is the
-# whole of §32.8: the argument for next week's work is a list of cases, not a feeling.
+# whole of §32.10: the argument for next week's work is a list of cases, not a feeling.
 
 import json
 import statistics as stats
@@ -42,15 +42,15 @@ if by_kind:
     print("   at it is a fix you can measure — and a fix aimed at 'accuracy' is not.")
 
 # ---------------------------------------------------------------- 2. what is slow
-print(f"\n2. What is slow: the ten slowest, against a median of "
+print(f"\n2. What is slow: the five slowest, against a median of "
       f"{card['p50']:.1f}s.\n")
 for r in slow[:5]:
     print(f"   {r['id']:<22}{r['seconds']:>6.1f}s  {r['tokens']:>6,} tokens  "
           f"{r['kind']}")
 ratio = slow[0]["seconds"] / card["p50"]
 print(f"\n   The slowest is {ratio:.1f}x the median. Tail latency is not an average")
-print("   problem: it is a small number of runs doing much more work, and §28.6's")
-print("   step budget is the lever that bounds them.")
+print("   problem: it is a small number of runs doing much more work, and §17.9's")
+print("   budget is the lever that bounds them.")
 
 # ---------------------------------------------------------------- 3. what to add
 print(f"\n3. What to add to the eval set.\n")
@@ -66,8 +66,7 @@ print(f"   {len(wrongly_refused):>3} wrong refusals      the most expensive "
       "failure mode to leave in")
 print(f"   {len(slow[:3]):>3} slowest runs        a latency budget needs cases "
       "that test it")
-print(f"   {overlap:>3} counted twice       a wrong refusal is usually also a "
-      "failure")
+print(f"   {overlap:>3} on two lists        counted once in the total above")
 
 tokens = [r["tokens"] for r in rows]
 spread = max(tokens) / stats.median(tokens)
@@ -75,7 +74,7 @@ print(f"\n   And one thing the card does not show: the most expensive answer use
       f"{spread:.1f}x")
 print(f"   the tokens of the median one ({max(tokens):,} against "
       f"{stats.median(tokens):,.0f}). A mean cost per")
-print("   answer hides that entirely, which is why §28.1 budgets per request rather")
+print("   answer hides that entirely, which is why §28.1 measures cost per request rather")
 print("   than per month.")
 
 print("\nThat is the loop. Ship, measure, triage the failures into the set, fix the")

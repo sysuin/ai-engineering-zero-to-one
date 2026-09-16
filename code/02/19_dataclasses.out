@@ -1,0 +1,10 @@
+Ticket(ticket_id='TKT-00001', opened=datetime.date(2023, 11, 5), category='Delivery', body='where is order 25095?? promised tuesday', priority='High')
+field access: Delivery | High
+age on 2025-12-31: 787 days
+as a dictionary: TKT-00001 ...
+equal to a copy of itself: True
+
+FrozenInstanceError: cannot assign to field 'priority'
+
+accepted without complaint: Ticket(ticket_id=42, opened='last Tuesday', category=None, body=['?'], priority='Normal')
+-> Chapter 8's Pydantic models look the same and refuse this.

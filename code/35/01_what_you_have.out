@@ -1,4 +1,4 @@
-130 models reachable from this account on 2026-09-12.
+130 models reachable from this account on 2026-09-14.
 
   chat           114
   other            8
@@ -8,7 +8,7 @@
 The three this book names, and what they resolve to for you:
 
   MODEL_FAST   gpt-5.4-mini            reachable           no rate set — see below
-               accepts: logprobs, max_completion_tokens, seed, temperature, top_p
+               accepts: logprobs, max_completion_tokens, reasoning_effort, seed, temperature, top_p
   MODEL_SMART  gpt-5.5                 reachable           no rate set — see below
                accepts: max_completion_tokens, reasoning_effort, seed
   MODEL_EMBED  text-embedding-3-small  reachable           no rate set — see below

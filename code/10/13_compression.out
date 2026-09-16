@@ -1,0 +1,16 @@
+63 questions, each over four quarterly reviews (its own and three others)
+
+                                   input tokens        figures in the context
+  context sent               right  answer    all      copied  rounded  other
+  whole documents               62   1,849  1,849        8123        0      0
+  selected lines                25      63  1,910         142        0      0
+  lines with their source       63      92  1,953         299        0      0
+  summary for the question      63      64  1,908         181        0      0
+  summary made once             48     393    393        1386      257      0
+  (making the once-only summaries took 12 calls, shared by every question)
+
+  selections that do not say which quarter they came from: 43 of 63
+    'What was gross margin in 2023 Q1?' -> selected: 'Gross margin was 31.0%.'
+  misses with the summary made once: 15; 3 said it was not there
+    'What was revenue in 2023 Q1?' (answer 7,360,834); the summary:
+    'Q1 2023 revenue was $7.36M from 4,965 orders, shipping 93,857 '

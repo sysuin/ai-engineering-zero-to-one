@@ -1,0 +1,12 @@
+4 questions x 5 runs, step ceiling 20
+
+  Margin fell in 2025 Q1. Find out by how much, and what the  steps 3 4 4 4 4      hit the ceiling 0
+  Something changed in the Midwest during 2024. Work out wha  steps 11 17 20 20 21 hit the ceiling 3
+  Are customers complaining about a product problem? If so,   steps 3 3 3 4 5      hit the ceiling 0
+  Which supplier represents the biggest commercial risk, and  steps 5 5 5 7 8      hit the ceiling 0
+
+all 20 runs: median 5 steps, 90th percentile 20, longest 21
+  a ceiling of  4 would have been reached by 16 of 20 runs
+  a ceiling of  6 would have been reached by  7 of 20 runs
+  a ceiling of  8 would have been reached by  6 of 20 runs
+  a ceiling of 22 would have been reached by  0 of 20 runs

@@ -5,31 +5,32 @@ Each unbounded arrangement is run 2 times, because one run of this
 measures the day rather than the design.
 
 as intended, no limit of any kind
-  depth  : [4, 4]
-  tokens : ['15,687', '17,371']
+  depth  : [2, 8]
+  tokens : ['10,877', '20,352']
 
 one wrong subscript, no limit of any kind
-  depth  : [4, 10]
-  tokens : ['10,098', '25,716']
+  depth  : [6, 163]
+  tokens : ['7,069', '35,528']
 
 as intended, with a depth limit of 2
   depth  : 2
-  tokens : 6,264
+  tokens : 12,236
   chain  :
       supervisor -> analyst
+        analyst -> researcher
         analyst -> researcher
       supervisor -> researcher
 
 Across 4 runs of two arrangements that draw as the same picture, the
-deepest chain was 10 agents and the most expensive answer cost 25,716 tokens —
-against 10,098 for the cheapest. Same question, every time.
+deepest chain was 163 agents and the most expensive answer cost 35,528 tokens —
+against 7,069 for the cheapest. Same question, every time.
 
 The miswiring is one subscript: brief the colleague with the caller's role
 instead of its own, and each worker ends up consulting a copy of itself.
 
 Today that arrangement — one wrong subscript — went deepest. Do not read much into
-which one it was: the same arrangement varied by 6 levels of depth across its
-own 2 runs, on the same question, with nothing changed between them.
+which one it was: a single arrangement varied by up to 157 levels of depth across
+its own 2 runs, on the same question, with nothing changed between them.
 
 That is the lesson, and it is not really about recursion. Neither unbounded
 arrangement decided to stop; each one happened to. A run that finishes cheaply

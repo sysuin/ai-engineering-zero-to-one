@@ -1,0 +1,15 @@
+120 cases, 5 runs of the same system
+
+  score by run      92%  92%  91%  95%  92%
+  range             91% to 95%
+  cases that gave a different verdict in at least one run: 10
+    by kind: document 6, unanswerable 4
+
+where the uncertainty in one run's score comes from
+  which cases were chosen (binomial, n = 120)        ± 2.4%
+  the system answering differently (sd across runs)  ± 1.6%
+
+three ways to summarise the runs
+  pass@1  (average share correct per run)          92%
+  pass@5  (correct in at least one run)            95%
+  pass^5  (correct in every run)                   87%

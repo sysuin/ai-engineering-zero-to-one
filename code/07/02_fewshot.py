@@ -72,7 +72,9 @@ print("With none, the model cannot know the convention exists, so it invents som
 print("reasonable that is not yours.")
 print()
 print("With one and two, it has the structure but has only ever seen an invoice-based")
-print("term, so it guesses at the receipt abbreviation: REC, then RECIPIENT.")
+print("term, so for a receipt-based contract it has to guess the abbreviation: "
+      f"{results[1]['example']!r},")
+print(f"then {results[2]['example']!r}.")
 print()
 print("The jump at four is not about quantity. Example three is the first receipt-based")
 print("one. What changed is coverage of the answer space, not the count.")

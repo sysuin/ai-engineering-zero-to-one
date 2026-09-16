@@ -1,6 +1,6 @@
 24 workers, 20 findings each — 480 expected
 
-  shared list, no lock :   86 recorded, 394 lost
+  shared list, no lock :  115 recorded, 365 lost
   same code, with lock :  480 recorded, 0 lost
 
 The API latency is taken out of that deliberately, so the bug happens every

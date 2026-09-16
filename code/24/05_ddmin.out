@@ -1,0 +1,11 @@
+     64 parts  one at a time     64 tests   left [11, 42]
+     64 parts  ddmin             79 tests   left [11, 42]
+
+    256 parts  one at a time    256 tests   left [11, 42]
+    256 parts  ddmin             81 tests   left [11, 42]
+
+   1024 parts  one at a time   1024 tests   left [11, 42]
+   1024 parts  ddmin             83 tests   left [11, 42]
+
+at 3 runs per test, 256 parts cost 768 model calls one at a time;
+ddmin needed 243

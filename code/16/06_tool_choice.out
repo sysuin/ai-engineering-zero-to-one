@@ -1,0 +1,15 @@
+What is the capital of France?
+  tool_choice=auto                 text: 'The capital of France is **Paris**.'
+  tool_choice=none                 text: 'The capital of France is Paris.'
+  tool_choice=required             revenue({"region":"Northeast","year":2024})
+  tool_choice=one named function   revenue({"region":"Northeast","year":2024})
+
+What was Midwest revenue in 2024?
+  tool_choice=auto                 revenue({"region":"Midwest","year":2024})
+  tool_choice=none                 text: 'I’m sorry, but I can’t retrieve that revenue figure right no'
+  tool_choice=required             revenue({"region":"Midwest","year":2024})
+  tool_choice=one named function   revenue({"region":"Midwest","year":2024})
+
+What was revenue in 2024 for the Midwest and for the West?
+  parallel_tool_calls=True   2 call(s) in the first reply
+  parallel_tool_calls=False  1 call(s) in the first reply

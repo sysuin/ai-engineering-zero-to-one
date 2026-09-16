@@ -1,0 +1,13 @@
+20 questions, 5 samples each at temperature 1.0
+
+  right on the first sample      16/20
+  right by majority of results   17/20
+  right in at least one sample   17/20
+
+  all 5 samples agreed:   15 questions, 3 of them wrong
+  samples disagreed:       5 questions, 0 of them wrong
+
+questions the majority got wrong, with how many samples agreed on that answer:
+  100%  What was Voss Industrial's revenue in 2025?
+  100%  Which supplier has the most products?
+  100%  How many suppliers are based outside the United States?

@@ -1,0 +1,20 @@
+Accuracy against labels with a share flipped at random (mean of 2,000 draws)
+
+  system                 clean  5% wrong  10% wrong  20% wrong
+  rules, first draft     81.5%     77.6%      73.7%      65.9%
+  the model              78.0%     74.4%      70.8%      63.5%
+  rules + model          97.5%     92.7%      87.8%      78.1%
+  a perfect system      100.0%     95.0%      90.0%      80.0%
+
+  formula at 10% wrong: the model 70.8%, a perfect system 90.0%
+  the 19.5-point gap between hybrid and model shrinks by a
+  factor of 0.875, to 17.1 points
+
+20 wrong labels (10%), placed three ways: the model's accuracy
+
+  wrong labels placed              measured  corrected for 10%
+  at random                           70.8%              78.0%
+  copying the model's mistakes        88.0%              97.7%
+  on tickets the model had right      68.0%              74.9%
+
+  the model's accuracy against the clean labels: 78.0%

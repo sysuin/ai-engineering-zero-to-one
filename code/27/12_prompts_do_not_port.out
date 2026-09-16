@@ -1,0 +1,19 @@
+12 answerable and 8 unanswerable questions, each with one quarterly review as context
+
+  model   prompt    right  words  > 1 sentence  refusals seen  exact marker
+  fast    exact     12/12      6          0/12           8/8           8/8
+  fast    loose     12/12      7          0/12           8/8             -
+  smart   exact     12/12      7          0/12           8/8           8/8
+  smart   loose     12/12      7          0/12           5/8             -
+
+  smart, loose: not recognised as a refusal
+    Q: Who is the Chief Financial Officer?
+    A: The document does not state who the Chief Financial Officer is.
+
+  smart, loose: not recognised as a refusal
+    Q: How many vehicles are in the delivery fleet?
+    A: The document does not state how many vehicles are in the delivery fleet.
+
+  smart, loose: not recognised as a refusal
+    Q: Which warehouse management system does Meridian use?
+    A: The document does not state which warehouse management system Meridian uses.

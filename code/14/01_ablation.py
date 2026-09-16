@@ -22,10 +22,23 @@ client = OpenAI()
 chunks, vectors = load_index()
 K = 5
 
-# A question is answered if ANY chunk containing its needle is retrieved — several
-# contracts answer "how long to pay", and any of them is correct.
-TRUTH = [{i for i, c in enumerate(chunks) if needle in c["text"]}
-         for _, needle, _ in QUESTIONS]
+RUNS = 3      # the rows that call a model are run three times: one run is an anecdote
+
+
+def answers(needle) -> set[int]:
+    """Chunks that answer: any containing the needle, or the named section of a document, or
+    any chunk matching one of a list of either."""
+    if isinstance(needle, list):
+        return set().union(*(answers(n) for n in needle))
+    if isinstance(needle, tuple):
+        source, heading = needle
+        return {i for i, c in enumerate(chunks)
+                if c["source"] == source and c.get("heading", "").startswith(heading)}
+    return {i for i, c in enumerate(chunks) if needle in c["text"]}
+
+
+# Several contracts answer "how long to pay", and any of them is correct.
+TRUTH = [answers(needle) for _, needle, _ in QUESTIONS]
 
 
 def embed(texts: list[str]) -> np.ndarray:
@@ -157,9 +170,6 @@ def dense_order(qi: int, allowed: set[int] | None = None) -> list[int]:
     return sorted(pool, key=lambda i: -scores[i])
 
 
-FACETS = None
-
-
 def run(name: str, fn) -> dict:
     with ThreadPoolExecutor(max_workers=10) as pool:
         results = list(pool.map(fn, range(len(QUESTIONS))))
@@ -185,39 +195,72 @@ configs["fused, k=60"] = run("rrf60", lambda i: rrf(
 configs["fused, k=1"] = run("rrf1", lambda i: rrf(
     dense_order(i)[:50], keyword_order(i)[:50], k=1))
 
-print("inferring metadata from each question …", file=sys.stderr)
-with ThreadPoolExecutor(max_workers=10) as pool:
-    FACETS = list(pool.map(lambda q: infer_facets(q[0]), QUESTIONS))
-
-
-def hybrid_filtered(i: int) -> list[int]:
-    allowed = allowed_by(FACETS[i])
+def hybrid_filtered(i: int, facets) -> list[int]:
+    allowed = allowed_by(facets[i])
     dense = dense_order(i, allowed)[:50]
-    keyword = [j for j in keyword_order(i)[:200]
+    # Filter first, then take the top 50. A first version took the global top 200 keyword
+    # results and filtered those — a post-filter in disguise, which lost identically worded
+    # clauses from the one contract the question named.
+    keyword = [j for j in keyword_order(i)
                if allowed is None or j in allowed][:50]
     return rrf(dense, keyword, k=1)
 
 
-configs["+ metadata filter"] = run("filtered", hybrid_filtered)
+repeated = defaultdict(list)            # configuration -> one result per run
+facets_seen = []
+for run_number in range(RUNS):
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        facets = list(pool.map(lambda q: infer_facets(q[0]), QUESTIONS))
+    facets_seen.append(facets)
+    repeated["+ metadata filter"].append(run("filtered", lambda i: hybrid_filtered(i, facets)))
+    repeated["+ rerank top 25"].append(run("reranked", lambda i: rerank(
+        QUESTIONS[i][0], hybrid_filtered(i, facets)[:25], K)))
+    repeated["+ MMR (no rerank)"].append(run("mmr", lambda i: mmr(
+        hybrid_filtered(i, facets)[:25], QUERY_VECTORS[i], K)))
+    repeated["+ rerank, then MMR"].append(run("rerank+mmr", lambda i: mmr(
+        rerank(QUESTIONS[i][0], hybrid_filtered(i, facets)[:25], 12), QUERY_VECTORS[i], K)))
 
-configs["+ rerank top 25"] = run("reranked", lambda i: rerank(
-    QUESTIONS[i][0], hybrid_filtered(i)[:25], K))
-
-configs["+ MMR diversity"] = run("mmr", lambda i: mmr(
-    rerank(QUESTIONS[i][0], hybrid_filtered(i)[:25], 12), QUERY_VECTORS[i], K))
+for name, runs in repeated.items():
+    configs[name] = {"recall": sum(r["recall"] for r in runs) / RUNS,
+                     "low": min(r["recall"] for r in runs), "high": max(r["recall"] for r in runs),
+                     "by_tag": {t: sum(r["by_tag"][t] for r in runs) / RUNS
+                                for t in runs[0]["by_tag"]}}
 
 TAGS = ["plain", "near-duplicate", "identifier", "paraphrase", "ticket", "obscure"]
-print(f"\n{'configuration':21}{'r@5':>5}  " +
-      "".join(f"{t[:7]:>7}" for t in TAGS))
+print(f"{'configuration':21}{'r@5':>5} {'range':>9}  " + "".join(f"{t[:7]:>8}" for t in TAGS))
 for name, r in configs.items():
-    row = "".join(f"{r['by_tag'].get(t, 0):>7.0%}" for t in TAGS)
-    print(f"{name:21}{r['recall']:>5.0%}  {row}")
+    spread = f"{r['low']:.0%}–{r['high']:.0%}" if "low" in r else "exact"
+    row = "".join(f"{r['by_tag'].get(t, 0):>8.0%}" for t in TAGS)
+    print(f"{name:21}{r['recall']:>5.0%} {spread:>9}  {row}")
 
 Path("code/14/_ablation.json").write_text(json.dumps(
-    {"k": K, "n": len(QUESTIONS), "tags": TAGS,
-     "configs": {k: {"recall": v["recall"], "by_tag": v["by_tag"]}
+    {"k": K, "n": len(QUESTIONS), "runs": RUNS, "tags": TAGS,
+     "configs": {k: {"recall": v["recall"], "by_tag": v["by_tag"],
+                     "low": v.get("low"), "high": v.get("high")}
                  for k, v in configs.items()}}, indent=2))
 
-first, last = list(configs.values())[0], list(configs.values())[-1]
-print(f"\n{len(QUESTIONS)} questions, recall@{K}. "
-      f"{first['recall']:.0%} to {last['recall']:.0%}.")
+print(f"\n{len(QUESTIONS)} questions, recall@{K}. Rows below the fusion rows call a model, so each")
+print(f"is the mean of {RUNS} runs, with the lowest and highest run shown as a range.")
+filtered = configs["+ metadata filter"]["recall"]
+for name in ("+ rerank top 25", "+ MMR (no rerank)", "+ rerank, then MMR"):
+    delta = 100 * (configs[name]["recall"] - filtered)
+    print(f"  {name:20} {delta:+.1f} points against the filtered hybrid")
+
+print("\nstill missed by the filtered hybrid in at least one run, and how often:")
+missed = defaultdict(int)
+for r in repeated["+ metadata filter"]:
+    for (question, _, tag), hit in zip(QUESTIONS, r["hits"]):
+        missed[(question, tag)] += not hit
+for (question, tag), count in sorted(missed.items(), key=lambda kv: -kv[1]):
+    if count:
+        print(f"  {count}/{RUNS}  {tag:11} {question}")
+
+print("\nwhat the facet extractor returned for the identifier questions it hurt:")
+for i, (question, _, tag) in enumerate(QUESTIONS):
+    if tag == "identifier" and missed[(question, tag)]:
+        run_missed = next(r for r, result in enumerate(repeated["+ metadata filter"])
+                          if not result["hits"][i])
+        f = facets_seen[run_missed][i]
+        print(f"  {question}")
+        print(f"     year={f.year} quarter={f.quarter} contract_ref={f.contract_ref}"
+              f"   -> chunks allowed: {len(allowed_by(f) or []) or 'none, so the filter was dropped'}")

@@ -1,0 +1,12 @@
+true p50 3,702ms, p95 7,752ms, p99 10,522ms
+
+  requests   95% of estimates of p50        of p95              of p99
+        40    3,149-4,407     5,660-9,661     6,773-13,488
+       400    3,508-3,915     7,016-8,512     8,944-12,125
+     4,000    3,636-3,760     7,514-7,990    10,015-11,069
+    40,000    3,680-3,719     7,684-7,825    10,373-10,710
+
+a day of traffic, 2,640 requests: busy fast daytime hours, quiet slow nights
+  p95 of the whole day             7,257ms
+  mean of the 24 hourly p95s       9,690ms   <- a number with no definition
+  median of the hourly p95s        7,781ms   <- still not a p95

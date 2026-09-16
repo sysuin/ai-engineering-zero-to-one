@@ -1,0 +1,8 @@
+64 commits, failure rate 5% before commit 41 and 30% after; 20,000 bisects each
+
+                                     runs per commit
+  each commit is tested               good       bad  found it  runs in all
+  20 runs, bad at 3+ failures         20.0      20.0       74%          120
+  40 runs, bad at 6+ failures         40.0      40.0       94%          240
+  until decided, 5% error each way    14.4      10.0       79%           70
+  until decided, 1% error each way    23.5      15.9       96%          111

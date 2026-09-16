@@ -3,28 +3,29 @@ Clarity v0.9 — the loop, with the four things that make it safe to run.
 
 Chapter 16 built a tool loop. An agent is that loop plus:
 
-    memory       what it has learned so far, carried between steps as data
-    a budget     steps, seconds and money, all three enforced
+    memory       the conversation so far — the simplest kind; §17.8 measures it
+    a budget     steps, seconds and tokens, all three enforced
     a stop rule  more than "the model stopped asking for tools"
     a trace      every decision recorded, because you cannot debug what you cannot read
 
-Nothing here is a framework. It is about ninety lines, and Chapter 18 replaces it with
-one so you can see what the framework was doing.
+Nothing here is a framework. The loop is about ninety lines, and Chapter 18 ports it to
+one so you can see what the framework is doing — and v1.0 still runs on this one.
 """
 from __future__ import annotations
 
+import contextvars
 import json
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeout
 from dataclasses import dataclass, field
 from pathlib import Path
 
 from openai import OpenAI
-from pydantic import BaseModel, Field
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from clarity.config import MODEL_FAST                       # noqa: E402
-from clarity.v0_8.tools import Tool, ToolError              # noqa: E402
+from clarity.v0_8.tools import Tool, ToolError, ToolRunner  # noqa: E402
 
 
 @dataclass
@@ -40,7 +41,12 @@ class Step:
 
 @dataclass
 class Budget:
-    """Three ceilings, because a run can exhaust any one of them first."""
+    """
+    Three ceilings, because a run can exhaust any one of them first.
+
+    They are checked between rounds, so a reply that asks for several tools at once
+    can finish that reply a few steps past the step ceiling.
+    """
     steps: int = 8
     seconds: float = 90.0
     tokens: int = 60_000
@@ -68,21 +74,6 @@ class Run:
         return [s.tool for s in self.steps if s.tool]
 
 
-class Findings(BaseModel):
-    """
-    What the agent has established.
-
-    Carried between steps as a typed object rather than as a growing transcript —
-    Chapter 9 measured that difference at 72.5% against 95.0%. It is also what makes a
-    run resumable, which Chapter 18 needs.
-    """
-    facts: list[str] = Field(default_factory=list,
-                             description="Established facts, each with its source.")
-    still_needed: list[str] = Field(default_factory=list,
-                                    description="What remains unknown.")
-    can_answer_now: bool = False
-
-
 class Agent:
     def __init__(self, tools: list[Tool], client: OpenAI | None = None,
                  budget: Budget | None = None, model: str = MODEL_FAST):
@@ -92,19 +83,33 @@ class Agent:
         self.model = model
 
     # ------------------------------------------------------------------ execution
-    def _execute(self, name: str, arguments: dict) -> tuple[str, float, bool]:
+    def _execute(self, name: str, arguments: dict | None) -> tuple[str, float, bool]:
         tool = self.tools.get(name)
         if tool is None:
             return f"No tool named {name!r}. Available: {', '.join(self.tools)}.", 0.0, True
+        if arguments is None:
+            return (f"The arguments for {name} were not a JSON object. Retry with "
+                    "arguments that match the schema.", 0.0, True)
         started = time.time()
+        pool = ThreadPoolExecutor(max_workers=1)
         try:
-            value = tool.run(**arguments)
+            # The tool's own timeout, enforced without waiting for a hung thread
+            # (§16.12 shows why a with-block would wait).
+            # A thread does not inherit context variables, so the tracing span in
+            # progress would not be the tool's parent; copy the context across.
+            context = contextvars.copy_context()
+            value = pool.submit(context.run, tool.run, **arguments).result(timeout=tool.timeout)
             return json.dumps(value, default=str)[:3000], time.time() - started, False
+        except FutureTimeout:
+            return (f"{name} took longer than {tool.timeout}s and was abandoned. "
+                    "Try a narrower request.", time.time() - started, True)
         except ToolError as error:
             return str(error), time.time() - started, True
         except Exception as error:                                   # noqa: BLE001
             return f"{name} failed: {type(error).__name__}: {error}", \
                    time.time() - started, True
+        finally:
+            pool.shutdown(wait=False)
 
     # ------------------------------------------------------------------ the loop
     def run(self, question: str, system: str = "",
@@ -131,7 +136,8 @@ class Agent:
                                           run.tokens)
             if reason:
                 run.stopped_because = reason
-                run.answer = self._forced_answer(messages)
+                run.answer, spent = self._forced_answer(messages)
+                run.tokens += spent
                 break
 
             response = self.client.chat.completions.create(
@@ -146,7 +152,7 @@ class Agent:
 
             messages.append(reply)
             for call in reply.tool_calls:
-                arguments = json.loads(call.function.arguments)
+                arguments = ToolRunner._parse(call.function.arguments)
                 signature = (call.function.name, json.dumps(arguments, sort_keys=True))
 
                 if signature in seen:
@@ -162,7 +168,7 @@ class Agent:
                                                             arguments)
 
                 step = Step(len(run.steps) + 1, reply.content or "",
-                            call.function.name, arguments,
+                            call.function.name, arguments or {},
                             result[:300], seconds, failed)
                 run.steps.append(step)
                 if on_step is not None:
@@ -173,7 +179,7 @@ class Agent:
         run.seconds = time.time() - started
         return run
 
-    def _forced_answer(self, messages: list[dict]) -> str:
+    def _forced_answer(self, messages: list[dict]) -> tuple[str, int]:
         """When the budget runs out, say what is known rather than returning nothing."""
         response = self.client.chat.completions.create(
             model=self.model, temperature=0, max_completion_tokens=400,
@@ -181,4 +187,6 @@ class Agent:
                                   "You are out of budget. Answer with what you have "
                                   "established so far, and state plainly what is still "
                                   "missing. Do not call any more tools."}])
-        return (response.choices[0].message.content or "").strip()
+        # The forced answer is a model call like any other, and its tokens count.
+        return ((response.choices[0].message.content or "").strip(),
+                response.usage.total_tokens)

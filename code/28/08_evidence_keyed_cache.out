@@ -1,0 +1,17 @@
+  second question of the pair                   question ≥0.92     plain top 5      v0.6 top 5      v0.6 first
+  -- must not share
+  What was revenue in 2024 Q4?                          shared               ·               ·               ·
+  What was gross profit in 2024 Q3?                          ·          shared               ·          shared
+  Which region was weakest in 2024 Q3?                  shared               ·               ·          shared
+  What is the price cap under MSC-2024-118?             shared               ·               ·               ·
+  How many units were shipped in 2025 Q1?                    ·               ·               ·          shared
+  What was Midwest revenue in 2025 Q3?                  shared          shared               ·               ·
+  -- should share
+  what was the revenue for 2024 q3                           ·          shared               ·          shared
+  In 2024 Q3, which region performed worst?                  ·               ·               ·               ·
+  Under MSC-2022-100, how long do we have to p               ·               ·               ·          shared
+
+  question vectors ≥ 0.92    served a wrong answer on 4 of 6 pairs, hit on 0 of 3 rephrasings
+  same plain top 5           served a wrong answer on 2 of 6 pairs, hit on 1 of 3 rephrasings
+  same v0.6 top 5            served a wrong answer on 0 of 6 pairs, hit on 0 of 3 rephrasings
+  same v0.6 first passage    served a wrong answer on 3 of 6 pairs, hit on 2 of 3 rephrasings

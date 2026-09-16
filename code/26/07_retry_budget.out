@@ -1,0 +1,17 @@
+80 requests a second offered to a provider that serves 100 attempts a second
+
+a fifteen-second partial outage: from 30s to 45s it serves 25% of attempts
+
+  policy           peak attempts/s  upstream attempts  answered  healthy again after
+  no retries                   106              9,600     90.8%                   0s
+  three retries                304             13,059     91.8%                   7s
+  retry budget                 109              9,892     91.5%                   0s
+
+a one-second blip: from 30s to 31s it serves 0% of attempts
+
+  policy           peak attempts/s  upstream attempts  answered  healthy again after
+  no retries                   106              9,600     99.3%                   0s
+  three retries                154              9,757     99.9%                   2s
+  retry budget                 101              9,675     99.5%                   0s
+
+'healthy again' = seconds after the provider recovers until five straight seconds of 95%+ successful attempts

@@ -1,0 +1,11 @@
+50,000 vectors of 256 dimensions: 51.2 MB as 32-bit floats
+
+    M  index file  beyond vectors  per vector  rule M x 8  recall@10   build
+    8      55.5 MB          4.3 MB        85 B        64 B        95%    5.1s
+   16      58.6 MB          7.4 MB       148 B       128 B       100%    7.9s
+   32      65.0 MB         13.8 MB       276 B       256 B       100%   10.7s
+
+The file holds the vectors, the bottom layer's links, the sparse upper layers and a
+label per vector, so the overhead runs somewhat above the rule of thumb — and it is a
+fraction of the vectors themselves.
+Going from M=16 to M=32 multiplied the overhead by 1.9 and bought no recall it could show.

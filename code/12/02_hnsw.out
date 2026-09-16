@@ -1,24 +1,22 @@
 50,000 vectors of 512 numbers
 
-brute force          12.3 ms per query   recall 100% by definition
+brute force          10.7 ms per query   recall 100% by definition
 
-M=8   ef_construction=40   built in   25.2s
-     ef_search=10   recall@10  70.2%     0.08 ms     164x faster than exact
-     ef_search=25   recall@10  70.6%     0.11 ms     109x faster than exact
-     ef_search=50   recall@10  71.6%     0.17 ms      74x faster than exact
-     ef_search=100  recall@10  73.6%     0.22 ms      56x faster than exact
-     ef_search=200  recall@10  73.6%     0.38 ms      33x faster than exact
+M=8   ef_construction=40   built in   10.3s
+     ef_search=10   recall@10  84.4%     0.05 ms     218x faster than exact
+     ef_search=25   recall@10  86.6%     0.06 ms     173x faster than exact
+     ef_search=50   recall@10  86.6%     0.12 ms      85x faster than exact
+     ef_search=100  recall@10  86.8%     0.14 ms      77x faster than exact
+     ef_search=200  recall@10  86.8%     0.23 ms      47x faster than exact
 
-M=32  ef_construction=200  built in  341.6s
-     ef_search=10   recall@10  96.4%     0.32 ms      39x faster than exact
-     ef_search=25   recall@10  96.4%     0.18 ms      71x faster than exact
-     ef_search=50   recall@10  96.8%     0.32 ms      38x faster than exact
-     ef_search=100  recall@10  96.4%     0.40 ms      31x faster than exact
-     ef_search=200  recall@10  96.2%     0.60 ms      21x faster than exact
+M=32  ef_construction=200  built in  195.6s
+     ef_search=10   recall@10  96.4%     0.10 ms     110x faster than exact
+     ef_search=25   recall@10  96.2%     0.11 ms      94x faster than exact
+     ef_search=50   recall@10  96.2%     0.18 ms      58x faster than exact
+     ef_search=100  recall@10  96.4%     0.28 ms      38x faster than exact
+     ef_search=200  recall@10  96.4%     0.44 ms      24x faster than exact
 
-ef_search is the dial. Larger explores more of the graph: slower, more accurate.
-It is set per query, not at build time, so one index can serve a fast path and
-an accurate one.
-
-M and ef_construction are build-time, and changing them means rebuilding. Larger
-M means more links per node: better recall, more memory, slower to build.
+Across a twentyfold range, ef_search moved recall 2.4 points at M=8 and
+0.2 at M=32; changing M moved it 10.1 points on average.
+Which dial binds depends on the data — and 48,546 of these vectors are random noise,
+the hardest data an index can be given. The next listing checks that.

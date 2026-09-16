@@ -1,0 +1,22 @@
+[
+ {
+  "label": "20 runs, bad at 3+ failures",
+  "found": 0.73605,
+  "runs": 120.0
+ },
+ {
+  "label": "40 runs, bad at 6+ failures",
+  "found": 0.93735,
+  "runs": 240.0
+ },
+ {
+  "label": "until decided, 5% error each way",
+  "found": 0.78505,
+  "runs": 70.31575
+ },
+ {
+  "label": "until decided, 1% error each way",
+  "found": 0.95805,
+  "runs": 111.2791
+ }
+]

@@ -1,0 +1,16 @@
+50,000 structured vectors of 256 dimensions, 200 queries, recall@10 against exact search
+
+  bits tables  recall@10  vectors scored   build
+     8      1        17%           0.9%    0.0s
+     8      4        50%           2.7%    0.0s
+     8     16        92%          10.6%    0.1s
+    12     16        62%           1.5%    0.2s
+    12     64        98%           5.5%    0.8s
+    16     64        77%           1.1%    1.4s
+
+The best row here found 98% of the true neighbours while scoring 5.5% of the index, using
+64 tables — about 51 MB of hash tables for 50,000 vectors, before the vectors themselves.
+More bits make buckets smaller, so fewer vectors are scored and true neighbours are split
+across buckets; more tables win them back with several independent hashes, and every
+table is another copy of the index's bookkeeping. Graph indexes reach higher recall for
+less memory on data like this, which is why they replaced hashing in vector databases.

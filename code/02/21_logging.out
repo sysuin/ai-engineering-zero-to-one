@@ -1,0 +1,10 @@
+INFO     meridian.load: loaded 199817 rows from transactions.csv
+WARNING  meridian.load: 17 lines have a quantity over 100; worth checking for unit errors
+ERROR    meridian.load: margin for an empty group
+Traceback (most recent call last):
+  File "code/02/21_logging.py", line 22, in <module>
+    ratio = 1 / 0
+            ~~^~~
+ZeroDivisionError: division by zero
+DEBUG    meridian.load: now DEBUG messages appear too
+ERROR    meridian.api: this is not

@@ -1,0 +1,13 @@
+40 contracts, 5 samples each at temperature 1.0
+
+  samples right  contracts
+          5 of 5         34
+          4 of 5          3
+          3 of 5          0
+          2 of 5          0
+          1 of 5          0
+          0 of 5          3
+
+contracts where every sample was wrong: 3
+contracts where the samples disagreed:  3
+Voting can only rescue a disagreeing contract, and only when most samples are right.

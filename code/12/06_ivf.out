@@ -1,0 +1,7 @@
+30,000 vectors in 256 lists, trained in 0.3s; largest list 162, smallest 85
+
+  nprobe  scanned  recall@10  ms/query
+       1     0.4%      23.6%      0.04
+       4     1.6%      52.6%      0.11
+      16     6.3%      86.2%      0.49
+      64    25.1%      99.8%      2.61

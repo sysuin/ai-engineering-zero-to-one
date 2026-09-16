@@ -1,0 +1,15 @@
+Q: Something changed in the Midwest during 2024. Work out what, and quantify it.
+
+  run  route        steps  tokens  seconds  stopped
+    1  SQQSSSSSSS      10  16,896     20.3  step budget (8) exhausted
+    2  SSSSAAAA         8   8,257     12.5  step budget (8) exhausted
+    3  SQSSSA           6   9,073     12.7  answered
+    4  SQSSQQQQ         8   5,856     15.9  step budget (8) exhausted
+    5  SSSSAA           6  10,382     11.2  answered
+
+  S = search_documents, Q = query_warehouse, A = arithmetic
+
+5 distinct routes in 5 runs
+tokens:  5,856 to 16,896 (median 9,073), a spread of 2.9x
+seconds: 11.2 to 20.3
+runs that hit a budget: 3 of 5

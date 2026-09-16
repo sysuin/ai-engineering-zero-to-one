@@ -54,7 +54,7 @@ raw = "Passages:\n" + "\n\n".join(passages)[:7000]
 stripped = "Passages:\n" + "\n\n".join(strip_active(p) for p in passages)[:7000]
 fenced = fence(passages)[:7000]
 
-print(f"One attack — the house-style exfiltration from §29.3 — against four "
+print(f"One attack — the house-style exfiltration from §29.2 — against four "
       f"arrangements.\n")
 print(f"  {'':<44}{'marker present':>16}{'unknown host':>15}")
 rows = []

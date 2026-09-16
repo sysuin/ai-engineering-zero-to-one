@@ -1,0 +1,9 @@
+naive:
+  first process exit code 9, 1 checkpoints written
+  second process: finished: refunded=True
+  refunds in the ledger: 2, total 360.00
+
+idempotent:
+  first process exit code 9, 1 checkpoints written
+  second process: finished: refunded=True
+  refunds in the ledger: 1, total 180.00

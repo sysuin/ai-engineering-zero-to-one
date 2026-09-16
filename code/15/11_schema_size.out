@@ -1,0 +1,13 @@
+20 questions; the decoy tables are only in the prompt, not in the database
+
+  schema shown                 right   ran  used a decoy
+  the schema as it is          16/20    20             0
+  + 6 unrelated tables         16/20    20             0
+  + 6 look-alike tables        14/20    16             4
+  + all 12                     15/20    18             2
+
+where the decoys were used, across the padded schemas
+  What was Southwest region revenue in 2023 Q4?         regional_kpis
+  What was Voss Industrial's revenue in 2025?           customer_revenue_summary
+  Which region grew revenue most between 2023 and 2025  regional_kpis
+  Which region had the lowest revenue in 2024 Q3?       regional_kpis

@@ -9,25 +9,21 @@ Failure 1 — the right chunk was never retrieved
   The chunk containing the answer is at rank 9 (0.552).
   Every quarterly review has a Summary section worded almost identically, so
   the embedding recognises 'a revenue summary' perfectly and cannot tell which
-  quarter. Eight other quarters outrank the right one.
+  quarter. 8 other chunks outrank the right one.
   Fix: metadata filtering and hybrid search — Chapter 14. Not a better prompt.
 
 
 Failure 2 — the question had two parts and retrieval served one
 
-  retrieved: ['2. Prices and price ad', '2. Prices and price ad', '2. Prices and price ad', '2. Prices and price ad', '2. Prices and price ad']
-  answer:    From the excerpts:
+  retrieved: 5 chunks from 5 documents, headed ['2. Prices and price adjust']
+  a payment clause among them: False
+  answer:    From the excerpts provided:
 
 - **Notice before a price rise:**  
-  - Usually **30 days’ written notice**  
-  - In two contracts, it is **60 days’ written notice**
+  - Usually **30 days’ written notice** in most contracts shown.
+  - In two contracts, it is **60 days’ written notice**.
 
-- **Time to pay an invoice:**  
-  - **Not sta
-  All five retrieved chunks are clause 2, from five different contracts. The
-  payment clause was never returned, so half the question is unanswerable from
-  what was sent — and the model correctly says so for that half while answering
-  the other confidently.
+- **How long
   One retrieval, one embedding, one ranking: a two-part question competes with
   itself, and the stronger half wins.
   Fix: decompose the question and retrieve per part — Chapter 9's pattern,
@@ -40,14 +36,14 @@ Failure 3 — the retrieved chunk is right and says something else
     0.583  MSC-2023-101         caps: ['4%']
     0.583  MSC-2023-133         caps: ['12%']
     0.583  MSC-2025-115         caps: ['12%']
-  The question has no single answer: forty contracts have forty caps. A system
-  that answers it has silently picked one.
+  The question has no single answer: 40 contracts state 9 different caps between them.
+  A system that answers it has silently picked one.
   Fix: the question needs a filter. Chapter 14 rewrites queries that lack one.
 
 
-Failure 4 — nothing relevant exists and it answers anyway
+Failure 4 — nothing relevant exists
 
-  no instruction     The excerpts don’t state how many people work at the Columbus depot, so I can’t determine that from the provid
+  no instruction     The excerpts don’t state how many people work at the Columbus depot.  They only mention: - Columbus depot capa
   told to abstain    NOT IN THE DOCUMENTS.
   Fix: the abstention gate from the previous listing, plus the instruction.
 
@@ -58,4 +54,4 @@ The diagnosis is always the same three questions, in this order:
   3. If so, did the model use it?
 
 Each answer points at a different fix, and you cannot tell them apart by
-reading the output. This is why Chapter 20 logs what was retrieved.
+reading the output. This is why Chapter 23 logs what was retrieved.

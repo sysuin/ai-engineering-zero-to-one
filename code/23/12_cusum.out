@@ -1,0 +1,13 @@
+50 judged answers an hour; a fall from 95% to 85%
+a correct answer moves the sum by -0.111, a wrong one by +1.099
+both rules held to 8% of healthy weeks with a false alarm; CUSUM threshold 8.18
+
+  false alarms on fresh healthy weeks: window 7%, CUSUM 7%
+
+  quality after                          window test                     CUSUM
+  the fall                   median  90th pct  found   median  90th pct  found
+       85%                      2.0       5.0   100%      1.9       3.6   100%
+       90%                      9.0      25.0    99%      6.1      15.8   100%
+       93%                     > 48      > 48    33%     > 48      > 48    42%
+
+  hours from the fall to the first alarm; 'found' = alarmed within two days

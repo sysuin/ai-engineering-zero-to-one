@@ -1,0 +1,10 @@
+  prompt    characters  ceiling billed in billed out limiter counted characters / 4
+  prose          3,241       16       615         16             813            810
+  prose          3,241    4,000       615         32             813            810
+  a table        1,427       16       731         16             360            356
+  a table        1,427    4,000       731         58             359            356
+  JSON           3,118       16     1,510         16             782            779
+  JSON           3,118    4,000     1,510        236             782            779
+
+'limiter counted' is the drop in x-ratelimit-remaining-tokens against the limit, read from the
+response to that request; header names and behaviour are this provider's, today

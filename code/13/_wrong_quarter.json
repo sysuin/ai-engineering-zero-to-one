@@ -1,0 +1,618 @@
+[
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2023 Q2?",
+    "value": "$7,360,834",
+    "answer": "The excerpt only gives revenue for 2023 Q1, which was $7,360,834, and says there was no prior quarter for comparison. It does not provide revenue for 2023 Q2, so that figure is missing from the excerpt. [qbr-2023-Q1.md]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2023 Q2?",
+    "value": "$7,360,834",
+    "answer": "The excerpt only gives revenue for 2023 Q1, which was $7,360,834, and says there was no prior quarter for comparison. It does not provide revenue for 2023 Q2, so that figure is missing from the excerpt. [qbr-2023-Q1.md]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2023 Q3?",
+    "value": "$7,614,049",
+    "answer": "The excerpt only gives revenue for 2023 Q2, which was $7,614,049, and does not provide revenue for 2023 Q3. It also says Q2 revenue was up 3.4% on the prior quarter, but that is not enough to determine Q3 revenue from the excerpt alone. [qbr-2023-Q2.md]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2023 Q3?",
+    "value": "$7,614,049",
+    "answer": "The excerpt only gives revenue for 2023 Q2, which was $7,614,049, and does not provide any revenue figure for 2023 Q3. [qbr-2023-Q2.md]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2023 Q4?",
+    "value": "$7,774,027",
+    "answer": "The excerpt only gives revenue for 2023 Q3, which was $7,774,027, and does not provide revenue for 2023 Q4. [qbr-2023-Q3.md] Summary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2023 Q4?",
+    "value": "$7,774,027",
+    "answer": "The excerpt only gives revenue for 2023 Q3, which was $7,774,027, and does not provide revenue for 2023 Q4. [qbr-2023-Q3.md] Summary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2024 Q1?",
+    "value": "$7,699,847",
+    "answer": "The excerpt only gives revenue for 2023 Q4, which was $7,699,847. It does not provide revenue for 2024 Q1, so that figure is missing from the supplied text.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2024 Q1?",
+    "value": "$7,699,847",
+    "answer": "The excerpt only gives revenue for 2023 Q4, which was $7,699,847, and it does not provide revenue for 2024 Q1. [qbr-2023-Q4.md]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2024 Q2?",
+    "value": "$8,062,599",
+    "answer": "The excerpt only gives revenue for 2024 Q1, which was $8,062,599, and does not mention 2024 Q2 revenue. [qbr-2024-Q1.md] Summary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2024 Q2?",
+    "value": "$8,062,599",
+    "answer": "The excerpt only gives revenue for 2024 Q1, which was $8,062,599, and does not mention 2024 Q2 revenue. [qbr-2024-Q1.md] Summary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2024 Q3?",
+    "value": "$8,074,848",
+    "answer": "The excerpt only gives revenue for 2024 Q2, which was $8,074,848, and says it was up 0.2% on the prior quarter. It does not state revenue for 2024 Q3, so that figure is missing from the excerpts.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2024 Q3?",
+    "value": "$8,074,848",
+    "answer": "The excerpt does not state revenue for 2024 Q3. It only gives revenue for 2024 Q2 as $8,074,848 and says Sanitation launched in that quarter, so the 2024 Q3 revenue is missing from the provided text.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2024 Q4?",
+    "value": "$8,461,842",
+    "answer": "The excerpt does not state revenue for 2024 Q4. It only gives 2024 Q3 revenue of $8,461,842 and says that Q3 was up 4.8% on the prior quarter, but it does not provide the Q4 figure.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2024 Q4?",
+    "value": "$8,461,842",
+    "answer": "The excerpt does not state revenue for 2024 Q4. It only gives 2024 Q3 revenue of $8,461,842 and says that Q3 was up 4.8% on the prior quarter, but it does not provide the Q4 figure or enough information to derive it unambiguously from the excerpt alone.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2025 Q1?",
+    "value": "$8,266,068",
+    "answer": "The excerpts do not state revenue for 2025 Q1. They only give 2024 Q4 revenue of $8,266,068 and say ticket volume is expected to normalise next quarter, but no 2025 Q1 revenue figure is provided.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2025 Q1?",
+    "value": "$8,266,068",
+    "answer": "The excerpt only gives revenue for 2024 Q4, which was $8,266,068, and says ticket volume is expected to normalise next quarter. It does not state revenue for 2025 Q1, so that figure is missing from the provided excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2025 Q2?",
+    "value": "$9,079,542",
+    "answer": "The excerpt does not state revenue for 2025 Q2. It only gives revenue for 2025 Q1 as $9,079,542, so the 2025 Q2 figure is missing from the provided text.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2025 Q2?",
+    "value": "$9,079,542",
+    "answer": "The excerpt does not state revenue for 2025 Q2. It only gives 2025 Q1 revenue of $9,079,542 and says Q1 was up 9.8% on the prior quarter, but it does not provide the Q2 figure.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2025 Q3?",
+    "value": "$8,633,631",
+    "answer": "The excerpt only gives revenue for 2025 Q2, which was $8,633,631, and says nothing about 2025 Q3 revenue. [qbr-2025-Q2.md] Summary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2025 Q3?",
+    "value": "$8,633,631",
+    "answer": "The excerpt only gives revenue for 2025 Q2, which was $8,633,631, and says it was down 4.9% on the prior quarter. It does not state revenue for 2025 Q3, so that figure is missing from the provided excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2025 Q4?",
+    "value": "$8,896,127",
+    "answer": "The excerpt only gives revenue for 2025 Q3, which was $8,896,127, and does not mention 2025 Q4 revenue. [qbr-2025-Q3.md] Summary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), with label",
+    "question": "What was revenue in 2025 Q4?",
+    "value": "$8,896,127",
+    "answer": "The excerpt only gives revenue for 2025 Q3, which was $8,896,127, and does not mention 2025 Q4 revenue. [qbr-2025-Q3.md] Summary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2023 Q2?",
+    "value": "$7,360,834",
+    "answer": "The excerpt only gives revenue for 2023 Q1, which was $7,360,834, and says there was no prior quarter for comparison. It does not provide revenue for 2023 Q2, so that figure is missing from the excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2023 Q2?",
+    "value": "$7,360,834",
+    "answer": "The excerpt only gives revenue for 2023 Q1, which was $7,360,834, and says there was no prior quarter for comparison. It does not provide revenue for 2023 Q2, so that figure is missing from the excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2023 Q3?",
+    "value": "$7,614,049",
+    "answer": "The excerpt does not state revenue for 2023 Q3. It only gives revenue for 2023 Q2 as $7,614,049, so the 2023 Q3 figure is missing. [source]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2023 Q3?",
+    "value": "$7,614,049",
+    "answer": "The excerpt does not state revenue for 2023 Q3. It only gives revenue for 2023 Q2 as $7,614,049, so the Q3 figure is missing. [source]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2023 Q4?",
+    "value": "$7,774,027",
+    "answer": "The excerpt only gives revenue for 2023 Q3, which was $7,774,027, and says it was up 2.1% on the prior quarter. It does not state revenue for 2023 Q4, so that figure is missing from the provided excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2023 Q4?",
+    "value": "$7,774,027",
+    "answer": "The excerpt only gives revenue for 2023 Q3, which was $7,774,027, and says it was up 2.1% on the prior quarter. It does not state revenue for 2023 Q4, so that figure is missing from the excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2024 Q1?",
+    "value": "$7,699,847",
+    "answer": "The excerpt only gives revenue for 2023 Q4, which was $7,699,847, and says it was down 1.0% on the prior quarter. It does not state revenue for 2024 Q1, so that figure is missing from the excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2024 Q1?",
+    "value": "$7,699,847",
+    "answer": "The excerpt only gives revenue for 2023 Q4, which was $7,699,847, and says it was down 1.0% on the prior quarter. It does not state revenue for 2024 Q1, so that figure is missing from the excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2024 Q2?",
+    "value": "$8,062,599",
+    "answer": "The excerpt only gives revenue for 2024 Q1, which was $8,062,599, and says it was up 4.7% on the prior quarter. It does not state revenue for 2024 Q2, so that figure is missing from the excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2024 Q2?",
+    "value": "$8,062,599",
+    "answer": "The excerpt only gives revenue for 2024 Q1, which was $8,062,599, and says it was up 4.7% on the prior quarter. It does not provide revenue for 2024 Q2, so that figure is missing from the excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2024 Q3?",
+    "value": "$8,074,848",
+    "answer": "The excerpts do not state revenue for 2024 Q3. They only give revenue for 2024 Q2 as $8,074,848 and say it was up 0.2% on the prior quarter, but they do not provide the Q3 figure or enough information to derive it exactly from the excerpt alone.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2024 Q3?",
+    "value": "$8,074,848",
+    "answer": "The excerpts do not state revenue for 2024 Q3. They only give revenue for 2024 Q2 as $8,074,848, so the 2024 Q3 figure is missing.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2024 Q4?",
+    "value": "$8,461,842",
+    "answer": "The excerpts do not state revenue for 2024 Q4. They only give revenue for 2024 Q3 as $8,461,842 and say it was up 4.8% on the prior quarter, but they do not provide the Q4 figure or enough information to calculate it from the excerpt alone. [source]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2024 Q4?",
+    "value": "$8,461,842",
+    "answer": "The excerpts do not state revenue for 2024 Q4. They only give revenue for 2024 Q3 as $8,461,842 and say it was up 4.8% on the prior quarter, but they do not provide the Q4 figure.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2025 Q1?",
+    "value": "$8,266,068",
+    "answer": "The excerpts do not state revenue for 2025 Q1. They only give revenue for 2024 Q4 as $8,266,068 and say it was down 2.3% on the prior quarter, but they do not provide the 2025 Q1 figure.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2025 Q1?",
+    "value": "$8,266,068",
+    "answer": "The excerpts do not state revenue for 2025 Q1. They only give revenue for 2024 Q4 as $8,266,068 and say it was down 2.3% on the prior quarter, but they do not provide the 2025 Q1 figure.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2025 Q2?",
+    "value": "$9,079,542",
+    "answer": "The excerpts do not state revenue for 2025 Q2. They only give revenue for 2025 Q1 as $9,079,542 and say it was up 9.8% on the prior quarter, but they do not provide the Q2 figure or enough information to derive it directly from the excerpt alone.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2025 Q2?",
+    "value": "$9,079,542",
+    "answer": "The excerpts do not state revenue for 2025 Q2. They only give revenue for 2025 Q1 as $9,079,542 and say it was up 9.8% on the prior quarter, but they do not provide the Q2 figure or enough information to derive it directly from the excerpt alone.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2025 Q3?",
+    "value": "$8,633,631",
+    "answer": "The excerpt does not state revenue for 2025 Q3. It only gives revenue for 2025 Q2 as $8,633,631, so the 2025 Q3 figure is missing from the provided text. [source]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2025 Q3?",
+    "value": "$8,633,631",
+    "answer": "The excerpt does not state revenue for 2025 Q3. It only gives revenue for 2025 Q2 as $8,633,631, so the 2025 Q3 figure is missing. [source]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2025 Q4?",
+    "value": "$8,896,127",
+    "answer": "The excerpt only gives revenue for 2025 Q3, which was $8,896,127, and says nothing about 2025 Q4 revenue. [source] To answer 2025 Q4 revenue, the missing information would be a Q4 summary or revenue figure. [source]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Summary (names its quarter), no label",
+    "question": "What was revenue in 2025 Q4?",
+    "value": "$8,896,127",
+    "answer": "The excerpt only gives revenue for 2025 Q3, which was $8,896,127, and says it was up 3.0% on the prior quarter. It does not provide revenue for 2025 Q4, so that figure is missing from the excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2023 Q2?",
+    "value": "West",
+    "answer": "The excerpt only says that in Q1 2023, West was the weakest region at $948,788, but it does not provide any information about Q2. The weakest region in 2023 Q2 is therefore not stated in the excerpts.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2023 Q2?",
+    "value": "West",
+    "answer": "The excerpt only says that in Q1 2023, West was the weakest region at $948,788, but it does not provide any information about Q2. The weakest region in 2023 Q2 is therefore not stated in the excerpts.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2023 Q3?",
+    "value": "West",
+    "answer": "The excerpt only says that in Q2 2023, West was the weakest region at $1,032,749, but it does not provide any Q3 2023 regional figures. So the weakest region in 2023 Q3 cannot be determined from the supplied excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2023 Q3?",
+    "value": "West",
+    "answer": "The excerpt only says that in Q2 2023, West was the weakest region at $1,032,749, but it does not provide any Q3 2023 regional figures. So the weakest region in 2023 Q3 cannot be determined from the supplied excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2023 Q4?",
+    "value": "West",
+    "answer": "The excerpt only says that in Q3 2023, West was the weakest region at $1,030,045, but it does not provide any information about Q4 2023. So the weakest region in 2023 Q4 is not stated in the excerpts.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2023 Q4?",
+    "value": "West",
+    "answer": "The excerpt only says that in Q3 2023, West was the weakest region at $1,030,045, but it does not provide any information about Q4 2023. So the weakest region in 2023 Q4 is not stated in the excerpts.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2024 Q1?",
+    "value": "West",
+    "answer": "The excerpts only state that in the referenced commentary, West was the weakest region at $1,092,977, but they do not provide any information about 2024 Q1. [qbr-2023-Q4.md] Commentary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2024 Q1?",
+    "value": "West",
+    "answer": "The excerpts only say that in the cited period, West was the weakest region at $1,092,977, but they do not provide any information about 2024 Q1. [qbr-2023-Q4.md]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2024 Q2?",
+    "value": "West",
+    "answer": "The excerpt only states that Southwest was the strongest region and West was the weakest region, but it does so for the Q1 commentary, not Q2. It does not provide any information about which region was weakest in 2024 Q2.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2024 Q2?",
+    "value": "West",
+    "answer": "The excerpt only says that Southwest was the strongest region and West was the weakest region, but it does not mention 2024 Q2 at all. So the weakest region in 2024 Q2 is not answered by the provided excerpt.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2024 Q3?",
+    "value": "West",
+    "answer": "The excerpt only says that in Q2, West was the weakest region at $1,072,879, but it does not mention 2024 Q3. [qbr-2024-Q2.md] Commentary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2024 Q3?",
+    "value": "West",
+    "answer": "The excerpt only says that in Q2, West was the weakest region at $1,072,879, but it does not provide any 2024 Q3 regional figures or identify the weakest region for Q3. [qbr-2024-Q2.md]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2024 Q4?",
+    "value": "Midwest",
+    "answer": "The excerpt only states that Southwest was the strongest region and Midwest was the weakest region, but it does not mention 2024 Q4. [qbr-2024-Q3.md] Commentary The weakest region in the provided excerpt is Midwest at $1,061,883. [qbr-2024-Q3.md] Commentary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2024 Q4?",
+    "value": "Midwest",
+    "answer": "The excerpt only states that in the referenced period Southwest was the strongest region at $2,607,943 and Midwest was the weakest at $1,061,883, but it does not mention 2024 Q4. So the weakest region in 2024 Q4 is not answered by the provided excerpt. [qbr-2024-Q3.md]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2025 Q1?",
+    "value": "Midwest",
+    "answer": "The excerpts only say that Southwest was the strongest region at $2,565,933 and Midwest was the weakest at $994,594, but they do not mention 2025 Q1. So the weakest region in 2025 Q1 is not stated in the provided excerpts.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2025 Q1?",
+    "value": "Midwest",
+    "answer": "The excerpts only state that Midwest was the weakest region at $994,594, but they do not mention 2025 Q1. So the weakest region in 2025 Q1 is not provided in the excerpts.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2025 Q2?",
+    "value": "Midwest",
+    "answer": "The excerpts only state that in Q1 2025 the Midwest was the weakest region at $1,165,398, but they do not provide any Q2 regional results. [qbr-2025-Q1.md] Commentary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2025 Q2?",
+    "value": "Midwest",
+    "answer": "The excerpt only states that in the commentary Southwest was the strongest region at $2,699,016 and Midwest was the weakest at $1,165,398, but it does not mention 2025 Q2. So I can\u2019t determine which region was weakest in 2025 Q2 from the provided excerpt. [qbr-2025-Q1.md]",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2025 Q3?",
+    "value": "Midwest",
+    "answer": "The excerpt only states that Midwest was the weakest region, but it gives that figure for the commentary shown and does not identify it as 2025 Q3. It does not answer which region was weakest in 2025 Q3 specifically.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2025 Q3?",
+    "value": "Midwest",
+    "answer": "The excerpt only states that Southwest was the strongest region and Midwest was the weakest region, but it does not mention 2025 Q3 specifically. It therefore does not answer which region was weakest in 2025 Q3.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2025 Q4?",
+    "value": "Midwest",
+    "answer": "The excerpt only says that in the referenced period, Midwest was the weakest region at $1,131,394, but it does not mention 2025 Q4. It therefore does not answer which region was weakest in 2025 Q4.",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), with label",
+    "question": "Which region was weakest in 2025 Q4?",
+    "value": "Midwest",
+    "answer": "The excerpt only says that in the referenced quarter, Midwest was the weakest region at $1,131,394, but it does not provide any information about 2025 Q4. [qbr-2025-Q3.md] Commentary",
+    "answered_from_it": false
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2023 Q2?",
+    "value": "West",
+    "answer": "West was the weakest region in 2023 Q2 at $948,788. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2023 Q2?",
+    "value": "West",
+    "answer": "West was the weakest region in 2023 Q2 at $948,788. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2023 Q3?",
+    "value": "West",
+    "answer": "West was the weakest region in 2023 Q3 at $1,032,749. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2023 Q3?",
+    "value": "West",
+    "answer": "West was the weakest region in 2023 Q3 at $1,032,749. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2023 Q4?",
+    "value": "West",
+    "answer": "West was the weakest region in 2023 Q4 at $1,030,045. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2023 Q4?",
+    "value": "West",
+    "answer": "West was the weakest region in 2023 Q4 at $1,030,045. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2024 Q1?",
+    "value": "West",
+    "answer": "West was the weakest region in 2024 Q1 at $1,092,977. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2024 Q1?",
+    "value": "West",
+    "answer": "West was the weakest region in 2024 Q1 at $1,092,977. [source] The excerpt also says Midwest was the strongest region at $2,081,808. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2024 Q2?",
+    "value": "West",
+    "answer": "West was the weakest region in 2024 Q2 at $1,102,755. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2024 Q2?",
+    "value": "West",
+    "answer": "West was the weakest region in 2024 Q2 at $1,102,755. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2024 Q3?",
+    "value": "West",
+    "answer": "West was the weakest region in 2024 Q3 at $1,072,879. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2024 Q3?",
+    "value": "West",
+    "answer": "West was the weakest region in 2024 Q3 at $1,072,879. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2024 Q4?",
+    "value": "Midwest",
+    "answer": "The Midwest was the weakest region in 2024 Q4 at $1,061,883. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2024 Q4?",
+    "value": "Midwest",
+    "answer": "The Midwest was the weakest region in 2024 Q4 at $1,061,883. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2025 Q1?",
+    "value": "Midwest",
+    "answer": "The Midwest was the weakest region in 2025 Q1 at $994,594. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2025 Q1?",
+    "value": "Midwest",
+    "answer": "The Midwest was the weakest region in 2025 Q1 at $994,594. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2025 Q2?",
+    "value": "Midwest",
+    "answer": "The Midwest was the weakest region in 2025 Q2 at $1,165,398. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2025 Q2?",
+    "value": "Midwest",
+    "answer": "The Midwest was the weakest region in 2025 Q2 at $1,165,398. [source] The excerpt also says Southwest was the strongest region at $2,699,016. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2025 Q3?",
+    "value": "Midwest",
+    "answer": "The Midwest was the weakest region in 2025 Q3 at $1,091,847. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2025 Q3?",
+    "value": "Midwest",
+    "answer": "The Midwest was the weakest region in 2025 Q3 at $1,091,847. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2025 Q4?",
+    "value": "Midwest",
+    "answer": "The weakest region in 2025 Q4 was the Midwest, at $1,131,394. [source]",
+    "answered_from_it": true
+  },
+  {
+    "excerpt": "Commentary (does not), no label",
+    "question": "Which region was weakest in 2025 Q4?",
+    "value": "Midwest",
+    "answer": "The weakest region in 2025 Q4 was the Midwest, at $1,131,394. [source]",
+    "answered_from_it": true
+  }
+]

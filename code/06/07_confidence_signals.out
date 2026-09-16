@@ -1,0 +1,10 @@
+200 tickets; the model alone is right on 156
+
+  confident when                 automated  right when confident  right when unsure  cost / 1,000
+  probability ≥ 0.999                  90%                 86.1%               5.0%          $849
+  rules agree                          76%                100.0%               8.3%          $238
+  a second sample agrees              100%                 78.0%                  —        $1,320
+  a reworded prompt agrees            100%                 78.0%                  —        $1,320
+  rules and reworded both agree        76%                100.0%               8.3%          $238
+
+  for comparison: automate everything $1,320, review everything $990

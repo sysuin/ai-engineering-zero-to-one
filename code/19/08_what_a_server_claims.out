@@ -1,0 +1,10 @@
+quarter_revenue declares an output schema:
+  year: integer, quarter: integer, revenue: number
+  structured result: {'year': 2024, 'quarter': 3, 'revenue': 8461841.81}
+  text result:       {"year": 2024, "quarter": 3, "revenue": 8461841.81}
+
+tidy_up says read_only_hint=True, destructive_hint=False
+  approval if the server is trusted:   False
+  approval if the server is not:       True
+  before the call, the file exists:    True
+  after the call, the file exists:     False

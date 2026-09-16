@@ -2,9 +2,9 @@
 """
 A balanced set of answers with labels nobody has to argue about.
 
-Chapter 21's run produced 110 correct answers out of 120, which is a fine result and a
-useless calibration set: a judge that says CORRECT to everything scores 92%, and kappa
-on ten negatives is a rumour.
+Chapter 21's run gets roughly nine answers in ten right, which is a fine result and a
+useless calibration set: a judge that says CORRECT to everything scores about 90%, and
+kappa on a dozen negatives is a rumour.
 
 So we build the negatives. Each one takes a real Clarity answer and breaks exactly one
 thing — the figure, or the named entity — leaving the prose, the length and the
@@ -36,7 +36,7 @@ PADDING = (
     " For context, Meridian Supply Co. is a distributor operating across five "
     "regions, and its quarterly business reviews are prepared by Commercial "
     "Analytics and classified as internal management reporting. The reviews are "
-    "not audited. Figures are stated gross of discount and exclude tax and freight, "
+    "not audited. Figures are stated net of line discounts and exclude tax and freight, "
     "and the standing gross margin target across the business is 32.0%.")
 
 ENTITIES = ["Halloway Group", "Voss Industrial", "Pemberton Mills", "Midwest",

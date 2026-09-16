@@ -1,0 +1,8 @@
+150 tickets; kind matches the label on 125 (83%)
+
+  kind      tickets  id in text  id extracted  wrong id
+  Delivery       42          24            24         1
+  Billing        37          18            18         0
+  Quality        40          40            40         0
+
+Example: {'issue': {'kind': 'Delivery', 'order_number': '25095'}}

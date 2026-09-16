@@ -10,7 +10,7 @@ anybody who has seen one before.
     1  a question answered from documents         it works
     2  a question answered from the warehouse     numbers come from SQL, not prose
     3  a question it refuses                      it knows what it does not know
-    4  an injected instruction, ignored           §29's guard, live
+    4  an injected instruction, not obeyed        and why §29 does not rely on that
     5  the same question again                    the cache, and what it saves
     6  the trace                                  every step, timed and attributable
 

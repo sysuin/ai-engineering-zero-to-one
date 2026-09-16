@@ -1,0 +1,12 @@
+1. Reason or verdict first: 215 labelled answers, reference judge
+
+  order               agrees  no verdict
+  reason first       213/215           0
+  verdict first      214/215           0
+
+2. Naming the version: 79 pairs of correct answers, each in both positions
+
+  labels                         plain wins terse wins   tie
+  no labels                         119/158      2/158    37
+  plain answer labelled new         131/158      0/158    27
+  terse answer labelled new         107/158      8/158    43

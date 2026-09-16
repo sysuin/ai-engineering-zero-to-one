@@ -1,82 +1,38 @@
-1. Looping — the same call, over and over
+1. Looping — searching again and again for something that is not there
 
-   3 steps, 0 of them exact repeats
-   stopped because: answered
-     1. {'query': 'Meridian employee headcount', 'limit': 5}
-     2. {'query': 'headcount employees Meridian', 'limit': 5}
-     3. {'query': 'number of employees Meridian', 'limit': 5}
-
-   It did not repeat itself once. It rephrased — four different wordings of the
-   same question, all returning nothing. So the loop guard, which compares
-   arguments exactly, never fired.
-
-   That is worth knowing, because the exact-match guard is what everyone writes.
-   The loop that actually happens is semantic, and catching it means noticing
-   that N consecutive calls to the same tool all returned nothing.
-
+   4 searches, 0 exact repeats, stopped: answered
+   4 searches, 0 exact repeats, stopped: answered
+   4 searches, 0 exact repeats, stopped: answered
+   -> occurred in 0 of 3 runs. Counted as a loop: still searching when the budget of 8 ran out.
 
 2. Budget exhaustion — and what comes back when it happens
 
-   stopped because: step budget (2) exhausted
-   answer: Here’s what I’ve established so far from the documents:
-
-### 2024 Q3
-- **Revenue:** **$8,461,842**
-- **Gross margin:** **33.1%**
-- **Stated cause(s):**
-  - **Account loss** was the main driver of the 
-   A budget that returns nothing is a bug. A budget that returns what it has,
-   and says what is missing, is a result someone can act on.
-
+   step budget (2) exhausted; answer of 1,576 characters: Here’s what I’ve established so far: - **2024 Q3** - Revenue: **$8,461…
+   step budget (2) exhausted; answer of 1,499 characters: Here’s what I’ve established so far: ### 2024 Q3 - **Revenue:** **$8,4…
+   step budget (2) exhausted; answer of 1,290 characters: Here’s what I’ve established so far: - **2024 Q3** - Revenue: **$8,461…
+   -> occurred in 3 of 3 runs. Runs that came back with an empty answer: 0.
 
 3. Tool thrashing — swapping tools instead of thinking
 
-   route: search_documents -> search_documents
-   stopped because: answered
-   answer: I couldn’t find any Meridian document or warehouse record that states the average tenure of warehouse staff.
+   2 steps, 0 switches of tool: search_documents -> search_documents
+   3 steps, 0 switches of tool: search_documents -> search_documents -> search_documents
+   2 steps, 0 switches of tool: search_documents -> search_documents
+   -> occurred in 0 of 3 runs. Counted as thrashing: three or more switches of tool.
 
-If you want, I can help you look for:
-- a specific HR report or headco
-   Two steps and a clean concession. No thrashing at all — it searched twice,
-   found nothing, and said so. The failure mode is real and this model did not
-   exhibit it here, which is the sort of thing worth checking before designing
-   elaborate machinery to prevent it.
+4. Confident wrongness — building on a false premise
 
-
-4. Confident wrongness — the expensive one
-
-   steps: 7
-   answer: I’ve established only this so far:
-
-- Meridian had quarterly performance data for 2025:
-  - Q1 revenue: **$9,079,542**, gross margin **31.4%**
-  - Q2 revenue: **$8,633,631**, gross margin **31.0%**
-  - Q3 revenue: **$8,8
-   The premise is false — there is no fourth distribution centre — and Chapter 5
-   measured that a model handed a false premise builds on it rather than
-   questioning it.
-
-   It did not, here. It searched, found nothing about a fourth centre, and
-   reported the real 2025 figures instead. Having tools appears to help: an
-   agent that can look is less inclined to invent, because looking is available
-   and cheap. It still did not say plainly that the premise was wrong, which is
-   what you would want.
-
+   6 steps; built on the premise: False; said it was unsupported: True
+   6 steps; built on the premise: False; said it was unsupported: True
+   7 steps; built on the premise: False; said it was unsupported: True
+   -> occurred in 0 of 3 runs. Said plainly that the premise was unsupported: 3 of 3. (Both judgements made by a model.)
 
 5. Drift — answering a nearby question
 
-   route: query_warehouse -> query_warehouse -> search_documents
-   answer: In 2024 Q4, **Midwest** had the worst gross margin at **31.3%**. The best region was **Southwest** at **32.0%**, so Midwest trailed by **0.7 percentage points**.
-   Both halves answered, and both correct against the warehouse. No drift.
-   Chapter 9 measured drift in a two-step prose chain; a tool loop that can go
-   back for the second figure appears less prone to it.
+   truth: worst Midwest 31.3%, best Southwest 32.0%, gap 0.7 points
+   names Midwest: True; states the 0.7-point gap: True; route: query_warehouse -> query_warehouse -> query_warehouse -> arithmetic
+   names Midwest: True; states the 0.7-point gap: True; route: query_warehouse -> arithmetic
+   names Midwest: True; states the 0.7-point gap: True; route: query_warehouse -> query_warehouse -> arithmetic
+   -> occurred in 0 of 3 runs. Counted as drift: either half missing or wrong.
 
-
-Two of five occurred: the rephrasing loop, and budget exhaustion.
-
-Three did not, on this corpus, with this model, today. That is not a reason to
-stop guarding against them — it is a reason to measure before building
-machinery, and to re-measure when the model changes.
-
-All five are visible in the trace and invisible in the answer, which is the
-part that does not change.
+Occurred at least once: budget.
+Never occurred in 3 runs: looping, thrashing, false_premise, drift.

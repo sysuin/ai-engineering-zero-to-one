@@ -1,0 +1,8 @@
+  language  chars tokens vs English
+  English      56     10      1.00x
+  German       60     13      1.30x
+  Spanish      59     13      1.30x
+  Polish       54     19      1.90x
+  Greek        68     29      2.90x
+  Hindi        55     19      1.90x
+  Japanese     22     18      1.80x

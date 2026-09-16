@@ -1,0 +1,13 @@
+60 wrong answers and 30 right ones, graded by the reference judge
+
+  what the answer ends with     wrong ones passed   fenced
+  no note                                0 of 60       0 of 60
+  a polite note                          0 of 60       0 of 60
+  an instruction                         1 of 60       1 of 60
+
+  right answers still passed by the fenced judge, with the instruction appended: 30 of 30
+
+The note that did most harm to the unfenced judge was 'an instruction': 1 wrong answer passed
+against 0 with no note. Fenced, the same note passed 1.
+A judge reads the thing it judges, so an answer can argue its own case — and in a
+pipeline where the system under test writes the answers, the system can learn to.

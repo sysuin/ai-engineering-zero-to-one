@@ -1,0 +1,12 @@
+43 turns of history; the facts that matter are in the first 3
+
+  strategy                 tokens  account  quarter  unit
+  keep everything             945      3/3      3/3   3/3
+  last 10 turns               248      0/3      0/3   0/3
+  summary + last 10           315      3/3      3/3   3/3
+  typed state + last 10       279      3/3      3/3   3/3
+
+  keep everything          'Halloway Group | Comparison vs 2024 Q2 | $000s'
+  last 10 turns            'Account comparison for [Quarter] in [Currency]'
+  summary + last 10        'Halloway Group Midwest | vs 2024 Q2 | $000s'
+  typed state + last 10    'Halloway Group, Midwest — 2024 Q2 comparison — thousands of do'

@@ -48,7 +48,7 @@ rank, score = where_is_the_answer(QUESTION, "Revenue for 2024 Q3 was")
 print(f"\n  The chunk containing the answer is at rank {rank} ({score:.3f}).")
 print("  Every quarterly review has a Summary section worded almost identically, so")
 print("  the embedding recognises 'a revenue summary' perfectly and cannot tell which")
-print("  quarter. Eight other quarters outrank the right one.")
+print(f"  quarter. {rank - 1} other chunks outrank the right one.")
 print("  Fix: metadata filtering and hybrid search — Chapter 14. Not a better prompt.")
 
 print("\n\nFailure 2 — the question had two parts and retrieval served one\n")
@@ -60,12 +60,11 @@ answer = (client.chat.completions.create(
     messages=[{"role": "user", "content":
                f"<excerpts>\n{context}\n</excerpts>\n\n{QUESTION}"}],
 ).choices[0].message.content or "").strip()
-print(f"  retrieved: {[c['heading'][:22] for c, _ in excerpts]}")
+headings = {c["heading"] for c, _ in excerpts}
+print(f"  retrieved: {len(excerpts)} chunks from {len({c['source'] for c, _ in excerpts})} "
+      f"documents, headed {sorted(h[:26] for h in headings)}")
+print(f"  a payment clause among them: {any(h.startswith('3.') for h in headings)}")
 print(f"  answer:    {answer[:200]}")
-print("  All five retrieved chunks are clause 2, from five different contracts. The")
-print("  payment clause was never returned, so half the question is unanswerable from")
-print("  what was sent — and the model correctly says so for that half while answering")
-print("  the other confidently.")
 print("  One retrieval, one embedding, one ranking: a two-part question competes with")
 print("  itself, and the stronger half wins.")
 print("  Fix: decompose the question and retrieve per part — Chapter 9's pattern,")
@@ -78,11 +77,14 @@ print(f"  retrieved from {len({c['source'] for c, _ in excerpts})} different con
 for chunk, score in excerpts:
     caps = [w for w in chunk["text"].split() if w.endswith("%")]
     print(f"    {score:.3f}  {chunk.get('ref', chunk['source'])[:18]:20} caps: {caps[:3]}")
-print("  The question has no single answer: forty contracts have forty caps. A system")
-print("  that answers it has silently picked one.")
+clause_2 = [c["text"] for c in chunks if c["kind"] == "contract" and c["heading"].startswith("2.")]
+caps = {w.strip(",.") for text in clause_2 for w in text.split() if w.rstrip(",.").endswith("%")}
+print(f"  The question has no single answer: {len(clause_2)} contracts state {len(caps)} "
+      f"different caps between them.")
+print("  A system that answers it has silently picked one.")
 print("  Fix: the question needs a filter. Chapter 14 rewrites queries that lack one.")
 
-print("\n\nFailure 4 — nothing relevant exists and it answers anyway\n")
+print("\n\nFailure 4 — nothing relevant exists\n")
 QUESTION = "How many people work at the Columbus depot?"
 excerpts = retrieve(QUESTION, 3)
 context = "\n\n".join(f"[{c['source']}] {c['text']}" for c, _ in excerpts)
@@ -105,4 +107,4 @@ print("  2. If so, was its chunk retrieved?")
 print("  3. If so, did the model use it?")
 print()
 print("Each answer points at a different fix, and you cannot tell them apart by")
-print("reading the output. This is why Chapter 20 logs what was retrieved.")
+print("reading the output. This is why Chapter 23 logs what was retrieved.")

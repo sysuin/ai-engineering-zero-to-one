@@ -40,5 +40,5 @@ Three that never do:
 
 If you need the text to debug — and sometimes you do — put it somewhere with
 its own retention and its own access list, and put the *pointer* on the span.
-§24.2 builds that, because reproducing a bad run needs the input and the trace
+§24.3 builds that, because reproducing a bad run needs the input and the trace
 is the wrong place to keep it.

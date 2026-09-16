@@ -42,7 +42,7 @@ class Base(DeclarativeBase):
 class Document(Base):
     __tablename__ = "documents"
     id: Mapped[str] = mapped_column(String(36), primary_key=True, default=_id)
-    # Every row in every table carries this. Chapter 26 enforces it; the schema has
+    # Every table carries this. Chapter 26 shows how to enforce it; the schema has
     # to make it possible, and retrofitting a tenant column to a live system is a
     # migration nobody enjoys.
     tenant: Mapped[str] = mapped_column(String(64), index=True)

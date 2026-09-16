@@ -1,6 +1,6 @@
 {
  "no fallback": {
-  "seconds": 0.20239762500023062,
+  "seconds": 0.20509558300182107,
   "answered": false,
   "attempts": [
    [
@@ -10,7 +10,7 @@
   ]
  },
  "with fallback": {
-  "seconds": 1.118006292001155,
+  "seconds": 2.5625947920016188,
   "answered": true,
   "attempts": [
    [
@@ -25,7 +25,7 @@
   "answered_by": "openai"
  },
  "breaker over ten": {
-  "seconds": 12.274890541999412,
+  "seconds": 11.890715666999313,
   "primary_calls": 3,
   "trips": 2
  }

@@ -8,7 +8,7 @@ complicated, the object was the wrong shape.
 
 Three routes, and each one is a different promise:
 
-    GET  /health        the process is up. Nothing more. §26.9's distinction.
+    GET  /health        the process is up. Nothing more. §26.10's distinction.
     POST /ask           a question, an answer, and everything needed to defend it
     POST /ask/stream    the same work, visible while it happens
 """
@@ -61,7 +61,7 @@ def build_app(engine: Clarity | None = None) -> FastAPI:
 
     @app.get("/health")
     def health() -> dict:
-        """Liveness, not readiness. §26.9: the difference between the two is the
+        """Liveness, not readiness. §26.10: the difference between the two is the
         difference between a restart and a rebalance."""
         return {"status": "ok", "version": app.version}
 
@@ -72,7 +72,7 @@ def build_app(engine: Clarity | None = None) -> FastAPI:
         try:
             # The engine is synchronous and spends seconds waiting. Calling it from an
             # async endpoint without this blocks the event loop for every other request
-            # in the process — §25.7 measures how much.
+            # in the process — §25.9 measures how much.
             answer = await asyncio.to_thread(clarity().ask, body.question)
         except Open:
             # The bulkhead is full. This is load shedding working, not an error: a 503

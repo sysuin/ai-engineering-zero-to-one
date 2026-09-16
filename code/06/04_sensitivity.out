@@ -1,0 +1,17 @@
+base case: payback 0.52 years
+
+  input moved by ±50%           low     high   swing
+  minutes per ticket          0.31y    1.52y   ████████████████████████████████████████
+  hourly rate ($)             0.31y    1.52y   ████████████████████████████████████████
+  tickets per year            0.35y    1.04y   ████████████████████████████
+  share handled (0-1)         0.42y    1.04y   █████████████████████████
+  build days                  0.26y    0.78y   █████████████████████
+  errors per 100 handled      0.45y    0.62y   ███████
+  cost of an error ($)        0.45y    0.62y   ███████
+
+moves the answer most: minutes per ticket and hourly rate ($) — tied, because payback depends on their product
+
+at 10 errors per 100 handled, payback is 1.00 years, and:
+  errors per 100 handled x0.5: 0.56 years
+  errors per 100 handled x1.5: 4.25 years
+  minutes per ticket x0.5: never pays back

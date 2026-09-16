@@ -7,7 +7,7 @@ session a thread of its own and talk to it across that boundary.
 
 What comes back is a list of the same `Tool` objects Chapter 16 defined, so nothing
 upstream can tell whether a tool is a local function or a process on another machine.
-That is the point of a protocol, and it is also the danger — §19.11 measures what
+That is the point of a protocol, and it is also the danger — §19.12 measures what
 happens when the thing on the other end is not friendly.
 """
 from __future__ import annotations

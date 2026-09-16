@@ -1,0 +1,6 @@
+{
+ "before-and-after": 0.999,
+ "difference-in-differences": 0.027,
+ "pilot chosen at random": 0.102,
+ "pilot chosen as the worst": 0.437
+}

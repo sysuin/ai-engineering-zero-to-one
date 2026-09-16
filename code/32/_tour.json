@@ -1,195 +1,236 @@
 {
- "files": 31,
- "total": 3215,
- "platform": 811,
- "evals": 355,
- "answering": 2049,
+ "repository": {
+  "files": 31,
+  "total": 3314,
+  "platform": 820,
+  "evals": 354,
+  "answering": 2140
+ },
+ "running": {
+  "files": 17,
+  "total": 1887,
+  "platform": 486,
+  "evals": 277,
+  "answering": 1124
+ },
+ "unused_platform": 334,
  "rows": [
   {
    "file": "clarity/config.py",
    "chapter": 4,
-   "lines": 75,
-   "summary": "Every setting in one place \u2014 and the only place in this book that names a model."
+   "lines": 77,
+   "summary": "Every setting in one place \u2014 and the only place in this book that names a model.",
+   "runs": true
   },
   {
    "file": "clarity/v0_1/summarize.py",
    "chapter": 4,
    "lines": 52,
-   "summary": "summarise one Meridian document from the command line."
+   "summary": "summarise one Meridian document from the command line.",
+   "runs": false
   },
   {
    "file": "clarity/prompts/__init__.py",
    "chapter": 7,
    "lines": 46,
-   "summary": "Prompts live in files, not in code."
+   "summary": "Prompts live in files, not in code.",
+   "runs": false
   },
   {
    "file": "clarity/v0_3/extract.py",
    "chapter": 7,
    "lines": 83,
-   "summary": "turn a Meridian quarterly review into a validated record."
+   "summary": "turn a Meridian quarterly review into a validated record.",
+   "runs": false
   },
   {
    "file": "clarity/v0_4/longdoc.py",
    "chapter": 8,
    "lines": 112,
-   "summary": "reading a document that is too large to send economically."
+   "summary": "reading a document that is too large to send economically.",
+   "runs": false
   },
   {
    "file": "clarity/v0_5/rag.py",
    "chapter": 13,
    "lines": 103,
-   "summary": "the whole retrieval pipeline, end to end."
+   "summary": "the whole retrieval pipeline, end to end.",
+   "runs": false
   },
   {
    "file": "clarity/v0_6/retrieve.py",
    "chapter": 14,
-   "lines": 150,
-   "summary": "retrieval that earns its keep."
+   "lines": 153,
+   "summary": "retrieval that earns its keep.",
+   "runs": true
   },
   {
    "file": "clarity/v0_7/warehouse.py",
    "chapter": 15,
    "lines": 136,
-   "summary": "answering numeric questions without the model writing SQL."
+   "summary": "answering numeric questions without the model writing SQL.",
+   "runs": true
   },
   {
    "file": "clarity/v0_8/tools.py",
    "chapter": 16,
-   "lines": 187,
-   "summary": "the tools, and the loop that runs them."
+   "lines": 223,
+   "summary": "the tools, and the loop that runs them.",
+   "runs": true
   },
   {
    "file": "clarity/v0_9/agent.py",
    "chapter": 17,
-   "lines": 149,
-   "summary": "the loop, with the four things that make it safe to run."
+   "lines": 154,
+   "summary": "the loop, with the four things that make it safe to run.",
+   "runs": true
   },
   {
    "file": "clarity/v0_10/graph.py",
    "chapter": 18,
-   "lines": 146,
-   "summary": "the same agent, as a graph."
+   "lines": 172,
+   "summary": "the same agent, as a graph.",
+   "runs": false
   },
   {
    "file": "clarity/v0_11/mcp_client.py",
    "chapter": 19,
    "lines": 73,
-   "summary": "consuming an MCP server from ordinary synchronous code."
+   "summary": "consuming an MCP server from ordinary synchronous code.",
+   "runs": false
   },
   {
    "file": "clarity/v0_11/mcp_server.py",
    "chapter": 19,
    "lines": 77,
-   "summary": "the same tools, behind a protocol."
+   "summary": "the same tools, behind a protocol.",
+   "runs": false
   },
   {
    "file": "clarity/v0_12/team.py",
    "chapter": 20,
    "lines": 92,
-   "summary": "a supervisor, a researcher and an analyst."
+   "summary": "a supervisor, a researcher and an analyst.",
+   "runs": false
   },
   {
    "file": "clarity/evals/judge.py",
    "chapter": 21,
-   "lines": 87,
-   "summary": "Clarity's judges: a model grading a model."
+   "lines": 86,
+   "summary": "Clarity's judges: a model grading a model.",
+   "runs": true
   },
   {
    "file": "clarity/evals/redteam/__init__.py",
    "chapter": 21,
    "lines": 77,
-   "summary": "the red-team suite."
+   "summary": "the red-team suite.",
+   "runs": false
   },
   {
    "file": "clarity/evals/runner.py",
    "chapter": 21,
    "lines": 78,
-   "summary": "Clarity's eval harness: run the golden set, score it, and say where it hurts."
+   "summary": "Clarity's eval harness: run the golden set, score it, and say where it hurts.",
+   "runs": true
   },
   {
    "file": "clarity/evals/suite.py",
    "chapter": 21,
    "lines": 113,
-   "summary": "the six-layer suite."
+   "summary": "the six-layer suite.",
+   "runs": true
   },
   {
    "file": "clarity/platform/cache.py",
    "chapter": 23,
    "lines": 78,
-   "summary": "three layers of cache, and one of them is dangerous."
+   "summary": "three layers of cache, and one of them is dangerous.",
+   "runs": true
   },
   {
    "file": "clarity/platform/gateway.py",
    "chapter": 23,
-   "lines": 160,
-   "summary": "one interface, many providers."
+   "lines": 163,
+   "summary": "one interface, many providers.",
+   "runs": false
   },
   {
    "file": "clarity/platform/guard.py",
    "chapter": 23,
-   "lines": 60,
-   "summary": "the defences that do not depend on the model noticing."
+   "lines": 66,
+   "summary": "the defences that do not depend on the model noticing.",
+   "runs": true
   },
   {
    "file": "clarity/platform/instrumented.py",
    "chapter": 23,
    "lines": 104,
-   "summary": "the same system, wrapped in spans."
+   "summary": "the same system, wrapped in spans.",
+   "runs": true
   },
   {
    "file": "clarity/platform/replay.py",
    "chapter": 23,
    "lines": 171,
-   "summary": "record a run once, replay it for nothing."
+   "summary": "record a run once, replay it for nothing.",
+   "runs": false
   },
   {
    "file": "clarity/platform/resilience.py",
    "chapter": 23,
    "lines": 91,
-   "summary": "the four patterns that keep one bad dependency from becoming an outage."
+   "summary": "the four patterns that keep one bad dependency from becoming an outage.",
+   "runs": true
   },
   {
    "file": "clarity/platform/tracing.py",
    "chapter": 23,
    "lines": 147,
-   "summary": "tracing, in the vendor-neutral format."
+   "summary": "tracing, in the vendor-neutral format.",
+   "runs": true
   },
   {
    "file": "clarity/v0_17/service.py",
    "chapter": 25,
-   "lines": 105,
-   "summary": "the engine, behind HTTP."
+   "lines": 122,
+   "summary": "the engine, behind HTTP.",
+   "runs": false
   },
   {
    "file": "clarity/v0_17/store.py",
    "chapter": 25,
    "lines": 84,
-   "summary": "the data layer, and what belongs in it."
+   "summary": "the data layer, and what belongs in it.",
+   "runs": false
   },
   {
    "file": "clarity/v1_0/clarity.py",
    "chapter": 32,
-   "lines": 147,
-   "summary": "every chapter, in one object."
+   "lines": 149,
+   "summary": "every chapter, in one object.",
+   "runs": true
   },
   {
    "file": "clarity/v1_0/cli.py",
    "chapter": 32,
    "lines": 65,
-   "summary": "the command line."
+   "summary": "the command line.",
+   "runs": true
   },
   {
    "file": "clarity/v1_0/demo.py",
    "chapter": 32,
    "lines": 64,
-   "summary": "The eight-minute demonstration."
+   "summary": "The eight-minute demonstration.",
+   "runs": true
   },
   {
    "file": "clarity/v1_0/service.py",
    "chapter": 32,
    "lines": 103,
-   "summary": "the front door."
+   "summary": "the front door.",
+   "runs": true
   }
  ]
 }

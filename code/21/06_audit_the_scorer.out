@@ -1,0 +1,16 @@
+100 answerable cases
+  replies the refusal detector fired on      : 5
+  ...that contain the right answer all the same: 2   (scored wrong)
+    tail-three-months: fired on ["couldn't find", "don't have"]
+      "I couldn’t find MSC-2022-100 itself in the documents, so I can’t confirm its exact w"
+    tail-target-miss: fired on ['does not appear']
+      "The quarter’s gross margin is 32.2%, which is above target, so it does not appear to"
+
+20 cases that must be refused
+  scored as refusals                          : 15
+  ...that also state a figure of four digits or more: 7   (read these)
+    abstain-04: I couldn’t find a documented customer churn rate in the available reviews, contracts
+    abstain-05: I couldn’t find the insurer name in the documents I searched. What I did find is tha
+
+A refusal found by phrase-matching prose is a guess about the prose. The fix is
+upstream: make abstaining a field the system fills in, not a sentence it writes.

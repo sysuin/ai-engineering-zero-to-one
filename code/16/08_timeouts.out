@@ -1,0 +1,6 @@
+a tool that takes 3s, called with a 0.5s timeout
+
+  with-block            'timed out' after 3.01s   threads still running: 0
+  shutdown(wait=False)  'timed out' after 0.50s   threads still running: 1
+
+Both report a timeout. Only one returned when it said it would.

@@ -1,0 +1,38 @@
+How much was left for a reranker: recall at each depth
+
+       @1     @3     @5    @10    @25    @50
+      70%    77%    80%    87%    93%   100%
+
+  a reranker over the top 25 could win at most 4;
+  2 have no answering chunk in the 25 to promote
+
+Several phrasings: 75 distinct rewrites for 30 questions
+  (the model repeated the question as a 'rewrite' for 15 of them)
+
+  recall@5                        all  plain near-d identi paraph ticket obscur
+  dense, the question             77%    83%    50%    50%   100%   100%   100%
+  dense, question + rewrites      77%    83%    50%    50%   100%   100%   100%
+  hybrid, the question            80%   100%    50%    50%   100%   100%   100%
+  hybrid, question + rewrites     83%   100%    67%    50%   100%   100%   100%
+  hybrid, the rewrites only       83%   100%    67%    50%   100%   100%   100%
+
+  the 6 questions the hybrid missed, and which variant answered them
+                                                         + rewrites  only
+    near- What was total revenue in 2024 Q3?                    yes   yes
+    near- Which region was weakest in 2023 Q3?                    -     -
+    near- What was revenue by category in 2025 Q2?                -     -
+    ident What is the price adjustment cap in agreement           -     -
+    ident What are the payment terms in MSC-2023-109?             -     -
+    ident What is the liability cap in MSC-2024-118?              -     -
+  questions the hybrid answered and question + rewrites did not: 0
+  questions the hybrid answered and rewrites only did not: 0
+
+  the same, generating the rewrites again (recall@5 on each of three runs)
+    hybrid, question + rewrites      83%   80%   80%
+    hybrid, the rewrites only        83%   83%   83%
+    repeated the question             15    15    14
+
+  what the model returned for 'What was total revenue in 2024 Q3?':
+    What was total revenue in 2024 Q3?   (the question again: dropped)
+    What was the total revenue for 2024 Q3?
+    How much total revenue was reported in 2024 Q3?

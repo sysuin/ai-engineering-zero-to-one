@@ -2,28 +2,46 @@
  "runs": 12,
  "rows": [
   {
-   "asked": "According to the company documents, what reason is given for the Midwest falling in 2024 Q3?",
+   "asked": "According to the company's documents, what reason does the company give for the Midwest falling in 2024 Q3?",
    "asked_named_period": true,
    "researcher_found": true,
    "final_has_it": true
   },
   {
-   "asked": "According to the company documents, what reason is given for the Midwest falling?",
+   "asked": "According to the company's documents, what reason does the company give for the Midwest falling? Please quote or summarize the stated reason.",
    "asked_named_period": false,
-   "researcher_found": false,
-   "final_has_it": false
-  },
-  {
-   "asked": "According to the company documents, what reason is given for the Midwest falling?",
-   "asked_named_period": false,
-   "researcher_found": false,
-   "final_has_it": false
-  },
-  {
-   "asked": "According to the company documents, what reason does the company give for the Midwest falling in 2024 Q3? Please quote or paraphrase the stated reason only.",
-   "asked_named_period": true,
    "researcher_found": true,
    "final_has_it": true
+  },
+  {
+   "asked": "According to the company's documents, what reason does the company give for the Midwest falling? Please quote or paraphrase the stated reason only.",
+   "asked_named_period": false,
+   "researcher_found": true,
+   "final_has_it": true
+  },
+  {
+   "asked": "According to the company's documents, what reason does the company give for the Midwest falling? Please quote or paraphrase the stated reason only.",
+   "asked_named_period": false,
+   "researcher_found": true,
+   "final_has_it": true
+  },
+  {
+   "asked": "According to the company's documents, what reason does the company give for the Midwest falling? Please quote or paraphrase the stated reason only.",
+   "asked_named_period": false,
+   "researcher_found": true,
+   "final_has_it": true
+  },
+  {
+   "asked": "According to the company's documents, what reason does the company give for the Midwest falling?",
+   "asked_named_period": false,
+   "researcher_found": false,
+   "final_has_it": false
+  },
+  {
+   "asked": "According to the company documents, what reason does the company give for the Midwest falling?",
+   "asked_named_period": false,
+   "researcher_found": false,
+   "final_has_it": false
   },
   {
    "asked": "According to the company's documents, what reason does the company give for the Midwest falling?",
@@ -32,43 +50,25 @@
    "final_has_it": true
   },
   {
+   "asked": "According to the company's documents, what reason does the company give for the Midwest falling in 2024 Q3? Please quote or paraphrase the stated reason only.",
+   "asked_named_period": true,
+   "researcher_found": true,
+   "final_has_it": true
+  },
+  {
    "asked": "According to the company documents, what reason is given for the Midwest falling in 2024 Q3?",
    "asked_named_period": true,
    "researcher_found": true,
    "final_has_it": true
   },
   {
-   "asked": "According to the company's documents, what reason does the company give for the Midwest falling? Please quote or paraphrase the stated reason.",
+   "asked": "According to the company's documents, what reason does the company give for the Midwest falling? Please quote or paraphrase the stated reason only.",
    "asked_named_period": false,
    "researcher_found": true,
    "final_has_it": true
   },
   {
-   "asked": "According to the company documents, what reason is given for the Midwest falling? Please quote or paraphrase the stated reason only.",
-   "asked_named_period": false,
-   "researcher_found": true,
-   "final_has_it": true
-  },
-  {
-   "asked": "According to the company documents, what reason is given for the Midwest falling? Please quote or paraphrase the stated reason.",
-   "asked_named_period": false,
-   "researcher_found": true,
-   "final_has_it": true
-  },
-  {
-   "asked": "According to the company's documents, what reason does the company give for the Midwest falling in 2024 Q3?",
-   "asked_named_period": true,
-   "researcher_found": true,
-   "final_has_it": true
-  },
-  {
-   "asked": "According to the company's documents, what reason is given for the Midwest falling in 2024 Q3?",
-   "asked_named_period": true,
-   "researcher_found": true,
-   "final_has_it": true
-  },
-  {
-   "asked": "According to the company's documents, what reason does the company give for the Midwest falling? Please quote or paraphrase the stated reason.",
+   "asked": "According to the company's documents, what reason does the company give for the Midwest falling? Please quote or paraphrase the stated reason only.",
    "asked_named_period": false,
    "researcher_found": true,
    "final_has_it": true
@@ -78,5 +78,5 @@
  "final": 10,
  "lost_in_research": 2,
  "lost_in_handoff": 0,
- "named": 5
+ "named": 3
 }

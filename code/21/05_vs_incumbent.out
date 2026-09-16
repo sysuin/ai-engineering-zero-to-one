@@ -1,22 +1,23 @@
-Clarity v0.5 (retrieval only) against v0.12 (tools and a loop), 120 cases
+Clarity v0.5 (retrieval only) against v0.9 (tools and a loop), 120 cases
 
-                      v0.5    v0.12   change
-  composite           83%     100%     +17%
-  document            59%      97%     +38%
-  unanswerable        95%      80%     -15%
-  warehouse           20%      90%     +70%
-  overall             60%      93%     +33%
+                      v0.5     v0.9  change, points
+  composite           83%      83%      +0pt
+  document            61%      96%     +35pt
+  unanswerable        90%      75%     -15pt
+  warehouse           20%      90%     +70pt
+  overall             60%      91%     +31pt
 
-  cases the newer system fixed : 46
-  cases it broke               : 6
-    tail-rotated-util, tail-termination, abstain-03, abstain-04, abstain-07, abstain-15
+  cases the newer system fixed : 45
+  cases it broke               : 8
+    tail-rotated-util, tail-termination, tail-target-miss, abstain-01,
+    abstain-03, abstain-07, abstain-15, abstain-17
 
 This is the comparison that survives contact with a manager, and the absolute
-number is not it. Nobody can tell you whether 93% is good. Everybody can tell you
+number is not it. Nobody can tell you whether 91% is good. Everybody can tell you
 whether it beats what you had, by how much, and on which kinds of question.
 
-Then read the second list. 46 cases got better and 6 got worse, and the
-average contains both. Three of the regressions are refusals: the older system
+Then read the second list. 45 cases got better and 8 got worse, and the
+average contains both. 5 of the regressions are refusals: the older system
 said it did not know, and the newer one, holding a warehouse and four tools,
 found something to say instead.
 

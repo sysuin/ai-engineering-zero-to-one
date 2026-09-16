@@ -1,23 +1,43 @@
 {
   "an ordinary report": {
     "file": "qbr-2024-Q3.pdf",
-    "pages": 1,
     "pypdf_chars": 1476,
     "pdfplumber_chars": 1476,
-    "tables": 0
+    "tables": 0,
+    "pypdf": [
+      "100% of the source's word pairs survive in order"
+    ],
+    "pdfplumber": [
+      "100% of the source's word pairs survive in order"
+    ]
   },
   "a two-column page": {
     "file": "01-newsletter-two-column.pdf",
-    "pages": 1,
     "pypdf_chars": 675,
     "pdfplumber_chars": 664,
-    "tables": 0
+    "tables": 0,
+    "pypdf": [
+      "88% of the source's word pairs survive in order",
+      "1 ligature character(s): 'office' arrives as 'o' + U+FB00 + 'ice'",
+      "1 word(s) broken across lines by a hyphen"
+    ],
+    "pdfplumber": [
+      "75% of the source's word pairs survive in order",
+      "1 run(s) of words with the spaces lost, e.g. 'Theyearcloseswithrevenue'",
+      "1 ligature character(s): 'office' arrives as 'o' + U+FB00 + 'ice'",
+      "1 word(s) broken across lines by a hyphen"
+    ]
   },
   "a scan": {
     "file": "06-goods-received-note-SCANNED.pdf",
-    "pages": 1,
     "pypdf_chars": 0,
     "pdfplumber_chars": 0,
-    "tables": 0
+    "tables": 0,
+    "pypdf": [
+      "no text at all"
+    ],
+    "pdfplumber": [
+      "no text at all"
+    ]
   }
 }

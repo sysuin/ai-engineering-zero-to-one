@@ -1,0 +1,11 @@
+MODEL_FAST
+  answer             Lower — the 12% increase and 12% decrease don’t cancel exactly, so the
+  prompt_tokens         44   of which cached 0
+  completion_tokens     54   of which reasoning 0, visible 54
+  share of the output bill you never see: 0%
+
+MODEL_SMART
+  answer             Lower — it’s 98.56% of last December’s price (1.44% lower).
+  prompt_tokens         44   of which cached 0
+  completion_tokens     61   of which reasoning 31, visible 30
+  share of the output bill you never see: 51%

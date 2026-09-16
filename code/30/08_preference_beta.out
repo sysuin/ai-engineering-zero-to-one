@@ -1,0 +1,11 @@
+2000 preferences; before training the model gives the best answer 10%
+
+   beta      terse  correct    cited   chatty    wrong  KL from start
+  start        30%      25%      10%      30%       5%           0.00
+    2.0        22%      29%      21%      27%       2%           0.07
+    0.5         3%      17%      71%       8%       0%           1.16
+    0.1         0%       0%     100%       0%       0%           2.29
+                4%      22%      65%      10%       0%           0.99   <- start x exp(quality / beta), beta 0.5
+
+a small beta lets the preferences move the model far from where it started; a large one keeps it
+close. The same data, the same loss, and the distance travelled is a setting you choose.

@@ -6,6 +6,7 @@
 
 import json
 import sys
+import textwrap
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, "code")
@@ -33,20 +34,20 @@ with ThreadPoolExecutor(max_workers=8) as pool:
 current = json.load(open("code/21/_scorecard.json"))
 now = {r["id"]: r["correct"] for r in current}
 
-print(f"Clarity v0.5 (retrieval only) against v0.12 (tools and a loop), "
+print(f"Clarity v0.5 (retrieval only) against v0.9 (tools and a loop), "
       f"{len(cases)} cases\n")
-print(f"  {'':<16}{'v0.5':>8}{'v0.12':>9}   change")
+print(f"  {'':<16}{'v0.5':>8}{'v0.9':>9}  change, points")
 kinds = card.by("kind")
 for kind, (right, total) in kinds.items():
     after = sum(now[r["id"]] for r in card.rows if r["kind"] == kind)
     delta = (after - right) / total
     print(f"  {kind:<16}{right / total:>7.0%}{after / total:>9.0%}   "
-          f"{delta:>+6.0%}")
+          f"{delta * 100:>+6.0f}pt")
 before_all = sum(r["correct"] for r in card.rows)
 after_all = sum(now.values())
 print(f"  {'overall':<16}{before_all / len(cases):>7.0%}"
       f"{after_all / len(cases):>9.0%}   "
-      f"{(after_all - before_all) / len(cases):>+6.0%}")
+      f"{(after_all - before_all) / len(cases) * 100:>+6.0f}pt")
 
 json.dump({"incumbent": {r["id"]: r["correct"] for r in card.rows},
            "current": now}, open("code/21/_incumbent.json", "w"), indent=1)
@@ -57,7 +58,8 @@ print()
 print(f"  cases the newer system fixed : {len(gained)}")
 print(f"  cases it broke               : {len(lost)}")
 if lost:
-    print(f"    {', '.join(lost[:6])}")
+    print(textwrap.fill(", ".join(lost), 78, initial_indent="    ",
+                        subsequent_indent="    "))
 
 print()
 print("This is the comparison that survives contact with a manager, and the absolute")
@@ -67,9 +69,14 @@ print("whether it beats what you had, by how much, and on which kinds of questio
 print()
 print(f"Then read the second list. {len(gained)} cases got better and {len(lost)} got "
       f"worse, and the")
-print("average contains both. Three of the regressions are refusals: the older system")
-print("said it did not know, and the newer one, holding a warehouse and four tools,")
-print("found something to say instead.")
+refusals_lost = [i for i in lost if i.startswith("abstain")]
+print("average contains both.", end=" ")
+if refusals_lost:
+    print(f"{len(refusals_lost)} of the regressions are refusals: the older system")
+    print("said it did not know, and the newer one, holding a warehouse and four tools,")
+    print("found something to say instead.")
+else:
+    print("None of the regressions is a refusal.")
 print()
 print("That is a real cost of Part IV, it is invisible in a single number, and it is")
 print("the kind of thing an eval set exists to catch.")

@@ -1,0 +1,7 @@
+1,000 jobs, median 9.6s of work, the slowest tenth over 29s
+
+  policy                             polls per job  extra wait, p50    p95
+  every second                                14.4             0.5s   1.0s
+  every five seconds                           3.3             2.6s   4.7s
+  backoff from 1s, x1.5, max 30s               5.0             2.3s  11.1s
+  Retry-After, estimate ±30%                   2.3             0.8s   4.6s

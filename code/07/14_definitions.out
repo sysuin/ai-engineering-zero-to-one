@@ -1,0 +1,9 @@
+                                the 200 whose errors were read   400 tickets not looked at
+  categories named only                                  78.0%                       82.0%
+  with one-line definitions                             100.0%                      100.0%
+
+on the first 200: fixed by the definitions 44, broken by them 0, wrong either way 0
+  fixed        collection booked 2 weeks ago, nobody came      said Delivery  truth Returns
+  fixed        can we add a second delivery address            said Delivery  truth Account
+  fixed        El producto MRD-SAN-047 llegó dañado. Necesita  said Returns   truth Quality
+  fixed        need a copy of our current pricing              said Billing   truth Account

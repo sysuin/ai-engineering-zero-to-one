@@ -1,31 +1,12 @@
 {
  "as intended": {
   "depths": [
-   4,
-   4
+   2,
+   8
   ],
   "tokens": [
-   15687,
-   17371
-  ],
-  "ceiling": 0,
-  "hops": [
-   "supervisor -> analyst",
-   "  analyst -> researcher",
-   "  analyst -> researcher",
-   "    researcher -> analyst",
-   "      analyst -> researcher",
-   "supervisor -> researcher"
-  ]
- },
- "one wrong subscript": {
-  "depths": [
-   4,
-   10
-  ],
-  "tokens": [
-   10098,
-   25716
+   10877,
+   20352
   ],
   "ceiling": 0,
   "hops": [
@@ -37,16 +18,36 @@
    "        researcher -> analyst"
   ]
  },
+ "one wrong subscript": {
+  "depths": [
+   6,
+   163
+  ],
+  "tokens": [
+   7069,
+   35528
+  ],
+  "ceiling": 0,
+  "hops": [
+   "supervisor -> analyst",
+   "  analyst -> researcher",
+   "    researcher -> analyst",
+   "      analyst -> researcher",
+   "        researcher -> analyst",
+   "          analyst -> researcher"
+  ]
+ },
  "capped": {
   "depths": [
    2
   ],
   "tokens": [
-   6264
+   12236
   ],
   "ceiling": 0,
   "hops": [
    "supervisor -> analyst",
+   "  analyst -> researcher",
    "  analyst -> researcher",
    "supervisor -> researcher"
   ]

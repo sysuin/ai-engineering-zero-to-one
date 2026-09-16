@@ -7,29 +7,27 @@ checkpoints left behind: 3
 --- second process ---
 recovered state: 1 step already taken, 3 messages
 next node to run: ('act',)
-  act    <- Refused: The question asks for two metrics at once ('revenue' 
-  think  -> arithmetic({'expression': '9079542 - 8461842'})
-  act    <- 617700.0
-  think  -> arithmetic({'expression': '31.4 - 33.1'})
-  act    <- -1.7
+  act    <- Refused: The question compares two time periods (2024 Q3 and 2
 
 A: Here’s the comparison between **2024 Q3** and **2025 Q1**:
 
-- **Revenue**
-  - 2024 Q3: **$8,461,842**
-  - 2025 Q1: **$9,079,542**
-  - Change: **+ $617,700**
+### Revenue
+- **2024 Q3:** **$8,461,842**
+- **2025 Q1:** **$9,079,542**
+- **Change:** **+ $617,700** (**+7.3%**)
 
-- **Margin**
-  - 2024 Q3: **33.1%**
-  - 2025 Q1: **31.4%**
-  - Change: **- 1.7 percentage points**
+**Documented cause of the revenue movement:**
+- The 2024 Q3 review says **Halloway Group did not renew**, and that this accoun
 
-**What the documents say caused the moveme
+--- the same crash, with durability='sync' ---
+recovered state: 1 step(s), 6 messages, next node ('think',)
+the default run lost the finished act and ran it again; the sync run kept it
 
 The first process died. It did not save anything on the way out, it did not
-catch a signal, and it did not finish. The work it had already done survived
-because every step was written to the store as it completed.
+catch a signal, and it did not finish. What had been checkpointed survived. By
+default a checkpoint is stored while the next step starts, so the step that had
+just finished can be lost with the process; with durability='sync' it is stored
+before the next step begins, at the cost of waiting for the write.
 
 Chapter 17's ninety lines cannot do this, and adding it is not a small change:
 the loop has to stop being a `while` and start being a sequence of transitions

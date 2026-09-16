@@ -1,18 +1,22 @@
 Q: Margin fell in 2025 Q1. Find out by how much, and what the company says caused it.
 
-  1. FAILED query_warehouse     1.70s  {'question': "What was the company's margin in 202
-          -> Refused: The question asks for a comparison between two time
-  2. ok     query_warehouse     1.67s  {'question': "What was the company's margin_pct in
+  1. ok     query_warehouse     1.52s  {'question': "What was the company's margin in 202
           -> {"rows": [[31.4]], "sql": "SELECT ROUND(100.0 * SUM(gross_pr
-  3. ok     search_documents    1.69s  {'query': '2025 Q1 margin fell caused by why compa
+  2. ok     query_warehouse     1.18s  {'question': "What was the company's margin in 202
+          -> {"rows": [[31.7]], "sql": "SELECT ROUND(100.0 * SUM(gross_pr
+  3. ok     search_documents    2.18s  {'query': '2025 Q1 margin fell caused by why compa
           -> [{"source": "qbr-2025-Q1.md", "heading": "Summary", "text": 
+  4. ok     arithmetic          0.00s  {'expression': '31.4 - 31.7'}
+          -> -0.3
 
 stopped because: answered
-3 steps, 2,409 tokens, 8.9s
+4 steps, 4,065 tokens, 10.8s
 
-A: Margin in 2025 Q1 was 31.4%.
+A: Margin fell by 0.3 percentage points in 2025 Q1, from 31.7% in 2024 Q4 to 31.4%.
 
-The company says the decline was caused by Voss Industrial applying a 12% increase to unit costs across its catalogue from the start of the quarter, and that Meridian absorbed the increase rather than passing it through.
+The company says the main cause was a 12% increase in unit costs from Voss Industrial at the start of the quarter, which it absorbed rather than passing through to customers.
 
-Read the trace rather than the answer. The answer is one paragraph; the trace is
-the reasoning, and it is the only place a wrong answer can be diagnosed.
+Checked against the warehouse:
+  2024 Q4 margin 31.7%, 2025 Q1 31.4%: a fall of 0.3 points
+  the answer states the 2025 Q1 margin:      yes
+  the answer states the size of the fall:    yes

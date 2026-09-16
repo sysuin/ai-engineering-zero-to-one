@@ -1,0 +1,18 @@
+100,000 latencies; each estimate's error against the exact percentile
+
+  stored as                    buckets        p50        p95        p99
+  every value (exact)                -    3,693ms    7,726ms   10,526ms
+  default edges, 5ms to 10s         12     +182ms   +1,502ms     -526ms
+  even 1s edges, 1s to 20s          21      +24ms      +59ms      +75ms
+  log buckets, alpha 5%             41     +156ms      +30ms      -54ms
+  log buckets, alpha 1%            183      -15ms      -16ms      +92ms
+  (the default edges stop at 10s: the p99 fell in the overflow bucket,
+   which can only say 'more than that', and the top edge is what comes back)
+
+log buckets at alpha 1%, p1 to p99: worst relative error 1.00%
+1ms to 100s at alpha 1% needs at most 576 buckets, whatever the traffic
+
+a day of 2,640 requests, kept as 24 hourly records
+  p95 of every request                  7,297ms
+  mean of the hourly p95s               9,626ms
+  p95 of the 24 sketches added up       7,261ms   (-0.5%)

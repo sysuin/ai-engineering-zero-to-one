@@ -1,0 +1,7 @@
+                                     claims read without checking   checked properly
+  a good token                       accepted as analyst-17         accepted as analyst-17
+  expired an hour ago                accepted as analyst-17         refused: ExpiredSignatureError
+  issued for another API             accepted as analyst-17         refused: InvalidAudienceError
+  from another issuer                accepted as analyst-17         refused: InvalidIssuerError
+  signed with someone else's key     accepted as analyst-17         refused: InvalidSignatureError
+  no signature at all (alg none)     accepted as analyst-17         refused: InvalidAlgorithmError

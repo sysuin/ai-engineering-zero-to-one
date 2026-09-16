@@ -1,0 +1,19 @@
+120 golden cases, scored once, against an assumed traffic mix
+
+  kind            cases   score  share of set  share of traffic
+  document           74     96%           62%               45%
+  warehouse          20     90%           17%               35%
+  unanswerable       20     75%           17%               12%
+  composite           6     83%            5%                8%
+
+  score as the set is mixed          91%  (± 5%)
+  score re-weighted to the traffic   90%  (± 7%)
+
+  60% of the uncertainty in the re-weighted figure comes from 'warehouse',
+  which has 20 cases and 35% of the traffic.
+
+  a set of 100 cases, allocated to make the re-weighted figure as precise as possible:
+    document        33
+    warehouse       39
+    unanswerable    17
+    composite       11

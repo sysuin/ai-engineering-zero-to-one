@@ -1,0 +1,11 @@
+  version  review               3 sentences      no bullets figures sourced     < 120 words
+  v1       qbr-2023-Q4.md              FAIL            FAIL            pass            FAIL
+  v1       qbr-2024-Q3.md              FAIL            FAIL            pass            FAIL
+  v1       qbr-2025-Q2.md              FAIL            FAIL            pass            FAIL
+  v2       qbr-2023-Q4.md              pass            pass            pass            pass
+  v2       qbr-2024-Q3.md              pass            pass            pass            pass
+  v2       qbr-2025-Q2.md              pass            pass            pass            pass
+
+v1: 0 of 3 reviews pass every check
+
+v2: 3 of 3 reviews pass every check

@@ -8,6 +8,7 @@ lines = [
 
 total = 0
 for line in lines:
-    total = total + line["qty"] * line["unit_prise"]
+    unit_price = line["unit_price"]
+    total = total + line["qty"] * unit_prise
 
 print(total)

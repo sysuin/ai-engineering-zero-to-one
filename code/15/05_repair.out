@@ -1,0 +1,8 @@
+right on the first attempt:   17/20
+right after one repair round: 17/20
+queries that triggered a repair: 1
+  still wrong: What was Voss Industrial's revenue in 2025?
+
+wrong answers that looked fine, so nothing triggered a repair: 2
+  Which supplier has the most products?
+  How many suppliers are based outside the United States?

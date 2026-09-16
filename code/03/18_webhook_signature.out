@@ -1,0 +1,5 @@
+signature: 7df73b9fdea5b1ec...
+genuine:           accepted
+body changed:      rejected: signature does not match
+wrong secret:      rejected: signature does not match
+replayed next day: rejected: too old (a replay?)

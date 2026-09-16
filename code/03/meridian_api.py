@@ -24,6 +24,16 @@ Endpoints, chosen to be the ones you will meet in the wild:
     GET /slow?seconds=                200, eventually
     GET /boom                         500
     POST /orders                      201, and honours an Idempotency-Key header
+
+And the ones the longer sections of the chapter need:
+
+    GET /feed?offset=&limit=          newest-first, paged by offset
+    GET /feed?cursor=&limit=          newest-first, paged by cursor
+    POST /feed                        publish new items at the top of the feed
+    GET /limited                      200, or 429 once a token bucket is empty
+    GET /trickle?chunks=&interval=    200, one byte at a time, slowly
+    GET /events?count=&interval=      a stream of server-sent events
+    GET /revenue-v2?year=&quarter=    the same data, in a shape that quietly changed
 """
 from __future__ import annotations
 
@@ -42,6 +52,14 @@ _attempts: dict[str, int] = defaultdict(int)
 _orders: list[dict] = []
 _idempotency: dict[str, dict] = {}
 _lock = threading.Lock()
+
+# The feed: item 1 is the oldest. Newest-first is how most feeds are served, and it is
+# what makes offset pagination misbehave when something new arrives.
+_feed: list[dict] = [{"id": i, "title": f"ticket {i}"} for i in range(1, 101)]
+
+# A token bucket: CAPACITY requests at once, refilled at RATE per second.
+BUCKET_CAPACITY, BUCKET_RATE = 5, 5.0
+_bucket = {"tokens": float(BUCKET_CAPACITY), "at": time.monotonic()}
 
 
 def _query(sql: str, args: tuple = ()) -> list[dict]:
@@ -149,11 +167,96 @@ class Handler(BaseHTTPRequestHandler):
         if route == "/orders":
             return self._send(200, {"count": len(_orders), "orders": _orders})
 
+        if route == "/feed":
+            limit = int(params.get("limit", 10))
+            with _lock:
+                newest_first = sorted(_feed, key=lambda item: -item["id"])
+            if "cursor" in params:
+                # The cursor is the id of the last item the client saw. "Items older than
+                # this one" means the same thing however many new items have arrived.
+                cursor = int(params["cursor"])
+                page = [item for item in newest_first if item["id"] < cursor][:limit]
+            else:
+                offset = int(params.get("offset", 0))
+                page = newest_first[offset:offset + limit]
+            next_cursor = page[-1]["id"] if len(page) == limit else None
+            return self._send(200, {"items": page, "next_cursor": next_cursor})
+
+        if route == "/limited":
+            with _lock:
+                now = time.monotonic()
+                _bucket["tokens"] = min(BUCKET_CAPACITY,
+                                        _bucket["tokens"] + (now - _bucket["at"]) * BUCKET_RATE)
+                _bucket["at"] = now
+                if _bucket["tokens"] < 1:
+                    wait = (1 - _bucket["tokens"]) / BUCKET_RATE
+                    return self._send(429, {"error": "rate_limit_exceeded"},
+                                      {"Retry-After": f"{wait:.2f}"})
+                _bucket["tokens"] -= 1
+            return self._send(200, {"ok": True})
+
+        if route == "/trickle":
+            chunks = int(params.get("chunks", 8))
+            interval = float(params.get("interval", 0.5))
+            body = b"x" * chunks
+            self.send_response(200)
+            self.send_header("Content-Type", "text/plain")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            for i in range(chunks):
+                time.sleep(interval)
+                self.wfile.write(body[i:i + 1])
+                self.wfile.flush()
+            return
+
+        if route == "/events":
+            count = int(params.get("count", 5))
+            interval = float(params.get("interval", 0.2))
+            self.send_response(200)
+            self.send_header("Content-Type", "text/event-stream")
+            self.send_header("Cache-Control", "no-cache")
+            self.send_header("Transfer-Encoding", "chunked")    # length unknown in advance
+            self.end_headers()
+
+            def chunk(data: bytes):
+                self.wfile.write(f"{len(data):x}\r\n".encode() + data + b"\r\n")
+                self.wfile.flush()
+
+            words = "Midwest revenue fell after the largest account did not renew".split()
+            for i in range(count):
+                time.sleep(interval)
+                event = {"index": i, "delta": words[i % len(words)] + " "}
+                chunk(f"data: {json.dumps(event)}\n\n".encode())
+            chunk(b"event: done\ndata: {}\n\n")
+            self.wfile.write(b"0\r\n\r\n")                    # the end of the body
+            return
+
+        if route == "/revenue-v2":
+            year, quarter = int(params.get("year", 0)), int(params.get("quarter", 0))
+            rows = _query("""SELECT region, ROUND(SUM(revenue), 2) AS revenue
+                             FROM v_sales WHERE year = ? AND quarter = ?
+                             GROUP BY region ORDER BY revenue DESC""", (year, quarter))
+            # A provider "tidied up" its response: renamed a field, and started sending
+            # money as strings so that no precision is lost. Nothing returns an error.
+            return self._send(200, {"year": year, "quarter": quarter,
+                                    "regions": [{"region_name": r["region"],
+                                                 "revenue": f"{r['revenue']:.2f}"}
+                                                for r in rows]})
+
         return self._send(404, {"error": "not_found",
                                 "message": f"No route {route}."})
 
     def do_POST(self):
         url = urlparse(self.path)
+        if url.path == "/feed":
+            length = int(self.headers.get("Content-Length", 0))
+            count = int(json.loads(self.rfile.read(length) or b"{}").get("count", 1))
+            with _lock:
+                top = max(item["id"] for item in _feed)
+                new = [{"id": top + i, "title": f"ticket {top + i}"}
+                       for i in range(1, count + 1)]
+                _feed.extend(new)
+            return self._send(201, {"published": [item["id"] for item in new]})
         if url.path != "/orders":
             return self._send(404, {"error": "not_found",
                                     "message": f"No route {url.path}."})

@@ -4,7 +4,7 @@ Twenty questions about Meridian's warehouse, each with a reference query.
 
 The reference query is the ground truth. Two SQL statements that look nothing alike can
 be equally correct, so the only workable way to score a generated query is to run it and
-compare the result — which is what §15.11 is about.
+compare the result — which is what §15.16 is about.
 """
 
 SCHEMA = """

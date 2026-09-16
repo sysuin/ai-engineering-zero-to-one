@@ -24,7 +24,7 @@
   "kind": "document",
   "question": "What was revenue in 2023 Q1?",
   "expected": "7,360,834",
-  "answer": "Revenue in 2023 Q1 was **$7,360,833.67**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2023 Q1 was **$7,360,833.67**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q1-revenue",
@@ -60,7 +60,7 @@
   "kind": "document",
   "question": "How many orders were there in 2023 Q1?",
   "expected": "4,965",
-  "answer": "There were **4,965 orders** in **2023 Q1**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **4,965 orders** in **2023 Q1**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q1-orders",
@@ -105,7 +105,7 @@
   "kind": "document",
   "question": "What was gross margin in 2023 Q1?",
   "expected": "31.0%",
-  "answer": "Gross margin in 2023 Q1 was **31.0%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2023 Q1 was **31.0%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q1-margin",
@@ -132,7 +132,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q1?",
   "expected": "Midwest",
-  "answer": "Midwest was strongest in 2023 Q1, with the highest revenue at 1,925,311.10."
+  "answer": "Midwest was the strongest region in 2023 Q1 by revenue."
  },
  {
   "id": "qbr-2023-Q1-strongest",
@@ -141,7 +141,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q1?",
   "expected": "Midwest",
-  "answer": "Halloway Group was strongest in 2023 Q1, with the highest revenue at 1,925,311.10."
+  "answer": "Halloway Group was the strongest region in 2023 Q1 by revenue."
  },
  {
   "id": "qbr-2023-Q1-strongest",
@@ -150,7 +150,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q1?",
   "expected": "Midwest",
-  "answer": "Midwest was strongest in 2023 Q1, with the highest revenue at 1,925,311.10. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Midwest was the strongest region in 2023 Q1 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q1-strongest",
@@ -168,43 +168,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q1?",
   "expected": "Midwest",
-  "answer": "Southwest was strongest in 2023 Q1, with the highest revenue at 1,925,311.10."
- },
- {
-  "id": "qbr-2023-Q1-weakest",
-  "variant": "plain",
-  "label": 1,
-  "kind": "document",
-  "question": "Which region was weakest in 2023 Q1?",
-  "expected": "West",
-  "answer": "West was the weakest region in 2023 Q1 by sales revenue."
- },
- {
-  "id": "qbr-2023-Q1-weakest",
-  "variant": "wrong",
-  "label": 0,
-  "kind": "document",
-  "question": "Which region was weakest in 2023 Q1?",
-  "expected": "West",
-  "answer": "Safety was the weakest region in 2023 Q1 by sales revenue."
- },
- {
-  "id": "qbr-2023-Q1-weakest",
-  "variant": "padded",
-  "label": 1,
-  "kind": "document",
-  "question": "Which region was weakest in 2023 Q1?",
-  "expected": "West",
-  "answer": "West was the weakest region in 2023 Q1 by sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
- },
- {
-  "id": "qbr-2023-Q1-weakest",
-  "variant": "terse",
-  "label": 1,
-  "kind": "document",
-  "question": "Which region was weakest in 2023 Q1?",
-  "expected": "West",
-  "answer": "West."
+  "answer": "Southwest was the strongest region in 2023 Q1 by revenue."
  },
  {
   "id": "qbr-2023-Q2-revenue",
@@ -231,7 +195,7 @@
   "kind": "document",
   "question": "What was revenue in 2023 Q2?",
   "expected": "7,614,049",
-  "answer": "Revenue in 2023 Q2 was **$7,614,048.76**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2023 Q2 was **$7,614,048.76**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q2-revenue",
@@ -267,7 +231,7 @@
   "kind": "document",
   "question": "How many orders were there in 2023 Q2?",
   "expected": "5,114",
-  "answer": "There were **5,114 orders** in **2023 Q2**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **5,114 orders** in **2023 Q2**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q2-orders",
@@ -285,7 +249,7 @@
   "kind": "document",
   "question": "How many orders were there in 2023 Q2?",
   "expected": "5,114",
-  "answer": "There were **5,169 orders** in **2023 Q2**."
+  "answer": "There were **5,354 orders** in **2023 Q2**."
  },
  {
   "id": "qbr-2023-Q2-margin",
@@ -312,7 +276,7 @@
   "kind": "document",
   "question": "What was gross margin in 2023 Q2?",
   "expected": "30.6%",
-  "answer": "Gross margin in 2023 Q2 was **30.6%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2023 Q2 was **30.6%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q2-margin",
@@ -330,7 +294,7 @@
   "kind": "document",
   "question": "What was gross margin in 2023 Q2?",
   "expected": "30.6%",
-  "answer": "Gross margin in 2023 Q2 was **30.8%**."
+  "answer": "Gross margin in 2023 Q2 was **31.9%**."
  },
  {
   "id": "qbr-2023-Q2-strongest",
@@ -339,7 +303,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q2?",
   "expected": "Midwest",
-  "answer": "Midwest was strongest in 2023 Q2 by revenue, at **$2,162,478.93**."
+  "answer": "Midwest was the strongest region in 2023 Q2 by revenue."
  },
  {
   "id": "qbr-2023-Q2-strongest",
@@ -348,7 +312,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q2?",
   "expected": "Midwest",
-  "answer": "Southeast was strongest in 2023 Q2 by revenue, at **$2,162,478.93**."
+  "answer": "Facilities was the strongest region in 2023 Q2 by revenue."
  },
  {
   "id": "qbr-2023-Q2-strongest",
@@ -357,7 +321,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q2?",
   "expected": "Midwest",
-  "answer": "Midwest was strongest in 2023 Q2 by revenue, at **$2,162,478.93**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Midwest was the strongest region in 2023 Q2 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q2-strongest",
@@ -375,7 +339,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q2?",
   "expected": "Midwest",
-  "answer": "Southwest was strongest in 2023 Q2 by revenue, at **$2,162,478.93**."
+  "answer": "Southwest was the strongest region in 2023 Q2 by revenue."
  },
  {
   "id": "qbr-2023-Q2-weakest",
@@ -384,7 +348,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2023 Q2?",
   "expected": "West",
-  "answer": "West was the weakest region in 2023 Q2, with revenue of 1,032,748.96."
+  "answer": "West was the weakest region in 2023 Q2 by sales revenue."
  },
  {
   "id": "qbr-2023-Q2-weakest",
@@ -393,7 +357,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2023 Q2?",
   "expected": "West",
-  "answer": "Voss Industrial was the weakest region in 2023 Q2, with revenue of 1,032,748.96."
+  "answer": "Northeast was the weakest region in 2023 Q2 by sales revenue."
  },
  {
   "id": "qbr-2023-Q2-weakest",
@@ -402,7 +366,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2023 Q2?",
   "expected": "West",
-  "answer": "West was the weakest region in 2023 Q2, with revenue of 1,032,748.96. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "West was the weakest region in 2023 Q2 by sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q2-weakest",
@@ -438,7 +402,7 @@
   "kind": "document",
   "question": "What was revenue in 2023 Q3?",
   "expected": "7,774,027",
-  "answer": "Revenue in 2023 Q3 was **$7,774,027.48**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2023 Q3 was **$7,774,027.48**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q3-revenue",
@@ -456,7 +420,7 @@
   "kind": "document",
   "question": "What was revenue in 2023 Q3?",
   "expected": "7,774,027",
-  "answer": "Revenue in 2023 Q3 was **$8,074,848.48**."
+  "answer": "Revenue in 2023 Q3 was **$8,062,599.48**."
  },
  {
   "id": "qbr-2023-Q3-orders",
@@ -483,7 +447,7 @@
   "kind": "document",
   "question": "How many orders were there in 2023 Q3?",
   "expected": "5,169",
-  "answer": "There were **5,169 orders** in **2023 Q3**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **5,169 orders** in **2023 Q3**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q3-orders",
@@ -501,7 +465,7 @@
   "kind": "document",
   "question": "How many orders were there in 2023 Q3?",
   "expected": "5,169",
-  "answer": "There were **4,965 orders** in **2023 Q3**."
+  "answer": "There were **5,553 orders** in **2023 Q3**."
  },
  {
   "id": "qbr-2023-Q3-margin",
@@ -528,7 +492,7 @@
   "kind": "document",
   "question": "What was gross margin in 2023 Q3?",
   "expected": "31.9%",
-  "answer": "Gross margin in 2023 Q3 was **31.9%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2023 Q3 was **31.9%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q3-margin",
@@ -546,7 +510,7 @@
   "kind": "document",
   "question": "What was gross margin in 2023 Q3?",
   "expected": "31.9%",
-  "answer": "Gross margin in 2023 Q3 was **33.1%**."
+  "answer": "Gross margin in 2023 Q3 was **31.0%**."
  },
  {
   "id": "qbr-2023-Q3-strongest",
@@ -564,7 +528,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q3?",
   "expected": "Midwest",
-  "answer": "Packaging was the strongest region in 2023 Q3 by revenue."
+  "answer": "Southeast was the strongest region in 2023 Q3 by revenue."
  },
  {
   "id": "qbr-2023-Q3-strongest",
@@ -573,7 +537,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q3?",
   "expected": "Midwest",
-  "answer": "Midwest was the strongest region in 2023 Q3 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Midwest was the strongest region in 2023 Q3 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q3-strongest",
@@ -592,6 +556,42 @@
   "question": "Which region was strongest in 2023 Q3?",
   "expected": "Midwest",
   "answer": "Southwest was the strongest region in 2023 Q3 by revenue."
+ },
+ {
+  "id": "qbr-2023-Q3-weakest",
+  "variant": "plain",
+  "label": 1,
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q3?",
+  "expected": "West",
+  "answer": "West was the weakest region in 2023 Q3 by revenue."
+ },
+ {
+  "id": "qbr-2023-Q3-weakest",
+  "variant": "wrong",
+  "label": 0,
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q3?",
+  "expected": "West",
+  "answer": "Pemberton Mills was the weakest region in 2023 Q3 by revenue."
+ },
+ {
+  "id": "qbr-2023-Q3-weakest",
+  "variant": "padded",
+  "label": 1,
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q3?",
+  "expected": "West",
+  "answer": "West was the weakest region in 2023 Q3 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+ },
+ {
+  "id": "qbr-2023-Q3-weakest",
+  "variant": "terse",
+  "label": 1,
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q3?",
+  "expected": "West",
+  "answer": "West."
  },
  {
   "id": "qbr-2023-Q4-revenue",
@@ -618,7 +618,7 @@
   "kind": "document",
   "question": "What was revenue in 2023 Q4?",
   "expected": "7,699,847",
-  "answer": "Revenue in 2023 Q4 was **$7,699,846.68**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2023 Q4 was **$7,699,846.68**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q4-revenue",
@@ -654,7 +654,7 @@
   "kind": "document",
   "question": "How many orders were there in 2023 Q4?",
   "expected": "5,354",
-  "answer": "There were **5,354 orders** in **2023 Q4**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **5,354 orders** in **2023 Q4**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q4-orders",
@@ -699,7 +699,7 @@
   "kind": "document",
   "question": "What was gross margin in 2023 Q4?",
   "expected": "30.2%",
-  "answer": "Gross margin in 2023 Q4 was **30.2%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2023 Q4 was **30.2%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q4-margin",
@@ -726,7 +726,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q4?",
   "expected": "Midwest",
-  "answer": "Midwest was the strongest region in 2023 Q4, with the highest revenue at **$2,081,807.58**."
+  "answer": "Midwest was the strongest region in 2023 Q4 by revenue, at 2,081,807.58."
  },
  {
   "id": "qbr-2023-Q4-strongest",
@@ -735,7 +735,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q4?",
   "expected": "Midwest",
-  "answer": "Facilities was the strongest region in 2023 Q4, with the highest revenue at **$2,081,807.58**."
+  "answer": "Facilities was the strongest region in 2023 Q4 by revenue, at 2,081,807.58."
  },
  {
   "id": "qbr-2023-Q4-strongest",
@@ -744,7 +744,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q4?",
   "expected": "Midwest",
-  "answer": "Midwest was the strongest region in 2023 Q4, with the highest revenue at **$2,081,807.58**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Midwest was the strongest region in 2023 Q4 by revenue, at 2,081,807.58. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2023-Q4-strongest",
@@ -762,7 +762,43 @@
   "kind": "document",
   "question": "Which region was strongest in 2023 Q4?",
   "expected": "Midwest",
-  "answer": "Southwest was the strongest region in 2023 Q4, with the highest revenue at **$2,081,807.58**."
+  "answer": "Southwest was the strongest region in 2023 Q4 by revenue, at 2,081,807.58."
+ },
+ {
+  "id": "qbr-2023-Q4-weakest",
+  "variant": "plain",
+  "label": 1,
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q4?",
+  "expected": "West",
+  "answer": "West was the weakest region in 2023 Q4 by sales revenue."
+ },
+ {
+  "id": "qbr-2023-Q4-weakest",
+  "variant": "wrong",
+  "label": 0,
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q4?",
+  "expected": "West",
+  "answer": "Packaging was the weakest region in 2023 Q4 by sales revenue."
+ },
+ {
+  "id": "qbr-2023-Q4-weakest",
+  "variant": "padded",
+  "label": 1,
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q4?",
+  "expected": "West",
+  "answer": "West was the weakest region in 2023 Q4 by sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+ },
+ {
+  "id": "qbr-2023-Q4-weakest",
+  "variant": "terse",
+  "label": 1,
+  "kind": "document",
+  "question": "Which region was weakest in 2023 Q4?",
+  "expected": "West",
+  "answer": "West."
  },
  {
   "id": "qbr-2024-Q1-revenue",
@@ -789,7 +825,7 @@
   "kind": "document",
   "question": "What was revenue in 2024 Q1?",
   "expected": "8,062,599",
-  "answer": "Revenue in 2024 Q1 was **$8,062,598.92**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2024 Q1 was **$8,062,598.92**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q1-revenue",
@@ -825,7 +861,7 @@
   "kind": "document",
   "question": "How many orders were there in 2024 Q1?",
   "expected": "5,331",
-  "answer": "There were **5,331 orders** in **2024 Q1**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **5,331 orders** in **2024 Q1**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q1-orders",
@@ -843,7 +879,7 @@
   "kind": "document",
   "question": "How many orders were there in 2024 Q1?",
   "expected": "5,331",
-  "answer": "There were **4,965 orders** in **2024 Q1**."
+  "answer": "There were **6,009 orders** in **2024 Q1**."
  },
  {
   "id": "qbr-2024-Q1-margin",
@@ -870,7 +906,7 @@
   "kind": "document",
   "question": "What was gross margin in 2024 Q1?",
   "expected": "31.2%",
-  "answer": "Gross margin in 2024 Q1 was **31.2%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2024 Q1 was **31.2%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q1-margin",
@@ -888,7 +924,7 @@
   "kind": "document",
   "question": "What was gross margin in 2024 Q1?",
   "expected": "31.2%",
-  "answer": "Gross margin in 2024 Q1 was **32.2%**."
+  "answer": "Gross margin in 2024 Q1 was **32.0%**."
  },
  {
   "id": "qbr-2024-Q1-strongest",
@@ -897,7 +933,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q1?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2024 Q1 by revenue."
+  "answer": "Southwest was the strongest region in 2024 Q1 by sales revenue."
  },
  {
   "id": "qbr-2024-Q1-strongest",
@@ -906,7 +942,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q1?",
   "expected": "Southwest",
-  "answer": "Northeast was the strongest region in 2024 Q1 by revenue."
+  "answer": "Northeast was the strongest region in 2024 Q1 by sales revenue."
  },
  {
   "id": "qbr-2024-Q1-strongest",
@@ -915,7 +951,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q1?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2024 Q1 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Southwest was the strongest region in 2024 Q1 by sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q1-strongest",
@@ -933,43 +969,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q1?",
   "expected": "Southwest",
-  "answer": "Midwest was the strongest region in 2024 Q1 by revenue."
- },
- {
-  "id": "qbr-2024-Q1-weakest",
-  "variant": "plain",
-  "label": 1,
-  "kind": "document",
-  "question": "Which region was weakest in 2024 Q1?",
-  "expected": "West",
-  "answer": "West was the weakest region in 2024 Q1 by revenue."
- },
- {
-  "id": "qbr-2024-Q1-weakest",
-  "variant": "wrong",
-  "label": 0,
-  "kind": "document",
-  "question": "Which region was weakest in 2024 Q1?",
-  "expected": "West",
-  "answer": "Southeast was the weakest region in 2024 Q1 by revenue."
- },
- {
-  "id": "qbr-2024-Q1-weakest",
-  "variant": "padded",
-  "label": 1,
-  "kind": "document",
-  "question": "Which region was weakest in 2024 Q1?",
-  "expected": "West",
-  "answer": "West was the weakest region in 2024 Q1 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
- },
- {
-  "id": "qbr-2024-Q1-weakest",
-  "variant": "terse",
-  "label": 1,
-  "kind": "document",
-  "question": "Which region was weakest in 2024 Q1?",
-  "expected": "West",
-  "answer": "West."
+  "answer": "Midwest was the strongest region in 2024 Q1 by sales revenue."
  },
  {
   "id": "qbr-2024-Q2-revenue",
@@ -996,7 +996,7 @@
   "kind": "document",
   "question": "What was revenue in 2024 Q2?",
   "expected": "8,074,848",
-  "answer": "Revenue in 2024 Q2 was **$8,074,847.91**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2024 Q2 was **$8,074,847.91**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q2-revenue",
@@ -1032,7 +1032,7 @@
   "kind": "document",
   "question": "How many orders were there in 2024 Q2?",
   "expected": "5,553",
-  "answer": "There were **5,553 orders** in **2024 Q2**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **5,553 orders** in **2024 Q2**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q2-orders",
@@ -1077,7 +1077,7 @@
   "kind": "document",
   "question": "What was gross margin in 2024 Q2?",
   "expected": "32.0%",
-  "answer": "Gross margin in 2024 Q2 was **32.0%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2024 Q2 was **32.0%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q2-margin",
@@ -1104,7 +1104,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q2?",
   "expected": "Midwest",
-  "answer": "Midwest was the strongest region in 2024 Q2, with the highest sales revenue at **$2,257,870.33**."
+  "answer": "The strongest region in 2024 Q2 was **Midwest**, based on highest revenue."
  },
  {
   "id": "qbr-2024-Q2-strongest",
@@ -1113,7 +1113,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q2?",
   "expected": "Midwest",
-  "answer": "Packaging was the strongest region in 2024 Q2, with the highest sales revenue at **$2,257,870.33**."
+  "answer": "The strongest region in 2024 Q2 was **Packaging**, based on highest revenue."
  },
  {
   "id": "qbr-2024-Q2-strongest",
@@ -1122,7 +1122,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q2?",
   "expected": "Midwest",
-  "answer": "Midwest was the strongest region in 2024 Q2, with the highest sales revenue at **$2,257,870.33**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "The strongest region in 2024 Q2 was **Midwest**, based on highest revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q2-strongest",
@@ -1140,7 +1140,43 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q2?",
   "expected": "Midwest",
-  "answer": "Southwest was the strongest region in 2024 Q2, with the highest sales revenue at **$2,257,870.33**."
+  "answer": "The strongest region in 2024 Q2 was **Southwest**, based on highest revenue."
+ },
+ {
+  "id": "qbr-2024-Q2-weakest",
+  "variant": "plain",
+  "label": 1,
+  "kind": "document",
+  "question": "Which region was weakest in 2024 Q2?",
+  "expected": "West",
+  "answer": "West was the weakest region in 2024 Q2 by revenue."
+ },
+ {
+  "id": "qbr-2024-Q2-weakest",
+  "variant": "wrong",
+  "label": 0,
+  "kind": "document",
+  "question": "Which region was weakest in 2024 Q2?",
+  "expected": "West",
+  "answer": "Facilities was the weakest region in 2024 Q2 by revenue."
+ },
+ {
+  "id": "qbr-2024-Q2-weakest",
+  "variant": "padded",
+  "label": 1,
+  "kind": "document",
+  "question": "Which region was weakest in 2024 Q2?",
+  "expected": "West",
+  "answer": "West was the weakest region in 2024 Q2 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+ },
+ {
+  "id": "qbr-2024-Q2-weakest",
+  "variant": "terse",
+  "label": 1,
+  "kind": "document",
+  "question": "Which region was weakest in 2024 Q2?",
+  "expected": "West",
+  "answer": "West."
  },
  {
   "id": "qbr-2024-Q3-revenue",
@@ -1167,7 +1203,7 @@
   "kind": "document",
   "question": "What was revenue in 2024 Q3?",
   "expected": "8,461,842",
-  "answer": "Revenue in 2024 Q3 was **$8,461,841.81**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2024 Q3 was **$8,461,841.81**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q3-revenue",
@@ -1203,7 +1239,7 @@
   "kind": "document",
   "question": "How many orders were there in 2024 Q3?",
   "expected": "5,579",
-  "answer": "There were **5,579 orders** in **2024 Q3**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **5,579 orders** in **2024 Q3**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q3-orders",
@@ -1221,7 +1257,7 @@
   "kind": "document",
   "question": "How many orders were there in 2024 Q3?",
   "expected": "5,579",
-  "answer": "There were **6,009 orders** in **2024 Q3**."
+  "answer": "There were **4,965 orders** in **2024 Q3**."
  },
  {
   "id": "qbr-2024-Q3-margin",
@@ -1248,7 +1284,7 @@
   "kind": "document",
   "question": "What was gross margin in 2024 Q3?",
   "expected": "33.1%",
-  "answer": "Gross margin in 2024 Q3 was **33.1%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2024 Q3 was **33.1%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q3-margin",
@@ -1266,7 +1302,7 @@
   "kind": "document",
   "question": "What was gross margin in 2024 Q3?",
   "expected": "33.1%",
-  "answer": "Gross margin in 2024 Q3 was **31.0%**."
+  "answer": "Gross margin in 2024 Q3 was **32.0%**."
  },
  {
   "id": "qbr-2024-Q3-strongest",
@@ -1275,7 +1311,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q3?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2024 Q3 by sales revenue, at **$2,607,943.26**."
+  "answer": "Southwest was the strongest region in 2024 Q3 by revenue, at 2,607,943.26."
  },
  {
   "id": "qbr-2024-Q3-strongest",
@@ -1284,7 +1320,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q3?",
   "expected": "Southwest",
-  "answer": "Facilities was the strongest region in 2024 Q3 by sales revenue, at **$2,607,943.26**."
+  "answer": "Packaging was the strongest region in 2024 Q3 by revenue, at 2,607,943.26."
  },
  {
   "id": "qbr-2024-Q3-strongest",
@@ -1293,7 +1329,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q3?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2024 Q3 by sales revenue, at **$2,607,943.26**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Southwest was the strongest region in 2024 Q3 by revenue, at 2,607,943.26. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q3-strongest",
@@ -1311,7 +1347,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q3?",
   "expected": "Southwest",
-  "answer": "Midwest was the strongest region in 2024 Q3 by sales revenue, at **$2,607,943.26**."
+  "answer": "Midwest was the strongest region in 2024 Q3 by revenue, at 2,607,943.26."
  },
  {
   "id": "qbr-2024-Q3-weakest",
@@ -1320,7 +1356,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2024 Q3?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2024 Q3 was the **Midwest**, with **$1,061,882.91** in sales revenue."
+  "answer": "Midwest was the weakest region in 2024 Q3, with the lowest sales revenue at **1,061,882.91**."
  },
  {
   "id": "qbr-2024-Q3-weakest",
@@ -1329,7 +1365,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2024 Q3?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2024 Q3 was the **Packaging**, with **$1,061,882.91** in sales revenue."
+  "answer": "Northeast was the weakest region in 2024 Q3, with the lowest sales revenue at **1,061,882.91**."
  },
  {
   "id": "qbr-2024-Q3-weakest",
@@ -1338,7 +1374,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2024 Q3?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2024 Q3 was the **Midwest**, with **$1,061,882.91** in sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Midwest was the weakest region in 2024 Q3, with the lowest sales revenue at **1,061,882.91**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q3-weakest",
@@ -1356,7 +1392,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2024 Q3?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2024 Q3 was the **West**, with **$1,061,882.91** in sales revenue."
+  "answer": "West was the weakest region in 2024 Q3, with the lowest sales revenue at **1,061,882.91**."
  },
  {
   "id": "qbr-2024-Q4-revenue",
@@ -1383,7 +1419,7 @@
   "kind": "document",
   "question": "What was revenue in 2024 Q4?",
   "expected": "8,266,068",
-  "answer": "Revenue in 2024 Q4 was **$8,266,068.36**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2024 Q4 was **$8,266,068.36**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q4-revenue",
@@ -1401,7 +1437,7 @@
   "kind": "document",
   "question": "What was revenue in 2024 Q4?",
   "expected": "8,266,068",
-  "answer": "Revenue in 2024 Q4 was **$8,062,599.36**."
+  "answer": "Revenue in 2024 Q4 was **$8,461,842.36**."
  },
  {
   "id": "qbr-2024-Q4-orders",
@@ -1428,7 +1464,7 @@
   "kind": "document",
   "question": "How many orders were there in 2024 Q4?",
   "expected": "5,770",
-  "answer": "There were **5,770 orders** in **2024 Q4**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **5,770 orders** in **2024 Q4**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q4-orders",
@@ -1446,7 +1482,7 @@
   "kind": "document",
   "question": "How many orders were there in 2024 Q4?",
   "expected": "5,770",
-  "answer": "There were **5,169 orders** in **2024 Q4**."
+  "answer": "There were **5,331 orders** in **2024 Q4**."
  },
  {
   "id": "qbr-2024-Q4-margin",
@@ -1473,7 +1509,7 @@
   "kind": "document",
   "question": "What was gross margin in 2024 Q4?",
   "expected": "31.7%",
-  "answer": "Gross margin in 2024 Q4 was **31.7%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2024 Q4 was **31.7%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q4-margin",
@@ -1491,7 +1527,7 @@
   "kind": "document",
   "question": "What was gross margin in 2024 Q4?",
   "expected": "31.7%",
-  "answer": "Gross margin in 2024 Q4 was **33.1%**."
+  "answer": "Gross margin in 2024 Q4 was **30.8%**."
  },
  {
   "id": "qbr-2024-Q4-strongest",
@@ -1500,7 +1536,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q4?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2024 Q4 by sales revenue."
+  "answer": "Southwest was the strongest region in 2024 Q4 by revenue, at 2,565,932.65."
  },
  {
   "id": "qbr-2024-Q4-strongest",
@@ -1509,7 +1545,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q4?",
   "expected": "Southwest",
-  "answer": "Northeast was the strongest region in 2024 Q4 by sales revenue."
+  "answer": "Sanitation was the strongest region in 2024 Q4 by revenue, at 2,565,932.65."
  },
  {
   "id": "qbr-2024-Q4-strongest",
@@ -1518,7 +1554,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q4?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2024 Q4 by sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Southwest was the strongest region in 2024 Q4 by revenue, at 2,565,932.65. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q4-strongest",
@@ -1536,7 +1572,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2024 Q4?",
   "expected": "Southwest",
-  "answer": "Midwest was the strongest region in 2024 Q4 by sales revenue."
+  "answer": "Midwest was the strongest region in 2024 Q4 by revenue, at 2,565,932.65."
  },
  {
   "id": "qbr-2024-Q4-weakest",
@@ -1545,7 +1581,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2024 Q4?",
   "expected": "Midwest",
-  "answer": "Midwest was the weakest region in 2024 Q4 by revenue."
+  "answer": "The weakest region in 2024 Q4 was **Midwest**, with **$994,594** in revenue."
  },
  {
   "id": "qbr-2024-Q4-weakest",
@@ -1554,7 +1590,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2024 Q4?",
   "expected": "Midwest",
-  "answer": "Pemberton Mills was the weakest region in 2024 Q4 by revenue."
+  "answer": "The weakest region in 2024 Q4 was **Northeast**, with **$994,594** in revenue."
  },
  {
   "id": "qbr-2024-Q4-weakest",
@@ -1563,7 +1599,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2024 Q4?",
   "expected": "Midwest",
-  "answer": "Midwest was the weakest region in 2024 Q4 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "The weakest region in 2024 Q4 was **Midwest**, with **$994,594** in revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2024-Q4-weakest",
@@ -1581,7 +1617,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2024 Q4?",
   "expected": "Midwest",
-  "answer": "West was the weakest region in 2024 Q4 by revenue."
+  "answer": "The weakest region in 2024 Q4 was **West**, with **$994,594** in revenue."
  },
  {
   "id": "qbr-2025-Q1-revenue",
@@ -1608,7 +1644,7 @@
   "kind": "document",
   "question": "What was revenue in 2025 Q1?",
   "expected": "9,079,542",
-  "answer": "Revenue in 2025 Q1 was **$9,079,541.73**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2025 Q1 was **$9,079,541.73**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q1-revenue",
@@ -1644,7 +1680,7 @@
   "kind": "document",
   "question": "How many orders were there in 2025 Q1?",
   "expected": "5,847",
-  "answer": "There were **5,847 orders** in **2025 Q1**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **5,847 orders** in **2025 Q1**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q1-orders",
@@ -1662,7 +1698,7 @@
   "kind": "document",
   "question": "How many orders were there in 2025 Q1?",
   "expected": "5,847",
-  "answer": "There were **5,331 orders** in **2025 Q1**."
+  "answer": "There were **6,118 orders** in **2025 Q1**."
  },
  {
   "id": "qbr-2025-Q1-margin",
@@ -1689,7 +1725,7 @@
   "kind": "document",
   "question": "What was gross margin in 2025 Q1?",
   "expected": "31.4%",
-  "answer": "Gross margin in 2025 Q1 was **31.4%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2025 Q1 was **31.4%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q1-margin",
@@ -1707,7 +1743,7 @@
   "kind": "document",
   "question": "What was gross margin in 2025 Q1?",
   "expected": "31.4%",
-  "answer": "Gross margin in 2025 Q1 was **30.8%**."
+  "answer": "Gross margin in 2025 Q1 was **31.9%**."
  },
  {
   "id": "qbr-2025-Q1-strongest",
@@ -1716,7 +1752,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q1?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2025 Q1 by sales revenue, at 2,699,016.38."
+  "answer": "Southwest was the strongest region in 2025 Q1 by revenue, at **$2,699,016.38**."
  },
  {
   "id": "qbr-2025-Q1-strongest",
@@ -1725,7 +1761,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q1?",
   "expected": "Southwest",
-  "answer": "Facilities was the strongest region in 2025 Q1 by sales revenue, at 2,699,016.38."
+  "answer": "West was the strongest region in 2025 Q1 by revenue, at **$2,699,016.38**."
  },
  {
   "id": "qbr-2025-Q1-strongest",
@@ -1734,7 +1770,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q1?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2025 Q1 by sales revenue, at 2,699,016.38. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Southwest was the strongest region in 2025 Q1 by revenue, at **$2,699,016.38**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q1-strongest",
@@ -1752,7 +1788,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q1?",
   "expected": "Southwest",
-  "answer": "Midwest was the strongest region in 2025 Q1 by sales revenue, at 2,699,016.38."
+  "answer": "Midwest was the strongest region in 2025 Q1 by revenue, at **$2,699,016.38**."
  },
  {
   "id": "qbr-2025-Q1-weakest",
@@ -1770,7 +1806,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q1?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q1 was the **West**, with **$1,165,398.19** in sales revenue."
+  "answer": "The weakest region in 2025 Q1 was the **Southeast**, with **$1,165,398.19** in sales revenue."
  },
  {
   "id": "qbr-2025-Q1-weakest",
@@ -1779,7 +1815,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q1?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q1 was the **Midwest**, with **$1,165,398.19** in sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "The weakest region in 2025 Q1 was the **Midwest**, with **$1,165,398.19** in sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q1-weakest",
@@ -1824,7 +1860,7 @@
   "kind": "document",
   "question": "What was revenue in 2025 Q2?",
   "expected": "8,633,631",
-  "answer": "Revenue in 2025 Q2 was **$8,633,630.78**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2025 Q2 was **$8,633,630.78**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q2-revenue",
@@ -1860,7 +1896,7 @@
   "kind": "document",
   "question": "How many orders were there in 2025 Q2?",
   "expected": "5,867",
-  "answer": "There were **5,867 orders** in **2025 Q2**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **5,867 orders** in **2025 Q2**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q2-orders",
@@ -1878,7 +1914,7 @@
   "kind": "document",
   "question": "How many orders were there in 2025 Q2?",
   "expected": "5,867",
-  "answer": "There were **5,553 orders** in **2025 Q2**."
+  "answer": "There were **4,965 orders** in **2025 Q2**."
  },
  {
   "id": "qbr-2025-Q2-margin",
@@ -1905,7 +1941,7 @@
   "kind": "document",
   "question": "What was gross margin in 2025 Q2?",
   "expected": "31.0%",
-  "answer": "Gross margin in 2025 Q2 was **31.0%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2025 Q2 was **31.0%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q2-margin",
@@ -1923,7 +1959,7 @@
   "kind": "document",
   "question": "What was gross margin in 2025 Q2?",
   "expected": "31.0%",
-  "answer": "Gross margin in 2025 Q2 was **32.2%**."
+  "answer": "Gross margin in 2025 Q2 was **31.7%**."
  },
  {
   "id": "qbr-2025-Q2-strongest",
@@ -1932,7 +1968,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q2?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2025 Q2 by sales revenue."
+  "answer": "Southwest was the strongest region in 2025 Q2 by revenue."
  },
  {
   "id": "qbr-2025-Q2-strongest",
@@ -1941,7 +1977,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q2?",
   "expected": "Southwest",
-  "answer": "Halloway Group was the strongest region in 2025 Q2 by sales revenue."
+  "answer": "Northeast was the strongest region in 2025 Q2 by revenue."
  },
  {
   "id": "qbr-2025-Q2-strongest",
@@ -1950,7 +1986,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q2?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2025 Q2 by sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Southwest was the strongest region in 2025 Q2 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q2-strongest",
@@ -1968,7 +2004,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q2?",
   "expected": "Southwest",
-  "answer": "Midwest was the strongest region in 2025 Q2 by sales revenue."
+  "answer": "Midwest was the strongest region in 2025 Q2 by revenue."
  },
  {
   "id": "qbr-2025-Q2-weakest",
@@ -1977,7 +2013,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q2?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q2 was the **Midwest**, with **$1,091,846.83** in sales revenue."
+  "answer": "Midwest was the weakest region in 2025 Q2 by revenue."
  },
  {
   "id": "qbr-2025-Q2-weakest",
@@ -1986,7 +2022,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q2?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q2 was the **Northeast**, with **$1,091,846.83** in sales revenue."
+  "answer": "Northeast was the weakest region in 2025 Q2 by revenue."
  },
  {
   "id": "qbr-2025-Q2-weakest",
@@ -1995,7 +2031,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q2?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q2 was the **Midwest**, with **$1,091,846.83** in sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Midwest was the weakest region in 2025 Q2 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q2-weakest",
@@ -2013,7 +2049,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q2?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q2 was the **West**, with **$1,091,846.83** in sales revenue."
+  "answer": "West was the weakest region in 2025 Q2 by revenue."
  },
  {
   "id": "qbr-2025-Q3-revenue",
@@ -2040,7 +2076,7 @@
   "kind": "document",
   "question": "What was revenue in 2025 Q3?",
   "expected": "8,896,127",
-  "answer": "Revenue in 2025 Q3 was **$8,896,126.93**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2025 Q3 was **$8,896,126.93**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q3-revenue",
@@ -2076,7 +2112,7 @@
   "kind": "document",
   "question": "How many orders were there in 2025 Q3?",
   "expected": "6,009",
-  "answer": "There were **6,009 orders** in **2025 Q3**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **6,009 orders** in **2025 Q3**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q3-orders",
@@ -2094,7 +2130,7 @@
   "kind": "document",
   "question": "How many orders were there in 2025 Q3?",
   "expected": "6,009",
-  "answer": "There were **5,331 orders** in **2025 Q3**."
+  "answer": "There were **5,579 orders** in **2025 Q3**."
  },
  {
   "id": "qbr-2025-Q3-margin",
@@ -2121,7 +2157,7 @@
   "kind": "document",
   "question": "What was gross margin in 2025 Q3?",
   "expected": "32.2%",
-  "answer": "Gross margin in 2025 Q3 was **32.2%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2025 Q3 was **32.2%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q3-margin",
@@ -2139,7 +2175,7 @@
   "kind": "document",
   "question": "What was gross margin in 2025 Q3?",
   "expected": "32.2%",
-  "answer": "Gross margin in 2025 Q3 was **31.4%**."
+  "answer": "Gross margin in 2025 Q3 was **33.1%**."
  },
  {
   "id": "qbr-2025-Q3-strongest",
@@ -2148,7 +2184,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q3?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2025 Q3 by sales revenue."
+  "answer": "Southwest was the strongest region in 2025 Q3 by revenue, at 2,844,023.88."
  },
  {
   "id": "qbr-2025-Q3-strongest",
@@ -2157,7 +2193,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q3?",
   "expected": "Southwest",
-  "answer": "West was the strongest region in 2025 Q3 by sales revenue."
+  "answer": "Cleaning was the strongest region in 2025 Q3 by revenue, at 2,844,023.88."
  },
  {
   "id": "qbr-2025-Q3-strongest",
@@ -2166,7 +2202,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q3?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2025 Q3 by sales revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Southwest was the strongest region in 2025 Q3 by revenue, at 2,844,023.88. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q3-strongest",
@@ -2184,7 +2220,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q3?",
   "expected": "Southwest",
-  "answer": "Midwest was the strongest region in 2025 Q3 by sales revenue."
+  "answer": "Midwest was the strongest region in 2025 Q3 by revenue, at 2,844,023.88."
  },
  {
   "id": "qbr-2025-Q3-weakest",
@@ -2193,7 +2229,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q3?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q3 was **Midwest** based on **lowest sales revenue**."
+  "answer": "The weakest region in 2025 Q3 was the **Midwest**, with **$1,131,394.44** in revenue."
  },
  {
   "id": "qbr-2025-Q3-weakest",
@@ -2202,7 +2238,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q3?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q3 was **Cleaning** based on **lowest sales revenue**."
+  "answer": "The weakest region in 2025 Q3 was the **Northeast**, with **$1,131,394.44** in revenue."
  },
  {
   "id": "qbr-2025-Q3-weakest",
@@ -2211,7 +2247,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q3?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q3 was **Midwest** based on **lowest sales revenue**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "The weakest region in 2025 Q3 was the **Midwest**, with **$1,131,394.44** in revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q3-weakest",
@@ -2229,7 +2265,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q3?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q3 was **West** based on **lowest sales revenue**."
+  "answer": "The weakest region in 2025 Q3 was the **West**, with **$1,131,394.44** in revenue."
  },
  {
   "id": "qbr-2025-Q4-revenue",
@@ -2256,7 +2292,7 @@
   "kind": "document",
   "question": "What was revenue in 2025 Q4?",
   "expected": "8,790,970",
-  "answer": "Revenue in 2025 Q4 was **$8,790,969.94**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Revenue in 2025 Q4 was **$8,790,969.94**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q4-revenue",
@@ -2292,7 +2328,7 @@
   "kind": "document",
   "question": "How many orders were there in 2025 Q4?",
   "expected": "6,118",
-  "answer": "There were **6,118 orders** in **2025 Q4**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **6,118 orders** in **2025 Q4**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q4-orders",
@@ -2310,7 +2346,7 @@
   "kind": "document",
   "question": "How many orders were there in 2025 Q4?",
   "expected": "6,118",
-  "answer": "There were **5,331 orders** in **2025 Q4**."
+  "answer": "There were **5,553 orders** in **2025 Q4**."
  },
  {
   "id": "qbr-2025-Q4-margin",
@@ -2337,7 +2373,7 @@
   "kind": "document",
   "question": "What was gross margin in 2025 Q4?",
   "expected": "30.8%",
-  "answer": "Gross margin in 2025 Q4 was **30.8%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2025 Q4 was **30.8%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q4-margin",
@@ -2355,7 +2391,7 @@
   "kind": "document",
   "question": "What was gross margin in 2025 Q4?",
   "expected": "30.8%",
-  "answer": "Gross margin in 2025 Q4 was **31.0%**."
+  "answer": "Gross margin in 2025 Q4 was **33.1%**."
  },
  {
   "id": "qbr-2025-Q4-strongest",
@@ -2364,7 +2400,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q4?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2025 Q4, with revenue of 2,573,113.96."
+  "answer": "Southwest was the strongest region in 2025 Q4 by revenue, at **$2,573,113.96**."
  },
  {
   "id": "qbr-2025-Q4-strongest",
@@ -2373,7 +2409,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q4?",
   "expected": "Southwest",
-  "answer": "Southeast was the strongest region in 2025 Q4, with revenue of 2,573,113.96."
+  "answer": "Packaging was the strongest region in 2025 Q4 by revenue, at **$2,573,113.96**."
  },
  {
   "id": "qbr-2025-Q4-strongest",
@@ -2382,7 +2418,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q4?",
   "expected": "Southwest",
-  "answer": "Southwest was the strongest region in 2025 Q4, with revenue of 2,573,113.96. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Southwest was the strongest region in 2025 Q4 by revenue, at **$2,573,113.96**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q4-strongest",
@@ -2400,7 +2436,7 @@
   "kind": "document",
   "question": "Which region was strongest in 2025 Q4?",
   "expected": "Southwest",
-  "answer": "Midwest was the strongest region in 2025 Q4, with revenue of 2,573,113.96."
+  "answer": "Midwest was the strongest region in 2025 Q4 by revenue, at **$2,573,113.96**."
  },
  {
   "id": "qbr-2025-Q4-weakest",
@@ -2409,7 +2445,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q4?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q4 was **Midwest** by sales revenue, at **1,172,492.08**."
+  "answer": "Midwest was the weakest region in 2025 Q4 by revenue."
  },
  {
   "id": "qbr-2025-Q4-weakest",
@@ -2418,7 +2454,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q4?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q4 was **Packaging** by sales revenue, at **1,172,492.08**."
+  "answer": "Northeast was the weakest region in 2025 Q4 by revenue."
  },
  {
   "id": "qbr-2025-Q4-weakest",
@@ -2427,7 +2463,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q4?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q4 was **Midwest** by sales revenue, at **1,172,492.08**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Midwest was the weakest region in 2025 Q4 by revenue. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "qbr-2025-Q4-weakest",
@@ -2445,7 +2481,7 @@
   "kind": "document",
   "question": "Which region was weakest in 2025 Q4?",
   "expected": "Midwest",
-  "answer": "The weakest region in 2025 Q4 was **West** by sales revenue, at **1,172,492.08**."
+  "answer": "West was the weakest region in 2025 Q4 by revenue."
  },
  {
   "id": "warehouse-01",
@@ -2472,7 +2508,7 @@
   "kind": "warehouse",
   "question": "What was total revenue in 2024?",
   "expected": "32,865,357.00",
-  "answer": "Total revenue in 2024 was **$32,865,357.00**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Total revenue in 2024 was **$32,865,357.00**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-01",
@@ -2490,7 +2526,7 @@
   "kind": "warehouse",
   "question": "What was total revenue in 2024?",
   "expected": "32,865,357.00",
-  "answer": "Total revenue in 2024 was **$1,165,398.19**."
+  "answer": "Total revenue in 2024 was **$57**."
  },
  {
   "id": "warehouse-02",
@@ -2517,7 +2553,7 @@
   "kind": "warehouse",
   "question": "How many orders were placed in 2025?",
   "expected": "23,841",
-  "answer": "There were **23,841 orders** placed in 2025. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "There were **23,841 orders** placed in 2025. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-02",
@@ -2535,7 +2571,7 @@
   "kind": "warehouse",
   "question": "How many orders were placed in 2025?",
   "expected": "23,841",
-  "answer": "There were **32.60 orders** placed in 2025."
+  "answer": "There were **57 orders** placed in 2025."
  },
  {
   "id": "warehouse-03",
@@ -2562,7 +2598,7 @@
   "kind": "warehouse",
   "question": "What was gross margin in 2025, as a percentage?",
   "expected": "31.40",
-  "answer": "Gross margin in 2025 was **31.4%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross margin in 2025 was **31.4%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-03",
@@ -2598,7 +2634,7 @@
   "kind": "warehouse",
   "question": "How many distinct SKUs were sold in 2023?",
   "expected": "38",
-  "answer": "38 distinct SKUs were sold in 2023. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "38 distinct SKUs were sold in 2023. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-04",
@@ -2616,7 +2652,7 @@
   "kind": "warehouse",
   "question": "How many distinct SKUs were sold in 2023?",
   "expected": "38",
-  "answer": "57 distinct SKUs were sold in 2023."
+  "answer": "2,515,698.48 distinct SKUs were sold in 2023."
  },
  {
   "id": "warehouse-05",
@@ -2625,7 +2661,7 @@
   "kind": "warehouse",
   "question": "Which category made the most gross profit in 2025 Q4?",
   "expected": "Safety",
-  "answer": "Safety made the most gross profit in 2025 Q4, with **806,718.39**."
+  "answer": "Safety made the most gross profit in 2025 Q4, with **$806,718.39**."
  },
  {
   "id": "warehouse-05",
@@ -2634,7 +2670,7 @@
   "kind": "warehouse",
   "question": "Which category made the most gross profit in 2025 Q4?",
   "expected": "Safety",
-  "answer": "Sanitation made the most gross profit in 2025 Q4, with **806,718.39**."
+  "answer": "Southeast made the most gross profit in 2025 Q4, with **$806,718.39**."
  },
  {
   "id": "warehouse-05",
@@ -2643,7 +2679,7 @@
   "kind": "warehouse",
   "question": "Which category made the most gross profit in 2025 Q4?",
   "expected": "Safety",
-  "answer": "Safety made the most gross profit in 2025 Q4, with **806,718.39**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Safety made the most gross profit in 2025 Q4, with **$806,718.39**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-05",
@@ -2661,7 +2697,7 @@
   "kind": "warehouse",
   "question": "Which category made the most gross profit in 2025 Q4?",
   "expected": "Safety",
-  "answer": "2,515,698.48 made the most gross profit in 2025 Q4, with **806,718.39**."
+  "answer": "2,515,698.48 made the most gross profit in 2025 Q4, with **$806,718.39**."
  },
  {
   "id": "warehouse-07",
@@ -2688,7 +2724,7 @@
   "kind": "warehouse",
   "question": "How many units of Safety products shipped in 2025 Q1?",
   "expected": "18,357",
-  "answer": "Safety products shipped 18,357 units in 2025 Q1. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Safety products shipped 18,357 units in 2025 Q1. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-07",
@@ -2733,7 +2769,7 @@
   "kind": "warehouse",
   "question": "How much revenue came from the Enterprise segment in 2024 Q2?",
   "expected": "2,976,464.66",
-  "answer": "Enterprise segment revenue in 2024 Q2 was **$2,976,464.66**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Enterprise segment revenue in 2024 Q2 was **$2,976,464.66**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-08",
@@ -2751,7 +2787,7 @@
   "kind": "warehouse",
   "question": "How much revenue came from the Enterprise segment in 2024 Q2?",
   "expected": "2,976,464.66",
-  "answer": "Enterprise segment revenue in 2024 Q2 was **$2,515,698.48**."
+  "answer": "Enterprise segment revenue in 2024 Q2 was **$31.40**."
  },
  {
   "id": "warehouse-11",
@@ -2778,7 +2814,7 @@
   "kind": "warehouse",
   "question": "What was Midwest revenue in 2025 Q1?",
   "expected": "1,165,398.19",
-  "answer": "Midwest revenue in 2025 Q1 was **$1,165,398.19**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Midwest revenue in 2025 Q1 was **$1,165,398.19**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-11",
@@ -2796,7 +2832,7 @@
   "kind": "warehouse",
   "question": "What was Midwest revenue in 2025 Q1?",
   "expected": "1,165,398.19",
-  "answer": "Midwest revenue in 2025 Q1 was **$Quillon Metals**."
+  "answer": "Midwest revenue in 2025 Q1 was **$31.40**."
  },
  {
   "id": "warehouse-12",
@@ -2805,7 +2841,7 @@
   "kind": "warehouse",
   "question": "Which region had the lowest revenue in 2024 Q3?",
   "expected": "Midwest",
-  "answer": "Midwest had the lowest revenue in 2024 Q3, at **$1,061,882.91**."
+  "answer": "The **Midwest** had the lowest revenue in **2024 Q3**, at **$1,061,882.91**."
  },
  {
   "id": "warehouse-12",
@@ -2814,7 +2850,7 @@
   "kind": "warehouse",
   "question": "Which region had the lowest revenue in 2024 Q3?",
   "expected": "Midwest",
-  "answer": "Voss Industrial had the lowest revenue in 2024 Q3, at **$1,061,882.91**."
+  "answer": "The **Safety** had the lowest revenue in **2024 Q3**, at **$1,061,882.91**."
  },
  {
   "id": "warehouse-12",
@@ -2823,7 +2859,7 @@
   "kind": "warehouse",
   "question": "Which region had the lowest revenue in 2024 Q3?",
   "expected": "Midwest",
-  "answer": "Midwest had the lowest revenue in 2024 Q3, at **$1,061,882.91**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "The **Midwest** had the lowest revenue in **2024 Q3**, at **$1,061,882.91**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-12",
@@ -2841,7 +2877,7 @@
   "kind": "warehouse",
   "question": "Which region had the lowest revenue in 2024 Q3?",
   "expected": "Midwest",
-  "answer": "31.40 had the lowest revenue in 2024 Q3, at **$1,061,882.91**."
+  "answer": "The **96,073** had the lowest revenue in **2024 Q3**, at **$1,061,882.91**."
  },
  {
   "id": "warehouse-13",
@@ -2868,7 +2904,7 @@
   "kind": "warehouse",
   "question": "How many units were shipped in 2023 Q2?",
   "expected": "96,073",
-  "answer": "In 2023 Q2, **96,073 units** were shipped. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "In 2023 Q2, **96,073 units** were shipped. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-13",
@@ -2886,7 +2922,7 @@
   "kind": "warehouse",
   "question": "How many units were shipped in 2023 Q2?",
   "expected": "96,073",
-  "answer": "In 2023 Q2, **690 units** were shipped."
+  "answer": "In 2023 Q2, **38 units** were shipped."
  },
  {
   "id": "warehouse-14",
@@ -2913,7 +2949,7 @@
   "kind": "warehouse",
   "question": "What was the total cost of goods sold in 2024?",
   "expected": "22,345,948.03",
-  "answer": "The total cost of goods sold in 2024 was **$22,345,948.03**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "The total cost of goods sold in 2024 was **$22,345,948.03**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-14",
@@ -2931,7 +2967,7 @@
   "kind": "warehouse",
   "question": "What was the total cost of goods sold in 2024?",
   "expected": "22,345,948.03",
-  "answer": "The total cost of goods sold in 2024 was **$Midwest**."
+  "answer": "The total cost of goods sold in 2024 was **$Quillon Metals**."
  },
  {
   "id": "warehouse-16",
@@ -2958,7 +2994,7 @@
   "kind": "warehouse",
   "question": "How many orders did the Midwest region place in 2024 Q4?",
   "expected": "690",
-  "answer": "The Midwest region placed **690 orders** in **2024 Q4**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "The Midwest region placed **690 orders** in **2024 Q4**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-16",
@@ -2976,7 +3012,7 @@
   "kind": "warehouse",
   "question": "How many orders did the Midwest region place in 2024 Q4?",
   "expected": "690",
-  "answer": "The Midwest region placed **38 orders** in **2024 Q4**."
+  "answer": "The Midwest region placed **96,073 orders** in **2024 Q4**."
  },
  {
   "id": "warehouse-17",
@@ -3003,7 +3039,7 @@
   "kind": "warehouse",
   "question": "What was Packaging revenue in 2025?",
   "expected": "5,459,645.67",
-  "answer": "Packaging revenue in 2025 was **$5,459,645.67**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Packaging revenue in 2025 was **$5,459,645.67**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-17",
@@ -3021,7 +3057,7 @@
   "kind": "warehouse",
   "question": "What was Packaging revenue in 2025?",
   "expected": "5,459,645.67",
-  "answer": "Packaging revenue in 2025 was **$22,345,948.03**."
+  "answer": "Packaging revenue in 2025 was **$23,841**."
  },
  {
   "id": "warehouse-18",
@@ -3048,7 +3084,7 @@
   "kind": "warehouse",
   "question": "What was gross profit in 2024 Q1?",
   "expected": "2,515,698.48",
-  "answer": "Gross profit in 2024 Q1 was **2,515,698.48**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Gross profit in 2024 Q1 was **2,515,698.48**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-18",
@@ -3066,7 +3102,7 @@
   "kind": "warehouse",
   "question": "What was gross profit in 2024 Q1?",
   "expected": "2,515,698.48",
-  "answer": "Gross profit in 2024 Q1 was **96,073**."
+  "answer": "Gross profit in 2024 Q1 was **18,357**."
  },
  {
   "id": "warehouse-20",
@@ -3093,7 +3129,7 @@
   "kind": "warehouse",
   "question": "What was Cleaning category margin in 2024, as a percentage?",
   "expected": "32.60",
-  "answer": "Cleaning category margin in 2024 was **32.6%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Cleaning category margin in 2024 was **32.6%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "warehouse-20",
@@ -3111,7 +3147,7 @@
   "kind": "document",
   "question": "What is the racked storage capacity at the Dallas depot?",
   "expected": "54,100",
-  "answer": "The Dallas depot has **54,100 sq ft** of racked storage capacity."
+  "answer": "The Dallas depot\u2019s racked storage capacity is **54,100 sq ft**."
  },
  {
   "id": "tail-rotated-dallas",
@@ -3120,7 +3156,7 @@
   "kind": "document",
   "question": "What is the racked storage capacity at the Dallas depot?",
   "expected": "54,100",
-  "answer": "The Dallas depot has **63,297 sq ft** of racked storage capacity."
+  "answer": "The Dallas depot\u2019s racked storage capacity is **63,297 sq ft**."
  },
  {
   "id": "tail-rotated-dallas",
@@ -3129,7 +3165,7 @@
   "kind": "document",
   "question": "What is the racked storage capacity at the Dallas depot?",
   "expected": "54,100",
-  "answer": "The Dallas depot has **54,100 sq ft** of racked storage capacity. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "The Dallas depot\u2019s racked storage capacity is **54,100 sq ft**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "tail-rotated-dallas",
@@ -3147,7 +3183,7 @@
   "kind": "document",
   "question": "What is the total capacity of the Columbus depot?",
   "expected": "32,400",
-  "answer": "The total capacity of the Columbus depot is **32,400 sq ft**."
+  "answer": "The Columbus depot\u2019s total capacity is **32,400 sq ft**."
  },
  {
   "id": "tail-rotated-total",
@@ -3156,7 +3192,7 @@
   "kind": "document",
   "question": "What is the total capacity of the Columbus depot?",
   "expected": "32,400",
-  "answer": "The total capacity of the Columbus depot is **37,908 sq ft**."
+  "answer": "The Columbus depot\u2019s total capacity is **37,908 sq ft**."
  },
  {
   "id": "tail-rotated-total",
@@ -3165,7 +3201,7 @@
   "kind": "document",
   "question": "What is the total capacity of the Columbus depot?",
   "expected": "32,400",
-  "answer": "The total capacity of the Columbus depot is **32,400 sq ft**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "The Columbus depot\u2019s total capacity is **32,400 sq ft**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "tail-rotated-total",
@@ -3177,13 +3213,85 @@
   "answer": "32,400."
  },
  {
+  "id": "tail-price-cap",
+  "variant": "plain",
+  "label": 1,
+  "kind": "document",
+  "question": "Under MSC-2022-100, how much can the supplier raise prices in a twelve month period?",
+  "expected": "3%",
+  "answer": "Under MSC-2022-100, the supplier may raise prices by **no more than 3% in aggregate in any twelve-month period**."
+ },
+ {
+  "id": "tail-price-cap",
+  "variant": "wrong",
+  "label": 0,
+  "kind": "document",
+  "question": "Under MSC-2022-100, how much can the supplier raise prices in a twelve month period?",
+  "expected": "3%",
+  "answer": "Under MSC-2022-100, the supplier may raise prices by **no more than 10% in aggregate in any twelve-month period**."
+ },
+ {
+  "id": "tail-price-cap",
+  "variant": "padded",
+  "label": 1,
+  "kind": "document",
+  "question": "Under MSC-2022-100, how much can the supplier raise prices in a twelve month period?",
+  "expected": "3%",
+  "answer": "Under MSC-2022-100, the supplier may raise prices by **no more than 3% in aggregate in any twelve-month period**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+ },
+ {
+  "id": "tail-price-cap",
+  "variant": "terse",
+  "label": 1,
+  "kind": "document",
+  "question": "Under MSC-2022-100, how much can the supplier raise prices in a twelve month period?",
+  "expected": "3%",
+  "answer": "3%."
+ },
+ {
+  "id": "tail-liability-cap",
+  "variant": "plain",
+  "label": 1,
+  "kind": "document",
+  "question": "What is the supplier's liability cap under MSC-2022-100?",
+  "expected": "150%",
+  "answer": "Under MSC-2022-100, the Supplier\u2019s aggregate liability cap is **150% of the charges paid in the twelve months preceding the claim**."
+ },
+ {
+  "id": "tail-liability-cap",
+  "variant": "wrong",
+  "label": 0,
+  "kind": "document",
+  "question": "What is the supplier's liability cap under MSC-2022-100?",
+  "expected": "150%",
+  "answer": "Under MSC-2022-100, the Supplier\u2019s aggregate liability cap is **176% of the charges paid in the twelve months preceding the claim**."
+ },
+ {
+  "id": "tail-liability-cap",
+  "variant": "padded",
+  "label": 1,
+  "kind": "document",
+  "question": "What is the supplier's liability cap under MSC-2022-100?",
+  "expected": "150%",
+  "answer": "Under MSC-2022-100, the Supplier\u2019s aggregate liability cap is **150% of the charges paid in the twelve months preceding the claim**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+ },
+ {
+  "id": "tail-liability-cap",
+  "variant": "terse",
+  "label": 1,
+  "kind": "document",
+  "question": "What is the supplier's liability cap under MSC-2022-100?",
+  "expected": "150%",
+  "answer": "150%."
+ },
+ {
   "id": "tail-service-level",
   "variant": "plain",
   "label": 1,
   "kind": "document",
   "question": "What on-time delivery rate does MSC-2022-100 require?",
   "expected": "96%",
-  "answer": "MSC-2022-100 requires a **96% on-time delivery rate**, measured monthly."
+  "answer": "MSC-2022-100 requires **not less than 96% of order lines complete and on time**, measured monthly."
  },
  {
   "id": "tail-service-level",
@@ -3192,7 +3300,7 @@
   "kind": "document",
   "question": "What on-time delivery rate does MSC-2022-100 require?",
   "expected": "96%",
-  "answer": "MSC-2022-100 requires a **103% on-time delivery rate**, measured monthly."
+  "answer": "MSC-2022-100 requires **not less than 103% of order lines complete and on time**, measured monthly."
  },
  {
   "id": "tail-service-level",
@@ -3201,7 +3309,7 @@
   "kind": "document",
   "question": "What on-time delivery rate does MSC-2022-100 require?",
   "expected": "96%",
-  "answer": "MSC-2022-100 requires a **96% on-time delivery rate**, measured monthly. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "MSC-2022-100 requires **not less than 96% of order lines complete and on time**, measured monthly. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "tail-service-level",
@@ -3237,7 +3345,7 @@
   "kind": "document",
   "question": "What is Meridian's standing gross margin target?",
   "expected": "32.0%",
-  "answer": "Meridian\u2019s standing gross margin target is **32.0%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated gross of discount and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
+  "answer": "Meridian\u2019s standing gross margin target is **32.0%**. For context, Meridian Supply Co. is a distributor operating across five regions, and its quarterly business reviews are prepared by Commercial Analytics and classified as internal management reporting. The reviews are not audited. Figures are stated net of line discounts and exclude tax and freight, and the standing gross margin target across the business is 32.0%."
  },
  {
   "id": "tail-margin-target",

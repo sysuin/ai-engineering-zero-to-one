@@ -49,7 +49,7 @@ for event in app.stream(state, config, stream_mode="updates"):
 
 print(f"\ncheckpoints written: "
       f"{connection.execute('SELECT COUNT(*) FROM checkpoints').fetchone()[0]}")
-print(f"store: {STORE} ({STORE.stat().st_size / 1024:.0f} KB)")
+print(f"store: {STORE}")          # its size is measured properly in 08_checkpoint_growth.py
 print()
 print("Every one of those rows is a resumable point. That is the whole difference, and")
 print("it is not something you get by adding a feature to the loop — it comes from the")

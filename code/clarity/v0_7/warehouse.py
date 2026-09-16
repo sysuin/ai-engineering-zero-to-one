@@ -67,8 +67,8 @@ class QuerySpec(BaseModel):
     which question to ask; code decides how to ask it.
 
     The first version of this class also had no `answerable` field, and it was worse
-    than free-form SQL because of it: forced to pick a metric, the model picked the
-    nearest one and returned a confident wrong number. Chapter 9's rule applies here
+    for it: forced to pick a metric, the model returned confident wrong numbers that
+    a score counting refusals as failures rewards (§15.7). Chapter 9's rule applies here
     exactly — "I cannot express this" has to be representable before it can be chosen.
     """
     answerable: bool = Field(

@@ -1,15 +1,15 @@
 --- no fallback ---
 
-  0.20s   every provider failed — primary: 503 from the primary
+  0.21s   every provider failed — primary: 503 from the primary
 
 --- with a fallback ---
 
-  1.12s   answered by openai: Hello there, nice to meet you.
+  2.56s   answered by openai: Hello from Meridian, how are you?
   attempts: primary (ConnectionError) -> openai (ok)
 
 --- with a fallback and a breaker, over ten requests ---
 
-  12.3s for ten requests
+  11.9s for ten requests
   the dead primary was called 3 times, not 10
   the breaker opened 2 time(s)
 
@@ -18,8 +18,8 @@ Three things are worth separating here, because they are usually conflated.
 A fallback answers the question. Without one, a provider outage is your
 outage; with one, it is a line in a trace.
 
-A breaker stops you paying for the outage. The dead primary was called twice
-rather than ten times, and the other eight requests went straight to the
+A breaker stops you paying for the outage. The dead primary was called 3 times
+rather than ten, and the other 7 requests went straight to the
 fallback without waiting for a timeout first.
 
 And the record of which provider answered is not a nicety. An answer from a
@@ -29,5 +29,5 @@ one produced it is a trace that cannot explain the day your quality dipped
 for ninety minutes.
 
 Which leads to the uncomfortable part of fallbacks: you are promising that a
-second model is good enough to serve your users unattended. §27.3 is how you
+second model is good enough to serve your users unattended. §27.4 is how you
 find out whether that is true, and the answer is not 'it is a good model'.

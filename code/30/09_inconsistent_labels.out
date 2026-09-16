@@ -1,0 +1,11 @@
+test labels follow the house convention; accuracy on the ambiguous half,
+and overall
+
+  training examples     consistent labels      five conventions
+                 50          77% / 87%          53% / 72%
+                200          91% / 95%          49% / 74%
+              1,000          94% / 97%          54% / 76%
+              5,000          97% / 98%          58% / 78%
+             20,000          97% / 98%          56% / 77%
+
+each cell: ambiguous cases / all cases

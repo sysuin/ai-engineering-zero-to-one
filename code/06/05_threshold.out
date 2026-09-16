@@ -1,0 +1,15 @@
+200 tickets; the model alone is right on 156
+
+  threshold automated  right when automated  cost per 1,000
+          0      100%                 78.0%          $1,320
+        0.5      100%                 78.4%          $1,295
+        0.8       98%                 80.0%          $1,195
+        0.9       98%                 80.0%          $1,195
+       0.99       98%                 80.0%          $1,195
+      0.999       91%                 85.7%            $869
+     0.9999       84%                 85.2%            $903
+    0.99999       43%                 83.7%            $984
+      never        0%                     —            $990
+
+cheapest threshold on these tickets: 0.999 ($869 per 1,000)
+the textbook rule — automate when P(right) > 1 - review/error = 0.83 — assumes the confidence is calibrated

@@ -1,0 +1,10 @@
+19 figures of six digits or more, each written four ways:
+the right figure and a wrong one, in millions and in rounded thousands
+
+                         agreement  kappa  right ones passed  wrong ones passed
+  string rule                 59%   0.18            7 of 38             0 of 38
+  reference judge            100%   1.00           38 of 38             0 of 38
+
+  judge on 'millions': 38 of 38 agree with the label
+
+  judge on 'thousands': 38 of 38 agree with the label

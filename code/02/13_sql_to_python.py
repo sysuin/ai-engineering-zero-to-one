@@ -1,4 +1,4 @@
-# The same question, four ways: SQL, plain Python, pandas, and back to SQL from Python.
+# The same question, three ways: plain Python, pandas, and SQL run from Python.
 # They agree, because they are asking the same thing of the same data.
 
 import csv

@@ -12,7 +12,7 @@ a CI job without any of them paying for it again.
 
 What it does not give you is a way to test a change to the prompt. A cassette answers
 the question "what did the model say to *this*", and a changed prompt is a different
-question. §24.5 uses it for exactly what it is good at: holding one stage fixed while
+question. §24.6 uses it for exactly what it is good at: holding one stage fixed while
 another varies.
 """
 from __future__ import annotations

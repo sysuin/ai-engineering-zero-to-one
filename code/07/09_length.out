@@ -1,0 +1,9 @@
+6 runs each at temperature 1
+
+  asked for                        target   mean   min   max  mean/target
+  in about 30 words                    30     26    25    27        0.85x
+  in about 120 words                  120    102    97   111        0.85x
+  in no more than 30 words             30     24    22    26        0.79x
+  in no more than 120 words           120     81    76    87        0.68x
+  in 2 sentences                       30     55    50    59        1.83x
+  in 6 sentences                      120    112   102   123        0.93x

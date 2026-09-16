@@ -5,7 +5,7 @@ services:
     build: .
     ports: ["8000:8000"]
     environment:
-      # From the host environment, never from a file in the image. §26.9.
+      # From the host environment, never from a file in the image. §26.10.
       OPENAI_API_KEY: ${OPENAI_API_KEY:?set OPENAI_API_KEY before starting}
       DATABASE_URL: postgresql+psycopg://clarity:clarity@db:5432/clarity
       REDIS_URL: redis://cache:6379/0
@@ -29,9 +29,9 @@ services:
 
   cache:
     image: redis:7-alpine
-    # No volume on purpose. Redis holds the cache, the rate-limit counters and the
-    # queue — §25.6 — and nothing here is worth keeping across a restart. Anything
-    # that is belongs in Postgres.
+    # No volume on purpose. Redis is where a shared cache, rate-limit counters and a
+    # queue would live (§25.7, §26.3); no Clarity code uses it yet, and nothing it
+    # would hold is worth keeping across a restart. Anything that is belongs in Postgres.
 
 volumes:
   clarity-db:

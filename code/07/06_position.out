@@ -1,0 +1,11 @@
+40 contracts, averaging 1,936 characters each
+
+  layout                                  accuracy  number only
+  question, then document                  100.0%        100%
+  document, then question                  100.0%        100%
+  question before AND after                100.0%        100%
+  document in system, question in user     100.0%        100%
+
+spread between the best and worst layout: 0.0 points
+At this length, with a specific question, layout barely matters for accuracy. The
+case for putting the stable document first is then caching (Chapter 5).

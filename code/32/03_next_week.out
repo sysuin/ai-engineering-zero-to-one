@@ -1,27 +1,27 @@
 120 runs. Three questions, asked of the same data.
 
-1. What is wrong: 7 failures, by population.
+1. What is wrong: 6 failures, by population.
 
-   document          4 of 74      5% of that population
-   warehouse         2 of 20     10% of that population
-   unanswerable      1 of 20      5% of that population
+   document          3 of 74      4% of that population
+   unanswerable      2 of 20     10% of that population
+   warehouse         1 of 20      5% of that population
 
    Sort by rate, not by count. document produces the most failures because it is
-   the largest population; warehouse fails at 10%, which is the highest rate and
+   the largest population; unanswerable fails at 10%, which is the highest rate and
    therefore the population to work on. It is 20 cases, so a fix aimed
    at it is a fix you can measure — and a fix aimed at 'accuracy' is not.
 
-2. What is slow: the ten slowest, against a median of 3.8s.
+2. What is slow: the five slowest, against a median of 3.2s.
 
-   tail-rotated-util       15.4s   9,640 tokens  document
-   abstain-19              11.8s   5,784 tokens  unanswerable
-   tail-three-months       11.7s   9,404 tokens  document
-   abstain-09               9.3s   5,193 tokens  unanswerable
-   abstain-12               9.2s   4,544 tokens  unanswerable
+   tail-rotated-util       11.0s   8,610 tokens  document
+   abstain-17               9.7s   6,825 tokens  unanswerable
+   abstain-09               9.0s   5,087 tokens  unanswerable
+   abstain-19               8.9s   3,571 tokens  unanswerable
+   tail-three-months        8.7s   5,959 tokens  document
 
-   The slowest is 4.1x the median. Tail latency is not an average
-   problem: it is a small number of runs doing much more work, and §28.6's
-   step budget is the lever that bounds them.
+   The slowest is 3.5x the median. Tail latency is not an average
+   problem: it is a small number of runs doing much more work, and §17.9's
+   budget is the lever that bounds them.
 
 3. What to add to the eval set.
 
@@ -29,14 +29,14 @@
    and the three slowest. They are already written — that is the point of
    triaging a run rather than inventing cases at a whiteboard.
 
-     7 failures            they are regressions the moment they are fixed
-     4 wrong refusals      the most expensive failure mode to leave in
+     6 failures            they are regressions the moment they are fixed
+     2 wrong refusals      the most expensive failure mode to leave in
      3 slowest runs        a latency budget needs cases that test it
-     6 counted twice       a wrong refusal is usually also a failure
+     3 on two lists        counted once in the total above
 
-   And one thing the card does not show: the most expensive answer used 11.2x
-   the tokens of the median one (9,640 against 862). A mean cost per
-   answer hides that entirely, which is why §28.1 budgets per request rather
+   And one thing the card does not show: the most expensive answer used 9.9x
+   the tokens of the median one (8,610 against 870). A mean cost per
+   answer hides that entirely, which is why §28.1 measures cost per request rather
    than per month.
 
 That is the loop. Ship, measure, triage the failures into the set, fix the

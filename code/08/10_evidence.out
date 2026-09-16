@@ -1,0 +1,7 @@
+  field              value right  quote found  quote contains value
+  payment_days           40/40        40/40                 40/40  
+  price_cap_pct          40/40        40/40                 40/40  
+  price_notice_days      40/40        40/40                 40/40  
+
+A quote that is not found verbatim is not necessarily invented — it may be lightly
+reworded — but it cannot be audited, which is the property the check is buying.

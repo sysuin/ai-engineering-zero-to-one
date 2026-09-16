@@ -3,8 +3,8 @@
  "work": 0.4,
  "serial": 4.0,
  "results": {
-  "async def + time.sleep()": 4.050891582999611,
-  "asyncio.to_thread()": 0.41383254200081865,
-  "asyncio.sleep()": 0.41065054099999543
+  "async def + time.sleep()": 4.051959749995149,
+  "asyncio.to_thread()": 0.4142461250012275,
+  "asyncio.sleep()": 0.4098204160036403
  }
 }

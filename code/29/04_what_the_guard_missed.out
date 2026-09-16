@@ -1,0 +1,9 @@
+                                    first version               current version       
+                                after strip  egress check     after strip  egress check
+  markdown image                   no fetch       flagged        no fetch       flagged
+  image, URL defined below    still fetches       flagged        no fetch       flagged
+  HTML img tag                still fetches       flagged        no fetch       flagged
+  no scheme                        no fetch        MISSED        no fetch       flagged
+  user@host trick                  no fetch       flagged        no fetch       flagged
+  look-alike host                  no fetch       flagged        no fetch       flagged
+  a plain link                     no fetch       flagged        no fetch       flagged

@@ -1,0 +1,30 @@
+10 runs: 4 passed, 6 failed (an answer must state the 0.3-point fall and Voss)
+
+  passed  warehouse: 2025 Q1 -> warehouse: 2025 Q1 -> search -> warehouse: 2024 Q4 -> arithmetic
+  passed  warehouse: 2025 Q1 -> warehouse: 2024 Q4 -> search -> arithmetic
+  passed  warehouse: 2025 Q1 -> warehouse: 2025 Q1 -> search -> warehouse: 2024 Q4 -> arithmetic
+  passed  warehouse: 2025 Q1 -> warehouse: 2025 Q1 -> search -> warehouse: 2024 Q4 -> search
+  failed  warehouse: 2025 Q1 -> warehouse: 2025 Q1 -> search
+  failed  warehouse: 2025 Q1 -> search -> search -> search
+  failed  warehouse: 2025 Q1 -> warehouse: 2025 Q1 -> search -> search -> search -> search
+  failed  warehouse: 2025 Q1 -> warehouse: 2024 Q1 -> search -> arithmetic
+  failed  warehouse: 2025 Q1 -> warehouse: 2024 Q1 -> search -> arithmetic
+  failed  warehouse: 2025 Q1 -> warehouse: 2024 Q1 -> search -> arithmetic
+
+what the groups did, step by step (share of runs in each group that took that step)
+  step 1  warehouse: 2025 Q1: 100%/100%
+  step 2  search: 0%/17%   warehouse: 2024 Q1: 0%/50%   warehouse: 2024 Q4: 25%/0%   warehouse: 2025 Q1: 75%/33%
+  step 3  search: 100%/100%
+  step 4  (answered): 0%/17%   arithmetic: 25%/50%   search: 0%/33%   warehouse: 2024 Q4: 75%/0%
+  step 5  (answered): 25%/83%   arithmetic: 50%/0%   search: 25%/17%
+  step 6  (answered): 100%/83%   search: 0%/17%
+
+steps taken at least once, passed / failed:
+  arithmetic             3/4   3/6
+  search                 4/4   6/6
+  warehouse: 2024 Q1     0/4   3/6
+  warehouse: 2024 Q4     4/4   0/6
+  warehouse: 2025 Q1     4/4   6/6
+
+runs that asked for 2024 Q4, the quarter before: 4, passed 100%
+runs that never did:                            6, passed 0%

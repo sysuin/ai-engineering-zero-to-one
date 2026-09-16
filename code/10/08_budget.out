@@ -1,0 +1,6 @@
+window 1,600 tokens, 400 reserved for the answer
+
+  kept     1178 tokens: system prompt, conversation state, question, retrieved chunk 1 (rank 1), ...
+  dropped   392 tokens: retrieved chunk 11 (rank 11), retrieved chunk 12 (rank 12), older turn 1, older turn 2, older turn 3, older turn 4, older turn 5, older turn 6
+
+  10 of 12 retrieved chunks fit; 0 of 6 older turns fit

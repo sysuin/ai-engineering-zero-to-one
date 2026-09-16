@@ -1,0 +1,6 @@
+{
+ "limit_tpm": 2000000,
+ "limit_rpm": 5000,
+ "meetings_average_x": 1.75,
+ "meetings_busiest_x": 5.249999999999999
+}

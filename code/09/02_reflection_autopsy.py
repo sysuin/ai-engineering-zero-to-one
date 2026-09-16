@@ -1,6 +1,7 @@
 # timeout: 900
 # Reflection scored worst of the six. This is why.
 
+import re
 from concurrent.futures import ThreadPoolExecutor
 
 from openai import OpenAI
@@ -27,8 +28,20 @@ def call(messages, budget=600):
         messages=messages).choices[0].message.content or "").strip()
 
 
-def verdict(text: str) -> bool:
-    return "yes" in text.lower()[:24] or "true" in text.lower()[:24]
+def verdict(text: str) -> bool | None:
+    """
+    Read a yes/no out of whatever came back: the last 'ANSWER: YES/NO' line if there is one,
+    otherwise a YES or NO at the very start. Anything else is unreadable, and counts as wrong.
+
+    An earlier version returned True if 'yes' appeared anywhere in the text — so a chain of
+    thought that said "the cap is 3%, yes, within policy" and ended "ANSWER: NO" was scored
+    as compliant. Checking the scorer is part of checking the experiment.
+    """
+    answers = re.findall(r"answer:\s*\**\s*(yes|no)\b", text, re.IGNORECASE)
+    if answers:
+        return answers[-1].lower() == "yes"
+    first = re.match(r"\W*(yes|no)\b", text, re.IGNORECASE)
+    return first.group(1).lower() == "yes" if first else None
 
 
 def trace(c):
@@ -116,11 +129,11 @@ with ThreadPoolExecutor(max_workers=10) as pool:
 typed_ok = sum(t == truth(c) for t, c in zip(typed, contracts))
 
 prose_ok = sum(verdict(f) == truth(c) for c, (_, _, f) in zip(contracts, traces))
-print(f"Same three steps, state carried as prose:      {prose_ok}/{len(contracts)}  "
+print(f"Three calls, state carried as prose:           {prose_ok}/{len(contracts)}  "
       f"{prose_ok / len(contracts):.1%}")
-print(f"Same three steps, state carried as a boolean:  {typed_ok}/{len(contracts)}  "
+print(f"Two calls, state carried as a boolean:         {typed_ok}/{len(contracts)}  "
       f"{typed_ok / len(contracts):.1%}")
 print()
-print("Nothing about the reasoning changed. What changed is that the last step reads a")
-print("field instead of interpreting a sentence. Chapter 8's schema, used as the join")
-print("between two calls rather than as the output of one.")
+print("The draft is the same call in both. What changed is that the critic returns a")
+print("field, so no third call has to read a sentence to find the verdict. Chapter 8's")
+print("schema, used as the join between two calls rather than as the output of one.")

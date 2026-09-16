@@ -1,0 +1,12 @@
+the ten questions against the eight clauses of MSC-2022-100, with unrelated
+specification text appended: to the right clause only, or to every clause
+
+   tokens  clause  similarity to  right clause first  every clause
+    added  tokens   right clause    (only it padded)        padded
+        0      54          0.402                9/10          9/10
+      100     154          0.341                7/10          9/10
+      300     354          0.291                4/10          8/10
+    1,000   1,054          0.249                3/10          5/10
+    3,000   3,054          0.176                0/10          4/10
+
+similarity: mean over the ten questions, question against padded right clause

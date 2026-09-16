@@ -1,45 +1,58 @@
-Three requirements, sized before anything is built.
+Five requirements, sized before anything is built.
 
   a support copilot over ten years of tickets
-    4,000 requests/day  x  3 calls  =  36.0M in, 3.00M out
+    4,000 requests/day  x  3 fast calls  =  36.0M in, 3.00M out
     cost      $7.20/day   $216/month   $0.0018/request
-    index     2,700,000 chunks   16.6 GB of vectors   $22 to build once
-    shape     5.4s per request, 0.8 concurrent at peak
+    index     2,700,000 chunks   16.6 GB of vectors   $21.60 to embed once
+    shape     5.4s per request, 0.8 in flight at peak
 
   a nightly contract-risk enricher
-    50,000 requests/day  x  2 calls  =  600.0M in, 40.00M out
+    50,000 requests/day  x  2 fast calls  =  600.0M in, 40.00M out
     cost      $114.00/day   $3,420/month   $0.0023/request
-    index     1,250,000 chunks   7.7 GB of vectors   $10 to build once
-    shape     4.0s per request, 2.3 concurrent at peak
+    index     none: each item is read whole
+    shape     4.0s per request, 6.9 in flight at peak
 
   a regulated advisory assistant
-    300 requests/day  x  6 calls  =  7.2M in, 0.54M out
-    cost      $1.40/day   $42/month   $0.0047/request
-    index     160,000 chunks   1.0 GB of vectors   $1 to build once
-    shape     13.2s per request, 0.1 concurrent at peak
+    300 requests/day  x  6 smart calls  =  7.2M in, 0.54M out
+    cost      $18.72/day   $562/month   $0.0624/request
+    index     160,000 chunks   1.0 GB of vectors   $1.28 to embed once
+    shape     13.2s per request, 0.1 in flight at peak
 
-Read what each number decides, because that is the point of doing this before
-drawing anything.
+  an IT helpdesk agent that can act
+    1,500 requests/day  x  5 fast calls  =  37.5M in, 2.25M out
+    cost      $6.97/day   $209/month   $0.0046/request
+    index     18,000 chunks   0.1 GB of vectors   $0.14 to embed once
+    shape     10.0s per request, 0.5 in flight at peak
 
-Start with the shape column, because it is the one that surprises people. The
-busiest of these three needs 2.3 requests in flight at peak. Not thirty. Not a
-cluster. One container with a warm index would serve all three of these
-systems at once and spend most of its day idle.
+  meeting summaries inside a video product
+    200,000 requests/day  x  2 fast calls  =  4,800.0M in, 240.00M out
+    cost      $864.00/day   $25,920/month   $0.0043/request
+    index     none: each item is read whole
+    shape     16.0s per request, 111.1 in flight at peak
 
-That is the normal case for internal software, and sizing is how you find out
-before you have designed for a load you will never see. The architecture that
-wins here is the boring one, and the argument for it is arithmetic.
+Read what each number decides.
 
-Then read cost. The nightly enricher is $3,420 a month and the regulated
-assistant is $42. Those two systems have nothing in common: one is a
-throughput problem where a batch API and a queue are the whole design, and the
-other is a governance problem where cost will never be the argument. Knowing
-which you have, before the meeting, is most of what this exercise buys.
+Shape first. 4 of the 5 designs have fewer than ten requests in flight at
+their busiest; the largest of those is 6.9. One process with a warm index
+would serve any of them, and spend most of its day idle.
+The exception is meeting summaries inside a video product, at 111 in flight:
+a hundred calls open at once is a rate-limit question, a pooling question and a
+failure-domain question before it is a hardware one. A different architecture,
+found by arithmetic rather than by an outage.
 
-And read the index separately. The support copilot's 2.7M chunks are 17GB of
-vectors — a fixed cost, a storage decision, and usually where the surprise is.
-It is also the number that decides whether §12.2's approximate index is
-necessary or premature.
+Then cost. The same fast-model rates give $209 a month for the helpdesk and
+$25,920 for the meeting summaries. The regulated assistant pays
+13x the input rate for a smart model and still costs $562 a month —
+$0.06 a question, which is not the argument in that design.
+
+The enricher's $3,420 a month assumes every contract is re-read every night.
+If 1% of contracts are new or changed on a given night, reading only those costs
+$34 a month; at a batch discount of half, $17. The envelope asked a
+question the requirement did not: does anything need re-reading at all?
+
+And the index separately. The support copilot's 2.7M chunks are 16.6 GB
+of vectors before any graph overhead — a storage decision, a startup time, and
+the number that decides whether §12.2's approximate index is needed.
 
 Three habits that make an envelope useful rather than decorative:
 

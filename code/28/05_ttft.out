@@ -1,0 +1,15 @@
+3 calls per condition; medians
+
+                               in tok  cached  out tok  first token  after it
+  short input, short answer        43       0       20        0.81s     0.23s
+  short input, long answer         44       0      347        1.22s     2.28s
+  6k input,    short answer     6,544       0       19        0.72s     0.26s
+  50k input,   short answer    50,044       0       22        1.23s     0.26s
+
+The wait for the first token: 0.81s with a short input, 0.72s at about 6,500 tokens,
+1.23s at about 50,000. The time after it: 0.23s for a short answer, 2.28s for a long one.
+
+On this model and this afternoon, output length multiplied the second number by 10x,
+and input length multiplied the first by 1.5x. Reading a prompt is fast next to writing an
+answer; it becomes the wait people notice only when prompts are very long, or
+when the provider is busy enough that queueing is added to it.

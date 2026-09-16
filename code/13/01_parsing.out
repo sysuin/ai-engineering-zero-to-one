@@ -1,26 +1,17 @@
-an ordinary report     qbr-2024-Q3.pdf
-   pages 1   pypdf  1,476 chars   pdfplumber  1,476 chars   tables found 0
-   first lines: ['Meridian Supply Co. — Quarterly Business Review', '2024 Q3']
+an ordinary report — qbr-2024-Q3.pdf
+   tables recognised by pdfplumber: 0
+   pypdf       1,476 chars: 100% of the source's word pairs survive in order
+   pdfplumber  1,476 chars: 100% of the source's word pairs survive in order
 
-a two-column page      01-newsletter-two-column.pdf
-   pages 1   pypdf    675 chars   pdfplumber    664 chars   tables found 0
-   first lines: ['Meridian Monthly — December 2025', 'From the Managing Director']
+a two-column page — 01-newsletter-two-column.pdf
+   tables recognised by pdfplumber: 0
+   pypdf         675 chars: 88% of the source's word pairs survive in order; 1 ligature character(s): 'office' arrives as 'o' + U+FB00 + 'ice'; 1 word(s) broken across lines by a hyphen
+   pdfplumber    664 chars: 75% of the source's word pairs survive in order; 1 run(s) of words with the spaces lost, e.g. 'Theyearcloseswithrevenue'; 1 ligature character(s): 'office' arrives as 'o' + U+FB00 + 'ice'; 1 word(s) broken across lines by a hyphen
 
-a scan                 06-goods-received-note-SCANNED.pdf
-   pages 1   pypdf      0 chars   pdfplumber      0 chars   tables found 0
-   first lines: ['']
+a scan — 06-goods-received-note-SCANNED.pdf
+   tables recognised by pdfplumber: 0
+   pypdf           0 chars: no text at all
+   pdfplumber      0 chars: no text at all
 
-Three documents, three different problems.
-
-The ordinary report extracts cleanly, and the table inside it comes out as
-text — the columns become a run of numbers with the alignment gone. Chapter 10
-showed what that does once it is chunked.
-
-The two-column page extracts in the wrong order. Both columns are read as one
-stream, so a sentence from the left column is followed by an unrelated sentence
-from the right. It is fluent, plausible, and not what the page says.
-
-The scan extracts nothing at all. Zero characters. There is no text layer to
-find, because there is no text — only an image of some. This is the failure
-that produces an empty index and a search that returns nothing, with no error
-anywhere in the pipeline.
+Nothing above raised an exception. Every problem was found only by comparing the
+extracted text with what the document actually says.

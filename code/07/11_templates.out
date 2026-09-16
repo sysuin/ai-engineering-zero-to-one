@@ -1,0 +1,11 @@
+str.format failed: KeyError: '"days"'
+Extract the notice period as JSON like {"days": 0}.
+
+The Sup ...
+
+safe_substitute with a value missing:
+   Summarise the Q3 review for $audience.
+
+render() with everything supplied:
+   Summarise the Q3 review for the board.
+render() with a typo in a name: missing ['audience']; unused ['audince']

@@ -31,7 +31,7 @@ for name in tables:
 # ------------------------------------------------------------------ the documents
 docs = ROOT / "documents"
 print("\nThe documents. The `-pdf` folders are renders of the same documents, which is")
-print("why §13.2 can compare a parser against the text it was generated from.\n")
+print("why §13.3 can compare a parser against the text it was generated from.\n")
 for folder in sorted(p for p in docs.iterdir() if p.is_dir()):
     files = [p for p in folder.rglob("*")
              if p.is_file() and p.name != "README.md"]
@@ -96,7 +96,7 @@ for path in contracts:
 largest = max(clusters.values(), key=len)
 print(f"\n  {len(largest)} of {len(contracts)} contracts have identical bodies once "
       "numbers are masked.")
-print("  Eight of those are by design and differ only in the price-adjustment cap;")
+print("  Eight of those are by design and differ only in their numbers and header;")
 print("  the extra one is a coincidence of the generator, which is a fair model of")
-print("  a real corpus. This is the cluster §14.8's MMR earns its place on, and the")
+print("  a real corpus. §14.10 finds this cluster, §14.7's filter separates it, and the")
 print("  reason Chapter 13's exercises ask you to go looking for your own.")

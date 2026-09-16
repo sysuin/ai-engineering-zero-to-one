@@ -1,0 +1,10 @@
+8 workers; tenant A sends 4 requests a second; tenant B submits 1,500 at t=100s
+every request needs about a second of work
+
+  next request chosen by         A waits, p50     p95  B finished at
+  one queue                            101.5s  181.2s           294s
+  take turns                             2.4s   45.8s           432s
+  batch capped at 3 workers              0.2s    2.3s           612s
+  batch capped at 2 workers              0.0s    0.6s           866s
+
+  A's waits are for requests sent in the five minutes after the batch arrived

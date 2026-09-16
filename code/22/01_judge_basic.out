@@ -1,25 +1,25 @@
-209 answers: 76 real ones, 133 broken on purpose.
+215 answers: 79 real ones, 136 broken on purpose.
 Every negative is verified to no longer contain the fact it should.
 
   invented   a number that is not in the corpus at all
   neighbour  a real Meridian figure, from the wrong quarter
 
   no reference
-    agreement with the label   44%
-    Cohen's kappa              0.08
-    wrong negatives passed     66 of 76
-    neighbour negatives passed 52 of 57
-    correct answers failed     0 of 76
+    agreement with the label   42%
+    Cohen's kappa              0.07
+    wrong negatives passed     73 of 79
+    neighbour negatives passed 51 of 57
+    correct answers failed     0 of 79
 
   with the reference
-    agreement with the label   100%
-    Cohen's kappa              0.99
-    wrong negatives passed     0 of 76
-    neighbour negatives passed 1 of 57
-    correct answers failed     0 of 76
+    agreement with the label   99%
+    Cohen's kappa              0.98
+    wrong negatives passed     0 of 79
+    neighbour negatives passed 2 of 57
+    correct answers failed     0 of 79
 
-Without the reference the judge let 118 of 133 wrong answers through.
-With it, 1.
+Without the reference the judge let 124 of 136 wrong answers through.
+With it, 2.
 
 That is the difference between grading and guessing. A judge with no reference
 is being asked whether an answer sounds right about a company it has never
@@ -29,4 +29,4 @@ right as the true one.
 Do not read the second row as 'judges work'. Read it as: this judge, on this
 task, where correctness is a figure that either matches or does not. Every
 negative here is checkable by comparing two strings, which is what the judge
-did — and if that is your task, §22.8 has a cheaper suggestion than a model.
+did — and if that is your task, §22.13 has a cheaper suggestion than a model.

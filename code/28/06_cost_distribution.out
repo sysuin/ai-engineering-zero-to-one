@@ -1,0 +1,25 @@
+120 answers from one run of Clarity v1.0 — the tokens each agent loop reported,
+not counting the model calls its tools make inside them
+
+  mean       1,465 tokens
+  p50         870 tokens
+  p90       2,971 tokens
+  p99       6,746 tokens
+  largest    8,610 tokens   (9.9x the median)
+
+  the most expensive tenth of answers used 34% of all tokens
+
+  population        n   median      p90  share of tokens
+  document         74      853    1,221              49%
+  unanswerable     20    2,800    5,219              35%
+  warehouse        20      838      878              10%
+  composite         6    1,493    2,900               6%
+
+The mean is 1.7x the median: a few long runs pull it up, so a budget
+set from the mean is too generous for most requests and too tight for the ones
+that need it. Budget per request from a high percentile, and look at who lives there.
+
+Here it is the unanswerable questions: 17% of the requests and 35% of the tokens.
+An agent searches hardest for what is not there, so the cheapest refusal is the
+one decided early — which is a cost argument for §13.11's abstention, not only a
+quality one.

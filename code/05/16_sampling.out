@@ -1,0 +1,17 @@
+the model's top 5 candidates cover 0.940 of the probability
+
+at T=1, renormalised over the top candidates:
+  'del'          0.486  ███████████████████
+  'un'           0.229  █████████
+  't'            0.229  █████████
+  'chron'        0.031  █
+  'late'         0.024  █
+
+     T top token  entropy  top-p 0.9 keeps
+   0.3     0.859   0.73 b            2 tokens
+   0.7     0.582   1.51 b            3 tokens
+   1.0     0.486   1.77 b            3 tokens
+   1.5     0.399   2.00 b            4 tokens
+   2.5     0.321   2.18 b            4 tokens
+
+top-k with k=3 keeps 0.945 of the mass at T=1, whatever the shape

@@ -27,7 +27,7 @@ before it went out.
 
 Three decisions in that schema are worth arguing about now rather than later.
 
-Every table carries a tenant. Chapter 26 enforces it; the schema only has to
+Every table carries a tenant. Chapter 26 shows how to enforce it; the schema has to
 make it possible, and retrofitting a tenant column onto a live system is a
 migration nobody enjoys twice.
 

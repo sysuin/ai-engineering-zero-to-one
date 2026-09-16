@@ -1,0 +1,11 @@
+8 quarters, four summaries each, built from the golden set's facts
+
+  summary               holistic score  checklist passed
+  complete                  10.0 (10-10)         8 of 8
+  padded                    10.0 (10-10)         8 of 8
+  omits the margin           9.6 (9-10)         0 of 8
+  regions swapped            6.5 (6-7)         0 of 8
+
+  lowest holistic score for a good summary: 10;  highest for a flawed one: 10
+  the ranges overlap, so no threshold on the score separates good from flawed
+  the checklist's pass/fail agreed with the truth on 32 of 32

@@ -1,0 +1,9 @@
+199,817 order lines
+
+  Python loop   96,914,177.717025      21.18 ms
+  pandas        96,914,177.717000       1.00 ms
+  NumPy         96,914,177.717000       0.88 ms
+
+the loop took 24 times as long as NumPy on this machine
+loop == NumPy exactly? False   difference 2.53e-05
+math.isclose?          True

@@ -1,0 +1,17 @@
+the edge accepts up to 2,000 characters; the golden set's 120 questions
+are 11 tokens at the median and 33 at the longest
+
+  2,000 characters of    accepted  bytes  tokens  billed   encode
+  English prose               yes  2,004     667     667    0.2ms
+  digits                      yes  2,000     807     807    1.1ms
+  Chinese characters          yes  6,000   3,869   3,869    0.9ms
+  emoji                       yes  8,000   4,493   4,493    0.6ms
+  one accent, repeated        yes  3,999   2,000   2,000    0.3ms
+  mixed scripts               yes  5,307   3,084   3,084    0.8ms
+
+  billed = the API's prompt tokens, less 6 for the message itself
+
+Every model call resends the question. Over the 13 calls a max_steps=12 run
+can make, the question alone uses this much of the run's 60,000-token budget:
+  a median golden question        13 x    11 =    143 tokens,  0.2%
+  2,000 characters of emoji       13 x 4,493 = 58,409 tokens, 97.3%

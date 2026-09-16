@@ -1,0 +1,8 @@
+  what the attacker recovers         top 1     top 10  by chance
+  supplier, of 20                  38/40      40/40         20.0
+    after replacing the name        1/40      19/40         20.0
+  order number, of 5,000           47/55      55/55          0.1
+    after replacing the number      0/55       0/55          0.1
+
+  top 1 / top 10 = the true value ranked first, or in the first ten;
+  by chance = how many a random ranking would put in the first ten

@@ -4,6 +4,7 @@
 import asyncio
 import json
 import sys
+from pathlib import Path
 
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client
@@ -30,9 +31,10 @@ async def main() -> None:
 
                 index = await session.read_resource("meridian://documents")
                 documents = json.loads(index.contents[0].text)
+                on_disk = len(list(Path("data/meridian/documents").rglob("*.md")))
                 print(f"\n  the index lists {len(documents)} documents — the same "
                       f"ones the")
-                print(f"  retriever indexes, and no others")
+                print(f"  retriever indexes — of the {on_disk} Markdown files on disk")
 
                 one = await session.read_resource("meridian://documents/qbr-2024-Q3")
                 body = one.contents[0].text
@@ -67,10 +69,10 @@ print("              can show a person a list and let them pick. It is a file.")
 print("  a prompt    a person chooses it. It is a way for whoever knows the domain")
 print("              to ship that knowledge to every client that connects.")
 print()
-print("Clarity's `investigate` prompt is the phrasing §17.4 arrived at after a bad")
-print("afternoon — figure first, then cause, then what could not be verified. It was")
-print("in a file only this repository had. Now it arrives with the connection, and")
-print("every client asks the way the analysts here ask.")
+print("Clarity's `investigate` prompt is the analysts' routine written down: figure")
+print("first, from the warehouse, then the cause, then what could not be verified.")
+print("Shipped as a prompt, it arrives with the connection, and every client asks the")
+print("way the analysts here ask.")
 print()
 print("The mistake is exposing a document-reader as a tool. Then the model decides")
 print("when to read, you pay for its guesses, and a person never sees the list.")

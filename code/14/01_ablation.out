@@ -1,12 +1,25 @@
+configuration          r@5     range     plain near-du identif paraphr  ticket obscure
+dense only             77%     exact       83%     50%     50%    100%    100%    100%
+BM25 only              67%     exact       83%     67%     50%     33%    100%    100%
+fused, k=60            80%     exact       83%     67%     50%    100%    100%    100%
+fused, k=1             80%     exact      100%     50%     50%    100%    100%    100%
++ metadata filter      96%  93%–100%      100%    100%     78%    100%    100%    100%
++ rerank top 25        98%  97%–100%      100%    100%     89%    100%    100%    100%
++ MMR (no rerank)      96%  93%–100%      100%    100%     78%    100%    100%    100%
++ rerank, then MMR     96%  93%–100%      100%    100%     78%    100%    100%    100%
 
-configuration          r@5    plainnear-duidentifparaphr ticketobscure
-dense only             77%      83%    67%    67%    67%   100%   100%
-BM25 only              73%      83%   100%    83%     0%   100%   100%
-fused, k=60            77%      83%    67%    67%    67%   100%   100%
-fused, k=1             87%     100%    83%    83%    67%   100%   100%
-+ metadata filter      93%     100%   100%   100%    67%   100%   100%
-+ rerank top 25        97%     100%   100%   100%    83%   100%   100%
-+ MMR diversity        93%     100%   100%    83%    83%   100%   100%
+30 questions, recall@5. Rows below the fusion rows call a model, so each
+is the mean of 3 runs, with the lowest and highest run shown as a range.
+  + rerank top 25      +2.2 points against the filtered hybrid
+  + MMR (no rerank)    +0.0 points against the filtered hybrid
+  + rerank, then MMR   +0.0 points against the filtered hybrid
 
-30 questions, recall@5. 77% to 93%.
-inferring metadata from each question …
+still missed by the filtered hybrid in at least one run, and how often:
+  2/3  identifier  What are the payment terms in MSC-2023-109?
+  2/3  identifier  What is the liability cap in MSC-2024-118?
+
+what the facet extractor returned for the identifier questions it hurt:
+  What are the payment terms in MSC-2023-109?
+     year=2023 quarter=None contract_ref=MSC-2023-109   -> chunks allowed: none, so the filter was dropped
+  What is the liability cap in MSC-2024-118?
+     year=2024 quarter=None contract_ref=MSC-2024-118   -> chunks allowed: none, so the filter was dropped

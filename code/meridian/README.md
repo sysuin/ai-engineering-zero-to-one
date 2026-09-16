@@ -58,9 +58,9 @@ uses it.
 
 These matter more than the clean ones. Parsing is where real retrieval projects die.
 
-1. **Two-column newsletter** — reading order is not top to bottom
+1. **Two-column newsletter** — columns, run-together words, a ligature and a hyphenated break
 2. **Rotated table** — a three-row header and right-aligned numeric text
-3. **400-page appendix** — far larger than any context window (Chapter 10)
+3. **400-item appendix** — about 29,000 tokens: fits a window, too costly to send whole (Chapter 10)
 4. **Header/footer noise** — the same banner on all 24 pages, which poisons chunking
 5. **A form** — labels and values, no prose for an embedding model to grip
 6. **A genuine scan** — rendered, rasterized, and reassembled, so `pdftotext` returns

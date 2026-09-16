@@ -23,8 +23,10 @@ QUESTIONS = [
     "How many people work at the Columbus depot?",
 ]
 
+traces = []
 for question in QUESTIONS:
     answer, trace = runner.run(question, SYSTEM)
+    traces.append(trace)
     print(f"Q: {question[:74]}")
     for turn in trace:
         mark = "FAILED" if turn.failed else "ok"
@@ -35,18 +37,12 @@ for question in QUESTIONS:
     print(f"   A: {answer[:260]}")
     print()
 
-print("Three things in those traces are worth reading.")
-print()
-print("The first question needed both tools, and it used each for what it is for: the")
-print("exact figure from the warehouse, the explanation from the documents. That split")
-print("is the whole of Parts III and IV in one answer.")
-print()
-print("The second was asked to 'compute' a percentage, and it did not compute anything.")
-print("It recognised that margin_pct is already a defined metric and asked the")
-print("warehouse for it — so the number came from Chapter 15's semantic layer rather")
-print("than from arithmetic over two figures the model had to keep straight. The best")
-print("tool call is often the one that makes a second call unnecessary.")
-print()
-print("The third has no answer anywhere in the corpus. It searched twice, found the")
-print("depot mentioned in three documents, and refused — naming what it did find so a")
-print("person can judge whether to look elsewhere.")
+used = [[turn.tool for turn in trace] for trace in traces]
+print("What the traces show:")
+print(f"  question 1 used {', '.join(sorted(set(used[0])))}")
+print(f"  question 2, asked to compute, called "
+      f"{'arithmetic' if 'arithmetic' in used[1] else 'no arithmetic tool'}"
+      f" and {used[1].count('query_warehouse')} warehouse quer"
+      f"{'y' if used[1].count('query_warehouse') == 1 else 'ies'}")
+print(f"  question 3, with no answer in the corpus, searched {used[2].count('search_documents')} "
+      f"time{'s' if used[2].count('search_documents') != 1 else ''}")

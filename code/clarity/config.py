@@ -37,9 +37,10 @@ MODEL_SMART = os.getenv("MODEL_SMART", "gpt-5.5")
 Slower, dearer, and better at reasoning. Used only where a chapter shows why it is
 worth it.
 
-Note that it does not accept every parameter `MODEL_FAST` does — see CAPABILITIES.
-That is not a defect: a model that decides how long to think about something has no
-use for a knob that tells it how random to be.
+Note that it does not accept every parameter `MODEL_FAST` does — see CAPABILITIES. It
+rejected a temperature of zero when Chapter 27 sent one, while `MODEL_FAST`, which can
+also reason when asked, accepted it. The table records what each model was seen to do,
+because the family a model belongs to does not predict it.
 """
 
 MODEL_EMBED = os.getenv("MODEL_EMBED", "text-embedding-3-small")
@@ -50,7 +51,8 @@ MODEL_EMBED = os.getenv("MODEL_EMBED", "text-embedding-3-small")
 # Not every model accepts every parameter, and the differences are not cosmetic.
 # Chapters check this rather than assuming. Appendix C carries the full table.
 CAPABILITIES: dict[str, set[str]] = {
-    MODEL_FAST:  {"temperature", "top_p", "seed", "logprobs", "max_completion_tokens"},
+    MODEL_FAST:  {"temperature", "top_p", "seed", "logprobs", "max_completion_tokens",
+                  "reasoning_effort"},
     MODEL_SMART: {"seed", "max_completion_tokens", "reasoning_effort"},
     MODEL_EMBED: {"dimensions"},
 }
@@ -88,8 +90,8 @@ def openai_key() -> str:
 
 
 def fingerprint(key: str) -> str:
-    """A safe way to refer to a key in a log, a ticket, or a book."""
-    return f"{key[:3]}…{key[-4:]} ({len(key)} chars)"
+    """A safe way to refer to a key in a log or a ticket: its last four characters and length."""
+    return f"…{key[-4:]} ({len(key)} chars)"
 
 
 # --------------------------------------------------------------------------- spending

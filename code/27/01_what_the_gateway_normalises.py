@@ -51,9 +51,9 @@ differences = [
     ("the stop reason", "\"stop\" / \"length\" / \"tool_calls\"",
      "\"end_turn\" / \"max_tokens\" / \"tool_use\""),
 ]
-print(f"  {'':<16}{'one shape':<30}{'the other'}")
+print(f"  {'':<18}{'one shape':<36}{'the other'}")
 for what, left, right in differences:
-    print(f"  {what:<16}{left[:28]:<30}{right[:26]}")
+    print(f"  {what:<18}{left:<36}{right}")
 print(f"\n  (the stand-in received the system prompt as: "
       f"{sent['system'][:24]}…)")
 
@@ -84,4 +84,4 @@ print()
 print("And be honest about what has been tested here. The block-shaped adapter ran")
 print("against a stand-in that speaks that wire format, not against a hosted model.")
 print("That tests the translation — which is the part that breaks — and it does not")
-print("test the model. §27.3 is the part that needs a real account.")
+print("test the model. §27.4 is the part that needs a real account.")

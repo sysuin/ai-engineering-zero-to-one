@@ -1,0 +1,16 @@
+pool: the top 5 of four retrievers, 282 chunks over 30 questions
+  chunks the first truth did not count, each to be judged: 204
+  questions whose truth was corrected: 7
+    What was gross margin in 2025 Q4?                 1 ->   3 chunks  (+2 -0)
+    Which region was weakest in 2023 Q3?              2 ->   1 chunks  (+1 -2)
+    What was revenue by category in 2025 Q2?          1 ->   1 chunks  (+1 -1)
+    How long do we have to settle an invoice?        24 ->  40 chunks  (+16 -0)
+    Can we walk away from the agreement early?       22 ->  40 chunks  (+18 -0)
+    How much can we claim if they cause us a loss?   24 ->  40 chunks  (+16 -0)
+    Do they have to hit a delivery target?           23 ->  40 chunks  (+17 -0)
+
+  recall@5        first truth  corrected   near-dupli     paraphrase  
+  dense only              73%        77%    67% -> 50%    67% ->100%
+  BM25 only               67%        67%   100% -> 67%     0% -> 33%
+  fused, k=60             73%        80%    67% -> 67%    67% ->100%
+  fused, k=1              80%        80%    83% -> 50%    67% ->100%

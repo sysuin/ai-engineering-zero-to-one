@@ -15,6 +15,7 @@ from clarity.v0_8.tools import build_tools               # noqa: E402
 from meridian_index import load_index                    # noqa: E402
 
 STORE, THREAD = sys.argv[1], sys.argv[2]
+DURABILITY = sys.argv[3] if len(sys.argv) > 3 else None   # None: the default, "async"
 chunks, vectors = load_index()
 connection = sqlite3.connect(STORE, check_same_thread=False)
 app = build(build_tools(Retriever(chunks, vectors), Warehouse())).compile(
@@ -28,7 +29,7 @@ state = {"messages": [
 
 config = {"configurable": {"thread_id": THREAD}}
 done = 0
-for event in app.stream(state, config, stream_mode="updates"):
+for event in app.stream(state, config, stream_mode="updates", durability=DURABILITY):
     for node in event:
         if node == "act":
             done += 1

@@ -1,0 +1,21 @@
+6 two-part questions; the model split them into 2, 2, 2, 2, 2, 2 parts
+
+rank of each half's answer: searched with the whole question -> with its own part
+  How many days notice before a price rise, and how long to      1 -> 1      27 -> 1
+  Which account did not renew, and what is the racked storag     2 -> 34      1 -> 1
+  When did the Sanitation category launch, and what caused t     1 -> 1      25 -> 5
+  Which law governs the supplier agreements, and how long ca   305 -> 79     19 -> 1
+  What happens at the Columbus depot in December, and what w     1 -> 1       3 -> 28
+  What is the purchase order approval threshold, and what in     1 -> 1       2 -> 1
+
+  both halves in the prompt     first  second  both  excerpts
+  one retrieval, 6 excerpts         5       3     3       6.0
+  split, 3 excerpts per part        4       5     3       5.8
+  whole and parts, 2 each           5       4     3       4.7
+  split, 6 per part                 4       6     4      11.8
+
+how the model split two of them:
+  'Which account did not renew, and what is the racked storage capacity at Dallas?'
+    -> ['Which account did not renew?', 'What is the racked storage capacity at Dallas?']
+  'What happens at the Columbus depot in December, and what was received short there?'
+    -> ['What happens at the Columbus depot in December?', 'What was received short there?']

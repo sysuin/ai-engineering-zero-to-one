@@ -7,16 +7,17 @@ The isolation test is not 'does the query return data'. It is:
 
   ask as tenant A, assert that every row returned belongs to A
 
-Write it once per table and run it on every build. It is three lines, it is
-the only test that catches a missing WHERE clause, and a missing WHERE clause
-is the single most common way one customer sees another's data.
+Write it once per table and run it on every build. It is three lines, it
+catches a missing WHERE clause, and a missing WHERE clause is one of the
+easiest ways for one customer to see another's data.
 
 Two stronger versions, in increasing order of how much sleep they buy:
 
   a session variable    set the tenant on the connection and let the data
                         layer apply it, so forgetting is not possible
-  row-level security    Postgres enforces the predicate itself, so even a
-                        hand-written query in a migration cannot cross
+  row-level security    Postgres enforces the predicate itself, so a
+                        hand-written query cannot cross — unless it runs
+                        as a role the policy does not apply to
 
 Both are more work than a WHERE clause and both remove a class of bug rather
 than an instance of it, which is the trade worth making for exactly this one.

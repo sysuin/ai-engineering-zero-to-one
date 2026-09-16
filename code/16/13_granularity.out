@@ -1,0 +1,22 @@
+12 requests x 2 runs, up to three rounds with fake results
+
+  design                     done right  calls  schema tokens
+  four tools                      22/24     38            229
+      done     Show open orders for customer C-1043.         find_customer -> list_orders
+      done     Show open orders for customer C-1043.         find_customer -> list_orders
+      done     List every order for customer C-2210.         find_customer -> list_orders
+      done     List every order for customer C-2210.         find_customer -> list_orders
+      done     Which of C-0087's orders have shipped?        find_customer -> list_orders
+      done     Which of C-0087's orders have shipped?        find_customer -> list_orders
+      done     Cancelled orders for C-1043?                  find_customer -> list_orders
+      done     Cancelled orders for C-1043?                  find_customer -> list_orders
+      NOT DONE Give back 15 on O-10044; late delivery.       find_customer -> list_orders
+      NOT DONE Give back 15 on O-10044; late delivery.       find_customer -> list_orders
+      done     C-3301 has moved to 14 Harbour Road, Leeds L  find_customer -> update_address
+      done     C-3301 has moved to 14 Harbour Road, Leeds L  find_customer -> update_address
+      done     Change the address for C-0452 to Unit 7, Riv  find_customer -> update_address
+      done     Change the address for C-0452 to Unit 7, Riv  find_customer -> update_address
+  one tool, action field          24/24     24            242
+  one tool, nested request        24/24     26            225
+      done     C-3301 has moved to 14 Harbour Road, Leeds L  find_customer -> update_address
+      done     C-3301 has moved to 14 Harbour Road, Leeds L  find_customer -> update_address

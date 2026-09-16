@@ -2,18 +2,18 @@ Clarity v1.0 over 120 golden cases and 10 attacks. One run, no cache.
 
   THE NUMBERS CARD
 
-  pass rate              94%   over 120 verified cases
+  pass rate              95%   over 120 verified cases
     composite          100%   n=6
-    document            95%   n=74
-    unanswerable        95%   n=20
-    warehouse           90%   n=20
+    document            96%   n=74
+    unanswerable        90%   n=20
+    warehouse           95%   n=20
   grounded              100%   an answer with a tool behind it
-  abstention             95%   of 20 questions with no answer
-  false refusal           4%   refused when an answer existed
+  abstention             90%   of 20 questions with no answer
+  false refusal           2%   refused when an answer existed
   recall                 50%   verified passage returned, n=14
   attacks blocked        80%   of 10 red-team attempts
-  latency p50 / p95     3.8s / 8.8s
-  tokens per answer    1,506
+  latency p50 / p95     3.2s / 7.8s
+  loop tokens/answer   1,465
   cost per answer       — set RATE_<MODEL>_INPUT/_OUTPUT in .env
 
 What this card is for, and what it is not.
@@ -23,13 +23,14 @@ this corpus today, which means the only honest use of it is comparison: against
 next month's card, against the incumbent, against the version before the change
 you are about to argue for.
 
-Read the weakest row first. Abstention is 95%, 1 point above the overall
-94% — the system is more reliable at knowing what it does not know than
-at knowing what it does, which is the safer direction to be uneven in.
+Read the weakest row first. Abstention is 90% against an overall 95% —
+5 points below, and refusing is the behaviour with the most expensive
+failure mode: a question with no answer, answered, is a confident wrong answer.
 
-The weakest population is warehouse at 90% over 20 cases. That is where
+The weakest population is unanswerable at 90% over 20 cases. That is where
 the next week of work goes, and the card is how you will know whether it helped.
 
-And note the interval. At n=120, a difference of three points between this
-card and the next one is noise. §21.6 and Appendix F are how you tell the
-difference between an improvement and a good afternoon.
+And note the interval. 114 of 120 is a Wilson 95% interval of 90% to 98%:
+5 points below the score and 3 above, lopsided because the score is near
+the ceiling. §21.6 and Appendix F are how you tell an improvement from a good
+afternoon.

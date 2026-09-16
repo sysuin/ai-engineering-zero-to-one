@@ -1,0 +1,19 @@
+10 questions x 3 runs; 2 state both details, 8 leave at least one out
+
+                               complete: right   incomplete:  invented  null  no call
+  required, no escape                   6/6                      13/24     0       11
+  null allowed                          6/6                       3/24    18        3
+  null allowed, told to ask             6/6                       3/24     0       21
+
+invented by 'required, no escape':
+  How did the West do last year? -> year=2025
+  How much did we sell in the south in 2025? -> region=Southwest
+  Revenue for the Northeast, please. -> year=2024
+  What was Midwest revenue in the year we launched Sanitation? -> year=2019
+  What was Midwest revenue? -> year=2024
+
+invented by 'null allowed':
+  How much did we sell in the south in 2025? -> region=Southwest
+
+invented by 'null allowed, told to ask':
+  How much did we sell in the south in 2025? -> region=Southwest

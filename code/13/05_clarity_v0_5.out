@@ -18,7 +18,7 @@ Q: How many people work at the Columbus depot?
    The documents I have do not answer that. Missing: The excerpts do not state the number of people employed at the Columbus depot; they only mention its storage capacity, utilisation, a closure notice, and a goods received note.
 
 The second and third questions are identical. The only difference is a metadata
-filter, and it is the difference between a wrong answer and a right one.
+filter, and it is the difference between a refusal and a right one.
 
 Without it, retrieval returns the Summary section of eight other quarters —
 they are all worded the same way — and Clarity correctly reports that it cannot

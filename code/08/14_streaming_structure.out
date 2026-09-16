@@ -1,0 +1,15 @@
+3 quarterly reviews extracted as a streamed structured output; 466 snapshots
+
+  shown to the reader              values shown  wrong numbers  wrong text
+  the SDK's parsed snapshot                 102             47           0
+  every string as it arrives                221             47         119
+  numbers once something follows             54              0           0
+
+  wrong = a value put on screen that differs from the one in the finished record
+
+revenue_usd for qbr-2024-Q3, as the SDK's snapshots showed it:
+  846 -> 846184 -> 8461842
+
+Waiting for something to follow a number put each value on screen a median of
+1 chunk after the SDK's snapshot first held its final value, and at most 3,
+in records of a median 153 chunks

@@ -1,0 +1,11 @@
+40 contracts
+
+  effort  prompt              right  visible out  reasoning
+  none    direct              35/40            5          0
+  none    chain of thought    40/40          157          0
+  low     direct              39/40           10         34
+  low     chain of thought    40/40          161         46
+  medium  direct              40/40           10         62
+  medium  chain of thought    40/40          155         93
+
+visible out and reasoning are mean tokens per contract; both are billed as output

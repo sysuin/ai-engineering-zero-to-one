@@ -1,0 +1,10 @@
+30,000 vectors of 256 numbers; 200 queries that are NOT in the index
+
+  data       ef_search  recall@10  ms/query
+  random            10       5.7%      0.26
+  random            40      17.2%      0.71
+  random           160      45.2%      2.26
+
+  structured        10      81.2%      0.13
+  structured        40      98.7%      0.31
+  structured       160     100.0%      0.90

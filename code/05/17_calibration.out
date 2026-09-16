@@ -1,0 +1,12 @@
+60 questions whose answers Python checked
+
+     confidence questions mean conf.  accuracy
+   0.50–0.80          15      0.628     0.533
+   0.80–0.95          20      0.894     0.500
+   0.95–0.99          11      0.965     0.727
+   0.99–1.00          14      1.000     0.929
+
+overall accuracy 0.650; mean confidence 0.865
+expected calibration error 0.215 (overconfident on average)
+accuracy did not rise steadily with confidence
+but a stated 0.9 was not a 90% chance of being right

@@ -1,7 +1,7 @@
 """
 Clarity v0.14 — the six-layer suite.
 
-It began with three. §22.9's mutation test walked three plausible bugs straight through
+It began with three. §22.14's mutation test walked three plausible bugs straight through
 that version, and the three layers below marked * are what it took to stop them. Layers,
 cheapest first, and the order is the whole design:
 
@@ -51,7 +51,7 @@ def squeeze(text: str) -> str:
     """
     return re.sub(r"[^a-z0-9.%$]", "", plain(text).replace("\\n", " "))
 
-# Six layers, not one. The first version of this file had three, and §22.9's
+# Six layers, not one. The first version of this file had three, and §22.14's
 # mutation test walked three plausible bugs straight through it: an overall floor
 # averages a collapse in one population into a healthy majority, and no floor on
 # retrieval means a broken retriever is invisible whenever a fallback exists.
@@ -105,7 +105,7 @@ def run(answer_fn, cases: list[dict] | None = None, judge_sample: int = 12,
     `answer_fn(question) -> (answer, tools_used)`.
 
     The suite knows nothing about how the answer was produced, which is what lets
-    §22.9 swap in a deliberately broken system and see whether anything notices.
+    §22.14 swap in a deliberately broken system and see whether anything notices.
     """
     cases = cases if cases is not None else load()
     judge = judge or Judge(system=REFERENCE)
@@ -137,7 +137,7 @@ def run(answer_fn, cases: list[dict] | None = None, judge_sample: int = 12,
         # Only for cases the documents alone can answer. A first version scored every
         # `document` case and reported 0% on a healthy system, because "revenue in
         # 2023 Q1" is answered from the warehouse and no document is ever fetched.
-        # That is §22.8's mistake again: where the gold came from is not a claim
+        # That is §22.13's mistake again: where the gold came from is not a claim
         # about which tool should run.
         span = case.get("span")
         if span and case.get("tier") == "tail" and case["kind"] == "document":

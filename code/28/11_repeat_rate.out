@@ -1,0 +1,12 @@
+5,000 requests a day drawn from 20,000 distinct questions;
+hit rate over the second week
+
+   exponent  top 1%          time to live             1 day, flushed
+          s   share     1 hour      1 day     1 week         nightly
+        0.6     15%         4%        31%        67%             23%
+        0.8     31%        15%        46%        73%             40%
+        1.0     56%        35%        64%        81%             60%
+        1.2     79%        57%        80%        90%             78%
+
+top 1% share: the share of all requests that ask one of the most common
+1% of questions

@@ -19,7 +19,7 @@ SYSTEM = ("You are Meridian's analyst. Answer in one sentence: the figure or nam
           "and nothing else.")
 
 # In a real project these come from production runs a human approved — §23.10's
-# feedback table joined to §25.6's runs. Here they are built from the golden set,
+# feedback table joined to §25.7's runs. Here they are built from the golden set,
 # which is the same shape and a much smaller sample.
 cases = [c for c in load() if c.get("answer")]
 examples = [{"messages": [
@@ -95,15 +95,15 @@ print()
 print("A case in both sets makes your evaluation report memorisation as skill, and")
 print("the report will look excellent. It is the same failure as testing on your")
 print("training data in any other field, and it is easier to commit here because the")
-print("'data' is prose and the duplicate is a rephrasing rather than a copy — which")
-print("is why the check hashes a normalised question rather than the whole example.")
+print("'data' is prose and the duplicate is often a rephrasing rather than a copy. This")
+print("check hashes the question with case and spacing removed, so it catches copies")
+print("only; the next listing finds the leak it misses.")
 print()
-print("On the size question: the honest answer is that hundreds of examples change")
-print("behaviour and thousands are needed to change it reliably, and that the number")
-print("matters far less than whether the examples agree with each other. Fifty")
-print("consistent examples of a house style beat five hundred that were written by")
-print("five people with different opinions — and an inconsistent training set is the")
-print("one failure mode that more data makes worse.")
+print("On the size question: start small, measure, and add data only when the")
+print("measurement says the model is still short. The number matters far less than")
+print("whether the examples agree with each other. Fifty consistent examples of a")
+print("house style beat five hundred written by five people with different opinions,")
+print("and an inconsistent training set is not fixed by more of it.")
 print()
 print("What this listing does not do is run the fine-tune. That is a training job")
 print("with a bill and a wait, and its result would be a model id that means nothing")

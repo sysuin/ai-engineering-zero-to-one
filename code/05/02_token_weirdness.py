@@ -33,22 +33,33 @@ TESTS = [
 ]
 
 print(f"Each question asked {TRIALS} times at temperature 0\n")
+tally = {}
 for label, question, truth in TESTS:
     answers = [ask(question) for _ in range(TRIALS)]
     hits = sum(truth.lower().replace(" ", "") in a.lower().replace(" ", "")
                for a in answers)
     distinct = len(set(answers))
+    tally[label] = (hits, distinct)
     print(f"  {label:22} {hits}/{TRIALS} correct, {distinct} distinct answer(s)")
     for answer in sorted(set(answers)):
         mark = "ok " if truth.lower().replace(" ", "") in answer.lower().replace(" ", "") \
                else "   "
         print(f"      {mark} {answer[:40]!r}")
 
+famous = tally["Count a letter"][0] + tally["Compare decimals"][0]
+nearby = tally["Count it in a phrase"][0] + tally["Reverse a name"][0]
+unstable = [label for label, (_, distinct) in tally.items() if distinct > 1]
 print()
-print("The famous failures — strawberry, 9.11 — now usually pass. They have been")
-print("drilled into training data precisely because they became famous. Step one word")
-print("off the well-trodden example and the same weakness is still there, and it is")
-print("not even stable between attempts.")
+print(f"The two famous questions: {famous}/{2 * TRIALS} right. The two a step away from "
+      f"them: {nearby}/{2 * TRIALS}.")
+if famous > nearby:
+    print("The famous failures have been drilled into training data because they became")
+    print("famous; the weakness underneath them has not gone anywhere.")
+else:
+    print("On this run the nearby questions did as well as the famous ones — which is a")
+    print("reason to test your own cases, not a reason to trust character-level answers.")
+print("Answers that changed between identical attempts: "
+      + (", ".join(unstable) if unstable else "none — at temperature 0, on this run"))
 print()
 print("Here is why. The model never sees letters:")
 for word in ("strawberry", "Meridian", "refrigerator"):

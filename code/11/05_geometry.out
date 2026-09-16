@@ -1,0 +1,13 @@
+vector lengths as returned: 0.9995 to 1.0005
+
+|a - b|^2 = 1.233214    2 - 2 cos(a, b) = 1.233214
+
+similarity between clauses on the SAME topic (different contracts):  mean 0.978, lowest 0.891
+similarity between clauses on DIFFERENT topics:                      mean 0.448, lowest 0.303
+share of different-topic pairs above zero: 100%
+
+random points: (farthest - nearest) / nearest distance from one point to 1,000 others
+      2 dimensions: 90.05
+     16 dimensions: 1.31
+    128 dimensions: 0.41
+   1536 dimensions: 0.10

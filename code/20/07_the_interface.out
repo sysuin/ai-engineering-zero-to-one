@@ -6,26 +6,25 @@
   lost because the researcher missed it : 2
   lost between the researcher and the answer : 0
 
-  sub-questions that named the quarter : 5 of 12
-  of those, the researcher found it    : 5
-  of the rest, the researcher found it : 5
+  sub-questions that named the quarter : 3 of 12
+  of those, the researcher found it    : 3
+  of the rest, the researcher found it : 7
 
 A sub-question that worked, and one that did not:
 
-  found  : …pany documents, what reason is given for the Midwest falling in 2024 Q3?
-  missed : … to the company documents, what reason is given for the Midwest falling?
+  found  : …s, what reason does the company give for the Midwest falling in 2024 Q3?
+  missed : …'s documents, what reason does the company give for the Midwest falling?
 
 Two things in this output, and only one of them is stable.
 
-The unstable one is the quarter. Today 5 of 12 sub-questions carried
-it, and the split was 5/5 against 5/7. A previous run of this same listing
-produced almost the reverse proportion. The supervisor's phrasing is itself a
-sample from a model, so it is not a variable you get to hold still.
+The unstable one is the quarter. Today 3 of 12 sub-questions carried
+it, and the split was 3/3 against 7/9. The supervisor's phrasing
+is itself a sample from a model, so it is not a variable you get to hold still.
 
 The stable one is the shape of the loss: 0 of the misses happened between the
 researcher and the final answer. Everything the researcher found came back
-intact. The loss is inside a specialist that is running the same retrieval,
-over the same corpus, with the same tool the single agent used.
+intact. The loss, where there is one, is inside a specialist running the same
+retrieval, over the same corpus, with the same tool the single agent used.
 
 Which leaves one obvious suspect. The single agent searched the documents
 while holding the figure it had just computed; the researcher searched holding

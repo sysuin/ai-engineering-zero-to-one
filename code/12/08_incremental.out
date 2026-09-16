@@ -1,0 +1,7 @@
+first build:         {'kept': 0, 'embedded': 84, 'deleted': 0}
+nothing changed:     {'kept': 84, 'embedded': 0, 'deleted': 0}
+one review edited:   {'kept': 83, 'embedded': 1, 'deleted': 0}
+one review removed:  {'kept': 77, 'embedded': 0, 'deleted': 7}
+
+texts embedded in total: 85, against 329 if every sync had rebuilt the index
+rows whose text no longer matches its hash: 0

@@ -10,13 +10,17 @@ What it composes, and the chapter that argued for each:
     retrieval        Ch 11-14   hybrid, filtered, MMR — measured at each step
     the warehouse    Ch 15      numbers come from SQL, not from prose
     tools            Ch 16      two of them, with typed arguments
-    the loop         Ch 17      budgeted, traced, with a stop rule
-    the guard        Ch 29      untrusted text fenced, active content stripped
-    the cache        Ch 28      exact first, semantic second, both optional
-    the gateway      Ch 27      a provider it can survive the loss of
-    resilience       Ch 26      retry with jitter, a breaker per provider, a bulkhead
-    tracing          Ch 23      one span per model call, redacted at the boundary
-    the store        Ch 25      runs, steps, evaluations, feedback — all with a tenant
+    the loop         Ch 17      budgeted, with a stop rule (v0.9's agent)
+    the guard        Ch 29      active content stripped, tools allowlisted by role
+    the cache        Ch 28      exact match only, keyed by tenant, optional
+    the bulkhead     Ch 26      a ceiling on concurrent runs; the rest are shed
+    tracing          Ch 23      one span per model call, priced, redacted at the boundary
+
+What it does not compose, although earlier chapters built it — Chapter 31's review of this
+file finds both, and says what their absence costs:
+
+    the gateway      Ch 27      fallback and a breaker per provider (platform/gateway.py)
+    the store        Ch 25      runs, steps and feedback in a database (v0_17/store.py)
 
 One rule governs the composition: **nothing below knows about anything above it.** The
 retriever has never heard of HTTP, the agent has never heard of the cache, and the guard
@@ -65,7 +69,7 @@ class Answer:
     text: str
     tools: list[str] = field(default_factory=list)
     sources: list[str] = field(default_factory=list)
-    # What the tools returned, concatenated. Not for display — for §21.7's recall
+    # What the tools returned, concatenated. Not for display — for §21.9's recall
     # measurement, which asks whether the passage a case was verified against actually
     # came back. Without this an answer's grounding cannot be checked after the fact,
     # and a recall metric computed from filenames alone reports 0% on a healthy system.
@@ -117,7 +121,7 @@ class Clarity:
             chunks, vectors = load_index()
             self._engine = traced_tools(
                 build_tools(Retriever(chunks, vectors, client=self.client),
-                            Warehouse()))
+                            Warehouse(client=self.client)))
         return self._engine
 
     # ------------------------------------------------------------------ the method
@@ -187,7 +191,7 @@ def _sources(run: Run) -> list[str]:
     `search_documents` are a query and a limit — the sources are what came back.
 
     A second version parsed the result as JSON and still returned nothing, because
-    §17.4's loop truncates a tool result at three thousand characters before handing it
+    v0.9's loop truncates a tool result at three thousand characters before handing it
     to the model, which is right for the model and fatal for `json.loads`. So this
     reads the field, not the document.
     """

@@ -1,0 +1,26 @@
+200 tickets and 8 messages that are not tickets
+
+                                 router + specialist  one call
+  kind matches the label                         200       200
+  whole record right                             200       200
+  non-tickets set aside                       5 of 8    8 of 8
+  calls                                          419       208
+  input tokens                                43,051   107,577
+  output tokens                                5,351     4,049
+
+  non-tickets the router sent to a specialist:
+    Account   Our office will be closed on Friday for a staff event.
+    Account   Can I speak to someone about becoming a distributor?
+    Account   Please stop sending me the monthly newsletter.
+  with no 'None of these' class, the 8 went to: Account 8
+
+Twenty tickets sent to the wrong specialist on purpose. What came back:
+
+  tickets  sent to     nothing  a value from the ticket  invented
+  Account  Delivery         20                        0         0
+  Delivery Billing          20                        0         0
+  Billing  Quality          12                        8         0
+    Quality specialist, sku = 'INV-27474': credit note for INV-27474…
+
+The one call again, `kind` last in every branch but 'None of these':
+  kind right on 18 of 200; 'None of these' for 182

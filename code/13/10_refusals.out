@@ -1,0 +1,21 @@
+answerable questions, top 5 excerpts
+  rank   9  gate no   What was total revenue in 2024 Q3?
+  rank   5  gate yes  Which region was weakest in 2024 Q3?
+  rank   1  gate yes  Which account did not renew, and when?
+  rank  12  gate no   What explanation does the company give for the Midwest fall?
+  rank   1  gate yes  When did the Sanitation category launch?
+  rank   3  gate yes  Why did gross margin fall in 2025 Q1?
+  rank   2  gate yes  What caused the spike in support contacts in 2024 Q4?
+  rank  26  gate no   How many days notice is required before a price rise under MSC
+  rank  79  gate no   Which law governs the supplier agreements?
+  rank   1  gate yes  What happens if a supplier misses the delivery target three mo
+  rank   1  gate yes  How long does the buyer have to reject non-conforming goods?
+  rank   1  gate yes  What is the racked storage capacity at Dallas?
+
+  retrieved, gate said yes       8
+  retrieved, gate said no        0
+  not retrieved, gate said no    4
+  not retrieved, gate said yes   0
+  unanswerable, gate said yes    0
+
+of 4 answerable questions refused or mishandled, 4 were retrieval failures the gate reported correctly, and 0 were the gate's own mistakes

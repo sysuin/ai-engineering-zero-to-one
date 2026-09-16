@@ -30,7 +30,7 @@ for question, where in QUESTIONS:
     print()
 
 print("The second and third questions are identical. The only difference is a metadata")
-print("filter, and it is the difference between a wrong answer and a right one.")
+print("filter, and it is the difference between a refusal and a right one.")
 print()
 print("Without it, retrieval returns the Summary section of eight other quarters —")
 print("they are all worded the same way — and Clarity correctly reports that it cannot")

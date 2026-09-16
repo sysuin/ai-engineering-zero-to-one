@@ -1,0 +1,19 @@
+dumps(nan):           {"margin": NaN}
+allow_nan=False:      Out of range float values are not JSON compliant: nan
+dumps(date):          Object of type date is not JSON serializable
+dumps(Decimal):       Object of type Decimal is not JSON serializable
+dumps(set):           Object of type set is not JSON serializable
+with default=:
+   {"as_of": "2024-09-30", "revenue": "8461841.81", "regions": ["Midwest", "West"]}
+
+id sent:              9007199254740993
+id as a double:       9007199254740992   equal? False
+
+ensure_ascii default: {"customer": "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale"}
+ensure_ascii=False:   {"customer": "Société Générale"}
+
+JSON Lines:
+{"n": 0, "ok": true}
+{"n": 1, "ok": false}
+{"n": 2, "ok": true}
+read back: [{'n': 0, 'ok': True}, {'n': 1, 'ok': False}, {'n': 2, 'ok': True}]

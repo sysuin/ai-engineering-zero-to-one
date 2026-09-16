@@ -49,7 +49,7 @@ for case in load():
 
 if target is None:
     print("No case failed repeatedly today. That is a good outcome and a useless")
-    print("listing; the shrinking algorithm below is what matters, and §24.6 walks")
+    print("listing; the shrinking algorithm below is what matters, and §24.5 walks")
     print("through it on a case that did fail.")
     raise SystemExit(0)
 

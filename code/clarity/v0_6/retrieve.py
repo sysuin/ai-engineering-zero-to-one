@@ -1,15 +1,20 @@
 """
 Clarity v0.6 — retrieval that earns its keep.
 
-Every component here was measured on thirty questions in Chapter 14 and kept only if it
-improved recall@5. One popular technique is deliberately absent, and one is off by
-default, because on this corpus they cost a call and returned nothing.
+Measured in Chapter 14 on thirty questions (after pooling corrected seven of their answers),
+three runs for anything that calls a model:
 
-    dense only            77%
-    + fused with BM25     87%      (at k=1, not the k=60 everyone quotes)
-    + metadata filter     93%
-    + reranking           93%      no change — available, off by default
-    + MMR                 97%
+    dense only                77%
+    + fused with BM25         80%      k=1 and k=60 alike on recall; k=1 slightly ahead on MRR
+    + metadata filter      93-100%     extracted from the question, applied as a pre-filter
+    + reranking            +0 to +2    a call per question — available, off by default
+    + MMR                  +0          after the filter; no call, kept for varied top fives
+
+Not yet done: a one-line header embedded with each chunk took dense search from 77% to 97%
+with no model call. This file still searches the un-headed index of Chapters 11 to 13.
+
+Known weakness: the facet extractor sometimes invents a year from a contract reference, the
+combined filter then matches nothing, and the fallback drops the whole filter.
 """
 from __future__ import annotations
 
@@ -95,10 +100,10 @@ class Retriever:
         """
         Reciprocal rank fusion.
 
-        `k` damps the advantage of being ranked first. The usual value is 60, and on
-        this corpus that damped it so thoroughly that fusion scored identically to
-        dense search alone — a chunk found emphatically by one retriever lost to
-        chunks found weakly by both. Measure it; do not inherit it.
+        `k` damps the advantage of being ranked first. A large k rewards chunks both
+        retrievers found; a small k rewards one retriever's confident first place. On the
+        corrected test set, 1 and 60 answered the same number of questions — each won one
+        the other lost — and 1 ordered them slightly better. Measure it; do not inherit it.
         """
         fused: dict[int, float] = defaultdict(float)
         for ranking in rankings:
@@ -175,7 +180,10 @@ class Retriever:
         dense = sorted(pool, key=lambda i: -dense_scores[i])[:50]
 
         keyword_scores = self._bm25(question)
-        keyword = [i for i in np.argsort(-keyword_scores)[:200]
+        # Filter the keyword ranking BEFORE cutting it short. Taking the global top 200 and
+        # filtering afterwards is a post-filter by another name: forty contracts share an
+        # identically worded payment clause, and the one the filter wants can rank 201st.
+        keyword = [i for i in np.argsort(-keyword_scores)
                    if allowed is None or i in allowed][:50]
 
         order = self._fuse(dense, keyword, k=1)

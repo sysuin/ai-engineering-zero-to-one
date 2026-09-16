@@ -1,0 +1,15 @@
+74 questions the documents answer, 20 that nothing in the corpus answers
+
+                              answerable      unanswerable       kept refused
+  signal                   median, range     median, range   AUC  ans.  unans.
+  top similarity         0.61, 0.40-0.67   0.48, 0.26-0.61  0.83   73%     60%
+  margin over second     0.01, 0.00-0.27   0.00, 0.00-0.09  0.58   84%     20%
+  top vs next 50 (z)    2.37, 0.59-17.09  2.08, 0.44-13.75  0.51   82%     30%
+
+a fixed cut at 0.4 kept 99% of the answerable questions and refused 30% of
+the unanswerable ones; 'kept' and 'refused' above use a cut chosen on the
+other half of the questions.
+
+highest-scoring unanswerable question, and lowest-scoring answerable one:
+  0.605  What was revenue in 2026 Q1?
+  0.396  Which account did Meridian lose, and which region did it hurt?

@@ -1,24 +1,24 @@
 Q: What was revenue in 2024 Q3, and what caused the Midwest decline?
 
   span                                         time tok in/out     cost
-  clarity.request        ##################  6638ms                  
-    model.call           ####                1482ms  414/78  $0.00011
-    tool.query_warehouse     ####            1766ms                  
-      model.parse            ###             1466ms  742/65  $0.00015
-    tool.search_documents        #####       2159ms                  
-      model.embed                ##           980ms   16/0           
-      model.parse                   ###      1170ms  177/22  $0.00004
-    model.call                         ###   1230ms 1072/95  $0.00022
+  clarity.request        ##################  5119ms                  
+    model.call           ####                1142ms  414/71  $0.00011
+    tool.query_warehouse     ####            1299ms                  
+      model.parse            ####            1208ms  739/65  $0.00015
+    tool.search_documents        #####       1507ms                  
+      model.embed                #            401ms   12/0           
+      model.parse                 ###        1097ms  173/22  $0.00004
+    model.call                        ####   1170ms 1065/94  $0.00022
 
-  2,421 tokens in, 260 out, $0.00052 total
+  2,403 tokens in, 252 out, $0.00051 total
 
                     calls       in    out      cost   share
-  model.call            2    1,486    173   0.00033     63%
-  model.parse           2      919     87   0.00019     37%
-  model.embed           1       16      0   0.00000      0%
+  model.call            2    1,479    165   0.00032     63%
+  model.parse           2      912     87   0.00019     37%
+  model.embed           1       12      0   0.00000      0%
 
-  input tokens are 90% of the volume and cost less per token,
-  output tokens are 10% of the volume and cost more
+  input tokens are 91% of the volume and cost less per token,
+  output tokens are 9% of the volume and cost more
 
   (placeholder rates — this book prints no price list. Set RATE_* in .env
    from your provider's page and every figure below becomes yours.)
@@ -27,7 +27,7 @@ Three things in that breakdown decide every optimisation in this chapter.
 
 The input is mostly the same text, over and over. Each model call re-sends the
 system prompt, the tool schemas, and every message so far — which is why a
-conversation gets more expensive per turn, and why §28.2's provider-side
+conversation gets more expensive per turn, and why §28.3's provider-side
 prompt caching exists.
 
 Most of the calls are not the ones you think about. An agent's visible work is
@@ -35,5 +35,5 @@ one question and one answer; the trace shows a planner, an embedding, and a
 call per step. The step you never think about is often the one to remove.
 
 And the cheapest token is the one you do not generate. Output is a minority of
-the volume at several times the price, which makes §28.2 — asking for shorter
+the volume at several times the price, which makes asking for shorter
 answers — the most overlooked lever in the field.

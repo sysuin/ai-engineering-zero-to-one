@@ -1,0 +1,6 @@
+{
+  "dense, text only": 0.7666666666666667,
+  "dense, with headers": 0.9666666666666667,
+  "hybrid, text only": 0.8,
+  "hybrid, with headers": 1.0
+}

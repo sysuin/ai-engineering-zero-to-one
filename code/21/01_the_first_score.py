@@ -49,9 +49,7 @@ for row in card.rows:
 print("\nby where the case came from")
 print(card.table("group"))
 
-json.dump([{k: v for k, v in row.items() if k != "answer"}
-           | {"answer": row["answer"][:300]} for row in card.rows],
-          open("code/21/_scorecard.json", "w"), indent=1)
+json.dump(card.rows, open("code/21/_scorecard.json", "w"), indent=1)
 
 groups = card.by("group")
 generated = groups["generated"]

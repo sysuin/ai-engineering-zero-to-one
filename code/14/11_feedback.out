@@ -1,0 +1,15 @@
+  recall@5                         all    plain near-dup identifi paraphra   ticket  obscure
+  dense                            77%      83%      50%      50%     100%     100%     100%
+    + Rocchio, top 3, beta 0.5     73%      67%      50%      50%     100%     100%     100%
+    + Rocchio, top 3, beta 1.0     70%      67%      50%      50%     100%     100%      67%
+    + Rocchio, top 10, beta 1.0    60%      33%      50%      50%     100%     100%      33%
+  BM25                             67%      83%      67%      50%      33%     100%     100%
+    + expansion, top 3, 5 words    63%      67%      67%      67%      33%     100%      67%
+    + expansion, top 3, 10 words   63%      67%      67%      50%      33%     100%     100%
+    + expansion, top 10, 10 words  47%      33%      50%      33%      33%     100%      67%
+
+'How long do we have to settle an invoice?'
+   BM25 expansion added: payment, undisputed, invoices, receipt, all, buyer, withhold, amount, disputed, faith
+
+'What is the price adjustment cap in agreement MSC-2022-100?'
+   BM25 expansion added: prices, written, fixed, thereafter, propose, an, subject, those, exceeding, requires

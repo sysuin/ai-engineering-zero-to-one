@@ -1,0 +1,14 @@
+  prompt                            text only  billed  difference
+  one short message                        10      16          +6
+  a system prompt and a question           17      27         +10
+  ten turns of conversation               135     187         +52
+  one question and one tool                10     147        +137
+  one question and four tools              10     254        +244
+
+  (the tool's JSON schema, as text, is 72 tokens)
+
+Every message carries a few tokens of framing that its text does not show. Tools
+add more than their text: the first brings a fixed preamble with it, and each further
+one adds its definition in the provider's own format — on every call, used or not. A
+budget that counts only message text is short by both, and the second grows with
+each tool. Count from the provider's usage figures once, and budget with the margin.

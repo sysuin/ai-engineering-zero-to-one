@@ -1,0 +1,15 @@
+8 workers, 2s of work on average: capacity 4 requests a second. Callers give up after 6s.
+
+               no deadline check            deadline checked first     
+  arrivals/s            in time    wasted            in time    wasted
+         3.2              3.12/s     0.11/s              3.08/s     0.06/s
+         4.0              2.57/s     1.49/s              3.45/s     0.40/s
+         4.8              0.19/s     4.65/s              3.17/s     0.80/s
+         6.0              0.06/s     6.09/s              2.96/s     1.10/s
+         8.0              0.06/s     7.79/s              2.81/s     1.29/s
+
+At 2x capacity the unchecked server stayed fully busy and answered 0.06 requests a
+second in time. Starting a request only when its caller would still be waiting after
+typical work answered 2.81, from the same workers.
+Throughput is what the server did. Goodput is what callers received, and past capacity
+the two part company unless the server stops starting work nobody is waiting for.

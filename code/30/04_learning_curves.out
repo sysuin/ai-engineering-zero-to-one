@@ -1,0 +1,14 @@
+100 training examples, 100 features, 5 of them real
+
+   epoch  train loss  holdout loss
+       1       0.683         0.689
+      10       0.616         0.665
+      50       0.456         0.621
+      94       0.373         0.612   <- best holdout
+     200       0.275         0.632
+     400       0.194         0.697
+     800       0.124         0.820
+
+Training loss fell every epoch, to 0.124. Holdout loss was lowest at epoch 94
+(0.612) and 1.3x that by epoch 800. After the best epoch the model was
+learning the noise in 100 examples, and only the holdout could see it.

@@ -185,11 +185,12 @@ if refusal:
     print(f"  prompt moved abstention by {moved:.0%}.")
     print()
     if moved < 0.05:
-        print("  Which is to say: barely at all. The refusals were not coming from")
-        print("  that sentence. The warehouse raises an error naming what it does")
-        print("  hold, retrieval returns an empty list, and the model reports both —")
-        print("  Chapter 16's errors-as-prompts doing work a prompt line was getting")
-        print("  the credit for.")
+        print("  Which is to say: barely at all, on this run. The refusals were not only")
+        print("  coming from that sentence: the warehouse raises an error naming what it")
+        print("  does hold, and the passages that come back plainly do not answer — and")
+        print("  the model reports both. One run cannot say whether the sentence never")
+        print("  matters or only sometimes does, which is exactly why the slice is scored")
+        print("  on its own and a surviving mutant is worth rerunning.")
     else:
         print("  So the sentence is load-bearing after all, and the tools alone do not")
         print("  carry the refusals. Run this again and the size of that number moves")

@@ -1,0 +1,1950 @@
+{
+  "report": {
+    "as written": {
+      "said it is missing": 50,
+      "a term from another clause": 0,
+      "a term in no excerpt": 0
+    },
+    "without the general-knowledge line": {
+      "said it is missing": 50,
+      "a term from another clause": 0,
+      "a term in no excerpt": 0
+    },
+    "without any constraints": {
+      "said it is missing": 50,
+      "a term from another clause": 0,
+      "a term in no excerpt": 0
+    },
+    "no grounding at all": {
+      "said it is missing": 50,
+      "a term from another clause": 0,
+      "a term in no excerpt": 0
+    },
+    "norm: as written": 0,
+    "norm: without the general-knowledge line": 0,
+    "norm: without any constraints": 17,
+    "norm: no grounding at all": 27
+  },
+  "answers": [
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not say anything about notice required before a price rise under MSC-2022-100. It only states that payment is due within 60 days of a valid invoice and that either party may terminate for convenience on 180 days\u2019 written notice, but no pricing or price-rise notice term is provided. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2022-100. They only say that prices are set out in Schedule 2, but Schedule 2 is not reproduced here, so the number of days for paying a valid invoice is missing."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2022-100. They only say payment is due within 60 days of a valid invoice and that the Supplier must meet a 96% delivery service level, but they do not mention rejection rights or a rejection period."
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2022-100. They only say the Supplier may adjust prices once in any twelve month period by no more than 3% in aggregate, and that any adjustment exceeding that cap needs the Buyer\u2019s prior written consent. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2022-100 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2022-100 for convenience, so the notice period for such a termination is missing. They only say the Supplier may adjust prices on not less than 30 days\u2019 written notice, which is a price-change notice, not a termination notice. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any notice period for a price rise under MSC-2022-116. It only says payment is due within 60 days of a valid invoice, and that either party may terminate for convenience on 180 days\u2019 written notice or for material breach on 30 days\u2019 written notice. [contract-MSC-2022-116.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2022-116, so the number of days within which a valid invoice must be paid is missing. The only payment-related detail shown is that prices are set out in Schedule 2, which is not reproduced here."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2022-116. They only say payment is due within 60 days of a valid invoice, delivery performance is measured monthly, and the schedules containing the goods and prices are not reproduced here."
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2022-116. They mention price adjustment limits, payment terms, delivery targets, quality requirements, and termination rights, but no liability cap is included in the reproduced agreement text."
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2022-116 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2022-116 for convenience, so it does not give a notice period for that type of termination. It only says the initial term is 12 months and gives notice for price adjustments, not termination."
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any notice period for a price rise under MSC-2022-132. They only say the Buyer must settle undisputed invoices within 45 days, and that the Supplier may terminate only at the end of the then-current Term, but nothing about pricing changes or notice for them."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2022-132, so the number of days within which a valid invoice must be paid is missing. They only say that prices are set out in Schedule 2, but Schedules 1 and 2 are not reproduced here. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any period within which the Buyer may reject goods under MSC-2022-132. They only say the Buyer must settle undisputed invoices within 45 days of receipt, may withhold disputed amounts in good faith, and that delivery performance is measured monthly against a 95% target."
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2022-132. They mention price adjustment limits, payment terms, delivery remedies, quality rejection rights, and termination rights, but no liability cap is provided in the reproduced agreement text."
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2022-132 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2022-132 for convenience, so it does not give a notice period for that purpose. It only says the Initial Term is 12 months from 7 January 2022 and that price adjustments after the Initial Term require 30 days\u2019 written notice. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any notice period for a Supplier price rise under MSC-2023-109. It only says payment is due within 60 days of a valid invoice, delivery performance is measured monthly, and the Supplier may terminate only at the end of the then-current Term, but nothing about price increases or notice for them."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2023-109, so the number of days within which a valid invoice must be paid is missing. The only payment-related detail given is that prices are set out in Schedule 2, which is not reproduced here."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not say within how many days of delivery the Buyer may reject goods under MSC-2023-109. They only say payment is due within 60 days of a valid invoice and that the Buyer may withhold payment of any amount disputed in good faith, but they do not mention a rejection period for goods."
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2023-109. They only say the Supplier may adjust prices once in any twelve month period by no more than 5% in aggregate, and that any adjustment above that cap needs the Buyer\u2019s prior written consent. [contract-MSC-2023-109.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2023-109 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2023-109 for convenience, so it does not provide a notice period for that type of termination. It only says the initial term is 12 months and gives notice for price adjustments, not termination."
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not say how much notice the Supplier must give before a price rise under MSC-2023-125. They only state payment terms, delivery and service levels, quality, liability, termination, and governing law, and note that Schedules 1 and 2 are held separately and not reproduced here."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2023-125. They only say that prices are set out in Schedule 2, which is not reproduced here, so the number of days required to pay a valid invoice is missing from the excerpts."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any period within which the Buyer may reject goods under MSC-2023-125. They mention payment within 45 days, delivery performance targets, and termination rights, but Schedules 1 and 2 are not reproduced and no rejection period appears in the text provided."
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2023-125. They only say the Supplier may adjust prices once in any twelve month period by no more than 5% in aggregate, and that any adjustment exceeding that cap needs the Buyer\u2019s prior written consent, which is a price-adjustment cap rather than a liability cap."
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2023-125 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2023-125 for convenience, so they do not provide a notice period for such termination. They only state that the agreement has an initial term of 36 months, commenced on 8 October 2023, and give 30 days\u2019 written notice for a price adjustment, not termination."
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any notice period for a price rise under MSC-2024-102. It only says payment is due within 30 days of a valid invoice, and that either party may terminate for convenience on 60 days written notice or for material breach on 30 days\u2019 notice. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2024-102, so the number of days cannot be determined from the provided text. They only say that prices are in Schedule 2, which is not reproduced here. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2024-102. They only say the Supplier must deliver the listed goods, payment is due within 30 days of a valid invoice, and the Buyer may withhold disputed amounts, but no rejection period is given. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2024-102. They only give a cap on price adjustments: the Supplier may adjust prices once in any twelve month period by no more than 5% in aggregate, on not less than 90 days written notice, and any adjustment above that requires the Buyer\u2019s prior written consent. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2024-102 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2024-102 for convenience, so they do not give a notice period for that type of termination. They only say the Supplier may adjust prices on not less than 90 days\u2019 written notice, which is a price-adjustment notice period, not a termination notice period. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not say anything about a price rise or any notice period for one under MSC-2024-118. They only state that the Buyer pays undisputed invoices within 45 days, and that the Supplier may terminate only at the end of the then-current Term. [contract-MSC-2024-118.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2024-118, so the number of days within which a valid invoice must be paid is missing. They only say that prices are in Schedule 2, but Schedules 1 and 2 are not reproduced here."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any period within which the Buyer may reject goods under MSC-2024-118. They only say the Buyer must settle undisputed invoices within 45 days of receipt and may withhold payment of disputed amounts in good faith, but they do not mention rejection of goods or a rejection deadline."
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2024-118. They only say the Supplier may adjust prices by no more than 8% in aggregate in any twelve-month period, which is a price-adjustment limit, not a liability cap."
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2024-118 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2024-118 for convenience, so they do not provide a notice period for that type of termination. They only say the Supplier may adjust prices on not less than 90 days\u2019 written notice, which is not a termination notice period. [contract-MSC-2024-118.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any notice period for a price rise under MSC-2024-134. They only say the Buyer must settle undisputed invoices within 30 days, may reject non-conforming goods within 30 days, and either party may terminate for convenience on 30 days\u2019 written notice. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2024-134. They only say that prices are set out in Schedule 2, but Schedule 2 is not reproduced here, so the number of days required to pay a valid invoice is missing from the excerpts."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2024-134. They only say the Buyer may withhold payment of any amount disputed in good faith and that undisputed invoices must be settled within 30 days of receipt, but nothing about rejection of delivered goods."
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2024-134. They mention price adjustment limits, payment terms, delivery remedies, quality rejection rights, and termination rights, but no liability cap is provided in the reproduced agreement text."
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2024-134 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2024-134 for convenience, so they do not provide a notice period for that type of termination. They only say that price adjustments after the Initial Term require 90 days\u2019 written notice, which is not a termination notice period. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any notice period for a price rise under MSC-2025-111. They only say payment is due within 60 days of a valid invoice, and that Schedules 1 and 2 are held separately and are not reproduced here, so any pricing notice term is missing from the provided text. [contract-MSC-2025-111.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2025-111. They only say that Schedules 1 and 2 are held separately and are not reproduced here, so the missing payment timing may be in those schedules or elsewhere in the full agreement."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2025-111. They say only that payment is due within 60 days of a valid invoice and that schedules 1 and 2 are not reproduced here, so the rejection period is missing from the provided text."
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2025-111. They mention price adjustment limits, payment terms, delivery targets, quality rights, and termination, but no liability cap is included in the reproduced agreement text."
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2025-111 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2025-111 for convenience, so they do not provide a notice period for that type of termination. They only say the Initial Term is 12 months, prices are fixed for the Initial Term, and any price adjustment after that requires 60 days\u2019 written notice, which is not a termination notice period. [contract-MSC-2025-111.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any notice period for a Supplier price rise under MSC-2025-127. They only say the Supplier may terminate at the end of the then-current Term on notice, and that the Buyer pays undisputed invoices within 45 days, but nothing about price increases or advance notice for them. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days must a valid invoice be paid under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or number of days for paying a valid invoice under MSC-2025-127. They only say that prices are set out in Schedule 2, but Schedule 2 is not reproduced here, so the invoice payment period is missing."
+    },
+    {
+      "prompt": "as written",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not say within how many days of delivery the Buyer may reject goods under MSC-2025-127. They only say the Buyer must settle undisputed invoices within 45 days of receipt, may withhold disputed amounts in good faith, and that Schedules 1 and 2 are held separately and not reproduced here."
+    },
+    {
+      "prompt": "as written",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2025-127. They only say the Supplier may adjust prices once in any twelve month period by no more than 8% in aggregate, which is a price-adjustment limit, not a liability cap, and Schedules 1 and 2 are not reproduced here. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "How much notice is needed to terminate MSC-2025-127 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2025-127 for convenience, so they do not provide a notice period for such termination. They only say the Supplier may adjust prices on not less than 90 days\u2019 written notice, which is a price-change notice, not a termination notice."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not say how much notice the Supplier must give before a price rise under MSC-2022-100. They only state payment terms, delivery and quality obligations, liability limits, termination notice, and governing law, and note that Schedules 1 and 2 are held separately and not reproduced here."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2022-100, so the number of days within which a valid invoice must be paid is missing. They only say that prices are set out in Schedule 2, but Schedule 2 is not reproduced here. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any period within which the Buyer may reject goods under MSC-2022-100. They only say payment is due within 60 days of a valid invoice and that the Supplier must deliver goods under the agreement, but they do not mention rejection rights or a rejection deadline."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2022-100. They only say the Supplier may adjust prices once in any twelve month period by no more than 3% in aggregate, and that any adjustment exceeding that cap requires the Buyer\u2019s prior written consent. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2022-100 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2022-100 for convenience, so the notice period for convenience termination is missing. It only gives a 30 days\u2019 written notice requirement for a price adjustment under clause 2.2, not termination."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any notice period for a price rise under MSC-2022-116. It only says payment is due within 60 days of a valid invoice, and that either party may terminate for convenience on 180 days\u2019 written notice or for material breach on 30 days\u2019 written notice. [contract-MSC-2022-116.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or how many days a valid invoice must be paid under MSC-2022-116. They only say that prices are set out in Schedule 2, but Schedule 2 is not reproduced here, so the invoice payment period is missing."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any time limit for the Buyer to reject goods under MSC-2022-116. It only says payment is due within 60 days of a valid invoice and that delivery performance is measured monthly, but it does not mention rejection of goods or a rejection period."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2022-116. They mention a 5% cap on price adjustments in clause 2.2, but no liability cap is provided, and Schedules 1 and 2 are not reproduced here."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2022-116 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2022-116 for convenience, so the notice period for such a termination is missing. They only say the agreement commenced on 23 January 2022, had an initial term of 12 months, and give a 30 days\u2019 written notice requirement for price adjustments, not termination. [contract-MSC-2022-116.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any notice period for a price rise under MSC-2022-132. They only say the Buyer must settle undisputed invoices within 45 days, and that the Supplier may terminate only at the end of the then-current Term, but nothing about price increases or notice for them. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2022-132, so the number of days within which a valid invoice must be paid is missing. The only timing provisions shown concern delivery performance, rejection of non-conforming goods, notice for price adjustments, and termination rights."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any period within which the Buyer may reject goods under MSC-2022-132. It only says the Buyer must settle undisputed invoices within 45 days of receipt, may withhold disputed amounts, and that delivery performance is measured monthly against a 95% target."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2022-132. They only say prices may be adjusted up to 12% after the Initial Term, with any higher adjustment requiring the Buyer\u2019s prior written consent, but no liability cap is mentioned. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2022-132 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2022-132 for convenience, so the notice period for such a termination is missing. It only says that price adjustments after the Initial Term require 30 days\u2019 written notice, which is not a termination notice period. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not say how much notice the Supplier must give before a price rise under MSC-2023-109. They only say the Supplier may terminate at the end of the then-current Term, and that schedules 1 and 2 are held separately and are not reproduced here, so any price-rise notice would have to be in the missing material."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2023-109, so the number of days within which a valid invoice must be paid is missing. They only say that prices are set out in Schedule 2, which is not reproduced here. [contract-MSC-2023-109.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2023-109. They only say payment is due within 60 days of a valid invoice, delivery performance is measured monthly, and failure to meet the delivery target in three consecutive months gives the Buyer remedies under clause 7. [contract-MSC-2023-109.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2023-109. They only say the Supplier may adjust prices by no more than 5% in aggregate in any twelve month period, which is a price-adjustment cap, not a liability cap."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2023-109 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2023-109 for convenience, so the notice period for such a termination is missing. They only say the Supplier may adjust prices on not less than 30 days written notice, which is about price changes, not termination."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not say how much notice the Supplier must give before a price rise under MSC-2023-125. It only states that payment is due within 45 days of a valid invoice and that either party may terminate for convenience on 60 days written notice, but it does not mention any pricing or price-rise notice requirement."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2023-125, so the number of days within which a valid invoice must be paid is missing. They only say that prices are set out in Schedule 2, but Schedule 2 is not reproduced here. [contract-MSC-2023-125.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2023-125. They say only that payment is due within 45 days of a valid invoice and that delivery performance is measured monthly, but they do not mention rejection of goods or a rejection period."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2023-125. They mention a 5% cap on price adjustments in clause 2.2, but no liability cap is provided, and Schedules 1 and 2 are not reproduced here. [contract-MSC-2023-125.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2023-125 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2023-125 for convenience, so the notice period for such a termination is missing. They only say the agreement has an initial term of 36 months starting 8 October 2023 and give 30 days\u2019 written notice for a price adjustment, not termination. [contract-MSC-2023-125.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any notice period for a price rise by the Supplier under MSC-2024-102. It only says payment is due within 30 days of a valid invoice, and that either party may terminate for convenience on 60 days written notice or for material breach on 30 days\u2019 notice. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2024-102, so the number of days within which a valid invoice must be paid is missing. The only related information provided is that prices are set out in Schedule 2, but Schedules 1 and 2 are not reproduced here."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2024-102. They only say the Supplier must deliver the goods in Schedule 1, and that payment is due within 30 days of a valid invoice, but they do not mention rejection rights or a rejection period. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2024-102. They only say the Supplier may adjust prices once in any twelve month period by no more than 5% in aggregate, and that any adjustment exceeding that cap requires the Buyer\u2019s prior written consent, which is a price-adjustment cap rather than a liability cap."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2024-102 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2024-102 for convenience, so it does not give a notice period for that type of termination. It only says the Supplier may adjust prices on not less than 90 days written notice, which is a pricing notice period, not a termination notice period."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not say anything about a price rise or any notice period for one under MSC-2024-118. They only state that the Supplier may terminate at the end of the then-current Term, and that the Buyer may terminate for convenience on 30 days\u2019 notice. [contract-MSC-2024-118.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2024-118, so the number of days within which a valid invoice must be paid is missing. The only timing provisions shown concern delivery, rejection of goods, notice for price changes, and termination, not invoice payment."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any period within which the Buyer may reject goods under MSC-2024-118. They only say the Buyer must settle undisputed invoices within 45 days of receipt and may withhold disputed amounts, but nothing about rejection of goods after delivery. [contract-MSC-2024-118.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2024-118. They only say the Supplier may adjust prices by no more than 8% in aggregate in any twelve-month period, which is a price-adjustment cap, not a liability cap."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2024-118 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2024-118 for convenience, so the notice period for convenience termination is missing. They only state that the initial term is 24 months and give notice requirements for price adjustments, not termination. [contract-MSC-2024-118.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not say anything about price rises or any notice period the Supplier must give before increasing prices. They only state payment terms, delivery targets, quality, liability, termination, and governing law, so the missing information is a pricing or price-change clause."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any invoice payment term for MSC-2024-134, so the number of days required to pay a valid invoice is missing. The agreement excerpt only covers scope, prices, delivery, quality, liability, termination, and governing law, and says Schedules 1 and 2 are held separately and are not reproduced here. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2024-134. They say only that the Supplier shall supply the goods in Schedule 1, that undisputed invoices are payable within 30 days of receipt, and that the schedules are not reproduced here, so the rejection period is missing from the excerpts. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2024-134. They mention pricing, payment, delivery, quality, and termination terms, but no liability cap or limitation of liability clause is included, and Schedules 1 and 2 are not reproduced here."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2024-134 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2024-134 for convenience, so the notice period for such a termination is missing. It only says that price adjustments after the Initial Term require 90 days\u2019 written notice, which is not a termination notice period. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any notice period for a price rise under MSC-2025-111. It only says payment is due within 60 days of a valid invoice, and that schedules 1 and 2 are held separately and are not reproduced here, so any pricing notice term would have to be in the missing schedules or elsewhere not shown. [contract-MSC-2025-111.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or invoice due date for MSC-2025-111. They only say that Schedules 1 and 2 are held separately and are not reproduced here, so the number of days for paying a valid invoice is missing from the provided text."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any time limit for the Buyer to reject goods under MSC-2025-111. They only say payment is due within 60 days of a valid invoice and that delivery performance is measured monthly, but they do not mention rejection rights or a rejection period."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2025-111. They mention pricing, payment, delivery, quality, termination, and governing law, but no liability cap is included, and Schedules 1 and 2 are not reproduced here."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2025-111 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2025-111 for convenience, so it does not give a notice period for that purpose. It only says the Initial Term is 12 months and that price adjustments after that require 60 days written notice, which is not a termination notice period. [contract-MSC-2025-111.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not say how much notice the Supplier must give before a price rise under MSC-2025-127. It only states that the Buyer pays undisputed invoices within 45 days, and that the Supplier may terminate only at the end of the then-current Term, but there is no clause about price rises or notice for them."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days must a valid invoice be paid under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any payment term or how many days a valid invoice must be paid under MSC-2025-127. They only say that prices are set out in Schedule 2, but Schedule 2 is not reproduced here."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any period within which the Buyer may reject goods under MSC-2025-127. They say only that the Buyer must settle undisputed invoices within 45 days of receipt and may withhold payment of disputed amounts, but they do not mention rejection of goods or a rejection deadline."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2025-127. They only say the Supplier may adjust prices once in any twelve month period by no more than 8% in aggregate, and that any adjustment exceeding that cap needs the Buyer\u2019s prior written consent. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "How much notice is needed to terminate MSC-2025-127 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any right to terminate MSC-2025-127 for convenience, so the notice period for convenience termination is missing. They only say the Supplier may adjust prices on not less than 90 days written notice, which is not a termination notice period. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any notice period for a price rise by the Supplier. It only specifies payment timing, delivery/service levels, quality, liability, termination, and governing law."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpts for MSC-2022-100 do not state any payment term or invoice due date. They mention prices, delivery, quality, liability, termination, and governing law, but not how many days a valid invoice must be paid."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any specific period within which the Buyer may reject goods after delivery. It only addresses payment timing, delivery service levels, liability, and termination, while noting that Schedules 1 and 2 are not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any cap on the Supplier\u2019s aggregate liability. It only sets a cap on price adjustments, limiting them to no more than 3% in aggregate in any twelve-month period unless the Buyer gives prior written consent."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2022-100 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2022-100 for convenience or any notice period for such termination. It only specifies a 12-month initial term and a 30-day notice period for price adjustments, not termination."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any notice period for a price rise under MSC-2022-116. It only specifies payment terms, delivery and quality obligations, liability, termination rights, and governing law."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any payment term or invoice due date, so the number of days for paying a valid invoice cannot be determined from the provided text. It only says prices are set out in Schedule 2, which is not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any specific period within which the Buyer may reject goods after delivery. It only covers delivery performance targets, payment, liability, termination, and governing law, and notes that Schedules 1 and 2 are held separately."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any cap on the Supplier\u2019s aggregate liability. It only sets a cap on price adjustments, limiting them to no more than 5% in aggregate in any twelve-month period unless the Buyer gives prior written consent."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2022-116 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2022-116 for convenience or any notice period for doing so. It only gives a 12-month initial term and a separate 30-day notice requirement for price adjustments."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any notice period for a Supplier price rise under MSC-2022-132. It only specifies payment terms, delivery targets, quality, liability, termination, and governing law, with no pricing-change clause reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any payment term or invoice due date, so the number of days for paying a valid invoice is not specified here. It only says that prices are set out in Schedule 2, which is not reproduced in the excerpt."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any specific period within which the Buyer may reject goods after delivery. It only says the Buyer may withhold payment of disputed amounts and sets delivery-performance and termination remedies, but no rejection window is provided."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2022-132. They only cover pricing, payment, delivery, quality, termination, and governing law, and note that Schedules 1 and 2 are held separately."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2022-132 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2022-132 for convenience or any notice period for such termination. It only specifies a 12-month initial term and a 30-day written notice period for proposed price adjustments after the initial term."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any notice period for a price rise by the Supplier. It only specifies payment terms, delivery/service levels, quality, liability, termination, and governing law."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any payment term or invoice due date, so the number of days for paying a valid invoice cannot be determined from the provided text. It only says prices are set out in Schedule 2, which is not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any specific rejection period for goods under MSC-2023-109. It only says payment is due within 60 days of a valid invoice and sets delivery performance and termination remedies, but not a buyer rejection window."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any cap on the Supplier\u2019s aggregate liability. It only includes a cap on price adjustments, limiting them to no more than 5% in aggregate in any twelve-month period unless the Buyer gives prior written consent. (contract-MSC-2023-109.md, 2.2-2.3)"
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2023-109 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2023-109 for convenience or any notice period for such termination. It only gives a 12-month initial term and a separate 30-day notice requirement for price adjustments."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any notice period for a price rise by the Supplier. It only specifies payment terms, delivery and quality obligations, liability, termination notice, and governing law."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any payment term or invoice due date for MSC-2023-125. It only says prices are set out in Schedule 2, which is not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any specific period within which the Buyer may reject goods under MSC-2023-125. It only covers delivery performance targets, payment, liability, termination, and governing law, and notes that Schedules 1 and 2 are held separately."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any cap on the Supplier\u2019s aggregate liability. It only includes a cap on price adjustments, limiting them to no more than 5% in aggregate in any twelve-month period unless the Buyer gives prior written consent."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2023-125 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not include any clause giving a right to terminate for convenience, so no notice period for that type of termination is stated here. It only specifies a 36-month initial term and other operational rights and remedies."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any notice period for a price rise by the Supplier. It only specifies payment terms, delivery/service levels, quality, liability, termination, and governing law."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any payment term or deadline for paying valid invoices under MSC-2024-102. It only covers pricing, delivery, quality, liability, termination, and governing law, with schedules 1 and 2 not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any specific period within which the Buyer may reject goods after delivery. It only covers delivery service levels, payment, liability, termination, and price adjustment, and notes that Schedules 1 and 2 are not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any cap on the Supplier\u2019s aggregate liability. It includes pricing, delivery, quality, and termination terms, but no liability limitation clause is reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2024-102 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2024-102 for convenience or any notice period for doing so. It only gives the agreement\u2019s initial term and a 90-day notice requirement for price adjustments, not termination."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not specify any notice period for a price rise under MSC-2024-118. It only states payment terms, delivery/service levels, quality, liability, termination, and governing law, with no pricing or price-change clause included."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any payment term or deadline for paying invoices under MSC-2024-118. It only covers prices, delivery, quality, liability, termination, and governing law, with schedules 1 and 2 not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any specific rejection period for goods under MSC-2024-118. It only says the Buyer must settle undisputed invoices within 45 days and may withhold disputed amounts in good faith."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2024-118. They only include a cap on price adjustments, which is limited to 8% in aggregate in any twelve-month period unless the Buyer gives prior written consent."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2024-118 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not include any clause giving a right to terminate MSC-2024-118 for convenience, so the required notice is not stated here. It only specifies a 24-month initial term and a 90-day notice period for price adjustments, not termination."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not include any clause about price rises or any notice period the Supplier must give for one. It only states payment terms, delivery targets, quality requirements, liability limits, termination rights, and governing law."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any payment term or invoice due date for MSC-2024-134. It only covers pricing, delivery, quality, liability, termination, and governing law, so the number of days for paying a valid invoice is not specified here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any specific period within which the Buyer may reject goods after delivery. It only says the Supplier must meet delivery performance targets and that the Buyer may withhold disputed payments or terminate for breach, but it gives no rejection window for goods."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2024-134. They only address pricing adjustments, payment, delivery, quality, termination, and governing law, and note that Schedules 1 and 2 are not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2024-134 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2024-134 for convenience or any notice period for doing so. It only specifies a 90-day written notice for proposed price adjustments after the initial term."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any notice period for a price rise under MSC-2025-111. It only says payment is due within 60 days of a valid invoice and that either party may terminate for convenience on 30 days\u2019 written notice."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any payment term or invoice due date, so the number of days for paying a valid invoice cannot be determined from the provided text. It only says that prices are set out in Schedule 2, which is not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any specific rejection period for goods under MSC-2025-111. It only covers delivery performance targets, payment, liability, termination, and governing law, while noting that Schedules 1 and 2 are held separately."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2025-111. They include pricing, payment, delivery, quality, and termination terms, but no limitation-of-liability clause or liability cap is reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2025-111 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not include any clause giving a right to terminate MSC-2025-111 for convenience, so the required notice is not stated here. It only specifies 60 days\u2019 written notice for a proposed price adjustment after the initial term, not termination."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any notice period for a price rise under MSC-2025-127. It only says the Buyer pays undisputed invoices within 45 days, and that the Supplier may terminate only at the end of the then-current term."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days must a valid invoice be paid under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpted agreement does not state any payment term or invoice due date, so the number of days for paying a valid invoice is not specified here. The schedules are also not reproduced, and no other clause in the excerpt gives an invoice payment deadline."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any specific rejection period for goods under MSC-2025-127. It only says the Buyer must settle undisputed invoices within 45 days of receipt and may withhold payment of disputed amounts in good faith."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpts do not state any cap on the Supplier\u2019s aggregate liability under MSC-2025-127. They only include a cap on price adjustments, not a liability limitation, and the schedules are not reproduced here."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "How much notice is needed to terminate MSC-2025-127 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does not state any right to terminate MSC-2025-127 for convenience, so no notice period for such a termination is provided here. It only specifies a 12-month initial term and a 90-day notice period for price adjustments."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "MSC-2022-100 excerpt doesn\u2019t include any clause about **price rises** or **price increase notice**. So, based on the provided text, **no specific notice period is stated** for the Supplier to give before a price rise."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any invoice payment term** for MSC-2022-100.\n\nSo, based on the provided text, **no specific number of days can be determined** for when a valid invoice must be paid."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "Under the excerpts provided for **MSC-2022-100**, there is **no clause stating a specific time limit for the Buyer to reject goods after delivery**.\n\nSo the correct answer is: **not specified in the provided contract excerpts**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-100?",
+      "kind": "said it is missing",
+      "answer": "From the excerpts provided, **there is no clause stating a cap on the Supplier\u2019s aggregate liability** under MSC-2022-100.\n\nWhat is included:\n- price adjustment cap: **3% in any 12-month period** (clause 2.2)\n- delivery/service level target and remedies\n- termination rights\n- payment and quality terms\n\nWhat is **not** included:\n- any limitation of liability clause\n- any exclusion of indirect/consequential loss\n- any stated monetary cap on aggregate liability\n\nSo, based on the text shown, the Supplier\u2019s aggregate liability is **uncapped / not specified in the excerpt**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2022-100 for convenience?",
+      "kind": "said it is missing",
+      "answer": "I can\u2019t determine a convenience termination notice period from the excerpt provided.\n\nWhat the excerpt does show:\n- The agreement has an **initial term of 12 months** starting **11 January 2022**.\n- It includes clauses on pricing, payment, delivery, quality, liability, and governing law.\n\nWhat\u2019s missing:\n- There is **no termination clause** in the excerpt.\n- So there\u2019s **no stated notice period for termination for convenience** here.\n\nIf you want, I can help infer whether the contract likely has a separate termination clause elsewhere, but based on this excerpt alone the notice period is **not specified**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "MSC-2022-116 excerpt doesn\u2019t include any clause about **price rises** or a required **notice period for price increases**.\n\nWhat it does say is:\n- **Payment**: within 60 days of a valid invoice\n- **Termination for convenience**: 180 days\u2019 written notice\n- **Termination for material breach**: 30 days\u2019 written notice\n\nSo, based on the provided text, **the notice required before a price rise is not specified**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any invoice payment term** for MSC-2022-116, so the number of days a valid invoice must be paid is **not specified in the text shown**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "MSC-2022-116 does **not state any specific number of days** within which the Buyer may reject goods after delivery.\n\nFrom the excerpt provided, there is no express rejection period in the contract text."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-116?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any cap on the Supplier\u2019s aggregate liability** under MSC-2022-116.\n\nWhat it does include are:\n- a **price adjustment cap** of **5% in aggregate** per twelve-month period (clause 2.2), and\n- remedies for service-level failure and breach,\n\nbut **no limitation-of-liability clause** or aggregate liability cap is shown in the provided text.\n\nSo, based on the excerpt alone, the cap on the Supplier\u2019s aggregate liability is **not specified**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2022-116 for convenience?",
+      "kind": "said it is missing",
+      "answer": "I can\u2019t find any clause in the excerpt that gives a **termination for convenience** right or specifies a notice period for it.\n\nWhat the excerpt does show:\n- **Initial term:** 12 months from 23 January 2022\n- **Price changes:** 30 days\u2019 written notice\n- **No termination clause included**\n\nSo, based on the provided text, **the notice needed to terminate for convenience is not stated**. If you want, I can help infer whether the agreement may have expired by term or identify any termination rights from the full contract if you have more excerpts."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "MSC-2022-132 excerpt does **not include any clause about price rises or price increase notice**. It only states payment terms, delivery, quality, liability, termination, and governing law.\n\nSo, based on the provided text, **the Supplier\u2019s required notice before a price rise is not specified**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any invoice payment term** for MSC-2022-132, so the number of days a valid invoice must be paid is **not specified in the text shown**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "MSC-2022-132 does **not state any specific number of days** within which the Buyer may reject goods after delivery.\n\nFrom the excerpt provided, there is:\n- a **payment** clause allowing withholding of disputed amounts,\n- a **delivery/service level** clause,\n- and **termination** rights,\n\nbut **no express rejection period for goods** is included in the text shown."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2022-132?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any cap on the Supplier\u2019s aggregate liability** under MSC-2022-132.\n\nWhat it does include:\n- pricing terms,\n- payment terms,\n- delivery/service levels,\n- quality,\n- termination,\n- governing law.\n\nBut there is **no liability limitation clause** or aggregate cap shown in the provided text. If you have the full agreement or a liability section, I can identify the cap precisely."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2022-132 for convenience?",
+      "kind": "said it is missing",
+      "answer": "MSC-2022-132 does **not appear to include a termination-for-convenience clause** in the excerpts provided.\n\nSo, based on the text shown, there is **no stated notice period** for convenience termination. The only notice period mentioned is **30 days written notice** for a **price adjustment** under clause 2.2, not termination.\n\nIf you want, I can also help identify any **termination rights implied by breach/service failure** from the excerpt."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpted contract does **not state any notice period for a price rise** by the Supplier.\n\nWhat it does say:\n- **Payment terms**: within 60 days of a valid invoice.\n- **Termination notice**: the Supplier may terminate only at the end of the then-current term.\n- **No pricing clause** is included in the excerpts.\n\nSo, based on the provided text, the notice required before a price rise is **not specified**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any invoice payment term** for MSC-2023-109, so the number of days within which a valid invoice must be paid **cannot be determined from the text shown**.\n\nIf you can share the payment clause or Schedule 2, I can extract the exact term."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any specific rejection period for goods after delivery** under MSC-2023-109.\n\nWhat it does say is:\n- delivery performance is measured monthly against a 95% on-time/in-full target, and\n- if the target is missed for three consecutive months, the Buyer gets remedies under clause 7.\n\nSo, based on the excerpt alone, the answer is: **no explicit number of days is given**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2023-109?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any cap on the Supplier\u2019s aggregate liability** under MSC-2023-109.\n\nWhat it does include:\n- a **price adjustment cap** of **5% in aggregate** per twelve-month period (clause 2.2), and\n- remedies/termination rights for service failures and breach.\n\nBut there is **no liability limitation clause** shown, so the aggregate liability cap is **not specified in the provided text**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2023-109 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not** include any clause giving a right to terminate **for convenience**, so I can\u2019t confirm a notice period from the text provided.\n\nWhat is shown:\n- **Initial term:** 12 months from 28 April 2023\n- No termination clause is included in the excerpt\n\nIf you have the termination section or full agreement, I can identify the exact notice required."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "MSC-2023-125 does **not** specify any notice period for a **price rise** in the excerpt provided.\n\nThe agreement includes payment, delivery, quality, liability, and termination terms, but **no clause about price increases or supplier notice for pricing changes** is shown. If there is a pricing clause, it would likely be in the missing schedules or another part of the contract."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any invoice payment term** for MSC-2023-125, so the number of days a valid invoice must be paid is **not specified in the text shown**.\n\nIf you have the payment clause or Schedule 2, I can check whether it\u2019s stated there."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "MSC-2023-125 does **not state any specific rejection period for goods after delivery** in the excerpt provided.\n\nThe agreement covers delivery performance, payment, liability, and termination, but I don\u2019t see a clause saying the Buyer may reject goods within a certain number of days of delivery. If you want, I can help check whether that term appears in Schedule 1 or 2 if you have those excerpts."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2023-125?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any cap on the Supplier\u2019s aggregate liability** under MSC-2023-125.\n\nWhat it does include:\n- a **price adjustment cap** of **5% in aggregate per 12 months** (clause 2.2), and\n- remedies for service failures and breach,\n\nbut **no clause limiting or capping liability** is shown in the provided text.\n\nSo, based on the excerpt alone, the liability cap is **not specified / not disclosed**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2023-125 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not include any termination-for-convenience clause**, so I can\u2019t determine a notice period from the provided text.\n\nWhat we can say from the excerpt:\n- The agreement has an **initial term of 36 months** starting **8 October 2023**\n- It includes pricing, payment, delivery, quality, liability, and governing law terms\n- But **no clause on termination for convenience** is shown\n\nIf you want, I can help infer whether there may be a termination clause elsewhere in the full contract or identify the earliest end date based on the initial term."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "MSC-2024-102 does **not** specify any notice period for a **price rise** by the Supplier in the excerpts provided.\n\nThe agreement includes payment, delivery, quality, liability, termination, and governing law terms, but **no clause about price increases or price-change notice** is shown. If you want, I can also help check whether the pricing terms might be in Schedule 1 or another missing section."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any invoice payment term** for MSC-2024-102.\n\nSo, based on the text shown, there is **no specified number of days** within which a valid invoice must be paid."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "MSC-2024-102 does **not state any specific time limit** within which the Buyer may reject goods after delivery.\n\nFrom the excerpt provided, there is:\n- a delivery/service level clause,\n- payment terms,\n- termination rights,\n\nbut **no express rejection period** for goods. If you want, I can help infer whether any rejection right might be implied from the missing schedules or from general contract principles."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-102?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any cap on the Supplier\u2019s aggregate liability** under MSC-2024-102.\n\nWhat it does include are:\n- a **price adjustment cap** of **5% in aggregate per 12 months** under clause 2.2, and\n- termination / remedy provisions,\n\nbut **no liability limitation clause** is shown in the provided text. So, based on these excerpts alone, the aggregate liability cap is **not specified**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2024-102 for convenience?",
+      "kind": "said it is missing",
+      "answer": "I can\u2019t determine a **termination for convenience** notice period from the excerpt provided.\n\nWhat the excerpt does show:\n- **Initial term:** 36 months from **5 July 2024**\n- **Price changes:** 90 days\u2019 written notice\n- **No termination clause** is included in the excerpt\n\nSo, based on the text shown, there is **no stated convenience termination notice period**. If you want, I can help infer whether the agreement likely has a separate termination clause elsewhere in the full contract."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpts provided do **not** include any clause about **price rises** or a required notice period for them.\n\nSo, based on the text shown, **there is no stated notice requirement for the Supplier to give before a price increase** under MSC-2024-118. If you want, I can help check whether this might be in Schedule 1 or another missing section."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "MSC-2024-118 does **not specify any invoice payment period** in the excerpts provided.\n\nSo, based on the text shown, there is **no stated number of days** within which a valid invoice must be paid."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any specific rejection period for goods after delivery** under MSC-2024-118.\n\nWhat it does say is:\n- the Buyer must pay undisputed invoices within **45 days of receipt**; and\n- the Supplier must meet a **96% on-time/complete delivery** target, with remedies if it fails for three consecutive months.\n\nBut there is **no clause here giving the Buyer a set number of days to reject goods after delivery**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-118?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any cap on the Supplier\u2019s aggregate liability** under MSC-2024-118.\n\nWhat it does include are:\n- a **price increase cap** of **8% in any 12-month period** (clause 2.2), and\n- remedies/termination rights for service failures and breach.\n\nBut there is **no liability limitation clause** or aggregate liability cap shown in the provided text. If you want, I can help infer whether a cap might appear in the missing schedules or elsewhere in the full agreement."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2024-118 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not include any termination-for-convenience clause**, so there\u2019s **no stated notice period** for terminating MSC-2024-118 for convenience in the text provided.\n\nWhat we can say from the excerpt:\n- **Initial term:** 24 months from **22 April 2024**\n- **No convenience termination wording shown**\n- So termination rights/notice would need to come from:\n  - the missing parts of the agreement, or\n  - any separate termination clause in the full contract\n\nIf you want, I can also help infer whether the agreement is likely **fixed-term only** based on the excerpt."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "MSC-2024-134 does **not specify any notice period for a price rise** in the excerpts provided.\n\nThe agreement includes payment, delivery, quality, liability, termination, and governing law terms, but **no clause about price increases or supplier notice for price changes** is shown. If you want, I can also help check whether the schedules might contain pricing terms."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any invoice payment term** for MSC-2024-134, so the number of days a valid invoice must be paid is **not specified in the text shown**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "I can\u2019t determine that from the excerpt provided.\n\nThe contract sections shown do not include any clause about **inspection**, **acceptance**, or a specific **rejection period** for goods after delivery. The schedules are also not reproduced, so if the rejection right is there, it isn\u2019t visible in the excerpt.\n\nIf you want, I can help infer whether any related clause might exist elsewhere in the full agreement."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2024-134?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any cap on the Supplier\u2019s aggregate liability** under MSC-2024-134.\n\nWhat it does include:\n- pricing and payment terms,\n- delivery/service levels,\n- quality obligations,\n- termination rights,\n- governing law.\n\nBut there is **no liability limitation clause** or aggregate cap mentioned in the provided text. If you want, I can also help identify any **implied exposure areas** from the clauses that are shown."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2024-134 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not** include any clause allowing termination **for convenience**, so there\u2019s **no stated notice period** for that in the text provided.\n\nWhat we can say from the excerpt:\n- The agreement has an **Initial Term of 36 months** starting **4 January 2024**\n- It includes notice only for **price adjustments**: **90 days written notice**\n- It does **not** mention a general convenience termination right or notice period\n\nIf you want, I can help infer whether a termination right might appear in the missing sections/schedules, but based on the excerpt alone, **termination for convenience is not specified**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpted contract does **not state any notice period for a Supplier price rise** under MSC-2025-111.\n\nWhat it does say:\n- **Payment terms**: 60 days from valid invoice\n- **Termination for convenience**: 30 days\u2019 written notice\n- **No pricing clause** is included in the excerpts\n\nSo, based on the provided text, the required notice before a price rise is **not specified**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "I can\u2019t determine that from the excerpt provided.\n\nThe contract sections shown do not include any payment terms or invoice due date, and Schedules 1 and 2 are not reproduced. If you share the payment clause or the relevant schedule, I can tell you the exact number of days."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any specific rejection period** for goods under MSC-2025-111.\n\nIt only says:\n- the Supplier must supply the goods in Schedule 1, and\n- payment is due within 60 days of a valid invoice,\n- with delivery/service level remedies if performance falls below target.\n\nSo, based on the excerpt, **no number of days for rejection is specified**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2025-111?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any cap on the Supplier\u2019s aggregate liability** under MSC-2025-111.\n\nWhat it does include:\n- pricing and payment terms,\n- delivery/service levels,\n- quality/rejection rights,\n- termination rights,\n- governing law.\n\nBut there is **no liability limitation clause** or aggregate cap mentioned in the provided text. If you want, I can also help identify any **implied exposure areas** from the clauses shown."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2025-111 for convenience?",
+      "kind": "said it is missing",
+      "answer": "I can\u2019t find any **termination for convenience** clause in the excerpts provided.\n\nWhat the contract does say:\n- **Initial Term:** 12 months from **17 October 2025**\n- It includes **price adjustment** notice of **60 days** after the initial term\n- It includes a **service-level remedy trigger** after three consecutive months of underperformance\n\nBut there is **no express right to terminate for convenience** shown here, so I can\u2019t confirm any notice period for that from the provided text.\n\nIf you want, I can help infer whether termination is only possible:\n- at the end of the initial term,\n- for breach/service failure,\n- or under a separate clause not included in the excerpt."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice must the Supplier give before a price rise under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any notice period for a price rise** under MSC-2025-127.\n\nWhat it does say:\n- **Payment terms**: undisputed invoices are payable within 45 days.\n- **Termination**: the Supplier may terminate only at the end of the then-current term.\n- **No pricing clause is included** in the excerpt.\n\nSo, based on the text shown, the answer is: **not specified in the provided excerpts**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days must a valid invoice be paid under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any invoice payment term**, so I can\u2019t determine a specific number of days from MSC-2025-127 alone.\n\nIf you want, I can help infer whether the payment term is likely in the missing Schedule 2 or another clause not included here."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Within how many days of delivery may the Buyer reject goods under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpt provided does **not state any specific rejection period** for goods after delivery.\n\nWhat it does say is:\n- the Supplier must meet a **96% complete-and-on-time** delivery target measured monthly, and\n- if that target is missed for **three consecutive months**, the Buyer gets the remedies in clause 7.\n\nSo, based on the text shown, there is **no explicit number of days within which the Buyer may reject goods**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "What is the cap on the Supplier's aggregate liability under MSC-2025-127?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not state any cap on the Supplier\u2019s aggregate liability**.\n\nWhat it does say:\n- **Price increases** are capped at **8% in aggregate** per 12-month period, with 90 days\u2019 notice.\n- There is **no liability limitation clause** shown in the provided text.\n\nSo, based on the excerpt alone, the Supplier\u2019s aggregate liability is **not specified** here."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "How much notice is needed to terminate MSC-2025-127 for convenience?",
+      "kind": "said it is missing",
+      "answer": "The excerpt does **not include any termination-for-convenience clause**, so I can\u2019t confirm a contractual notice period from the text provided.\n\nWhat is stated:\n- **Initial term:** 12 months from **8 July 2025**\n- No express right to terminate for convenience appears in the excerpt\n\nSo, based on the excerpt alone, the answer is:\n\n- **No termination-for-convenience notice period is specified here.**\n- If you want, I can help infer whether termination is only possible at expiry or look for a termination clause in the missing sections."
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2022-100 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say payment is due within 60 days of a valid invoice, but they do not say what is usual, so I cannot compare it as long or short from the provided text. [contract-MSC-2022-100.md] The missing information is a benchmark or description of the usual payment term. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2022-100 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state only that the Supplier\u2019s aggregate liability under MSC-2022-100 shall not exceed 150% of the charges paid in the twelve months preceding the claim, and they do not describe any standard practice for comparison. Because no benchmark or industry norm is provided, the excerpts do not answer whether the cap is high or low compared with standard practice. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2022-100 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The agreement gives the Buyer 21 days from delivery to reject non-conforming goods, but the excerpts do not state any \u201cnorm\u201d or benchmark to compare that window against. So the question of whether it is generous compared with the norm cannot be answered from the supplied text alone. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2022-116 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say payment is due within 60 days of a valid invoice, but they do not say what is usual, so there is no basis here to classify it as long or short. [contract-MSC-2022-116.md] The missing information is a benchmark or comparison standard for \u201cusual\u201d payment terms. [contract-MSC-2022-116.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2022-116 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state only that the Supplier\u2019s aggregate liability is capped at 100% of the charges paid in the twelve months preceding the claim, with no comparison to any standard practice. Because no benchmark or industry norm is provided, the excerpts do not say whether that cap is high or low. [contract-MSC-2022-116.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2022-116 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 21 days of delivery, but it does not state any \u201cnorm\u201d or benchmark to compare that window against. So the excerpts do not answer whether it is generous compared with the norm. [contract-MSC-2022-116.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2022-132 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer must settle all undisputed invoices within 45 days of receipt, but it does not say what is usual, so I cannot compare it as long or short from the provided text. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2022-132 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state only that the Supplier\u2019s aggregate liability is capped at 125% of the charges paid in the twelve months preceding the claim, and they do not describe any \u201cstandard practice\u201d benchmark for comparison. So the excerpts do not answer whether the cap is high or low compared with standard practice. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2022-132 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 30 days of delivery, but it does not provide any benchmark or \u201cnorm\u201d to compare that window against. So the excerpts do not answer whether it is generous compared with the norm. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2023-109 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say payment is due within 60 days of a valid invoice, but they do not say what is usual, so I cannot compare it as long or short from the provided text. [contract-MSC-2023-109.md] The missing information is any benchmark or description of customary payment terms. [contract-MSC-2023-109.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2023-109 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that neither party\u2019s aggregate liability is capped at the greater of $100,000 or 100% of charges paid in the preceding twelve months, but they do not say anything about standard practice for comparison. Because the schedules are not reproduced and no benchmark is provided, the excerpts do not answer whether that cap is high or low compared with standard practice."
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2023-109 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 14 days of delivery, but it does not provide any benchmark or \u201cnorm\u201d to compare that window against. So the excerpts do not answer whether it is generous compared with the norm."
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2023-125 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say payment is due within 45 days of a valid invoice, but they do not say what is usual, so I cannot compare it as long or short from the provided text. [contract-MSC-2023-125.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2023-125 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the Supplier\u2019s aggregate liability is capped at 125% of the charges paid in the twelve months preceding the claim, but they do not say anything about standard practice or provide any benchmark for comparison. So the excerpts do not answer whether the cap is high or low compared with standard practice."
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2023-125 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpts say only that under MSC-2023-125 the Buyer may reject non-conforming goods within 14 days of delivery, but they do not provide any \u201cnorm\u201d or benchmark for comparison. So the excerpts do not answer whether the window is generous compared with the norm. [contract-MSC-2023-125.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2024-102 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpt says payment is due within 30 days of a valid invoice, but it does not say what is usual, so I cannot compare it as long or short from the provided text. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2024-102 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state only that the Supplier\u2019s aggregate liability is capped at 100% of the charges paid in the twelve months preceding the claim, but they do not provide any benchmark or \u201cstandard practice\u201d comparison. Because no industry norm or comparator is included, the excerpts do not answer whether the cap is high or low. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2024-102 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpts say only that the Buyer may reject non-conforming goods within 14 days of delivery, but they do not provide any benchmark or \u201cnorm\u201d to compare that window against. So the excerpts do not answer whether it is generous compared with the norm. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2024-118 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say only that undisputed invoices must be settled within 45 days of receipt, but they do not say what is usual, so there is no basis here to classify the term as long or short. [contract-MSC-2024-118.md] The missing information is a benchmark or comparison standard for \u201cusual\u201d payment terms. [contract-MSC-2024-118.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2024-118 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that liability is capped at the greater of $50,000 or 100% of charges paid in the preceding twelve months, but they do not say anything about standard practice for comparison. Because no benchmark or market norm is provided, the excerpts do not answer whether the cap is high or low. [contract-MSC-2024-118.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2024-118 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpts say only that under MSC-2024-118 the Buyer may reject non-conforming goods within 14 days of delivery, but they do not provide any benchmark or \u201cnorm\u201d for comparison. So the excerpts do not answer whether the window is generous compared with the norm."
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2024-134 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The agreement says undisputed invoices must be settled within 30 days of receipt, but the excerpts do not say what is usual, so I cannot compare it to a normal payment term. [contract-MSC-2024-134.md] The missing information is a benchmark or standard for \u201cusual\u201d payment terms. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2024-134 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state only that the liability cap is the greater of $50,000 or 100% of charges paid in the preceding twelve months, and they do not provide any benchmark or \u201cstandard practice\u201d for comparison. So the excerpts do not answer whether it is high or low compared with standard practice."
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2024-134 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpts say only that the Buyer may reject non-conforming goods within 30 days of delivery, but they do not provide any benchmark or \u201cnorm\u201d to compare that window against. So the excerpts do not answer whether it is generous compared with the norm. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2025-111 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The agreement says payment is due within 60 days of a valid invoice, but the excerpts do not say what is usual, so I cannot compare it as long or short. [contract-MSC-2025-111.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2025-111 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state only that liability is capped at the greater of $50,000 or 125% of charges paid in the preceding twelve months, with no comparison to any standard practice. Because no benchmark or industry norm is provided, the excerpts do not answer whether the cap is high or low."
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2025-111 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpts say only that under MSC-2025-111 the Buyer may reject non-conforming goods within 14 days of delivery, but they do not provide any benchmark or \u201cnorm\u201d for comparison. So the excerpts do not answer whether the window is generous compared with the norm. [contract-MSC-2025-111.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the payment term under MSC-2025-127 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer must settle all undisputed invoices within 45 days of receipt, but it does not say what is usual, so there is no basis here to judge whether the term is long or short. [contract-MSC-2025-127.md] The missing information is a benchmark or comparison standard for \u201cusual\u201d payment terms. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the liability cap under MSC-2025-127 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts do not say what \u201cstandard practice\u201d is, so they do not provide a basis to judge whether the liability cap is high or low. They only state that the Supplier\u2019s aggregate liability under MSC-2025-127 is capped at 150% of the charges paid in the twelve months preceding the claim, with no comparison benchmark given. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "as written",
+      "question": "Is the rejection window under MSC-2025-127 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 14 days of delivery, but it does not provide any benchmark or \u201cnorm\u201d to compare that window against. So the excerpt does not answer whether it is generous compared with the norm. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2022-100 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say payment is due within 60 days of a valid invoice, but they do not say what is usual, so I cannot compare it as long or short. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2022-100 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the Supplier\u2019s aggregate liability is capped at 150% of the charges paid in the twelve months preceding the claim, but they do not provide any benchmark or \u201cstandard practice\u201d comparison. So the excerpts do not answer whether the cap is high or low compared with standard practice."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2022-100 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The agreement lets the Buyer reject non-conforming goods within 21 days of delivery, but the excerpts do not say what the \u201cnorm\u201d is, so I cannot compare it to a market standard from the provided text. [contract-MSC-2022-100.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2022-116 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The agreement says payment is due within 60 days of a valid invoice, but the excerpts do not say what is usual, so I cannot compare it as long or short. [contract-MSC-2022-116.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2022-116 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state only that the Supplier\u2019s aggregate liability is capped at 100% of the charges paid in the twelve months preceding the claim, with no comparison to standard practice. Because no market benchmark or \u201cstandard practice\u201d is provided, the excerpts do not say whether the cap is high or low. [contract-MSC-2022-116.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2022-116 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 21 days of delivery, but it does not provide any benchmark or \u201cnorm\u201d for comparison, so whether that window is generous cannot be determined from the excerpt alone. [contract-MSC-2022-116.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2022-132 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer must settle all undisputed invoices within 45 days of receipt, but it does not say what is usual, so I cannot compare it as long or short from these excerpts alone. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2022-132 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the Supplier\u2019s aggregate liability is capped at 125% of the charges paid in the twelve months preceding the claim, but they do not say anything about standard practice for comparison. Because no benchmark or market norm is provided, the excerpts do not answer whether that cap is high or low compared with standard practice. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2022-132 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 30 days of delivery, but it does not provide any benchmark or \u201cnorm\u201d to compare that window against. So the excerpt does not answer whether the rejection window under MSC-2022-132 is generous compared with the norm. [contract-MSC-2022-132.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2023-109 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say payment is due within 60 days of a valid invoice, but they do not say what is usual, so I cannot compare it as long or short from the provided text. [contract-MSC-2023-109.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2023-109 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the liability cap under MSC-2023-109 is the greater of $100,000 or 100% of charges paid in the preceding twelve months, but they do not say what standard practice is. Because no benchmark or market comparison is provided, the excerpts do not answer whether the cap is high or low compared with standard practice."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2023-109 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 14 days of delivery, but it does not provide any benchmark or \u201cnorm\u201d to compare that window against. So the excerpts do not answer whether the rejection window under MSC-2023-109 is generous compared with the norm. [contract-MSC-2023-109.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2023-125 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say payment is due within 45 days of a valid invoice, but they do not say what is usual, so I cannot compare it as long or short from the provided text. [contract-MSC-2023-125.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2023-125 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the Supplier\u2019s aggregate liability is capped at 125% of the charges paid in the twelve months preceding the claim, but they do not provide any benchmark or \u201cstandard practice\u201d comparison. So the excerpts do not answer whether that cap is high or low compared with standard practice. [contract-MSC-2023-125.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2023-125 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 14 days of delivery, but it does not provide any benchmark or \u201cnorm\u201d to compare that window against. So the excerpt does not answer whether the rejection window under MSC-2023-125 is generous compared with the norm. [contract-MSC-2023-125.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2024-102 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say payment is due within 30 days of a valid invoice, but they do not say what is usual, so I cannot compare it as long or short from the provided text alone. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2024-102 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the Supplier\u2019s aggregate liability is capped at 100% of the charges paid in the twelve months preceding the claim, but they do not say what standard practice is. Because no benchmark or comparison is provided, the excerpts do not answer whether the cap is high or low compared with standard practice."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2024-102 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The agreement lets the Buyer reject non-conforming goods within 14 days of delivery, but the excerpts do not provide any benchmark or \u201cnorm\u201d to compare that window against. [contract-MSC-2024-102.md] So the question cannot be answered from the excerpts alone because the comparison standard is missing. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2024-118 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer must settle all undisputed invoices within 45 days of receipt, but it does not say what is usual, so there is no basis here to judge whether the term is long or short. [contract-MSC-2024-118.md] It also does not provide any benchmark or comparison standard for payment terms. [contract-MSC-2024-118.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2024-118 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the liability cap under MSC-2024-118 is the greater of $50,000 or 100% of charges paid in the preceding twelve months, but they do not say what standard practice is. Because no benchmark or comparison is provided, the excerpts do not answer whether the cap is high or low compared with standard practice."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2024-118 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 14 days of delivery, but it does not provide any market norm or benchmark to compare that window against. So the excerpts do not answer whether it is generous compared with the norm."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2024-134 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The agreement says undisputed invoices must be paid within 30 days of receipt, but the excerpts do not say what is usual, so I cannot compare it as long or short. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2024-134 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the liability cap is the greater of $50,000 or 100% of charges paid in the preceding twelve months, but they do not provide any benchmark or \u201cstandard practice\u201d comparison. So the excerpts do not answer whether it is high or low compared with standard practice. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2024-134 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The agreement lets the Buyer reject non-conforming goods within 30 days of delivery, but the excerpts do not provide any benchmark or \u201cnorm\u201d to compare that window against. So the question cannot be answered from the supplied text alone. [contract-MSC-2024-134.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2025-111 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The agreement says payment is due within 60 days of a valid invoice, but the excerpts do not say what is usual, so I cannot compare it as long or short. [contract-MSC-2025-111.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2025-111 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the liability cap is the greater of $50,000 or 125% of charges paid in the preceding twelve months, but they do not provide any benchmark or \u201cstandard practice\u201d comparison. So the excerpts do not answer whether it is high or low compared with standard practice. [contract-MSC-2025-111.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2025-111 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The agreement lets the Buyer reject non-conforming goods within 14 days of delivery, but the excerpts do not say what the norm is, so they do not support a comparison. [contract-MSC-2025-111.md]  \nIf you want a judgment on whether 14 days is generous, the missing information is a benchmark or industry standard from another source."
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the payment term under MSC-2025-127 long or short compared with what is usual?",
+      "kind": "no norm",
+      "answer": "The excerpts say only that the Buyer must settle all undisputed invoices within 45 days of receipt, but they do not say what is usual, so there is no basis here to judge whether the term is long or short. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the liability cap under MSC-2025-127 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The excerpts state that the Supplier\u2019s aggregate liability is capped at 150% of the charges paid in the twelve months preceding the claim, but they do not say anything about standard practice for comparison. Because no benchmark or market norm is provided, the excerpts do not answer whether the cap is high or low. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "without the general-knowledge line",
+      "question": "Is the rejection window under MSC-2025-127 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The excerpt says the Buyer may reject non-conforming goods within 14 days of delivery, but it does not provide any benchmark or \u201cnorm\u201d to compare that window against. So the excerpt does not answer whether the rejection window is generous compared with the norm. [contract-MSC-2025-127.md]"
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2022-100 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The agreement requires payment within 60 days of a valid invoice, which is relatively long compared with a typical commercial payment term. The excerpt does not provide a benchmark for what is usual, but 60 days is generally considered on the longer side."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2022-100 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The agreement caps the Supplier\u2019s aggregate liability at 150% of the charges paid in the twelve months before the claim, with no cap for death or personal injury caused by negligence or for fraud. The excerpts do not provide any benchmark or market standard, so I can\u2019t say whether that cap is high or low compared with standard practice."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2022-100 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The Buyer may reject non-conforming goods within 21 days of delivery under MSC-2022-100. The excerpt does not provide any market norm or benchmark, so it is not possible to say whether that window is generous compared with the norm from these materials alone."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2022-116 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is 60 days from a valid invoice, which is relatively long compared with what is usual. The agreement also allows the Buyer to withhold disputed amounts in good faith. [contract-MSC-2022-116.md] 3. Payment"
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2022-116 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The agreement caps the Supplier\u2019s aggregate liability at 100% of the charges paid in the twelve months preceding the claim, which is a full-fee cap rather than a reduced one. On that basis, it would generally be considered relatively high compared with a more restrictive liability cap."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2022-116 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The agreement allows the Buyer to reject non-conforming goods within 21 days of delivery. Whether that is generous compared with the norm cannot be determined from the excerpt alone, because no benchmark or market standard is provided."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2022-132 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The Buyer must settle all undisputed invoices within 45 days of receipt, which is a relatively long payment term compared with what is usual. The agreement also allows the Buyer to withhold disputed amounts in good faith."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2022-132 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The agreement caps the Supplier\u2019s aggregate liability at 125% of the charges paid in the twelve months before the claim, which is a relatively high cap compared with many standard commercial contracts. It also preserves uncapped liability for death or personal injury caused by negligence and for fraud."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2022-132 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The Buyer may reject non-conforming goods within 30 days of delivery under MSC-2022-132. The excerpt does not provide any benchmark or market norm, so it is not possible to say whether that window is generous compared with the norm from the supplied text."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2023-109 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is 60 days from a valid invoice, which is relatively long compared with what is usual. The agreement does not provide any benchmark for \u201cusual,\u201d but 60 days is a lengthy payment period on its face. [contract-MSC-2023-109.md] 3. Payment"
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2023-109 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The agreement caps aggregate liability at the greater of $100,000 or 100% of charges paid in the preceding twelve months, which is a relatively modest cap. Compared with standard commercial practice, that would generally be considered low to moderate rather than high."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2023-109 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The Buyer may reject non-conforming goods within 14 days of delivery under MSC-2023-109. The excerpt does not provide any benchmark or market norm, so it is not possible to say whether that window is generous compared with the norm from the supplied text."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2023-125 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The agreement requires payment within 45 days of a valid invoice, which is a relatively standard-to-long commercial payment term rather than a short one. The excerpt does not provide a market benchmark, but 45 days is not unusually short on its face."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2023-125 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The agreement caps the Supplier\u2019s aggregate liability at 125% of the charges paid in the twelve months before the claim, which is a relatively low cap compared with many standard commercial contracts. The excerpt does not provide a market benchmark, so this is an assessment based on the cap\u2019s structure rather than a documented comparison."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2023-125 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The Buyer may reject non-conforming goods within 14 days of delivery, which is a relatively short rejection window rather than a generous one. The agreement also requires the goods to conform to Schedule 1 and be free from defects in materials and workmanship. [contract-MSC-2023-125.md] 5.1-5.2"
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2024-102 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The agreement requires payment within 30 days of a valid invoice, which is a relatively standard short payment term rather than a long one. The excerpt does not provide a market benchmark, but 30 days is generally considered short compared with longer commercial payment periods."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2024-102 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The agreement caps the Supplier\u2019s aggregate liability at 100% of the charges paid in the twelve months preceding the claim, which is a relatively low cap compared with many standard commercial contracts. It also preserves uncapped liability for death or personal injury caused by negligence and for fraud. [contract-MSC-2024-102.md]"
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2024-102 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The agreement allows the Buyer to reject non-conforming goods within 14 days of delivery. On the excerpt alone, there is no benchmark for the \u201cnorm,\u201d so I can\u2019t say whether that window is generous compared with market practice."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2024-118 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The Buyer must pay undisputed invoices within 45 days of receipt, which is a relatively long payment term compared with what is usual. The agreement also allows the Buyer to withhold disputed amounts in good faith."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2024-118 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The agreement caps aggregate liability at the greater of $50,000 or 100% of charges paid in the preceding twelve months, which is a relatively modest cap. Without a market benchmark in the excerpt, I can\u2019t say definitively whether it is high or low versus standard practice, but it appears on the lower side for a supply agreement."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2024-118 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The agreement allows the Buyer to reject non-conforming goods within 14 days of delivery. The excerpts do not provide any benchmark or market norm, so it is not possible to say whether that window is generous compared with the norm from this document alone."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2024-134 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is 30 days from receipt of an undisputed invoice, which is generally a standard short-term payment period rather than a long one. The agreement does not provide any indication that this is unusually extended compared with what is usual."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2024-134 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The agreement caps each party\u2019s aggregate liability at the greater of $50,000 or 100% of charges paid in the preceding twelve months, with no cap for death or personal injury caused by negligence or fraud. Based on the excerpt alone, that looks relatively low compared with standard practice, especially because the fixed dollar floor is modest and the cap can still be limited to prior-year charges."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2024-134 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The agreement allows the Buyer to reject non-conforming goods within 30 days of delivery. Whether that is generous compared with the norm cannot be determined from the excerpt alone, because no benchmark or market standard is provided."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2025-111 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The agreement requires payment within 60 days of a valid invoice. That is generally a relatively long payment term compared with what is usual. [contract-MSC-2025-111.md] 3.1"
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2025-111 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The agreement caps each party\u2019s aggregate liability at the greater of $50,000 or 125% of charges paid in the preceding twelve months, which is a relatively modest cap. Based on that structure, it would generally be considered low rather than high compared with standard practice. [contract-MSC-2025-111.md] 6.1"
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2025-111 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The Buyer may reject non-conforming goods within 14 days of delivery under MSC-2025-111. The excerpt does not provide any benchmark or market norm, so it is not possible to say whether that window is generous compared with the norm."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the payment term under MSC-2025-127 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The agreement requires undisputed invoices to be paid within 45 days of receipt. Compared with what is usual, that is a relatively long payment term."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the liability cap under MSC-2025-127 high or low compared with standard practice?",
+      "kind": "no norm",
+      "answer": "The agreement caps the Supplier\u2019s aggregate liability at 150% of the charges paid in the twelve months preceding the claim, with no further benchmark or comparison to market norms provided in the excerpt. Based on the excerpt alone, it is not possible to say whether that cap is high or low compared with standard practice."
+    },
+    {
+      "prompt": "without any constraints",
+      "question": "Is the rejection window under MSC-2025-127 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "The Buyer may reject non-conforming goods within 14 days of delivery under MSC-2025-127. The excerpt does not provide any benchmark or \u201cnorm\u201d to compare that window against, so it is not possible to say whether it is generous from the supplied text alone."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2022-100 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **long** compared with what is usual.\n\n- **MSC-2022-100:** payment within **60 days** of a valid invoice.\n- In many supply agreements, **30 days** is more typical, with **45 days** also fairly common.\n\nSo **60 days is on the longer side** for standard supplier payment terms."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2022-100 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap in MSC-2022-100 is **relatively high** compared with standard practice.\n\nWhy:\n- Clause 6.1 caps the Supplier\u2019s aggregate liability at **150% of the charges paid in the preceding 12 months**.\n- In many supply agreements, a common cap is **100% of annual fees/charges**, sometimes lower for certain claims, or higher only for specific risk areas.\n- A **150% cap** gives the Buyer more protection than a standard 100% cap, so it is generally **buyer-favorable** and above-market in that sense.\n\nCaveat:\n- It is still a **general cap**, not unlimited liability.\n- Clause 6.2 preserves uncapped liability for death/personal injury and fraud, which is standard.\n\nSo, overall: **high relative to typical market practice, especially from the Supplier\u2019s perspective.**"
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2022-100 generous compared with the norm?",
+      "kind": "norm",
+      "answer": "Yes \u2014 **21 days is relatively generous** for a rejection window.\n\nWhy:\n- In many supply agreements, rejection periods are often **shorter**, especially for visible defects or delivery issues.\n- A **21-day** window gives the Buyer a reasonable amount of time to inspect goods, test them, and identify non-conformities.\n- It is also more buyer-friendly than very tight windows like **7\u201314 days**.\n\nCaveat:\n- Whether it is \u201cgenerous\u201d in practice depends on the goods. For **complex or technical products**, 21 days may be fairly standard or even tight if defects are latent.\n- For **simple, fast-moving goods**, 21 days is usually considered comfortable.\n\nSo, overall: **yes, it is on the generous side compared with the norm.**"
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2022-116 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **long** compared with what is usual.\n\n- **MSC-2022-116 clause 3.1:** payment within **60 days** of a valid invoice.\n- In many supply agreements, a more typical term is **30 days** (sometimes 14 or 45 days).\n\nSo **60 days is on the longer side** for standard commercial payment terms."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2022-116 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap under MSC-2022-116 is **fairly low / supplier-favorable** compared with standard practice.\n\nWhy:\n- Clause 6.1 caps the Supplier\u2019s aggregate liability at **100% of the charges paid in the preceding 12 months**.\n- In many commercial supply agreements, caps are often set at **a multiple of annual fees/charges** (for example, 1x to 2x annual charges), or sometimes higher for certain risks.\n- A **1x trailing-12-month charges cap** is common, but it is generally considered **on the lower end** of market practice, especially if there are no carve-outs beyond death/personal injury and fraud.\n\nSo the short answer is: **low to moderate, but leaning low**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2022-116 generous compared with the norm?",
+      "kind": "norm",
+      "answer": "Yes \u2014 **21 days is relatively generous** for a rejection window.\n\nWhy:\n- In supply agreements, rejection periods for non-conforming goods are often **shorter**, commonly around **7\u201314 days** after delivery, especially where goods are easy to inspect.\n- A **21-day** window gives the buyer more time to inspect, test, and identify defects, so it is **buyer-friendly** compared with a tighter market norm.\n\nCaveat:\n- Whether it is \u201cgenerous\u201d can depend on the goods involved. For complex or technical products, 21 days may be fairly standard or even modest if defects are harder to detect.\n\nSo, on balance: **yes, MSC-2022-116 gives the buyer a comparatively generous rejection period.**"
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2022-132 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **long** compared with what is usual.\n\n- **MSC-2022-132 clause 3.1:** payment of undisputed invoices is due **within 45 days of receipt**.\n- In many supply agreements, a common payment term is **30 days** (sometimes 14 or 30 days), so **45 days is on the longer side**.\n\nIf you want, I can also classify it more formally as **short / standard / long** for your contract review dataset."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2022-132 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap under MSC-2022-132 is **relatively high** compared with standard practice.\n\nWhy:\n- The cap is **125% of the charges paid in the preceding 12 months**.\n- In many supply agreements, a common market position is a cap at **100% of fees paid**, sometimes lower for certain claims or tied to a fixed amount.\n- A **125% cap** gives the Buyer somewhat more recovery than a standard 100% cap, so it is **buyer-favorable** and above the usual baseline.\n\nCaveat:\n- It is still a **commercially typical cap** in the sense that it is tied to fees paid rather than being uncapped.\n- But if you\u2019re classifying it simply as high vs low, I\u2019d call it **high / above standard**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2022-132 generous compared with the norm?",
+      "kind": "norm",
+      "answer": "Yes \u2014 **30 days from delivery** is generally **fairly generous** for a rejection window.\n\nWhy:\n- In many supply agreements, rejection for non-conforming goods is often limited to a **short inspection period** such as **7\u201314 days**, sometimes even less for obvious defects.\n- A **30-day** window gives the buyer more time to inspect, test, and identify issues, especially for goods where defects may not be immediately apparent.\n\nCaveat:\n- Whether it is \u201cgenerous\u201d can depend on the product type. For complex or technical goods, 30 days may be standard or even modest; for simple commodities, it is usually on the generous side.\n\nSo, **compared with the norm, this clause is relatively buyer-friendly and generous**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2023-109 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **long** compared with what is usual.\n\n- **MSC-2023-109 clause 3.1:** payment within **60 days** of a valid invoice.\n- In many supply agreements, a common payment term is **30 days** (sometimes 14\u201330 days).\n\nSo **60 days is longer than typical** and would generally be considered a **long payment term**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2023-109 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap under MSC-2023-109 looks **moderate to relatively high**, not low.\n\nWhy:\n- It is capped at the **greater of $100,000 or 100% of charges paid in the preceding 12 months**.\n- A cap tied to **12 months\u2019 fees/charges** is common in commercial supply agreements.\n- The **$100,000 floor** means the cap won\u2019t be trivially low for smaller spend levels.\n- It is also **mutual** and excludes only death/personal injury and fraud, which is standard.\n\nOverall, compared with standard practice, this is **fairly market-aligned and not unusually restrictive** for the supplier, though the exact impact depends on the contract value."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2023-109 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "Yes \u2014 **14 days is fairly generous** for a rejection window.\n\nWhy:\n- In many supply agreements, rejection rights are often **shorter** for visible defects, sometimes **7 days** or even **upon delivery/inspection**.\n- A **14-day** period gives the buyer a reasonable chance to inspect goods, test them, and identify non-conformities.\n- That said, it\u2019s not unusually long; it\u2019s more **buyer-friendly than tight** but still within a common commercial range.\n\nSo, compared with the norm, **MSC-2023-109 is moderately generous to the Buyer** on rejection timing."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2023-125 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **long** compared with what is usual.\n\n- **MSC-2023-125:** payment within **45 days** of a valid invoice.\n- In many supply agreements, a common term is **30 days** (sometimes 14 or 30 days), so **45 days is on the longer side**.\n\nIf you want, I can also classify it as **short/medium/long** against Meridian\u2019s internal benchmark."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2023-125 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap in MSC-2023-125 is **relatively high** compared with standard practice for a supply agreement.\n\nWhy:\n- It caps the Supplier\u2019s aggregate liability at **125% of charges paid in the prior 12 months**.\n- In many commercial supply contracts, caps are more commonly set at:\n  - **100% of fees paid** in a relevant period, or\n  - a **fixed monetary amount**, sometimes tied to annual spend.\n- A cap at **125%** gives the Buyer somewhat more protection than a straight 100% cap, so it is **buyer-favorable** and above the more typical baseline.\n\nCaveat:\n- It is not unusually high in an absolute sense, but **relative to market norm it is on the higher side** for supplier liability exposure.\n\nIf you want, I can also classify it as **buyer-friendly / supplier-friendly** and compare it against typical carve-outs and uncapped liabilities."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2023-125 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "No \u2014 it looks fairly standard, and if anything a bit **buyer-friendly but not unusually generous**.\n\n- **Clause 5.2** gives the Buyer **14 days from delivery** to reject non-conforming goods.\n- In supply agreements, rejection windows are often **7\u201314 days** for visible defects/non-conformance, sometimes longer where defects are latent or require testing.\n- So **14 days is at the upper end of the common range**, but not exceptional.\n\nOne caveat: the clause only says rejection within 14 days of delivery, so it may be **less generous than contracts that allow longer periods for latent defects** discovered later."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2024-102 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **fairly standard to slightly short**, not unusually long.\n\n- **Clause 3.1** says payment is due **within 30 days of a valid invoice**.\n- In commercial supply agreements, **30 days** is a common market norm.\n- Compared with longer terms like **45, 60, or 90 days**, this is **shorter/faster** for the buyer.\n- Compared with very short terms like **immediate payment or 7\u201314 days**, it is **not especially short**.\n\nSo, overall: **usual to moderately short**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2024-102 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap in MSC-2024-102 is **fairly low to moderate**, and in many supply agreements it would be considered **supplier-friendly**.\n\nWhy:\n- The cap is **100% of charges paid in the preceding 12 months**.\n- That means the supplier\u2019s maximum exposure is limited to roughly **one year\u2019s fees**, which is a common but relatively conservative cap.\n- In standard practice, caps in supply contracts often range from:\n  - **100% of annual fees** for general liability, to\n  - **higher caps** (e.g. 150%\u2013200% or more) for more buyer-protective deals,\n  - with some categories carved out entirely or capped separately.\n\nSo, compared with broader market norms:\n- **Not unusually low** if this is a routine commercial supply arrangement.\n- **Low from the buyer\u2019s perspective** if the buyer wants stronger recovery rights.\n- **Typical to slightly low** overall, especially because there are no special higher caps for key risks like data/security, IP infringement, or indemnities mentioned in the excerpt.\n\nIf you want, I can also assess whether the cap is **market-standard for Delaware supply agreements specifically** or flag any **risk points in the liability clause**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2024-102 generous compared with the norm?",
+      "kind": "norm",
+      "answer": "No \u2014 it\u2019s fairly standard, and if anything a bit tighter than many supply agreements.\n\nUnder clause 5.2, the Buyer has **14 days from delivery** to reject non-conforming goods. In commercial supply contracts, rejection windows commonly range from **7 to 30 days**, depending on the goods and how quickly defects can be discovered. So **14 days is not especially generous** to the buyer; it\u2019s more of a middle-of-the-road period.\n\nA couple of nuances:\n- It applies to **non-conforming goods**, not just obvious defects.\n- The clock starts at **delivery**, which can be less buyer-friendly if issues are only discoverable after inspection or use.\n\nSo overall: **not generous; reasonably standard, possibly slightly buyer-tight**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2024-118 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **fairly long** compared with what is usual.\n\n- **MSC-2024-118 clause 3.1:** payment within **45 days of receipt** of undisputed invoices.\n- In many supply agreements, a common standard is **30 days** (sometimes 14 or 30 days), so **45 days is on the longer side**.\n\nSo, relative to typical market practice, this is a **longer-than-usual payment term**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2024-118 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap in MSC-2024-118 looks **moderate to low** compared with common commercial practice.\n\nWhy:\n- The cap is **the greater of $50,000 or 100% of charges paid in the preceding 12 months**.\n- In many supply agreements, caps are often set at **12 months\u2019 fees/charges**, sometimes **higher** for key risk areas, or carved out for certain liabilities.\n- Here, the **$50,000 floor** may be relatively low if the contract value is substantial, but the **100% of prior 12 months\u2019 charges** is a fairly standard-style cap for ordinary breach claims.\n\nSo overall:\n- **Not unusually high**\n- **Potentially low if the annual spend is modest**\n- **About standard to slightly buyer-favorable** for general liability, depending on contract value\n\nIf you want, I can also assess whether the cap is **supplier-friendly or buyer-friendly** and flag any **common carve-outs missing from the clause**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2024-118 generous compared with the norm?",
+      "kind": "norm",
+      "answer": "No \u2014 it\u2019s fairly standard, and if anything a bit buyer-friendly but not unusually generous.\n\nUnder clause 5.2, the Buyer has **14 days from delivery** to reject non-conforming goods. In commercial supply agreements, rejection windows commonly range from **7 to 30 days**, depending on the goods and how quickly defects can be detected. So **14 days sits in the middle of the typical range**.\n\nA couple of nuances:\n- It applies to **non-conforming goods**, which is normal.\n- It doesn\u2019t expressly say the clock starts on **delivery vs. inspection/discovery**, so the Buyer\u2019s practical protection may be limited if defects are latent.\n- For goods with hidden defects, a 14-day window can actually be **tight** rather than generous.\n\nSo the short answer is: **not especially generous; more like market-standard, possibly slightly tight for latent defects.**"
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2024-134 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **short** compared with what is usual.\n\n- **Clause 3.1** requires the Buyer to pay undisputed invoices **within 30 days of receipt**.\n- In commercial supply agreements, **30 days** is generally considered a **standard to relatively short** payment period; longer terms like **45, 60, or 90 days** are also common in some sectors.\n\nSo, **MSC-2024-134 has a fairly short/standard 30-day payment term**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2024-134 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap in MSC-2024-134 looks **low to moderate**, and in many supply agreements it would be considered **supplier-friendly / buyer-unfavorable**.\n\nWhy:\n- The cap is the **greater of $50,000 or 100% of charges paid in the preceding 12 months**.\n- In standard commercial supply contracts, caps are often set at:\n  - **12 months\u2019 fees/charges**, or\n  - **a multiple of fees**, or\n  - sometimes **higher** for key risk areas.\n- Here, the cap is effectively **only one year of spend**, with a relatively low floor of **$50,000**.\n\nImportant nuance:\n- If the contract value is small, the **$50,000 floor** may be meaningful.\n- If the contract value is substantial, **100% of the prior 12 months\u2019 charges** is still fairly typical, but not generous.\n- Also, the cap excludes fraud and death/personal injury, which is standard.\n\nBottom line: **Compared with standard practice, this cap is on the lower side, especially from the Buyer\u2019s perspective.**"
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2024-134 generous compared with the norm?",
+      "kind": "norm",
+      "answer": "Yes \u2014 **30 days is relatively generous** for a rejection window.\n\nWhy:\n- In many supply agreements, rejection periods are often **shorter**, commonly **7\u201314 days** after delivery, especially for visible defects or quantity issues.\n- A **30-day** window gives the Buyer more time to inspect goods, identify defects, and raise non-conformance claims.\n- That said, whether it is \u201cgenerous\u201d can depend on the goods:\n  - For **standard, easily inspected goods**, 30 days is definitely on the longer side.\n  - For **technical, complex, or latent-defect-prone goods**, 30 days is more typical and may not be especially generous.\n\nSo, **compared with the usual market norm, 30 days is buyer-friendly and somewhat generous**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2025-111 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **long** compared with what is usual.\n\n- **Clause 3.1** says payment is due **within 60 days** of a valid invoice.\n- In many supply agreements, a common term is **30 days** (sometimes 45 days), so **60 days is on the longer side**.\n\nIf you want, I can also classify the other key terms in MSC-2025-111 as buyer-friendly or supplier-friendly."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2025-111 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap in MSC-2025-111 looks **fairly standard to moderately low**, not unusually high.\n\nWhy:\n- It is capped at the **greater of $50,000 or 125% of charges paid in the preceding 12 months**.\n- A **125% of fees paid** cap is a common commercial approach, especially in supply agreements.\n- The **$50,000 floor** means the cap may be relatively low if spend is small, but for a meaningful supply relationship the percentage-based cap is the more relevant measure.\n\nSo, compared with standard practice:\n- **Not high** \u2014 it does not provide broad uncapped exposure.\n- **Generally market-aligned**, though on the **lower/protective side for the Buyer** if the contract value is substantial.\n\nIf you want, I can also benchmark it against typical supplier contract caps by risk category (e.g., direct damages, indirect damages, carve-outs)."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2025-111 generous compared with the norm?",
+      "kind": "norm",
+      "answer": "No \u2014 it\u2019s fairly standard, and arguably a bit buyer-friendly but not unusually generous.\n\n- **Clause 5.2** gives the Buyer **14 days from delivery** to reject non-conforming goods.\n- In supply agreements, rejection windows commonly range from **7 to 30 days**, depending on the goods and how quickly defects can be discovered.\n- **14 days** is a **middle-of-the-road** period: long enough to inspect and test, but not especially generous.\n\nOne caveat: because the clause is tied to **delivery**, not discovery of latent defects, it may be **less generous than it first appears** for defects that only become apparent later."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the payment term under MSC-2025-127 long or short compared with what is usual?",
+      "kind": "norm",
+      "answer": "The payment term is **fairly long** compared with what is usual.\n\n- **Clause 3.1** requires payment of undisputed invoices within **45 days of receipt**.\n- In many supply agreements, a common benchmark is **30 days** (sometimes 14\u201330 days), so **45 days is on the longer side**.\n- It\u2019s not unusually extreme, but it is **longer than standard/typical trade terms**.\n\nIf you want, I can also classify it as **buyer-favorable vs supplier-favorable**."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the liability cap under MSC-2025-127 high or low compared with standard practice?",
+      "kind": "norm",
+      "answer": "The liability cap in MSC-2025-127 is **moderate to somewhat high** compared with common supplier agreements.\n\nWhy:\n- It caps the Supplier\u2019s aggregate liability at **150% of charges paid in the prior 12 months**.\n- In many standard commercial supply contracts, caps are often set at **100% of fees paid** over a similar period, sometimes **12 months\u2019 fees**, or a fixed amount.\n- A **150% cap** is therefore **more buyer-friendly** than a typical 100% cap, but it is not unusually high in absolute terms.\n\nA few nuances:\n- It is an **aggregate cap**, which is standard.\n- It excludes liability for **death/personal injury and fraud**, which is also standard.\n- Whether it is \u201chigh\u201d in practice depends on the risk profile of the goods and whether the contract includes any uncapped indemnities elsewhere.\n\nBottom line: **slightly above market / moderately high**, but still within a normal commercial range."
+    },
+    {
+      "prompt": "no grounding at all",
+      "question": "Is the rejection window under MSC-2025-127 generous compared with the norm?",
+      "kind": "no norm",
+      "answer": "Yes \u2014 **14 days is fairly generous** for a rejection window.\n\nWhy:\n- In many supply agreements, rejection rights are often limited to a **short inspection period** such as **7 days**, **5 days**, or even **\u201cupon delivery / within a reasonable time\u201d** depending on the goods.\n- **14 days** gives the Buyer a more comfortable period to inspect, test, and identify defects or non-conformance.\n- That said, it\u2019s not unusually long in absolute terms; it\u2019s more **buyer-friendly than average**, especially for standard goods.\n\nOne caveat:\n- The clause only says the Buyer may reject **non-conforming goods within 14 days of delivery**. It doesn\u2019t expressly address **latent defects** discovered later, so the practical protection may be narrower than it first appears.\n\nIf you want, I can also compare this clause against the rest of MSC-2025-127 to flag whether it\u2019s more buyer- or supplier-favourable overall."
+    }
+  ]
+}

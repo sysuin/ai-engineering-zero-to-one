@@ -52,7 +52,7 @@ print()
 print(f"At {len(outcomes)} cases the interval is {hundred:.0%} wide, which is enough to "
       f"tell a")
 print("ten-point change from noise and not enough to tell a three-point one. That is")
-print("the honest position of this chapter's eval set, and it is why §21.6 talks")
+print("the honest position of this chapter's eval set, and it is why §21.14 talks")
 print("about growing it rather than finishing it.")
 print()
 print("Note what the last two rows cost: nothing to compute here, and a thousand model")

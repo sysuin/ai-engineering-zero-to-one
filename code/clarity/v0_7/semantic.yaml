@@ -9,7 +9,7 @@ metrics:
   revenue:
     sql: "ROUND(SUM(revenue), 2)"
     label: "revenue"
-    note: "Gross of discount, net of nothing. Excludes tax and freight."
+    note: "Net of line discounts. Excludes tax and freight."
   gross_profit:
     sql: "ROUND(SUM(gross_profit), 2)"
     label: "gross profit"
@@ -61,5 +61,5 @@ types:
   customer: str
   sku: str
 
-# The only table the query builder knows about. It is a view, and §15.10 explains why.
+# The only table the query builder knows about. It is a view, and §15.14 explains why.
 source: v_sales

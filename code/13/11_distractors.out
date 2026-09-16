@@ -1,0 +1,11 @@
+12 questions per row, one per quarter; the answer is the weakest region's revenue
+
+  excerpts labelled with   distractors   right  wrong quarter  abstained  other
+  source and section                 0      12              0          0      0
+  source and section                 3      12              0          0      0
+  source and section                11      11              0          0      1
+  nothing                            0      12              0          0      0
+  nothing                            3       2              6          4      0
+  nothing                           11       0              0         12      0
+
+'other' (2023-Q4, 11 distractors, labelled): 'Midwest was the weakest region in 2023 Q4, with revenue of $2,081,808.'

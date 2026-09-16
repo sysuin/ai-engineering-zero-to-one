@@ -1,6 +1,6 @@
 name: evaluations
 
-# Two triggers, two budgets. This split is the whole of §22.11: a full run on every
+# Two triggers, two budgets. This split is the whole of §22.16: a full run on every
 # push costs more than it is worth, and no run at all is how a system decays quietly.
 on:
   pull_request:

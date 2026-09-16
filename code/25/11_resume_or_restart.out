@@ -1,0 +1,17 @@
+a run of 8 model calls over 24s; 15% of people leave part-way;
+a dropped client returns after 2s; the grace period is 6s
+
+  drops a minute  policy                     calls     wasted answer p50   p90
+  0.1             stop on disconnect          7.65         4%        24s   24s
+  0.1             keep for a grace period     7.73         5%        24s   24s
+  0.1             never stop                  8.00         8%        24s   24s
+
+  1.0             stop on disconnect          9.29        22%        24s   50s
+  1.0             keep for a grace period     7.73         5%        24s   24s
+  1.0             never stop                  8.00         8%        24s   24s
+
+  4.0             stop on disconnect         19.10        63%        55s  147s
+  4.0             keep for a grace period     7.73         5%        24s   24s
+  4.0             never stop                  8.00         8%        24s   24s
+
+  wasted = calls made after the person left, or redone after a dropped connection

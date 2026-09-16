@@ -1,0 +1,27 @@
+1. What LoRA trains: W stays frozen, and the update is B x A, of rank r
+
+  a 4,096 x 4,096 projection has 16,777,216 weights;
+  B (4,096 x r) and A (r x 4,096) have 2 x 4,096 x r between them
+
+   rank  trained parameters  share of model  adapter, 16-bit
+      4           4,194,304          0.052%             8 MB
+      8           8,388,608          0.105%            17 MB
+     16          16,777,216          0.210%            34 MB
+     64          67,108,864          0.839%           134 MB
+
+2. Memory to train, before activations
+
+  full fine-tune                    128.0 GB
+  LoRA, rank 16, base in 16-bit      16.3 GB
+  LoRA, rank 16, base in 4-bit        4.5 GB
+  (the 4-bit row adds 6% for quantisation scales; activations come on top of all)
+
+3. How much of an update a rank-r approximation keeps
+
+  an update that is mostly low-rank  r=1: 14%  r=8: 90%  r=32: 92%  r=128: 96%
+  an update with no structure        r=1: 1%  r=8: 6%  r=32: 21%  r=128: 62%
+
+LoRA's bet is that the change fine-tuning needs looks like the first row: a few
+directions carry nearly all of it. When the change does not — a new language, a
+large body of new knowledge — a small rank is more likely to fall short, which is
+one more reason facts belong in retrieval.

@@ -3,7 +3,7 @@
   "openai": {
    "stop_reason": "tool_calls",
    "tokens_in": 147,
-   "tokens_out": 28,
+   "tokens_out": 40,
    "tool": "query_warehouse"
   },
   "block-shaped": {

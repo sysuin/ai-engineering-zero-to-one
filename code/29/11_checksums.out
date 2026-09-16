@@ -1,0 +1,17 @@
+200,000 random strings of the right shape; the share that passes anyway
+
+  sixteen digits, Luhn check                    10.00%
+  sixteen digits, Luhn check and card prefix     2.02%
+  GB IBAN shape, mod-97 check                    1.05%
+
+  in a corpus with 10,000 sixteen-digit order numbers, false alarms expected:
+    pattern only  10,000   + Luhn  1,000   + Luhn and prefix   202
+
+Typing mistakes in 2,000 valid values: the share each check rejects
+
+                           one digit changed  neighbours swapped
+  card number, Luhn                  100.00%              97.93%
+    the swaps it accepted all exchanged: 09
+  IBAN, mod 97                       100.00%             100.00%
+
+  exact counts behind the first table: Luhn 20,008, mod 97 2,107 of 200,000

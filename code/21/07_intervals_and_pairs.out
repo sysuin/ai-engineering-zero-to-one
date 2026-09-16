@@ -1,0 +1,16 @@
+every slice, with its 95% interval
+
+  document        71/74    96%    89% to 99%
+  warehouse       18/20    90%    70% to 97%
+  composite        5/6     83%    44% to 97%
+  unanswerable    15/20    75%    53% to 89%
+  overall        109/120   91%    84% to 95%
+
+paired comparison, v0.5 against v0.9 on the same 120 cases
+  unchanged cases carry no evidence about the change: 67
+  fixed 45, broke 8; exact McNemar p = 2.4e-07
+  a change that fixed 9 and broke 3: net 6 of 120, p = 0.15
+  a change that fixed 7 and broke 1: net 6 of 120, p = 0.07
+
+read 4 independent slices at the 5% level and at least one will look
+significant about 19% of the time by chance alone

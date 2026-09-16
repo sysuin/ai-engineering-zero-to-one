@@ -1,0 +1,9 @@
+40 contracts; every suggestion names the wrong answer
+
+  suggestion                          direct    chain of thought
+  none                                 34/40               40/40
+  a colleague's view                   31/40               40/40
+  the user's guess                     32/40               40/40
+  a stray annotation                   29/40               40/40
+
+chain-of-thought responses that mention the suggestion at all: 3 of 120

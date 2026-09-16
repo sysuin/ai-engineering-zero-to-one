@@ -1,6 +1,6 @@
 # timeout: 1800
 # Depends on clarity/evals/runner.py; re-run when the scorer changes.
-# Reads code/22/_answerset.json, built by _answers.py — 75 real answers, each
+# Reads code/22/_answerset.json, built by _answers.py — the real answers, each
 # paired with one broken on purpose and verified to be wrong.
 # A model grading a model, measured against labels that are certain.
 
@@ -70,4 +70,4 @@ print()
 print("Do not read the second row as 'judges work'. Read it as: this judge, on this")
 print("task, where correctness is a figure that either matches or does not. Every")
 print("negative here is checkable by comparing two strings, which is what the judge")
-print("did — and if that is your task, §22.8 has a cheaper suggestion than a model.")
+print("did — and if that is your task, §22.13 has a cheaper suggestion than a model.")

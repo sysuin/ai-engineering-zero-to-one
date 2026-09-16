@@ -1,0 +1,21 @@
+1. 120 cases from 40 templates of 3, intra-template correlation 0.33
+
+  design effect 1 + (m - 1) x ICC       1.67
+  effective number of cases              72 of 120
+  Wilson interval, treating cases as independent   covers the truth 88%
+  bootstrap that resamples templates               covers the truth 95%
+  (a 95% interval should cover it 95% of the time)
+
+2. Two labellers, 200 answers
+
+                                      agree  by chance  kappa
+  balanced: half the answers pass       90%        50%   0.80
+  skewed: nearly every answer passes    90%        90%  -0.05
+
+3. 20 slices, no real difference in any of them
+
+  at least one slice 'significant' at p<0.05    65%
+  ...with Bonferroni (p < 0.05 / 20)           5%
+  ...with Holm's step-down version              5%
+
+  Expected by arithmetic: 1 - 0.95^20 = 64%.

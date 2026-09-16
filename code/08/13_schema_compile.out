@@ -1,0 +1,8 @@
+ten new strict schemas, each called three times in a row
+
+  first call   median 0.98s   range 0.88–1.14s
+  second call  median 0.99s   range 0.85–1.87s
+  third call   median 1.05s   range 0.90–2.90s
+
+first minus later, medians: -0.01s; typical difference between two later calls: 0.21s
+-> no first-call penalty larger than the ordinary variation between calls

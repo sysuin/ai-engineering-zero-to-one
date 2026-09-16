@@ -1,0 +1,9 @@
+2 questions x 5 runs; input tokens are the agent loop's own calls
+
+  question                                  memory  right  input tokens  steps
+  Something changed in the Mid     full transcript   5/5         9,686      9
+  Something changed in the Mid   older results cut   4/5         7,469      8
+  Margin fell in 2025 Q1. Find     full transcript   3/5         3,182      4
+  Margin fell in 2025 Q1. Find   older results cut   3/5         2,091      3
+
+input tokens and steps are medians; 'right' means the answer names what the question needs

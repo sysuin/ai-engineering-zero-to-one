@@ -1,0 +1,13 @@
+quality falls from 95% to 85%; every hour the last window of judged answers is tested
+
+  judged/hour   window  hours to notice  false alarms a week
+            5      20h               18                  2%
+           20       5h                6                  4%
+           50       2h                3                  8%
+          200       1h                2                  8%
+
+At 5 judged answers an hour the test needs a 20-hour window to hold enough of them,
+so a fall takes about 18 hours to show; at 200 an hour it takes about 2.
+The false-alarm column is the share of healthy weeks with any alarm at all. Judge
+calls cost money, and the hours between a fall and a page cost wrong answers:
+choose the rate from the second, not the first.

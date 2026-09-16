@@ -1,0 +1,9 @@
+offset pagination
+  page 1 ids: [100, 99, 98, 97, 96, 95, 94, 93, 92, 91]
+  page 2 ids: [93, 92, 91, 90, 89, 88, 87, 86, 85, 84]
+  read 20 items, 17 distinct; duplicated: [91, 92, 93]
+
+cursor pagination
+  page 1 ids: [103, 102, 101, 100, 99, 98, 97, 96, 95, 94]
+  page 2 ids: [93, 92, 91, 90, 89, 88, 87, 86, 85, 84]
+  read 20 items, 20 distinct; consecutive: True

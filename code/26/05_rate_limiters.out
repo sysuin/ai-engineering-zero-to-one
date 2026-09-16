@@ -1,0 +1,12 @@
+nominal limit: 10 requests per second; 64 requests arrive
+
+  limiter                   admitted  most in one second   state kept
+  fixed window                    60                  20   one counter
+  sliding log                     49                  10   a timestamp per request
+  token bucket, burst 10          50                  10   two numbers
+  token bucket, burst 3           43                  10   two numbers
+
+The fixed window admitted twice its limit inside one second, by taking a full
+allowance on each side of a boundary. The sliding log never exceeds the limit and
+pays with memory; the token bucket is close to it with two numbers of state, and its
+burst size is the dial between absorbing a spike and smoothing it.

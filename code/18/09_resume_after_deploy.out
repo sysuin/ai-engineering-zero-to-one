@@ -1,0 +1,9 @@
+Monday: paused at ('approve',) with quarter = 2024-Q3
+
+Tuesday resumes the same run:
+  what Tuesday's graph sees: {'notes': ['plan: brief one quarter']}
+  fetch reads s['period']                KeyError: 'period'
+  fetch reads s.get('period', default)   finished: 'fetched figures for the latest quarter'
+
+with a migration, from the checkpoint where the run was paused:
+  copied quarter='2024-Q3' into period, then resumed: 'fetched figures for 2024-Q3'

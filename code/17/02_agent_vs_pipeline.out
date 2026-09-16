@@ -1,39 +1,45 @@
-Task A — a briefing with a known shape, for four quarters
+Task A — a briefing with a known shape, for four quarters, 2 runs each
 
-  2024 Q3   pipeline ok     427tok   8.1s 3 calls    agent ok   1,724tok   7.5s 3 steps
-  2024 Q4   pipeline ok     369tok   7.8s 3 calls    agent ok   1,615tok   5.9s 2 steps
-  2025 Q1   pipeline ok     282tok   8.0s 3 calls    agent ok   1,762tok   7.3s 3 steps
-  2025 Q2   pipeline ok     331tok   7.8s 3 calls    agent ok   3,495tok  10.0s 4 steps
+  2024 Q3  pipeline ok   2,232tok   7.3s  5 calls   agent ok   3,527tok   6.2s  6 calls 3 steps
+  2024 Q3  pipeline ok   2,231tok   7.5s  5 calls   agent ok   3,532tok   6.2s  6 calls 3 steps
+  2024 Q4  pipeline ok   2,184tok   7.6s  5 calls   agent ok   2,694tok   5.0s  5 calls 2 steps
+  2024 Q4  pipeline ok   2,184tok   7.3s  5 calls   agent ok   6,759tok   8.2s  9 calls 4 steps
+  2025 Q1  pipeline ok   2,094tok   6.7s  5 calls   agent ok   2,725tok   5.5s  5 calls 2 steps
+  2025 Q1  pipeline ok   2,101tok   5.2s  5 calls   agent ok   2,723tok   4.6s  5 calls 2 steps
+  2025 Q2  pipeline ok   2,148tok   5.6s  5 calls   agent ok   6,453tok  12.2s 11 calls 5 steps
+  2025 Q2  pipeline ok   2,148tok   6.4s  5 calls   agent ok   4,577tok   7.2s  8 calls 3 steps
 
               correct    tokens   seconds   calls
-  pipeline      100%       352       7.9     3.0
-  agent         100%     2,149       7.7     3.0
+  pipeline      100%     2,165       6.7     5.0
+  agent         100%     4,124       6.9     6.9
+
+  counting every model call, embeddings included, the agent used 1.9x the pipeline's tokens,
+  took 2 to 5 steps for the same job, and was about as fast on average (6.9s against 6.7s)
 
 
 Task B — questions with no known shape
 
   Something changed in the Midwest during 2024. Work out what, and
-     8 steps · 4,864 tokens · 17.1s · step budget (8) exhausted
-     route: search_documents -> query_warehouse -> query_warehouse -> query_warehouse -> query_warehouse -> query_warehouse -> arithmetic -> arithmetic
-     What changed in the Midwest during 2024 was a sharp drop in Q3 revenue, and the available evidence points to a major account loss.
-
-What I established
+     6 steps · 10,320 tokens · 11.9s · answered
+     route: search_documents -> query_warehouse -> search_documents -> search_documents -> query_warehouse -> search_documents
+     What changed in the Midwest in 2024 was an **account loss**: **Halloway Group did not renew at the end of the previous quarter**, and the Q3 review sa
 
   Are customers complaining about a product problem? If so, which 
-     8 steps · 3,972 tokens · 20.8s · step budget (8) exhausted
-     route: search_documents -> search_documents -> search_documents -> search_documents -> search_documents -> search_documents -> search_documents -> search_documents
-     Yes — customers are complaining about a product problem.
+     7 steps · 15,365 tokens · 15.3s · answered
+     route: search_documents -> query_warehouse -> search_documents -> query_warehouse -> query_warehouse -> query_warehouse -> query_warehouse
+     Yes. Customers are complaining about a product problem, and the issue appears to be with cloths supplied by **Pemberton Mills**.
 
-What I’ve established:
-- There is a documented quality issue: a batch defect in cloths suppl
+What the documents s
 
   Which supplier represents the biggest commercial risk, and why?
-     5 steps · 5,155 tokens · 12.6s · answered
-     route: search_documents -> search_documents -> search_documents -> search_documents -> search_documents
+     5 steps · 7,055 tokens · 10.4s · answered
+     route: search_documents -> query_warehouse -> search_documents -> search_documents -> search_documents
      Based on the documents I found, **Pemberton Mills** appears to represent the biggest commercial risk.
 
 Why:
 - A quarterly review says a **batch defect
+
+3 different routes for 3 questions; 0 of 3 runs hit a budget.
 
 A pipeline for these would have to be written per question, which is another way
 of saying it would have to be written by someone who already knew the answer.

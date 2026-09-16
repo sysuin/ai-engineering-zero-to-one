@@ -1,0 +1,13 @@
+a fresh prefix each time, so nothing can be cached before the first call
+
+  prompt tokens     cached on calls 1, 2, 3
+            610                     0, 0, 0
+          1,165                     0, 0, 0
+          1,307                     0, 0, 0
+          1,377             0, 1,280, 1,280
+          1,448             0, 1,280, 1,280
+          1,732             0, 1,280, 1,280
+          2,848             0, 2,304, 2,304
+
+longest prompt with nothing cached on a repeat: 1,307 tokens
+shortest prompt with part of it cached:        1,377 tokens

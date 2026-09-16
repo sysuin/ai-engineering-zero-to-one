@@ -52,7 +52,7 @@ And there is a much cheaper way: run both systems on the SAME cases.
   But the comparison rests on only 16 cases, because the 104 where they
   agree carry no information about which is better.
 
-  McNemar's exact test on those 16: p = 0.105 (not significant at 0.05)
+  McNemar's exact test on those 16: p = 0.210 (not significant at 0.05)
 
 Pairing removes the case-to-case variation that dominates an unpaired
 comparison, and it is free: you were going to run both systems anyway.

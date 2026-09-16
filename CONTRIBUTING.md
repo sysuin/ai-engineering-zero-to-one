@@ -32,10 +32,13 @@ code/NN/                the executed listings for chapter NN, with their capture
 **No output in the book was typed by a human.** `code/_runner.py` executes every listing
 and captures its real stdout. If you change a listing, re-run it. If you change a module
 a listing imports, *touch the listing* — the cache keys on the listing file's hash, not
-its imports, so a shared-module change will not re-run its dependents on its own.
+its imports, so a shared-module change will not re-run its dependents on its own. Three
+listings read the repository's own source — `31/02_review.py`, `32/01_the_tour.py`,
+`32/04_checklist.py` — and go stale whenever `code/clarity/` changes at all, even a comment.
 
-**No model name or price appears in a chapter.** They live in `clarity/config.py` and
-Appendix C. Chapters say `MODEL_FAST`.
+**No model name or price appears in a chapter's prose.** They live in `clarity/config.py`
+and Appendix C. Chapters say `MODEL_FAST`. Captured output does show real names, and so do
+the two figures drawn from it (4.1 and 27.4); that is deliberate.
 
 **No secret appears in any file git can see.** Keys come from `.env`, which is ignored.
 Never print a key; print a fingerprint if you must prove one is loaded.
@@ -60,15 +63,23 @@ make eval                the six-layer suite against the 120-case golden set
 
 ## Known weaknesses, deliberately
 
-Chapter 31 reviews this system and finds three. They are real and they are not on a
-backlog — they are the price of a system small enough to read:
+Chapter 31 reviews this system by reading what `v1_0/clarity.py` imports — not what the
+repository contains — and finds five. They are real and they are not on a backlog:
 
-1. **The index is rebuilt, never updated.** No incremental path exists. `documents.sha256`
-   is there so one can be added.
-2. **One tenant, structurally.** Two files declare a tenant column; none enforce it. The
-   test in §26.2 catches an instance; row-level security would remove the class.
-3. **The eval set is 120 cases from one corpus**, 62% of one kind. At that size a 95%
-   interval is thirteen points wide, which cannot see a three-point improvement.
+1. **The model going down is an error.** `platform/gateway.py` (fallback, a breaker per
+   provider) and `platform/resilience.py`'s `Retry` exist; v1.0 composes neither and has
+   only the OpenAI SDK's own retries.
+2. **No tenant boundary below the cache.** The exact cache keys on tenant; the warehouse has
+   no tenant column, the index no tenant field, and v1.0 builds `Warehouse()` without one.
+3. **The index is rebuilt, never updated.** No incremental path exists in Clarity.
+   `code/12/08_incremental.py` shows the shape, and `documents.sha256` is there for it.
+4. **The eval set is 120 cases from one corpus**, 62% of one kind and far fewer distinct
+   questions once years and quarters are removed. A 95% interval near 85% is thirteen
+   points wide.
+5. **The output is unguarded.** `guard.fence` and `guard.egress_violations` exist; v1.0 uses
+   neither (it strips active content from the question and allowlists tools by role).
+
+`code/31/02_review.py` recomputes this list. If you fix one, re-run it and Chapter 31/32.
 
 If you are about to add a feature, check first whether you are about to build on top of
 one of these.

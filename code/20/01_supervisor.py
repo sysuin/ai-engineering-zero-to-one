@@ -1,5 +1,6 @@
 # timeout: 900
 # One question, three agents, and the whole conversation between them.
+# (Re-run when the semantic layer's revenue note was corrected to net of discount.)
 
 import sys
 

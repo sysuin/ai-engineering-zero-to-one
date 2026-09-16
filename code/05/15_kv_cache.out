@@ -1,0 +1,14 @@
+every head keeps its own keys and values
+  512 KB per token
+    4,096 tokens of context ->    2.1 GB for ONE sequence
+   32,768 tokens of context ->   17.2 GB for ONE sequence
+  128,000 tokens of context ->   67.1 GB for ONE sequence
+
+grouped: 8 key-value heads shared
+  128 KB per token
+    4,096 tokens of context ->    0.5 GB for ONE sequence
+   32,768 tokens of context ->    4.3 GB for ONE sequence
+  128,000 tokens of context ->   16.8 GB for ONE sequence
+
+the weights of the same model at 16-bit: 14 GB
+one full-length conversation's cache is 4.8x the weights

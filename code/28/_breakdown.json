@@ -1,24 +1,24 @@
 {
- "total_cost": 0.000517,
- "tokens_in": 2421,
- "tokens_out": 260,
+ "total_cost": 0.00051,
+ "tokens_in": 2403,
+ "tokens_out": 252,
  "by_name": {
   "model.call": {
    "calls": 2,
-   "cost": 0.00032700000000000003,
-   "in": 1486,
-   "out": 173
+   "cost": 0.000321,
+   "in": 1479,
+   "out": 165
   },
   "model.parse": {
    "calls": 2,
-   "cost": 0.00018999999999999998,
-   "in": 919,
+   "cost": 0.00018899999999999999,
+   "in": 912,
    "out": 87
   },
   "model.embed": {
    "calls": 1,
    "cost": 0.0,
-   "in": 16,
+   "in": 12,
    "out": 0
   }
  },

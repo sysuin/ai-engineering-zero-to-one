@@ -1,23 +1,23 @@
 100 answers, graded by two rubrics that differ by one clause.
 
-  strict rubric      says correct  38 of 100  (38%)
-  lenient rubric     says correct  90 of 100  (90%)
-  the string rule    says correct  96 of 100  (96%)
+  strict rubric      says correct  36 of 100  (36%)
+  lenient rubric     says correct  92 of 100  (92%)
+  the string rule    says correct  94 of 100  (94%)
 
-  raw agreement between the two annotators   48%
-  agreement expected from chance alone       40%
-  Cohen's kappa                              0.13
-  strict vs string rule                      agreement 42%, kappa 0.05
-  lenient vs string rule                     agreement 94%, kappa 0.55
+  raw agreement between the two annotators   44%
+  agreement expected from chance alone       38%
+  Cohen's kappa                              0.09
+  strict vs string rule                      agreement 42%, kappa 0.07
+  lenient vs string rule                     agreement 96%, kappa 0.69
 
-They disagreed on 52 of 100. Two of them:
+They disagreed on 56 of 100. Two of them:
 
   Q: What was revenue in 2023 Q1?
   A: Revenue in 2023 Q1 was **$7,360,833.67**.
      expected '7,360,834'  ->  strict WRONG, lenient CORRECT
 
   Q: Which region was strongest in 2023 Q1?
-  A: Midwest was strongest in 2023 Q1, with the highest revenue at 1,925,31
+  A: Midwest was the strongest region in 2023 Q1 by revenue.
      expected 'Midwest'  ->  strict WRONG, lenient CORRECT
 
 These are stand-ins for two people, and the arithmetic is identical when the

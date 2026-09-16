@@ -1,0 +1,15 @@
+8 steps, 6 model calls, stopped: step budget (8) exhausted
+
+  call  prompt tokens  of which tool results
+     1            419                      0
+     2          1,342                    868
+     3          1,377                    876
+     4          3,057                  2,397
+     5          3,159                  2,460
+     6          2,931                  2,533
+
+input tokens billed across the run: 12,285
+the final prompt alone:             2,931
+tool results resent, in total:      9,134 (74% of the input, estimated with the tokenizer)
+
+with older results reduced to one-line notes: about 4,838 input tokens (39% of what was billed)

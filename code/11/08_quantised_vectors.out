@@ -1,0 +1,15 @@
+80 golden questions, 1,454 chunks, recall@5 of the verified chunk
+
+  vectors stored as                  bytes each  recall@5  same top 5
+  32-bit floats (full)                    6,144       59%        100%
+  8-bit integers                          1,536       59%         96%
+  1 bit per dimension                       192       62%         57%
+  1 bit, then rescore top 50 in full        192       59%        100%
+
+Recall alone hides what one bit did: it held at 62% on 80 questions while only 57% of
+each top five stayed the same. The right chunk survived, its neighbours changed, and
+whether that costs recall is a question for a much larger set than this one.
+
+A bit per dimension is 32 times smaller than the full vector. On its own it reorders the
+top results; used as a first pass, with the shortlist rescored against full vectors kept
+on disk, it gives back the full ranking for a fraction of the memory.

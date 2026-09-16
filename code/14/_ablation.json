@@ -1,6 +1,7 @@
 {
   "k": 5,
   "n": 30,
+  "runs": 3,
   "tags": [
     "plain",
     "near-duplicate",
@@ -14,78 +15,105 @@
       "recall": 0.7666666666666667,
       "by_tag": {
         "plain": 0.8333333333333334,
-        "near-duplicate": 0.6666666666666666,
-        "identifier": 0.6666666666666666,
-        "paraphrase": 0.6666666666666666,
+        "near-duplicate": 0.5,
+        "identifier": 0.5,
+        "paraphrase": 1.0,
         "ticket": 1.0,
         "obscure": 1.0
-      }
+      },
+      "low": null,
+      "high": null
     },
     "BM25 only": {
-      "recall": 0.7333333333333333,
-      "by_tag": {
-        "plain": 0.8333333333333334,
-        "near-duplicate": 1.0,
-        "identifier": 0.8333333333333334,
-        "paraphrase": 0.0,
-        "ticket": 1.0,
-        "obscure": 1.0
-      }
-    },
-    "fused, k=60": {
-      "recall": 0.7666666666666667,
+      "recall": 0.6666666666666666,
       "by_tag": {
         "plain": 0.8333333333333334,
         "near-duplicate": 0.6666666666666666,
-        "identifier": 0.6666666666666666,
-        "paraphrase": 0.6666666666666666,
+        "identifier": 0.5,
+        "paraphrase": 0.3333333333333333,
         "ticket": 1.0,
         "obscure": 1.0
-      }
+      },
+      "low": null,
+      "high": null
+    },
+    "fused, k=60": {
+      "recall": 0.8,
+      "by_tag": {
+        "plain": 0.8333333333333334,
+        "near-duplicate": 0.6666666666666666,
+        "identifier": 0.5,
+        "paraphrase": 1.0,
+        "ticket": 1.0,
+        "obscure": 1.0
+      },
+      "low": null,
+      "high": null
     },
     "fused, k=1": {
-      "recall": 0.8666666666666667,
+      "recall": 0.8,
       "by_tag": {
         "plain": 1.0,
-        "near-duplicate": 0.8333333333333334,
-        "identifier": 0.8333333333333334,
-        "paraphrase": 0.6666666666666666,
+        "near-duplicate": 0.5,
+        "identifier": 0.5,
+        "paraphrase": 1.0,
         "ticket": 1.0,
         "obscure": 1.0
-      }
+      },
+      "low": null,
+      "high": null
     },
     "+ metadata filter": {
-      "recall": 0.9333333333333333,
+      "recall": 0.9555555555555556,
       "by_tag": {
         "plain": 1.0,
         "near-duplicate": 1.0,
-        "identifier": 1.0,
-        "paraphrase": 0.6666666666666666,
+        "identifier": 0.7777777777777777,
+        "paraphrase": 1.0,
         "ticket": 1.0,
         "obscure": 1.0
-      }
+      },
+      "low": 0.9333333333333333,
+      "high": 1.0
     },
     "+ rerank top 25": {
-      "recall": 0.9666666666666667,
+      "recall": 0.9777777777777779,
       "by_tag": {
         "plain": 1.0,
         "near-duplicate": 1.0,
-        "identifier": 1.0,
-        "paraphrase": 0.8333333333333334,
+        "identifier": 0.888888888888889,
+        "paraphrase": 1.0,
         "ticket": 1.0,
         "obscure": 1.0
-      }
+      },
+      "low": 0.9666666666666667,
+      "high": 1.0
     },
-    "+ MMR diversity": {
-      "recall": 0.9333333333333333,
+    "+ MMR (no rerank)": {
+      "recall": 0.9555555555555556,
       "by_tag": {
         "plain": 1.0,
         "near-duplicate": 1.0,
-        "identifier": 0.8333333333333334,
-        "paraphrase": 0.8333333333333334,
+        "identifier": 0.7777777777777777,
+        "paraphrase": 1.0,
         "ticket": 1.0,
         "obscure": 1.0
-      }
+      },
+      "low": 0.9333333333333333,
+      "high": 1.0
+    },
+    "+ rerank, then MMR": {
+      "recall": 0.9555555555555556,
+      "by_tag": {
+        "plain": 1.0,
+        "near-duplicate": 1.0,
+        "identifier": 0.7777777777777777,
+        "paraphrase": 1.0,
+        "ticket": 1.0,
+        "obscure": 1.0
+      },
+      "low": 0.9333333333333333,
+      "high": 1.0
     }
   }
 }

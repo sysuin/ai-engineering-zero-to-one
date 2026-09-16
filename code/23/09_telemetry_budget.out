@@ -1,0 +1,11 @@
+one Clarity request: 8 spans, 728 bytes each as the SDK writes them in JSON
+(exporters usually send protobuf, which is smaller; the arithmetic is the same)
+
+   requests a day  keep everything  tail-sampled   (stored for 30 days)
+            1,000          0.17 GB       0.03 GB
+           50,000          8.74 GB       1.27 GB
+        1,000,000        174.72 GB      25.33 GB
+
+The bill scales with spans per request as much as with traffic: an agent that takes
+twice the steps writes twice the telemetry. A retention policy and a tail-sampling
+rule are decided with this table in front of you, not after the first invoice.

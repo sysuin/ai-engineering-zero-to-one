@@ -3,11 +3,11 @@
   asking     : query_warehouse({'question': 'What was revenue in 2024 Q3?'})
   person says: 'yes, go ahead'
   recorded   : query_warehouse: approved (yes, go ahead)
-  answer     : Revenue in 2024 Q3 was **$8,461,841.81**.
+  answer     : Revenue in **2024 Q3** was **$8,461,841.81**.
 
 What the documents say:
-- The Q3 quarterly review says revenue was **$8,461,842 across 5,579 orders**, **up 4.8% vs. the prior quarter**.
-- It also reports **gross margin of 33.
+- The QBR summary says revenue was **$8,461,842 across 5,579 orders**, **up 4.8% vs. the prior quarter**.
+- It reports **gross margin of 33.1%** and 
 
 === a person refuses ===
   paused at  : approve

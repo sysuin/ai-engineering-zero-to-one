@@ -1,0 +1,20 @@
+120 questions; the candidate adds one instruction: answer in one sentence
+
+  run                  right  median tokens
+  live, first run     114/120          1,062
+  live, second run    112/120          1,060
+  candidate           112/120          1,062
+
+  pair                                 disagree  lost  gained      p
+  live against itself                         6     4       2   0.69
+  live against the candidate                  6     4       2   0.69
+
+  disagree = right in one run and wrong in the other; lost and gained count
+  from the live version's first run; p = exact two-sided McNemar test
+
+  4 of the 6 questions the candidate changed also changed between the
+  live version's own two runs
+
+to tell 95.0% from 93.3% with 5.0% of requests disagreeing:
+  shadowed, every request a pair:       1,411 requests
+  split between versions (A/B):         6,207 requests

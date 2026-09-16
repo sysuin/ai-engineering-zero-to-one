@@ -58,6 +58,21 @@ for event in app.stream(None, config, stream_mode="updates"):
 
 print(f"\nA: {(answer or '')[:300]}")
 
+print("\n--- the same crash, with durability='sync' ---")
+SYNC = Path("data/meridian/crash-sync.db")
+SYNC.unlink(missing_ok=True)
+subprocess.run([sys.executable, "code/18/_crash_child.py", str(SYNC), THREAD, "sync"],
+               capture_output=True, text=True, timeout=300)
+synced = build(build_tools(Retriever(chunks, vectors), Warehouse())).compile(
+    checkpointer=SqliteSaver(sqlite3.connect(SYNC, check_same_thread=False))).get_state(config)
+print(f"recovered state: {synced.values['steps']} step(s), "
+      f"{len(synced.values['messages'])} messages, next node {synced.next}")
+act_again = "act" in snapshot.next
+print(f"the default run {'lost' if act_again else 'kept'} the finished act and "
+      f"{'ran it again' if act_again else 'did not repeat it'}; the sync run "
+      f"{'kept it' if 'act' not in synced.next else 'lost it too'}")
+SYNC.unlink(missing_ok=True)
+
 json.dump({"exit_code": child.returncode, "checkpoints": rows,
            "recovered_steps": snapshot.values["steps"],
            "recovered_messages": len(snapshot.values["messages"]),
@@ -65,8 +80,10 @@ json.dump({"exit_code": child.returncode, "checkpoints": rows,
           open("code/18/_crash.json", "w"), indent=1)
 print()
 print("The first process died. It did not save anything on the way out, it did not")
-print("catch a signal, and it did not finish. The work it had already done survived")
-print("because every step was written to the store as it completed.")
+print("catch a signal, and it did not finish. What had been checkpointed survived. By")
+print("default a checkpoint is stored while the next step starts, so the step that had")
+print("just finished can be lost with the process; with durability='sync' it is stored")
+print("before the next step begins, at the cost of waiting for the write.")
 print()
 print("Chapter 17's ninety lines cannot do this, and adding it is not a small change:")
 print("the loop has to stop being a `while` and start being a sequence of transitions")

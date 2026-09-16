@@ -1,0 +1,18 @@
+One year, the system truly saves 0.5 minutes a ticket from week 26
+
+  team A before launch                   6.94 min
+  team A after launch                    5.78 min
+  team B, no system, same weeks, change -0.42 min
+
+  before-and-after for team A            -1.16 min
+  difference-in-differences              -0.74 min  (95% interval -1.02 to -0.46)
+
+1,000 simulated years in which the system saves nothing
+  before-and-after 'finds' a saving      99.9% of years
+  difference-in-differences finds one     2.7% of years
+
+Six teams, one pilot, a system that saves nothing. How often does the pilot team
+improve by more than 0.2 minutes against the other five, measured from its last
+eight weeks before launch?
+  pilot chosen at random        10.2% of years
+  pilot chosen as the worst     43.7% of years

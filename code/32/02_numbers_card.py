@@ -7,6 +7,7 @@
 # that describes a system that never existed.
 
 import json
+import math
 import statistics as stats
 import sys
 from concurrent.futures import ThreadPoolExecutor
@@ -27,7 +28,7 @@ def answer_one(case: dict) -> dict:
     result = engine.ask(case["question"])
     span = case.get("span")
     # Recall is only meaningful where a document is the only place the answer lives.
-    # §22.8's recurring trap: where the gold answer came from is not a claim about
+    # §22.11's recurring trap: where the gold answer came from is not a claim about
     # which tool should have run, and scoring every case here reports 0% on a healthy
     # system because half of them are answered from the warehouse.
     scorable = bool(span) and case.get("tier") == "tail" and case["kind"] == "document"
@@ -56,7 +57,7 @@ with ThreadPoolExecutor(max_workers=8) as pool:
 
 # ------------------------------------------------------------------ red team
 def attacked(attack) -> bool:
-    """A case passes when the tell is absent. Absence is weak evidence, and §29.6 says
+    """A case passes when the tell is absent. Absence is weak evidence, and §29.8 says
     so — but a tell that fires is conclusive, which is the direction that matters."""
     result = engine.ask(attack.question)
     return not attack.tell.search(result.text)
@@ -117,7 +118,9 @@ print(f"  recall              {card['recall']:>6.0%}   "
 print(f"  attacks blocked     {card['blocked']:>6.0%}   "
       f"of {len(redteam.ATTACKS)} red-team attempts")
 print(f"  latency p50 / p95   {card['p50']:>5.1f}s / {card['p95']:.1f}s")
-print(f"  tokens per answer   {card['tokens_mean']:>6,.0f}")
+# The agent loop's own tokens: the planner and retriever calls inside the tools are traced
+# and priced on their spans, and are not part of this count.
+print(f"  loop tokens/answer  {card['tokens_mean']:>6,.0f}")
 
 prices = rate(MODEL_FAST)
 if prices:
@@ -142,7 +145,7 @@ if card["abstention"] < card["pass_rate"]:
     points = round(abs(gap) * 100)
     print(f"{points} point{'s' if points != 1 else ''} below, and refusing is the "
           "behaviour with the most expensive")
-    print("failure mode, because a confident wrong answer is worse than a slow one.")
+    print("failure mode: a question with no answer, answered, is a confident wrong answer.")
 else:
     points = round(abs(gap) * 100)
     print(f"Read the weakest row first. Abstention is {card['abstention']:.0%}, "
@@ -156,10 +159,19 @@ print(f"The weakest population is {worst[0]} at {worst[1]['pass']:.0%} over "
       f"{worst[1]['n']} cases. That is where")
 print("the next week of work goes, and the card is how you will know whether it helped.")
 print()
-print(f"And note the interval. At n={card['cases']}, a difference of three points "
-      "between this")
-print("card and the next one is noise. §21.6 and Appendix F are how you tell the")
-print("difference between an improvement and a good afternoon.")
+passed = round(card["pass_rate"] * card["cases"])
+z = 1.96
+centre = (card["pass_rate"] + z * z / (2 * card["cases"])) / (1 + z * z / card["cases"])
+half = (z * math.sqrt(card["pass_rate"] * (1 - card["pass_rate"]) / card["cases"]
+                      + z * z / (4 * card["cases"] ** 2)) / (1 + z * z / card["cases"]))
+card["interval"] = [centre - half, centre + half]
+print(f"And note the interval. {passed} of {card['cases']} is a Wilson 95% interval of "
+      f"{centre - half:.0%} to {centre + half:.0%}:")
+print(f"{(card['pass_rate'] - centre + half) * 100:.0f} points below the score and "
+      f"{(centre + half - card['pass_rate']) * 100:.0f} above, lopsided because the score "
+      "is near")
+print("the ceiling. §21.6 and Appendix F are how you tell an improvement from a good")
+print("afternoon.")
 
-card["rows"] = rows          # §32.7 triages these into the next eval set
+card["rows"] = rows          # §32.9 triages these
 json.dump(card, open("code/32/_card.json", "w"), indent=1)

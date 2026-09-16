@@ -1,0 +1,15 @@
+1. The provider refuses connections
+
+  POST /ask -> 503 (the model provider is not answering) after 0.5s
+
+2. The provider accepts connections and never answers
+
+  at 3s, with 8 requests waiting, a new one: POST /ask -> 503 (busy) after 0.0s
+  the 8 held requests ended between 10s and 11s: 8 x 503
+  then a new request: POST /ask ->
+    503 (the model provider is not answering) after 10.5s
+
+Before: a caller could wait 30 minutes, and a full bulkhead stayed full as long.
+After: nobody waits longer than about 11s, the slots come back on
+their own, and every caller is told the truth, with a Retry-After, instead of a
+500 or a hang.

@@ -1,0 +1,15 @@
+1. The provider refuses connections
+
+  POST /ask -> 500 after 1.4s
+  underneath: APIConnectionError, after the SDK's 2 retries
+  the same question, cached earlier: answered=True, cached=True
+
+2. The provider accepts connections and never answers
+
+  after 10s, 8 of 8 requests are still waiting; each attempt
+  may wait 600s, and the SDK makes 3 attempts
+  a new request: POST /ask -> 503 (busy) after 0.01s
+  the bulkhead has turned away 1 so far
+
+Down is loud: a 500 in 1.4s. Slow is quiet: every slot held for up to 30 minutes,
+and everyone else refused until then. The runbook needs both.

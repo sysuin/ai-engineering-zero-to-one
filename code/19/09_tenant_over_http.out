@@ -1,0 +1,11 @@
+Northeast token, scoped tool    -> Northeast 2025: 7,947,505.65
+West token, scoped tool         -> West 2025: 5,400,520.65
+West token, asks for Northeast  -> Northeast 2025: 7,947,505.65
+no token at all                 -> refused (MCPError)
+
+unauthenticated POST /mcp -> HTTP 401
+  WWW-Authenticate: Bearer error="invalid_token",
+                    error_description="Authentication required"
+  ... and resource_metadata points to /.well-known/oauth-protected-resource/mcp
+  which names the resource '/mcp'
+  and the authorization server https://auth.example.com

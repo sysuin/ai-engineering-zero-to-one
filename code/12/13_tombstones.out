@@ -1,0 +1,11 @@
+40,000 structured vectors, HNSW M=16; recall@10 against exact search over
+the live rows. Marked: deleted rows stay in the graph, ef_search=20. Rebuilt:
+a new index of the live rows, at the smallest ef_search matching that recall
+
+                      marked deleted                          rebuilt
+  deleted  rows held   recall     ms   rows held   ef   recall     ms
+       0%     40,000    92.7%  0.174      40,000   20    92.7%  0.169
+      25%     40,000    94.0%  0.220      30,000   30    96.7%  0.205
+      50%     40,000    96.6%  0.267      20,000   30    97.4%  0.200
+      75%     40,000    98.7%  0.440      10,000   40    99.2%  0.227
+      90%     40,000    99.5%  0.937       4,000   40    99.5%  0.178

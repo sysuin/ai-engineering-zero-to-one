@@ -1,0 +1,18 @@
+20 questions, 3 runs, no way to say 'this cannot be expressed'
+
+  correct of all, each run   16/20 (80%)   16/20 (80%)   16/20 (80%)
+  for comparison: free-form SQL 17/20 in 01; with the escape hatch 14/20 in 03,
+  which answered 15 and got 1 of those wrong
+
+  the five questions 03 refused, as this planner answered them on the first run:
+    How many customers are in the Midwest region?         metric=orders     wrong
+    Which supplier has the most products?                 metric=skus       right
+    How many order lines had a discount of 15 percent?    metric=orders     wrong
+    Which region grew revenue most between 2023 and 2025  metric=revenue    right
+    How many suppliers are based outside the United Stat  metric=skus       wrong
+
+  of those 15 forced answers across all runs, right: 6
+
+  how it answered 'which region grew revenue most between 2023 and 2025?':
+    metric=revenue, group_by=['region'], order='highest first', limit=1
+    filters: year >= 2023, year <= 2025

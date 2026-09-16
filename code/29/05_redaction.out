@@ -1,0 +1,14 @@
+8 sentences, 8 spans a person would redact
+
+  detector                      found  missed  false alarms
+  patterns only                     7       1             2
+  patterns + checksums              7       1             0
+
+  what the model is sent:
+    Please call Dana on <PHONE_1> or email <EMAIL_1>.
+    Card ending: <CARD_1> was declined on 14 March.
+    Refund to <IBAN_1>, reference MSC-2024-118.
+
+  4 values kept in a mapping the model never sees; the name in
+  the first sentence is not among them, because no pattern knows what a name
+  looks like

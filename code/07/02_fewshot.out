@@ -1,9 +1,9 @@
  examples  accuracy  prompt tokens  first answer
         0     0.0%            488  '45D'
         1    56.2%            948  'NET45-RECIPIENT'
-        2    56.2%          1,408  'NET45-RECPT'
-        4    93.8%          2,357  'NET45-RCP'
-        8    81.2%          4,213  'NET45-RCP'
+        2    56.2%          1,408  'NET45-RECIP'
+        4   100.0%          2,357  'NET45-RCP'
+        8    87.5%          4,213  'NET45-RCP'
 
 32 contracts held out, 8 available as examples.
 The examples, in the order they are added:
@@ -22,7 +22,8 @@ With none, the model cannot know the convention exists, so it invents something
 reasonable that is not yours.
 
 With one and two, it has the structure but has only ever seen an invoice-based
-term, so it guesses at the receipt abbreviation: REC, then RECIPIENT.
+term, so for a receipt-based contract it has to guess the abbreviation: 'NET45-RECIPIENT',
+then 'NET45-RECIP'.
 
 The jump at four is not about quantity. Example three is the first receipt-based
 one. What changed is coverage of the answer space, not the count.

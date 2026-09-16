@@ -15,8 +15,10 @@ through somebody else's code before it reaches yours.
 """
 from __future__ import annotations
 
+import contextvars
 import json
 import sys
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeout
 from pathlib import Path
 from typing import Annotated, Any, Literal, TypedDict
 
@@ -28,11 +30,11 @@ from openai import OpenAI
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from clarity.config import MODEL_FAST                  # noqa: E402
-from clarity.v0_8.tools import Tool, ToolError         # noqa: E402
+from clarity.v0_8.tools import Tool, ToolError, ToolRunner  # noqa: E402
 
 # Which tools require a person to approve the call before it runs. Everything Clarity
-# does today is read-only, so this is about the shape rather than the risk — Chapter 26
-# adds the writes that make it matter.
+# does is read-only, so this is about the shape rather than the risk: the gate is the
+# one a tool that writes would need.
 DEFAULT_APPROVAL: set[str] = set()
 
 # What the model is told when a person refuses. It has to be a result rather than an
@@ -78,10 +80,10 @@ def build(tools: list[Tool], client: OpenAI | None = None,
     schemas = [t.schema() for t in tools]
 
     # ---------------------------------------------------------------- nodes
-    def think(state: State) -> dict:
-        """Ask the model what to do next."""
+    def to_payload(messages: list[AnyMessage]) -> list[dict]:
+        """LangChain messages back into the shape the SDK takes."""
         payload = []
-        for m in state["messages"]:
+        for m in messages:
             if isinstance(m, HumanMessage):
                 payload.append({"role": "user", "content": m.content})
             elif isinstance(m, ToolMessage):
@@ -99,12 +101,16 @@ def build(tools: list[Tool], client: OpenAI | None = None,
                 payload.append(entry)
             else:
                 payload.append({"role": "system", "content": m.content})
+        return payload
 
+    def think(state: State) -> dict:
+        """Ask the model what to do next."""
+        payload = to_payload(state["messages"])
         reply = client.chat.completions.create(
             model=model, temperature=0, max_completion_tokens=700,
             messages=payload, tools=schemas).choices[0].message
 
-        calls = [{"name": c.function.name, "args": json.loads(c.function.arguments),
+        calls = [{"name": c.function.name, "args": ToolRunner._parse(c.function.arguments),
                   "id": c.id} for c in (reply.tool_calls or [])]
         return {"messages": [AIMessage(content=reply.content or "",
                                        tool_calls=calls)],
@@ -114,9 +120,9 @@ def build(tools: list[Tool], client: OpenAI | None = None,
         """
         Stop, and wait for a person.
 
-        `interrupt` persists the state and hands control back
-        to the caller, which may then exit. A resume continues
-        from exactly here — not from the start of the run.
+        `interrupt` persists the state and returns to the caller,
+        which may exit. A resume re-runs this node from its top,
+        so the code before `interrupt` must be safe to repeat.
         """
         # Only gated calls go to a person. A model that asks for
         # the warehouse and a search in one turn should not have
@@ -146,18 +152,39 @@ def build(tools: list[Tool], client: OpenAI | None = None,
             tool = registry.get(call["name"])
             if tool is None:
                 content = f"No tool named {call['name']!r}."
+            elif call["args"] is None:
+                content = "The arguments were not a JSON object. Retry with valid arguments."
             else:
+                pool = ThreadPoolExecutor(max_workers=1)     # §16.12: never a with-block
                 try:
-                    content = json.dumps(tool.run(**call["args"]), default=str)[:3000]
+                    context = contextvars.copy_context()     # keep the trace's parent span
+                    value = pool.submit(context.run, tool.run,
+                                        **call["args"]).result(timeout=tool.timeout)
+                    content = json.dumps(value, default=str)[:3000]
+                except FutureTimeout:
+                    content = f"{call['name']} took longer than {tool.timeout}s and was abandoned."
                 except ToolError as error:
                     content = str(error)
                 except Exception as error:                       # noqa: BLE001
                     content = f"{call['name']} failed: {type(error).__name__}: {error}"
+                finally:
+                    pool.shutdown(wait=False)
             results.append(ToolMessage(content=content, tool_call_id=call["id"]))
         return {"messages": results}
 
     def give_up(state: State) -> dict:
-        return {"stopped_because": f"step budget ({state['budget']}) exhausted"}
+        """Out of budget: answer with what is known, as Chapter 17's loop does."""
+        # The last request's calls were never run; the API requires each to have a result.
+        unanswered = [ToolMessage(tool_call_id=c["id"], content="Not run: out of budget.")
+                      for c in _pending(state)]
+        payload = to_payload(state["messages"] + unanswered) + [
+            {"role": "user", "content": "You are out of budget. Answer with what you have "
+             "established so far, and state plainly what is still missing."}]
+        reply = client.chat.completions.create(
+            model=model, temperature=0, max_completion_tokens=400,
+            messages=payload).choices[0].message
+        return {"stopped_because": f"step budget ({state['budget']}) exhausted",
+                "messages": [*unanswered, AIMessage(content=reply.content or "")]}
 
     # ---------------------------------------------------------------- edges
     def next_step(state: State) -> Literal["approve", "act", "give_up", "__end__"]:

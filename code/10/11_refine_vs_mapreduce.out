@@ -1,0 +1,5 @@
+24 parts, one notice in each naming a new supplier; both summaries limited to 300 words; 3 runs
+
+  method        first third   middle  last third      all  words
+  map-reduce          24/24    24/24       24/24   72/72    169
+  refine               0/24     7/24       21/24   28/72    316

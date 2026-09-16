@@ -3,9 +3,29 @@
   "figure": 24,
   "cause": 21,
   "of": 24,
-  "tokens": 2147,
-  "seconds": 5.8,
-  "calls": 3.5,
+  "missed": [
+   {
+    "q": "By how much did revenue change from 2024 Q3 to 2024 Q4, and what does the commentary say was behind it?",
+    "figure": 1,
+    "cause": 0,
+    "answer": "Revenue decreased by **$195,773.45** from 2024 Q3 to 2024 Q4, which is a **2.3% decline**.\n\n**Cause:** The Q4 commentary says revenue was down on the prior quarter, and the main issue called out was a **batch defect in cloths supplied by Pemberton Mills**, which increased support contacts. The note says affected stock was quarantined and replaced at supplier cost.\n\n**Could not verify:** I could verify the revenue figures and the stated commentary, but I could not verify from the documents whether that defect was the sole driver of the revenue decline."
+   },
+   {
+    "q": "By how much did revenue change from 2024 Q3 to 2024 Q4, and what does the commentary say was behind it?",
+    "figure": 1,
+    "cause": 0,
+    "answer": "Revenue fell by **$195,773.45** from **2024 Q3** to **2024 Q4**.\n\n**Cause:** the Q4 commentary says revenue was **down 2.3% on the prior quarter**, and the only specific issue called out was a **batch defect in cloths supplied by Pemberton Mills**, which increased support contacts; affected stock was quarantined and replaced at supplier cost.\n\n**Could not verify:** the commentary does **not explicitly say** the defect caused the revenue decline, only that it was a notable Q4 issue."
+   },
+   {
+    "q": "By how much did revenue change from 2024 Q3 to 2024 Q4, and what does the commentary say was behind it?",
+    "figure": 1,
+    "cause": 0,
+    "answer": "Revenue fell by **$195,773.45** from **2024 Q3 ($8,461,841.81)** to **2024 Q4 ($8,266,068.36)**, a decline of about **2.3%**.\n\n**Cause:** the Q4 commentary says the drop was accompanied by a **batch defect in cloths supplied by Pemberton Mills**, which drove a material increase in support contacts. It also says the affected stock was quarantined and replaced at supplier cost.\n\n**Could not verify:** I could verify the revenue figures and the stated commentary cause, but I could not verify from the documents whether the defect was the direct cause of the revenue decline specifically."
+   }
+  ],
+  "tokens": 3504,
+  "seconds": 5.5,
+  "calls": 6.2,
   "per_task": [
    {
     "q": "What was revenue in 2024 Q3, and what does the compa",
@@ -50,17 +70,43 @@
   ]
  },
  "supervisor + 2": {
-  "figure": 23,
-  "cause": 22,
+  "figure": 21,
+  "cause": 23,
   "of": 24,
-  "tokens": 3726,
-  "seconds": 10.6,
-  "calls": 7.8,
+  "missed": [
+   {
+    "q": "What was gross margin in 2025 Q1, and what explanation is given for the change?",
+    "figure": 0,
+    "cause": 1,
+    "answer": "Gross margin in 2025 Q1 was **2,853,267.19** in gross profit terms.\n\nThe stated explanation for the change was **higher input costs**: Voss Industrial applied a **12% increase to unit costs across its catalogue at the start of the quarter**, and that increase was **absorbed rather than passed through**, which the report says was the principal reason gross margin was below the prior quarter despite revenue growth.\n\nWhat I could not verify: the warehouse result did **not** provide the gross margin percentage or revenue, only gross profit."
+   },
+   {
+    "q": "What was revenue in 2024 Q2, and what new category appears in the data from that quarter?",
+    "figure": 0,
+    "cause": 1,
+    "answer": "I couldn\u2019t verify the 2024 Q2 revenue figure from the warehouse because the analyst could not compute it exactly from the available fields.\n\nThe new category that appears in 2024 Q2 is **Sanitation**. The documents say it launched that quarter and was reported separately from Cleaning for the first time.\n\nWhat I could not verify: the exact revenue amount for 2024 Q2."
+   },
+   {
+    "q": "What was revenue in 2024 Q2, and what new category appears in the data from that quarter?",
+    "figure": 0,
+    "cause": 1,
+    "answer": "Revenue in 2024 Q2: unavailable.\n\nNew category in 2024 Q2: Sanitation.\n\nI could not verify the revenue figure from the warehouse, and the warehouse did not provide a currency."
+   },
+   {
+    "q": "By how much did revenue change from 2024 Q3 to 2024 Q4, and what does the commentary say was behind it?",
+    "figure": 1,
+    "cause": 0,
+    "answer": "Revenue changed by **195,773.45** from 2024 Q3 to 2024 Q4, and it **decreased**.\n\nThe commentary says the decline was **not explained in detail**. It notes that Q4 revenue was **down 2.3% versus the prior quarter**, and separately mentions a **batch defect in cloths supplied by Pemberton Mills** that increased support contacts. It does **not explicitly say** that defect caused the revenue change.\n\nWhat I could not verify: a direct documented cause linking the revenue drop to a specific event."
+   }
+  ],
+  "tokens": 5044,
+  "seconds": 10.1,
+  "calls": 10.2,
   "per_task": [
    {
     "q": "What was revenue in 2024 Q3, and what does the compa",
     "figure": 3,
-    "cause": 1
+    "cause": 3
    },
    {
     "q": "What was gross margin in 2025 Q1, and what explanati",
@@ -74,13 +120,13 @@
    },
    {
     "q": "What was revenue in 2024 Q2, and what new category a",
-    "figure": 3,
+    "figure": 1,
     "cause": 3
    },
    {
     "q": "By how much did revenue change from 2024 Q3 to 2024 ",
     "figure": 3,
-    "cause": 3
+    "cause": 2
    },
    {
     "q": "What was gross margin in 2024 Q2 versus 2025 Q1, and",

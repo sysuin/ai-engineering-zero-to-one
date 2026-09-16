@@ -1,0 +1,7 @@
+3 runs each; the guard allows 2 searches in a row that find nothing new
+
+  case                               guard   steps  refused  fired  stopped
+  a search that finds nothing          off   4/4/4    0/0/0    0/3  answered
+  a search that finds nothing           on   4/4/4    2/2/2    3/3  answered
+  the real corpus, no answer in it     off   4/5/5    0/0/0    0/3  answered
+  the real corpus, no answer in it      on   5/5/4    0/0/0    0/3  answered

@@ -6,6 +6,7 @@ import sys
 
 sys.path.insert(0, "code")
 sys.path.insert(0, "code/20")
+from _meter import meter                                 # noqa: E402
 from _taskset import TASKS, score                        # noqa: E402
 from clarity.config import MODEL_FAST                    # noqa: E402
 from clarity.v0_6.retrieve import Retriever              # noqa: E402
@@ -41,28 +42,32 @@ rows = {"first answer": [0, 0, 0], "after a critic": [0, 0, 0]}
 changed = kept = 0
 for task in TASKS:
     for _ in range(REPEATS):
-        first = Agent(tools, budget=Budget(steps=8)).run(task["q"], system=SOLO)
+        with meter() as first_cost:
+            first = Agent(tools, budget=Budget(steps=8)).run(task["q"], system=SOLO)
         f, c = score(task, first.answer)
         rows["first answer"][0] += f
         rows["first answer"][1] += c
-        rows["first answer"][2] += first.tokens
+        rows["first answer"][2] += first_cost.tokens
 
-        note = critique(task["q"], first.answer)
-        if note.upper().startswith("NO ISSUES"):
-            final, tokens = first.answer, 0
-            kept += 1
-        else:
-            changed += 1
-            revise = Agent(tools, budget=Budget(steps=8))
-            second = revise.run(
-                f"{task['q']}\n\nYour first answer was:\n{first.answer}\n\n"
-                f"A reviewer raised this:\n{note}\n\nAnswer again, correcting what "
-                f"is genuinely wrong and keeping what is right.", system=SOLO)
-            final, tokens = second.answer, second.tokens
+        # Everything after the first answer — the critique and any second answer —
+        # counted at the client, rather than estimated.
+        with meter() as review_cost:
+            note = critique(task["q"], first.answer)
+            if note.upper().startswith("NO ISSUES"):
+                final = first.answer
+                kept += 1
+            else:
+                changed += 1
+                revise = Agent(tools, budget=Budget(steps=8))
+                second = revise.run(
+                    f"{task['q']}\n\nYour first answer was:\n{first.answer}\n\n"
+                    f"A reviewer raised this:\n{note}\n\nAnswer again, correcting what "
+                    f"is genuinely wrong and keeping what is right.", system=SOLO)
+                final = second.answer
         f, c = score(task, final)
         rows["after a critic"][0] += f
         rows["after a critic"][1] += c
-        rows["after a critic"][2] += first.tokens + tokens + 500
+        rows["after a critic"][2] += first_cost.tokens + review_cost.tokens
 
 total = len(TASKS) * REPEATS
 print(f"{len(TASKS)} questions, {REPEATS} runs each — {total} answers\n")
@@ -93,11 +98,11 @@ else:
 print()
 print(f"The critic objected {changed} times out of {total} and passed the other "
       f"{kept}. Every one of")
-print("those objections cost a second full answer, and on this task set they did not")
-print("buy a better one.")
-print()
-print("That is consistent with §9.6, where self-reflection was the worst of four")
-print("prompting patterns, and the reason is the same. The mistakes here are not")
-print("visible in the output: a cause that is subtly the wrong quarter reads")
-print("perfectly well. Checking it means searching the documents again, which is not")
-print("reviewing — it is redoing the work and hoping the second attempt is luckier.")
+print("those objections cost a second full answer.")
+if after <= before:
+    print()
+    print("That is consistent with §9.5, where reflection scored worst of the six")
+    print("prompting patterns, and the reason is the same. The mistakes here are not")
+    print("visible in the output: a cause that is subtly the wrong quarter reads")
+    print("perfectly well. Checking it means searching the documents again, which is not")
+    print("reviewing — it is redoing the work and hoping the second attempt is luckier.")

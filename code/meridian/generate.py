@@ -173,7 +173,7 @@ def build_reference(rng: random.Random):
 
 
 def region_weight(region_id: int, qi: int, whale_gone: bool) -> float:
-    """Regional demand: a mild trend per region, plus the East collapse after the churn."""
+    """Regional demand: a mild trend per region, plus the Midwest collapse after the churn."""
     base = {1: 1.00, 2: 0.92, 3: 0.78, 4: 0.64, 5: 1.12}[region_id]
     trend = 1.0 + 0.018 * qi
     if region_id == 3 and whale_gone:
@@ -410,9 +410,10 @@ CLAUSE_BANK = {
 
 def write_contracts(out, suppliers, rng):
     """
-    Forty supplier contracts. Eight of them are near-identical by design: same structure,
-    same wording, differing only in the price-adjustment cap. That is the case naive
-    retrieval gets wrong, and Chapter 14 uses it.
+    Forty supplier contracts. Eight of them are near-identical by design: same structure and
+    same wording, differing only in their numbers (the price cap, notice periods, payment
+    days) and in supplier and dates. That is the case naive retrieval gets wrong, and
+    Chapter 14 uses it.
     """
     d = os.path.join(out, "documents", "contracts")
     os.makedirs(d, exist_ok=True)
@@ -696,7 +697,7 @@ def write_poisoned(out):
     The fourth is the important one. The first three announce themselves — an override in
     capitals, a comment, an instruction addressed to "Assistant" — and a defence tuned to
     spot assertiveness catches all three. The fourth claims no authority at all: it reads
-    as an ordinary reporting convention, and §29.3 measured it landing where the others
+    as an ordinary reporting convention, and §29.4 measured it landing where the others
     did not.
     """
     d = os.path.join(out, "documents", "poisoned")

@@ -1,0 +1,9 @@
+40 contracts, 200 real periods
+
+  what has to match              precision  recall     F1
+  days only                          94.7%  100.0%  97.3%
+  days and purpose                   96.2%  100.0%  98.0%
+  clause, days and purpose           96.2%  100.0%  98.0%
+
+extracted but not real: 8; most common: [(('payment', 12), 3), (('breach_remedy', 12), 3), (('payment', 365), 2)]
+real but not extracted: 0

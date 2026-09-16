@@ -89,7 +89,7 @@ print()
 print(f"Streaming did not make the work faster — both answers took about the same")
 print(f"time. What changed is that a person sees the system working at "
       f"{first_at:.2f}s instead")
-print(f"of staring at a spinner for {plain_total:.0f} seconds, and §28.6 is about how "
+print(f"of staring at a spinner for {plain_total:.0f} seconds, and §28.7 is about how "
       f"much that")
 print("difference is worth.")
 print()
@@ -100,6 +100,6 @@ print("interface wants; a *step* stream is what an agent should emit, because 's
 print("the 2024 Q3 review' is information and a half-written sentence is not.")
 print()
 print("And the work runs on a thread while the endpoint stays async. The engine is")
-print("synchronous and takes seconds — §25.7 is what happens when you forget that —")
+print("synchronous and takes seconds — §25.3 is what happens when you forget that —")
 print("so it goes to an executor and posts its progress back to the loop through a")
 print("queue.")

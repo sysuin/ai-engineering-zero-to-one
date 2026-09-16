@@ -1,15 +1,15 @@
 Q: What was revenue in 2024 Q3, and what caused the Midwest decline?
 
   think  -> query_warehouse({'question': 'Revenue in 2024 Q3'})
-  think  -> search_documents({'query': 'Midwest decline cause in 2024 Q3 )
+  think  -> search_documents({'query': 'Midwest decline in 2024 Q3 revenu)
   act    <- {"rows": [[8461841.81]], "sql": "SELECT ROUND(SUM(revenue), 2) A
   act    <- [{"source": "qbr-2024-Q3.md", "heading": "Summary", "text": "###
   answer    Revenue in 2024 Q3 was **$8,461,841.81**.
 
-The Midwest decline was caused primarily by **Halloway Group not renewing at the end of the previous quarter**. The review says Halloway 
+The Midwest decline was mainly caused by **Halloway Group not renewing at the end of the previous quarter**. The review says Halloway was
 
 checkpoints written: 5
-store: data/meridian/checkpoints.db (4 KB)
+store: data/meridian/checkpoints.db
 
 Every one of those rows is a resumable point. That is the whole difference, and
 it is not something you get by adding a feature to the loop — it comes from the

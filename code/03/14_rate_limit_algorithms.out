@@ -1,0 +1,6 @@
+50 requests arrive; the limit is 10 per 1s
+
+  algorithm      allowed rejected   most allowed in any 1-second span
+  fixed window        30       20   20
+  sliding log         20       30   10
+  token bucket        27       23   19

@@ -1,0 +1,14 @@
+1,024 x 4,096 weights, 0.1% of them outliers
+
+  format                       bits/weight  weight error  output error
+  unquantised (the reference)        16.00          0.0%          0.0%
+  8-bit, one scale                    8.00         20.0%         20.0%
+  4-bit, one scale                    4.00         79.6%         79.4%
+  4-bit, a scale per 128              4.12         20.9%         20.9%
+  4-bit, a scale per 32               4.50         12.2%         12.2%
+
+One scale for the whole tensor must stretch to the largest outlier, so at four
+bits nearly every ordinary weight rounds to zero. A scale per small group costs a
+fraction of a bit and keeps the outliers from setting everyone else's precision.
+A relative error on one matrix is not quality on a task; measure that on the eval
+set, because whether 12% here costs anything depends on the model and the task.

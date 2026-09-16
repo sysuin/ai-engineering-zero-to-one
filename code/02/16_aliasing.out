@@ -1,0 +1,11 @@
+len(history): 2    same object? True
+after copy + append -> history: 1  copied: 2
+history[0] now says: 'Answer at length.'
+after deepcopy, history[0]: 'Answer in one sentence.'
+
+first call:  ['hello']
+second call: ['hello', 'goodbye']
+fixed, first:  ['hello']
+fixed, second: ['goodbye']
+
+label: 'Q3'   other: 'Q3 2024'

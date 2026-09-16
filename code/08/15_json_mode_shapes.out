@@ -1,0 +1,15 @@
+run 1: 40 contracts, all parsed
+  distinct top-level key sets     1
+  distinct full shapes           26
+  contracts sharing the commonest shape   5
+  the commonest shape's key paths:
+    .payment_terms.disputed_amounts
+    .payment_terms.invoice_payment_due
+    .price_adjustment_terms.adjustment_cap
+    .price_adjustment_terms.adjustment_frequency
+    .price_adjustment_terms.base_prices
+    .price_adjustment_terms.excess_adjustments
+run 2: 40 contracts, all parsed
+  distinct top-level key sets     1
+  distinct full shapes           26
+  contracts sharing the commonest shape   7

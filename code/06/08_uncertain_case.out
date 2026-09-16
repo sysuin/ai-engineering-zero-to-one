@@ -1,0 +1,16 @@
+base case, every input at its most likely value: payback 0.52 years
+
+100,000 draws with every input uncertain at once:
+  median payback            0.75 years
+  10th to 90th percentile   0.39 to 2.06 years
+  pays back within a year   67% of draws
+  never pays back           2.0% of draws
+
+which uncertainty matters most (rank correlation with payback):
+  minutes per ticket       -0.60
+  build days               +0.38
+  cost of an error ($)     +0.35
+  errors per 100 handled   +0.35
+  tickets per year         -0.34
+  hourly rate ($)          -0.22
+  share handled (0-1)      -0.14

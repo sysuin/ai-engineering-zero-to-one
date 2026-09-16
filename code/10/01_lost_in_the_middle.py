@@ -62,6 +62,13 @@ print()
 print("The fact is stated once, in plain language, in a document the model was given in")
 print("full. Nothing was summarised, truncated or retrieved.")
 print()
-print("Whether it is found depends on where it sits — and the longer the context, the")
-print("more that matters. 'It fits in the window' is a statement about the window, not")
-print("about whether the model will use it.")
+missed = {tokens: [d for d, f in row.items() if not f] for tokens, row in results.items()}
+total_missed = sum(len(v) for v in missed.values())
+if total_missed == 0:
+    print(f"Found at every depth, at every size up to {max(results):,} tokens. For a single fact")
+    print("stated plainly, position did not matter here. Harder questions are another matter.")
+else:
+    print(f"Missed {total_missed} time(s): " + "; ".join(
+        f"{t:,} tokens at {', '.join(f'{float(d):.0%}' for d in ds)}" for t, ds in missed.items() if ds))
+    print("Where it is missed matters more than how often: check whether the misses cluster")
+    print("in the middle, and whether they grow with the size of the context.")

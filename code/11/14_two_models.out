@@ -1,0 +1,17 @@
+index: 1,454 chunks embedded with text-embedding-3-small (1536 numbers each)
+74 document questions; right = a chunk from the answer's document in the top 5
+
+  query vectors from                            right  top score
+  text-embedding-3-small (the index model)      41/74       0.61
+  text-embedding-3-large, dimensions=1536        3/74       0.05
+  text-embedding-ada-002                         3/74       0.07
+  five chunks drawn at random (expected)          1.8
+  text-embedding-3-small, dimensions=512      
+    ValueError: size 1536 is different from 512
+
+half migrated: every other document, 30 of 59 (1,228 chunks),
+re-embedded with text-embedding-3-large
+  query vectors from          answer in a  answer in a  top score
+                                moved doc     kept doc
+  text-embedding-3-small             0/41        30/33       0.60
+  text-embedding-3-large            34/41         0/33       0.59

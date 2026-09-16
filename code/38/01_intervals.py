@@ -113,8 +113,10 @@ print(f"  But the comparison rests on only {discordant} cases, because the "
       f"{both_right + both_wrong} where they")
 print("  agree carry no information about which is better.")
 
-# McNemar's exact test, which is a binomial test on the discordant pairs.
-p = sum(math.comb(discordant, k) for k in range(a_only, discordant + 1)) / 2 ** discordant
+# McNemar's exact test, which is a binomial test on the discordant pairs. Two-sided, as in
+# Chapters 14 and 21: before the run, either system could have been the better one.
+tail = sum(math.comb(discordant, k) for k in range(min(a_only, b_only) + 1)) / 2 ** discordant
+p = min(1.0, 2 * tail)
 print(f"\n  McNemar's exact test on those {discordant}: p = {p:.3f} "
       f"({'significant' if p < 0.05 else 'not significant'} at 0.05)")
 print("\nPairing removes the case-to-case variation that dominates an unpaired")

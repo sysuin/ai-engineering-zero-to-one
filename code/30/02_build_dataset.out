@@ -19,15 +19,15 @@ Four checks, and the first one is the one that ruins projects.
 A case in both sets makes your evaluation report memorisation as skill, and
 the report will look excellent. It is the same failure as testing on your
 training data in any other field, and it is easier to commit here because the
-'data' is prose and the duplicate is a rephrasing rather than a copy — which
-is why the check hashes a normalised question rather than the whole example.
+'data' is prose and the duplicate is often a rephrasing rather than a copy. This
+check hashes the question with case and spacing removed, so it catches copies
+only; the next listing finds the leak it misses.
 
-On the size question: the honest answer is that hundreds of examples change
-behaviour and thousands are needed to change it reliably, and that the number
-matters far less than whether the examples agree with each other. Fifty
-consistent examples of a house style beat five hundred that were written by
-five people with different opinions — and an inconsistent training set is the
-one failure mode that more data makes worse.
+On the size question: start small, measure, and add data only when the
+measurement says the model is still short. The number matters far less than
+whether the examples agree with each other. Fifty consistent examples of a
+house style beat five hundred written by five people with different opinions,
+and an inconsistent training set is not fixed by more of it.
 
 What this listing does not do is run the fine-tune. That is a training job
 with a bill and a wait, and its result would be a model id that means nothing

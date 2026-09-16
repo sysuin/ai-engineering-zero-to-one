@@ -1,0 +1,15 @@
+from        to            change  fixed  broke  exact p   95% interval
+dense       fused k=1        +3pt      1      0    1.000   +0 to +10 points
+fused k=60  fused k=1        +0pt      1      1    1.000   -10 to +10 points
+dense       fused k=60       +3pt      1      0    1.000   +0 to +10 points
+BM25        dense           +10pt      5      2    0.453   -7 to +27 points
+
+questions a paired test needs to see a gain 80% of the time, at the 5% level
+    gain   questions it fixes   questions it breaks   needed
+     +7pt                   7%                    0%      115
+     +7pt                  10%                    3%      225
+     +7pt                  15%                    8%      390
+    +10pt                  20%                   10%      250
+    +20pt                  25%                    5%       65
+
+power of these 30 questions for the first row: 2%

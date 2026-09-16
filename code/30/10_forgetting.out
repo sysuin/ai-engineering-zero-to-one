@@ -1,0 +1,8 @@
+a 10-input network, trained on a broad task, then fine-tuned on a narrow one
+
+                                      broad task  narrow task
+  before fine-tuning                         98%          57%
+  fine-tuned on the narrow task              48%          98%
+    staying close to the start               84%          95%
+    staying very close                       91%          79%
+    with broad examples mixed in             88%          87%

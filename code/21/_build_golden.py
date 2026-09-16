@@ -2,7 +2,7 @@
 """
 Build Clarity's golden set: 120 cases, every one with a verified source.
 
-Two halves, and the split is the point of §21.7.
+Two halves, and the split is the point of §21.3.
 
 The **head** is generated from the structure the corpus actually has — a quarterly
 review says its revenue in a sentence shaped the same way every quarter, so a hundred
@@ -56,7 +56,7 @@ def sentence(text: str, needle: str) -> str:
 # The reviews round. The warehouse does not. A question like "what was revenue in
 # 2023 Q1" has two correct answers — $7,360,834 and $7,360,833.67 — and the first
 # version of this file accepted only the first, which scored the more accurate answer
-# as wrong ten times. §21.4 is that discovery.
+# as wrong ten times. §21.14 is that discovery.
 exact = sqlite3.connect(DB)
 
 

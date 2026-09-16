@@ -11,6 +11,7 @@ Scoring is two independent points per task — the number, and the cause — bec
 system that gets the arithmetic right and invents the reason is not half correct in any
 useful sense, and neither is the reverse.
 """
+import re
 
 # figure: the value that must appear, and how close counts
 # cause:  words that must appear, any one of them
@@ -49,33 +50,35 @@ TASKS = [
 ]
 
 
+NUMBER = re.compile(r"(-?)\$?(\d[\d,]*(?:\.\d+)?)\s*(million|m\b|bn|billion|k\b|thousand)?",
+                    re.IGNORECASE)
+SCALE = {"million": 1e6, "m": 1e6, "bn": 1e9, "billion": 1e9, "k": 1e3, "thousand": 1e3}
+
+
+def numbers(text: str) -> list[float]:
+    """Every number in the text, with 'million', 'm', 'k' and friends applied."""
+    found = []
+    for sign, digits, unit in NUMBER.findall(text):
+        try:
+            value = float(digits.replace(",", ""))
+        except ValueError:
+            continue
+        found.append(value * SCALE.get(unit.lower(), 1) if unit else value)
+    return found
+
+
 def score(task: dict, answer: str) -> tuple[int, int]:
     """Two points, judged separately: did the number appear, did the cause appear."""
-    text = (answer or "").lower()
-    cause = 1 if any(word in text for word in task["cause"]) else 0
-
+    text = answer or ""
+    cause = 1 if any(word in text.lower() for word in task["cause"]) else 0
     if task["figure"] is None:
         return cause, cause          # no figure to check; the cause carries both
 
-    digits = "".join(c for c in text if c.isdigit() or c in ".,-%")
+    # A number anywhere in the answer within tolerance of the target, in whatever shape
+    # the model wrote it. An earlier version matched substrings of the rounded target —
+    # "31" for a margin of 31.4 — which counted any answer containing "2031" as right,
+    # and joined every digit in the answer into one string before looking for numbers.
     wanted = abs(task["figure"])
-    figure = 0
-    # Look for the value in any of the shapes a model writes it in: full precision,
-    # rounded, thousands-separated, or in millions.
-    for form in (f"{wanted:,.2f}", f"{wanted:,.0f}", f"{wanted:.2f}", f"{wanted:.0f}",
-                 f"{wanted:,.1f}", f"{wanted / 1e6:,.2f}", f"{wanted / 1e6:,.1f}"):
-        if form.lstrip("0") and form in text:
-            figure = 1
-            break
-    if not figure:
-        # A last chance: any number in the text within tolerance of the target.
-        import re
-        for found in re.findall(r"-?[\d,]+\.?\d*", digits):
-            try:
-                value = abs(float(found.replace(",", "")))
-            except ValueError:
-                continue
-            if value and abs(value - wanted) <= wanted * task["tolerance"]:
-                figure = 1
-                break
+    figure = int(any(abs(value - wanted) <= wanted * task["tolerance"]
+                     for value in numbers(text)))
     return figure, cause

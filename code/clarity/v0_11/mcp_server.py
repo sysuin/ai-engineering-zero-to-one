@@ -8,7 +8,7 @@ server grows its own copy of the logic you have two systems that disagree on Fri
 Three rules, and the first one has cost more people an afternoon than the other two
 together:
 
-  stdout is the wire      one stray print() corrupts a frame and the client hangs up
+  stdout is the wire      a stray print() before serving puts junk in the protocol
   the schema is the API   a description is read by a model, so write it for one
   expose no more than     the server is a front door, not a back door: same tools,
   the app exposes         same scoping, same refusals
@@ -48,7 +48,7 @@ def build(name: str = "clarity") -> MCPServer:
                                     "remembered between calls.")
 
     # The type hints are not decoration: the SDK turns them into the JSON Schema the
-    # client advertises to a model. A missing annotation is a missing parameter.
+    # client advertises to a model. A missing annotation is advertised as a string.
     @server.tool(description=tools["search_documents"].description)
     def search_documents(query: str, limit: int = 5) -> list[dict]:
         return tools["search_documents"].run(query=query, limit=limit)
@@ -74,8 +74,8 @@ def build(name: str = "clarity") -> MCPServer:
     # front of a person to pick from, and cannot do that with tools.
     # Exactly the folders the retriever indexes, taken from the retriever rather
     # than retyped. A first draft of this line was `rglob("*.md")`, which quietly
-    # published the tickets, and the prompt-injection corpus Chapter 29 keeps on
-    # disk. A front door that exposes more than the app is not a front door.
+    # published the prompt-injection corpus Chapter 29 keeps on disk. A front
+    # door that exposes more than the app is not a front door.
     documents = sorted(path for _, folder in SOURCES
                        for path in folder.glob("*.md"))
 

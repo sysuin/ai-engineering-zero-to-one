@@ -1,0 +1,13 @@
+74 golden-set questions answered by a passage; 5 quarterly kinds x 12 quarters, 14 one-off questions
+recall@5 with the plain query embedding: 57%
+
+five folds, rows assigned at random:
+    each fold's holdout, before -> after: 27%->27%  33%->47%  80%->80%  67%->60%  79%->79%
+    all holdout questions: 57% -> 58%;   training questions after: 77%
+
+five folds, each holding out one quarterly kind of question entirely (and a share of the one-offs):
+    each fold's holdout, before -> after: 87%->93%  67%->80%  67%->93%  27%->40%  36%->36%
+    all holdout questions: 57% -> 69%;   training questions after: 76%
+
+the adapter trains 24,576 numbers; the index's 1,454 vectors are untouched
+for comparison, the rung below: the same 74 questions against an index re-embedded with Chapter 14's headers, no training: 86%

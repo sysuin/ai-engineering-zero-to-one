@@ -1,0 +1,10 @@
+appendix: 400 sections, 29,630 tokens
+
+  question                       right   a sample answer
+  combine two facts            3/3     '2115'
+  answer is absent             3/3     'NOT STATED'
+  a later fact supersedes      3/3     'QX-5190'
+  count across the document    0/3     '20'
+
+the count, done the other way: extract each of the 400 sections, count in code
+  counted 23; the true number is 23; same items: True

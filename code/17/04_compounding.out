@@ -1,0 +1,16 @@
+chance the whole run is right, if every step must be
+
+   per step       1 step       5 steps      10 steps      20 steps      40 steps
+        99%        99.0%        95.1%        90.4%        81.8%        66.9%
+        95%        95.0%        77.4%        59.9%        35.8%        12.9%
+        90%        90.0%        59.0%        34.9%        12.2%         1.5%
+
+the same, if half the wrong steps are noticed and repaired
+
+        99%        99.5%        97.5%        95.1%        90.5%        81.8%
+        95%        97.5%        88.1%        77.6%        60.3%        36.3%
+        90%        95.0%        77.4%        59.9%        35.8%        12.9%
+
+At 95% a step, a run of 14 steps is more likely wrong than right.
+Recovery helps only if errors are visible to the agent — which is the argument
+for tools whose results can be checked, and errors that say what went wrong.

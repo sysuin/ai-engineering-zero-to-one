@@ -1,16 +1,16 @@
 pattern               accuracy   calls    tokens   seconds
-direct                  90.0%      40    22,034       4.0
-chain of thought        85.0%      40    28,755       6.7
-structured CoT         100.0%      40    29,698       6.0
-self-consistency        85.0%     200   110,012      19.0
-reflection              72.5%     120    73,176      16.7
-decomposition          100.0%      40    24,576       4.6
+direct                  90.0%      40    22,040       3.7
+chain of thought       100.0%      40    28,832       6.5
+structured CoT         100.0%      40    29,671       5.3
+self-consistency        90.0%     200   109,982      17.0
+reflection              65.0%     120    72,994      15.6
+decomposition          100.0%      40    24,576       4.0
 
 40 contracts, 10 of them genuinely compliant.
 Predicted compliant, by pattern:
   direct                 6  (truth: 10)
-  chain of thought      16  (truth: 10)
+  chain of thought      10  (truth: 10)
   structured CoT        10  (truth: 10)
   self-consistency       6  (truth: 10)
-  reflection            17  (truth: 10)
+  reflection            20  (truth: 10)
   decomposition         10  (truth: 10)

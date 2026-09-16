@@ -1,0 +1,37 @@
+1. In flight: the average, and the moments a design has to survive
+
+  design                                         mean   p99  p99.9
+  a support copilot over ten years of tickets     0.8     3      5
+  a nightly contract-risk enricher                6.9    14     16
+  a regulated advisory assistant                  0.1     1      2
+  an IT helpdesk agent that can act               0.5     3      4
+  meeting summaries inside a video product      111.1   136    145
+
+  simulated for the busiest: two hours of random arrivals, lognormal durations
+    mean 110.0   p99 136   p99.9 142
+
+2. A pool of 8 slots that turns work away when full, like Clarity's bulkhead
+
+  offered load  turned away   simulated
+             1       0.00%      0.00%
+             2       0.09%      0.09%
+             4       3.04%      3.14%
+             6      12.19%     12.09%
+             8      23.56%     23.69%
+
+3. The same 8 slots, but arrivals wait for one: a 10s request's extra wait
+
+  utilisation  must wait  mean wait  lognormal sim
+          50%         6%       0.1s           0.1s
+          70%        27%       1.1s           0.8s
+          80%        46%       2.9s           2.0s
+          90%        70%       8.8s           6.4s
+          95%        84%      21.1s          15.2s
+
+From 50% to 95% busy, the mean wait grows 143-fold in the formula and 138-fold
+in the simulation. The formula assumes exponential durations; the simulation's
+lognormal ones vary less and wait less, and bend at the same place.
+
+Simulated over formula, from 70% busy up: 0.68 to 0.73.
+The Allen-Cunneen correction for durations this variable, (1 + CV^2) / 2,
+predicts 0.72.

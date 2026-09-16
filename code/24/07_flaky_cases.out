@@ -1,0 +1,16 @@
+24 cases, the same passages every time, 10 runs each
+
+  passed every run     15
+  failed every run      3
+  flaky                 6
+    qbr-2023-Q2-weakest      passed  2 of 10
+    qbr-2023-Q4-weakest      passed  2 of 10
+    qbr-2023-Q2-strongest    passed  4 of 10
+    qbr-2023-Q1-weakest      passed  5 of 10
+    qbr-2024-Q1-strongest    passed  8 of 10
+    qbr-2023-Q3-weakest      passed  9 of 10
+
+A single run would call about 3.0 of the flaky cases failures, and a different
+handful on each run. Triage those as bugs and some fixes are fixes for noise;
+ignore them and the cases that fail most of the time go unexamined. Label a case by
+its rate over several runs, and spend the debugging time on the ones that fail most.

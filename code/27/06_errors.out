@@ -1,0 +1,15 @@
+  error                status  action     why
+  rate limited            429  retry      after the 7s it asked for
+  out of credit           429  fail       no retry will pay the bill
+  server error            500  retry      the provider's fault; then fall back
+  overloaded              503  retry      the provider's fault; then fall back
+  timed out                 -  retry      transient; fall back if it persists
+  connection refused        -  retry      transient; fall back if it persists
+  prompt too long         400  shrink     trim it, or route to a larger window
+  malformed request       400  fail       every provider will refuse it
+  bad key                 401  fail       configuration: page a person
+  no access to model      404  fall back  another provider may serve it
+
+Clarity's gateway on a malformed request: primary called 1, backup called 1.
+It falls back on every exception, so a request no provider will accept is sent
+to each of them in turn, and its real cause arrives inside a RuntimeError.

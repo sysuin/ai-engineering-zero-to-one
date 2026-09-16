@@ -15,9 +15,9 @@ pandas>=2.0
 
 # --- Part III: embeddings, vectors, retrieval, the warehouse
 numpy>=1.26
-chromadb>=0.5         # §12.6 only — one listing, to show what a store gives you
+chromadb>=0.5         # §12.10 only — one listing, to show what a store gives you
 hnswlib>=0.8          # §12.3 only — the approximate index, when exact stops fitting
-pdfplumber>=0.11      # §13.2, extracting text from documents that are not text
+pdfplumber>=0.11      # §13.3, extracting text from documents that are not text
 
 # --- Part IV: tools, agents, frameworks, MCP
 langgraph>=0.2        # Ch 18, the framework chapter — not a dependency of Clarity
@@ -37,6 +37,7 @@ opentelemetry-sdk>=1.25
 pytest>=8.0
 ruff>=0.5
 pypdf>=4.0            # the build's page-count check
+fonttools>=4.50       # _lint_glyphs.py: what the mono font can actually print
 
 # --- Optional, and only for docker compose: Postgres and Redis instead of files
 # psycopg[binary]>=3.1

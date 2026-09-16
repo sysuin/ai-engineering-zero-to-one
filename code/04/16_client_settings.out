@@ -1,0 +1,10 @@
+default timeout:     Timeout(connect=5.0, read=600, write=600, pool=600)
+default max_retries: 2
+
+max_retries=2: APITimeoutError after 1.66s and 3 HTTP attempts
+
+max_retries=0: APITimeoutError after 0.09s and 1 HTTP attempt
+
+The retries were silent. With max_retries=2 the same error took several times as
+long to arrive. Chapter 26 decides where retries belong; the first step is to know
+that the library is already doing some.

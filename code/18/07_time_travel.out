@@ -1,0 +1,14 @@
+5 checkpoints in the run, oldest first:
+  next=('__start__',)  notes=0
+  next=('plan',)       notes=0
+  next=('fetch',)      notes=1
+  next=('write',)      notes=2
+  next=()              notes=3
+
+the branch, as it now stands:
+  plan: brief 2024 Q3
+  fetch: figures for 2025 Q1
+  write: briefing for 2025 Q1
+
+checkpoints now held for this thread: 8
+the original run is still there: True

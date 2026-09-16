@@ -1,0 +1,5 @@
+float32: 1,024 bytes per vector; PQ code: 8 bytes (128x smaller); mean reconstruction error 0.649
+
+  search the codes only                recall@10  41.2%
+  codes, then re-rank the top 50       recall@10  81.3%
+  codes, then re-rank the top 200      recall@10  98.5%

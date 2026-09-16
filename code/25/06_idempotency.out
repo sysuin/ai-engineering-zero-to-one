@@ -1,0 +1,7 @@
+  no key             responses [200, 200, 200]   work done 3 time(s)
+  idempotency key    responses [200, 200, 409]   work done 1 time(s)
+
+Three attempts at one request. Without a key the server did the work three times;
+with one it did it once, told the overlapping retry to wait, and replayed the stored
+result to the late one. The key is chosen by the client, once per logical request,
+and reused on every retry of it — which is what makes the retry safe to send.

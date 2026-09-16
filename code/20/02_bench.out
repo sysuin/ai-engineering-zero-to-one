@@ -1,18 +1,26 @@
-one agent      fig 24/24  cause 21/24   2,147 tok    5.8s   3.5 calls
-supervisor + 2 fig 23/24  cause 22/24   3,726 tok   10.6s   7.8 calls
+one agent      fig 24/24  cause 21/24   3,504 tok    5.5s   6.2 calls
+supervisor + 2 fig 21/24  cause 23/24   5,044 tok   10.1s  10.2 calls
 
-accuracy   one agent 94%   team 94%
-tokens     1.7x
+accuracy   one agent 94%   team 92%
+tokens     1.4x
 latency    1.8x
-calls      2.2x
+calls      1.6x
 
 Per task, where they differ:
-  What was revenue in 2024 Q3, and what does the compa…
-     one agent  figure 3/3  cause 3/3
-     team       figure 3/3  cause 1/3
   What was gross margin in 2025 Q1, and what explanati…
      one agent  figure 3/3  cause 3/3
      team       figure 2/3  cause 3/3
+  What was revenue in 2024 Q2, and what new category a…
+     one agent  figure 3/3  cause 3/3
+     team       figure 1/3  cause 3/3
   By how much did revenue change from 2024 Q3 to 2024 …
      one agent  figure 3/3  cause 0/3
-     team       figure 3/3  cause 3/3
+     team       figure 3/3  cause 2/3
+
+Where the team lost a figure, in the first line of its own answer:
+  What was gross margin in 2025 Q1, and what e…
+     Gross margin in 2025 Q1 was **2,853,267.19** in gross profit terms.
+  What was revenue in 2024 Q2, and what new ca…
+     I couldn’t verify the 2024 Q2 revenue figure from the warehouse because th
+  What was revenue in 2024 Q2, and what new ca…
+     Revenue in 2024 Q2: unavailable.

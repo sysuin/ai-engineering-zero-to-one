@@ -6,6 +6,5 @@
 The fact is stated once, in plain language, in a document the model was given in
 full. Nothing was summarised, truncated or retrieved.
 
-Whether it is found depends on where it sits — and the longer the context, the
-more that matters. 'It fits in the window' is a statement about the window, not
-about whether the model will use it.
+Found at every depth, at every size up to 29,652 tokens. For a single fact
+stated plainly, position did not matter here. Harder questions are another matter.

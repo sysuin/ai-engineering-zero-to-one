@@ -44,7 +44,7 @@ def load() -> list[dict]:
 
 # Models write curly apostrophes and dashes. The first version of this file did not,
 # and scored every one of Clarity's twenty refusals as a failure — 0 out of 20, on a
-# system that was refusing correctly every time. §21.9 is that afternoon.
+# system that was refusing correctly every time. §21.5 is that afternoon.
 PUNCTUATION = str.maketrans({"\u2019": "'", "\u2018": "'", "\u201c": '"',
                              "\u201d": '"', "\u2013": "-", "\u2014": "-",
                              "\u00a0": " "})

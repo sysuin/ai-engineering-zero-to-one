@@ -1,18 +1,17 @@
 8 questions, 3 runs each — 24 answers
 
-  first answer     figure 24/24   cause 21/24    2,091 tokens/answer
-  after a critic   figure 24/24   cause 21/24    3,930 tokens/answer
+  first answer     figure 24/24   cause 21/24    3,281 tokens/answer
+  after a critic   figure 24/24   cause 21/24    5,686 tokens/answer
 
-  accuracy 94% -> 94%   for 1.9x the tokens
-  the critic found something to say 12 times, and passed 12
+  accuracy 94% -> 94%   for 1.7x the tokens
+  the critic found something to say 15 times, and passed 9
 
-It changed nothing at all, for 1.9x the tokens.
+It changed nothing at all, for 1.7x the tokens.
 
-The critic objected 12 times out of 24 and passed the other 12. Every one of
-those objections cost a second full answer, and on this task set they did not
-buy a better one.
+The critic objected 15 times out of 24 and passed the other 9. Every one of
+those objections cost a second full answer.
 
-That is consistent with §9.6, where self-reflection was the worst of four
+That is consistent with §9.5, where reflection scored worst of the six
 prompting patterns, and the reason is the same. The mistakes here are not
 visible in the output: a cause that is subtly the wrong quarter reads
 perfectly well. Checking it means searching the documents again, which is not

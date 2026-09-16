@@ -63,9 +63,14 @@ for M, ef_construction in ((8, 40), (32, 200)):
 
 Path("code/12/_hnsw.json").write_text(json.dumps(results, indent=2))
 
-print("ef_search is the dial. Larger explores more of the graph: slower, more accurate.")
-print("It is set per query, not at build time, so one index can serve a fast path and")
-print("an accurate one.")
-print()
-print("M and ef_construction are build-time, and changing them means rebuilding. Larger")
-print("M means more links per node: better recall, more memory, slower to build.")
+def spread(M):
+    values = [v["recall"] for k, v in results["search"].items() if k.startswith(f"M={M},")]
+    return max(values) - min(values)
+
+
+between_m = (np.mean([v["recall"] for k, v in results["search"].items() if k.startswith("M=32,")])
+             - np.mean([v["recall"] for k, v in results["search"].items() if k.startswith("M=8,")]))
+print(f"Across a twentyfold range, ef_search moved recall {100 * spread(8):.1f} points at M=8 and")
+print(f"{100 * spread(32):.1f} at M=32; changing M moved it {100 * between_m:.1f} points on average.")
+print("Which dial binds depends on the data — and 48,546 of these vectors are random noise,")
+print("the hardest data an index can be given. The next listing checks that.")

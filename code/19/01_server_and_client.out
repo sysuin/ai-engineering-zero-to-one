@@ -22,5 +22,5 @@ server stderr (data/meridian/server.log):
   clarity mcp server starting on stdio
 
 Nothing in this file knows what Clarity is. It asked a process what it
-could do, was told, and called one of the answers. The client was written
-before the server existed, and that indirection is the entire point.
+could do, was told, and called one of the answers. The client could have been
+written before the server existed, and that indirection is the entire point.

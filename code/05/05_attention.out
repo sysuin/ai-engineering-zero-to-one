@@ -2,12 +2,9 @@
     'p'         1.000  ########################################
 
 "...because it was too small."
-    'van'       0.904  ####################################
-    'p'         0.095  ####
+    'van'       0.923  #####################################
+    'p'         0.076  ###
 
-One adjective changed, seven words after the two nouns, and the answer moves.
+One adjective changed, 4 words after the last noun. The model's first choice moved: 'p' then 'van'.
 Nothing about 'pallet' or 'van' changed. What changed is which of them the
 model was paying attention to when it read 'it'.
-
-That is the whole idea. Attention is a learned answer to the question:
-for this word, which earlier words matter?

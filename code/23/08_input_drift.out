@@ -1,0 +1,14 @@
+  population stability index      kind of question  coverage
+  week 1 against week 2 (no change)          0.014     0.001
+  week 1 against week 3 (the change)         0.055     0.218
+
+  share by kind                  week 1   week 3
+    contract                         6%       7%
+    figures                         54%      43%
+    operations                       4%       6%
+    other                           35%      45%
+
+  share by coverage              week 1   week 3
+    close                           55%      41%
+    far                              2%      13%
+    near                            43%      46%

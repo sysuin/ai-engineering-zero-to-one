@@ -1,0 +1,9 @@
+embedding 1454 chunks again, each with a one-line header ...
+
+example header: 'qbr-2024-Q3 · 2024 Q3 · Meridian Supply Co. — Quarterly Business Review'
+
+                          all 30   near-duplicate      identifier      paraphrase
+  dense, text only           77%              50%             50%            100%
+  dense, with headers        97%             100%            100%            100%
+  hybrid, text only          80%              50%             50%            100%
+  hybrid, with headers      100%             100%            100%            100%

@@ -1,0 +1,12 @@
+'12'       -> 12
+' 7 '      -> 7
+'twelve'   -> rejected: quantity must be a whole number, got 'twelve'
+'-3'       -> rejected: quantity must be positive, got -3
+'4.0'      -> rejected: quantity must be a whole number, got '4.0'
+
+total 44.50 from 2 rows; rejected: [(2, "quantity must be a whole number, got 'x'")]
+
+swallowing total: 0.0  <- every row failed, silently
+
+caught: quantity must be positive, got 0
+finally: always runs

@@ -1,0 +1,722 @@
+[
+  {
+    "style": "an empty list",
+    "question": "What is Meridian's employee headcount?",
+    "answer": "I couldn\u2019t find Meridian\u2019s employee headcount in the available documents, and I don\u2019t have a warehouse source for headcount figures.\n\nIf you want, I can try a broader document search for terms like \u201cFTE,\u201d \u201cemployees,\u201d \u201cstaff,\u201d or \u201cpeople.\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is Meridian's employee headcount?",
+    "answer": "I couldn\u2019t find Meridian\u2019s employee headcount in the available documents, and headcount isn\u2019t something I can reliably infer from the sales database.\n\nIf you want, I can help look for it in a specific source type, like:\n- quarterly reviews\n- contracts\n- support tickets\n- an HR or org document if you have one to search",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "Who is the Chief Financial Officer?",
+    "answer": "I couldn\u2019t find a Meridian document that identifies the Chief Financial Officer.\n\nIf you want, I can keep searching for related references like:\n- \u201cCFO\u201d\n- \u201cfinance leadership\u201d\n- \u201cexecutive team\u201d\n- \u201cofficer\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "Who is the Chief Financial Officer?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the Chief Financial Officer. If you want, I can search for related titles like \u201cCFO,\u201d \u201cfinance lead,\u201d or \u201cVP Finance.\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What was revenue in 2026 Q1?",
+    "answer": "I couldn\u2019t retrieve a numeric result for 2026 Q1 revenue from the warehouse query. The query returned a null value.\n\nIf you want, I can try a narrower version of the question, like revenue by region or category for 2026 Q1.",
+    "abstained": false
+  },
+  {
+    "style": "an empty list",
+    "question": "What was revenue in 2026 Q1?",
+    "answer": "I couldn\u2019t retrieve a result for 2026 Q1 revenue from the sales database.",
+    "abstained": false
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the customer churn rate?",
+    "answer": "I can\u2019t compute a customer churn rate from the available sales data, and I couldn\u2019t find a documented churn definition in the reviews, contracts, or support tickets.\n\nIf you want, I can help you define churn from the data you do have, for example:\n- customer-level repeat purchase loss over a period\n- revenue churn\n- logo churn\n- cohort retention\n\nIf you have a specific churn definition or time window, send it and I\u2019ll calculate it.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the customer churn rate?",
+    "answer": "I can\u2019t compute customer churn rate from the sales database available here. The warehouse only contains sales metrics like revenue, margin, orders, units, cost, and discounts\u2014not retention or churn data.\n\nIf you have a document that defines churn or reports it, I can look for that.",
+    "abstained": false
+  },
+  {
+    "style": "an empty list",
+    "question": "Which insurer underwrites the product liability cover?",
+    "answer": "I couldn\u2019t find a matching document passage for the product liability cover underwriter.\n\nIf you want, I can keep searching with a specific contract name, policy number, or insurer shortlist.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "Which insurer underwrites the product liability cover?",
+    "answer": "I couldn\u2019t find a matching passage in the available documents.\n\nIf you want, I can try a broader search for the policy wording or contract section that mentions product liability, or you can share the document name and I\u2019ll look there.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "How many vehicles are in the delivery fleet?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the delivery fleet size.\n\nIf you want, I can keep searching for related terms like:\n- fleet size\n- vehicles\n- delivery trucks\n- logistics fleet\n- transportation assets",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "How many vehicles are in the delivery fleet?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the delivery fleet size or vehicle count.\n\nIf you want, I can keep searching for related terms like:\n- \u201cfleet\u201d\n- \u201cdelivery vans\u201d\n- \u201ctrucks\u201d\n- \u201clogistics vehicles\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the target for on-time delivery in 2026?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning a 2026 on-time delivery target.\n\nIf you want, I can keep searching for related wording like:\n- \u201cOTD\u201d\n- \u201con time delivery\u201d\n- \u201cdelivery performance\u201d\n- \u201cservice level target\u201d\n- \u201c2026 KPI\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the target for on-time delivery in 2026?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning a 2026 on-time delivery target.\n\nIf you want, I can keep searching for related wording like:\n- \u201cdelivery performance\u201d\n- \u201cOTD\u201d\n- \u201cservice level\u201d\n- \u201ccustomer fulfillment target\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "Which warehouse management system does Meridian use?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning a warehouse management system, so I can\u2019t confirm which one Meridian uses from the available records.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "Which warehouse management system does Meridian use?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning a warehouse management system by name.\n\nIf you want, I can keep searching for related terms like:\n- \u201cWMS\u201d\n- \u201cwarehouse\u201d\n- \u201cinventory system\u201d\n- specific vendor names if you have a guess",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the annual contract value of the Voss Industrial agreement?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning a \u201cVoss Industrial\u201d agreement, so I can\u2019t verify its annual contract value from the available records.\n\nIf you want, I can try alternate names or related terms for the account, or look for the contract in a specific quarter or document type.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the annual contract value of the Voss Industrial agreement?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning \u201cVoss Industrial,\u201d so I can\u2019t verify the annual contract value from the available records.\n\nIf you want, I can try related names or alternate spellings, or you can share a contract excerpt and I\u2019ll extract the ACV.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "How many people work at the Columbus depot?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the Columbus depot\u2019s headcount.\n\nIf you want, I can keep searching for related references like:\n- \u201cColumbus facility\u201d\n- \u201cColumbus warehouse\u201d\n- \u201cColumbus site\u201d\n- \u201cdepot staffing\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "How many people work at the Columbus depot?",
+    "answer": "I couldn\u2019t find a document mentioning the Columbus depot\u2019s headcount.\n\nIf you want, I can keep searching for related references like:\n- \u201cColumbus facility\u201d\n- \u201cColumbus warehouse\u201d\n- \u201cColumbus site\u201d\n- \u201cdepot staffing\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is Meridian's carbon reduction target?",
+    "answer": "I couldn\u2019t find Meridian\u2019s carbon reduction target in the documents I searched.\n\nIf you want, I can try related terms like:\n- \u201cnet zero\u201d\n- \u201cemissions reduction\u201d\n- \u201csustainability target\u201d\n- \u201cclimate goal\u201d\n\nOr, if you have a specific report or quarter in mind, I can search that directly.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is Meridian's carbon reduction target?",
+    "answer": "I couldn\u2019t find a Meridian document passage that states a carbon reduction target.\n\nIf you want, I can keep searching for related wording like:\n- \u201cnet zero\u201d\n- \u201cemissions reduction\u201d\n- \u201cscience-based target\u201d\n- \u201csustainability goals\u201d\n\nIf you have a specific report, contract, or quarter in mind, I can narrow it down.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What was the net promoter score in 2025?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning a net promoter score for 2025.\n\nIf you want, I can also look for related customer satisfaction metrics or a specific quarter in 2025.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What was the net promoter score in 2025?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning a 2025 net promoter score.\n\nIf you want, I can also look for:\n- a customer satisfaction report,\n- a quarterly review mentioning NPS,\n- or a specific region/product\u2019s NPS if you have one in mind.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "Which auditor signed off the 2024 accounts?",
+    "answer": "I couldn\u2019t find a matching document in Meridian\u2019s records for the 2024 accounts auditor sign-off.\n\nIf you want, I can try a broader search for:\n- the annual report,\n- the audit opinion,\n- or the company name plus \u201cauditor\u201d / \u201cindependent auditor.\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "Which auditor signed off the 2024 accounts?",
+    "answer": "I couldn\u2019t find a matching passage in Meridian\u2019s documents for the 2024 accounts auditor.\n\nIf you want, I can keep searching with a company name, entity name, or the exact report title.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the notice period in the Halloway Group contract?",
+    "answer": "I couldn\u2019t find any Meridian document matching \u201cHalloway Group\u201d or its contract notice period.\n\nIf you want, I can try broader searches like:\n- \u201cHalloway\u201d\n- \u201cnotice period\u201d\n- \u201ctermination\u201d\n- the customer\u2019s legal entity name if it differs from \u201cHalloway Group\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the notice period in the Halloway Group contract?",
+    "answer": "I couldn\u2019t find any Meridian document matching the Halloway Group contract or its notice period.\n\nIf you want, I can try a broader search for:\n- \u201cHalloway\u201d\n- \u201cGroup\u201d\n- \u201cnotice\u201d\n- \u201ctermination\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "How much did Meridian spend on marketing in 2024?",
+    "answer": "I couldn\u2019t find a marketing spend figure for 2024 in Meridian\u2019s sales data, and there were no matching documents mentioning it.\n\nIf you want, I can help look for a related proxy such as:\n- marketing-related costs in contracts or quarterly reviews\n- advertising or campaign spend\n- total SG&A or operating expense references if those are documented",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "How much did Meridian spend on marketing in 2024?",
+    "answer": "I couldn\u2019t find a source for Meridian\u2019s 2024 marketing spend.\n\n- The sales database doesn\u2019t track marketing spend.\n- I also searched Meridian documents and found no matching passage.\n\nIf you want, I can help look for related figures like revenue, gross profit, or marketing-related contract mentions.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the average time to resolve a support ticket?",
+    "answer": "I couldn\u2019t find a documented average support-ticket resolution time in the available Meridian documents.\n\nIf you want, I can help you find:\n- a specific support ticket\u2019s resolution time,\n- an SLA or contract term for support response/resolution,\n- or compute an average if you have ticket data.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the average time to resolve a support ticket?",
+    "answer": "I couldn\u2019t find a documented average resolution time for support tickets in the available Meridian documents.\n\nIf you want, I can help you look for:\n- a specific support SLA,\n- average first-response time,\n- or a ticket-resolution metric in a particular quarter or team.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "Which bank provides Meridian's working capital facility?",
+    "answer": "I couldn\u2019t find a document passage that identifies the bank providing Meridian\u2019s working capital facility.\n\nIf you want, I can keep searching with related terms like:\n- \u201crevolving credit facility\u201d\n- \u201ccredit facility\u201d\n- \u201clender\u201d\n- \u201cbank facility agreement\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "Which bank provides Meridian's working capital facility?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the working capital facility or the bank that provides it.\n\nIf you want, I can try a broader search for related terms like \u201crevolving credit facility,\u201d \u201ccredit line,\u201d or \u201clender.\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the depreciation policy for warehouse equipment?",
+    "answer": "I couldn\u2019t find any Meridian document passages that state a depreciation policy for warehouse equipment.\n\nIf you want, I can keep searching for related terms like:\n- fixed asset policy\n- capital expenditures / capex\n- property, plant, and equipment\n- warehouse machinery or material-handling equipment\n- useful life / salvage value / straight-line depreciation\n\nIf you have a specific policy document name or contract, I can search that directly.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the depreciation policy for warehouse equipment?",
+    "answer": "I couldn\u2019t find any Meridian document that states a depreciation policy for warehouse equipment.\n\nIf you want, I can keep searching for related terms like:\n- fixed asset policy\n- property, plant and equipment\n- capital expenditures\n- warehouse machinery or material handling equipment\n\nIf you have a specific contract, policy name, or quarter, I can narrow it down.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "How many suppliers were onboarded in 2025?",
+    "answer": "I couldn\u2019t verify that from the available sales data, and I didn\u2019t find a document mentioning suppliers onboarded in 2025.\n\nIf you want, I can help look for a related source term, like:\n- supplier onboarding\n- new suppliers\n- vendor onboarding\n- procurement onboarding",
+    "abstained": false
+  },
+  {
+    "style": "an empty list",
+    "question": "How many suppliers were onboarded in 2025?",
+    "answer": "I couldn\u2019t find a source for that in the available sales data or documents.\n\n- The warehouse doesn\u2019t track supplier onboarding counts.\n- I searched the documents for \u201csuppliers onboarded in 2025\u201d and found no matches.\n\nIf you want, I can help look for a related metric or a specific contract/support note that mentions supplier onboarding.",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the lease expiry date for the Newark depot?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the Newark depot lease expiry date.\n\nIf you want, I can try broader searches like:\n- \u201cNewark facility\u201d\n- \u201cNewark warehouse\u201d\n- \u201cdepot lease\u201d\n- the landlord or site address, if you have it",
+    "abstained": true
+  },
+  {
+    "style": "an empty list",
+    "question": "What is the lease expiry date for the Newark depot?",
+    "answer": "I couldn\u2019t find any document mentioning the Newark depot lease expiry date.\n\nIf you want, I can try broader searches like:\n- \u201cNewark\u201d\n- \u201cdepot lease\u201d\n- the landlord or site address, if you have it",
+    "abstained": true
+  },
+  {
+    "style": "a terse error",
+    "question": "What is Meridian's employee headcount?",
+    "answer": "I\u2019m sorry, but I can\u2019t determine Meridian\u2019s employee headcount from the available tools right now.\n\nI tried searching Meridian documents, but the search tool failed, and headcount is not something I can reliably infer from the sales warehouse. If you want, I can try again with a different query or help you find where Meridian typically reports headcount.",
+    "abstained": true
+  },
+  {
+    "style": "a terse error",
+    "question": "What is Meridian's employee headcount?",
+    "answer": "I\u2019m sorry, but I can\u2019t determine Meridian\u2019s employee headcount from the available tools right now. The document search needed to find headcount-related references is failing, and the warehouse tool is only for sales figures, not headcount.\n\nIf you want, I can try again with a different query or help you phrase a request for the relevant internal source.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "Who is the Chief Financial Officer?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve that information from the available Meridian sources right now.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "Who is the Chief Financial Officer?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve that from the available Meridian documents right now.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What was revenue in 2026 Q1?",
+    "answer": "I couldn\u2019t retrieve a 2026 Q1 revenue figure from the sales database. The query returned no rows, which usually means there\u2019s no sales data loaded for that period yet.\n\nIf you want, I can check a different quarter or year.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What was revenue in 2026 Q1?",
+    "answer": "Revenue in 2026 Q1 was not returned by the warehouse query result I received.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the customer churn rate?",
+    "answer": "I can\u2019t compute customer churn rate from the available sales database, because it only contains revenue, margin, orders, units, cost, discounts, and related sales dimensions\u2014not churn or retention data.\n\nIf you want, I can help you find a documented definition or related note, but I\u2019d need a source that contains churn/retention information.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the customer churn rate?",
+    "answer": "I can\u2019t compute customer churn rate from the sales database, because churn isn\u2019t one of the available metrics there and no retention/churn definition is provided.\n\nIf you want, I can help in one of these ways:\n- look for a churn definition in documents or contracts,\n- compute a proxy if you have a specific retention rule,\n- or calculate related sales metrics like repeat purchase rate if that\u2019s what you meant.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "Which insurer underwrites the product liability cover?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the document passage needed to identify the insurer.\n\nIf you can share the relevant contract, policy wording, or a snippet mentioning the product liability cover, I can help pinpoint the underwriter.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "Which insurer underwrites the product liability cover?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the document passage needed to identify the insurer. If you can share the relevant contract, policy schedule, or excerpt, I can pinpoint it quickly.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "How many vehicles are in the delivery fleet?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve that from the available Meridian sources right now.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "How many vehicles are in the delivery fleet?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve that from the available Meridian sources right now.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the target for on-time delivery in 2026?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the source document for the 2026 on-time delivery target. If you can share the relevant quarterly review, contract, or ticket, I can extract it quickly.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the target for on-time delivery in 2026?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the source document for the 2026 on-time delivery target. If you can share the relevant quarterly review, contract, or ticket, I can extract the exact target from it.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "Which warehouse management system does Meridian use?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t verify that from the available Meridian documents. The document search tool failed on my attempts, so I don\u2019t have a reliable source to name the warehouse management system Meridian uses.\n\nIf you want, I can try a different phrasing or look for related terms like:\n- \u201cWMS\u201d\n- \u201cwarehouse\u201d\n- \u201cinventory system\u201d\n- a specific vendor name if you suspect one",
+    "abstained": true
+  },
+  {
+    "style": "a terse error",
+    "question": "Which warehouse management system does Meridian use?",
+    "answer": "I couldn\u2019t retrieve any Meridian documents to verify which warehouse management system they use. If you want, I can try a different search angle or help you draft a question for the Meridian team.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the annual contract value of the Voss Industrial agreement?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the Voss Industrial agreement details from the available documents. If you can share the contract or a snippet from it, I can help identify the annual contract value.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the annual contract value of the Voss Industrial agreement?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the contract details for the Voss Industrial agreement from the available documents. If you can share the contract or a relevant excerpt, I can help identify the annual contract value.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "How many people work at the Columbus depot?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve any Meridian documents about the Columbus depot, so I can\u2019t verify the headcount.\n\nIf you want, I can try a different phrasing or look for related terms like:\n- Columbus facility\n- Columbus warehouse\n- Columbus site\n- depot staffing / headcount",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "How many people work at the Columbus depot?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve that from the available Meridian sources right now. If you want, I can try a different phrasing or look for a document that mentions the Columbus depot\u2019s staffing.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is Meridian's carbon reduction target?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve Meridian\u2019s carbon reduction target from the available documents right now. If you want, I can try a different search phrasing or look for related sustainability language like \u201cnet zero,\u201d \u201cemissions reduction,\u201d or \u201cESG target.\u201d",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is Meridian's carbon reduction target?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve Meridian\u2019s carbon reduction target from the available documents.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What was the net promoter score in 2025?",
+    "answer": "I couldn\u2019t retrieve a 2025 net promoter score from the available Meridian documents.\n\nIf you want, I can try a different phrasing or look for related customer satisfaction references in quarterly reviews or support tickets.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What was the net promoter score in 2025?",
+    "answer": "I couldn\u2019t find a reliable 2025 net promoter score from the available data sources.\n\n- The sales warehouse doesn\u2019t track NPS.\n- Document search for \u201cnet promoter score\u201d / \u201cNPS\u201d failed.\n\nIf you want, I can try a different wording or look for a specific quarterly review or customer survey document.",
+    "abstained": true
+  },
+  {
+    "style": "a terse error",
+    "question": "Which auditor signed off the 2024 accounts?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the documents needed to verify which auditor signed off the 2024 accounts. If you can share the annual report or a relevant excerpt, I can identify the auditor from it.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "Which auditor signed off the 2024 accounts?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the document needed to verify which auditor signed off the 2024 accounts. If you can share the annual report or a relevant excerpt, I can identify the auditor from it.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the notice period in the Halloway Group contract?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the Halloway Group contract text from the document search tool, so I can\u2019t verify the notice period yet.\n\nIf you can share the contract or a relevant excerpt, I can identify the notice period right away.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the notice period in the Halloway Group contract?",
+    "answer": "I couldn\u2019t retrieve the Halloway Group contract from the document search tool, so I can\u2019t verify the notice period yet.\n\nIf you can share the contract text or a file excerpt, I can find it quickly.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "How much did Meridian spend on marketing in 2024?",
+    "answer": "I couldn\u2019t determine Meridian\u2019s 2024 marketing spend from the available sales database, because it only contains sales metrics like revenue, cost, orders, units, and discounts\u2014not marketing spend.\n\nI also couldn\u2019t retrieve a matching document reference for \u201cmarketing spend 2024 Meridian\u201d from the document search.\n\nIf you want, I can help look for related terms like:\n- marketing budget\n- advertising spend\n- promotional expense\n- SG&A / operating expenses",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "How much did Meridian spend on marketing in 2024?",
+    "answer": "I can\u2019t compute Meridian\u2019s 2024 marketing spend from the sales database, because that data only contains sales metrics like revenue, gross profit, orders, units, cost, and discounts.\n\nI also couldn\u2019t retrieve a document result for \u201cmarketing spend 2024 Meridian\u201d from the document search.\n\nIf you want, I can help you look for it using a different term, such as:\n- marketing budget\n- advertising spend\n- SG&A\n- operating expenses\n- 2024 annual report / quarterly review",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the average time to resolve a support ticket?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve that from the available Meridian sources right now.\n\nIf you want, I can try a different angle, such as:\n- searching for support SLA or ticket closure metrics in documents, or\n- checking whether you meant a specific quarter, team, or product line.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the average time to resolve a support ticket?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve that from the available Meridian sources right now.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "Which bank provides Meridian's working capital facility?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the supporting documents needed to verify which bank provides Meridian\u2019s working capital facility.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "Which bank provides Meridian's working capital facility?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the documents needed to identify the bank providing Meridian\u2019s working capital facility.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the depreciation policy for warehouse equipment?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the policy from the available Meridian documents right now.\n\nIf you want, I can help you narrow it down by searching for related terms like:\n- \u201cfixed assets\u201d\n- \u201cdepreciation\u201d\n- \u201cwarehouse equipment\u201d\n- \u201cuseful life\u201d\n- \u201ccapitalization policy\u201d\n\nOr, if you have the policy document name or a snippet, I can help interpret it.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the depreciation policy for warehouse equipment?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the policy from the available documents right now.\n\nIf you want, I can try again with a different wording, or you can point me to the specific policy document or contract and I\u2019ll extract the depreciation terms.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "How many suppliers were onboarded in 2025?",
+    "answer": "I couldn\u2019t determine that from the sales database, and the document search failed.\n\nIf you want, I can try a different document query for supplier onboarding in 2025, or help you phrase the question another way.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "How many suppliers were onboarded in 2025?",
+    "answer": "I couldn\u2019t determine that from the available sales data, and the document search failed.\n\nIf you want, I can try a different wording for the document search, such as:\n- \u201csupplier onboarding 2025\u201d\n- \u201cnew suppliers 2025\u201d\n- \u201csuppliers onboarded last year\u201d",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the lease expiry date for the Newark depot?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the Newark depot lease information from the available documents right now.",
+    "abstained": false
+  },
+  {
+    "style": "a terse error",
+    "question": "What is the lease expiry date for the Newark depot?",
+    "answer": "I\u2019m sorry, but I couldn\u2019t retrieve the Newark depot lease information from the available documents. If you can share the contract, lease summary, or a related document name, I can help find the expiry date quickly.",
+    "abstained": false
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is Meridian's employee headcount?",
+    "answer": "I couldn\u2019t find Meridian\u2019s employee headcount in the documents I searched.\n\nIf you want, I can try a few alternate searches for related terms like:\n- total employees\n- FTE\n- workforce size\n- staffing\n- team size",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is Meridian's employee headcount?",
+    "answer": "I couldn\u2019t find Meridian\u2019s employee headcount in the available documents.\n\nIf you want, I can try a few alternate searches for related terms like:\n- total employees\n- FTE\n- workforce size\n- staffing\n- people count",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Who is the Chief Financial Officer?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the Chief Financial Officer.\n\nIf you want, I can try a broader search for executive leadership titles or a specific company/entity name.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Who is the Chief Financial Officer?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the Chief Financial Officer or CFO. If you want, I can try searching for finance leadership by name, title variants, or in a specific quarter\u2019s review or contract.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What was revenue in 2026 Q1?",
+    "answer": "I couldn\u2019t retrieve a numeric result for 2026 Q1 revenue from the warehouse query \u2014 it returned null.\n\nIf you want, I can try a slightly different phrasing or check whether 2026 Q1 data exists in the source.",
+    "abstained": false
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What was revenue in 2026 Q1?",
+    "answer": "I couldn\u2019t retrieve a numeric result for 2026 Q1 revenue from the sales database\u2014the query returned null.\n\nIf you want, I can try a different quarter or help check whether 2026 Q1 data is loaded.",
+    "abstained": false
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the customer churn rate?",
+    "answer": "I can\u2019t compute customer churn rate from the sales database available here. The warehouse only supports sales metrics like revenue, margin, orders, units, cost, and discounts, and it doesn\u2019t include a churn/retention definition.\n\nIf you want, I can:\n- look for a churn definition or reported churn figure in documents, or\n- help compute a proxy if you have a specific retention formula.",
+    "abstained": false
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the customer churn rate?",
+    "answer": "I can\u2019t compute customer churn rate from the sales database, and I couldn\u2019t find a documented churn definition in the available documents.\n\nIf you want, I can help you find:\n- a retention/churn policy or definition in documents, or\n- a proxy metric from sales data, such as repeat-customer rate or customer revenue retention, if that\u2019s available.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Which insurer underwrites the product liability cover?",
+    "answer": "I couldn\u2019t find any document passage mentioning the product liability cover or its insurer.\n\nIf you want, I can try broader wording like:\n- the policy schedule\n- insurance certificate\n- underwriting\n- liability cover\n- product recall / public liability\n\nIf you have a contract or policy name, I can search that directly.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Which insurer underwrites the product liability cover?",
+    "answer": "I couldn\u2019t find any document passage mentioning which insurer underwrites the product liability cover.\n\nIf you want, I can try broader wording like:\n- \u201cproduct liability\u201d\n- \u201cinsurance\u201d\n- \u201cunderwriter\u201d\n- the product or contract name",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "How many vehicles are in the delivery fleet?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the delivery fleet size or vehicle count.\n\nIf you want, I can keep searching with related terms like:\n- delivery vans\n- trucks\n- logistics fleet\n- transportation assets\n- fleet size",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "How many vehicles are in the delivery fleet?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the delivery fleet size.\n\nIf you want, I can keep searching with different terms like:\n- \u201cfleet\u201d\n- \u201cdelivery vans\u201d\n- \u201cvehicles\u201d\n- \u201clogistics\u201d\n- \u201ctransportation\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the target for on-time delivery in 2026?",
+    "answer": "I couldn\u2019t find any Meridian document passage mentioning a 2026 on-time delivery target.\n\nIf you want, I can try broader terms like:\n- \u201cservice level\u201d\n- \u201cOTD\u201d\n- \u201cdelivery performance\u201d\n- \u201c2026 goals\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the target for on-time delivery in 2026?",
+    "answer": "I couldn\u2019t find any Meridian document passage mentioning a 2026 on-time delivery target.\n\nIf you want, I can keep searching with related terms like:\n- \u201cOTD\u201d\n- \u201cdelivery performance\u201d\n- \u201cservice level\u201d\n- \u201csupply chain KPI\u201d\n- \u201c2026 goals\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Which warehouse management system does Meridian use?",
+    "answer": "I couldn\u2019t find any Meridian document passages that identify a warehouse management system by name.\n\nIf you want, I can keep searching for related terms like:\n- WMS\n- warehouse software\n- fulfillment system\n- inventory system\n- ERP / logistics platform",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Which warehouse management system does Meridian use?",
+    "answer": "I couldn\u2019t find any Meridian document passages that identify a warehouse management system by name.\n\nIf you want, I can keep searching for related terms like:\n- \u201cWMS\u201d\n- \u201cwarehouse\u201d\n- \u201cinventory system\u201d\n- specific vendor names such as SAP, Manhattan, Oracle, NetSuite, or Blue Yonder",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the annual contract value of the Voss Industrial agreement?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning \u201cVoss Industrial,\u201d so I can\u2019t verify the annual contract value from the available records.\n\nIf you have another name for the account, a contract number, or a related term from the agreement, I can search again.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the annual contract value of the Voss Industrial agreement?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the Voss Industrial agreement, so I can\u2019t verify its annual contract value from the available records.\n\nIf you want, I can try alternate names or related terms for the account.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "How many people work at the Columbus depot?",
+    "answer": "I couldn\u2019t find a Meridian document mentioning the Columbus depot\u2019s headcount.\n\nIf you want, I can keep searching using alternate names like:\n- Columbus facility\n- Columbus warehouse\n- Columbus distribution center\n- Columbus site",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "How many people work at the Columbus depot?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning the Columbus depot\u2019s headcount.\n\nIf you want, I can keep searching for related terms like:\n- Columbus facility\n- Columbus warehouse\n- depot staffing\n- site headcount\n- operations team in Columbus",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is Meridian's carbon reduction target?",
+    "answer": "I couldn\u2019t find a Meridian document passage that states a carbon reduction target.\n\nIf you want, I can keep searching for related wording like:\n- \u201cnet zero\u201d\n- \u201cemissions reduction\u201d\n- \u201csustainability goals\u201d\n- \u201cclimate target\u201d\n- a specific year such as 2030 or 2050",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is Meridian's carbon reduction target?",
+    "answer": "I couldn\u2019t find a Meridian document passage that states a carbon reduction target.\n\nIf you want, I can keep searching for related wording like:\n- \u201cnet zero\u201d\n- \u201cemissions reduction\u201d\n- \u201cclimate target\u201d\n- \u201csustainability goal\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What was the net promoter score in 2025?",
+    "answer": "I couldn\u2019t find any Meridian documents mentioning net promoter score or NPS for 2025.\n\nIf you want, I can try a broader search for customer satisfaction metrics or look for a specific quarter in 2025.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What was the net promoter score in 2025?",
+    "answer": "I couldn\u2019t find any Meridian documents mentioning a net promoter score for 2025.\n\nIf you want, I can try a broader search for customer satisfaction metrics or look for NPS in a specific quarter or document type.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Which auditor signed off the 2024 accounts?",
+    "answer": "I couldn\u2019t find a matching passage in Meridian\u2019s documents for the 2024 accounts auditor.\n\nIf you want, I can try a few narrower searches, for example:\n- the company name plus \u201cindependent auditor\u2019s report\u201d\n- \u201csigned by\u201d + \u201caudit partner\u201d\n- the annual report / accounts document title",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Which auditor signed off the 2024 accounts?",
+    "answer": "I couldn\u2019t find a matching passage in Meridian\u2019s documents for the 2024 accounts auditor.\n\nIf you want, I can try a broader search using the company name, annual report title, or the audit firm name if you have any of those.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the notice period in the Halloway Group contract?",
+    "answer": "I couldn\u2019t find a matching Halloway Group contract passage in the documents available to me, so I can\u2019t confirm the notice period yet.\n\nIf you want, I can try a few alternate searches, such as:\n- \u201cHalloway Group\u201d\n- \u201cnotice\u201d\n- \u201ctermination\u201d\n- \u201cwritten notice\u201d\n- \u201ccancellation\u201d\n\nOr you can share the contract text and I\u2019ll extract the notice period directly.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the notice period in the Halloway Group contract?",
+    "answer": "I couldn\u2019t find any matching passage in Meridian\u2019s documents for the Halloway Group contract notice period.\n\nIf you want, I can try a few alternate searches, like:\n- \u201cHalloway Group\u201d\n- \u201ctermination\u201d\n- \u201cnotice\u201d\n- \u201crenewal\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "How much did Meridian spend on marketing in 2024?",
+    "answer": "I couldn\u2019t find a source for Meridian\u2019s 2024 marketing spend.\n\n- The sales database doesn\u2019t track marketing spend.\n- I also searched Meridian documents and found no matching passage.\n\nIf you want, I can try related terms like:\n- marketing budget\n- advertising spend\n- brand spend\n- promotional expense",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "How much did Meridian spend on marketing in 2024?",
+    "answer": "I couldn\u2019t find a reliable figure for Meridian\u2019s 2024 marketing spend.\n\nWhy:\n- The sales database doesn\u2019t track marketing spend.\n- I searched Meridian documents for \u201cmarketing spend,\u201d \u201cmarketing budget,\u201d and \u201cadvertising spend,\u201d but found no matches.\n\nIf you want, I can try related terms like:\n- brand spend\n- demand generation\n- paid media\n- promotions\n- SG&A / operating expenses",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the average time to resolve a support ticket?",
+    "answer": "I couldn\u2019t find a documented average support-ticket resolution time in Meridian\u2019s documents.\n\nIf you want, I can help you find it by:\n- searching for a specific support team, product, or quarter, or\n- checking whether there\u2019s a support KPI/SLA report that contains it.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the average time to resolve a support ticket?",
+    "answer": "I couldn\u2019t find a documented average resolution time for support tickets in the available Meridian documents.\n\nIf you want, I can try a different phrasing or look for:\n- average first response time\n- median resolution time\n- SLA targets for support tickets\n- resolution time by ticket type or quarter",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Which bank provides Meridian's working capital facility?",
+    "answer": "I couldn\u2019t find any Meridian document mentioning a working capital facility or the bank that provides it.\n\nIf you want, I can try broader terms like:\n- \u201crevolving credit facility\u201d\n- \u201ccredit facility\u201d\n- \u201cbank facility\u201d\n- the name of a specific subsidiary or entity",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "Which bank provides Meridian's working capital facility?",
+    "answer": "I couldn\u2019t find a Meridian document that names the bank providing the working capital facility. If you want, I can keep searching with related terms like \u201crevolving credit facility,\u201d \u201ccredit line,\u201d or \u201clender.\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the depreciation policy for warehouse equipment?",
+    "answer": "I couldn\u2019t find a Meridian document that states a depreciation policy for warehouse equipment.\n\nIf you want, I can keep searching using related terms like:\n- fixed assets policy\n- property, plant, and equipment\n- warehouse machinery\n- useful life / salvage value\n- capital expenditure policy\n\nIf you have a specific document name or department, I can narrow it down.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the depreciation policy for warehouse equipment?",
+    "answer": "I couldn\u2019t find a matching policy passage in the available documents.\n\nIf you want, I can try related terms like:\n- fixed assets / property, plant, and equipment\n- warehouse machinery\n- equipment useful life\n- depreciation method\n- capitalization policy\n\nIf you have a specific document name or contract, I can search that directly.",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "How many suppliers were onboarded in 2025?",
+    "answer": "I couldn\u2019t find a supported metric for \u201csuppliers onboarded\u201d in the sales warehouse, and no document passage matched that phrasing either.\n\nIf you want, I can try related wording like:\n- \u201cnew suppliers in 2025\u201d\n- \u201csupplier onboarding\u201d\n- \u201csuppliers added in 2025\u201d\n- \u201cvendor onboarding\u201d",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "How many suppliers were onboarded in 2025?",
+    "answer": "I couldn\u2019t verify that from the available sales data, and I didn\u2019t find a matching document passage about supplier onboarding in 2025.\n\nIf you want, I can try a few alternate document searches, like:\n- \u201cnew suppliers 2025\u201d\n- \u201csupplier onboarding\u201d\n- \u201cvendor onboarding\u201d\n- \u201conboarded suppliers\u201d",
+    "abstained": false
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the lease expiry date for the Newark depot?",
+    "answer": "I couldn\u2019t find any document passages mentioning the Newark depot lease expiry date.\n\nIf you want, I can try broader searches like:\n- \u201cNewark\u201d\n- \u201cdepot lease\u201d\n- the landlord or site address, if you have it",
+    "abstained": true
+  },
+  {
+    "style": "an error inviting a retry",
+    "question": "What is the lease expiry date for the Newark depot?",
+    "answer": "I couldn\u2019t find any document passages mentioning the Newark depot or its lease expiry date. If you want, I can try alternate names for the site or look for the lease in a specific contract set.",
+    "abstained": true
+  }
+]

@@ -1,0 +1,54 @@
+regions (5 rows)
+  region_id *    integer       5  1, 2, 3, 4, 5
+  name           text          5  Midwest, Northeast, Southeast, Southwest
+                                  West
+  depot          text          5  Atlanta, Columbus, Dallas, Newark
+                                  Sacramento
+
+customers (58 rows)
+  customer_id *  integer      58  1 to 58
+  name           text         58  Ardenwood Group to Westbury Holdings
+  region_id      integer       5  1, 2, 3, 4, 5
+  segment        text          4  Enterprise, Mid-market, Public sector
+                                  Small business
+  since          text         47  2014-03-01 to 2022-12-01
+
+suppliers (20 rows)
+  supplier_id *  integer      20  1 to 20
+  name           text         20  Aldridge & Co to Yarrow Chemical
+  country        text          4  CN, DE, MX, US
+  tier           text          3  Approved, Preferred, Strategic
+
+products (48 rows)
+  sku *          text         48  MRD-CLE-001 to MRD-SAN-048
+  name           text         48  Cleaning item 1 to Sanitation item 9
+  category       text          5  Cleaning, Facilities, Packaging, Safety
+                                  Sanitation
+  supplier_id    integer      16  1 to 19
+  unit_cost      real         47  2.35 to 95.26
+  list_price     real         48  3.56 to 161.24
+
+orders (66,676 rows)
+  order_id *     integer  66,676  1 to 66676
+  customer_id    integer      58  1 to 58
+  order_date     text      1,096  2023-01-01 to 2025-12-31
+  channel        text          4  Field sales, Partner, Telesales, Web
+
+order_lines (199,817 rows)
+  order_id *     integer  66,676  1 to 66676
+  line_no *      integer       5  1, 2, 3, 4, 5
+  sku            text         48  MRD-CLE-001 to MRD-SAN-048
+  qty            integer     111  1 to 232
+  unit_price     real        192  3.03 to 161.24
+  unit_cost      real         51  2.35 to 106.69
+  discount_pct   integer       4  0, 5, 10, 15
+
+v_sales, which Chapter 15's governed queries read, has one row per order line.
+Its derived columns:
+  CAST(strftime('%Y', o.order_date) AS INTEGER) AS year
+  (CAST(strftime('%m', o.order_date) AS INTEGER) + 2) / 3 AS quarter
+  ROUND(l.qty * l.unit_price, 2) AS revenue
+  ROUND(l.qty * l.unit_cost, 2) AS cost
+  ROUND(l.qty * (l.unit_price - l.unit_cost), 2) AS gross_profit
+
+* primary key; distinct = how many different values the column holds

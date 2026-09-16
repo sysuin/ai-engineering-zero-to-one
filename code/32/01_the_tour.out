@@ -1,79 +1,79 @@
 Clarity, file by file, sorted by the chapter that built it.
-
+A * marks the files v1.0 runs; the others are the book's history.
 
   chapter 4
-    config.py                    75  Every setting in one place — and the only 
-    v0_1/summarize.py            52  summarise one Meridian document from the c
+  * config.py                    77  Every setting in one place — and the onl
+    v0_1/summarize.py            52  summarise one Meridian document from the
 
   chapter 7
     prompts/__init__.py          46  Prompts live in files, not in code.
-    v0_3/extract.py              83  turn a Meridian quarterly review into a va
+    v0_3/extract.py              83  turn a Meridian quarterly review into a 
 
   chapter 8
-    v0_4/longdoc.py             112  reading a document that is too large to se
+    v0_4/longdoc.py             112  reading a document that is too large to 
 
   chapter 13
-    v0_5/rag.py                 103  the whole retrieval pipeline, end to end.
+    v0_5/rag.py                 103  the whole retrieval pipeline, end to end
 
   chapter 14
-    v0_6/retrieve.py            150  retrieval that earns its keep.
+  * v0_6/retrieve.py            153  retrieval that earns its keep.
 
   chapter 15
-    v0_7/warehouse.py           136  answering numeric questions without the mo
+  * v0_7/warehouse.py           136  answering numeric questions without the 
 
   chapter 16
-    v0_8/tools.py               187  the tools, and the loop that runs them.
+  * v0_8/tools.py               223  the tools, and the loop that runs them.
 
   chapter 17
-    v0_9/agent.py               149  the loop, with the four things that make i
+  * v0_9/agent.py               154  the loop, with the four things that make
 
   chapter 18
-    v0_10/graph.py              146  the same agent, as a graph.
+    v0_10/graph.py              172  the same agent, as a graph.
 
   chapter 19
-    v0_11/mcp_client.py          73  consuming an MCP server from ordinary sync
+    v0_11/mcp_client.py          73  consuming an MCP server from ordinary sy
     v0_11/mcp_server.py          77  the same tools, behind a protocol.
 
   chapter 20
-    v0_12/team.py                92  a supervisor, a researcher and an analyst.
+    v0_12/team.py                92  a supervisor, a researcher and an analys
 
   evaluation
-    evals/judge.py               87  Clarity's judges: a model grading a model.
+  * evals/judge.py               86  Clarity's judges: a model grading a mode
     redteam/__init__.py          77  the red-team suite.
-    evals/runner.py              78  Clarity's eval harness: run the golden set
-    evals/suite.py              113  the six-layer suite.
+  * evals/runner.py              78  Clarity's eval harness: run the golden s
+  * evals/suite.py              113  the six-layer suite.
 
   the platform
-    platform/cache.py            78  three layers of cache, and one of them is 
-    platform/gateway.py         160  one interface, many providers.
-    platform/guard.py            60  the defences that do not depend on the mod
-    platform/instrumented.py    104  the same system, wrapped in spans.
-    platform/replay.py          171  record a run once, replay it for nothing.
-    platform/resilience.py       91  the four patterns that keep one bad depend
-    platform/tracing.py         147  tracing, in the vendor-neutral format.
+  * platform/cache.py            78  three layers of cache, and one of them i
+    platform/gateway.py         163  one interface, many providers.
+  * platform/guard.py            66  the defences that do not depend on the m
+  * platform/instrumented.py    104  the same system, wrapped in spans.
+    platform/replay.py          171  record a run once, replay it for nothing
+  * platform/resilience.py       91  the four patterns that keep one bad depe
+  * platform/tracing.py         147  tracing, in the vendor-neutral format.
 
   chapter 25
-    v0_17/service.py            105  the engine, behind HTTP.
+    v0_17/service.py            122  the engine, behind HTTP.
     v0_17/store.py               84  the data layer, and what belongs in it.
 
   the system
-    v1_0/clarity.py             147  every chapter, in one object.
-    v1_0/cli.py                  65  the command line.
-    v1_0/demo.py                 64  The eight-minute demonstration.
-    v1_0/service.py             103  the front door.
+  * v1_0/clarity.py             149  every chapter, in one object.
+  * v1_0/cli.py                  65  the command line.
+  * v1_0/demo.py                 64  The eight-minute demonstration.
+  * v1_0/service.py             103  the front door.
 
-31 files, 3,215 lines.
+31 files and 3,314 lines in the repository; v1.0 runs 17 of them,
+1,887 lines. Where the running system's lines went:
 
-Where the lines went, which is the part worth looking at:
+  answering the question      1124   60%  ########################
+  the platform around it       486   26%  ##########
+  knowing whether it works     277   15%  ######
 
-  answering the question      2049   64%  #########################
-  the platform around it       811   25%  ##########
-  knowing whether it works     355   11%  ####
-
-The part that answers the question is 64% of the code. Everything
-else — 36% of it — is knowing whether the answer was right and
-surviving the day the provider is not there. Nobody budgets for that ratio
-at the start of a project, and it is the honest reason Parts V and VI exist.
+The part that answers the question is 60% of what runs. The other 40% is
+tracing, caching, guarding, shedding load and the suite that says whether the
+answers are right. 334 more lines of platform — the gateway and the replay
+tools — are not in that count, because v1.0 never imports them; and the retry and
+the breaker sit unused inside a file that is. Chapter 31's review found both.
 
 Read it in this order: config, then tools, then agent, then clarity. Four
 files and you have the system; the rest is what it took to trust it.

@@ -1,0 +1,15 @@
+scored by                                right
+  same SQL text                              0/20
+  ran without error                         20/20
+  identical result                          14/20
+  numbers within 1%                         17/20
+  numbers to the reference's precision      17/20
+  ... and extra columns allowed             17/20
+
+questions whose verdict depends on the metric:
+  . Y Y Y   What is our gross margin percentage for 2025?
+  . Y Y Y   What was the average discount percentage in 2024?
+  . Y Y Y   What was the average order value in 2025 Q2?
+  (columns: identical, within 1%, to precision, extra columns allowed)
+
+how loose 1% is: for 'What was total revenue in 2024 Q3?' (8,461,841.81), any figure from 8,377,223 to 8,546,460 passes

@@ -1,0 +1,17 @@
+the figure 'overall' could mean, for 2025:
+  total profit / total revenue     31.36%
+  mean of the category margins     30.54%
+  mean of every line's margin      30.53%
+
+  asked                                           margin computed as    ran
+  What was the average gross margin by category   averages margins       no
+  Show gross margin % for each product category   profit / revenue      yes
+  Margin by category for 2025, plus a total row.  profit / revenue       no
+  For 2025, what was each category's gross margi  profit / revenue      yes
+  Give me 2025 gross margin by category and for   profit / revenue       no
+  What was average margin per category in 2025,   averages margins       no
+  List category margins for 2025 and the combine  profit / revenue       no
+  2025 gross margin: by category, then overall.   profit / revenue       no
+
+  profit / revenue: 6 of 8;  averaged margins: 2;  ran in SQLite: 2
+  (read from the result where the query ran, and from the SQL where it did not)

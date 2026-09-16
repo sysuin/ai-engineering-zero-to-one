@@ -1,0 +1,12 @@
+240 identical calls: median 0.87s, p90 1.19s, p95 1.33s, slowest 2.15s
+
+  workers         wait for all  slower than p95  hedge at p90   all but slowest
+              median       p95                            p95               p95
+        1      0.87s     1.33s               5%         1.33s             1.33s
+        2      0.96s     1.43s               9%         1.43s             1.01s
+        6      1.15s     1.99s              24%         1.99s             1.27s
+       12      1.29s     2.03s              43%         2.03s             1.43s
+       24      1.43s     2.15s              67%         2.06s             1.69s
+
+  slower than p95 = share of fan-outs that took longer than one call's p95;
+  for independent calls it is 1 - 0.95^n: 5%, 10%, 26%, 46%, 71%

@@ -1,16 +1,9 @@
-terse              11/12  92%
-     What was total revenue in 2024 Q3?               chose search, wanted query
-written properly   12/12  100%
+12 questions x 3 runs, tool choice forced
 
-A modest difference, and an honest one: one question in twelve.
+  vague names, terse     33/36  92%
+       What was total revenue in 2024 Q3?             chose search, wanted query (3 of 3)
+  vague names, written   36/36  100%
+  good names, terse      36/36  100%
 
-The failure is the interesting part. With a terse description, 'What was total
-revenue in 2024 Q3?' went to the document search — and that is not unreasonable,
-because a quarterly review does discuss revenue. What the written description
-adds is the sentence that settles it: 'do NOT use for numbers that must be
-exact — those come from query'.
-
-Two things follow. Name tools well: the first version of this listing used names
-like query_warehouse, and both conditions scored 100% because the names were
-doing the work. And when two tools overlap, write the 'do NOT use for' clause,
-because that is the half that disambiguates and the half everyone omits.
+Writing the descriptions properly gained 3 of 36 choices.
+Good names with terse descriptions scored 36/36: the names did at least as much as the descriptions.

@@ -1,0 +1,11 @@
+  pass  arithmetic refuses a function call
+  pass  arithmetic refuses attribute access
+  pass  arithmetic computes
+  pass  warehouse refusal says where to look
+  pass  results are paired by id
+  pass  round cap stops a model that never stops
+  pass  unknown tool is reported to the model
+  pass  arguments that are not json do not crash the loop
+  pass  a hung tool returns on time
+
+9 of 9 passed, with no model, no key and no network

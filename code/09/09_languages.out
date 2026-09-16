@@ -1,0 +1,15 @@
+the same support email, counted with one tokeniser
+
+  language   characters  tokens  vs English
+  English           251      51       1.00x
+  French            308      63       1.24x
+  Spanish           274      62       1.22x
+  German            279      60       1.18x
+
+three tickets per language x 3 runs: category and identifier both right
+
+  ticket in   English instruction  same-language instruction
+  English                    9/9                          —
+  French                     9/9                        9/9
+  Spanish                    9/9                        9/9
+  German                     9/9                        9/9

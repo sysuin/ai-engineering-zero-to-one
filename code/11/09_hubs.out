@@ -1,0 +1,23 @@
+1,454 chunks, each asked for its 10 nearest neighbours
+
+  a chunk appears on average in 10 other chunks' top 10
+  p50     10
+  p90     17
+  p99     27
+  most     37
+  never anyone's neighbour: 19 chunks (1%)
+
+  the five biggest hubs take 1.3% of all neighbour slots, against 0.3% if shared evenly:
+      37x  contract           # SUPPLY AGREEMENT **Agreement reference:** MSC-2023-121 *
+      37x  contract           # SUPPLY AGREEMENT **Agreement reference:** MSC-2024-102 *
+      37x  contract           ## 8. Governing law This Agreement is governed by the laws
+      37x  contract           ## 8. Governing law This Agreement is governed by the laws
+      36x  contract           # SUPPLY AGREEMENT **Agreement reference:** MSC-2024-122 *
+
+  kinds among the fifty biggest hubs: ticket 22, awkward 18, contract 10
+  of those fifty, 38 have three or more near-copies (cosine above 0.95) elsewhere in the index
+
+In a corpus this size the heaviest 'hubs' are mostly templated text repeated across
+documents — the same clause in forty contracts — which crowds every search that touches
+it. At millions of vectors the geometric kind appears as well: chunks that sit near the
+centre of the space and turn up for everything. Both are found the same way, by counting.

@@ -1,0 +1,47 @@
+1. In series: every dependency must be up
+
+  your service                         99.95%       22 min/month
+  your database                        99.95%       22 min/month
+  the embedding endpoint               99.90%       43 min/month
+  the model endpoint                   99.90%       43 min/month
+  the request, failures independent    99.70%      129 min/month
+  the request, provider fails as one   99.80%       86 min/month
+
+2. A fallback provider: only as independent as their failures are
+
+  share of outages in common    available         downtime
+  0%                             99.9999%      0 min/month
+  10%                            99.9899%      4 min/month
+  50%                            99.9500%     22 min/month
+
+3. Latency in series: the p95 of a sum is not the sum of the p95s
+
+  embed the question     p50  0.25s   p95  0.48s
+  retrieve               p50  0.05s   p95  0.08s
+  model call 1           p50  1.60s   p95  3.63s
+  model call 2           p50  1.60s   p95  3.63s
+  model call 3           p50  1.60s   p95  3.65s
+  sum of the p95s                    11.47s
+  p95 of the request                  8.85s
+
+  Budgeting each step at its own p95 over-states the request's p95 by 30%: the
+  slow steps rarely coincide. A budget is set on the whole, and measured there.
+
+4. Fan-out: a request that waits for every one of n parallel calls
+
+  each call slow 1% of the time
+    1 call    request slow  1.0%   (simulated 1.0%)
+    5 calls   request slow  4.9%   (simulated 5.0%)
+   10 calls   request slow  9.6%   (simulated 9.7%)
+   20 calls   request slow 18.2%   (simulated 18.4%)
+   50 calls   request slow 39.5%   (simulated 39.3%)
+
+5. Retries: fewer failures on a good day, more load on a bad one
+
+  call failure rate     fails, 2 retries  calls per request
+  2%                             0.0008%               1.02
+  20%                            0.8000%               1.24
+  100%                         100.0000%               3.00
+
+  At a 2% transient rate retries are nearly free. When the provider is down
+  they triple the traffic aimed at it, which is Chapter 26's breaker's job.

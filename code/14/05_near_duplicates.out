@@ -1,0 +1,19 @@
+as written
+  most similar pair 0.99; tenth most similar 0.90; mean estimation error 0.028
+  groups at 95% or more alike: 2 contracts
+    MSC-2022-132, MSC-2025-135
+
+with every number masked
+  most similar pair 1.00; tenth most similar 1.00; mean estimation error 0.031
+  groups at 95% or more alike: 9 contracts, 4 contracts, 3 contracts, 2 contracts, 2 contracts, 2 contracts, 2 contracts, 2 contracts, 2 contracts, 2 contracts, 2 contracts
+    MSC-2022-100, MSC-2022-104, MSC-2023-101, MSC-2023-105, MSC-2024-102, MSC-2024-106, MSC-2025-103, MSC-2025-107, MSC-2025-131
+    MSC-2023-113, MSC-2024-118, MSC-2024-122, MSC-2025-115
+    MSC-2022-116, MSC-2022-124, MSC-2023-125
+    MSC-2022-108, MSC-2025-123
+    MSC-2022-112, MSC-2023-109
+    MSC-2022-128, MSC-2022-136
+    MSC-2022-132, MSC-2025-135
+    MSC-2023-121, MSC-2025-139
+    MSC-2024-110, MSC-2025-119
+    MSC-2024-114, MSC-2024-126
+    MSC-2024-130, MSC-2025-111

@@ -1,0 +1,34 @@
+[
+  {
+    "question": "What was the average gross margin by category in 2025, and overall?",
+    "sql": "SELECT\n  COALESCE(category, 'Overall') AS category,\n  ROUND(AVG(CASE WHEN revenue <> 0 THEN gross_profit * 1.0 / revenue END), 4) AS avg_gross_margin\nFROM v_sales\nWHERE year = 2025\nGROUP BY category WITH ROLLUP;"
+  },
+  {
+    "question": "Show gross margin % for each product category in 2025, then the overall margin.",
+    "sql": "SELECT category, gross_margin_pct\nFROM (\n  SELECT\n    category,\n    ROUND(100.0 * SUM(gross_profit) / NULLIF(SUM(revenue), 0), 2) AS gross_margin_pct,\n    0 AS sort_key\n  FROM v_sales\n  WHERE year = 2025\n  GROUP BY category\n\n  UNION ALL\n\n  SELECT\n    'Overall' AS category,\n    ROUND(100.0 * SUM(gross_profit) / NULLIF(SUM(revenue), 0), 2) AS gross_margin_pct,\n    1 AS sort_key\n  FROM v_sales\n  WHERE year = 2025\n)\nORDER BY sort_key, category;"
+  },
+  {
+    "question": "Margin by category for 2025, plus a total row.",
+    "sql": "SELECT\n  COALESCE(category, 'Total') AS category,\n  SUM(revenue) AS revenue,\n  SUM(cost) AS cost,\n  SUM(gross_profit) AS gross_profit,\n  ROUND(100.0 * SUM(gross_profit) / NULLIF(SUM(revenue), 0), 2) AS margin_pct\nFROM v_sales\nWHERE year = 2025\nGROUP BY category WITH ROLLUP\nORDER BY CASE WHEN category IS NULL THEN 1 ELSE 0 END, category;"
+  },
+  {
+    "question": "For 2025, what was each category's gross margin percentage and the company-wide figure?",
+    "sql": "WITH cat AS (\n  SELECT\n    category,\n    SUM(gross_profit) AS gp,\n    SUM(revenue) AS rev\n  FROM v_sales\n  WHERE year = 2025\n  GROUP BY category\n),\ncompany AS (\n  SELECT\n    'Company-wide' AS category,\n    SUM(gross_profit) AS gp,\n    SUM(revenue) AS rev\n  FROM v_sales\n  WHERE year = 2025\n)\nSELECT\n  category,\n  ROUND(100.0 * gp / NULLIF(rev, 0), 2) AS gross_margin_pct\nFROM (\n  SELECT * FROM cat\n  UNION ALL\n  SELECT * FROM company\n)\nORDER BY CASE WHEN category = 'Company-wide' THEN 1 ELSE 0 END, category;"
+  },
+  {
+    "question": "Give me 2025 gross margin by category and for the business as a whole.",
+    "sql": "SELECT\n  COALESCE(category, 'ALL') AS category,\n  ROUND(SUM(gross_profit) * 1.0 / NULLIF(SUM(revenue), 0), 4) AS gross_margin\nFROM v_sales\nWHERE year = 2025\nGROUP BY category WITH ROLLUP;"
+  },
+  {
+    "question": "What was average margin per category in 2025, and the overall average margin?",
+    "sql": "SELECT\n  COALESCE(category, 'Overall') AS category,\n  ROUND(AVG(CASE WHEN revenue <> 0 THEN gross_profit * 1.0 / revenue END), 4) AS avg_margin\nFROM v_sales\nWHERE year = 2025\nGROUP BY category WITH ROLLUP;"
+  },
+  {
+    "question": "List category margins for 2025 and the combined margin across all categories.",
+    "sql": "SELECT\n  COALESCE(category, 'ALL CATEGORIES') AS category,\n  ROUND(100.0 * SUM(gross_profit) / NULLIF(SUM(revenue), 0), 2) AS margin_pct\nFROM v_sales\nWHERE year = 2025\nGROUP BY category WITH ROLLUP;"
+  },
+  {
+    "question": "2025 gross margin: by category, then overall.",
+    "sql": "SELECT\n  category,\n  SUM(revenue) AS revenue,\n  SUM(cost) AS cost,\n  SUM(gross_profit) AS gross_profit,\n  ROUND(100.0 * SUM(gross_profit) / NULLIF(SUM(revenue), 0), 2) AS gross_margin_pct\nFROM v_sales\nWHERE year = 2025\nGROUP BY category\n\nUNION ALL\n\nSELECT\n  'Overall' AS category,\n  SUM(revenue) AS revenue,\n  SUM(cost) AS cost,\n  SUM(gross_profit) AS gross_profit,\n  ROUND(100.0 * SUM(gross_profit) / NULLIF(SUM(revenue), 0), 2) AS gross_margin_pct\nFROM v_sales\nWHERE year = 2025\nORDER BY CASE WHEN category = 'Overall' THEN 1 ELSE 0 END, category;"
+  }
+]

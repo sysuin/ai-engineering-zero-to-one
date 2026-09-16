@@ -1,0 +1,10 @@
+fused dense + BM25 (k=1), no filter, 30 questions
+  recall@1 70%   recall@5 80%   recall@10 87%   MRR 0.755
+  rank of the first right chunk, per question: 2 2 5 1 1 1 7 1 1 1 8 14 - - - 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+worked nDCG@5, one question, grades 2 / 1 / 0
+  system A  [2, 0, 1, 0, 0]   DCG 2.500   nDCG 0.950
+  system B  [0, 1, 2, 0, 0]   DCG 1.631   nDCG 0.620
+  ideal     [2, 1, 0, 0, 0]   DCG 2.631   nDCG 1.000
+  both systems found the same two useful chunks; nDCG rewards the one that put the
+  better chunk first, which recall@5 cannot see

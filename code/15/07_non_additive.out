@@ -1,0 +1,14 @@
+2025, by category
+  category        revenue  margin  orders
+  Cleaning      6,051,620   32.7%  11,289
+  Facilities    7,558,771   26.4%  10,434
+  Packaging     5,459,646   20.4%  11,489
+  Safety        8,652,673   39.9%  10,500
+  Sanitation    7,677,560   33.4%  11,311
+  distinct customers by quarter: Q1 57, Q2 57, Q3 57, Q4 57
+
+                      the right total   combining the rows
+  revenue                  35,400,269           35,400,269   adds up
+  margin                        31.4%                30.5%   average of ratios
+  orders                       23,841               55,023   an order spans categories
+  customers                        57                  228   the same customer, every quarter

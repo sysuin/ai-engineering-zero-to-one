@@ -83,5 +83,10 @@ Path("code/11/_search.json").write_text(json.dumps(
 
 print()
 print("The questions were written the way a person asks them, not the way a contract is")
-print("drafted. 'How long do we have to settle an invoice?' shares almost no words with")
-print("'The Buyer shall settle all undisputed invoices within 45 days of receipt.'")
+print("drafted. Where BM25 missed and meaning did not:")
+for row in rows:
+    if row["bm25"] != row["want"] and row["semantic"] == row["want"]:
+        right = next(c for c in corpus if c["clause"] == row["want"])
+        shared = sorted(set(tokenise(row["question"])) & set(tokenise(right["text"])))
+        print(f"  {row['question']!r}")
+        print(f"     words shared with the right clause: {', '.join(shared) or 'none'}")

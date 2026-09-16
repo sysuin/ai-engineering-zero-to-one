@@ -2,32 +2,42 @@
 A layer fails if it drops more than 8% below the healthy run.
 
                                   det   grnd  judge   abst   retr   whse   build
-  baseline (the healthy run)      83%   100%    70%    85%    86%    92%   —
-  retrieval ranking reversed      78%   100%    70%    75%    79%    92%   RED
-  retrieval starved to one p      81%   100%    90%    80%    71%    92%   RED
-  warehouse answers the prev      76%   100%    80%    85%    86%    67%   RED
-  refusal instruction remove      81%   100%    90%    65%    86%    92%   RED
+  baseline (the healthy run)      83%   100%    70%    80%    86%    92%   —
+  retrieval ranking reversed      76%   100%    50%    80%    79%    92%   RED
+  retrieval starved to one p      74%   100%    60%    85%    57%    92%   RED
+  warehouse answers the prev      70%   100%    70%    80%    86%    67%   RED
+  refusal instruction remove      85%   100%    80%    80%    86%    92%   green
 
-  bugs the suite caught     4 of 4
-  bugs it slept through     0
+  bugs the suite caught     3 of 4
+  bugs it slept through     1
 
   retrieval ranking reversed
-    caught by abstention — abstention fell 10%
+    caught by judge — judge fell 20%
   retrieval starved to one passage
-    caught by retrieval — retrieval fell 14%
+    caught by deterministic, judge, retrieval — retrieval fell 29%
   warehouse answers the previous quarter
-    caught by warehouse — warehouse fell 25%
-  refusal instruction removed from the prompt
-    caught by abstention — abstention fell 20%
+    caught by deterministic, warehouse — warehouse fell 25%
+
+  survived:
+    refusal instruction removed from the prompt
+      nothing dropped anywhere — the largest fall on any layer was 0%
+      which is the cheap case: either the mutation is not a bug, or it is one
+      no layer here looks at. Read the mutation before deciding which.
+
+  Those are the only two possibilities, and the size of the largest drop
+  is what separates them. A tighter band would catch the second kind and
+  make the build fail on ordinary variance; a new layer catches it and
+  leaves the rest alone. Every layer in the table above arrived that way.
 
   Note the refusal row. Taking the sentence about refusing out of the
-  prompt moved abstention by 20%.
+  prompt moved abstention by 0%.
 
-  So the sentence is load-bearing after all, and the tools alone do not
-  carry the refusals. Run this again and the size of that number moves
-  a good deal, which is its own lesson: a one-line prompt change can be
-  worth fifteen points or nothing, and the only way to know which is a
-  population scored on its own.
+  Which is to say: barely at all, on this run. The refusals were not only
+  coming from that sentence: the warehouse raises an error naming what it
+  does hold, and the passages that come back plainly do not answer — and
+  the model reports both. One run cannot say whether the sentence never
+  matters or only sometimes does, which is exactly why the slice is scored
+  on its own and a surviving mutant is worth rerunning.
 
 This is mutation testing, and it is the only evidence that a green suite means
 anything. A suite that has never been red is not passing — it is untested, and

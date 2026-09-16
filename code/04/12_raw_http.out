@@ -1,0 +1,31 @@
+POST https://api.openai.com/v1/chat/completions
+Authorization: Bearer <your key, 164 characters>
+Content-Type: application/json
+{
+  "model": "gpt-5.4-mini",
+  "messages": [
+    {
+      "role": "user",
+      "content": "In one sentence, what is a supplier contract?"
+    }
+  ],
+  "max_completion_tokens": 60
+}
+
+status 200
+headers worth knowing about:
+  openai-organization
+  openai-processing-ms
+  openai-project
+  openai-version
+  x-ratelimit-limit-requests
+  x-ratelimit-limit-tokens
+  x-ratelimit-remaining-requests
+  x-ratelimit-remaining-tokens
+  x-ratelimit-reset-requests
+  x-ratelimit-reset-tokens
+  x-request-id
+
+body keys: id, object, created, model, choices, usage, service_tier, system_fingerprint
+answer:    A supplier contract is a legally binding agreement between a buyer and a supplier that sets the terms for providing goods or services, including price, quality, delivery, and payment.
+usage:     {'prompt_tokens': 16, 'completion_tokens': 37}

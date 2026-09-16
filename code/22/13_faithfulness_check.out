@@ -1,0 +1,10 @@
+27 answers built from retrieved passages, each in four versions
+
+  version                   should be flagged   flagged
+  supported                                no     0 of 27
+  invented claim                          yes    27 of 27
+  contradicted figure                     yes    26 of 27
+  true, not retrieved                     yes    24 of 27
+
+'true, not retrieved' is flagged by design: faithfulness asks whether the passages
+support a claim, not whether the claim is true

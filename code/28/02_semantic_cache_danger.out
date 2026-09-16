@@ -36,4 +36,4 @@ have chosen a wrongness rate for, and the honest version of shipping one is:
   and expire it fast, because a wrong cached answer is wrong every time
 
 An exact cache has none of these problems, hits less often, and is where to
-start. §28.4 measures what it is worth on real traffic.
+start. §28.5 measures what it is worth on a mix of repeated questions.

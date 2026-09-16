@@ -1,0 +1,6 @@
+  instruction                 accuracy  exact form  a sample answer
+  positive: number only        100.0%       100%  '30'
+  prohibition                  100.0%       100%  '30'
+  prohibition, paired          100.0%       100%  '30'
+  no format instruction        100.0%         0%  'The Supplier must give **at '
+  an output template           100.0%       100%  'DAYS=30'

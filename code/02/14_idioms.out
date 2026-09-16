@@ -1,0 +1,25 @@
+rows: [('Midwest', 4561132.0), ('Northeast', 7947506.0)] ...
+
+regions: ['Midwest', 'Northeast', 'Southeast', 'Southwest', 'West']
+over 6m: ['Northeast', 'Southeast', 'Southwest']
+West: 5,400,521
+
+Ranked
+  1. Southwest    10,758,271
+  2. Northeast     7,947,506
+  3. Southeast     6,732,841
+  4. West          5,400,521
+  5. Midwest       4,561,132
+
+Against target
+  Midwest    MISSED
+  Northeast  MISSED
+  Southeast     met
+  Southwest     met
+  West       MISSED
+
+any region missed? True
+all above 4m?      True
+
+best_margin is None: True
+revenue_by_region.get('Atlantis'): None

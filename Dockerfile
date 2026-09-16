@@ -22,7 +22,7 @@ USER clarity
 ENV PYTHONUNBUFFERED=1 PYTHONPATH=/app/code
 
 # 4. Liveness is the process, not its dependencies — a health check that pings the
-#    database restarts the service every time the database hiccups. §26.9.
+#    database restarts the service every time the database hiccups. §26.10.
 HEALTHCHECK --interval=30s --timeout=3s --start-period=40s \
   CMD python -c "import urllib.request;urllib.request.urlopen('http://localhost:8000/health')"
 

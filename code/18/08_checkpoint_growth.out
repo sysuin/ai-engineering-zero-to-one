@@ -1,0 +1,9 @@
+state grows by one 2,000-character result per step
+
+  steps   rows     stored   per step
+      5      7      53 KB    10.7 KB
+     10     12     166 KB    16.6 KB
+     20     22     576 KB    28.8 KB
+     40     42   2,126 KB    53.1 KB
+
+8x the steps stored 40x the bytes: faster than the number of steps

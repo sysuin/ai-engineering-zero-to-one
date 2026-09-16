@@ -1,0 +1,16 @@
+body:         'cloths falling apart after one wash - MRD-SAF-014'
+len:          49
+upper:        CLOTHS FALLING APART AFTER ONE WASH - MRD-SAF-014
+slice [:6]:   'cloths'    [-11:]: 'MRD-SAF-014'
+'wash' in:    True
+split:        ['cloths', 'falling', 'apart', 'after'] ...
+join:         cloths_falling_apart
+replace:      wipes falling apart after one wash - MRD-SAF-014
+
+equal as typed:      False
+equal normalised:    True
+
+tickets whose text names a SKU: 191 of 600
+most named: [('MRD-CLE-001', 37), ('MRD-SAN-047', 9), ('MRD-CLE-007', 7)]
+tickets quoting an order number: 87; first three: ['25095', '31274', '31978']
+tickets naming a SKU in the text other than the one in the sku field: 0

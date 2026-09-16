@@ -1,0 +1,13 @@
+no reference judge: passes 100% of right answers, fails 9% of wrong ones
+  informedness (sensitivity + specificity - 1): 0.09
+  a system truly right 70% of the time would score 97%; corrected: 70%
+  a system truly right 85% of the time would score 99%; corrected: 85%
+  each point of observed pass rate moves the estimate 11.3 points;
+  on 120 cases the observed rate is uncertain by about ±2%, so the estimate by ±23%
+
+with the reference judge: passes 100% of right answers, fails 99% of wrong ones
+  informedness (sensitivity + specificity - 1): 0.99
+  a system truly right 70% of the time would score 70%; corrected: 70%
+  a system truly right 85% of the time would score 85%; corrected: 85%
+  each point of observed pass rate moves the estimate 1.0 points;
+  on 120 cases the observed rate is uncertain by about ±6%, so the estimate by ±6%

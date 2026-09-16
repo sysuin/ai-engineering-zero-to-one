@@ -5,6 +5,7 @@
 # against a policy. It is exactly the shape of task people reach for clever prompting on.
 
 import json
+import re
 import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
@@ -55,13 +56,20 @@ def ask(contract: dict, instruction: str, **kwargs) -> str:
             .choices[0].message.content or "").strip()
 
 
-def verdict(text: str) -> bool:
-    """Read a yes/no out of whatever came back."""
-    lowered = text.lower()
-    for marker in ("compliant: yes", "compliant: true", "answer: yes", "yes", "true"):
-        if marker in lowered:
-            return True
-    return False
+def verdict(text: str) -> bool | None:
+    """
+    Read a yes/no out of whatever came back: the last 'ANSWER: YES/NO' line if there is one,
+    otherwise a YES or NO at the very start. Anything else is unreadable, and counts as wrong.
+
+    An earlier version returned True if 'yes' appeared anywhere in the text — so a chain of
+    thought that said "the cap is 3%, yes, within policy" and ended "ANSWER: NO" was scored
+    as compliant. Checking the scorer is part of checking the experiment.
+    """
+    answers = re.findall(r"answer:\s*\**\s*(yes|no)\b", text, re.IGNORECASE)
+    if answers:
+        return answers[-1].lower() == "yes"
+    first = re.match(r"\W*(yes|no)\b", text, re.IGNORECASE)
+    return first.group(1).lower() == "yes" if first else None
 
 
 # ------------------------------------------------------------------ 1. direct
@@ -100,7 +108,8 @@ def self_consistency(c, samples: int = 5):
     votes = [verdict(ask(c, "Is this contract compliant? Reply YES or NO only.",
                          temperature=1.0, max_completion_tokens=16))
              for _ in range(samples)]
-    return Counter(votes).most_common(1)[0][0]
+    return Counter(v for v in votes if v is not None).most_common(1)[0][0] \
+        if any(v is not None for v in votes) else None
 
 
 # ------------------------------------------------------------------ 5. reflection
@@ -166,14 +175,16 @@ for name, fn in PATTERNS.items():
     tokens = sum(p + c for p, c in USAGE)
     results[name] = {"accuracy": correct / len(contracts), "calls": len(USAGE),
                      "tokens": tokens, "seconds": round(elapsed, 1),
-                     "predicted_compliant": sum(answers)}
+                     "predicted_compliant": sum(a is True for a in answers),
+                     "unreadable": sum(a is None for a in answers)}
     print(f"{name:20} {correct / len(contracts):>8.1%} {len(USAGE):>7} "
           f"{tokens:>9,} {elapsed:>9.1f}")
 
 print(f"\n{len(contracts)} contracts, {sum(TRUTH)} of them genuinely compliant.")
 print("Predicted compliant, by pattern:")
 for name, r in results.items():
-    print(f"  {name:20} {r['predicted_compliant']:>3}  (truth: {sum(TRUTH)})")
+    print(f"  {name:20} {r['predicted_compliant']:>3}  (truth: {sum(TRUTH)})"
+          + (f"   {r['unreadable']} unreadable" if r["unreadable"] else ""))
 
 Path("code/09/_patterns.json").write_text(json.dumps(
     {"truth_compliant": sum(TRUTH), "n": len(contracts), "results": results}, indent=2))

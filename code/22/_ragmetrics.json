@@ -34,9 +34,9 @@
   "recall_rank": null,
   "recalled": false,
   "precision": 0.0,
-  "unsupported": 3,
+  "unsupported": 2,
   "example": [
-   "The documents I have do not answer that."
+   "No excerpt for 2023 Q1 is provided"
   ],
   "refused": true,
   "correct": false
@@ -46,10 +46,8 @@
   "recall_rank": null,
   "recalled": false,
   "precision": 0.0,
-  "unsupported": 2,
-  "example": [
-   "The documents I have do not answer that."
-  ],
+  "unsupported": 0,
+  "example": [],
   "refused": true,
   "correct": false
  },
@@ -88,8 +86,10 @@
   "recall_rank": null,
   "recalled": false,
   "precision": 0.0,
-  "unsupported": 0,
-  "example": [],
+  "unsupported": 2,
+  "example": [
+   "There is no excerpt for 2023 Q2"
+  ],
   "refused": true,
   "correct": false
  },
@@ -98,9 +98,9 @@
   "recall_rank": null,
   "recalled": false,
   "precision": 0.0,
-  "unsupported": 1,
+  "unsupported": 2,
   "example": [
-   "There is no excerpt for 2023 Q2, so the weakest region for that quarter is not stated."
+   "There is no excerpt for 2023 Q2"
   ],
   "refused": true,
   "correct": false
@@ -242,7 +242,7 @@
   "precision": 0.0,
   "unsupported": 2,
   "example": [
-   "The documents I have do not answer that."
+   "No excerpt for 2024 Q1 is provided"
   ],
   "refused": true,
   "correct": false
@@ -278,7 +278,7 @@
   "precision": 0.0,
   "unsupported": 2,
   "example": [
-   "The documents I have do not answer that."
+   "The excerpts do not include 2024 Q2; they only show 2023 Q1/Q2/Q4, 2024 Q1, and 2025 Q2/Q4."
   ],
   "refused": true,
   "correct": false
@@ -312,7 +312,7 @@
   "precision": 0.0,
   "unsupported": 2,
   "example": [
-   "The documents I have do not answer that."
+   "There is no excerpt for 2024 Q2."
   ],
   "refused": true,
   "correct": false
@@ -322,7 +322,7 @@
   "recall_rank": null,
   "recalled": false,
   "precision": 0.0,
-  "unsupported": 3,
+  "unsupported": 2,
   "example": [
    "The documents I have do not answer that."
   ],
@@ -410,8 +410,10 @@
   "recall_rank": 3,
   "recalled": true,
   "precision": 0.16666666666666666,
-  "unsupported": 0,
-  "example": [],
+  "unsupported": 1,
+  "example": [
+   "Southwest was the strongest region in 2024 Q4 at $2,565,933."
+  ],
   "refused": false,
   "correct": true
  },
@@ -518,9 +520,9 @@
   "recall_rank": null,
   "recalled": false,
   "precision": 0.16666666666666666,
-  "unsupported": 2,
+  "unsupported": 1,
   "example": [
-   "The documents I have do not answer that."
+   "The 2025 Q2 excerpt does not include any commentary or regional revenue figures identifying which region was strongest in 2025 Q2."
   ],
   "refused": true,
   "correct": false
@@ -572,8 +574,10 @@
   "recall_rank": 5,
   "recalled": true,
   "precision": 0.3333333333333333,
-  "unsupported": 0,
-  "example": [],
+  "unsupported": 1,
+  "example": [
+   "The excerpts also show a separate 2025 Q3 commentary line stating Southwest was strongest at $2,573,114, so the excerpts disagree on the exact figure."
+  ],
   "refused": false,
   "correct": true
  },

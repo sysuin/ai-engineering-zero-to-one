@@ -1,0 +1,31 @@
+reciprocal rank fusion, top 50 of each list
+  k = 1                              recall@5  80%   MRR 0.755
+  k = 2                              recall@5  80%   MRR 0.751
+  k = 5                              recall@5  80%   MRR 0.743
+  k = 10                             recall@5  80%   MRR 0.742
+  k = 20                             recall@5  80%   MRR 0.746
+  k = 60                             recall@5  80%   MRR 0.721
+  k = 200                            recall@5  80%   MRR 0.721
+  what rank 1 is worth against rank 20:  k=1 10.5x   k=10 2.7x   k=60 1.31x
+
+fusing the scores instead of the ranks, top 50 of each list
+  min-max, dense weight 0.0          recall@5  73%   MRR 0.647
+  min-max, dense weight 0.3          recall@5  73%   MRR 0.683
+  min-max, dense weight 0.5          recall@5  73%   MRR 0.694
+  min-max, dense weight 0.7          recall@5  80%   MRR 0.801
+  min-max, dense weight 1.0          recall@5  77%   MRR 0.736
+  z-score, dense weight 0.5          recall@5  83%   MRR 0.784
+  min-max, weight 0.5, CombMNZ       recall@5  77%   MRR 0.725
+
+questions in the top 5 at one constant and not the other, with the rank in each list
+  only at k = 1   Which account did not renew?              dense 34, BM25 1
+  only at k = 60  Which region was weakest in 2023 Q3?      dense 6, BM25 6
+
+how deep each list is read before fusing (RRF, k = 1)
+  top 5 of each                      recall@5  80%   MRR 0.746
+  top 10 of each                     recall@5  80%   MRR 0.750
+  top 50 of each                     recall@5  80%   MRR 0.755
+  top 200 of each                    recall@5  80%   MRR 0.755
+
+across k, rank fusion's recall@5 was 80% at every k; MRR ranged from 0.721 (k = 200) to 0.755 (k = 1)
+score fusion's best min-max weight was 0.7, at 80%

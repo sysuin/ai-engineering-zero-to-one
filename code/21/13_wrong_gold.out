@@ -1,0 +1,15 @@
+120 cases; system B is truly 6 points better than A, which is 85% right;
+4,000 trials
+
+  wrong gold  how it is wrong                    measured gain  B found better
+                                                      (points)      (p < 0.05)
+          0%  none                                        +6.0             46%
+          5%  at random                                   +5.7             43%
+          5%  encodes the old system's answers            +5.2             34%
+         10%  at random                                   +5.4             40%
+         10%  encodes the old system's answers            +4.4             24%
+         20%  at random                                   +4.8             35%
+         20%  encodes the old system's answers            +2.8              9%
+
+measured gain: the mean difference between the two scores
+B found better: the share of trials in which an exact McNemar test finds B better

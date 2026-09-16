@@ -1,26 +1,1550 @@
-{
- "gpt-5.4-mini": {
+[
+ {
   "model": "gpt-5.4-mini",
+  "ceiling": 250,
+  "correct": 19,
+  "of": 30,
+  "refusals": 5,
+  "refusals_of": 12,
+  "cut_off": 0,
+  "empty": 0,
+  "p50": 0.8649358960010431,
+  "p95": 1.0244088330000523,
+  "tokens_in": 10723,
+  "tokens_out": 616,
+  "reasoning": 0,
+  "cost": null,
+  "cases": [
+   {
+    "id": "qbr-2023-Q1-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q1-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 19
+   },
+   {
+    "id": "qbr-2023-Q1-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 19
+   },
+   {
+    "id": "qbr-2023-Q1-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 30
+   },
+   {
+    "id": "qbr-2023-Q1-weakest",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 16
+   },
+   {
+    "id": "qbr-2023-Q2-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q2-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q2-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q2-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 23
+   },
+   {
+    "id": "qbr-2023-Q2-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 19
+   },
+   {
+    "id": "qbr-2023-Q3-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q3-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 19
+   },
+   {
+    "id": "qbr-2023-Q3-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 19
+   },
+   {
+    "id": "qbr-2023-Q3-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 44
+   },
+   {
+    "id": "qbr-2023-Q3-weakest",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 15
+   },
+   {
+    "id": "qbr-2023-Q4-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q4-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q4-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "abstain-01",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 14
+   },
+   {
+    "id": "abstain-02",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 369,
+    "tokens_out": 13
+   },
+   {
+    "id": "abstain-03",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 349,
+    "tokens_out": 16
+   },
+   {
+    "id": "abstain-04",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 655,
+    "tokens_out": 35
+   },
+   {
+    "id": "abstain-05",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 389,
+    "tokens_out": 17
+   },
+   {
+    "id": "abstain-06",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 95,
+    "tokens_out": 11
+   },
+   {
+    "id": "abstain-07",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 435,
+    "tokens_out": 55
+   },
+   {
+    "id": "abstain-08",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 106,
+    "tokens_out": 15
+   },
+   {
+    "id": "abstain-09",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 442,
+    "tokens_out": 19
+   },
+   {
+    "id": "abstain-10",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 878,
+    "tokens_out": 17
+   },
+   {
+    "id": "abstain-11",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 106,
+    "tokens_out": 14
+   },
+   {
+    "id": "abstain-12",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 295,
+    "tokens_out": 17
+   }
+  ]
+ },
+ {
+  "model": "gpt-5.4-mini",
+  "ceiling": 250,
   "correct": 22,
   "of": 30,
-  "refusals": 7,
+  "refusals": 6,
   "refusals_of": 12,
-  "p50": 0.982840978999775,
-  "p95": 1.4821655420000752,
+  "cut_off": 0,
+  "empty": 0,
+  "p50": 0.8644515420000971,
+  "p95": 1.126926207998622,
   "tokens_in": 10723,
-  "tokens_out": 557,
-  "cost": null
+  "tokens_out": 554,
+  "reasoning": 0,
+  "cost": null,
+  "cases": [
+   {
+    "id": "qbr-2023-Q1-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q1-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q1-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 19
+   },
+   {
+    "id": "qbr-2023-Q1-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 24
+   },
+   {
+    "id": "qbr-2023-Q1-weakest",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 12
+   },
+   {
+    "id": "qbr-2023-Q2-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q2-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q2-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q2-strongest",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q2-weakest",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 21
+   },
+   {
+    "id": "qbr-2023-Q3-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q3-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q3-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 19
+   },
+   {
+    "id": "qbr-2023-Q3-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 23
+   },
+   {
+    "id": "qbr-2023-Q3-weakest",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 15
+   },
+   {
+    "id": "qbr-2023-Q4-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q4-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q4-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 19
+   },
+   {
+    "id": "abstain-01",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 14
+   },
+   {
+    "id": "abstain-02",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 369,
+    "tokens_out": 19
+   },
+   {
+    "id": "abstain-03",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 349,
+    "tokens_out": 16
+   },
+   {
+    "id": "abstain-04",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 655,
+    "tokens_out": 13
+   },
+   {
+    "id": "abstain-05",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 389,
+    "tokens_out": 17
+   },
+   {
+    "id": "abstain-06",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 95,
+    "tokens_out": 11
+   },
+   {
+    "id": "abstain-07",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 435,
+    "tokens_out": 46
+   },
+   {
+    "id": "abstain-08",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 106,
+    "tokens_out": 15
+   },
+   {
+    "id": "abstain-09",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 442,
+    "tokens_out": 19
+   },
+   {
+    "id": "abstain-10",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 878,
+    "tokens_out": 17
+   },
+   {
+    "id": "abstain-11",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 14
+   },
+   {
+    "id": "abstain-12",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 295,
+    "tokens_out": 17
+   }
+  ]
  },
- "gpt-5.5": {
+ {
   "model": "gpt-5.5",
+  "ceiling": 250,
+  "correct": 20,
+  "of": 30,
+  "refusals": 8,
+  "refusals_of": 12,
+  "cut_off": 2,
+  "empty": 2,
+  "p50": 2.6416773539986025,
+  "p95": 6.818533625002601,
+  "tokens_in": 10723,
+  "tokens_out": 1743,
+  "reasoning": 1189,
+  "cost": null,
+  "cases": [
+   {
+    "id": "qbr-2023-Q1-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q1-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q1-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q1-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 126
+   },
+   {
+    "id": "qbr-2023-Q1-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": true,
+    "tokens_in": 383,
+    "tokens_out": 119
+   },
+   {
+    "id": "qbr-2023-Q2-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q2-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q2-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q2-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 250
+   },
+   {
+    "id": "qbr-2023-Q2-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 250
+   },
+   {
+    "id": "qbr-2023-Q3-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q3-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 32
+   },
+   {
+    "id": "qbr-2023-Q3-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q3-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 66
+   },
+   {
+    "id": "qbr-2023-Q3-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 159
+   },
+   {
+    "id": "qbr-2023-Q4-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q4-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 8
+   },
+   {
+    "id": "qbr-2023-Q4-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "abstain-01",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 42
+   },
+   {
+    "id": "abstain-02",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 369,
+    "tokens_out": 34
+   },
+   {
+    "id": "abstain-03",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 349,
+    "tokens_out": 16
+   },
+   {
+    "id": "abstain-04",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 655,
+    "tokens_out": 41
+   },
+   {
+    "id": "abstain-05",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 389,
+    "tokens_out": 48
+   },
+   {
+    "id": "abstain-06",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 95,
+    "tokens_out": 41
+   },
+   {
+    "id": "abstain-07",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 435,
+    "tokens_out": 85
+   },
+   {
+    "id": "abstain-08",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 106,
+    "tokens_out": 41
+   },
+   {
+    "id": "abstain-09",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 442,
+    "tokens_out": 83
+   },
+   {
+    "id": "abstain-10",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 878,
+    "tokens_out": 42
+   },
+   {
+    "id": "abstain-11",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 43
+   },
+   {
+    "id": "abstain-12",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 295,
+    "tokens_out": 37
+   }
+  ]
+ },
+ {
+  "model": "gpt-5.5",
+  "ceiling": 250,
+  "correct": 20,
+  "of": 30,
+  "refusals": 8,
+  "refusals_of": 12,
+  "cut_off": 2,
+  "empty": 2,
+  "p50": 2.7748192910003127,
+  "p95": 5.129738458999782,
+  "tokens_in": 10723,
+  "tokens_out": 1767,
+  "reasoning": 1194,
+  "cost": null,
+  "cases": [
+   {
+    "id": "qbr-2023-Q1-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q1-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q1-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q1-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": true,
+    "tokens_in": 383,
+    "tokens_out": 125
+   },
+   {
+    "id": "qbr-2023-Q1-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 144
+   },
+   {
+    "id": "qbr-2023-Q2-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 30
+   },
+   {
+    "id": "qbr-2023-Q2-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q2-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q2-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 144
+   },
+   {
+    "id": "qbr-2023-Q2-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 250
+   },
+   {
+    "id": "qbr-2023-Q3-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q3-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 8
+   },
+   {
+    "id": "qbr-2023-Q3-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q3-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 148
+   },
+   {
+    "id": "qbr-2023-Q3-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 250
+   },
+   {
+    "id": "qbr-2023-Q4-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q4-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 21
+   },
+   {
+    "id": "qbr-2023-Q4-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "abstain-01",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 41
+   },
+   {
+    "id": "abstain-02",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 369,
+    "tokens_out": 35
+   },
+   {
+    "id": "abstain-03",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 349,
+    "tokens_out": 16
+   },
+   {
+    "id": "abstain-04",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 655,
+    "tokens_out": 35
+   },
+   {
+    "id": "abstain-05",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 389,
+    "tokens_out": 11
+   },
+   {
+    "id": "abstain-06",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 95,
+    "tokens_out": 35
+   },
+   {
+    "id": "abstain-07",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 435,
+    "tokens_out": 92
+   },
+   {
+    "id": "abstain-08",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 106,
+    "tokens_out": 42
+   },
+   {
+    "id": "abstain-09",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 442,
+    "tokens_out": 49
+   },
+   {
+    "id": "abstain-10",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 878,
+    "tokens_out": 54
+   },
+   {
+    "id": "abstain-11",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 41
+   },
+   {
+    "id": "abstain-12",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 295,
+    "tokens_out": 38
+   }
+  ]
+ },
+ {
+  "model": "gpt-5.5",
+  "ceiling": 2000,
   "correct": 18,
   "of": 30,
   "refusals": 6,
   "refusals_of": 12,
-  "p50": 1.5383758335001403,
-  "p95": 3.2880472910001117,
+  "cut_off": 0,
+  "empty": 0,
+  "p50": 2.1316916460000357,
+  "p95": 7.236529541998607,
   "tokens_in": 10723,
-  "tokens_out": 2007,
-  "cost": null
+  "tokens_out": 1781,
+  "reasoning": 1093,
+  "cost": null,
+  "cases": [
+   {
+    "id": "qbr-2023-Q1-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q1-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q1-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 30
+   },
+   {
+    "id": "qbr-2023-Q1-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 206
+   },
+   {
+    "id": "qbr-2023-Q1-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 134
+   },
+   {
+    "id": "qbr-2023-Q2-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q2-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 8
+   },
+   {
+    "id": "qbr-2023-Q2-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 19
+   },
+   {
+    "id": "qbr-2023-Q2-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 151
+   },
+   {
+    "id": "qbr-2023-Q2-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": true,
+    "tokens_in": 383,
+    "tokens_out": 178
+   },
+   {
+    "id": "qbr-2023-Q3-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q3-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 21
+   },
+   {
+    "id": "qbr-2023-Q3-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q3-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 167
+   },
+   {
+    "id": "qbr-2023-Q3-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 169
+   },
+   {
+    "id": "qbr-2023-Q4-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q4-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q4-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "abstain-01",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 40
+   },
+   {
+    "id": "abstain-02",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 369,
+    "tokens_out": 35
+   },
+   {
+    "id": "abstain-03",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 349,
+    "tokens_out": 16
+   },
+   {
+    "id": "abstain-04",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 655,
+    "tokens_out": 54
+   },
+   {
+    "id": "abstain-05",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 389,
+    "tokens_out": 42
+   },
+   {
+    "id": "abstain-06",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 95,
+    "tokens_out": 54
+   },
+   {
+    "id": "abstain-07",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 435,
+    "tokens_out": 81
+   },
+   {
+    "id": "abstain-08",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 106,
+    "tokens_out": 41
+   },
+   {
+    "id": "abstain-09",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 442,
+    "tokens_out": 68
+   },
+   {
+    "id": "abstain-10",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 878,
+    "tokens_out": 42
+   },
+   {
+    "id": "abstain-11",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 42
+   },
+   {
+    "id": "abstain-12",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 295,
+    "tokens_out": 37
+   }
+  ]
+ },
+ {
+  "model": "gpt-5.5",
+  "ceiling": 2000,
+  "correct": 20,
+  "of": 30,
+  "refusals": 8,
+  "refusals_of": 12,
+  "cut_off": 0,
+  "empty": 0,
+  "p50": 2.945263812500343,
+  "p95": 8.476640125001722,
+  "tokens_in": 10723,
+  "tokens_out": 1844,
+  "reasoning": 1216,
+  "cost": null,
+  "cases": [
+   {
+    "id": "qbr-2023-Q1-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q1-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q1-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q1-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 118
+   },
+   {
+    "id": "qbr-2023-Q1-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": true,
+    "tokens_in": 383,
+    "tokens_out": 158
+   },
+   {
+    "id": "qbr-2023-Q2-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q2-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q2-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 29
+   },
+   {
+    "id": "qbr-2023-Q2-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 152
+   },
+   {
+    "id": "qbr-2023-Q2-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 223
+   },
+   {
+    "id": "qbr-2023-Q3-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 18
+   },
+   {
+    "id": "qbr-2023-Q3-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 8
+   },
+   {
+    "id": "qbr-2023-Q3-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 7
+   },
+   {
+    "id": "qbr-2023-Q3-strongest",
+    "kind": "document",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 383,
+    "tokens_out": 278
+   },
+   {
+    "id": "qbr-2023-Q3-weakest",
+    "kind": "document",
+    "correct": false,
+    "abstained": true,
+    "tokens_in": 383,
+    "tokens_out": 157
+   },
+   {
+    "id": "qbr-2023-Q4-revenue",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 349,
+    "tokens_out": 20
+   },
+   {
+    "id": "qbr-2023-Q4-orders",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 351,
+    "tokens_out": 17
+   },
+   {
+    "id": "qbr-2023-Q4-margin",
+    "kind": "document",
+    "correct": true,
+    "abstained": false,
+    "tokens_in": 350,
+    "tokens_out": 17
+   },
+   {
+    "id": "abstain-01",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 39
+   },
+   {
+    "id": "abstain-02",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 369,
+    "tokens_out": 34
+   },
+   {
+    "id": "abstain-03",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 349,
+    "tokens_out": 16
+   },
+   {
+    "id": "abstain-04",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 655,
+    "tokens_out": 49
+   },
+   {
+    "id": "abstain-05",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 389,
+    "tokens_out": 27
+   },
+   {
+    "id": "abstain-06",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 95,
+    "tokens_out": 44
+   },
+   {
+    "id": "abstain-07",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 435,
+    "tokens_out": 83
+   },
+   {
+    "id": "abstain-08",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 106,
+    "tokens_out": 42
+   },
+   {
+    "id": "abstain-09",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 442,
+    "tokens_out": 79
+   },
+   {
+    "id": "abstain-10",
+    "kind": "unanswerable",
+    "correct": false,
+    "abstained": false,
+    "tokens_in": 878,
+    "tokens_out": 60
+   },
+   {
+    "id": "abstain-11",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 106,
+    "tokens_out": 40
+   },
+   {
+    "id": "abstain-12",
+    "kind": "unanswerable",
+    "correct": true,
+    "abstained": true,
+    "tokens_in": 295,
+    "tokens_out": 40
+   }
+  ]
  }
-}
+]

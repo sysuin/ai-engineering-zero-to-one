@@ -1,0 +1,13 @@
+120 answers, 114 right, 175,780 tokens with no ceiling
+
+  ceiling         cut  unanswerable  tokens saved  right  lost  rescued
+  p50 (870)        60            19           42%     77    38        1
+  p75 (1,226)      30            18           34%    105    10        1
+  p90 (2,971)      12             7           13%    111     3        0
+  p95 (4,515)       6             4            6%    114     0        0
+  p99 (6,746)       2             1            1%    114     0        0
+  none              0             0            0%    114     0        0
+
+  unanswerable = how many of the cut requests had no answer to find;
+  lost = right answers the ceiling cut off; rescued = unanswerable questions
+  answered wrongly that the forced refusal would have fixed

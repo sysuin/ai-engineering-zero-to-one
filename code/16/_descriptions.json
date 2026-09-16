@@ -1,5 +1,8 @@
 {
-  "n": 12,
-  "terse": 11,
-  "written": 12
+  "n": 36,
+  "questions": 12,
+  "repeats": 3,
+  "vague names, terse": 33,
+  "vague names, written": 36,
+  "good names, terse": 36
 }

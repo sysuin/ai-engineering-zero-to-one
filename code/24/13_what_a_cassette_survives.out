@@ -1,0 +1,11 @@
+one recorded run of Clarity: 5 requests on the cassette
+
+  what changed                       replayed  first miss
+  nothing                               5 of 5  none
+  a longer timeout on every tool        5 of 5  none
+  a larger step budget                  5 of 5  none
+  one word of a tool description        0 of 5  request 1, a model call
+  the tools listed in a new order       0 of 5  request 1, a model call
+  a trailing space in the prompt        0 of 5  request 1, a model call
+  passages cut at 500 characters        4 of 5  request 5, a model call
+  the revenue definition reworded       1 of 5  request 2, a model call

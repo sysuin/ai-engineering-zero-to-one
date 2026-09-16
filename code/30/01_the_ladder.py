@@ -93,7 +93,7 @@ if spread == 0:
           f"schema alone was enough,")
     print("and the catalogue and the examples bought nothing measurable.")
     print()
-    print("That is the result, and it is the most common result. The question these")
+    print("That is the result, and it is a result worth expecting. The question these")
     print("twelve cases were chosen to answer — would a fine-tune help here — is")
     print("answered before the ladder begins: there is nowhere to climb from.")
     print()

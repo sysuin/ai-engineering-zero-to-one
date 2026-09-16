@@ -12,15 +12,15 @@
   "2": {
     "accuracy": 0.5625,
     "prompt_tokens": 1408,
-    "example": "NET45-RECPT"
+    "example": "NET45-RECIP"
   },
   "4": {
-    "accuracy": 0.9375,
+    "accuracy": 1.0,
     "prompt_tokens": 2357,
     "example": "NET45-RCP"
   },
   "8": {
-    "accuracy": 0.8125,
+    "accuracy": 0.875,
     "prompt_tokens": 4213,
     "example": "NET45-RCP"
   }

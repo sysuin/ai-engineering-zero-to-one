@@ -1,0 +1,30 @@
+14 questions whose answer is in one passage; where that passage ranked
+
+  question                                      dense (v0.5)  hybrid (v0.6)
+  What is the racked storage capacity at the               1              1
+  What is the total capacity of the Columbus               1              1
+  What was utilisation at the Columbus depot               1              1
+  Under MSC-2022-100, how much can the suppl               1              1
+  How much written notice is required before               1              1
+  How long does the buyer have to reject non               1              1
+  What is the supplier's liability cap under               1              1
+  What on-time delivery rate does MSC-2022-1              12              1
+  What happens if a supplier misses the deli               1              1
+  What are the payment terms under MSC-2022-              46              2
+  How much notice is needed to terminate MSC               1              1
+  Which account did Meridian lose, and which              22              4
+  Why does the company say Halloway Group le               1              1
+  What is Meridian's standing gross margin t              19             17
+
+                          dense  hybrid   what to try
+  in the top k               10      13   retrieval is not the problem
+  just below k                2       1   a larger k, or a reranker over the top 20
+  deep                        2       0   the query or the chunking, not k
+  not in top 50               0       0   the index: is the text even chunked findably?
+
+Dense retrieval missed 4 of these at k=6; none of them was missing from the top 50.
+Hybrid retrieval brought 3 into the top 6:
+  What on-time delivery rate does MSC-2022-100 require?
+  What are the payment terms under MSC-2022-100?
+  Which account did Meridian lose, and which region did it hurt?
+'Retrieval failed' was several different failures, and each has a different fix.

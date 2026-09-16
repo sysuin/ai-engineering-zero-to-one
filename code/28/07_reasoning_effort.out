@@ -1,0 +1,13 @@
+30 cases, identical passages, 2 runs per setting
+
+  effort       correct  output tok  reasoning    p50    p95
+  none     20 / 21 /30          588          0   0.8s   1.1s
+  low      21 / 19 /30        2,304      1,594   1.0s   2.6s
+  medium   20 / 22 /30        4,517      3,829   1.0s   3.3s
+  high     20 / 18 /30        8,124      7,373   1.2s   6.3s
+
+From 'none' to 'high', output tokens went from 588 to 8,124 a run and the
+median call from 0.8s to 1.2s. Scores ranged from 18 to 22 across every setting and run,
+and the same setting moved by up to 2 between its two runs — so on these
+questions, read the score column for any difference larger than that, and only then
+pay for more thinking.

@@ -1,0 +1,19 @@
+attention weights (row = token looking, column = token looked at):
+[[0.01 0.   0.89 0.1  0.  ]
+ [0.92 0.   0.   0.   0.08]
+ [0.66 0.03 0.04 0.1  0.17]
+ [0.21 0.05 0.26 0.01 0.47]
+ [0.83 0.   0.05 0.   0.12]]
+each row sums to [1. 1. 1. 1. 1.]
+
+shuffled input gives shuffled output, unchanged otherwise: True
+
+causal weights (nothing above the diagonal):
+[[1.   0.   0.   0.   0.  ]
+ [1.   0.   0.   0.   0.  ]
+ [0.9  0.05 0.06 0.   0.  ]
+ [0.4  0.1  0.49 0.02 0.  ]
+ [0.83 0.   0.05 0.   0.12]]
+   1000 tokens ->    1,000,000 attention scores per head, per layer
+   2000 tokens ->    4,000,000 attention scores per head, per layer
+   4000 tokens ->   16,000,000 attention scores per head, per layer

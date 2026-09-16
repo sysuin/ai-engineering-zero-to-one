@@ -2,9 +2,9 @@
 
   metric                     score   what it counts as right
   exact match                  0%   the reply is exactly the answer
-  contains the answer         95%   the answer is somewhere in the reply
+  contains the answer         96%   the answer is somewhere in the reply
   token F1                    22%   word overlap with the answer
-  embedding similarity        41%   the reply means something similar
+  embedding similarity        42%   the reply means something similar
 
 Exact match scores 0%, and the system is not that bad —
 it answers in sentences, and a sentence is never equal to a number. Exact
@@ -16,32 +16,32 @@ long reply for containing common words and punishes a correct short one for
 containing few.
 
 Embedding similarity is the interesting failure. Look at what it does to the
-95 answers the string rule calls correct:
+96 answers the string rule calls correct:
 
-  lowest similarity among correct answers   0.11
+  lowest similarity among correct answers   0.10
   highest                                   0.68
   mean                                      0.43
-  mean among wrong answers                  0.17   (only 5 of them)
+  mean among wrong answers                  0.16   (only 4 of them)
 
-Correct answers span 0.11 to 0.68, and the number is not comparable across
+Correct answers span 0.10 to 0.68, and the number is not comparable across
 questions: a short exact reply to a long question scores low because it is
 short, not because it is wrong.
 
-This run produced only 5 wrong answers, which is far too few to fit a threshold
+This run produced only 4 wrong answers, which is far too few to fit a threshold
 to. That is worth saying rather than quietly fitting one anyway — with a
 handful of negatives, any cut-off you compute describes a handful of
 sentences.
 
 Two correct answers from the bottom of the range:
 
-  scored 0.25
-    Q: Under MSC-2022-100, how much can the supplier raise prices in a 
-    A: Under MSC-2022-100, the supplier may raise prices by **no more t
-    gold: 3%
   scored 0.29
     Q: What is the racked storage capacity at the Dallas depot?
     A: The Dallas depot’s racked storage capacity is **54,100 sq ft**.
     gold: 54,100
+  scored 0.30
+    Q: Why does the company say Halloway Group left?
+    A: The company says Halloway Group left because it **did not renew 
+    gold: competitor
 
 Similarity measures topic and register, not truth. Use it to rank near misses
 worth reading. Do not use it to decide whether you shipped a regression.

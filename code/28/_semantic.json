@@ -3,49 +3,49 @@
   {
    "a": "What was revenue in 2024 Q3?",
    "b": "What was revenue in 2024 Q4?",
-   "score": 0.9461784362792969
+   "score": 0.9461356401443481
   },
   {
    "a": "What was revenue in 2024 Q3?",
    "b": "What was gross profit in 2024 Q3?",
-   "score": 0.7354791164398193
+   "score": 0.7353938221931458
   },
   {
    "a": "Which region was strongest in 2024 Q3?",
    "b": "Which region was weakest in 2024 Q3?",
-   "score": 0.9202874898910522
+   "score": 0.920307457447052
   },
   {
    "a": "What is the price cap under MSC-2022-100?",
    "b": "What is the price cap under MSC-2024-118?",
-   "score": 0.9448611736297607
+   "score": 0.944871187210083
   },
   {
    "a": "How many orders were there in 2025 Q1?",
    "b": "How many units were shipped in 2025 Q1?",
-   "score": 0.7530993223190308
+   "score": 0.7531533241271973
   },
   {
    "a": "What was Midwest revenue in 2024 Q3?",
    "b": "What was Midwest revenue in 2025 Q3?",
-   "score": 0.9665789008140564
+   "score": 0.9665822386741638
   }
  ],
  "safe": [
   {
    "a": "What was revenue in 2024 Q3?",
    "b": "what was the revenue for 2024 q3",
-   "score": 0.8981950283050537
+   "score": 0.8981497287750244
   },
   {
    "a": "Which region was weakest in 2024 Q3?",
    "b": "In 2024 Q3, which region performed worst?",
-   "score": 0.843410849571228
+   "score": 0.842793345451355
   },
   {
    "a": "What are the payment terms under MSC-2022-100?",
    "b": "Under MSC-2022-100, how long do we have to pay?",
-   "score": 0.7805718183517456
+   "score": 0.7805230617523193
   }
  ],
  "overlap": true,

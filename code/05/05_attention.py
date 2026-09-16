@@ -25,16 +25,19 @@ def first_token_distribution(prompt: str) -> list[tuple[str, float]]:
     return [(t.token, math.exp(t.logprob)) for t in first.top_logprobs]
 
 
+tops = {}
 for word in ("big", "small"):
     print(f'"...because it was too {word}."')
-    for token, probability in first_token_distribution(SENTENCE.format(word)):
+    distribution = first_token_distribution(SENTENCE.format(word))
+    tops[word] = distribution[0][0]
+    for token, probability in distribution:
         bar = "#" * max(1, round(probability * 40))
         print(f"    {token!r:10} {probability:6.3f}  {bar}")
     print()
 
-print("One adjective changed, seven words after the two nouns, and the answer moves.")
+between = SENTENCE.split("van")[1].split("{}")[0].split()
+print(f"One adjective changed, {len(between)} words after the last noun. The model's first "
+      f"choice {'moved' if tops['big'] != tops['small'] else 'did not move'}: "
+      f"{tops['big']!r} then {tops['small']!r}.")
 print("Nothing about 'pallet' or 'van' changed. What changed is which of them the")
 print("model was paying attention to when it read 'it'.")
-print()
-print("That is the whole idea. Attention is a learned answer to the question:")
-print("for this word, which earlier words matter?")

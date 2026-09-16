@@ -1,0 +1,4 @@
+clarity.ask: model=gpt-5.4-mini-2026-03-17 finish=stop in=30 out=18 0.88s
+-> Industrial supplies, packaging materials, janitorial supplies
+clarity.ask: model=gpt-5.4-mini-2026-03-17 finish=length in=20 out=16 0.74s
+-> Truncated: finish_reason was 'length'; the answer is incomplete; got 44 characters before the cut

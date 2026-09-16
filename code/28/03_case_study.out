@@ -1,15 +1,15 @@
 36 requests (30 distinct; the rest are repeats).
 
                                   cost  calls  out tok     p50   correct
-  baseline                     0.00495     36    3,875    1.4s    28/36  
-  + ask for one sentence       0.00277     36      265    0.9s    31/36  
-  + cap the output             0.00276     36      255    0.9s    31/36  
-  + trim the context to 4      0.00160     36      264    0.9s    29/36  
-  + exact cache                0.00134     30      224    0.9s    29/36  
+  baseline                     0.00504     36    4,021    1.3s    30/36  
+  + ask for one sentence       0.00277     36      263    0.9s    30/36  
+  + cap the output             0.00277     36      259    0.9s    31/36  
+  + trim the context to 4      0.00162     36      284    0.9s    28/36  
+  + exact cache                0.00134     30      229    0.8s    29/36  
 
   cost      73% lower
-  quality   28/36 -> 29/36  (+3%)
-  latency   1.4s -> 0.9s median
+  quality   30/36 -> 29/36  (-3%)
+  latency   1.3s -> 0.8s median
 
   (placeholder rates; the ratios are real, the dollars are illustrative)
 
@@ -24,11 +24,11 @@ fashionable. Output tokens are a minority of the volume at several times the
 price, and the default behaviour of every model is to explain itself.
 
 Capping max_tokens is not the same lever. It truncates rather than shortens,
-which produces a cut-off answer at full price — §27.4's stop reason is how you
+which produces a cut-off answer at full price — §27.1's stop reason is how you
 find out that is happening. It is a safety rail, not an optimisation.
 
 Trimming the context is the one to watch. Fewer passages is less input and
-fewer chances to retrieve the right one, so it trades cost against §22.6's
+fewer chances to retrieve the right one, so it trades cost against §22.10's
 context recall directly. Measure both or you will trade away the answer.
 
 And the cache is free money in proportion to how much your traffic repeats,

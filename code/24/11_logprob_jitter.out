@@ -1,0 +1,14 @@
+30 identical requests at temperature 0, log-probabilities returned
+reasoning tokens in any run: 0; runs whose first token was not their own top choice: 0
+
+  the first token chosen: 'The' 24x, 'Most' 4x, 'Here' 2x
+
+  position  token        runs on path   log-prob, lowest to highest  gap to 2nd
+         1  'The'                  24        -1.3675 to -0.6423            0.75
+         2  ' supplier'            24        -0.3132 to -0.0284            4.00
+         3  ' appears'             24        -0.1127 to -0.0259            3.25
+         4  ' to'                  24        -0.0001 to 0.0000                -
+         5  ' have'                24        -0.0004 to -0.0001               -
+         6  ' breached'            24        -0.0000 to -0.0000               -
+
+the same first token, from the same request, was given probabilities from 25% to 53%

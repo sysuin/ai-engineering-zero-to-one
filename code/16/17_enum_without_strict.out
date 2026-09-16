@@ -1,0 +1,6 @@
+20 spellings of Meridian's regions and 20 places that are not regions,
+each asked twice, strict mode off
+
+  asked about                        in the enum  outside it
+  a Meridian region, spelled loosely      40/40       0/40
+  somewhere that is not a region          40/40       0/40

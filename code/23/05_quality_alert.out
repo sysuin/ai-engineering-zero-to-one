@@ -4,20 +4,20 @@ warehouse as an alternative route.
 
                                          healthy   degraded   alerts?
   HTTP errors                                  0          0   silent
-  p95 latency                             8441ms     4430ms   silent
-  tokens per request                        2196       1611   silent
-  answers judged correct                    9/10       1/10   FIRES
-  answers actually correct                 19/22       8/22   FIRES
+  p95 latency                             5610ms     4331ms   silent
+  tokens per request                        2749       1592   silent
+  answers judged correct                    6/10       0/10   FIRES
+  answers actually correct                 17/22       8/22   FIRES
 
 Nothing failed. No request errored, no timeout was hit, no exception reached a
 log, and the service returned 200 to everything. An uptime check would have
 been green for the entire window, and an on-call engineer would have been
 right to ignore it.
 
-The system was, meanwhile, getting 11 more answers wrong out of 22.
+The system was, meanwhile, getting 9 more answers wrong out of 22.
 
-And look at the two rows above it. p95 fell from 8441ms to 4430ms and
-the average request got 27% cheaper, because a system that
+And look at the two rows above it. p95 fell from 5610ms to 4331ms and
+the average request got 42% cheaper, because a system that
 cannot find anything stops looking sooner. An efficiency dashboard would
 have shown this outage as a good week.
 

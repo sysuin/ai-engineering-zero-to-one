@@ -1,0 +1,21 @@
+in place: one migration renames the column while old code is still serving
+
+  before
+      old_write ok   old_read 'old writer'
+  renamed; old and new code both running
+      old_write FAILS: no such column   new_write ok   old_read FAILS: no such column   new_read 'new writer'
+
+expand and contract: five deploys, each safe to roll back
+
+  1 expand: add the new column
+      old_write ok   old_read 'old writer'
+  2 deploy code that writes both
+      old_write ok   dual_write ok   old_read 'dual writer'
+  3 backfill the old rows
+      dual_write ok   old_read 'dual writer'   new_read 'dual writer'
+  4 deploy code that reads the new column
+      dual_write ok   new_read 'dual writer'
+  5 contract: drop the old column
+      new_write ok   new_read 'new writer'
+
+  rows without a value in the new column at the end: 0

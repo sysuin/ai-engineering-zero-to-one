@@ -14,7 +14,7 @@ from clarity.v0_12.team import RESEARCHER                # noqa: E402
 from meridian_index import load_index                    # noqa: E402
 
 RUNS = 12
-# The sub-question the supervisor actually wrote, taken verbatim from §20.9's runs.
+# The sub-question the supervisor actually wrote, taken verbatim from §20.11's runs.
 BARE = "According to the company documents, what reason is given for why the Midwest fell?"
 # The same question, with the one thing the analyst already knew.
 WITH_CONTEXT = (BARE + "\n\nContext already established: total revenue in 2024 Q3 "
@@ -49,7 +49,7 @@ if ctx > bare:
 else:
     print(f"It did not help: {bare} against {ctx}. Whatever the researcher was")
     print("missing, it was not the analyst's figure — which rules out the tidiest")
-    print("explanation and leaves the loss where §20.9 measured it, inside retrieval.")
+    print("explanation and leaves the loss where §20.4 found it, inside retrieval.")
 print()
 print("Either way, note what this experiment is: the fix for an agent boundary is to")
 print("pass more of the context across it. Do that thoroughly enough and you have")

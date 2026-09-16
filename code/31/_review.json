@@ -1,6 +1,6 @@
 {
  "files": 37,
- "loc": 3216,
+ "loc": 3315,
  "cases": 120,
  "kinds": {
   "document": 74,
@@ -8,54 +8,84 @@
   "composite": 6,
   "unanswerable": 20
  },
+ "templates": 64,
  "biggest_kind": "document",
  "biggest_share": 0.6166666666666667,
  "interval": [
   0.7753231505975375,
   0.9029626596633118
  ],
- "tenant_declaring": 3,
- "tenant_enforcing": 0,
+ "sdk_retries": 2,
+ "sdk_read_timeout": 600,
+ "tenant_columns_in_warehouse": 0,
  "incremental": 0,
+ "unused": {
+  "cache": [
+   "SemanticCache"
+  ],
+  "gateway": [
+   "ToolCall",
+   "Reply",
+   "Provider",
+   "OpenAIProvider",
+   "BlockShapedProvider",
+   "Gateway"
+  ],
+  "guard": [
+   "egress_violations",
+   "fence"
+  ],
+  "replay": [
+   "canonical",
+   "fingerprint",
+   "Cassette",
+   "RecordingClient"
+  ],
+  "resilience": [
+   "Transient",
+   "Retry",
+   "CircuitBreaker"
+  ]
+ },
  "questions": [
   {
    "q": "What happens when the model is down?",
-   "a": "one breaker per provider, in 1 file",
-   "ok": true
+   "a": "breaker and fallback exist (platform/gateway.py); v1.0 composes neither, so it has the SDK's 2 retries, a 600s read timeout on each, and then an error",
+   "ok": false
   },
   {
    "q": "What happens when a tool is wrong?",
-   "a": "a budgeted loop; 9 files carry a step limit",
+   "a": "a budget of steps, seconds and tokens; a failed or hung tool becomes a result the model reads",
    "ok": true
   },
   {
    "q": "What does it do when it does not know?",
-   "a": "refusal is a scored behaviour across 16 files",
+   "a": "refuses; scored on 20 unanswerable cases by one detector, shared with the suite",
    "ok": true
   },
   {
-   "q": "Where does state live?",
-   "a": "3 files open a database; the rest are pure",
+   "q": "Where does state live, and what if it is lost?",
+   "a": "index and warehouse on disk, read-only; the cache in one process's memory, and lost with it",
    "ok": true
   },
   {
    "q": "How is it evaluated, and how often?",
-   "a": "120 cases, six layers, on every push",
+   "a": "24 cases on every pull request, all 120 weekly",
    "ok": true
   },
   {
    "q": "Who can see whose data?",
-   "a": "3 files carry a tenant column; 0 enforce it",
+   "a": "the cache is keyed by tenant; the warehouse has 0 tenant columns and the index none",
    "ok": false
   },
   {
-   "q": "What is the cost of one request, and who watches it?",
-   "a": "priced per run and stored on the row",
+   "q": "What does one request cost, and who watches it?",
+   "a": "every model call priced on its trace span; the alert on the total is Chapter 23's, outside v1.0",
    "ok": true
   },
   {
    "q": "How does a changed document reach the index?",
-   "a": "0 incremental paths \u2014 it is rebuilt, not updated",
+   "a": "0 incremental paths: the index is rebuilt whole",
    "ok": false
   }
  ]

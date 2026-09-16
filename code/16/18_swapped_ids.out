@@ -1,0 +1,8 @@
+5 questions x 2 runs, each answered with the two results swapped
+
+  results                      right region   wrong region   noticed
+  bare numbers                         0/10          10/10      0/10
+  say which region they are           10/10           0/10      0/10
+
+  'named' = the first region the answer names as having more revenue; the true figures
+  decide which is right

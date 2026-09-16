@@ -1,35 +1,44 @@
-Eight questions, asked of Clarity, answered by reading the repository.
+Eight questions, asked of Clarity v1.0, answered by reading what it composes.
 
-  37 Python files, 3,216 lines
+  37 Python files in the repository, 3,315 lines; v1.0 imports 20 names
 
-    What happens when the model is down?
-      one breaker per provider, in 1 file
+  * What happens when the model is down?
+      breaker and fallback exist (platform/gateway.py); v1.0 composes
+      neither, so it has the SDK's 2 retries, a 600s read timeout on each,
+      and then an error
     What happens when a tool is wrong?
-      a budgeted loop; 9 files carry a step limit
+      a budget of steps, seconds and tokens; a failed or hung tool becomes
+      a result the model reads
     What does it do when it does not know?
-      refusal is a scored behaviour across 16 files
-    Where does state live?
-      3 files open a database; the rest are pure
+      refuses; scored on 20 unanswerable cases by one detector, shared with
+      the suite
+    Where does state live, and what if it is lost?
+      index and warehouse on disk, read-only; the cache in one process's
+      memory, and lost with it
     How is it evaluated, and how often?
-      120 cases, six layers, on every push
+      24 cases on every pull request, all 120 weekly
   * Who can see whose data?
-      3 files carry a tenant column; 0 enforce it
-    What is the cost of one request, and who watches it?
-      priced per run and stored on the row
+      the cache is keyed by tenant; the warehouse has 0 tenant columns and
+      the index none
+    What does one request cost, and who watches it?
+      every model call priced on its trace span; the alert on the total is
+      Chapter 23's, outside v1.0
   * How does a changed document reach the index?
-      0 incremental paths — it is rebuilt, not updated
+      0 incremental paths: the index is rebuilt whole
 
-6 of 8 answered cleanly. The 2 marked * are real, and both are
-structural rather than accidental — they are things the design does not do,
-not things it does badly.
+5 of 8 answered cleanly; the 3 marked * are not.
+
+Built in platform/, and never reached from v1.0:
+
+  cache        SemanticCache
+  gateway      ToolCall, Reply, Provider, OpenAIProvider, BlockShapedProvider, Gateway
+  guard        egress_violations, fence
+  replay       canonical, fingerprint, Cassette, RecordingClient
+  resilience   Transient, Retry, CircuitBreaker
 
 And one the eight questions do not ask, which a reviewer should:
 
-  * the eval set is 120 cases from one corpus, 74 of them (62%) document.
-    At n=120, a score near 85% carries a 95% interval of 78%-90%: 13 points
-    wide, which cannot see a 3-point improvement. §21.6 measured this.
-    The fix is more cases, and nothing substitutes for that work.
-
-None of the three is an oversight. Each was a decision to keep the
-system small enough to read, and each would be the first thing a team
-fixed. Writing them down is the difference between a design and a diagram.
+  * the eval set is 120 cases from one corpus, 74 of them (62%) document,
+    and 64 distinct questions once years and quarters are removed.
+    At n=120 a score near 85% has a 95% interval of 78%-90%, 13 points
+    wide — and that assumes every case is independent, which templates are not.

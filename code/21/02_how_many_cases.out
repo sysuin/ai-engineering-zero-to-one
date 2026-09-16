@@ -1,23 +1,23 @@
-The measured score on all 120 cases is 93%.
+The measured score on all 120 cases is 91%.
 Here is what smaller eval sets would have told you, 2,000 resamples each.
 
    cases      95% of runs report   width
        5         60% to 100%         40%  ------------------------
-      10         80% to 100%         20%  ------------
-      20         80% to 100%         20%  ------------
-      40         85% to 100%         15%  ---------
-      80         88% to 99%          11%  -------
-     120         88% to 98%           9%  ------
-     300         90% to 96%           6%  ---
-    1000         92% to 95%           3%  --
+      10         70% to 100%         30%  ------------------
+      20         75% to 100%         25%  ---------------
+      40         82% to 98%          15%  ---------
+      80         84% to 98%          14%  --------
+     120         86% to 96%          10%  ------
+     300         87% to 94%           7%  ----
+    1000         89% to 93%           4%  --
 
-A 20-case eval set reports a number that is 20% wide. That is not a
+A 20-case eval set reports a number that is 25% wide. That is not a
 measurement, it is a mood. Two systems five points apart are indistinguishable
 to it, and five points is the size of most real improvements.
 
-At 120 cases the interval is 9% wide, which is enough to tell a
+At 120 cases the interval is 10% wide, which is enough to tell a
 ten-point change from noise and not enough to tell a three-point one. That is
-the honest position of this chapter's eval set, and it is why §21.6 talks
+the honest position of this chapter's eval set, and it is why §21.14 talks
 about growing it rather than finishing it.
 
 Note what the last two rows cost: nothing to compute here, and a thousand model

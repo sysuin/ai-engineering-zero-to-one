@@ -1,0 +1,24 @@
+20 unanswerable questions x 2 runs; the search finds nothing; step budget 8
+
+  nothing reported as        searches  budget out  not found  broken
+  an empty list                   2.2        0/40      36/40    2/40
+  a terse error                   2.2        0/40       3/40   37/40
+  an error inviting a retry       2.9        0/40      36/40    2/40
+
+  searches = mean per run; not found = said so, by Clarity's refusal list;
+  broken = said a tool had failed, or it could not be done right now
+
+  an empty list, for example:
+    I couldn’t find Meridian’s employee headcount in the available documents,
+    and I don’t have a warehouse source for headcount figures. If you want, I
+    can try a broader document search for terms like “FTE,” “employees,”
+
+  a terse error, for example:
+    I’m sorry, but I can’t determine Meridian’s employee headcount from the
+    available tools right now. I tried searching Meridian documents, but the
+    search tool failed, and headcount is not something I can reliably infer from
+
+  an error inviting a retry, for example:
+    I couldn’t find Meridian’s employee headcount in the documents I searched.
+    If you want, I can try a few alternate searches for related terms like: -
+    total employees - FTE - workforce size - staffing - team size

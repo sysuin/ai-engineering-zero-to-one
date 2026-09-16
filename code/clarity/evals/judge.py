@@ -11,13 +11,13 @@ Only the second is really usable for regression testing, and Chapter 22 measures
 a pointwise judge with no reference is grading its own opinion of the domain, and a
 pairwise judge has an opinion about which side of the page an answer is on.
 
-The prompt rules here are not style. Each one is a bias that was measured before it was
-written down:
+The prompt rules here are not style. Chapter 22 measures the ones it can on its own set:
 
-    ask for a verdict, not a score   a 1-5 scale produces 4s
-    give the reference answer        without one you measure plausibility
-    demand the reason first          a verdict written before its reason is a guess
-    never mention which system       or you have measured the judge's expectations
+    ask for a verdict, not a score   a 1-5 scale leaves room to hedge
+    give the reference answer        without one you measure plausibility (measured)
+    demand the reason first          conventional; no difference for this judge (measured)
+    never mention which system       a version label moved verdicts towards it (measured)
+
 """
 from __future__ import annotations
 
@@ -92,9 +92,11 @@ class Judge:
             parts.append(f"Expected answer: {expected}")
         parts.append(f"Answer: {answer[:1500]}")
         out = self._ask("\n\n".join(parts))
-        verdict = str(out.get("verdict", "")).upper()
-        return Verdict(True if "CORRECT" in verdict else
-                       False if "WRONG" in verdict else None,
+        # Compare the whole word: "INCORRECT" contains "CORRECT", and a substring test would
+        # pass it. Anything that is neither verdict is no verdict, not a guess.
+        verdict = "".join(ch for ch in str(out.get("verdict", "")).upper() if ch.isalpha())
+        return Verdict(True if verdict == "CORRECT" else
+                       False if verdict in ("WRONG", "INCORRECT") else None,
                        str(out.get("reason", ""))[:300], json.dumps(out)[:400])
 
     def compare(self, question: str, a: str, b: str,
@@ -107,7 +109,7 @@ class Judge:
 
 
 def kappa(a: list[int], b: list[int]) -> tuple[float, float]:
-    """Raw agreement and Cohen's kappa, as in §21.8."""
+    """Raw agreement and Cohen's kappa, as in §21.11."""
     n = len(a)
     observed = sum(x == y for x, y in zip(a, b)) / n
     pa, pb = sum(a) / n, sum(b) / n

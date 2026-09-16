@@ -1,0 +1,17 @@
+40 contracts; the payment clause left alone, removed, or garbled like a bad scan
+
+  schema                condition    a number  the true one  null  status right
+  required integer      stated             40            40     0             —
+  required integer      absent             40             0     0             —
+  required integer      unreadable         40            14     0             —
+  nullable integer      stated             40            40     0             —
+  nullable integer      absent              0             0    40             —
+  nullable integer      unreadable         33            10     7             —
+  status and nullable   stated             40            40     0         40/40
+  status and nullable   absent              0             0    40         40/40
+  status and nullable   unreadable         10             0    30         24/40
+
+when the clause is absent or garbled, 'the true one' is a lucky guess: no other clause states it
+
+the garbled clause, as the model saw it:
+  ## 3. Payment □.□ @~y@e@% s~all be ?a@~ wi@h?? □□ ~%ys %# #?% da@e of % va~id invoi#e. □.□ @~e %uyer %ay wi#@h~?# %a#?@~% %# %n# #mo??t %is?u?%@ in #o

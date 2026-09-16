@@ -25,7 +25,7 @@ The warehouse: 7 tables and views
   v_sales           199,817 rows   order_id, order_date, year, quarter, channel…
 
 The documents. The `-pdf` folders are renders of the same documents, which is
-why §13.2 can compare a parser against the text it was generated from.
+why §13.3 can compare a parser against the text it was generated from.
 
   awkward                  8 files      0.3 MB
   contracts               40 files      0.1 MB
@@ -67,7 +67,7 @@ Three things in here that are hostile on purpose:
       poisoned-04-house-style.md
 
   9 of 40 contracts have identical bodies once numbers are masked.
-  Eight of those are by design and differ only in the price-adjustment cap;
+  Eight of those are by design and differ only in their numbers and header;
   the extra one is a coincidence of the generator, which is a fair model of
-  a real corpus. This is the cluster §14.8's MMR earns its place on, and the
+  a real corpus. §14.10 finds this cluster, §14.7's filter separates it, and the
   reason Chapter 13's exercises ask you to go looking for your own.

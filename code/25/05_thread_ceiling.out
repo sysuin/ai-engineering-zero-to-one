@@ -1,0 +1,4 @@
+40 requests, each blocking for 0.5s in a thread; this machine has 8 CPUs
+
+  default pool (12 threads)     2.01s   (4x one request)
+  a pool of 40 threads          0.51s   (1x one request)

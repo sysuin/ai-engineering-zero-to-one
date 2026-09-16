@@ -9,10 +9,10 @@ Each question asked 5 times at temperature 0
   Reverse a name         0/5 correct, 1 distinct answer(s)
           'naide riM'
 
-The famous failures — strawberry, 9.11 — now usually pass. They have been
-drilled into training data precisely because they became famous. Step one word
-off the well-trodden example and the same weakness is still there, and it is
-not even stable between attempts.
+The two famous questions: 10/10 right. The two a step away from them: 0/10.
+The famous failures have been drilled into training data because they became
+famous; the weakness underneath them has not gone anywhere.
+Answers that changed between identical attempts: none — at temperature 0, on this run
 
 Here is why. The model never sees letters:
    strawberry     -> ['st', 'raw', 'berry']

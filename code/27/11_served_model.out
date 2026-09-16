@@ -1,0 +1,7 @@
+  requested       served                       fingerprint
+  gpt-5.4-mini    gpt-5.4-mini-2026-03-17             None
+  gpt-5.5         gpt-5.5-2026-04-23                  None
+
+the served name is what belongs on the span; when it changes and the
+requested name did not, the provider moved the alias, and the golden set
+is the next thing to run

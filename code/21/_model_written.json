@@ -1,0 +1,275 @@
+{
+  "written": [
+    {
+      "question": "What is the total depot capacity for Dallas?",
+      "answer": "79,300",
+      "span": "| **Total**           | **68,600** | **40,600** | **32,400** | **23,400** | **79,300** |",
+      "source": "02-rotated-table.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "How much racked storage capacity does Newark have?",
+      "answer": "48,200",
+      "span": "| Racked storage      |     48,200 |  31,400 |  22,900 |  18,600 |     54,100 |",
+      "source": "02-rotated-table.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "Which depot has a total capacity of 23,400 sq ft?",
+      "answer": "Sacramento",
+      "span": "|                     | Newark     | Atlanta | Columbus| Sacramento | Dallas  |\n| **Total**           | **68,600** | **40,600** | **32,400** | **23,400** | **79,300** |",
+      "source": "02-rotated-table.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What was Columbus utilisation at year end?",
+      "answer": "51%",
+      "span": "Utilisation at year end was 82%, 74%, 51%, 69% and 88% respectively.",
+      "source": "02-rotated-table.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What mezzanine capacity is listed for Atlanta?",
+      "answer": "\u2014",
+      "span": "| Mezzanine           |      8,400 |       \u2014 |   3,100 |       \u2014 |      9,900 |",
+      "source": "02-rotated-table.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What is the agreement reference for the supply agreement?",
+      "answer": "MSC-2022-100",
+      "span": "**Agreement reference:** MSC-2022-100",
+      "source": "contract-MSC-2022-100.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "When did the agreement commence?",
+      "answer": "11 January 2022",
+      "span": "**Commencement:** 11 January 2022",
+      "source": "contract-MSC-2022-100.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "Within how many days must payment be made after a valid invoice?",
+      "answer": "within 60 days of the date of a valid invoice",
+      "span": "3.1 Payment shall be made within 60 days of the date of a valid invoice.",
+      "source": "contract-MSC-2022-100.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What is the maximum aggregate price adjustment the Supplier may make in any twelve month period?",
+      "answer": "no more than 3% in aggregate",
+      "span": "2.2 The Supplier may adjust prices once in any twelve month period, by no more than 3% in aggregate, on not less than 30 days written notice.",
+      "source": "contract-MSC-2022-100.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What law governs the Agreement?",
+      "answer": "the laws of the State of Delaware",
+      "span": "This Agreement is governed by the laws of the State of Delaware.",
+      "source": "contract-MSC-2022-100.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What was Meridian Supply Co.'s revenue for 2024 Q2?",
+      "answer": "$8,074,848",
+      "span": "Revenue for 2024 Q2 was $8,074,848 across 5,553 orders, up 0.2% on the prior quarter. Gross margin was 32.0%. We shipped 100,194 units.",
+      "source": "qbr-2024-Q2.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "How many orders did Meridian Supply Co. have in 2024 Q2?",
+      "answer": "5,553",
+      "span": "Revenue for 2024 Q2 was $8,074,848 across 5,553 orders, up 0.2% on the prior quarter. Gross margin was 32.0%. We shipped 100,194 units.",
+      "source": "qbr-2024-Q2.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "Which region had the highest revenue in 2024 Q2?",
+      "answer": "Midwest",
+      "span": "Midwest remained our strongest region at $2,257,870. West was the weakest at $1,072,879.",
+      "source": "qbr-2024-Q2.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What was the gross margin for the Safety category?",
+      "answer": "39.7%",
+      "span": "| Safety | $1,791,054 | 17,498 | 39.7% |",
+      "source": "qbr-2024-Q2.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What category launched this quarter and is reported separately from Cleaning for the first time?",
+      "answer": "Sanitation",
+      "span": "The Sanitation category launched this quarter and is reported separately from Cleaning for the first time.",
+      "source": "qbr-2024-Q2.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What was Meridian Supply Co.'s revenue for 2024 Q3?",
+      "answer": "$8,461,842",
+      "span": "Revenue for 2024 Q3 was $8,461,842 across 5,579 orders, up 4.8% on the prior quarter. Gross margin was 33.1%. We shipped 102,433 units.",
+      "source": "qbr-2024-Q3.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "How many orders did Meridian Supply Co. have in 2024 Q3?",
+      "answer": "5,579",
+      "span": "Revenue for 2024 Q3 was $8,461,842 across 5,579 orders, up 4.8% on the prior quarter. Gross margin was 33.1%. We shipped 102,433 units.",
+      "source": "qbr-2024-Q3.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "Which account did not renew at the end of the previous quarter?",
+      "answer": "Halloway Group",
+      "span": "**Account loss.** Halloway Group did not renew at the end of the previous quarter. Halloway was the Midwest region's largest account by revenue, and its departure is the single largest driver of the movement reported below.",
+      "source": "qbr-2024-Q3.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "Which region had the highest revenue in 2024 Q3?",
+      "answer": "Southwest",
+      "span": "Southwest remained our strongest region at $2,607,943. Midwest was the weakest at $1,061,883.",
+      "source": "qbr-2024-Q3.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What was the standing gross margin target?",
+      "answer": "32.0%",
+      "span": "The Safety category led on revenue. Margin across the business was 33.1%, against a standing target of 32.0%.",
+      "source": "qbr-2024-Q3.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What was Meridian Supply Co.'s revenue for 2024 Q4?",
+      "answer": "$8,266,068",
+      "span": "Revenue for 2024 Q4 was $8,266,068 across 5,770 orders, down 2.3% on the prior quarter. Gross margin was 31.7%. We shipped 104,645 units.",
+      "source": "qbr-2024-Q4.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "How many orders did Meridian Supply Co. have in 2024 Q4?",
+      "answer": "5,770",
+      "span": "Revenue for 2024 Q4 was $8,266,068 across 5,770 orders, down 2.3% on the prior quarter. Gross margin was 31.7%. We shipped 104,645 units.",
+      "source": "qbr-2024-Q4.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "Which supplier's cloths had a batch defect in 2024 Q4?",
+      "answer": "Pemberton Mills",
+      "span": "**Quality.** A batch defect in cloths supplied by Pemberton Mills produced a material increase in support contacts this quarter. Affected stock was quarantined and replaced at supplier cost. Ticket volume is expected to normalise next quarter.",
+      "source": "qbr-2024-Q4.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "Which region was Meridian Supply Co.'s strongest in 2024 Q4?",
+      "answer": "Southwest",
+      "span": "Southwest remained our strongest region at $2,565,933. Midwest was the weakest at $994,594.",
+      "source": "qbr-2024-Q4.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What was the gross margin across the business in 2024 Q4?",
+      "answer": "31.7%",
+      "span": "The Safety category led on revenue. Margin across the business was 31.7%, against a standing target of 32.0%.",
+      "source": "qbr-2024-Q4.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What was revenue for 2025 Q1?",
+      "answer": "$9,079,542",
+      "span": "Revenue for 2025 Q1 was $9,079,542 across 5,847 orders, up 9.8% on the prior quarter. Gross margin was 31.4%. We shipped 114,345 units.",
+      "source": "qbr-2025-Q1.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "How many orders were recorded in 2025 Q1?",
+      "answer": "5,847",
+      "span": "Revenue for 2025 Q1 was $9,079,542 across 5,847 orders, up 9.8% on the prior quarter. Gross margin was 31.4%. We shipped 114,345 units.",
+      "source": "qbr-2025-Q1.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What was the gross margin for 2025 Q1?",
+      "answer": "31.4%",
+      "span": "Revenue for 2025 Q1 was $9,079,542 across 5,847 orders, up 9.8% on the prior quarter. Gross margin was 31.4%. We shipped 114,345 units.",
+      "source": "qbr-2025-Q1.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "Which region was the strongest in Q1 2025?",
+      "answer": "Southwest",
+      "span": "Southwest remained our strongest region at $2,699,016. Midwest was the weakest at $1,165,398.",
+      "source": "qbr-2025-Q1.md",
+      "kind": "document",
+      "accept": []
+    },
+    {
+      "question": "What increase did Voss Industrial apply to unit costs?",
+      "answer": "12%",
+      "span": "Voss Industrial applied a 12% increase to unit costs across its catalogue with effect from the start of this quarter.",
+      "source": "qbr-2025-Q1.md",
+      "kind": "document",
+      "accept": []
+    }
+  ],
+  "kept": [
+    "What is the total depot capacity for Dallas?",
+    "How much racked storage capacity does Newark have?",
+    "What was Columbus utilisation at year end?",
+    "What mezzanine capacity is listed for Atlanta?",
+    "What is the agreement reference for the supply agreement?",
+    "When did the agreement commence?",
+    "Within how many days must payment be made after a valid invoice?",
+    "What is the maximum aggregate price adjustment the Supplier may make in any twelve month period?",
+    "What law governs the Agreement?",
+    "What was Meridian Supply Co.'s revenue for 2024 Q2?",
+    "How many orders did Meridian Supply Co. have in 2024 Q2?",
+    "Which region had the highest revenue in 2024 Q2?",
+    "What was the gross margin for the Safety category?",
+    "What category launched this quarter and is reported separately from Cleaning for the first time?",
+    "What was Meridian Supply Co.'s revenue for 2024 Q3?",
+    "How many orders did Meridian Supply Co. have in 2024 Q3?",
+    "Which account did not renew at the end of the previous quarter?",
+    "Which region had the highest revenue in 2024 Q3?",
+    "What was the standing gross margin target?",
+    "What was Meridian Supply Co.'s revenue for 2024 Q4?",
+    "How many orders did Meridian Supply Co. have in 2024 Q4?",
+    "Which supplier's cloths had a batch defect in 2024 Q4?",
+    "Which region was Meridian Supply Co.'s strongest in 2024 Q4?",
+    "What was the gross margin across the business in 2024 Q4?",
+    "What was revenue for 2025 Q1?",
+    "How many orders were recorded in 2025 Q1?",
+    "What was the gross margin for 2025 Q1?",
+    "Which region was the strongest in Q1 2025?",
+    "What increase did Voss Industrial apply to unit costs?"
+  ]
+}

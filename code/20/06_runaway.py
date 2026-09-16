@@ -129,12 +129,12 @@ print("instead of its own, and each worker ends up consulting a copy of itself."
 print()
 worst_label = max((k for k in results if k != "capped"),
                   key=lambda k: max(results[k]["depths"]))
-inner = max(results[k]["depths"][-1] - results[k]["depths"][0]
+inner = max(max(results[k]["depths"]) - min(results[k]["depths"])
             for k in results if k != "capped")
 print(f"Today that arrangement — {worst_label} — went deepest. Do not read much into")
-print(f"which one it was: the same arrangement varied by {inner} levels of depth "
-      f"across its")
-print(f"own {TRIALS} runs, on the same question, with nothing changed between them.")
+print(f"which one it was: a single arrangement varied by up to {inner} levels of depth "
+      f"across")
+print(f"its own {TRIALS} runs, on the same question, with nothing changed between them.")
 print()
 print("That is the lesson, and it is not really about recursion. Neither unbounded")
 print("arrangement decided to stop; each one happened to. A run that finishes cheaply")

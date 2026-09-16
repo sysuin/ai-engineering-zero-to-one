@@ -1,0 +1,14 @@
+200 jobs of about 5 minutes each, 8 workers
+
+  arrival   visibility timeout            hours  runs per job  most at once
+  backlog   30 seconds                      2.2          1.03             3
+            3 minutes                       2.2          1.03             2
+            6 minutes                       2.2          1.00             1
+            30 seconds, with heartbeat      2.2          1.00             1
+  trickle   30 seconds                      6.8          3.21             7
+            3 minutes                       6.7          2.00             2
+            6 minutes                       6.7          1.00             1
+            30 seconds, with heartbeat      6.7          1.00             1
+
+hours: until the last job is acknowledged
+runs per job: executions, duplicates included

@@ -1,11 +1,18 @@
 {
  "rates": {
-  "in": 0.15,
-  "out": 0.6,
-  "embed": 0.02
+  "fast": [
+   0.15,
+   0.6
+  ],
+  "smart": [
+   2.0,
+   8.0
+  ]
  },
+ "embed": 0.02,
  "designs": {
   "a support copilot over ten years of tickets": {
+   "tier": "fast",
    "tokens_in": 36000000,
    "tokens_out": 3000000,
    "daily_cost": 7.2,
@@ -18,28 +25,56 @@
    "latency": 5.4
   },
   "a nightly contract-risk enricher": {
+   "tier": "fast",
    "tokens_in": 600000000,
    "tokens_out": 40000000,
    "daily_cost": 114.0,
    "monthly_cost": 3420.0,
    "per_request": 0.00228,
-   "chunks": 1250000,
-   "vector_gb": 7.68,
-   "embed_cost": 10.0,
-   "concurrency": 2.314814814814815,
+   "chunks": 0,
+   "vector_gb": 0.0,
+   "embed_cost": 0.0,
+   "concurrency": 6.944444444444445,
    "latency": 4.0
   },
   "a regulated advisory assistant": {
+   "tier": "smart",
    "tokens_in": 7200000,
    "tokens_out": 540000,
-   "daily_cost": 1.404,
-   "monthly_cost": 42.12,
-   "per_request": 0.00468,
+   "daily_cost": 18.72,
+   "monthly_cost": 561.5999999999999,
+   "per_request": 0.0624,
    "chunks": 160000,
    "vector_gb": 0.98304,
    "embed_cost": 1.28,
    "concurrency": 0.1375,
    "latency": 13.200000000000001
+  },
+  "an IT helpdesk agent that can act": {
+   "tier": "fast",
+   "tokens_in": 37500000,
+   "tokens_out": 2250000,
+   "daily_cost": 6.975,
+   "monthly_cost": 209.25,
+   "per_request": 0.00465,
+   "chunks": 18000,
+   "vector_gb": 0.110592,
+   "embed_cost": 0.144,
+   "concurrency": 0.5208333333333334,
+   "latency": 10.0
+  },
+  "meeting summaries inside a video product": {
+   "tier": "fast",
+   "tokens_in": 4800000000,
+   "tokens_out": 240000000,
+   "daily_cost": 864.0,
+   "monthly_cost": 25920.0,
+   "per_request": 0.00432,
+   "chunks": 0,
+   "vector_gb": 0.0,
+   "embed_cost": 0.0,
+   "concurrency": 111.11111111111111,
+   "latency": 16.0
   }
  }
 }

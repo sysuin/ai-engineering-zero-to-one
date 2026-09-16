@@ -1,0 +1,15 @@
+6 documents; 20 cases written by hand, 30 by a model, 29 verified
+
+  cases                 words in passage  names its document  Clarity right
+  written by hand                    40%              16/20          16/20
+  written by a model                 50%              19/29          17/29
+
+  model questions naming their document: 12/19 right; not naming it: 5/10
+
+  words in passage = median share of a question's content words in its passage;
+  names its document = the contract reference, year and quarter, or depot
+
+  the model's questions that did not name their document, for example:
+    What is the agreement reference for the supply agreement?
+    When did the agreement commence?
+    Within how many days must payment be made after a valid invoice?

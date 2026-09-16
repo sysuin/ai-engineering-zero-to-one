@@ -1,0 +1,9 @@
+94 questions (20 with no answer), the same 6 passages for every model
+
+  strategy                    correct  fast calls  smart calls  smart tokens
+  fast model alone             59/94          94            0             0
+  smart model alone            61/94           0           94        49,165
+  fast, escalate on check      61/94          94           43        23,898
+
+the check kept 51 fast answers, 10 of them wrong; it escalated 43,
+of which the fast answer was wrong in 25 and right in 18

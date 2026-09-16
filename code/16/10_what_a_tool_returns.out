@@ -1,0 +1,14 @@
+20 rows of 2025 revenue and orders by region and quarter
+
+  JSON, one object per row     778 tokens   2.7x the smallest
+  JSON, compact objects        617 tokens   2.2x the smallest
+  JSON, columns + rows         376 tokens   1.3x the smallest
+  CSV                          284 tokens   1.0x the smallest
+
+228 rows, 16,139 characters as JSON; cut at 4,000 characters:
+  the text does not parse (Unterminated string starting at)
+  it holds 56 complete rows and one partial row
+  nothing in it says that 172 rows are missing
+
+cut by rows instead, and say so: 626 tokens of valid JSON,
+and the model knows what it has not seen

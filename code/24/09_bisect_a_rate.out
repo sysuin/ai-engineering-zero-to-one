@@ -1,0 +1,12 @@
+64 commits, the bug arrived in commit 41: failure rate 5% before, 30% after
+
+  runs per step  marked bad at  found the culprit  model runs, total
+              1    1+ failures                 1%                  6
+              3    1+ failures                13%                 18
+              5    1+ failures                28%                 30
+             10    2+ failures                44%                 60
+             20    3+ failures                74%                120
+             40    6+ failures                94%                240
+
+each step's verdict is a draw weighted by the two rates, and bisection trusts all 6 of them:
+the search is right only when every step is

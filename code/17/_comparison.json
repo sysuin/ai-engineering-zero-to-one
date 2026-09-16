@@ -2,57 +2,54 @@
   "task_a": {
     "pipeline": [
       1.0,
-      352.25,
-      7.906469225883484,
-      3.0
+      2165.25,
+      6.6864511370658875,
+      5.0
     ],
     "agent": [
       1.0,
-      2149.0,
-      7.706305384635925,
-      3.0
+      4123.75,
+      6.8764877915382385,
+      6.875
     ]
   },
   "task_b": [
     {
       "q": "Something changed in the Midwest during 2024. Work out what, and quantify it.",
-      "steps": 8,
-      "tokens": 4864,
+      "steps": 6,
+      "tokens": 10320,
       "tools": [
         "search_documents",
         "query_warehouse",
+        "search_documents",
+        "search_documents",
         "query_warehouse",
-        "query_warehouse",
-        "query_warehouse",
-        "query_warehouse",
-        "arithmetic",
-        "arithmetic"
+        "search_documents"
       ],
-      "stopped": "step budget (8) exhausted"
+      "stopped": "answered"
     },
     {
       "q": "Are customers complaining about a product problem? If so, which product, and does the sales data show an effect?",
-      "steps": 8,
-      "tokens": 3972,
+      "steps": 7,
+      "tokens": 15365,
       "tools": [
         "search_documents",
+        "query_warehouse",
         "search_documents",
-        "search_documents",
-        "search_documents",
-        "search_documents",
-        "search_documents",
-        "search_documents",
-        "search_documents"
+        "query_warehouse",
+        "query_warehouse",
+        "query_warehouse",
+        "query_warehouse"
       ],
-      "stopped": "step budget (8) exhausted"
+      "stopped": "answered"
     },
     {
       "q": "Which supplier represents the biggest commercial risk, and why?",
       "steps": 5,
-      "tokens": 5155,
+      "tokens": 7055,
       "tools": [
         "search_documents",
-        "search_documents",
+        "query_warehouse",
         "search_documents",
         "search_documents",
         "search_documents"

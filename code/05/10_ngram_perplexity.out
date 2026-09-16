@@ -1,0 +1,12 @@
+trained on 28,809 words; vocabulary 1,011; scored on 878 held-out words
+
+  model                      cross-entropy  perplexity
+  uniform (no information)        6.92 nats     1,011.0
+  unigram (word frequency)        5.58 nats       265.7
+  bigram (one word back)          3.29 nats        26.7
+  trigram (two words back)        2.69 nats        14.7
+
+lowest perplexity: trigram (two words back)
+the uniform model is as unsure as a choice among 1,011 words; the best is as unsure as a choice among 15
+
+greedy bigram text: need to the buyer may terminate immediately on the buyer may terminate immediately on the buyer may terminate

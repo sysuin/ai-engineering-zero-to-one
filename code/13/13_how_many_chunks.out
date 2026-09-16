@@ -1,0 +1,11 @@
+74 document questions with a verified span, 20 unanswerable; dense retrieval, labelled excerpts
+
+    k  span retrieved  answered right  right when  refused the   prompt
+                                        retrieved unanswerable   tokens
+    1             46%             64%         97%          40%      120
+    3             53%             54%         97%          45%      244
+    5             59%             57%         95%          55%      374
+   10             85%             82%         97%          55%      736
+   20             97%             95%         97%          50%    1,408
+
+'right when retrieved': answers right, of the questions whose verified span was among the k

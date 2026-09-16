@@ -1,0 +1,12 @@
+30 cases; the cascade escalated 5 of them
+
+  policy                          correct  answerable  unanswerable   cost
+  cheap model always                19/30       14/18          5/12     6%
+  smart model always                18/30       12/18          6/12   100%
+  cascade: escalate on refusal      18/30       14/18          4/12    16%
+  best of both (no router can)      21/30       14/18          7/12      —
+
+Cost is relative to sending everything to the smart model, at placeholder rates.
+A refusal is the only signal here that needs no second model to read, and on the
+unanswerable cases it escalates exactly the questions the cheap model got right —
+so read that column before believing the cascade's total.

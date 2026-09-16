@@ -1,0 +1,13 @@
+value index: 99 distinct values from 8 columns
+
+What was Voss Industrial's revenue in 2025?
+  linked:   ["'Voss Industrial' is a value of v_sales.supplier"]
+  truth     [(4323725.42,)]
+  no hints  [(None,)]
+  hints     [(4323725.42,)]
+
+How many suppliers are based outside the United States?
+  linked:   nothing
+  truth     [(10,)]
+  no hints  [(20,)]
+  hints     [(10,)]

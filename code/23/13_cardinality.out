@@ -1,0 +1,13 @@
+a day of 50,000 requests; one latency histogram = 14 series per label combination
+distinct values seen: route 6, model 2, status 5, tenant 400,
+  user 6,145, trace_id 50,000
+
+  labels on the histogram                  combinations     series
+  route + model + status                             59        826
+  route + model + status + tenant                 3,870     54,180
+  route + model + status + tenant + user         15,939    223,146
+  route + model + status + trace_id              50,000    700,000
+  route + model + status + top-20 tenant            649      9,086
+
+the twenty largest tenants sent 63% of requests; the rest are 'other'
+a trace id as a label makes new series for every request, every day

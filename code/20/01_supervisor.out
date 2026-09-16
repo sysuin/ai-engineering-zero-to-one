@@ -1,15 +1,15 @@
 Q: What was revenue in 2024 Q3, and what does the company give as the reason the Midwest fell?
 
   analyst    <- What was total revenue in 2024 Q3?
-  analyst    -> 8461841.81 — revenue: gross of discount, net of nothing; excludes tax and freight.
-  researcher <- According to the company documents, what reason is given for the Midwest falling in 2024 Q3?
-  researcher -> According to **qbr-2024-Q3.md**, the reason given is **account loss**: **Halloway Group did not renew at the end of the previous quarter**. The document says Ha
+  analyst    -> 8461841.81 — revenue: net of line discounts, excluding tax and freight.
+  researcher <- According to the company documents, what reason is given for the Midwest falling?
+  researcher -> The documents say the Midwest fell because **Halloway Group did not renew at the end of the previous quarter**. In **qbr-2024-Q3.md** under **Summary**, it says
 
-A: Revenue in 2024 Q3 was **$8,461,841.81**.
+A: Revenue in 2024 Q3 was **8,461,841.81**.
 
-The company says the Midwest fell because of **account loss**: **Halloway Group did not renew at the end of the previous quarter**. It was the Midwest region’s largest account by revenue, and the company says the loss was the single larg
+The company says the Midwest fell because **Halloway Group did not renew at the end of the previous quarter**; it was the Midwest region’s largest account, and the company also attributed the loss to **a competitor’s national framework ag
 
-7 model calls, 3,196 tokens, 10.4s
+10 model calls, 7,092 tokens, 18.7s
 2 delegations: analyst, researcher
 
 Read the two questions the supervisor wrote, not the answer. It had to turn one

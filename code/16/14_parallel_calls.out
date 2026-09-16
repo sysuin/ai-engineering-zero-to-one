@@ -1,0 +1,8 @@
+4 questions needing 3 or 4 independent figures, 3 runs each
+
+  tool calls in a reply          right  model calls  tool calls  seconds
+  several at once                12/12            2           3      3.7
+  several, one after another     12/12            2           3      5.8
+  one call per reply             12/12            5           4      9.4
+
+model calls, tool calls and seconds are medians per question

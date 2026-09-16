@@ -1,33 +1,33 @@
 {
- "plain_total": 6.233233082999504,
- "stream_first": 0.02697995800008357,
- "stream_total": 6.495653500000117,
+ "plain_total": 5.534068041997671,
+ "stream_first": 0.021176209003897384,
+ "stream_total": 5.259403625001141,
  "events": [
   {
-   "at": 0.02697995800008357,
+   "at": 0.021176209003897384,
    "event": "accepted",
-   "request_id": "0f64f3de-959b-4b57-9bae-82d792e1be74"
+   "request_id": "73c837c1-0ab8-45c9-926b-6f4abf3c9bf2"
   },
   {
-   "at": 2.2251686660001724,
+   "at": 2.9777585420015384,
    "event": "step",
    "tool": "query_warehouse",
-   "seconds": 1.17
+   "seconds": 1.96
   },
   {
-   "at": 4.541261041000325,
+   "at": 4.085485834002611,
    "event": "step",
    "tool": "search_documents",
-   "seconds": 2.31
+   "seconds": 1.11
   },
   {
-   "at": 6.495621707999817,
+   "at": 5.259386834004545,
    "event": "answer",
-   "text": "Revenue in 2024 Q3 was **$8,461,841.81**.\n\nThe Midwest decline was caused primarily by **Halloway Group not renewing at the end of the previous quarter**. The review says Halloway was the Midwest region\u2019s largest account by revenue, and its departure was the **single largest driver** of the decline. It also says the commercial team attributed the loss to **a competitor\u2019s national framework agreement**, not service failure.",
-   "tokens": 1681
+   "text": "Revenue in 2024 Q3 was **$8,461,841.81**.\n\nThe **Midwest decline** was mainly caused by **Halloway Group not renewing at the end of the previous quarter**. The review says Halloway was the Midwest region\u2019s largest account by revenue, and its departure was the single largest driver of the decline. It also says the loss was attributed to **a competitor\u2019s national framework agreement**, not service failure.",
+   "tokens": 1680
   },
   {
-   "at": 6.495653500000117,
+   "at": 5.259403625001141,
    "event": "done"
   }
  ]

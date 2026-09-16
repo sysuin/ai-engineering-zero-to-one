@@ -1,0 +1,13 @@
+what a sales analyst receives, top 5 passages per question;
+the cache was filled by a lawyer
+
+  questions about method                         passages  empty  not readable
+  contracts       filter inside the search            5.0      0             0
+                  search, then hide                   0.0      6             0
+                  cache keyed on the question         5.0      0            30
+  reviews         filter inside the search            5.0      0             0
+                  search, then hide                   5.0      0             0
+                  cache keyed on the question         5.0      0             0
+  support         filter inside the search            5.0      0             0
+                  search, then hide                   1.0      4             0
+                  cache keyed on the question         5.0      0            18

@@ -1,0 +1,15 @@
+Independent errors: each sample right with probability p
+      p   vote of 1  vote of 3  vote of 5  vote of 9 vote of 15
+   0.55       55.0%      57.5%      59.3%      62.1%      65.4%
+   0.75       75.0%      84.4%      89.6%      95.1%      98.3%
+   0.85       85.0%      93.9%      97.3%      99.4%      99.9%
+
+Correlated errors: 25% of questions are hard (p=0.3), the rest easy (p=0.9)
+  average single-sample accuracy 75.0%, the same as p=0.75 above
+  vote of  1: 75.0%   (independent errors would give 75.0%)
+  vote of  5: 78.8%   (independent errors would give 89.6%)
+  vote of 15: 75.9%   (independent errors would give 98.3%)
+
+as the vote grows, easy questions become always right and hard ones always wrong, so
+accuracy heads towards the share of easy questions, 75%: voting cannot rescue a
+question the model usually gets wrong, and it makes that question wrong every time.

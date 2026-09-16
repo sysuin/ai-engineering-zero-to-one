@@ -1,0 +1,8 @@
+file on disk: 22.5 MB
+all at once:  revenue 19,182,104.38   peak memory   243.88 MB
+streaming:    revenue 19,182,104.38   peak memory     0.05 MB
+same answer: True
+streaming peaked at 0.02% of the memory. Its peak is one row, however large the file; the other peak grows with the file.
+
+a generator object: generator
+first Midwest line: 2023-01-28 MRD-CLE-007 6

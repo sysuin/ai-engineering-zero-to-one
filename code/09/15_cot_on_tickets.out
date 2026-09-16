@@ -1,0 +1,7 @@
+150 tickets, 30 per category
+
+  prompt                    right  output tokens  seconds
+  answer directly         115/150              4     0.81
+  reason step by step     115/150             35     0.96
+
+  output tokens and seconds are medians per ticket; the label is the last category named

@@ -1,0 +1,20 @@
+the right answer: Southwest
+
+calls together
+  round  calls   prompt   cached  output
+      1      3      168        0      70
+      2      0    1,676    1,152     139
+  total prompt tokens 1,844 over 2 model calls
+  answer ends: …,982 = **+113,932**  **Southwest** had the largest December revenue growth from 2023 to 2025, increasing by **316,680**.
+
+one call per round
+  round  calls   prompt   cached  output
+      1      1      168        0      20
+      2      1      673        0      20
+      3      1    1,178        0      20
+      4      0    1,683    1,280     139
+  each round's prompt grew by 505, 505, 505 tokens
+  total prompt tokens 3,702 over 4 model calls
+  answer ends: …,982 = **+113,932**  **Southwest** had the largest December revenue growth from 2023 to 2025, increasing by **316,680**.
+
+one call per round sent 2.0x the prompt tokens of calls together

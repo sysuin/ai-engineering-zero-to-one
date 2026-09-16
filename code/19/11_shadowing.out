@@ -1,0 +1,6 @@
+10 questions about figures x 2 runs; which tool the model called first
+
+  our tools only                             fast_query  0/20   query_warehouse 20   other  0
+  a shadowing tool added                     fast_query 20/20   query_warehouse  0   other  0
+  names and descriptions say which server    fast_query 20/20   query_warehouse  0   other  0
+  ... and a rule in the system prompt        fast_query  0/20   query_warehouse 20   other  0

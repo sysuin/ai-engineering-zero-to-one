@@ -14,8 +14,10 @@ Chapter 32's command line be three front doors onto one system rather than three
 from __future__ import annotations
 
 import asyncio
+import contextvars
 import json
 import sys
+import threading
 import time
 import uuid
 from pathlib import Path
@@ -81,7 +83,7 @@ def build_app(engine=None) -> FastAPI:
         started = time.perf_counter()
         # The engine is synchronous and does several seconds of waiting. Calling it
         # directly from an async endpoint blocks the event loop for every other
-        # request in the process — §25.7 measures exactly how much.
+        # request in the process — §25.3 measures exactly how much.
         with span("clarity.request", **{"clarity.request_id": rid}):
             result = await asyncio.to_thread(
                 lambda: Agent(clarity(), budget=Budget(steps=body.max_steps))
@@ -98,7 +100,7 @@ def build_app(engine=None) -> FastAPI:
 
         The point is not speed — the total is identical. It is that a person sees the
         system working within a second instead of staring at a spinner for nine, and
-        §28.6 is about how large that difference turns out to be.
+        §28.7 is about how large that difference turns out to be.
         """
         rid = str(uuid.uuid4())
 
@@ -106,30 +108,56 @@ def build_app(engine=None) -> FastAPI:
             yield _sse({"event": "accepted", "request_id": rid})
             queue: asyncio.Queue = asyncio.Queue()
             loop = asyncio.get_running_loop()
+            stopped = threading.Event()
+
+            def put(item) -> None:
+                loop.call_soon_threadsafe(queue.put_nowait, item)
 
             def work():
-                def report(step):
-                    # As each step finishes, not after the run. An agent that
-                    # reports progress at the end is buffering, not streaming.
-                    loop.call_soon_threadsafe(
-                        queue.put_nowait, {"event": "step", "tool": step.tool,
-                                           "seconds": round(step.seconds, 2)})
+                # The span belongs to the work, not the transport: it opens before the
+                # first step and closes after the answer, however the stream ends.
+                with span("clarity.request", **{"clarity.request_id": rid,
+                                                "clarity.streamed": True}):
+                    try:
+                        def report(step):
+                            # As each step finishes, not after the run. An agent that
+                            # reports progress at the end is buffering, not streaming.
+                            if stopped.is_set():
+                                raise _ClientGone()      # stop before the next model call
+                            put({"event": "step", "tool": step.tool,
+                                 "seconds": round(step.seconds, 2)})
 
-                agent = Agent(clarity(), budget=Budget(steps=body.max_steps))
-                run = agent.run(body.question, system=SYSTEM, on_step=report)
-                loop.call_soon_threadsafe(
-                    queue.put_nowait, {"event": "answer", "text": run.answer,
-                                       "tokens": run.tokens})
-                loop.call_soon_threadsafe(queue.put_nowait, None)
+                        agent = Agent(clarity(), budget=Budget(steps=body.max_steps))
+                        run = agent.run(body.question, system=SYSTEM, on_step=report)
+                        put({"event": "answer", "text": run.answer, "tokens": run.tokens})
+                    except _ClientGone:
+                        pass
+                    except Exception as error:                    # noqa: BLE001
+                        # Without this the stream would wait for an end that never comes.
+                        put({"event": "error", "message": type(error).__name__})
+                    finally:
+                        put(None)
 
-            asyncio.get_running_loop().run_in_executor(None, work)
-            while (item := await queue.get()) is not None:
-                yield _sse(item)
-            yield _sse({"event": "done"})
+            # run_in_executor does not carry context variables across; copy them, or
+            # the span above has no parent.
+            loop.run_in_executor(None, contextvars.copy_context().run, work)
+            try:
+                while (item := await queue.get()) is not None:
+                    yield _sse(item)
+                yield _sse({"event": "done"})
+            finally:
+                # Reached when the stream ends normally and when the client disconnects
+                # mid-stream. Either way, the agent stops at its next step instead of
+                # spending tokens on an answer nobody will read.
+                stopped.set()
 
         return StreamingResponse(events(), media_type="text/event-stream")
 
     return app
+
+
+class _ClientGone(Exception):
+    """Raised inside the agent's step callback once nobody is listening."""
 
 
 def _sse(payload: dict) -> str:

@@ -1,0 +1,17 @@
+  a normal question          allowed   [('Southwest', 10758271.0), ('Northeast', 7947506.0)]
+  a base table's columns     REFUSED   DatabaseError: access to customers.name is prohibited  (0.00s)
+  a base table, counted      allowed   [(58,)]
+  a write                    REFUSED   DatabaseError: not authorized  (0.00s)
+  a settings change          REFUSED   DatabaseError: not authorized  (0.00s)
+  an accidental cross join   REFUSED   OperationalError: interrupted  (1.00s)
+
+EXPLAIN QUERY PLAN before running a generated query:
+    SCAN l
+    SEARCH o USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH c USING INTEGER PRIMARY KEY (rowid=?)
+    SEARCH r USING INTEGER PRIMARY KEY (rowid=?)
+
+The count got through. SQLite reports a read with no column both for COUNT(*) on a base
+table and for tables a view uses internally, so an authorizer cannot tell them apart.
+It is a useful guard against writes; it is not a grant. Postgres grants and row-level
+security enforce table access in the database, where no query can get around them.

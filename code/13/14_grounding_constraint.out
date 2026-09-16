@@ -1,0 +1,29 @@
+10 contracts x 5 questions = 50 questions; the clause that answers each
+is removed from its excerpts
+
+with the clause present, as a check: the right term in 50 of 50 answers
+
+  prompt                                missing  other clause  no excerpt
+  as written                                 50             0           0
+  without the general-knowledge line         50             0           0
+  without any constraints                    50             0           0
+  no grounding at all                        50             0           0
+
+  the answer's first sentence said the term is missing, stated a term found in
+  another clause of the contract, or stated one found nowhere
+
+30 questions about whether a term is usual, with every clause present
+  prompt                                appealed to a norm
+  as written                                         0/30
+  without the general-knowledge line                 0/30
+  without any constraints                           17/30
+  no grounding at all                               27/30
+
+  appealed to a norm = a sentence calls a term typical, usual or standard, and
+  does not say the excerpts cannot tell. Three, without any constraints:
+    The agreement requires payment within 60 days of a valid invoice, which
+      is relatively long compared with a typical commercial payment term.
+    The payment term is 60 days from a valid invoice, which is relatively
+      long compared with what is usual.
+    On that basis, it would generally be considered relatively high compared
+      with a more restrictive liability cap.

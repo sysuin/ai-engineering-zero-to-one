@@ -3,13 +3,13 @@
 First specification: the tool must match where the gold answer came from.
 
                                   right route  wrong route
-  right answer                              9           59
-  wrong answer                              1            1
+  right answer                              9           60
+  wrong answer                              1            0
 
-  outcome evaluation alone passes  68 of 70
+  outcome evaluation alone passes  69 of 70
   adding that trajectory rule      9 of 70
 
-Before blaming the system for those 59, read three of them:
+Before blaming the system for those 60, read three of them:
 
   What was revenue in 2023 Q1?
     spec wanted search_documents, it used query_warehouse

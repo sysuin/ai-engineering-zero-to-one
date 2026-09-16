@@ -1,0 +1,9 @@
+no lease:
+  worker-a: resumed and finished
+  worker-b: resumed and finished
+  refunds written: 2
+
+with a lease on the run:
+  worker-a: resumed and finished
+  worker-b: run already claimed, not resuming
+  refunds written: 1
