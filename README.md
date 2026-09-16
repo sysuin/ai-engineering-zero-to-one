@@ -23,7 +23,7 @@ how to set a spending limit before your first call.
 Then the dataset, which is generated rather than downloaded:
 
 ```bash
-python3 code/meridian/generate.py      # about forty seconds, no network
+python3 code/meridian/generate.py      # a few seconds, no network
 python3 code/meridian/verify.py
 python3 code/meridian_index.py --build # the one step that costs money — a few cents
 ```
